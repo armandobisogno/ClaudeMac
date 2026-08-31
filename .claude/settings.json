@@ -9,9 +9,9 @@
         "hooks": [
           {
             "type": "command",
-            "command": "python3 \"$CLAUDE_PROJECT_DIR/brain/tools/mp_check.py\" --quiet --state \"$CLAUDE_PROJECT_DIR/brain/tools/mp_state.local.json\" 2>/dev/null || true",
+            "command": "python3 \"$CLAUDE_PROJECT_DIR/brain/tools/session_brief.py\" 2>/dev/null || true",
             "timeout": 30,
-            "statusMessage": "Controllo novità Macchine Pensanti…"
+            "statusMessage": "Brief di inizio sessione…"
           }
         ]
       }
