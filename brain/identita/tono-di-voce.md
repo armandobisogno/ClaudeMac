@@ -18,13 +18,17 @@ sotto. Coerenza di stile personale attraverso registri diversi.
    tecnologia alle scelte umane e sociali.
 2. **Né apocalisse né entusiasmo.** Tono misurato. Demistificazione senza perdere lo
    stupore: si spiega come funziona *e* si resta meravigliati.
-3. **Soggettività dichiarata come metodo**, non nascosta ("ermenetica"). La domanda
-   guida è "come rispondo di quello che so?". Autocritica esplicita ("lo dico da
-   padre autocritico di un'adolescente").
-4. **Si scrive per pensare**, non per avere ragione. Il testo lascia una domanda
-   aperta, non chiude il caso.
-5. **Chi firma, chi si prende il merito**: è l'ossessione ricorrente. Spesso il pezzo
-   apre di lì (autorialità, paternità, ghostwriting).
+3. **Soggettività dichiarata come metodo**, non nascosta ("ermenetica"). Ma
+   *dichiarata, non esibita*: "rendere visibili — senza esibirle — le scelte che hanno
+   guidato la nostra interpretazione". La domanda guida è **"come rispondo di quello che
+   so?"**. Autocritica esplicita ("lo dico da padre autocritico di un'adolescente").
+4. **La neutralità non è serietà.** Rifiuta la finta imparzialità impersonale come
+   criterio di rigore; il rigore è la responsabilità, non l'assenza di un io.
+5. **Si scrive per pensare**, non per avere ragione. Il testo lascia una domanda
+   aperta, non chiude il caso ("conclusioni temporanee").
+6. **Chi firma, chi si prende il merito**: è l'ossessione ricorrente. Spesso il pezzo
+   apre di lì (autorialità, paternità, ghostwriting) e arriva a "chi *risponde* di ciò
+   che viene scritto e di come viene usato?".
 
 ## Registro e lingua
 
