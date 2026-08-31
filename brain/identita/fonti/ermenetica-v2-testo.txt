@@ -1,0 +1,2393 @@
+
+
+===== p.1 =====
+Armando Bisogno
+Ermenetica
+Il sapere umanistico come esercizio di responsabilità
+
+
+===== p.2 =====
+Il presente testo è distribuito da Armando Bisogno con licenza CC BY-NC-SA 4.0.
+È possibile condividere, riprodurre, distribuire, comunicare al pubblico, esporre in pubblico,
+rappresentare, eseguire e recitare, modificare, remixare, trasformare il materiale e basarsi su
+di esso per altre opere con qualsiasi mezzo e formato, solo per scopi non commerciali.
+Illicenziantenonpuòrevocarequestidirittifintantocheturispettiiterminidellalicenzaalle
+seguenti condizioni:
+- attribuzione: devi riconoscere una menzione di paternità adeguata, fornire un link alla
+licenza e indicare se sono state effettuate delle modifiche.
+- stessa licenza: se remixi, trasformi il materiale o ti basi su di esso, devi distribuire i tuoi
+contributi con la stessa licenza del materiale originario.
+- divieto di restrizioni aggiuntive: non puoi applicare termini legali o misure tecnologiche
+che impongano ad altri soggetti dei vincoli giuridici su quanto la licenza consente loro di
+fare.
+Una versione depositata su Zenodo con DOI 10.5281/zenodo.17734848 è disponibile a
+questo indirizzo:https://zenodo.org/records/17734848
+Per informazioni: arbisogno@unisa.it
+
+===== p.3 =====
+Premessa
+Questo libro nasce come riflessione aperta su due temi particolarmente importanti per me. Da
+un lato, la sensazione che leHumanities abbiano imparato a descriversi con grande finezza
+metodologica ma facciano ancora fatica a rendere esplicita la dimensione di responsabilità che
+abita ogni gesto interpretativo. Dall’altro, l’impressione speculare che il mondo nel quale
+viviamo-saturodivoci,contenuti,narrazioni-abbiaunbisognourgentedisguardiumanistici
+capaci di orientare, contestualizzare, mettere in prospettiva, ma faccia sempre più fatica a
+riconoscerne il ruolo. Le pagine che seguono provano a tenere insieme queste due tensioni,
+assumendo sul serio una intuizione che attraversa molta riflessione contemporanea: non esiste
+interpretazione innocente. L’atto di leggere, commentare, spiegare, divulgare un testo o
+un’immagine non è mai una pura operazione tecnica ma un gesto che mette in gioco la nostra
+storia, le nostre scelte, le nostre fedeltà. È a partire da qui che propongo il neologismo che dà
+il titolo al volume:ermenetica, una postura che intreccia in modo inestricabile ermeneutica ed
+etica, interpretazione e responsabilità.
+Ilprimocapitolo, Umani(sti).CosasonoleHumanities? ,prendelemossedaunadefinizione
+diHellenSmalleprovaarileggerladall’interno,facendoemergereleimplicazionipiùradicali
+di tre elementi solo in apparenza ovvi: lo studio di pratiche produttrici di senso, il rigore
+documentale,lacentralitàdellarispostaindividualeedellasoggettività.Daquiprendonoforma
+due esigenze intrecciate: unaermenetica della ricerca, che riguarda il nostro lavorio interiore
+di studiosi davanti alle fonti, e unaermenetica della comunicazione, che riguarda il modo in
+cui incontriamo i nostri pubblici in un ecosistema informativo profondamente cambiato. I
+capitoli 2 e 3 descrivono proprio questo ecosistema. InContro Don Abbondio. La fine di un
+modelloprovoaricostruireilparadigmanovecentescodei gatekeeperdelsapere:pochiluoghi
+legittimi, pochi soggetti autorizzati, un flusso di conoscenza prevalentemente verticale. Il
+personaggio manzoniano diventa la figura di un potere che usa il propriolatinorum per
+governare più che per spiegare. Il capitolo 3, I rischi del fai da te. La cultura post-
+gatekeeping, sposta lo sguardo sulla condizione opposta: l’infosfera nella quale il diritto
+all’espressione è stato generalizzato, le barriere di accesso si sono abbassate e chiunque può
+intervenire nella costruzione di saperi condivisi. È un passaggio in molti aspetti emancipativo,
+ma porta con sé nuove fragilità: l’illusione di una competenza senza studio, la difficoltà di
+distinguere autorevolezza e visibilità, la tentazione di ridurre la conoscenza a opinione ben
+confezionata. Il capitolo 4,Anacronismo, prova a legare questi due piani: la trasformazione
+del sistema comunicativo e l’autopercezione delleHumanities. Qui il rischio principale non è
+l’irrilevanzadisciplinare,maloscartotemporale:continuareacomportarcicomeseabitassimo
+un mondo di pochigatekeeper quando il mondo reale è ormai popolato da milioni di micro-
+autori; difendere una idea di neutralità che nessuno riconosce più come criterio di serietà;
+parlare del presente senza accettare fino in fondo che il presente ha modificato le condizioni
+stesse della nostra parola. L’anacronismo, in questa prospettiva, non è un errore di datazione,
+ma una distanza tra le nostre pratiche e il tempo in cui viviamo.
+La seconda parte del testo entra nei luoghi concreti in cui questa posturaermenetica
+può tradursi in scelte operative.Un nuovo modello editoriale. Le Humanities e l’Open
+Access (capitolo 5) affronta il nodo della circolazione dei risultati della ricerca. Se il sapere
+umanistico è, per sua natura, una pratica pubblica di senso, è difficile giustificare modelli
+editoriali che ne limitano l’accesso, lo frammentano in prodotti costosi, ne affidano la
+diffusione a logiche di mercato spesso opache. Aprire i risultati, documentare i processi,
+rendereriusabiliidatinonèsolounaquestionetecnicaoeconomica,maunasceltadicoerenza
+
+===== p.4 =====
+tra ciò che diciamo e il modo in cui viviamo il nostro lavoro. Il capitolo 6,Ex cathedra. La
+didattica come luogo di incontro, sposta l’attenzione sull’aula. Qui l’ermenetica diventa una
+grammatica della relazione: la lezione non è più immaginata come un flusso unidirezionale di
+contenutistabilizzatimacomeunarelazioneatretralafonte,lacoscienzachelainterrogaele
+storie di chi ascolta. Ne derivano una serie di conseguenze: rendere visibili - senza esibirle - le
+scelte che hanno guidato la nostra interpretazione; riconoscere gli studenti come co-interpreti
+e non come recettori passivi; trasformare la differenza dei vissuti in risorsa, non in rumore di
+fondo. L’aula diventa così uno spazio elettivo diresponsabilità ermenetica, in cui il sapere si
+costruisce attraverso l’incontro fra soggettività. InSul palco. LePublicHumanities (capitolo
+7) la stessa postura si sposta fuori dall’università, nei territori, nei festival, nelle biblioteche,
+nelle aziende, nelle piattaforme digitali. Qui il discorso si fa volutamente operativo: a partire
+dalla cornice delpublic engagement, il capitolo propone una serie di impegni concreti - dalla
+proattività alle alleanze permanenti, dalla cura del linguaggio alla rinuncia a metriche
+consolatorie - per pensare iniziative che non siano semplici esercizi di visibilità, ma momenti
+reali di scambio con comunità diverse. Anche in questo caso il rischio da evitare è
+l’anacronismo:replicare,fuoridalleaule,unalezione excathedra travestitadaeventopubblico.
+Il capitolo 8, Lavorare sul senso. Humanities e IA, si confronta infine con uno degli
+interlocutori più esigenti del nostro tempo: l’intelligenza artificiale. Partendo dall’idea degli
+esseri umani comeSymbolic Species e dalla comparsa, accanto a noi, di una nuova specie
+simbolica capace di generare testi, immagini, suoni, il capitolo propone un rovesciamento di
+prospettiva: non difendere la creatività come ultimo bastione intoccabile ma riconoscere che
+ciò che ci distingue non è la sola capacità di produrre artefatti, quanto il modo in cui li
+metabolizziamo, li intrecciamo al vissuto, ci assumiamo la responsabilità delle narrazioni che
+costruiscono. L’IA non cancella il lavoro umanistico, lo rende più esplicito: libera tempo dalla
+manovalanza e ci obbliga a precisare meglio ilper me che abita ogni interpretazione. Le
+Conclusioni (temporanee)non forniscono un programma, ma provano a tenere insieme tutti
+questipassaggidentrounaimmaginesemplice:le Humanitiescomecuradell’albumdifamiglia
+dell’umanità, passato e presente. Un album che non possiamo limitarci a catalogare, ma che
+siamo chiamati a riordinare, commentare, esporre, discutere insieme ad altri.
+Ermenetica non è un progetto chiuso: èun lavoro in corso, perché io stesso continuo ad
+allargare il campo, a interrogare questi temi, a metterli alla prova. A scrivere e riscrivere il
+testo, a sperimentare con alterne fortune. E perchévorrei che diventasse uno spazio di
+discussione. Per questo condivido il documento su cui sto continuando a lavorare; èin
+progress, aperto ai commenti, alle critiche, ai contributi di chi vorrà entrarci:
+https://bit.ly/Ermenetica_OnlyOffice
+L’edizione attuale del testo è comunque disponibile anche in PDF sulla piattaformaZenodo
+per chi preferisce leggerlo in modo più tradizionale:
+https://bit.ly/Ermenetica_Zenodo
+
+===== p.5 =====
+1.
+Umani(sti). Cosa sono leHumanities?
+Cosa sono le discipline umanistiche? Come possiamo definirne la natura, il catalogo, il campo
+d’azione prima di chiederci in che modo debbano dialogare con il nostro tempo?
+Come è facile immaginare,le definizioni di cosa siano leHumanities sono numerose e tra di
+loro molto diverse. Tra le tante sintesi presenti negli studi dedicati a questo argomento (Bod
+2013; Frodeman 2017; Ekström 2022; Raffnsøe 2024), una proposta particolarmente efficace
+è discussa inThe Value of Humanities, un testo pubblicato nel 2013 da Hellen Small,Merton
+Professor of English Language and Literature (la cattedra che ebbe Tolkien per 15 anni dal
+1945 al 1959) a Oxford:
+The Humanities study the meaning-making practices of human culture, past and
+present,focusingoninterpretationandcriticalevaluation,primarilyintermsofthe
+individual response and with an ineliminable element of subjectivity
+ProvoadividereladefinizionediSmall intreparti e‘ritradurre’iltesto,dopoavernechiarito
+quelli che secondo me sono i passaggi interni del suo ragionamento.
+1. The Humanities study
+2. the meaning-making practices of human culture, past and present
+3. focusing on interpretation and critical evaluation, primarily in terms of the
+individual response and with an ineliminable element of subjectivity
+1) The Humanities study.
+Il verbo iniziale (‘leHumanities studiano’) mi aiuta a fare una prima riflessione, di grande
+importanza: che rapporto c’è tra le discipline umanistiche e ciò che, nel sentire comune, viene
+definito ‘umanistico’? In un senso generale, infatti, potremmo pensare come‘umanistico’ ciò
+che racconta l’umanità, nel duplice significato che può assumere questo termine: se infatti
+per‘umanità’intendiamol’insiemedegliesseriumanidiogniepoca,èumanisticotuttociòche
+ci racconta cosa hanno fatto e cosa stanno facendo oggi; se per ‘umanità’ intendiamo ciò che
+cirendeumani,cioèquelqualcosachecidistinguedaaltriesseriviventi,èumanisticotuttociò
+che ci aiuta a capire cosa sia quel ‘qualcosa’. Nel primo senso, posso affermare che anche la
+sartoriadàformaapensierieemozioniumane,cosìcomelacucinaoivideogiochi;nelsecondo
+senso, posso dire che tutte e tre queste attività sono esclusivamente umane, cioè ci
+caratterizzano. Non siamo però abituati a considerare ‘umanistici’ un capo d’abbigliamento,
+una pietanza o unvideogame e, soprattutto, le competenze che li producono. Questo perché,
+nel corso del tempo, abbiamo individuato alcuni ambiti che riteniamo per definizione
+umanisticiechecometaliabbiamoetichettato:l’arte,l’archeologia,lafilosofia,lamusica,etc.
+Ognuno di questi ambiti ha visto nascere, in forme, tempi e modalità diverse, delle discipline
+che li hanno studiati: appunto, leHumanities. Per questo Hellen Small specifica subito chele
+Humanities ‘studiano’, perché sono saperi formalizzati, istituzionalizzati, codificati nei
+
+===== p.6 =====
+loro temi, programmi, strumenti, oggetti di lavoro. Se dunque è ‘umanistico’ tutto ciò che ci
+racconta qualcosa dell’umanità, intesa come insieme di individui e come ‘essenza’, le
+Humanities sono le discipline che studiano alcuni di questi raccontiin una forma scolastica
+e accademica, cioè istituzionalizzata.
+b) The meaning-making practices of human culture, past and present.
+Nella seconda parte della definizione, Hellen Small riflette sucosa studiano leHumanities,
+cioè “le pratiche produttrici di senso della cultura umana, passata e presente” (“the meaning-
+making practices of human culture, past and present”). In questa formula l’attenzione è rivolta
+alle modalità attraverso le quali gli esseri umani producono segni. Cosa significa? Una
+foto, i resti di un edificio, una epigrafe, un testo, una registrazione audio: questi oggetti sono i
+prodotti, gli effetti di attività umane e, come tali, sono portatori di un significato; testimoniano
+cioè i processi intellettuali, esistenziali, emotivi, culturali di chi li ha realizzati. È umanistica,
+ad esempio, la scrittura di un romanzo - un atto deliberatamente pensato dal suo autore per
+comunicare ai lettori il suo mondo interiore; ma è ugualmente oggetto di un sapere umanistico
+un insediamento abitativo ritrovato grazie a uno scavo archeologico: pur non essendo stato
+prodotto per ‘dire’ qualcosa ai posteri ma semplicemente per viverci, è comunque una
+testimonianza di come vivevano, di quali materiali usavano, di quale idea dello spazio, della
+ricchezza o della bellezza possedevano, e così via.Le Humanities, dunque, studiano tutto
+l’insieme delle azioni attraverso le quali l’essere umano si racconta, consapevolmente (il
+romanzo) o inconsapevolmente (l’abitato). Queste ‘pratiche del significare’ sono i modi
+grazie ai quali l’uomo, nel passato come oggi, dà forma visibile a ciò che pensa, crede o sente,
+trasformando il suo stare nel mondo in una rete di segni interpretabili.
+Ritraduco quindi le prime due parti della definizione di Helen Small.
+Le Humanities sono discipline istituzionalizzate che studiano le pratiche, del
+passato o attuali, con le quali gli esseri umani producono segni di sé.
+c) Focusing on interpretation and critical evaluation, primarily in terms of the individual
+response and with an ineliminable element of subjectivity.
+Nellaterzaeultimapartedellasuadefinizione,HellenSmallaffermachele Humanitiesoffrono
+una “interpretation and critical evaluation,primarily in terms of the individual response and
+with an ineliminabile element of subjectivity” . Proviamo a capire l’importanza della
+connessione tra lo studio dei documenti (la interpretation e la critical evaluation) e la
+componente soggettiva (lasubjectivity e l’individual response). Comincio con la prima parte.
+Le Humanities hanno adottato, soprattutto negli ultimi settant’anni, un paradigma
+metodologico legato alla rivoluzione culturale che ha investito i saperi nella seconda metà del
+Novecento e che ha spostato l’interesse della ricerca dalla oggettività dei risultati a quella dei
+metodi.
+Mentre all’inizio del ventesimo secolo solo alcune aree della ricerca, quali la
+matematica, la fisica, la chimica la biologia e, forse, la psicologia, si ritenevano
+scienze, oggi parliamo tranquillamente di scienza economica, di scienza politica,
+di filologia, storia, linguistica come scienze e così via. In altri termini, ogni campo
+di ricerca è oggi accettato come possibile branca della conoscenza scientifica,
+purché si attenga ad alcuni standard di rigore (Agazzi 2018, p. 26).
+
+===== p.7 =====
+Lostudioumanisticoèdiventato,nellasecondametàdelNovecento,unostudioscientifico
+perché ha cominciato ad approcciarsi agli oggetti di sua competenza utilizzando metodi e
+tecniche standardizzate di analisi dei dati e dei documenti, del passato e del presente. Le
+edizioni critiche dei testi antichi, per esempio, adottano oggi protocolli condivisi per la
+collazione dei manoscritti, per la ricostruzione degli stemmi codicologici e per la definizione
+dei criteri con cui stabilire la lezione ritenuta più affidabile: un lavoro che richiede controlli
+sistematici, verifiche incrociate e trasparenza metodologica; la storia dell’arte si è strutturata
+come disciplina scientifica grazie all’uso integrato di archivi, analisi tecniche dei materiali,
+comparazione stilistica e procedure codificate per l’attribuzione delle opere, che rendono
+replicabili (e quindi discutibili) i risultati; la storia contemporanea, spesso percepita come più
+narrativa che scientifica, opera oggi attraversodatabase digitali, criteri precisi di selezione
+delle fonti, verifiche di attendibilità e modelli interpretativi che devono essere esplicitati e
+giustificati. Gli esempi potrebbero essere numerosissimi, tanti quante sono oggi le discipline
+umanistiche accreditate. Gli studi umanistici sono dunque oggi capaci, nel loro complesso, di
+analizzare gli oggetti di lorocompetenza conmetodi storico-critico-filologici di grande rigore.
+Questistrumenticiconsentonodicolmare,almenoinparte,il gapdicompetenzechecisepara
+daimondidisapereneiqualiquelletestimonianzesononate:sonostatescritteinlinguediverse
+dalle nostre, in contesti politici differenti, con finalità culturali diverse, con altri valori sociali,
+con altre biblioteche di riferimento, in epoca distanti da noi, etc.. Studiare il primo paragrafo
+delprimolibrodelle ConfessionidiAgostino,peresempio,significaevidenziareche,incinque
+righe, ci sono almeno sette citazioni, dirette o indirette, a passi delle Scritture, riferimenti che
+probabilmenteaunlettorecoevodiAgostinorisultavanosubitochiariecheinveceènecessario
+evidenziareperillettoredioggi,chehamenoconfidenzaconlaBibbia. Risiedeamioparere
+in questa competenza la critical evaluation della quale parla Small come dato
+caratteristico del lavoro di ricerca umanistica. Siamo cioè capaci di creare degli‘oggetti-
+fonte aumentati’, di dotare cioè le testimonianze che studiamo di un apparato di supporto, di
+tutte le informazioni a contorno necessarie per comprenderne al meglio l’origine, la forma, i
+riferimenti interni, la collocazione culturale e storica, e così via. Nel portare avanti questa
+operazione abbiamo il dovere della imparzialità, cioè il compito di limitare quanto più è
+possibile le nostre valutazioni personali per offrire una rappresentazione il più puntuale
+possibile dei documenti a nostra disposizione.
+Abbiamodunquericostruitoinostrioggetti-fonteaumentati,dotaticioèdiinformazioni
+aggiuntive che ci permettono di collocarli al meglio. Small suggerisce che questa attività si
+svolga “primarily in terms of the individual response and with an ineliminable element of
+subjectivity”. Cosa significa? Perché Small collegauna metodologia che tende alla oggettività
+impersonaleconuna individualresponse?Comedetto,lafasedella interpretationcheparteda
+una critical evaluation dei documenti è il punto di partenza indispensabile di ogni studio
+umanistico. Che sia io lo studioso che dà forma per la prima volta a quell’oggetto-fonte
+aumentato (per esempio se lavoro a una prima edizione critica di un testo prima inedito) o che
+‘sfrutti’ il lavoro di altri (per continuare sul medesimo esempio di prima, analizzando un testo
+chequalcunohagiàrestituitoallacomunitàscientificainedizionecritica), afondamentodella
+miaricercac’èsempreunarigorosadocumentalità .Ilpuntoèqualedebbaopossaessereil
+passo successivo. L’insistenza di Small sull’aspetto individuale, soggettivo a me suggerisce
+che la studiosa volesse, a questo punto, porre unwarning, un avvertimento per chi, come noi,
+si occupa di ricerca umanistica. Molto spesso, infatti, chi lavora nell’ambito delleHumanities,
+dopoaverricostruitoglioggetti-fonteinmodorigoroso(opotendocontaresuoggetti-fontegià
+ricostruiti da altri),ritiene che sia possibile, studiandoli, risalire all’oggetto-pensiero che li
+ha prodotti; che cioè avere una corretta edizione critica delle opere di Agostino ci permetta,
+dopo averle lette tutte, di comprendere quale ispirazione, quali moventi, quali riflessioni
+agostiniane le abbiano veramente prodotte. Questa operazione di reverse engineering che
+
+===== p.8 =====
+pretende di risalire dagli effetti alla causa risponde a una ‘tentazione’ che tutti conosciamo
+molto bene. Ognuno di noi sa che la nostra esperienza psichica, emotiva, intellettuale è spesso
+magmatica, prende e cambia continuamente direzione, amplia e restringe le sue prospettive,
+assume posizioni che poi contraddice. Quando arriva il momento di condividere con l’esterno
+questo flusso interiore (parlare, scrivere, disegnare, suonare, etc.) ci troviamo a dover
+costringere in forme esteriori questa esperienza così fluida, con la consapevolezza che stiamo
+inevitabilmente rinunciando a una parte delle informazioni che sono nel nostro animo e che
+non potranno essere rese perfettamente. Il mio pensiero vive, si evolve, va in contraddizione,
+ripensa,riscrive;illibrochehopubblicato,laletterechehoinviato,ilquadrochehorealizzato
+no. I segni con i quali diamo forma al nostro pensiero lo rappresentano dunque sempre
+in modo parziale ; non coincidono con l’insieme della esperienza psichica, emotiva,
+intellettuale, biografica che c’è dietro una riflessione complessa ma ne sono una riduzione in
+segni. Per questo ci capita continuamente, quando produciamo un testo, di pensare, un istante
+dopo averlo chiuso e condiviso, che potevamo scriverlo meglio, con più dettagli, assumendo
+un altro punto di vista, approfondendo un elemento piuttosto che un altro, etc. Per lo stesso
+motivo, quando conversiamo con qualcuno o leggiamo qualcosa, ci piacerebbe sapere cosa
+veramente sta pensando o cosa volesseveramente dire chi ha scritto quelle righe. Questo
+meccanismo si riproduce identico quando facciamo ricerca. Anche leggendo un testo del
+passato o osservando un reperto abbiamo la medesima tentazione: cercare di capire cosa
+pensasse chi li ha prodotti. Purtroppo, però, anche in questo caso non abbiamo accesso al
+mondo interiore degli esseri umani che hanno prodotto le testimonianze, le forme, i segni che
+studiamo; vorremmo dunque partire dall’unica cosa che è in nostro possesso, cioè gli oggetti-
+fonte ricostruiti nel modo più rigoroso possibile, per risalire agli oggetti-pensiero,
+all’ispirazione cioè originaria dell’autore, a quel magma di pensieri ed emozioni che, come
+detto, trovano forma solo parziale e ridotta nel testo o nel manufatto che ho dinanzi, pensando
+cioèchelasemplicesommatoriadeidocumentichehoamiadisposizionemipermettadicapire
+tuttigliaspettidiundeterminatoconflittoodiunospecificopassaggiopoliticodiunacomunità.
+Chesitrattidelmessaggiodiuna mailcheabbiamoappenaricevutoodiunrepertodimigliaia
+di anni fa, in entrambi i casi questi segni del pensiero altrui non ci bastano e vorremmo a tutti
+i costi capire cosa c'è dietro.Questo desiderio si scontra però con un dato difficilmente
+contestabile: che il ‘che cosa c’è dietro’ non esiste.Il pensiero che ha ispirato quellamail di
+due giorni fa o quel manufatto antico non è una cosa, un oggetto ma un’esperienza fluida e per
+questo inafferrabile. Io non ho nella mia disponibilità la concezione di pittura di Caravaggio,
+la poetica di Dostoevskij, l’ispirazione di Eric Clapton o il sentimento di un amico che non
+vedo da tempo e che mi scrive che gli manco; hoGiuditta e Oloferne,Delitto e castigo,Layla,
+e unamail, cioè i ‘luoghi’, i prodotti, gli oggetti-fonte nei quali Caravaggio, Dostoevskij,
+Claptoneilmioamicohannotentatodiesprimere,dicondensare,dicostringereiloropensieri
+eleloro‘intenzionicomunicative’edespressive.Neiconfrontidelletestimonianze,dellefonti,
+che siano nobili e del passato o banali e attualissime, io mi ritrovo sempre nella medesima
+condizione: mi confronto con oggetti-fonte che sono senza dubbio manifestazioni di un
+pensiero o di una serie di avvenimenti che le hanno prodotte ma devo accettare che esse non
+possono aiutarmi a ricostruirein totoquel pensiero, quell’avvenimento, quel sentimento come
+se dagli effetti potessi risalire integralmente alla causa.
+Ho dunque gli oggetti-fonte aumentati, ricostruiti cioè - da ma o da studiosi che mi
+hanno preceduto - nel modo più ampio e rigoroso possibile. Cosa farmene, se non posso usarli
+perrisalireall’oggetto-pensierochelihaprodotti?Perunverso,devoprendereattochedinanzi
+a quegli oggetti non c’è un soggettox, informe e indefinito, che li legge ma ci sono io con la
+mia biografia intellettuale e personale, le domande che mi accompagnano perché le ritengo di
+maggior rilievo, le mie inclinazioni culturali. Devo dunque assumere una responsabilità verso
+me stesso, avere la forza di non nascondermi e di ribadire la mia specifica individualità: è, io
+
+===== p.9 =====
+credo,la individualresponse dicuiparlaSmall.Perunaltroversodevochiedermicomequegli
+oggettipossano,tramiteme,interrogareilmiotempo,lecomunitàchevivonodentroefuorile
+università; devo assumere una responsabilità nei confronti di chi mi legge o mi ascolta. È
+questo, io credo, l’invito che emerge dalle parole di Small: quando lavoro con le fonti, dopo
+averle ricostruite, è in gioco la miasubjectivity che deve assumersi l’onere di unaindividual
+response.
+Le Humanities sono discipline istituzionalizzate che studiano , con metodi
+scientifici,lepratiche,delpassatooattuali,conlequaligliesseriumaniproducono
+segnidisé. Questostudiorestituisceunarigorosacontestualizzazionedocumentale
+fondata primariamente sulla risposta del singolo e su un elemento di soggettività
+che non è possibile rimuovere.
+La ricerca umanistica vive sempre di una prima fase, che abbiamo più volte ribadito in queste
+righe e che è per certi versi obbligatoria: la ricostruzione degli oggetti-fonte. A volte tocca a
+noi produrla – quando, per esempio, realizziamo una nuova edizione critica – altre volte
+possiamo affidarci al lavoro di chi è venuto prima. Ma non possiamo mai eluderla: quegli
+oggetti, e il rigore che li fonda, sono il punto di partenza di ogni indagine. È la documentalità
+accurata di cui parla Small, la base senza la quale nulla si regge. Subito dopo, però, liberatici
+dal mito infondato della ricostruzione dell’oggetto-pensiero che sta dietro quelle fonti,siamo
+chiamati a entrare in scena noi, a posizionarci, ad ammettere che stiamo guardando
+quell’oggetto-fonte con gli occhi della nostra biografia intellettuale e personale e che non
+potremmo fare diversamente; ad assumerci una doppia responsabilità: verso noi stessi,
+rivendicandoildirittoaunposizionamentointerpretativounicoeirripetibile,diunasensibilità
+personalenonèunintralciomaunacomponenteessenzialedellavoro;eversoinostripubblici,
+ai quali dobbiamo dar conto del nostro incontro con le fonti. Solo così possiamo vivere la
+ricerca come un percorso che mobiliti davvero tutte le nostre competenze e tutte le nostre
+esperienze. Abbiamo bisogno, per dirla con un neologismo, di una posturaermenetica: di
+ricordare che l’ermeneutica, l’atto interpretativo, è sempre anche un attoetico, una scelta
+valoriale, un’assunzione di responsabilità. Innanzitutto dunque ci serve unaermenetica della
+ricerca, che riguarda noi stessi, il lavoro interiore che svolgiamo quando ci poniamo davanti
+ai documenti. È la responsabilità di tenere insieme il dovere del rigore e il diritto a restare
+soggettisituati,conunastoriaeunasensibilitàchenonvannomessetraparentesi.Èunlavorìo
+interiore, una responsabilità personale e privata, rivolta verso noi stessi, da rivendicare
+individualmente ogni qual volta, di giorno in giorno, quando sediamo davanti al computer, ci
+mettiamo al lavoro e ci poniamo dinanzi all'oggetto del nostro studio. Allo stesso tempo,
+abbiamo però bisogno di unaermenetica della comunicazione, più complessa perché nasce
+dall’apertura verso l’esterno e non dipende solo da noi. È la responsabilità che assumiamo
+quando la nostra voce incontra un pubblico, un ‘noi stessi con’, che si modifica in base a due
+elementi intrecciati: da un lato, la tipologia di pubblico cui ci rivolgiamo; dall’altro, la forma
+deltempoincuiviviamo,ilmodoincuioggisicostruisce,circolaesilegittimalaconoscenza.
+Per questo i capitoli che seguono si aprono con una descrizione del mondo dentro il
+qualecimuoviamo,perpoiinterrogarsisullediverseformedipubblicoconcuisiamochiamati
+a dialogare. Solo chiarendo il contesto in cui abitiamo potremo capire perché una ermenetica
+della comunicazione è, oggi, non unoptional, ma un’urgenza.
+
+===== p.10 =====
+2.
+Contro Don Abbondio. La fine di un modello
+Non siamo più soltanto la società della informazione. Abbiamo fatto di più. Siamo un mondo
+nel quale, per la prima volta nella storia, a tutti è riconosciuto il diritto ed è data la possibilità
+concreta di produrre contenuti informativi attraverso i quali esprimere le proprie idee e
+condividerle con un pubblico potenzialmente globale. È però importante provare a capire, in
+questo capitolo, come siamo arrivati a questo punto e, nel prossimo, quali conseguenze questa
+evoluzione ha prodotto.
+1. Gatekeeping
+In un saggio pubblicato nel 1947, Kurt Lewin si riproponeva di analizzare i meccanismi che
+determinavano le abitudini alimentari della popolazione americana (Lewin 1947). Lewin notò
+che tutti i passaggi della filierache, partendo dalla produzione delle materie prime, arrivava
+fino alla loro preparazione nelle cucine delle famiglieerano presieduti dagatekeeper, da
+‘guardianidelcancello’,valeadireda soggetticheoperavanodellesceltetratutteleopzioni
+possibili: i contadini sceglievano quali semi piantare a discapito di altri; i commercianti
+selezionavano determinati prodotti da vendere, non esponendone altri; chi, in famiglia,
+procedeva con gli acquisti selezionava alcune materie prime e, infine, chi le cucinava
+determinava quali utilizzare e quali scartare. Pochi anni dopo, Lewin provò a estendere questo
+framework interpretativo della filiera alimentare a tutti i processi di trasmissione di beni e di
+informazioni (Lewin 1951). Lo schema illustrato da Lewin, che nel corso dei decenni è stato
+ampliato e ridiscusso dalla comunità scientifica per evidenziare le interazioni che tutti i
+gatekeeper di una filiera hanno tra di loro, descrive dunque ogni processo di trasmissione di
+valore come una selezione, operata a monte dalla fonte, delle informazioni che devono
+raggiungere il destinatario (Shoemaker 1991). Nello specifico, la categoria interpretativa del
+gatekeepingappareparticolarmentefunzionaleperdescriverelanaturasemprestrutturalmente
+gerarchica di ogni rapporto comunicativo: chi trasmette un dato è in possesso di una
+informazione che il destinatario non ha ancora; la fonte è dunque in una condizione di
+controllo del processo di trasferimento di dati perché è lei a decidere quando, come e,
+appunto,quantocomunicarediquellochesa .Raccontareunavvenimentodelqualesièstati
+testimoni o narrare le vicende di un romanzo significa, per esempio, selezionare soltanto gli
+aspettipiùimportantidituttoquantosièvistooletto,quellichechiparlaritienepossanomeglio
+riprodurre, nell’immaginario di chi ascolta, quanto accaduto e che dunque riescano a portare
+a effetto il fine stesso della comunicazione, cioè rendere comprensibile all’altro ciò che sta
+pensandochiparla.Ilrisultatoche,allafinediquestaoperazionedinarrazionemediatagiunge
+a chi ascolta è ovviamente molto distante dall’informazione originaria, perché, come detto
+nella parte finale del primo capitolo, raccontare non equivale a ricostruire tutto ciò di cui si è
+stati testimoni o che si pensa, ma significa condensare avvenimenti durati minuti, ore o giorni
+in pochi secondi di narrazione, o riassumere in dieci righe un testo di centinaia di pagine; se
+cosìnonfosse,unostoricochevolesseraccontaregliavvenimentidiunsecolointerodovrebbe
+impiegare, per farlo, un intero secolo.
+Schematizzando, possiamo affermare che secondo il dispositivo interpretativo
+delineato da Lewin ogni trasmissione di informazioni – dalla più semplice comunicazione
+interpersonale ai grandi processi di divulgazione editoriale – presentatre caratteristiche:
+avviene cioè tramitel’azione di chi, al (1) vertice di una filiera informativa, stabilisce (2) i
+luoghieimomentiincui(3)trasmetteràidatiinsuopossesso (Zeegers-Barron2010). Se
+
+===== p.11 =====
+dunque sono stato unico testimone di un evento, avrò io solo la possibilità (1) di stabilire (2)
+dove e quando dare avvio alla narrazione e avrò anche la possibilità di decidere (3) quanto
+trasferire di quello che ho visto, senza cioè che chi mi ascolta possa intervenire per saperne di
+più o per contestare le mie informazioni (se non affidarsi ad altrigatekeeper, senza dunque
+uscire da quello schema).
+Gatekeeping classico
+verticistico
+localizzato
+unidirezionale
+Questo modello interpretativo è utile per leggere le modalità con le quali, per secoli, ogni
+processo di trasmissione di informazioni è stato strutturato. Dai giornali alle parrocchie, dalle
+sedi di partito alle case editrici e alle famiglie: ognuna di queste filiere prevedeva la presenza
+di un (1) vertice costituito da uno o da pochi (genitori, sacerdoti, giornalisti,leader politici,
+scrittori, etc.) che stabilivano (2) quando e dove (edizioni quotidiane dei giornali, comizi
+organizzati, omelie domenicali, etc.) trasmettere le informazioni in loro possesso in modo (3)
+unidirezionale,senzacioèchecisidovessepreoccuparediqualefosseil feedbackdelpubblico.
+Proviamo ad applicare questo modello al mondo della scuola. Il docente-gatekeeperè, rispetto
+ai suoi allievi, al (1) vertice del processo – perché è in possesso della conoscenza che deve
+veicolareedèconilsuopubblicoinunarelazioneuno/molti–ehailcompitodiselezionarele
+informazioni più rilevanti (per esempio, stabilendo quali opere di un determinato filosofo
+illustrerà ai suoi studenti per restituire loro l’idea della dottrina di quel pensatore). Deciderà
+dunque che, in (2) luoghi e momenti stabiliti (in classe, nell’orario scolastico, etc.) (3)
+trasmetterà frontalmente – senza cioè necessariamente preoccuparsi di ricevere o gestire un
+feedback – ai suoi allievi quelle informazioni, al fine di condurli quanto più vicino a quella
+forma universale dello ‘studente modello’ che rappresenta il fine della sua azione formativa.
+Una struttura dunque del tutto gerarchica e verticistica: il docente decide in modo (1)
+‘monocratico’ (cioè senza dover preventivamente condividere con la sua utenza modi e
+strumenti) come condividere le sue competenze (Rogers 1995), in (2) luoghi e tempi di
+fruizioneprestabilitienonnegoziabiliecosìsiassumelaresponsabilità–culturale,disciplinare
+e, nel senso più ampio del termine, politica – di aprire le porte della conoscenza, trasmettendo
+in modo spesso non ulteriormente discutibile (3) il suo sapere (Cuban 1986).
+
+===== p.12 =====
+2. Platone dal meccanico
+L’ideachel’istruzionema,piùingenerale,lasocietàtutta(intesacomeinsiemediprocessiin-
+formativi e degli attori che li producono o li subiscano) debbano essere gerarchici - chi sa di
+piùguidachisadimeno-caratterizzadasecoliilnostromodellosocialeeaffondalesueradici
+in una precisa questione filosofica, che trova nella riflessione platonica forse il suo archetipo
+più originario e lucido e che vale la pena ricordare in quanto ‘mito fondativo’ di questa
+prospettiva di organizzazione della trasmissione del sapere che ha caratterizzato per secoli la
+nostra cultura.
+Nellepaginedel Teeteto,Platoneattribuiscea Protagoraunatesidivenutaproverbiale:
+“quale ciascuna cosa appare a me, tale è per me; quale appare a te, tale è per te – uomo sei tu
+euomosonoanch’io”(152A).Secondoquestadottrina,laveritànonèqualcosadiindipendente
+dal soggetto, ma coincide con ciò che ogni individuo percepisce o ritiene vero:ognuno è, per
+così dire, misura del proprio mondo . Platone mette alla prova questa posizione
+amplificandone le conseguenze. Se quello che dice Protagora è vero, allora tutte le opinioni
+hanno lo stesso valore. Una simile orizzontalità, che a noi può sembrare spontanea o persino
+democratica,agliocchidiPlatoneèinvecepericolosa:significherebbecheneiconflittipubblici
+o privati prevale non il giudizio più fondato ma quello sostenuto con maggior forza, astuzia o
+abilità retorica. Il dialogo si trasformerebbe così in un’arena in cui ha la meglio non chi cerca
+la verità ma chi sa imporre il proprio punto di vista. Come quando, in una discussione accesa
+per stabilire la larghezza di un tavolo, qualcuno pretendesse di aver ragione solo minacciando
+gli altri. Per evitare questa deriva, Platone sostiene che non tutte le opinioni sono
+equivalenti:alcunesonopiùaffidabiliperchéfannoriferimentoadefinizionistabili,universali.
+Sonoquestedefinizioniafornireilcriteriocomune,l’unitàdimisuracheconsentedigiudicare
+le affermazioni dei singoli. Come se, nell’esempio di prima, qualcuno decidesse di usare un
+metro per superare la serie di misurazioni diverse e personali di quelli che stanno discutendo.
+Secondo Platone,filosofare significa aspirare a cogliere il ‘metro della realtà’, le verità
+universalmente valide. I filosofi avranno dunque una precisa missione politica: intuite quelle
+idee generali (il metro), dovranno diventare igatekeeper della società, la guida per tutti gli
+altri; rotte le catene, usciti dalla caverna per vedere il sole, dovrebbero tornare dai loro antichi
+compagni di schiavitù per governarli (possibilmente senza farsi ammazzare).
+Questo modello verticale e verticistico digatekeeping ha pervaso per secoli l’intera
+organizzazione sociale dell’Occidente, supportato da unmainstream culturale e filosofico
+‘universalistico’ che, dal platonismo al cristianesimo fino all’Idealismo, ha corroborato in
+forme diverse una idea molto precisa: la verità è una e risiede altrove rispetto al mondo
+sensibile;perquesto,essaèappannaggiodiqueipochiche,raggiuntalainunascalataverticale,
+possonoedevono‘gestirne’laridistribuzioneaquantinonriesconoautonomamenteacoglierla
+(Habermas 1988; Berti 1992). La pervasività di tale modello, presente in modo così
+significativo nell’universo della formazione, dell’informazione e dell’educazione, rende il
+gatekeeping la narrazione che, con grande efficacia (Lyotard 1979), ha permesso la creazione
+diunbencompattomodello,pervasivodituttigliaspetti–individualiecomunitari–dellavita
+della società occidentale; ha cioè prodotto un unico, coerente dispositivo di trasmissione di
+contenuti e valori che ha in tutte le agenzie (in)formative replicato, con minimi scollamenti,
+uno schema di controllo e divulgazione centralizzato di informazioni e conoscenze, lasciando
+in un sottobosco sempre minoritario le opinioni personali dei singoli: in un sistema così
+gerarchicamente organizzato attorno a una logica di gatekeeping, non è infatti possibile
+affermare le proprie idee se non scalando la gerarchia (scolastica, editoriale, partititica,
+familiare,etc.)pergiungereadiventare,nelparticolareambitodiriferimento,partedel‘gruppo
+dei gatekeeper’.
+
+===== p.13 =====
+Come è facile intuire, questo modello è diventato, spesso se non sempre,un esercizio di
+potere. Nel secondo capitolo deI promessi Sposisi svolge il celebre dialogo che vede a
+confronto Renzo e Don Abbondio
+“Sapete voi quanti siano gl’impedimenti dirimenti?”.
+“Che vuol ch’io sappia d’impedimenti?”.
+“Error, conditio, votum, cognatio, crimen, cultus disparitas, vis, ordo, ligamen,
+honestas, si sis affinis,...” cominciava don Abbondio, contando sulla punta delle
+dita.
+“Si piglia gioco di me?” interruppe il giovine. “Che vuol ch'io faccia del suo
+latinorum?”.
+“Dunque, se non sapete le cose, abbiate pazienza, e rimettetevi a chi le sa”.
+Don Abbondio (che viene riconosciuto da Renzo come autorità perché ha studiato e perché è
+un prelato, dunque è ungatekeeper a tutto tondo) cita elementi giuridici ‘veri’ (vale a dire
+realmente presenti nella legislazione del tempo) ma per un fine ‘falso’ (cioè non per senso di
+giustizia ma per sviare Renzo). Semplicemente,Don Abbondio usa le sue competenze come
+strumento di controllo, potendo contare sul fatto che solo lui, al vertice della gerarchia
+del sapere, le possiede e che chi lo ascolta non può controbattere ma deve solo subire e
+accettare.
+Èpropriocontroquestadeformazionetossicadelmodellodi gatekeepingchesièmossa
+la cultura europea degli ultimi cinquant’anni del secolo XX, nel tentativo (talvolta definitivo
+genericamente‘postmodernista’)dicancellareogniaspirazioneaunatotalità‘platonica’,auna
+verità cioè che non è nella disponibilità di tutti ma dei pochi che, cogliendola, governano gli
+altri. Nasce l’esigenza cioè di una “esperienza di una rottura o di una crisi” legate a “discorsi
+apocalittici (…) sulla fine dell’arte, la fine della filosofia, della storia, del sociale, del politico,
+etc” (Chiurazzi 2002, pp. 3-4). Si dilegua, in quella prospettiva, l’idea che una ragione
+superiore possa essere norma universale alla quale orientare i comportamenti o le
+interpretazioni dei singoli, ai quali non è più possibile chiedere di rinunciare alla loro identità
+particolareinnomediunapiùgeneralee(gerarchicamente)ordinatasintesi.Dichiarandomorti
+Dio, la teologia, la metafisica, la filosofia, le ideologie, le idee astratte e assolute e, più in
+generale, ogni ‘contenitore’ onnicomprensivo e categorizzante, ogni ‘forma’ ideale sul cui
+altare sacrificare le inclinazioni particolari, la riflessione novecentesca ha voluto sancire la
+conclusione della plurisecolare attitudine occidentale a delegare a un livello normativo
+superiore i destini degli individui, a pensare che i supremi concetti fossero dominio dei pochi
+destinati a comandare.
+Si è così prodotto un effetto paradossale nelle nostre società.Tutte le strutture verticistiche
+del passato(scuola, università, partito, famiglia, chiesa, etc.), pur se criticate aspramente dal
+pensiero novecentesco,sono rimaste pienamente in funzione, con ruoli assolutamente non
+secondari,nelpanorama(in)formativo; esseperòvivonolapiùgrandecrisidellalorostoria
+proprio perché sono state svuotate di senso dall’interno da decenni di decostruzione dei loro
+stessi principi fondativi. Le lezioni scolastiche, quelle universitarie, le iniziative editoriali, la
+grande informazione cartacea e mediale, i partiti politici, la ricerca scientifica: formalmente,
+tutto funziona ancora secondo la stessa logica gerarchica degli ultimi secoli, nella quale chi
+arriva ai punti apicali gestisce i flussi. Ciò che è stato messo in crisi è però il valore assoluto e
+non discutibile dei contenuti che tali agenzie trasmettono e che appaiono meno credibili che in
+passato non perché siano di per sé diventati più deboli ma per la critica feroce mossa alla
+struttura gerarchica e selettiva che li ha sempre resi inattaccabili. Non sono le agenzie
+(in)formative ad aver perso competenze, sono gli utenti a non credere più nel loro valore; e, in
+
+===== p.14 =====
+unsistemagerarchico,bastalarotturadiquestopattodifiduciaperchésaltitutto.Inchesenso?
+Sehobisognodifarripararelamiaauto,mirivolgoaunospecialista,cioèaunmeccanicoche,
+dopo averla guardata, mi informa di quale è il problema e di come va risolto. Io che non ho la
+benché minima nozione di come funzioni una automobile, devo semplicemente fidarmi delle
+sueparoleperchénonhoglistrumentielenozioniperdeterminareselasuadiagnosisiagiusta
+o no. Il meccanico è dunque il miogatekeeper: lui ha le competenze e me le trasmette e io non
+posso far altro che riceverle e accettarle perché non ho le competenze per verificarne la
+fondatezza; tra di noi c’è una relazione gerarchica inevitabile. Questo dispositivo - che noi
+applichiamoquotidianamenteedicontinuo-sireggesuunattodifiducia:nontuttisannotutto
+e quindi, molto spesso, è necessario affidarsi. Se in passato avevo l’abitudine di affidarmi
+tranquillamente al mio meccanico e poi invece, a un certo punto, comincio a non fidarmi più
+di lui o, peggio, della intera categoria dei meccanici, avrò serie difficoltà a far riparare la
+macchina o se, alla fine, cederò alla diagnosi di uno di loro, perché mi serve l’auto, lo farò
+continuando a pensarne male (che ha fatto interventi non necessari, che mi ha estorto più soldi
+diquellicheinrealtàsarebberoserviti,ecosìvia).Ilmiomeccanicoèsemprelostesso:quello
+che sapeva fare ieri lo sa fare anche oggi, così come è sempre la stessa la distanza tra quello
+cheluisaequellocheiononso;sonoiochehorottoquelpattodifiduciae,dunque,homesso
+in crisi quel dispositivo di relazione. È questa, nel nostro tempo,la frattura tra le classiche
+agenzie digatekeeping verticale (consumate dalla ormai erosa fiducia nel concetto stesso di
+gerarchia come dispositivo che di per sé porta valore ai processi)e la contemporaneità, che
+le abita ancora ma le avverte sempre più come cattedrali decadute di antiche coercizioni
+elitaristiche e autoritarie. Ed è in questa intercapedine, in questo scollamento che si è inserita,
+con formidabile potenza, la Rete.
+3. Un mondo nuovo
+Nellaprimafasedellasuaevoluzione,almenofinoal2004,laRetenonsièdiscostatadalla
+strutturadeglialtri mediaclassiciesièdunqueperfettamenteconformataallalorologica
+di gatekeeping verticistico. La necessità di acquistare (a prezzi non modici) spazi suserver
+online, la presenza di pochieditor visuali e la conseguente necessità di apprendere almeno i
+rudimenti di HTML o di linguaggi discripting costringeva infatti quanti volessero utilizzare
+questo nuovomedium o a dotarsi autonomamente di competenze non banali o a rivolgersi a
+professionisti della comunicazione, il che restringeva molto il numero di potenziali creatori di
+pagine Web. Internet rappresentava dunque un luogo di diffusione delle informazioni
+certamente più democratico di quelli che lo avevano preceduto, ma ancora sostanzialmente
+ancorato alle già analizzate logiche ‘classiche’ digatekeeping: (1) pochi soggetti avevano
+infattiglistrumentitecnologicieimezzieconomiciadattiperrealizzaresitiche,permancanza
+di interazione, restavano sostanzialmente delle vetrine, dei canali cioè di comunicazione (3)
+unidirezionale. Ciò non significa che, rispetto aimedia classici, il Web non portasse con sé
+modifiche significative: la fluidità della Rete permetteva infatti di (2) de-localizzare ancor di
+più il processo di quanto non avessero già fatto televisioni e radio, aggiungendo anche una
+asincronicità della fruizione dei contenuti, accessibili in ogni momento.
+
+===== p.15 =====
+Gatekeeping classico Gatekeeping Web
+verticistico verticistico
+localizzato de-localizzato e asincrono
+unidirezionale unidirezionale
+La seconda fase dell’evoluzione del Web ha invece molto più significativamente modificato
+questi aspetti. La nascita delle primechat (come IRC) e deiforum ha infatti permesso la
+creazione di gruppi di utenti che, con un investimento economico e tecnologico minimo,
+interagivanoinmodoliberoeorizzontale.Questasemprecrescentespintaversolacondivisione
+deicontenuti,el’evoluzionedeglistrumenti software,hacondottoallanascita(attornoal2004)
+di pagineWebche non si limitavano a fornire informazioni ma con le quali gli utenti potevano
+interagire. La logicaserver/client ha portato in quegli anni i siti a ‘riconfigurarsi’ in tempo
+realeasecondadellesceltedell’utente,chepotevaselezionare,peresempio,qualiinformazioni
+di undatabasevisualizzare, quali filtri applicare a una ricerca, etc. QuestoWeb2.0 ha segnato
+dunque un deciso cambiamento; se era infatti ancora necessario, per produrre contenuti su
+Internet, possedere una competenza informatica (per esempio, per gestire unblog, unCMS o
+un wiki) ancora ad appannaggio di (1) pochi, il dinamismo dei contenuti dei sitiWeb risultava
+undatoormaidefinitivamenteacquisitoevenivaalcontempogarantita,oltreallapossibilitàdi
+una (2) fruizione de-localizzata e asincrona, anche una maggiore (3) orizzontalità della
+comunicazione tra gli agenti.
+La vera rivoluzione è però dell’ultimo decennio, ed è legata a due fattori: l’enorme diffusione
+dei social network, che si presentano sempre gratuiti e con una interfaccia di produzione
+contenuti semplificatissima, e l’utilizzo didevice portatili che hanno ampliato a dismisura il
+processo di de-localizzazione della produzione e fruizione di contenuti. Gli utenti sono oggi
+infatti in grado di realizzare contenuti gratuitamente e senza competenze pregresse, fuori
+dunque da logiche (1) verticistiche ma in una prospettiva di produzione diffusa. Questi
+contenuti ‘leggeri’ – vale a dire creati senza investimento economico e senza alcuna
+competenza tecnica – non solo, grazie ai nuovidevice, sono disponibili (2) dappertutto e
+sempre, ma diventano luogo di (3) interazione (a volte in tempo reale) tra chi li produce e chi
+li recepisce. Rispetto al modello digatekeeping didattico, comunicativo, politico e sociale che
+ha caratterizzato per secoli l’idea stessa di società occidentale, il modello delWeb e, in
+particolar modo, quello deisocial networkrappresenta dunque una vera rivoluzione. Di quel
+mondo, infatti, l’universo digitale decostruisce completamente la (1) gerarchia comunicativa,
+che viene meno e pone qualsiasi utente in possesso di undevicee di una connessione alla Rete
+nelle condizioni di comunicare le sue idee che possono essere fruite (2) in ogni luogo e
+momento e (3) ‘interagite’, cioè trasmessa e immessa nel flusso della discussione comune.
+Gatekeeping classico Gatekeeping Web Gatekeeping Social
+verticistico verticistico diffuso
+localizzato de-localizzato e asincrono de-localizzato e asincrono
+unidirezionale unidirezionale interattivo
+
+===== p.16 =====
+L’avvento della Rete (in particolar modo nella sua declinazionesocial e nella sua formauser
+friendly che ha estremamente semplificato l’accesso e la creazione di contenuti sublog, siti
+web,etc.)hadunqueriempitoquellaintercapedinecreatasi,allafinedelXXsecolo,‘allespalle’
+degli agenti (in)formativi classici, rompendo, nel giro di pochissimi anni, il monopolio
+plurisecolare di quello ‘sfero’ compatto che aveva unito formazione, informazione ed
+educazione nella condivisione di un identico modello verticale e di potere, rimescolando
+completamente i ruoli assegnati ai diversi attori e creando un ‘mondo nuovo’, che oggi vive in
+parallelo rispetto a quello ‘classico’.
+
+===== p.17 =====
+3.
+I rischi del fai da te. La cultura post-gatekeeping
+Quali effetti ha prodotto la nascita di questo nuovo modello di gatekeeping - diffuso,
+delocalizzato, asincrono e interattivo - nei processi di trasmissione e di diffusione dei saperi?
+Nei giorni immediatamente successivi alla scomparsa di papa Francesco, la sua pagina
+Wikipedia è stata visitata da quasi 600.000 utenti. Tra gli editor che negli anni hanno
+contribuito a realizzarla, emergono i nomi di tre utenti particolarmente attivi: Leopold,
+PasqualeIndulgenza ed Enricowk. In nessuna delle loro pagine utente sono indicati nomi,
+cognomi o dati anagrafici: sulla pagina del primo troviamo solo due stemmi del sacro romano
+impero; su quella del secondo c’è una breve biografia nella quale dichiara il suo interesse per
+la documentazione geografica e per San Pasquale Baylon; nella terza c’è solo una generica
+dichiarazione di interesse per i valori diWikipedia. Se proviamo invece a consultare la pagina
+dedicata a Francesco su un’altra enciclopediaonline, quella dei papi presente sul sito della
+Treccani,troviamochel’autoredellavoceèMassimoFaggioli;unabrevericercasu Googleci
+informa che Massimo Faggioli è uno storico e un teologo italiano, specializzato in storia del
+cristianesimoedelConcilioVaticanoII.ÈprofessorediteologiaestudireligiosiallaVillanova
+University (Philadelphia, USA); è autore di numerosi saggi e collabora con testate
+internazionali comeLa Croix International, Commonweal e Il Regno. Che cosa ci racconta
+questa differenza?
+Nei meccanismi di costruzione dell’opinione pubblica non insistono più, come detto,
+soltanto imedia che adottano un sistema digatekeeping verticistico ma anche isocial e tutto
+l’universo ‘orizzontalista’ della comunicazione. È dunque possibile affermare che
+all’affievolirsi della forza dei grandi ‘monopoli’ ideologici, dei metaracconti che hanno
+caratterizzato la vita deigatekeeper e delle comunità si è accompagnato l’affermarsi di nuovi
+metaracconti, ora comunitari e condivisi. Uno di quelli che, sulla Rete, ha ottenuto maggior
+successonegliultimidecennièsenzadubbio Wikipedia,l’enciclopediagratuitaecollaborativa
+creata nel 2001 da Jimmy Wales e diventata, oggi, il sito di contenuti più letto al mondo. Al di
+là infatti del suo valore culturale e scientifico,Wikipedia è infatti innanzitutto nato come il
+prodotto di un determinato modo di interpretare le potenzialità introdotte, nella gestione dei
+rapporti interpersonali e della produzione di saperi, dalla Rete.
+Nellapaginaufficialedi Wikipediaintitolata‘WhatWikipediaisnot’(dicembre2025),silegge
+una efficace definizione di cosa vuole essere e di cosa invece rifiutaWikipedia:
+Wikipedia is a free online encyclopedia. The amount of information on
+Wikipedia is practically unlimited, but Wikipedia does not aim to contain all
+knowledge. What to exclude is determined by an online community of
+volunteersknownas Wikipedians whoarecommittedtobuildingahigh-quality
+encyclopedia.
+Wikipedia non si propone infatti come semplice prodotto editoriale ma come vera e propria
+‘esperienza comunitaria’: per un verso, è un prodotto editoriale e culturale; per un altro, è un
+organismo sociale. Il prodotto genera l’organismo (perché si diventa wikipediani associandosi
+per costruireWikipedia, e perché è nata primaWikipedia e poi i wikipediani) ma, a sua volta,
+è l’organismo che dà vita al prodotto (perché senza wikipedianiWikipediamorirebbe). Questa
+duplice dimensione (prodotto editoriale di natura enciclopedica e comunità di utenti) è
+
+===== p.18 =====
+certamente centrale per capire logiche e dinamiche di una realtà che vuole esplicitamente
+offrire un servizio culturale ma anche diffondere un ‘modello etico’.
+Nellasuavestedi‘prodottoeditoriale’,ladimensionedigitalerende Wikipediapercerti
+versi il modello ideale di cosa dovrebbe essere una enciclopedia: un insieme di voci capace
+virtualmente di abbracciare tutto lo scibile, senza i limiti di spazio, di aggiornabilità o di
+diffusione solitamente imposti dal supporto cartaceo. Proprio la natura potenzialmente infinita
+dei contenuti diWikipedia rende indispensabileun criterio in virtù del quale sia possibile
+stabilire cosa debba (e possa) entrare tra le voci che essa ospita. In tale ottica, i contenuti
+diWikipedia si pongono in una zona mediana, compresa tra due estremi, entrambi rigettati dal
+primo dei ‘cinque pilastri’ (five pillars), le regole generali elaborate da Wales e poste a
+fondamento della convivenza degli utenti su Wikipedia e delle modalità di produzione e
+revisione delle voci.
+Il testo del primopillar ha una enunciazione particolarmente complessa nella forma:
+Wikipediaisanencyclopedia:itcombinesmanyfeaturesofgeneralandspecialized
+encyclopedias, almanacs, and gazetteers. Wikipedia is not a soapbox, an
+advertising platform, a vanity press, an experiment in anarchy or democracy, an
+indiscriminate collection of information, or a web directory. It is not a dictionary,
+a newspaper, or a collection of source documents, although some of its fellow
+Wikimedia projects are.
+Il testo è caratterizzato da una struttura in massima parte negativa.Wikipedia viene cioè
+descritta solo all’inizio e brevemente per ciò che è, vale a dire un luogo in cui combinare
+informazioni provenienti da altre pubblicazioni; subito dopo però la descrizione indica ciò che
+essa non è. L’elenco delle cose che ‘non sono’ Wikipedia pone dei paletti, un perimetro di
+esistenza che equivale a una definizione per negazione: se tutto ciò che è fuori dai quei paletti
+non èWikipedia, Wikipedia è tutto ciò che è contenuto in quei paletti. Un’enciclopedia non
+può infatti essere né troppo né troppo poco. E dunque, per un verso una voce diWikipedianon
+può limitarsi a essere una semplice definizione da dizionario; la natura stessa di una
+enciclopedia è infatti fornire un minimo di informazioni analitiche sul tema in oggetto. Per un
+altro verso, Wikipedia non può prevedere opinioni o interpretazioni personali, ma solo
+informazioni suffragate da fonti esterne dalla comunità scientifica e dunque tendenzialmente
+neutrali.
+Questo secondo elemento è di essenziale importanza per capire la natura dei contenuti
+diWikipediae,soprattutto,qualesiailmodellodicondivisionedelsapereinauguratodaquesta
+piattaforma, come viene illustrato nel sottoparagrafoWikipedia is not a publisher of original
+thought della paginaWhat Wikipedia is not
+Primary (original) research, such as proposing theories and solutions, original
+ideas, defining terms, coining new words, etc. If you have completed primary
+research on a topic, your results should be published in other venues, such as peer-
+reviewed journals, other printed forms, open research, or respected online
+publications. Wikipedia can report your work after it is published and becomes
+part of accepted knowledge; however, citations of reliable sources are needed to
+demonstrate that material is verifiable, and not merely the editor's opinion.
+È dunque possibile inserire suWikipedia una particolare teoria o una interpretazione su un
+argomento solo se, precedentemente, siano stati pubblicati – secondo i criteri della classica
+editoria scientifica – i risultati della ricerca che hanno condotto a tale acquisizione. Ciò
+significa che Wikipedia è fortemente ancorata, almeno idealmente, alle logiche del sapere
+
+===== p.19 =====
+scientificoufficiale,accademicoinmassimaparte,eallasuafunzionedi gatekeeperqualificato
+e affidabile.Non è dunque possibile, per nessuneditor, esprimere opinioni personali sugli
+argomenti oggetto delle voci; l’unico compito deglieditor – come illustrato ancor meglio
+negli altripillar – è selezionare le fonti più attendibili e sintetizzarle.Wikipedia si delinea
+dunque come un prodotto editoriale che per la sua natura digitale potrebbe essere virtualmente
+infinito ma che non coincide con un catalogo di tutto l’esistente (“Wikipedia is not a directory
+of everything in the universe that exists or has existed”); essa è infatti ristretta all’insieme di
+quelle teorie che la comunità scientifica – o, in generale, fonti identificabili come ‘ufficiali’ –
+ha già dichiarato valide. Per questo,Wikipedia – come illustra ancora il resto della pagina
+‘What Wikipedia is not’ – pur essendo una vetrina e non un produttore di contenuti, non può
+avere nessuna implicazione ‘commerciale’ con la quale cioè pubblicizzare le opinioni
+(soapbox), i prodotti (advertising platform) o le pubblicazioni (vanity press) personali; non è
+un dunque unblog o un palcoscenico in cui ‘vendere’ se stessi, le proprie idee o i propri
+prodotti. Wikipedia è uno strumento che intende raccogliere, organizzare e divulgare
+informazioni affidabili.
+Taliinformazioni–comerecitailsecondo pillar–devono offrireallettoreunquadro
+il più possibile esaustivo delle diverse posizioni espresse dalle fonti in materia. Questo
+principio,descrittocome NeutralPointOfView (NPOV),discendenecessariamentedaquanto
+delineato nel primopillar: una enciclopedia che riporta soltanto informazioni tratte da fonti
+esterne verificate e non originali richiede infatti che si illustrino (representing) sempre e in
+modo proporzionato “all of the significant views that have been published by reliable sources
+on a topic”. Ciò significa che uneditor deve considerare tutti i punti di vista che siano
+supportabili (vale a dire che si fondino su fonti), presentandoli al lettore in proporzione al loro
+peso (weight). Un’opinione risulta infatti avere, per glistandard di Wikipedia, più o meno
+‘peso’ a seconda di quante siano le fonti che la supportano. Esistono così deimajority e dei
+minority viewpointe la classificazione di un’opinione nel primo o nel secondo insieme è dato
+soltanto dalla quantità di fonti scientifiche o istituzionali (Wikipedia non considera come
+maggioritarie le opinioni che sembrano ‘universalmente condivise’ da tutti: “the relative
+prominence of each viewpoint among Wikipedia editors or the general public is not relevant
+and should not be considered”) che supportano le une o le altre. Il peso del numero di queste
+opinionilepone,per Wikipedia,inunagerarchia:tutte(oquasi)vannoindicate,manonvanno
+descritte come paritarie. Affermare per esempio “According to Simon Wiesenthal, the
+Holocaust was a program of extermination of the Jewish people in Germany, but David Irving
+disputesthisanalysis”(èquestol’esempiospecificochepropone Wikipedia)significariportare
+in modo falsato le due opinioni, perché la seconda è, nella letteratura scientifica sul tema,
+nettamenteminoritariarispettoallaprima,mentreinquestaformulazionesembranoequivalersi
+quanto a rilevanza. È dunque questo ilbilancing che uneditor deve applicare: non scartare
+opinioni minoritarie (a meno che non siano evidentemente, cioè, documentabilmente false),
+ma chiarirne il ruolo e il peso, con uno stileneutral, nel novero delle teorie che la comunità
+scientifica ha espresso su quell’argomento. È dunque necessario un lavoro direference, vale
+a dire di ‘collocazione’ delle fonti in un ordine gerarchico che ne consideri il prestigio e
+l’affidabilità. Per questo, laneutrality non va confusa con laobjectivity. Il fine diWikipedia
+non è descrivere una cosa per quella che è (what is) ma per come viene descritta dalle fonti
+(what people have said about it); non è dunque necessario tentare di essere obiettivi, ma
+riportare tutte le opinioni utili.
+Grazie a queste regole, generali ma molto caratterizzanti,Wikipedia si presenta come una
+enciclopedia libera e collaborativa, cioè come erede digitale della lunga tradizione
+enciclopedica che ha caratterizzato la storia della cultura occidentale, e si qualifica per
+l’assenza di linee editoriali imposte dall’alto o dall’esterno, perché ogni voce è frutto di un
+
+===== p.20 =====
+lavoro corale e collettivo.Wikipedia è dunque apertamente e dichiaratamente ‘altra’ rispetto a
+tutte le logiche digatekeeping verticistico che hanno caratterizzato per secoli la produzione di
+contenutieditoriali,valeadirelaselezionedeicontributiedeicontributoriadoperadell’editore
+o del responsabile del progetto editoriale.Wikipedia è ‘libera’ nel senso che permette a tutti di
+contribuirepurchéessisisottoponganoalcriterio,illustratonei pillar,cheimponediutilizzare
+fonti scientificamente affidabili. Come è però possibile esercitare in modo veramente libero
+tale selezione? Nello scrivere per esempio una voce su ‘Platone’ rispettando le regole di
+Wikipedia, l’utente dovràselezionare e riportare, tra i saggi e le monografie dedicate al
+pensiero del filosofo ateniese,le tesi più rappresentative e importanti(primo pillar), senza
+tralasciare di render conto anche di posizioni storiografiche minoritarie (secondopillar); sarà
+poi compito della comunità degli altri utenti verificare che la voce così scritta abbia i giusti e
+‘bilanciati’ riferimenti bibliografici. Occorre dunque domandarsi: secondo quale criterio,
+ovverosia,in base a quale competenza l’utente è capace di scegliere fonti affidabili?Nella
+stessa ottica, come sarà in grado di sapere, all’interno del vastissimo novero di pubblicazioni
+scientifichesuPlatone,qualisianorappresentativedellediversecorrentiermeneutiche,cosìda
+garantire il principio delNPOV? E ancora, in virtù di quale conoscenza specifica la comunità
+sarà in grado di giudicare la scelta e l’estensione delle fonti individuate dall’utente?
+A fondamento della libertà diWikipedia c’è l’ideale di una comunità che controlla se stessa.
+Non c’è un ‘signor Treccani’ che, dall’altro, comegatekeeper editoriale, incarica il prof.
+Faggioli di scrivere una voce su papa Francesco; ci sono PasqualeIndulgenza e Leopold che,
+dal basso, spontaneamente, decidono di farlo. Una comunità dunque nella quale nessuno ha la
+possibilità di far valere i propri titoli scientifici e di vantare una supremazia ‘d’ufficio’; tutti i
+‘wikipediani’ sono sottoposti in egual modo, a prescindere dal fatto che siano luminari della
+comunità scientifica o semplici appassionati, al vincolo della citazione delle fonti. Questa
+regola nasconde una potenziale contraddizione,un ‘cortocircuito-Wikipedia’: se infatti è
+affidata al singolo la scelta di quali fonti citare, non sarebbe necessario essere certi che chi le
+sceglie abbia le competenze necessarie per individuare quelle più opportune? Per rispettare
+l’ottimaintuizionedel NPOVnonènecessarioaveretuttiglistrumentiutiliasaperequalisiano
+lelineestoriograficheessenzialidiundibattito?Eilcontrollochedovrebbeoperarelacomunità
+tanto della qualità delle fonti quanto della loro estensione all’intero dibattito non soffre del
+medesimo difetto di fondo, dal momento che i wikipediani che dovrebbero verificare la bontà
+delle fonti citate non sono tenuti a esibire alcuna forma di competenza per farlo?
+Parlare del cortocircuito-Wikipedia non ha come scopo criticare la creatura di Wales, che è e
+resta non solo una risorsa preziosa di conoscenza ma soprattutto il più grande esperimento di
+creazione condivisa di sapere della storia dell’umanità. Il mio interesse è evidenziare, tramite
+l’esempiodi Wikipedia,unacondizionecheoggiinvestetuttoilnostrotempo:lasanareazione
+alle tante torsioni tossiche del modello verticistico del passato ha prodotto la consapevolezza,
+in tutti, che sia un diritto universale esprimere le proprie opinioni e, soprattutto, condividerle
+con un pubblico potenzialmente infinito. In che modo leHumanities possono dialogare con
+questo ‘universale diritto all’espressione’ che si impone con sempre più forza accanto alle
+classiche agenzie (in)formative?
+
+===== p.21 =====
+4.
+Anacronismo
+Negli ultimi due capitoliho descritto rapidamente la condizione nella quale oggi viviamo
+rispetto al tema della condivisione di contenuti: un mondo che ha criticato con violenza tutte
+le agenzie (in)formative classiche e ha posto come valore assoluto il diritto di tutti di
+partecipare alla costruzione di una infosfera di notizie e saperi. Proviamo a unire i due temi, a
+riflettere cioè sul perché la natura stessa delleHumanities, per come l’abbiamo descritta,
+imponga loro un particolare atteggiamento nei confronti della nostra epoca.
+Alla fine del primo capitolo ho usato un neologismo,ermenetica, per sintetizzare la necessità
+che il nostro lavoro di interpreti si accompagni sempre a una assunzione di responsabilità,
+verso noi stessi (per non disconoscere il ruolo della nostra soggettività) e verso gli altri (per
+ribadire il nostro ruolo pubblico di mediatori tra gli oggetti che studiamo e chi ci legge o ci
+ascolta). Il senso di questa duplice responsabilità emerge a mio parere ancor di più ora, dopo
+aver analizzato, nei capitoli due e tre, quale sia la condizione attuale del mondo della
+trasmissione dei saperi.
+Per secoli, la posizione digatekeepers istituzionali di chi faceva ricerca umanistica garantiva
+autorevolezza: chi parlava da una cattedra universitaria, chi pubblicava con un editore
+accreditato, chi scriveva su una rivista scientifica godeva di una ‘presunzione di competenza’
+chenonavevabisognodiesserecontinuamenteriaffermataperchéleagenzie(in)formativepiù
+forti erano, nella pratica, le uniche voci disponibili per il pubblico. Quel mondo
+monodirezionalenonesistepiù;quellestesseagenzie(in)formative(università, media,editoria,
+scuole, etc.) che prima detenevano un monopolio assoluto sono ancora parte essenziale della
+vitadellenostrecomunitàmanonsonopiùlesoleprotagoniste;sonoimmerseinunecosistema
+nel quale le voci che si contendono l'attenzione del pubblico sono infinite e parlano tutte con
+la stessa facilità di accesso ai mezzi di diffusione. Nonostante questo cambio di paradigma
+globale e radicale, leHumanities lavorano, ragionano e vivono spessissimo come se non fosse
+mutato niente, come se il mondo fosse lo stesso di cinquant’anni fa. In molti casi - non tutti -
+le nostre forme della didattica, le nostre pratiche convegnistiche, i nostri modelli editoriali, il
+nostro rapporto con i territori e le comunità, la nostra relazione con i progressi scientifici e
+tecnologici: tutto sembra, nella maggior parte dei casi, fermo agli anni ‘90 del secolo scorso,
+come se nel frattempo attorno a noi il mondo non fosse cambiato radicalmente, soprattutto
+nella relazione con i saperi. Come ho cercato di illustrare nei capitoli due e tre, il nostro tempo
+è caratterizzato da due elementi, che si innescano a vicenda: per un verso, la possibilità
+concessa a ognuno di creare contenuti per condividere opinioni su scala potenzialmente
+globale; da un altro, l’oceano di fonti a disposizione degli utenti. I due processi, come detto, si
+alimentanoavicenda:piùfontidisponibilisignificapiùargomentiedocumentidacommentare
+per gli utenti che hanno la possibilità, con grande facilità e nessun filtro, di produrre contenuti
+che, a loro volta, diventano nuove fonti per altri utenti, e così via all’infinito. Non c’è più
+bisogno di essere un docente abilitato e assunto da una scuola o da un Ateneo per divulgare la
+propria riflessione su Platone o sulla tragedia greca; basta una videocamera e unaccount
+gratuito suYouTube. Non serve entrare in contatto con un editore o pagare di tasca propria la
+stampaeladiffusionediunapubblicazione;basta Substack(gratuito).Nonabbiamopiù-come
+docenti, al pari di giornalisti, politici,leader religiosi, etc. - l’esclusiva della comunicazione.
+Lo facciamo ancora da scranni privilegiati (perché nell’immaginario diffuso essere ‘un
+
+===== p.22 =====
+professore universitario’ ha ancora un qualche appeal) che però vacillano perché siamo
+anacronistici nella relazione con i nostri tre ‘pubblici’ di riferimento: la nostra comunità
+scientifica,glistudentielestudentesse,iterritori.Inchesenso? Operiamoormaiinuncontesto
+nel quale non abbiamo più ragione ‘a prescindere’, per il semplice fatto di essere chi siamo,
+perché viviamo in un universo nel quale è diventato un valore riconoscersi come co-
+protagonisti dei processi di diffusione, verifica e discussione del sapere. Questo significa che
+non possiamo più immaginarci indifferenti al mutamento culturale nel quale siamo immersi,
+ma che dobbiamo imparare ad accompagnarlo. In primo luogo, nei confronti di noi stessi.
+Siamo anche noi parte di questa epoca dell’esposizione continua, nella quale ogni discorso
+prende forma davanti a interlocutori che non si limitano ad ascoltare ma si aspettano di vedere
+il soggetto che interpreta, non solo l’oggetto interpretato. Ribadire, tra me e me, il mio diritto
+a essere chi sono significa allora superare una sorta digatekeeping interno, quella separazione
+rigida per cui la mia parte ‘nobile’ e oggettiva dominava e quasi censurava la mia parte
+soggettiva.Insecondoluogo,nellenostrecomunitàscientifiche,doveènecessarioriconoscere
+che ogni confronto è sempre anche un incontro tra soggettività che portano con sé scelte,
+ipotesi, visioni del mondo. Non ci misuriamo più - e non avremmo mai dovuto misurarci - nel
+tentativo infondato di arrivare a una verità interpretativa ultima, ma nella capacità di rendere
+conto delle nostre posizioni e di dialogare con quelle degli altri. Poi nelle aule, dove il nostro
+compito non è semplicemente trasmettere contenuti ma incidere sulla formazione di persone
+reali, che reagiscono, domandano, interpretano a loro volta. Ripensare cioè la didattica non
+come atto di consegna, ma come incontro tra soggettività che si costruiscono reciprocamente.
+Infine, nello spazio pubblico, dove ciò che sappiamo ha un impatto diretto sulle comunità che
+abitiamo, nel loro rapporto con informazioni, narrazioni e memorie collettive, contribuendo a
+costruire forme di orientamento critico in un ecosistema informativo frammentato e instabile.
+
+===== p.23 =====
+5.
+Un nuovo modello editoriale. LeHumanities e l’Open Access
+La comunicazione all’interno delle comunità scientifiche ha una finalità soprattutto
+tecnica; è cioè finalizzata a uno scambio e a una condivisione di dati emersi delle varie
+indagini, grazie alla quale far sì che la ricerca in quell’ambito possa progredire grazie alla
+messa a fattor comune degli sforzi e dei risultati dei singoli. Molto spesso, però, le modalità
+con le quali si realizza questa relazione di scambio testimoniano una finalità diversa da quella
+di una condivisione utile al progredire della ricerca; convegni, seminari e pubblicazioni
+sembrano infatti, il più delle volte, delle passerelle un po’ fini a se stesse, fatte perché il
+finanziamento ricevuto per quel progetto lo richiede, perché chi organizza una certa iniziativa
+ne aveva politicamente l’esigenza o anche solo perché la vita di una determinata società
+scientifica richiede degli appuntamenti periodici proprio per mostrare che quella vita
+associativa c’è. La sensazione cioè nell’assistere a questi appuntamenti è che, nella maggior
+parte dei casi,al pubblico di colleghi e colleghe interessi e serva molto poco quello che
+dicono gli altrie che tutto si limiti a una serie scollegata di interventi, sopportati dal pubblico
+in attesa di un liberatoriocoffee break, vero punto nevralgico di ognikermesse scientifica. Le
+comunità accademiche hanno cioè perso di vista (posto che l’abbiano mai avuta nel loro
+orizzonteculturale)l’ideacheunconvegnoounapubblicazioneservonononpermettere bullet
+point nel proprio curriculum ma per condividere conoscenze nell’interesse e per
+l’avanzamentodelsapereditutti .Abbiamocioèsmarritoladimensionevalorialedellanostra
+comunicazione interna, l’idea cioè che quando scrivo o faccio untalk ho una responsabilità,
+neiconfrontidell'oggettochestudio,dimestessoedellacomunitàallaqualeparlo. Intervenire
+o scrivere solo per dire ‘io c'ero’ oppure organizzare un evento solo per dire ‘l’abbiamo
+fatto’ significa tradirli tutti e tre.Tradisco l'oggetto, perché invece di illuminarlo lo uso
+come pretesto per la mia visibilità; tradisco me stesso, perché riduco il mio lavoro intellettuale
+a una performance sociale; tradisco la comunità, perché sottraggo tempo e spazio a un
+confronto che potrebbe essere fecondo e lo sostituisco con una presenza inerte. Un caso
+esemplare di questa forma di relazione scientifica incapace di guardare all’effettività è il
+modello editoriale che, nella stragrande maggioranza dei casi, il mondo umanistico continua
+ad adottare.
+In untalk tenuto a Parigi nel 2018 alDARIAH Annual Event on Open Science, Jon Tennant
+(paleontologo inglese impegnatosi per anni come open science advocate e tragicamente
+scomparso nel 2020) ha fornito una definizione sintetica ma efficace di cosa vuole
+descrivere l’espressione ‘scienza aperta’.
+When we talk about what open science is, it really is just better science; and
+theoppositeofopenscienceisjustbadscience,becauseifyou’renotsharing
+in a transparent manner, then you’re basically creating anecdotes rather than
+research.
+Cosa significa che il contrario della scienza aperta non è la scienza ‘chiusa’ ma una cattiva
+scienza o, per dirla meglio, una non-scienza? Riprendendo, con queste parole, le intuizioni di
+Mick Watson (Watson 2015), Tennant invita a riflettere su cosa sia la ricerca scientifica e,
+soprattutto, su quale sia il suo vero fine, denunciando un paradosso terminologico
+particolarmenteinteressante.Conl’espressione‘scienzaaperta’sifainfattidisolitoriferimento
+a una ricerca scientifica i cui risultati hanno due caratteristiche principali:
+
+===== p.24 =====
+- Sono liberamente accessibili a tutti, senza restrizioni di tipo legale, economico
+o tecnico.
+- Possono essere riutilizzati per qualsiasi scopo, anche commerciale, purché
+venga citata la fonte.
+Ciò significa che una ricerca ‘aperta’ condivide non solo le pubblicazioni - quello che di solito
+chiamiamo open access- ma anche tutti i dati raccolti durante la ricerca comeopen data. Il
+puntostaqui:questaèladefinizionediquellaricercascientificachechiamiamo‘aperta’onon
+dovrebbe essere piuttosto la descrizione diogni ricerca scientifica?Fare ricerca scientifica
+significaprovareadoffrireall’umanitàunaconoscenzamiglioredicomeèfattoilmondo
+in cui viviamo, macro e microscopicamente; di come funzionano il nostro organismo, i nostri
+pensieri e quello che proviamo; di come è possibile regolare la nostra vita di comunità. Per
+questolascienzanonpuòessereunaimpresaindividuale:troppocomplessaperportarlaavanti
+da soli e troppo preziosa per esser fatta nell’interesse di pochi. La scienza, se è veramente
+scienza, è aperta: perché tutti quelli che hanno competenze devono poter contribuire
+collaborando e i risultati devono essere accessibili e utili per tutti. Come posso garantire il
+massimo progresso se i ricercatori non condividono i loro risultati in modo semplice e
+immediato? Come posso ottenere progressi a beneficio dell’umanità nel più breve tempo
+possibile se lavoro a porte chiuse, senza condividere i miei processi e risultati con la comunità
+scientifica, con il rischio che molte persone lavorino sullo stesso argomento ignorando
+reciprocamente i fallimenti e successi altrui, sprecando tempo e risorse? Se nel nostro
+linguaggiocomunecontinuiamoaparlaredi‘scienza’edi‘scienzaaperta’, ilnostroobiettivo
+concreto dovrebbe essere una distinzione chiara tra ‘cattiva scienza’ e ‘scienza’.
+L’espressione‘scienzaaperta’nondovrebbepiùesistere. Messa così, cioè dopo aver
+chiarito che la scienza o è aperta o non è scienza, viene da chiedersi ovviamente perché non
+tutta la scienza sia aperta; perché cioè si continui a tenerla ‘chiusa’. Per capirlo, e per capire
+cheruolohannole Humanitiesinquestocontesto,èutileparlaredeidueaspettiprimaricordati:
+gli open data(cioè la condivisione dei dati della ricerca) e l’open access(la condivisione dei
+risultati pubblicati della ricerca).
+1. Il costo dei dati
+Il concetto di ‘dati’ è così ampio da essere difficilmente racchiudibile in una definizione; in
+generale, possiamo intendere, in questa sede, per dati,le informazioni che una ricerca
+scientifica produce analizzando gli oggetti di suo interesse. L’insieme di questi dati forma
+dei dataset: un team di biologi può costruire, come dataset, una raccolta strutturata di
+espressioni geniche in diversi contesti medici, così come ildataset di un gruppo di fisici può
+essere costituito dalle registrazioni degli eventi di collisione in un acceleratore di particelle.
+Allo stesso modo, un manoscritto, un documento d’archivio o una serie di informazioni socio-
+economiche sono gli oggetti dalla cui analisi creanodatasetun filologo, uno storico-archivista
+o un filosofo critico. Il problema di una sceltaopen si pone già qui, nella considerazione -
+banale ma essenziale - chei dati non si producono da soli. La ricerca scientifica non è
+un’entità astratta ma esiste nella misura in cui esistono i soggetti che la portano avanti, e cioè
+ricercatriciericercatori.C’èdunqueunprimocostocheèamontedelprocesso:perchécisiano
+deidatic’èbisognochequalcunostudiglioggettidicompetenzadiquelladisciplinaeproduca
+risultati sperimentali e questo qualcuno va pagato. Una volta sostenuto il primo ‘prezzo’ della
+ricerca, cioè i fondi necessari a pagare chi materialmente la fa, dobbiamo preoccuparci dei
+costi di funzionamento di un lavoro di ricerca. Approssimando per difetto, si può per
+esempiodirecheunlaboratoriodibiochimicadicirca120mqdeveinvestirepiùomeno10.000
+
+===== p.25 =====
+euro all’anno solo di manutenzione, tra i 20.000 e i 30.000 euro l’anno di consumabili e
+reagenti, più almeno altri 10.000 euro per il materiale di consumo di strumentazioni di altre
+strutture, per un totale che non scende mai sotto i 50.000 euro annui. Il che significa che per
+ottenere i dati che mi interessano, devo quantomeno investire ogni anno quella cifra. Stesso
+discorso lo si può fare, per esempio, per una campagna archeologica in termini di strumenti di
+scavo e di rilievo,computer,software, materiali di conservazione, spese di mantenimento e di
+trasporto in situdel team, servizi base come acqua ed elettricità e così via.
+Costa dunque pagare chi fa ricerca; costano materiali, metodi e strumenti di indagine.
+Costa dunque avere le persone, ilknow howe le strutture per produrre i dati sui quali lavorare.
+Chi investe questi fondi?Nel Handbook of Public Research Funding(Lepori et alii, 2023),
+un team di studiosi analizza non solo la quantità e la qualità del finanziamento pubblico della
+ricerca ma anche il suo impatto ‘di ritorno’ sulla comunità che la finanzia. Dopo la Seconda
+Guerra Mondiale, con l'aumento dell'importanza della conoscenza per la società e l'economia,
+i governi hanno individuato nel finanziamento della ricerca un nuovo compito fondamentale
+dello Stato. Nel 2020, i governi dell'OCSE hanno investito 497 miliardi di dollari in ricerca,
+cifraraddoppiatanegliultimiquindicianni.Illivellodirisorsepubblicheinvestitenellascienza
+varia ovviamente tra i diversi paesi, a seconda dei contesti di partenza, delle ambizioni dei
+governi, delle convinzioni dei leader politici sul ruolo dello Stato nei sistemi di ricerca e
+innovazioneedellesingolesceltedi governancedeiprocessidiricerca(Martin2016).Alnetto
+di tali differenze strategiche,le tipologie di finanziamento della ricerca pubblica possono
+strutturarsi in due segmenti: per un verso le sovvenzioni e i finanziamenti programmati in
+modo uguale e paritario tra le diverse istituzioni (comunemente definiti ‘a pioggia’); per un
+altro, una modalità ‘competitiva’ di attribuzione dei finanziamenti.
+Per anni, il modello di finanziamento pubblico più diffuso - in special modo in Italia -
+èstatoilprimo(unmodello‘orizzontale’disovvenzioniconcesseatutti),chehaspessoportato
+a effetti distorsivi.Il finanziamento pubblico non competitivo, nella sua dimensione ‘a
+pioggia’,cioèugualepertutti,hainfattiprodottounapigrizianocivaperlaricercastessa ,
+una stagnazione che il modello competitivo è stato chiamato a risolvere, inserendo una
+percentualesemprepiùaltadifinanziamentosubasepremiale.La‘cura’rischiaperòdiportare
+il sistema all’eccesso opposto, cioè a una forma di iperattività finalizzata solo al
+raggiungimento delle forme di finanziamento, in una prospettiva di corto e limitato respiro.
+Indirizzarsi verso un modello competitivo, tanto di natura pubblica quanto di origine privata,
+porta evidenti conseguenze nella vita delle istituzioni accademiche (Checchiet alii2019; Xu
+2021): per un verso, ha significativamente orientato la visione deiteamdi ricerca, inducendoli
+asceltemoltoprecise,tantointerminidimodalitàesedeeditorialedellepubblicazioni,quanto
+nella delineazione delle research agendas, che devono necessariamente tentare di essere
+appetibili; per un altro, ha incentivato il sistema di reclutamento delle accademie a produrre
+ancor più precariato, perché gareggiare implica la necessità di molta manodopera che però il
+sistemapoinonpuòassorbireinmododefinitivo.Unoslittamentosemprepiùmarcatodunque
+verso forme diacademic capitalism(Yilijoki 2003), cioè verso quell’insieme di azioni volte
+adattrarreentrate,pubblicheoprivate, adottandopratichesimiliaquellidimercato(Slaughter
+eLeslie1997) .Iltemadunqueèladifficoltàdiunvirtuoso balancingtraaspirazioni‘alte’della
+ricerca e compromessi con i finanziatori (Ylijoki 2000), in un processo che rischia spesso di
+avvitarsi su se stesso: una istituzione di ricerca forte, con una base di finanziamento iniziale
+significativa, avrà infatti più mezzi per meritare premialità e per primeggiare nei bandi
+competitivi pubblici e più possibilità di ‘curvare’ le proprie indagini verso le esigenze del
+mercato;intalmodo,incasseràpiùfondidellealtreistituzioni,consolidandocosìunaposizione
+egemone progressivamente sempre più inscalfibile. Il problema è infatti che il modello
+competitivo, di per sé positivo perché spinge i ricercatori alle miglioriperformance (Stern
+2016), parte - come appena detto - da evidenti sperequazioni, non solo traplayer privati e
+
+===== p.26 =====
+pubblici ma all’interno dello stesso sistema pubblico; se produrre i dati costa e le istituzioni
+devono fare a gara per essere le migliori nei contesti competitivi (pubblici e privati), una
+dotazione significativa iniziale in termini di risorse e, dunque, di strumentazione o di materiali
+di lavoro concede in questi casi vantaggi posizionali non solo decisivi ma che si
+autoriproducono, aumentando nel corso del tempo la forbice: chi ha più finanziamenti iniziali
+vince in media più finanziamenti degli altri e così via.In questo contesto risulta difficile
+pensare a una apertura dei dati; nessuno ha infatti interesse a condividere le informazioni
+che ha costruito e sulle quali sta lavorando quando pensa di poter usare la loro riservatezza
+comevantaggioposizionale. Averepiùinformazionisignificaprodurreunaricercapiùpiù
+‘vendibile’ e, dunque, più premiabile. Una condivisione deidataset avrebbe senso soltanto
+in una condizione di equilibrio delle dotazioni di partenza delle istituzioni di ricerca. Solo a
+quelpuntocondividereinformazionenonsignificherebberischiarediperdernelapaternitàela
+‘monetizzabilità’ (intesa in termini di profitto ma anche di vantaggio competitivo) ma,
+esattamente all’opposto, allargare la base di dati condivisa sulla quale tutti lavorano, così da
+far emergere chi, a parità di mezzi e didataset, riesce a produrre risultati migliori.
+Non è nel potere dei singoli ricercatori o dei gruppi di ricerca modificare questo stato
+delle cose ma delle istituzioni. Tanto più è ‘costosa’ una ricerca quanto più essa dipende dalla
+volontà - politica - degli Stati di finanziarla per evitare che essa venga fagocitata in un sistema
+competitivo ad extranel quale il rischio di una ricerca eccessivamente curvata verso interessi
+di corto respiro è fortissima.
+2. Aprire le pubblicazioni
+Non è dunque nel potere di chi fa ricerca decidere quanto finanziamento pubblico
+riceveranno le istituzioni nelle quali lavorano; in parte, non lo è nemmeno la scelta delle
+modalità con le quali si rendono accessibili ai varistakeholdersi risultati della propria ricerca,
+perché oggitantissime pubblicazioni accademichesi muovono in uncircuito vizioso. Un
+ricercatoreoun teamarrivanoanuovirisultatie,perragionidicarriera,diprestigioedicrescita
+della propria comunità scientifica, hanno tutto l’interesse a diffonderli. Li trasformano quindi
+in un prodotto pubblicabile: unpaper o una monografia da inviare a una rivista o a un editore.
+A questo punto, si aprono due possibili scenari. Se si tratta di una monografia, l’editore chiede
+un contributo economico per la pubblicazione (che il volume sia cartaceo a pagamento o
+digitaleopenaccess noncambia);ilricercatore,purdipubblicare,finanzial’editore.L’editore,
+unavoltapubblicatoillibro,applicaunprezzodicopertinaericavatuttigliintroiti,riservando
+raramente all’autore una quota e comunque sempre bassissima. Se invece si tratta di unpaper,
+alcune riviste non richiedono contributi agli autori, ma si riservano il diritto di vendere il
+volume finale senza corrispondere alcun dividendo ai ricercatori. Se invece la rivista èopen
+access,spessorichiedeuna feeagliautoripercompensareilmancatoguadagnoderivantedalla
+distribuzione gratuita.
+Cosaemergedaquestoquadro?Qualeèilcontributodeiricercatoriequalequellodelle
+case editrici? Il ricercatore ha realizzato la ricerca, ha scritto il testo, paga le spese di
+pubblicazione, non ricava nulla dalla vendita dei volumi e, quando non sonoopen, non ha
+nemmeno il diritto di mandare in giro una copia digitale di quello che lui ha scritto. Ha
+ricercato,hascritto,hapagatoenonèpadronedimandareauncollegailPDFdiquellocheha
+pubblicato. La casa editriceimpagina il testo, lo stampa (o produce ilfile) e lo distribuisce
+(fisicamente oonline); si comporta cioè come una tipografia che non mette nel prodotto
+nessun valore aggiunto, se non un minimo di lavoro materiale, e che si ritrova in mano non
+solo un prodotto vendibile a untarget di mercato molto ben definito ma lo fa, fuori da ogni
+logica imprenditoriale, con le spalle coperte: nel caso di eventuali pubblicazioni-flop, c’è
+comunque il finanziamento già ricevuto in anticipo. Chi mette valore in questo processo? Chi
+
+===== p.27 =====
+investe soldi? Chi è veramente indispensabile? Chi ci guadagna solo per aver fatto un po’ di
+mise en pagee per aver gestito il magazzino ordini?Se ci fosse un modo per far sì che il
+ricercatore, una volta scritto il testo, potesse direttamente distribuirloonline in modo
+libero, che bisogno ci sarebbe di una intermediazione della casa editrice? L’open access
+è quel modo.
+La storia dell’open accessè strettamente legata alla rivoluzione, in termini di diffusione del
+sapere, data dalle nuove tecnologie digitali e soprattutto dalla Rete.Uno dei primi e più
+significativi esempi di questa visione è stato il progetto arXiv, avviato nel 1991 da Paul
+Ginsparg. Questa piattaforma consentiva ai fisici di condividerepreprint delle loro ricerche,
+accelerando notevolmente la diffusione delle nuove scoperte.La formalizzazione dell'Open
+Access come movimento globale può essere fatta risalire atre dichiarazioni fondamentali:
+- La Dichiarazione di Budapest sull'Open Access (2002). Questa dichiarazione
+ha segnato la prima volta in cui il termineOpen Access è stato utilizzato
+ufficialmente,definendoduestrategieprincipaliperlasuarealizzazione:l'auto-
+archiviazione (green OA) e le riviste OA ( gold OA). Ha sottolineato
+l'importanza di rendere la ricerca scientifica disponibile gratuitamente su
+Internet, consentendo a chiunque di leggere, scaricare, copiare, distribuire,
+stampare, cercare o fare riferimento al testo completo dei documenti.
+- La Dichiarazione di Bethesda sull'Open Access Publishing (2003). Ha fornito
+ulteriori dettagli sull'OA, focalizzandosi sul modello di pubblicazione e
+sottolineandol'importanzadellalicenzad'usodellepubblicazioni,chedovrebbe
+permettere l'uso libero e senza restrizioni dei contenuti.
+- La Dichiarazione di Berlino sull'Open Access al patrimonio culturale e
+scientifico(2003).Haampliatoulteriormenteiprincipidell'OAincludendonon
+solo la letteratura scientifica ma anche il patrimonio culturale, sostenendo
+l'accesso aperto a tutti i materiali della ricerca.
+Dal momento delle dichiarazioni fondamentali, il panorama dell'OA ha visto una rapida
+evoluzione e diversificazione. Le rivisteOA, in particolare, sono cresciute esponenzialmente,
+con migliaia di nuovi titoli che vengono lanciati ogni anno in una vasta gamma di discipline.
+Queste riviste sono ora una componente essenziale del sistema di comunicazione scientifica,
+con importanti editori sia tradizionali che specificamente dedicati all'OA che forniscono
+piattaforme per la pubblicazione di ricerca senza barriere. Parallelamente, si è assistito alla
+proliferazione direpository OA, sia istituzionali che tematici, che consentono agli accademici
+di depositare i loro lavori, rendendoli accessibili a un pubblico globale. Non solo. Diverse
+piattaforme, anche istituzionali, è oggi possibile fondare riviste e collane editorialionline a
+costo zero e che dunque non hanno necessità di chiedere alcunafee agli autori per pubblicare
+contributi. Perché allora (r)esiste ancora l’editoria cartacea a pagamento? Molti ricercatori -
+spesso quelli piùâgés - non esplorano l’OA o perché banalmente non lo conoscono o perché
+‘hanno sempre fatto così’. Nel 2016 John Bohannon pubblicò sulmagazine di Science un
+articolo dal titolo molto significativo: “Who's downloading pirated papers? Everyone”
+(Bohnannon 2016). Ci sono oggi solo due categorie di studiosi che affermano di non usare
+piattaforme come Sci Hub o Libgen per procurarsi testi in formato digitale e scaricabili
+gratuitamente: quelli che non sanno che è possibile farlo e quelli che mentono. Spesso, però, i
+ricercatori che usano, anche in modo massiccio, queste piattaforme illegali sono i primi che si
+oppongono a un passaggio a una editoria ‘aperta’, paventandone dei fantomatici rischi. Al di
+làdiquestainerziac’è,però,unsostanzialeostacolopoliticoalladiffusionedell’ OA.Permolti
+altri,soprattuttoipiùgiovanichelegittimamenteaspiranoafarecarriera, lepubblicazioni OA
+
+===== p.28 =====
+sono ideologicamente appetibili, perché più vicine ai loro tempi di interazione con i
+colleghi, ma non sono ancora politicamente agibili; le case editrici classiche ospitano infatti
+ancora collane e riviste di prestigio, spesso qualificate nella diverse ‘fasce’ di merito che
+permettono, nei vari processi di abilitazione e valutazione, di avere punteggi migliori. Il
+paradosso è dunque che i ricercatori più giovani avrebberoknow howe volontà di supportare
+l’OA ma non possono sceglierlo perché ne risentirebbe la loro carriera; i ricercatori che hanno
+già fatto carriera e che, dunque, non avrebbero nulla da perdere nell’investire nell’OA, sono
+così legati al vecchio modello - o conoscono così poco le possibilità del nuovo - da voler in
+buona sostanza morire con lui.
+3. Humanities d’avanguardia
+Riprendiamo il filo che abbiamo costruito nei paragrafi precedenti. Abbiamo chiarito che
+‘scienzaaperta’nonèun’etichettaideologica,maunadescrizioneoperativadi‘buonascienza’;
+abbiamo poi visto che i dati hanno un costo elevato (persone, attrezzature, processi) e che le
+asimmetrie di finanziamento alimentano strategie di chiusura opportunistiche; abbiamo infine
+descritto come il circuito editoriale tradizionale spesso trasferisca valore dal ricercatore
+all’editore, rallentando la circolazione dei risultati. Riassumendo, potremmo dire che chi fa
+ricerca oggi per un verso non ha il potere politico di decidere che le condizioni di partenza tra
+le varie istituzioni di ricerca siano pari, in particolar modo dal punto di vista finanziario; per
+un altro, ha difficoltà a uscire da un modello editoriale chiuso, un po’ per inerzia un po’ per
+debolezzacontrattuale. Farericercaapertanonconvieneperchécondividereidatisignifica
+perdere vantaggi in un sistema competitivo che parte da posizioni non equilibrate e
+perché non ci sono ancora sedi editorialiopen che garantiscano chi fa ricerca nelle loro
+progressioni di carriera.
+Nonostante questa condizione di apparente impotenza, è necessario ribadire un punto
+‘ideologico’ non più negoziabile: anche se i costi di gestione delle ricerca, da quelli di
+reclutamento a quelli di gestione, sono alti,quando la ricerca scientifica è pubblica, i
+risultati che raggiunge sono patrimonio pubblico, di chi quella ricerca l’ha già pagata con
+le sue tasse che stipendiano i ricercatori e finanziano le strutture. Tutta la comunità è dunque
+difatto‘committente’diquellaricercaedeisuoirisultatienonèlecitochesenefacciaunuso
+‘privato’ e non accessibile. La condivisione deidataset e, soprattutto, quella aperta e gratuita
+deirisultatiinformato openaccess,nonpuòessereunaopzioneinunaindaginefinanziatacon
+fondi pubblici, nemmeno quando tale apertura sembra portare alla perdita di una posizione di
+vantaggiointerminicompetitivi. Nellaricercapubblica,chiudereidatiperguadagnareun
+vantaggioononpubblicareinmodoaccessibileèunaoperazionesemplicementeabusiva .
+‘Aprire’lascienzasignificarestituireirisultatidellaricercaachil’hapagatainanticipoesulla
+fiducia.
+In questa ottica, è ancora più insensato che leHumanities non sianoopen by default.
+A differenza di altri settori scientifici, che possono contare anche supartnership industriali o
+su interessi commerciali diretti (che in parte giustificano ‘chiusure’ nella diffusione dei dati),
+la ricerca umanistica è prevalentemente se non esclusivamente sostenuta con fondi
+pubblici. È raro che un’azienda privata investa in un’edizione critica di un codice medievale
+o nella digitalizzazione di un archivio storico: la comunità nel suo complesso, attraverso le
+tasse, è la principale committente di questo tipo di indagini. Da ciò deriva che i risultati della
+ricerca umanistica, ancor più di quanto non valga per tutti gli esiti delle indagini
+accademiche, non possano essere privatizzati o recintati: appartengono già, di diritto,
+alla collettività che li ha finanziati.
+La seconda caratteristica riguarda la finalità stessa degli studi umanistici. Riprendiamo
+ancora una volta la definizione che abbiamo costruito a partire dalle idee di Hellen Small. Le
+
+===== p.29 =====
+Humanities non hanno come obiettivo principale la produzione di beni immediatamente
+spendibili sul mercato, come la tecnologia; siamo pagati dai cittadini per una migliore
+comprensione e l’interpretazione delle pratiche dell’umano: testi, immagini, documenti,
+manufatti, testimonianze. Non c’è quindi alcuna ragione economica stringente che giustifichi
+la chiusura di dati e risultati, come invece può accadere in altri campi in cui la brevettabilità o
+latrasformazioneinprodotticommercialigiocaunruolodecisivo. Laricercaumanisticanon
+è pensata per essere venduta ma per essere condivisa come patrimonio culturale, come
+esperienza di conoscenza(Nentwich & König, 2014). Proprio per questo, la chiusura dei dati
+edellepubblicazioninelle Humanitiesnonhaalcunapossibilegiustificazioneeconomica.Non
+c’è una proprietà intellettuale da proteggere in vista di un ritorno commerciale immediato, né
+un interesse industriale che giustifichi la riservatezza. Al contrario, la chiusura diventa un
+ostacolo: rallenta la circolazione delle idee, riduce la possibilità di confronto e impedisce che
+la comunità scientifica (e la società più ampia) benefici pienamente dei risultati raggiunti.
+Mentre in altri campi la tensione tra apertura e mercato genera dilemmi complessi, nel caso
+delle Humanities questa tensione è molto meno rilevante. L’apertura non solo non comporta
+una perdita di valore, ma anzi consente di accrescere il valore sociale, educativo e culturale
+della ricerca. Quando le pubblicazioni e idataset vengono messi a disposizione di tutti,
+aumentano le possibilità di riuso, di contaminazione interdisciplinare, di partecipazione da
+parte di comunità esterne all’accademia. In sintesi, le Humanities non hanno nulla da
+guadagnare dalla chiusura, ma hanno moltissimo da guadagnare dall’apertura. La loro
+vocazione non è quella di produrre beni vendibili, bensì dicostruire beni comuni, che a volte
+generano, come indotto, anche profitti. Al contrario, nel caso delleHumanitiesla condivisione
+deidatiedellepubblicazioninonindeboliscelaposizionedelsingoloricercatoreodelgruppo,
+ma contribuisce a rafforzare l’intero sistema, moltiplicando le possibilità di confronto e
+accelerando i processi interpretativi. Una ricerca sempre già pagata dalla comunità che dalla
+chiusura non può guadagnare niente nemmeno in termini economici: le Humanities non
+possonocheessere‘aperte’perchénullalegiustificaaunmodellodicondivisionedellaricerca
+diverso.
+4.Aprire con consapevolezza
+Se dunque è necessario che le materie umanistiche, proprio per i motivi ricordati (la natura
+pubblicadeilorofondiedeilorooggettielanoncommerciabilitàdeilororisultati),sipongano
+come apripista, nel mondo della ricerca accademica, di una convinta e completa adesione al
+modello open (Tennant, 2018; Suber, 2012),questa apertura non può essere ingenua né
+indiscriminata:occorrericonoscereicasiincuidatiematerialirichiedonocauteleparticolari,
+stabilire gradi diversi di apertura, prevedere infrastrutture adeguate e coprire i costi necessari.
+Molti materiali ‘umanistici’ contengono infatti dati sensibili o personali: si pensi
+alle fonti di storia orale, agli epistolari moderni, alle interviste etnografiche. In questi casi
+l’accesso non può essere totale e immediato. È necessario prevedere strumenti come
+l’anonimizzazione, gli embargo temporali o forme di accesso mediato, che proteggano i
+soggetti coinvolti senza rinunciare alla condivisione. Un secondo ambito riguardai diritti di
+terzi e la proprietà intellettuale. Immagini, riproduzioni museali, audiovisivi contemporanei
+nonsemprepossonoessereliberamentedistribuiti:l’aperturapassaalloraperunlavoroattento
+di clearing dei diritti e per l’uso di licenze trasparenti (Creative Commons su tutte) che
+chiariscanociòchesipuòfareeaqualicondizioni(Willinsky,2006).C’èpoilaquestionedella
+tutela del patrimonio culturale. Rendere pubbliche le coordinate precise di un sito o i dati
+dettagliatisurepertisensibilipuòesporrealrischiodisaccheggietrafficiilleciti.Inquesticasi
+la logica open va bilanciata con strategie di protezione: condivisione solo parziale delle
+informazioni, accessi riservati a comunità scientifiche qualificate, descrizioni a livello di
+
+===== p.30 =====
+dettaglio compatibile con la salvaguardia dei beni. Infine, non va dimenticato il tema della
+sovranità culturale: in vari ambiti delleHumanities – dall’antropologia agliHeritage Studies
+– la ricerca produce o tratta materiali di comunità indigene o minoritarie. Qui non basta
+applicare i principi FAIR (Findable, Accessible, Interoperable, Reusable): occorre integrare
+anche i principi CARE (Collective benefit, Authority to control, Responsibility, Ethics), che
+riconoscono il diritto delle comunità stesse a decidere in che forma e a quali condizioni i loro
+dati e le loro testimonianze possano essere condivisi (Carroll et al., 2020).
+Queste accortezze ci aiutano a ricordare sempre che ‘aprire’ le Humanities è
+necessario ma non gratuito . Rendere accessibili dati e pubblicazioni non significa
+semplicemente premere un tasto e caricare fileonline: è un processo che comporta costi
+strutturali e organizzativi (Borgman, 2015). Per i dati, in particolare, l’apertura richiede un
+lavoropreliminarediselezione,puliziaemetadatazione.Nonbastadigitalizzareunmanoscritto
+o trascrivere un’intervista: occorre adottare standard riconosciuti (ad esempio TEI-XML per i
+testi,IIIFperleimmagini,DublinCoreperimetadati),descrivereinmodoaccuratoimateriali,
+assicurare l’interoperabilità con altri archivi. Tutto questo richiede tempo, competenze e
+personale dedicato. Allo stesso tempo, le condizioni di riuso, negoziare con detentori di diritti,
+lapredisposizionedicontrattiodichiarazionidiconsensosonoattivitàcheincidonosul budget
+di un progetto. Infine, ci sono i costi legati alla conservazione e all’accesso a lungo termine. I
+repositoryistituzionali,lepiattaformedisciplinari,leinfrastrutturedigitalicheospitano dataset
+epubblicazioninonsonoambienti‘naturali’,checioèsiautoalimentanoeautoregolano:vanno
+mantenuti,aggiornati,messiinsicurezza,dotatidisistemidi backupedipreservazionedigitale.
+Tutto ciò implica investimenti continuativi in server, software e figure professionali con
+competenze tecniche avanzate. Per queste ragioni,l’apertura non può essere ridotta a un
+principio astratto, proclamato senza tener conto della sua sostenibilità economica.Se
+davvero vogliamo che leHumanities adottino un modelloopen, occorre che nelle proposte
+progettuali, nei bilanci delle istituzioni di ricerca e nelle politiche di finanziamento pubblico
+siano previste voci di spesa specifiche per l’open: per la metadatazione, per la gestione delle
+licenze, per la manutenzione delle infrastrutture, etc.
+Queste difficoltà sono proprio il contesto nel quale è utile un approccio ermenetico, che cioè
+dia al nostro lavoro di studiosi e interpreti una dimensione e una postura valoriali; che passi
+per una assunzione di responsabilità e dunque risponda a una domanda precisa: “sto facendo
+tutto il possibile - sfruttando cioè tutti gli strumenti che oggi ho a mia disposizione - affinché
+la condivisione della mia ricerca con la mia comunità scientifica sia sempre più efficace?”. Un
+primo modo con il quale è possibile, a costi relativamente bassi, rispondere positivamente a
+questa domanda è adottareuna politica sistematica di condivisione delle informazioni sui
+dataset e sui percorsi di ricerca,anche quando non è ancora possibile aprire integralmente i
+dati. Se oggi apro la rubrica di una qualunque università italiana, è raro che, accanto alle
+informazioni anagrafiche, alcurriculum e all’elenco dei corsi, trovi indicato con chiarezza di
+cosa si sta occupando in questo momento ciascun docente: quale progetto sta conducendo,
+quali materiali sta raccogliendo, a che punto è il lavoro, quali risultati si attende. Eppure, già
+solo rendere visibile questo livello di informazione – ‘chi sta facendo cosa, con quali oggetti
+e in quale fase’ – costituirebbe una forma elementare ma potente di apertura. Di ogni nuova
+acquisizione di oggetti, documenti, testimonianze o del semplice avvio e avanzamento di una
+ricercasipuòdarenotiziaallacomunità,scientificaenon,attraverso repositorypubblici,canali
+socialpersonaliocollettivi,sitiistituzionali, blogdiprogetto,esposizionipermanentiovirtuali.
+Anche laddove, per i motivi illustrati sopra, non sia ancora possibile condividere direttamente
+i dati o i materiali, tenere e rendere pubblico un “diario di ricerca” aggiornato – una traccia
+essenziale di cosa si sta studiando, con quali fonti e in quali tappe – è sempre lecito e consente
+alla comunità di comprendere meglio il lavoro in corso, di intercettare possibili sinergie e di
+
+===== p.31 =====
+riconoscere,dietroirisultatifinali,latramadeiprocessicheliharesipossibili.Inquestosenso,
+l’aperturanoncoincidesoloconilrilasciodel datasetdefinitivo,mainiziagiàdallatrasparenza
+sulle traiettorie di ricerca che lo stanno generando.
+Un secondo modo, altrettanto concreto e immediatamente praticabile, di rispondere alla
+domanda di ‘presa in carico’ della efficacia della condivisione all’interno della mia comunità
+scientifica risiede nella creazione, da parte di chi nelle comunità scientifiche occupa
+posizioni apicali, di riviste e collane editoriali interamenteopen, gratuite per lettori e
+autori,estrutturatesecondo standardriconosciutialivellointernazionale.Chihagiàraggiunto
+stabilità accademica e dunque non deve più preoccuparsi di progressioni di carriera ha infatti
+il privilegio – e, in un certo senso, la responsabilità – di poter innovare senza timore di
+ripercussioni personali. Sono proprio queste figure che possono permettersi di fondare sedi
+editoriali nuove, qualificate e libere da vincoli commerciali, mettendo a disposizione della
+comunità spazi di pubblicazione affidabili e valutabili anche nei processi di abilitazione. La
+tecnologia rende oggi questo passaggio sorprendentemente semplice. Con un budget
+ridottissimo e con competenze informatiche di base è possibile creare riviste apeer review
+ospitate su piattaforme istituzionali, con gestione editoriale trasparente e licenze aperte;
+fondare collane editoriali open, capaci di accogliere monografie, edizioni di fonti, atti di
+convegno; distribuire immediatamente e gratuitamente i PDF, con metadati completi, DOI
+registrati e indicizzazione nei principali motori di ricerca accademici; offrire copie cartacee
+tramite print on demand, a costi minimi, senza ricarichi e senza ricavo economico né per gli
+autori né per i curatori. Questo modello consente un duplice vantaggio. Da un lato, svincola la
+circolazionedellaricercadailimitiimpostidall’editoriacommerciale,restituendoaglistudiosi
+la piena titolarità del proprio lavoro. Dall’altro, rende la pubblicazioneopen accessattrattiva
+per chi è in fase di crescita, perché non li costringe a scegliere tra apertura dei risultati e
+riconoscimento accademico: possono pubblicare in sedi pienamente aperte che, essendo
+fondate e dirette da figure autorevoli, godono di quella legittimazione disciplinare necessaria
+per essere valutate come sedi “forti”. In questo modo, l’open accesssmette di essere un lusso
+o una scelta ideologica e diventa una infrastruttura concreta, sostenibile e condivisa, costruita
+da chi ha il potere – e quindi il dovere – di farlo.
+In questa prospettiva, l’insistenza sull’open accessnon è un vezzo ‘tecnologista’ né una moda
+legata al digitale, ma una risposta concreta alla condizione anacronistica che pesa oggi sulle
+Humanities. Se continuiamo a produrre ricerca con denaro pubblico per poi rinchiuderla in
+collane costose e in riviste difficilmente accessibili, non siamo semplicemente ‘un po’ in
+ritardo’rispettoalnostrotempo:stiamocontraddicendolanaturastessadelsaperechediciamo
+di praticare. Se, come ho affermato nel primo capitolo, leHumanities sono un esercizio di
+responsabilità interpretativa che si muove in un mondo intorno che rotto i monopoli della
+comunicazioneechechiedeaognivocedilegittimarsinellarelazioneconipropripubblici,un
+modello editoriale chiuso non è solo inefficiente: è il sintomo più evidente di quella postura
+novecentesca che ci ostiniamo a difendere mentre tutto, attorno a noi, è cambiato. Aprire i
+risultati della ricerca - farli circolare liberamente, renderli riusabili, documentare in modo
+trasparenteiprocessichelihannogenerati-significainveceiniziareacolmarequestadistanza,
+riportando in asse pratiche e principi. Vuol dire riconoscere che non siamo più gli unici a
+parlare nello spazio pubblico, e che proprio per questo abbiamo il dovere di rendere il nostro
+lavoro il più leggibile, verificabile e condivisibile possibile. LeHumanities smettono di essere
+‘tardo-moderne’ non quando si limitano a commentare il presente, ma quando accettano di
+farsi laboratorio di nuove forme di circolazione del sapere, coerenti con la loro vocazione
+interpretativa e con il mondo nel quale effettivamente viviamo.
+
+===== p.32 =====
+6.
+Ex cathedra. La didattica come luogo di incontro
+Una essenziale sfida ‘ermenetica’ ci attende ogni mattina nelle nostre aule. È quella per certi
+versipiùsemplicedaintraprendereperchérichiede‘soltanto’unnostrocambiodipostura,una
+modalità d'azione nuova in un contesto già predisposto per ospitarci. È in questo spazio
+quotidianochesimanifestalaprima,concretapossibilitàdiriorientareilnostromododiessere
+umanisti.
+Il primostep di ogni studio umanistico è, come detto più volte, un rapporto rigoroso con la
+documentalità,confontichechifaricercatalvoltadeveinprimapersonaricostruiresenonpuò
+utilizzare quelle già realizzate da chi lo ha preceduto. In questa operazione di ricostruzione e
+dianalisidiquesti‘oggetti-fonteaumentati’,èindispensabile,dapartedifaricerca,unosforzo
+dispersonalizzazioneedineutralitàpertentaredirestituireidatistoriciedicontestonelmodo
+più onesto possibile,seguendo il tenue filo che ci permette di ricostruire le tracce del
+passato (Ginzburg, 2006). Una volta ricostruiti con rigore questi oggetti-fonte, il nostro
+‘debito’ di obiettività è arrivato al massimo risultato che poteva conseguire nel rapporto con i
+documenti del passato; come ho cercato di illustrare nel capitolo primo e nel capitolo quattro,
+non è infatti possibile, partendo dagli oggetti-fonte, risalire all'oggetto-pensiero che li ha
+ispirati; non è cioè possibileconfondere la ricostruzione documentaria con la proiezione
+interpretativa (Contini, 1986). Ciò significa che ogni nostra affermazione che tenta di
+interpretare il senso degli oggetti-fonte non è il racconto di una relazione tra noi e gli autori e
+gli esseri umani del passato o il loro pensiero ma tra noi e un documento, in un processo nel
+quale la fonte inevitabilmente si emancipa dal suo autore e si apre a nuove interpretazioni.
+Nella interpretazione c'è una soggettività in gioco ma non è quella dell'autore morto secoli fa;
+èlanostra,dichioggineleggeidocumenti.Perquestoogniannovengonopubblicatecentinaia
+di monografie sul pensiero di Platone; non perché stiamo ancora aspettando quella giusta,
+quella che ci spieghi in modo compiuto ‘cosaveramente pensava Platone’ ma perché nessuna
+monografia ci riuscirà mai e ognuno di quegli studi non è altro che il racconto dell'incontro tra
+l'interprete e i testi di Platone. Che vi sia una pluralità strutturale delle letture è, d’altronde, ciò
+che la filosofia della ricezione ha mostrato in modo decisivo. Il mondo umanistico ha, invece,
+malstimatoilvalorediquestaricchezzadiprodottidellaricerca; hascambiatounmovimento
+corale(ogniinterpreteraccontailsuopuntodivistasudeterminatefonti)conunprocesso
+lineare (la somma degli studi permettono e permetteranno di approssimarsi sempre di
+più al coglimento dell'oggetto-pensiero).
+L'oggetto che rappresenta nel modo più iconico e paradossale questa distorsione della
+ricercaumanisticaèancheilprodottoeditorialechepiùcicaratterizzaenellacuirealizzazione
+tutti siamo stati, a titoli diversi, coinvolti nella nostra carriera: il manuale. Che cosa è, infatti,
+un manuale? È il tentativo di ricostruire, dalla somma dei documenti a mia disposizione, il
+pensiero e l'ispirazione di un autore o il senso di una serie di avvenimenti o l'identità di una
+particolare comunità; l'idea cioè che io possa, oggi, arrivare a cogliere, grazie alla
+giustapposizionedeidocumentiinmiopossesso,ilflussodipensieridiunautoreoilsignificato
+profondo di un momento storico per una comunità, ampliando poi via via la mia analisi per
+arrivare a raccogliere, sotto un solo sguardo, secoli di evoluzione del pensiero, della cultura,
+dei saperi, degli avvenimenti. È così che scriviamo e pubblichiamo i manuali, ed è così che
+entrano nel nostro immaginario collettivo in modo paradossale: per tutti rappresentano il
+livello-base oggettivo,quella competenza generale che permette di orientarsi rispettoadautori
+ed epoche, mentre sono, in realtà, l'esito più personale e soggettivo che una ricerca possa
+
+===== p.33 =====
+produrre, dietro cui si celano scelte erudite precise, come ci insegna la storia della nota a piè
+di pagina (Grafton, 1997). Cosa c’è infatti di più ‘individuale’ della somma di scelte,
+valutazioni, tagli ed evidenziazioni che sono necessari per dar vita a un manuale, a un
+testo cioè nel quale uno o più studiosi prendono un enorme corpus di documenti e lo
+condensano in un'unica opera di poche centinaia di pagine? È un paradosso ben noto anche ai
+teoricidellascritturastorica,chehannomostratocomeogniformadisintesinarrativaimplichi
+inevitabilmente scelte di struttura e di significato (White, 1973). Se proviamo a pensare ai
+manuali che abbiamo frequentato da studenti, riusciamo a risalire a quali fossero gli
+orientamenti culturali e intellettuali dei loro autori o ancora oggi li citiamo per cognome
+(pensando, per esempio, a un 'Abbagnano-Fornero' o a un 'Villari') ignorando quali fossero le
+loro storie e le loro inclinazioni personali?
+Superare il mito di una impossibile ricostruzione degli oggetti-pensiero significa dunque
+ammettereconnoistessichel’analisideglioggetti-fonteaumentatinonèaltrocheunincontro
+tra un documento e la mia soggettività, il che ci apre a una nuova relazione con la didattica.
+Esistecertamenteunaverità deidocumenti,seconquestaespressioneindichiamolapossibilità
+di comprenderne la collocazione storica e contestuale; maesiste una veritàcon i documenti,
+una operazione cioè di costruzione condivisa nella quale le fonti sono co-protagoniste assieme
+ai soggetti che le interrogano. Quando studio un testo da solo, offro a quel testo il mio sguardo
+collocato: lo porto nel mio oggi e lo leggo, inevitabilmente, con categorie e grammatiche mie
+e del mio tempo; non posso cioè negare il mio posizionamento storico e culturale, come
+soggetto, perché ogni sapere è un sapere situato (Haraway, 1988). Quando entro in aula, nello
+stesso modo non posso negare il posizionamento, come soggetti, degli individui che ho di
+fronte, portatori di opinioni e sensibilità.Se dunque l'interpretazione è il luogo nel quale si
+incontrano un oggetto e una soggettività, la didattica permette che in questo passo a due
+entri un'altra soggettività, che si compone di individui ma che ha anche una identità
+comunitaria; sono studenti e studentesse ma sono anche 'una classe', cioè un organismo che
+vivediinterazionichesicostruisconoesisedimentanoprima,durante,dopo,conenonostante
+quello che noi diciamo, formando una vera e propria ‘comunità di pratica’ (Wenger, 1998)
+della quale facciamo parte anche noi. Al dovere che abbiamo nei confronti delle fonti che
+analizziamo,ecioèrestituirle'espanse'nelmodopiùonestopossibile,eaquellochedobbiamo
+riconoscere a noi stessi, cioè quello di interpreti collocati, ne va aggiunto dunque un terzo,
+quelloneiconfrontideisingoliedellacomunitàcheabbiamodavanti(Freire,1970).Rispettare
+questodoveresignificariconoscereinprimoluogochelarelazionedidatticanascedall'incontro
+fra soggettività e, in secondo luogo, far sì che lo spazio didattico sia il luogo nel quale queste
+soggettività possano esporsi reciprocamente. È infatti solo nella nostra disponibilità di docenti
+far sì che l'aula sia quello spazio. Se la fonte chiede a noi che la leggiamo di assumerci la
+responsabilitàdellenostrescelte,allostessomodol'aulacichiedediessere'letta'comeinsieme
+disoggettienoncomerecettorepassivodicontenutistabilizzati,riconoscendocheglistudenti
+sono “costruttori attivi di significato” (Bruner, 1996). Aver rispetto della nostra soggettività di
+interpreti e docenti significa rendere visibili, senza sovraccaricarli, i passaggi che ci hanno
+condotti a un certo tipo di lettura: le domande che abbiamo scelto di porre, la nostra storia
+intellettuale, le alternative che abbiamo scartato, le sensibilità che hanno modellato la nostra
+ricerca (Brookfield, 1995). È un atto di trasparenza che non chiede agli studenti di aderire al
+nostro sguardo ma offre loro l'occasione di comprenderne la genealogia e, se necessario, di
+discuterla,rendendovisibilequella"pedagogicalcontentknowledge"cheguidalenostrescelte
+didattiche (Shulman, 2005). Aver rispetto della soggettività di chi ascolta significa, allo stesso
+tempo, riconoscere che ogni persona entra in aula con un proprio retroterra, con attese,
+resistenze, memorie, intuizioni: una costellazione di esperienze che trasformano
+immediatamenteciòcheproponiamo.Lalezione,allora,nonpuòesserepensatacomeunluogo
+
+===== p.34 =====
+di trasmissione, ma come uno spazio in cui queste differenze diventano risorse interpretative,
+punti di vista che arricchiscono la relazione con la fonte. La didattica diventa così un esercizio
+condiviso di responsabilità, nel quale ciò che avviene non è l'applicazione meccanica di un
+metodo, ma un processo di costruzione di senso che coinvolge tutti, attraverso quella
+trasformazione delle prospettive di significato che caratterizza l'apprendimento autentico
+(Mezirow, 1991). È in questo senso che la soggettività di chi insegna e quella di chi ascolta
+devono essere non occultate, ma rispettate: non perché l'aula debba trasformarsi in un luogo di
+esibizione biografica, bensì perché il riconoscimento reciproco è ciò che permette alla
+conoscenzadicircolareinformepiùconsapevoli.Edèproprioinquestoequilibriotralanostra
+voce e quella degli altri, tra le nostre competenze e le loro domande, che si realizza la
+dimensione più autentica della lezione: uno spazio di lavoro comune in cui l'interpretazione
+non è un esito, ma un gesto. Un gesto che si offre, che si discute e che, come ogni gesto
+interpretativo, chiede cura, responsabilità e libertà (bell hooks 1994).
+Nella didattica delleHumanities, una postura interpretativa che metta in gioco i soggetti non
+è un optional, ma la condizione stessa di possibilità del nostro lavoro. Altre discipline possono
+contare su metodi che, almeno in apparenza, riducono la presenza del soggetto: possono
+delegareastrumenti,protocolli,misurazioniciòchegarantiscelavaliditàdeilororisultati.Noi
+no. Le Humanities lavorano su tracce di attività umane: testi, immagini, idee, gesti, istituzioni,
+testimonianze che vanno recuperare e preservate con metodi rigorosi ma che prendono senso
+solo quando un soggetto - situato, finito, responsabile - decide di interrogarle, di selezionarle
+ediraccontarleadaltrisoggetti,inunaoperazioneinterpretativacheèsempresociale,politica,
+uneserciziodiquella"worldliness"chelegailtestoalmondo(Said,1983).Unaepistemologia
+situata che insiste sull’impossibilità di un punto di vista “da nessun luogo” (Haraway, 1988).
+Edèquestoincontro,nonildocumentoinsé,agenerareconoscenza,adarvitaalraccontoche
+prende le forme di una lezione. Per questo la postura interpretativa non è un'aggiunta
+pedagogica, ma il cuore stesso delle Humanities, quella capacità di "coltivare l'umanità"
+attraverso l'immaginazione narrativa (Nussbaum, 1997). Ecco perché l'aula non è un luogo di
+trasmissione ma il nostro terreno elettivo di 'responsabilità ermenetica'. Far emergere, in ogni
+nostro gesto didattico, che quello che è in gioco è una relazione a tre tra la fonte, la coscienza
+chelainterrogaelestoriedichiascoltasignificanonsoltantoformarestudentipiùconsapevoli,
+ma anche restituire alle Humanities la loro forza originaria: quella di offrire al presente uno
+sguardo capace di costruire narrazioni complesse e condivise.
+In questo quadro, il rischio di anacronismo che ho evocato si mostra con particolare evidenza.
+Continuiamospessoapraticareunadidatticapensataperunmondoincuilaparoladeldocente
+scendevadall’altoversounpubblicosilenzioso,comeselalezionefosseunattoditrasmissione
+unidirezionaleelenostreaulenonfosseroabitatedasoggettigiàimmersi,quotidianamente,in
+formedipartecipazioneeco-costruzionedelsapere.Nelnostrocontestosocialeecomunicativo
+insisteresuunadidatticacheoccultalasoggettivitàdichiparlaedisattivaquelladichiascolta,
+significareiterareesattamentequellaposturanovecentescacheharesole Humanitiesmarginali
+nello spazio pubblico. Ripensare l’aula come luogo di incontro tra soggettività non è, dunque,
+un semplice aggiustamento metodologico, ma il corrispettivo didattico delle scelte di apertura
+che dovremmo perseguire nella diffusione dei risultati della ricerca. Così come un modello
+editoriale chiuso tradisce la natura pubblica del sapere che produciamo, una didattica chiusa -
+che non interroga le storie, le domande e le competenze di chi ascolta - tradisce la natura
+dialogica delle nostre discipline. Assumere una postura ermenetica nella didattica significa,
+allora,smettereditrattarestudentiestudentessecomedestinatarifinalidicontenutistabilizzati
+e iniziare a riconoscerli come co-interpreti di quelle stesse fonti. È uno dei modi più concreti
+per uscire dall’anacronismo: non limitarsi a parlare del presente, ma lasciare che il presente
+
+===== p.35 =====
+entriinaula,mettendoingiocolesuepratiche,lesueformediattenzione,lesueconfigurazioni
+di senso.
+
+===== p.36 =====
+7.
+Sul palco. LePublic Humanities
+Lasceltadiunaposturainterpretativadiversatrovaneicontestispecialisticienelleauleiprimi
+territori di applicazione ma poi, proprio per la sua natura dialogante, non può che rivolgersi
+alle comunità che vivono fuori dalle istituzioni nelle quali operiamo. LeHumanities non
+possono non avere come scopo prioritario uscire dai nostri spazi e incontrare il pubblico che
+troverebbe nutrimento dal confronto con chi, come noi, per mestiere si muove tra
+interrogazione rigorosa delle fonti e costruzione di narrazioni di senso. Parliamo di cosa siano
+le Humanities ‘pubbliche’ e di alcuni ‘impegni operativi’ utili per realizzarle.
+1. Ingaggiare il pubblico
+Perdiscuteredelvalorediunapproccio‘pubblico’delle Humanities,partiamodalladefinizione
+dell’ambito più generale nel quale questo segmento si iscrive, e cioè ilPublic Engagement
+(PE). IlPE è l’insieme delle strategie messe in campo da un individuo, da un ente pubblico o
+da una azienda per coinvolgere (‘ingaggiare’ appunto) l’opinione pubblica attorno a un
+particolare tema o a uno specifico problema. Parlando diPE, ci si riferisce sempre a due
+tipologie di azioni, una‘informativa’e l’altra‘performativa’. La prima è tesa a ingaggiare il
+pubblico come destinatario di alcune iniziative di divulgazione di saperi o di presa di
+consapevolezza di problemi; la seconda tipologia, più complessa, tenta di coinvolgere il
+pubbliconellaproduzionedirispostesuqueimedesimitemiesuquelledomande.Intalsenso,
+sono esempi di PE ‘informativo’ le lezioni-spettacolo organizzate da un docente su un
+particolare argomento oppure le campagne informative del Ministero della Salute in relazione
+alla prevenzione di specifiche patologie o ancora ilclaimcon il quale un’azienda comunica, ai
+suoi clienti, la scelta di eliminare processi o prodotti tossici. È evidente, in tutti e tre questi
+esempi,chel’ engagementrichiestoallapubblicaopinioneèsostanzialmente unapresad’atto ;
+non si chiede cioè una azione specifica in risposta a uno stimolo ma si invita a riflettere su un
+dato, a esserne consapevoli, a prendere indirettamente parte al processo come ingranaggi
+coscientidiciòcheavviene.Il PE‘performativo’,alcontrario,spingeilpubblicoauna risposta
+reale. Ne sono esempi l’health crowdfunding con il quale alcuni enti sanitari chiedono al
+pubblico di co-finanziare l’acquisto di particolari attrezzature oppure lacitizen science, con la
+quale i cittadini partecipano alla raccolta di dati (come per esempio quelli relativi
+all’inquinamento ambientale) sul territorio e li mettono a disposizione di enti o aziende che li
+studiano. Il principio di base delPE, tanto informativo che performativo, è dunque l’idea che
+l’opinione pubblica possa e dunque debba essere coinvolta nella presa di consapevolezza
+o addirittura nella risoluzione di alcuni processi e problemi.
+In ambito accademico, il PE è parte di un processo ben noto a chi lavora nel mondo
+dell’università: la cosiddetta ‘terza missione’.La terza missioneindica (come descritto dal
+Manuale di valutazione della terza missione approntato dalla Agenzia Nazionale per la
+Valutazione della Ricerca, l’ANVUR),l’insieme delle attività con le quali una Università
+facilita “la valorizzazione e il trasferimento delle conoscenze”; come tale, la terza missione
+“viene riconosciuta a tutti gli effetti come una missione istituzionale delle università, insieme
+alle missioni tradizionali di insegnamento e ricerca”. Questa missione ha “una ineliminabile
+dimensione territoriale, dovuta alla circostanza, attestata dalla letteratura scientifica, secondo
+la quale le ricadute della conoscenza prodotta dalla ricerca si manifestano con maggiore
+
+===== p.37 =====
+probabilità nelle vicinanze geografiche”. Gli Atenei possono dunque “aiutare i territori a
+compiere i ‘salti’ che altrimenti non avrebbero le risorse per compiere”. Dopo aver descritto le
+operazioni di trasferimento di conoscenze derivanti da ricerche applicative (come nel caso dei
+brevetti di invenzione o deglispin off), nella parte seconda il Manuale si sofferma invece sulle
+attivitàdiproduzionedibenipubblicidinaturasociale,educativaeculturale.Vieneevidenziata
+la funzione delle Università nella gestione e co-gestione di enti pubblici di interesse culturale
+(musei, scavi archeologici, etc.), nella sperimentazione clinica, nella (in)formazione medica e
+nella formazione continua (il Lifelong Learning), per la quale gli Atenei sono invitati ad
+adattare i corsi di studio in modo da essere il più possibile inclusivi, per favorire una
+partecipazione il più possibile ampia. Nella parte conclusiva il Manuale si sofferma sulPE,
+definito come “attività senza scopo di lucro con valore educativo, culturale e di sviluppo della
+società”. Pur lungo, l’elenco di attività inserite dal Manuale a fini esemplificativi è
+particolarmente utile:
+- pubblicazioni divulgative firmate dallo staff docente a livello nazionale o
+internazionale;
+- partecipazioni dello staff docente a trasmissioni radiotelevisive a livello nazionale o
+internazionale;
+- partecipazioni attive a incontri pubblici organizzati da altri soggetti (ad es. caffè
+scientifici, festival, fiere scientifiche, ecc.);
+- organizzazionedieventipubblici(ades.NottedeiRicercatori,openday);pubblicazioni
+(cartacee e digitali) dedicate al pubblico esterno (ad es. magazine dell’università);
+- giornate organizzate di formazione alla comunicazione (rivolta a PTA o docenti);
+- siti web interattivi e/o divulgativi, blog; fruizione da parte della comunità di musei,
+ospedali, impianti sportivi, biblioteche, teatri, edifici storici universitari;
+- organizzazione di concerti, mostre, esposizioni e altri eventi di pubblica utilità aperti
+alla comunità;
+- partecipazione alla formulazione di programmi di pubblico interesse (policy-making);
+- partecipazione a comitati per la definizione di standard e norme tecniche; iniziative di
+tutela della salute (es. giornate informative e di prevenzione);
+- iniziative in collaborazione con enti per progetti di sviluppo urbano o valorizzazione
+del territorio;
+- iniziative di orientamento e interazione con le scuole superiori;
+- iniziative divulgative rivolte a bambini e giovani;
+- iniziative di democrazia partecipativa (es. consensus conferences, citizen panel).
+Le Public Humanities(PH) sono ovviamente quella forma diPE che vuole utilizzare, come
+elemento ‘ingaggiante’ in tutte queste tipologie di attività, i saperi umanistici. L’ambito
+umanistico è già molto spesso parte significativa dello spazio pubblico ma non nella forma di
+unengagementdichiaratamenteorganizzatodaunentediricerca.Unesempioparticolarmente
+utileperanalizzarequestacondizionedipresenzanonscientificaèla PublicHistory.Lastoria
+è infatti sempre e costantemente parte del dibattito pubblico, a prescindere dalle iniziative di
+engagement. Eventi storici vengono continuamente utilizzatinelle pubblicità, dai politici o
+nellaconversazionequotidiana comeelementideldiscorsopubblico ,menzionatiovviamente
+non in una prospettiva scientifica e rigorosa ma in formulazioni manualistiche e scolastiche,
+frutto più di luoghi comuni che di competenze reali, o in vere e proprie ricostruzioni
+immaginarie e, talvolta, intenzionalmente tendenziose (Edgerton 2009). Potremmo dunque
+dire che di fatto esiste già unaPublic History, cioè che avvenimenti e personaggi storici fanno
+già stabilmente parte dell’immaginario pubblico, ma che essi lo abitano in modo superficiale
+e stereotipato (Lippmann 1927). Una delle prime finalità di unaPublic History, considerata
+nella sua modalità informativa, è dunque la produzione di una consapevoleengagement che,
+
+===== p.38 =====
+dai festival (Catastini 2011) ai podcast (Salvatori 2009), attraverso la divulgazione e la
+disseminazione di una conoscenza storica il più possibile fondata e rigorosa metta a
+disposizione del pubblico una serie di dati verificati e stabili e decostruisca falsi immaginari.
+La natura stessa del sapere storico rende particolarmente interessanti, per la nostra riflessione,
+le attività di unaPublic Historyperformativa, nelle quali cioè il pubblico è chiamato a
+partecipare attivamente. Nell’ambito delle scienze della natura, l’engagement del pubblico
+è realizzato tramite la raccolta di dati sul territorio: monitoraggio tramite foto delle specie
+presenti in una determinata area, analisi dei dati di inquinamento ambientale, etc. (Bartoccioni
+2016 e Sforzi 2018). LaPublic Historyperformativa si muove nella medesima direzione; ai
+diversi individui coinvolti viene infatti chiesto di cercare e condividere testimonianze, anche
+personali e appartenenti alla tradizione familiare, che possano costituire materiale informativo
+su una determinata epoca o su uno specifico avvenimento: foto, lettere private, comunicazioni
+ufficiali,oggettid’usoquotidiano,testimonianzeorali,etc.Ilrisultatocuigiungel’ engagement
+prodotto da una Public History performativa è dunque la costruzione concreta di una
+memoria condivisa tanto nei procedimenti di raccolta delle informazioni quanto nel
+‘controeffetto’cheilrisultatodellaricercaproducesullacomunitàche,proprionelpartecipare
+attivamente al reperimento di fonti documentarie, si descrive capace di contribuire
+all’approfondimento dei percorsi di formazione della sua stessa identità (Ridolfi 2017; Cauvin
+2018; Demantowsky 2018). Il presupposto da cui muove unaPublic Historyperformativa è
+dunque che la storia non è solo il racconto dei macroavvenimenti ‘notevoli’, quelli cioè che in
+maniera globale caratterizzano momenti specifici o intere epoche, ma si compone anche delle
+ricadute che, localmente, i grandi scenari hanno sulle esistenze dei singoli o delle comunità.
+Una Public Historysi presenta dunque, nella sua declinazione performativa, come una
+attività bifronte, capace di guardare ai grandi scenari globali ma fortemente ancorata al
+territorioeallesuetestimonianze;unasortadiparadigmacheaccomunabuonapartedelle PH.
+Anche l’archeologia, la sociologia, l’archivistica, la storia dell’arte, l’antropologia e persino la
+storia della letteratura, se per un verso tentano di avere una intelligenza complessiva di vasti
+fenomeni culturali, possono per un altro coinvolgere il pubblico attivamente nella raccolta di
+dati (individuazione di reperti archeologici e artistici non censiti e successivo monitoraggio,
+documenti d’archivio, testimonianze relative alla tradizione, elementi biografici e contestuali
+degli autori non registrati, etc.) fortemente legati alla interazione locale con il territorio. Gli
+‘oggetti’ che queste discipline studiano (avvenimenti, documenti, reperti, etc.), infatti, si
+presentano al ricercatore come finestre del passato, punti di osservazione particolare dai quali
+dare uno sguardo a fenomeni generali. Il ‘territorio’ che queste discipline studiano sono le
+forme della storia dell’esistenza dell’umanità, una ‘regione’ di avvenimenti e produzioni
+concretamente abitata nei secoli da uomini le cui tracce diventano, nel tempo, testimonianze e
+documenti che possono contribuire tutte alla miglior definizione del quadro generale.
+2. Dieci impegni operativi
+Nel parlare diPE, il Manuale ANVUR prima citato suggerisce, per valutare il successo delle
+attivitàsvolte,alcunestrategiedimisurazionenecessariamentequantitativa,comeperesempio
+il numero di partecipanti agli eventi o l’interesse suscitato neimedia. Si tratta di criteri che
+hanno un senso nel linguaggio della valutazione, ma che dicono molto poco quando proviamo
+a misurare l’impatto reale dellePublic Humanities. Sarebbe infatti estremamente difficile
+verificare se e in che misura un caffè filosofico o una trasmissione radiofonica abbiano
+modificato il modo di pensare di chi vi ha partecipato. Nelle ultimissime righe, però, il
+Manuale riporta alcune “domande valutative”, una sorta di minivademecum di autoverifica
+del lavoro fatto. La seconda è particolarmente interessante: “Le attività di public engagement
+sono orientate a effettivi bisogni sociali o rispondono principalmente a esigenze di visibilità e
+
+===== p.39 =====
+comunicazione? Sono identificati chiaramente gli elementi di impatto sulla società?”. La
+domanda non è oziosa: invita a domandarsi se le attività di PE intercettino davvero un bisogno
+della comunità o se nascano piuttosto per soddisfare esigenze di visibilità dell’Ateneo o del
+singolo docente. In altre parole: quando facciamoPE, ci chiediamo davvero se, in che misura
+e in quali declinazioni le nostre competenze siano utili alla comunità con la quale le
+condividiamo? C’è stata una vera ‘opzione intellettuale’ a favore di questa iniziativa? È a
+partire da qui che, senza alcuna pretesa di esaustività, provo a condensare questa opzione in
+dieci impegni operativi che funzionino come altrettanti dispositivi di autoverifica del nostro
+lavoro.
+1) Proattività.In due anni, 7496 utenti hanno visitato la paginaWikipedia sul De magistrodi
+Agostino che ho realizzato.Nessuno della comunità deiwikipedianimi ha mai dato il compito
+di scriverla; ho deciso di realizzarla perché ho pensato che per quegli utenti, pochi o tanti che
+fossero, interessati a quel testo potesse essere importante leggere una voce realizzata da chi
+come me ha provato ad approfondire il pensiero di Agostino e in particolare lo studio delDe
+magistro. In generale,è raro che qualcuno venga a chiederci di andare a parlare delle
+nostre competenze fuori da contesti specialisticicome convegni, seminari,workshop, etc.
+Se noi invece riteniamo che portarle ‘fuori’ sia utile perché esse permettono di migliorare il
+livello di conoscenza della comunità su quel tema, di mostrare la connessione tra rigore
+dell’analisidellefontienarrazioneedi‘addestrare’l’uditorioaseguirelanecessariaseriedelle
+inferenze di una argomentazione, alloraè nostro compito verificare proattivamente come
+realizzare questa possibilità, cioè senza aspettare che qualcuno ce lo venga a chiedere.
+Dobbiamo chiederci quali sono i canali più interessanti o funzionali e, concretamente, provare
+a interagire con essi oppure pensare ai luoghi, reali e sociali, che potrebbero ospitarci e,
+operativamente, organizzare appuntamenti nei quali mettere alla prova la nostra capacità di
+confronto con un pubblico non specialistico e la loro volontà di recepire quanto abbiamo da
+dire. Non aspettare che ci chiamino ma fare il primo passo.
+2)Starealgioco .Continuiamoaparlaredellamiavocedi WikipediasulDemagistro. Inquella
+comunità, non posso entrare con la qualifica di storico della filosofia medievale ma come
+semplice editor. Non posso cioè vantare il miocurriculum e quindi implicitamente chiedere
+che nessuno modifichi o critichi quello che sto scrivendo perché io sono io. Possiamo
+certamente citare anche le nostre opere sulle voci che scriviamo ma dobbiamo rispettare le
+regole dellacommunity: non scrivere direttamente le nostre opinioni (al massimo, citare i libri
+nei quali l’abbiamo fatto) ma confrontarci con la letteratura sul tema. Ed essere pronti a
+difendere le nostre tesi senza invocare un diritto d’autorità, pensando che quello che abbiamo
+scritto sia intoccabile perchénoi siamo noi. Questa regolawikipediana è una buona prassi
+universale per ogni operazione di trasferimento all’esterno delle nostre competenze:parlare
+al pubblico, a contesti cioè che non siano accademici, significa accettare le regole di quei
+contesti, diverse da quelle delle nostre aule e dei nostri convegni; significa, molto spesso,
+accettare di non avere ragione a prescindere per il sol fatto di essere detentori di competenze
+(e soprattutto di titoli) ma di dover usare quelle competenze per mostrare le nostre ragioni.
+Guadagnare il riconoscimento della nostra autorità sul campo.
+
+===== p.40 =====
+3) Di-vulgazione. Il motivo per cui i saperi accademici, cioè quelli istituzionalizzati, hanno da
+sempre una certa resistenza nei confronti di ogni forma di divulgazione è, per certi versi,
+comprensibile e condivisibile. Chi ha studiato un determinato argomento sa perfettamente
+quantotempoequantafatica(perquantopiacevole)siacostatoilsuopercorso;quanto studium.
+Ha cioè la chiara percezione del fatto che, per cominciare ad avere almeno un minimo le idee
+chiare, un tema va approfondito per anni e con grande disciplina. Per questo, qualsiasi
+attivitàcheaspiriatrasmetteregliesitidiquellaricerca‘bypassando’quellafaticasembranon
+soloscorrettama,ancorpeggio,tossica;ladivulgazione,lettainquestaprospettiva,venderebbe
+l’illusione che si possano capire leConfessiones di Agostino seguendo una conferenza in un
+teatro per venti minuti mentre invece chi sta tenendo quella conferenza le sta leggendo e
+rileggendo da vent’anni. Questa preoccupazione è assolutamente legittima e fondata, tanto
+fondata da dover essere posta come premessa: ogni attività di divulgazione, per quanto venga
+fatta con cura e dedizione, è unareductio; tutti noi sappiamo che, quando parliamo a un
+pubblicodinonspecialisti,dobbiamoscegliere,nelvariegatissimocaleidoscopiodiriferimenti
+e concetti che ogni opera che studiamo ci sembra nascondere, solo ciò che può esser più
+facilmente compreso. Il punto è che questa non è una magagna della divulgazione; questaè la
+divulgazione. Se cioè noi assumiamo come presupposto che il nostro sapere è utile per la
+comunità perché propone un modello virtuoso, ‘ermenetico’, di racconto, non possiamo
+pretendere di avere di fronte una comunità che abbia le stesse competenze dei nostri
+studenti o, peggio, dei nostri colleghi. Sarebbe come pretendere che un bambino di cinque
+anni,dinanziallascomparsadiunapersonacara,avesseglistrumentiperdiscutereconnoidel
+senso della vita e della morte, delle ipotesi religiose, dell’ateismo filosofico e così via. Questo
+non significa avere un atteggiamento paternalistico che giudica in modo insultante il pubblico
+deinonspecialisti,pensandocheabbiaillivellocognitivodiunbambino.Iostessomitroverei
+nella medesima situazione, quella di un bambino ignorante, dinanzi a uno studioso di fisica o
+di chimica. Se si assume, dunque, come necessaria l’interazione con il pubblico,è altrettanto
+necessario assumere che il pubblico sia il nostro punto di riferimento: che modi, tempi,
+canali della nostra comunicazione siano pensati per accogliere e non per respingere; che il
+nostro sforzo, prima ancora di cominciare a parlare e/o a scrivere per il pubblico sia studiare,
+anche sperimentando, quali siano i codici di comunicazione e le specificità dei diversi canali
+chepossiamoutilizzare,tentandodifarsìcheanchesologliaspettilogisticidellanostraattività
+(orario, accessibilità, location, fruibilità online, reperibilità dei contenuti dopo gli
+appuntamenti, etc.) siano pensati per andare incontro alle esigenze del pubblico.
+
+===== p.41 =====
+4) Territori. ‘Territorio’ è probabilmente una delle parole più (ab)usate nel dibattito politico,
+e non solo. Viene infatti invocato tutte le volte in cui chi parla ha la necessità di apparire
+genuino,sincero,attentoalleesigenzerealidellepersone,legatoaunastoriaeatradizioni,non
+corrotto dai poteri centrali e per definizione distanti e così via. Ma, nella realtà,il territorio è
+banalmente il perimetro nel quale è possibile che la nostra azione si svolga in modo
+sensato;èilconfinediefficaciadellamiaattività .Voleressereproattivinelportarelenostre
+discipline fuori dalle università significa capire quale o quali sono i territori ai quali ci si
+rivolge. A meno di non essere o diventare ‘divulgatori su larga scala’, personaggi cioè che
+muovono grandi masse di pubblico, il nostroengagement è rivolto adaudience ridotte se non
+talvolta minime (anche quando il nostro territorio diventa digitale e ci muoviamo sulWeb). È
+questa la nostra dimensione naturale e, per certi versi, è bene così; è necessario infatti che il
+nostro pubblico si trovi in una condizione di relazione diretta, quasi personale con noi, così da
+poterefficacementecomunicarelorocheciòdicuistiamoparlandoliriguarda,comeindividui
+e come comunità. ‘In cambio’ della nostra attività noi chiediamo al nostro pubblico una
+disponibilità a seguirci nel percorso che proponiamo. Noi abbiamo il compito, non facile, di
+far passare questo messaggio; abbiamo il diritto, al contempo, di chiedere questa disposizione
+d’animo a chi ci ascolta, ci guarda o ci legge.
+5) Dall’alto in basso.Dieci anni fa, nel 2014, ho assistito a un concerto del duo Tuck & Patti
+inuncentrocommerciale.Inquellugliodidieciannifa,mentreliosservavosaliresulpalchetto
+allestito nell’ala più ampia del centro commerciale, mi sono chiesto perché due artisti di quel
+calibro, che si sono esibiti a Montreux e ad Umbria Jazz, avessero accettato quellalocation
+così inadeguata e ‘bassa’, visto che non avrebbero avuto difficoltà a trovare in zona qualche
+clubprontoaospitareunaloroesibizione.Dopodueorediconcerto(eccezionale)hoimparato
+dallaloroprofessionalitàche noncontail dovemail come;chenoncisonocontestichenon
+‘meritano’ di ospitare la musica, l’arte, la letteratura o la filosofia. Non esistono posti o
+occasioni nelle quali un sapere non va portato perché parlarne lì lo mortifica. Non ci sono
+contesti ‘alti’ e ‘bassi’ che vanno distinti per evitare che, portandola nei secondi, una
+competenza venga umiliata. Esistono piuttosto modi banali,kitsch, qualunquisti, piacioni o
+dilettanteschi di fare divulgazione. Ma non è raro trovarli anche nelle aule universitarie.
+6) Le competenze al centro.Come abbiamo detto, uscire dalle aule universitarie significa
+accettarediparlareunlinguaggiomenotecnicoedinonpoterveicolaretuttociòchesappiamo.
+Del100%dellenostrecompetenzeriusciremoforseaportarnefuoriil30%.Ciòperònon
+ci autorizza a studiare solo quel 30% per sentirci pronti.Questo accade - non di rado - per
+una forma nemmeno tanto nascosta di superbia: siamo degli studiosi che parlano a dei profani
+e quindi, per quanto ne possiamo sapere poco di ciò di cui parliamo, ne sappiamo sicuramente
+di più di chi ci ascolta, e ci basta in ogni caso studiarcelo anche solo mezza giornata per essere
+pronti. L’oggetto della nostra divulgazione sono sempre e solo le nostre competenze. È
+solo di quelle che ha senso parlare parlare. Il resto è circo che fa solo male a noi e, soprattutto,
+a chi ci ascolta.
+
+===== p.42 =====
+7) Niente metriche. Come detto, la normativa relativa alla terza missione si sofferma molto su
+come si possa valutarne gli esiti e i risultati, anche in modo quantitativo. Ma, al di là della
+lunghezza del foglio firme che dobbiamo presentare per rendicontare, come si misura
+veramente la ‘riuscita’ di un evento o di un prodotto pensato per il pubblico?
+Semplicemente, non si può misurare. E non perché non ci interessi ma perché è la natura
+stessa di quell'evento o di quel prodotto lo impediscono. Raccontare non significa insegnare.
+Chicisenteparlareocileggefuoridaun’aulauniversitarianonlofaperprepararsiasostenere
+unesameconnoi.Nonèlì,inquellasalaosuquellepagineperstudiare.Èlìpervedercitrattare
+le fonti in modo rigoroso e restituire una nostra interpretazione. E il nostro compito non è far
+sì che tornino a casa sapendo tutto quello che noi sappiamo sulleConfessionesdi Agostino ma
+averli ‘costretti’, per qualche minuto, a pensare ad almeno due cose: in primo luogo a quante
+informazioni verificate devo possedere per poter cominciare a parlare delleConfessioni; in
+secondo luogo, a cosa significhi scrivere una autobiografia, raccontare una conversione,
+costruire una comunità, etc., cioè i temi di cui grossomodo parlano - secondo me! - le
+Confessioni. Quanto il nostro pubblico ci ascolterà o ci capirà, cosa ciascuno ne ha colto,
+cioè preso e portato via, è impossibile da misurare, anche solo numericamente: un evento
+con cento persone distratte e che aspettano solo che io finisca di parlare per andar via non è
+comunque un momento di incontro (tossico per loro ma non per questo non significativo) con
+ciò di cui ci occupiamo? E un video che viene visto solo da due utenti che però, da quel
+momento in poi, vivono in modo diverso la loro esperienza rispetto a ciò che hanno visto non
+è un risultato eccellente? Immaginiamo dunque forme di ‘rendicontazione del senso’ più che
+del numero; per esempio, questionari anonimi nei quali chiedere ai partecipanti di descrivere
+cosa ha comunicato loro l’incontro, se è piaciuto, se ritornerebbero, etc.
+8)Alleanzepermanenti .Cisonoterritorielettiviperlanostradivulgazione. Ilnostropubblico
+potenzialmente è ovunquema è faticosissimo immaginare di arrivarci da soli, ogni volta
+ripartendodazero. Ènecessariocostruirealleanzestabili,permanenti,conchigiàpresidia
+quei territori: scuole, biblioteche, associazioni, festival, parrocchie, circoli culturali, testate
+giornalistiche, istituzioni locali. Ognuno di questi luoghi ha una propria comunità di
+riferimento,conlaqualehagiàinstauratounrapportodifiducia.Entrareinquesteretisignifica
+mettere le nostre competenze al servizio di un tessuto che ci precede e ci sopravvive. Un
+incontro isolato in una biblioteca, per esempio, rischia di essere dimenticato nel giro di pochi
+giorni; ma se quell’incontro diventa il primo tassello di un percorso annuale, magari in
+collaborazione con docenti, operatori culturali o associazioni, o è parte di un già consolidato
+cartellonediincontri,allorasigeneracontinuitàesimoltiplicanoleoccasionidiconfronto.Le
+Humanities diventano così non un fuoco d’artificio episodico mauna presenza riconosciuta,
+attesa, che cresce insieme al territorio.
+
+===== p.43 =====
+9)Ilmondodelleaziende. Isaperiumanisticinonsempreamanoilconfrontoconilmondo
+delle aziende. La diffidenza è comprensibile: temiamo che il nostro lavoro venga ridotto a
+slogan motivazionale, astorytelling di facciata o a strumento dimarketing valoriale nei quali
+dell’umanistico si sfruttano solo lessico e aura, senza accettarne davvero le implicazioni
+critiche. E tuttavia,le aziende sono uno dei luoghi nei quali una parte significativa delle
+persone trascorre gran parte della propria vita quotidiana: è lì che si formano linguaggi,
+culture organizzative, immaginari del successo, del fallimento, del merito. Se leHumanities
+voglionodavveroessere‘public’,nonpossonoignorarequestispazi.Essere‘apertialmercato’
+non significa dunque accettare qualunque richiesta, né prestarsi come ornamento culturale alle
+strategie dibrand. Vuol dire, piuttosto,provare a portare dentro quei contesti la capacità
+critica, la profondità storica, la complessità concettuale che caratterizzano il nostro
+lavoro. La condizione necessaria, in questo dialogo, è una chiara definizione della cornice:
+stabilire in anticipo quali aspetti del nostro sapere non sono negoziabili, quali semplificazioni
+nonsiamodispostiadaccettare,qualiobiettiviformativiintendiamoperseguire.Inaltreparole,
+entrare nelle aziende non per confermare, con un lessico più elegante, ciò che esse già
+pensanodisé,maperaprirespazididomanda,diproblematizzazione,diimmaginazione
+alternativa. Se questa condizione è rispettata, il confronto con il mondo produttivo non è una
+resa: è uno dei luoghi in cui leHumanities possono tornare a fare ciò che sanno fare meglio,
+cioè interrogare criticamente le forme di vita che abitiamo.
+10) Dare e avere.Andare ‘fuori’ non significa solo portare qualcosa, ma anche tornare con
+qualcosa. Se vogliamo che leHumanities diventino davvero ‘public’, dobbiamo abbandonare
+il modello dell’intervento unidirezionale – noi parliamo, il pubblico ascolta – e pensare ogni
+iniziativa comeuno spazio di scambio. Un incontro non è solo l’occasione per raccontare ma
+anche un dispositivo per raccogliere domande, per intercettare inquietudini, per capire
+quali problemi le persone portano con sé quando entrano in una sala o si collegano a una
+diretta. In questo senso, ogni esperienza diPublic Humanities è, almeno in parte, anche
+ricerca: sulle forme della ricezione, sulle aspettative del pubblico, sul modo in cui le categorie
+che utilizziamo (memoria, identità, responsabilità, giustizia…) vengono reinterpretate o
+respinte da chi ci ascolta. Non si tratta di trasformare ogni incontro in un’indagine sociologica
+strutturata, ma di assumere l’abitudine a costruire momenti di ritorno: spazi di discussione
+finale, brevi questionari anonimi, raccolta di impressioni informali, proposte di temi per gli
+incontri successivi. Tutto ciò che ci consente di capire non solo cosa abbiamo detto, ma cosa
+è stato effettivamente ascoltato. Il dialogo bilaterale implica anche accettare che le
+sollecitazioni del pubblico non siano sempre ‘pertinenti’ dal punto di vista strettamente
+disciplinare. Una domanda apparentemente laterale, una obiezione fondata su letture parziali
+osustereotipi,uncollegamentoazzardatoconl’attualitàpossonorisultare,dalnostrosguardo,
+imprecisi o sbagliati; ma il fatto stesso che emergano è il segnale che lì si è aperto uno spazio
+di pensiero. Sta a noi decidere se chiuderlo rapidamente, riportando la discussione sui binari
+giusti,oppure se abitarlocome occasione permostrare come si costruisce unargomento,come
+si verificano le fonti, come si corregge un fraintendimento senza umiliare chi lo ha formulato.
+Seprendiamosulserioquestaprospettiva,illavorodelle PublicHumanities nonfiniscequando
+smettiamo di parlare, ma quando abbiamo ascoltato. Ascoltare ciò che torna indietro –
+domande, critiche, resistenze, entusiasmi – significa lasciare che il nostro modo di insegnare,
+di scrivere, di fare ricerca sia a sua volta trasformato dall’incontro con il pubblico. È forse
+questo il segno più concreto di un impegno ‘public’: non solo portare la nostra disciplina nel
+mondo, ma lasciare che il mondo abbia voce nella vita della nostra disciplina e si riversi nel
+nostro atto interpretativo.
+
+===== p.44 =====
+In tutti questi impegni operativi torna, in filigrana, il rischio di anacronismo che ho descritto
+nei capitoli precedenti. Per decenni abbiamo pensato il pubblico come un’estensione un po’
+più larga delle nostre aule: un luogo in cui portare, in forma semplificata, la stessa lezioneex
+cathedra, con gli stessi codici, gli stessi tempi, la stessa asimmetria tra chi parla e chi ascolta.
+Ma il mondo che abitiamo - quello della partecipazione diffusa, dei contenuti generati dagli
+utenti, delle comunità online che discutono, selezionano, criticano - non è più compatibile con
+una presenza delleHumanities ridotta alla conferenza occasionale, al festival episodico o alla
+rubrica culturale che nobilita il palinsesto. Continuare a praticare lePublic Humanitiescome
+semplice vetrina, come prolungamento cerimoniale delle nostre pratiche accademiche,
+significariprodurrefuoridall’universitàlostessomodellonovecentescochedentrol’università
+ci ha resi marginali. Se, al contrario, prendiamo sul serio l’idea di una responsabilità
+ermenetica, allora l’uscita nello spazio pubblico diventa il terzo movimento necessario, dopo
+la ricerca aperta e la didattica come luogo di incontro. L’open accessrestituisce alla comunità
+i risultati delle nostre indagini; la didattica mette in gioco le soggettività nella costruzione
+condivisa del senso; lePublic Humanitiespermettono a quella stessa comunità di rientrare,
+conlesuedomandeelesuepratiche,dentroilnostrolavoro.Èquichel’accusadianacronismo
+può essere finalmente rovesciata: non più discipline che parlano del mondo rimanendone ai
+margini,masapericheaccettanodifarsiattraversaredalmondo,facendoneemergereconflitti,
+memorie, possibilità. Non è una semplice aggiunta alla nostra agenda istituzionale: è la
+condizione perché le Humanities continuino a esistere come forma viva di conoscenza,
+all’altezza del tempo in cui viviamo.
+
+===== p.45 =====
+8.
+Un tempo libero, pieno e responsabile.Humanities e IA
+Dopo aver interrogato i nostri modi di fare ricerca, di abitare l’aula e di incontrare il pubblico,
+restaunultimoterritorioincuilaposturaermeneticavieneoggimessaradicalmenteallaprova:
+quello del rapporto con l’intelligenza artificiale. È qui che l’anacronismo delleHumanities
+diventa più evidente e, allo stesso tempo, più fecondo. Le IA generative non sono un semplice
+strumento tecnologico da integrare o da temere: sono un nuovo ambiente simbolico nel quale
+ci troviamo a operare, un altro soggetto capace di produrre rappresentazioni, un co-abitante
+dell’ecosistema narrativo e cognitivo nel quale lavoriamo. Se la ricerca ci chiede di aprire il
+sapere, se la didattica ci invita a riconoscere la presenza di altre soggettività, e se lePublic
+Humanities ci spingono a dialogare con i territori, allora il confronto con l’IA non può essere
+pensato come un capitolo separato, ma come un ulteriore movimento dello stesso esercizio di
+responsabilità. Comprendere cosa cambia - e cosa non può cambiare - dell’interpretazione
+umanistica nell’epoca delle macchine che parlano, scrivono e combinano simboli è oggi parte
+integrante del nostro mestiere.
+1. Proboscidi e parole
+Nel capitolo undicesimo del suo L’istinto del linguaggio , Steven Pinker racconta la
+straordinaria multifunzionalità della proboscide degli elefanti: uno strumento che serve a
+respirare, annusare, sollevare, spostare, comunicare. Ma – aggiunge – la proboscide non è
+sempre esistita, visto che gli antenati degli elefanti ne erano privi. Non è nata da un progetto
+nédaun’intenzione,madaunaccumulodimutazionicasuali,ciascunalievementevantaggiosa.
+Nessuna regia, nessun disegno: solo una lunga sequenza di variazioni, ognuna abbastanza
+funzionale da essere tramandata.Al pari della proboscide dell’elefante, anche il nostro
+linguaggio è il frutto di una lunga serie di mutazioni genetiche casuali. Alcune di queste
+modifiche hanno dato origine a nuove aree cerebrali specializzate nella produzione e nella
+comprensione del linguaggio; altre hanno abbassato la posizione della laringe, rendendo
+possibile l’articolazione di suoni complessi. Nessuna di queste trasformazioni aveva un
+obiettivo, ma ognuna – in modo imprevedibile – si è rivelata utile alla comunicazione. È così
+che, generazione dopo generazione, la capacità cerebrale e meccanica di parlare parlare si è
+costruita: non per progetto, ma per selezione. Non lo abbiamo scelto: lo abbiamo ereditato.
+Nonostante sia arrivato per caso (e dopo una lunghissima evoluzione), il linguaggio ha
+rivoluzionatoradicalmentelanostraspecie ,alparidicomeavevafattomilionidianniprima
+l’assunzione della posizione eretta: ci ha dato la possibilità di manipolare non oggetti ma
+pensieri, di trasmettere non solo utensili ma rappresentazioni del mondo.Il linguaggio ha
+permesso ai nostri antenati di coordinarsi, di tramandare esperienze, di creare mappe
+cognitive condivise.È nato come un adattamento biologico, ma ha agito da subito come un
+potenziamento culturale: una tecnologia interna che, una volta comparsa, ha moltiplicato
+esponenzialmente le capacità della nostra specie. Terrence W. Deacon, in The Symbolic
+Species: The Co-evolution of Language and the Brain, interpreta questo passaggio come il
+risultatodiunprocessodicoevoluzionetrastrutturecerebraliecapacitàsimbolica.Daunlato,
+l’ampliamento e la complessificazione del cervello umano hanno reso possibile l’elaborazione
+di segni e linguaggi astratti; dall’altro, proprio l’uso dei simboli ha retroagito
+sull’organizzazione del cervello, selezionando e potenziando quelle funzioni cognitive che
+oggi definiscono la nostra specie.Usando i simboli, secondo Deacon, gli esseri umani non
+hanno soltanto sviluppato strumenti per comunicare: hanno progressivamente costruito
+un’infrastruttura cognitiva che li ha resi capaci di pensare, ricordare e immaginare in
+
+===== p.46 =====
+modo nuovo. Ogni segno tracciato su una parete, ogni parola pronunciata, ogni racconto
+inventatohacontribuitoarafforzarequestaarchitetturasimbolicachecidefiniscecomespecie.
+Proprio in quanto siamo una Symbolic Species, abbiamo per secoli individuato nella
+produzione di rappresentazioni il nostro più alto dominio d’azione e, allo stesso tempo,
+abbiamomagnificatolacapacitàdiqueisingolicheinquestaattivitàeccellevanoecheabbiamo
+chiamato‘autori’proprioperlalorocapacitàdifarcrescere( augere)ilnostrosapereelanostra
+consapevolezza culturale. È qui che nasce il valore che, da sempre, diamo a ciò che è
+umanistico.
+Per questo, nonostante il mondo è già pieno di libri e di classici che nessuno leggerà
+mai, continuiamo a scrivere e a rendere pubblici i nostri pensieri. Luciano Floridi, in una
+riflessione pubblicata suMedium nel 2023, elimina le risposte scontate – soldi, fama, carriera
+–earrivaalcuoredelproblema. Scriveremmoanchesefossimogliultimiesseriumanisulla
+Terra? La sua risposta è sì. Perché creare rappresentazioni non significa voler essere letti o
+visti a tutti i costi ma trasformare i pensieri in artefatti permanenti. È un ‘pubblicare’ che non
+ha bisogno di ‘pubblico’ per compiersi; è un processo complesso che, al contempo, è morte e
+vita,chiusuraeapertura.Perunverso,scrivereèperFloridiaccettareil“luttoprivatodeipropri
+pensieri,che hannocompletatoil loroviaggioe ora possonoriposare,finalmente staccati dalla
+mente che li teneva in vita”. C'è dunque un aspetto liberatorio nello scrivere: “qualsiasi Atena
+dà un terribile mal di testa al suo Zeus, non importa quanto piccole possano essere le proprie
+divinità”. I pensieri, quando hanno finito il loro ciclo di vita nella nostra mente e sono pronti
+anascere,diventanoinsopportabili,creanounapressionementalechepuòesserealleviatasolo
+esternalizzandolie,inqualchemodo,‘seppellendoli’neinostritesti.Ipensieri,comeorganismi
+una volta viventi e ora morti, vengono così depositati “in strati di parole, paragrafi, sezioni,
+pagine, volumi”. Ma questo apparente seppellimento è in realtà un atto generativo.I nostri
+pensieri, “distillati e depositati in una qual-cosa (some-thing)", fissati cioè nello scritto,
+perdono sicuramente la vitalità di quando erano parte della nostra attività psichica ma
+rinascono per certi versi a nuova vita, diventando “compost esterno per altri pensieri”–
+miei o di chi mi leggerà, distante da me nello spazio o nel tempo. Espulsi perché ormai troppo
+ingombranti, depositati in un testo e consegnati a una nuova metabolizzazione, personale o
+degli altri: i pensieri scritti diventano così materiale che fertilizza nuovi pensieri, in un ciclo
+continuo di “genesi, espulsione e leva”.
+Cinquemilaannifaabbiamoiniziatoaprogrammareciviltàscrivendoleggi,storie,conoscenze.
+Ogni generazione ha depositato le proprie istruzioni su pietra, tavolette, papiri, pergamene,
+carta, bit. Questi testi si sedimentano nel tempo e diventano il ‘brodo di coltura’ delle
+generazioni successive: chi viene dopo legge, interpreta, applica quelle regole e quelle storie,
+trasmettendole poi a sua volta attraverso spazio e tempo.Noi non usiamo la scrittura come
+una tecnologia qualsiasi; noi siamo scrittura – siamo organismi che rielaborano
+continuamente le tracce testuali di chi ci haprecedutoe di chi ci circonda,producendone
+poialtre.Trasformiamol’ humusdipensierialtruiinnuoveideechealorovolta,diventatitesti
+e tracce, saranno fertilizzante per le generazioni future. Costruire e diffondere
+rappresentazioni è per noi una attività identitaria, come singoli e come specie: come singoli,
+perché è la nostra, particolare ‘rimasticazione’ del vissuto; come specie, perché è la continua
+riaffermazione di ciò che meglio ci identifica e ci caratterizza, della nostra prerogativa
+massima.
+
+===== p.47 =====
+2. Creatività
+In una intervista del 2024 a Tuttolibri, l’inserto de La Stampa, László Krasznahorkai,
+recentemente insignito del Nobel per la letteratura, affronta diversi temi e, nella parte
+conclusiva, si sofferma sul destino della letteratura. Alla domanda dell’intervistatore “qual è il
+ruolo della letteratura in questo nostro tempo?” Krasznahorkai risponde: “Un bellissimo addio
+è l’unica cosa che abbia un minimo di senso. La letteratura, che esiste in questa sua forma da
+poche migliaia di anni, è ormai matura per scomparire. Un mondo diverso sta per arrivare, un
+mondodiinganni,diraggiri,diillusioniemanipolazionichealteranolapercezionedellarealtà.
+ChepostopotrebbemaiavereDanteinunmondodelgenere?EOmero,Kafka,Shakespeare?!
+E Beckett?! E Thomas Pynchon?! O anche solo questo piccolo krasznahorkai dal nome
+impronunciabile–scrittotuttominuscoloinuntaleelenco.Salutiamocidunqueperbene,come
+si deve”. Nel paragrafo precedente abbiamo descritto perché il linguaggio è stato così
+importante nella nostra storia evolutiva e perché ognuno di noi oggi sente ancora fortissimo il
+desiderio di scrivere, di esprimersi, di raccontare. Farlo ci permette di ribadire a noi stessi la
+nostra unicità, una capacità di creare rappresentazioni simboliche che nessuna altra specie
+possiede.ComesuggerisceKrasznahorkai, quellaprerogativachepermillennicihadistinti
+— cioè creare simboli — non è più solo nostra. A differenza di altre tecnologie del passato,
+come la scrittura o la fotografia, che avevano come scopo supportare e potenziare la nostra
+capacità di creare rappresentazioni, l'intelligenza artificiale può costruirle al posto nostro. Non
+silimitacioèaoffrircistrumentipertradurreilpensieroinimmaginioparole,maèessastessa
+capace di generare testi, immagini, suoni e forme narrative autonome.È quasi una nuova
+Symbolic Species che ci ha affiancato in questaskill, vantando però rispetto a noi una
+maggiore velocità di produzione e, soprattutto, una capacità infinitamente più estesa di
+attingere a un patrimonio di fonti che non consulta come facciamo noi in modo seriale (cioè
+una per volta) ma in parallelo, tutte insieme contemporaneamente. Cosa implica questo in
+termini di produzione di rappresentazioni? La maggior parte di noi, oggi, storcerebbe il naso
+davantiaunromanzooaunbranomusicaleinteramentescrittieprodottidallaIA:siamotroppo
+legati all’idea che dietro ogni produzione umana ci sia una intuizione soggettiva, magica e
+irripetibile. In fondo, quando leggiamo un libro o ascoltiamo una canzone non cerchiamo solo
+il piacere estetico della fruizione ma vogliamo anche ritrovare e riconoscere, tra quelle righe e
+in quelle note, l’ennesima testimonianza di quello che la nostra specie è capace di realizzare.
+Ci lasciano freddi le produzioni della IA in questi campi perché avvertiamo che lì la nostra
+prerogativa simbolica più distintiva si fa inesorabilmente post-umana.
+Per difenderci da questa ‘invasione di campo’, per riaffermare cioè che c’è
+qualcosachenessunamacchinapotràmaireplicare,cirifugiamoinun’ultimaroccaforte,
+che riteniamo impenetrabile dalla macchine, e che solitamente chiamiamo ‘creatività’(o
+anche, ‘intuizione’, ‘talento’, etc.). Che cosa intendiamo quando usiamo questa parola? Nel
+suolibrodel1990 TheCreativeMind:MythsandMechanisms ,MargaretBoden,professoressa
+di scienze cognitive e pioniera dell’intelligenza artificiale recentemente scomparsa, propone
+una prima definizione: la creatività è la capacità di produrre idee o artefatti che siano nuovi,
+sorprendenti e pregevoli. Questa capacità, scrive Boden, è naturale negli esseri umani. A tutti
+capita di restare stupiti da un’intuizione che ci sembra inaspettata ma sensata, o da un oggetto
+che abbiamo costruito e che ci appare diverso da qualsiasi altro. È ciò che Boden chiama
+Personal Creativity(P-creativity): la creatività personale, quella che appartiene a ciascuno di
+noinellanostraesperienzaindividuale.Soloinalcunicasiquestainvenzionediventa Historical
+Creativity(H-creativity),cioècreativitàstorica,capacedisegnareunprimaeundopopertutta
+l’umanità.Riprendo,italianizzandolo,unesempiocheproponeBoden:sequalcunochenonha
+mailettolaDivinaCommediadescrivesseinunaletteralapropriavitacomeuna“selvaoscura”
+incuihasmarritola“dirittavia”,avrebbecertamentecompiutounattocreativopersé-manon
+per la storia del pensiero, dove quell’immagine esiste già. In altre parole, non ogni intuizione
+
+===== p.48 =====
+originale è rivoluzionaria. Tutta la creatività è personale; solo pochissima diventa storica
+perché ogni atto creativo nasce dunque come un’esperienza personale, ma solo in rari casi
+assume una portata storica. Eppure, anche questa distinzione non basta ancora a spiegare che
+cos’è davvero la creatività. Secondo Boden, questa creatività personale o storica si
+manifesta in tre modi: comecombinazione, comeesplorazione e cometrasformazione. La
+prima è una nuova mescolanza di idee che già c’erano. In questo caso, per cogliere il senso di
+questa creazione, chi la ascolta o la legge deve conoscere gli elementi in gioco e apprezzare la
+inedita connessione tra di essi. Pensiamo aStar Wars: Lucas non inventa da zero cavalieri,
+spade o maestri saggi ma ha fuso archetipi del mito e della fiaba in un universo narrativo che
+sembra nuovo pur essendo costruito su strutture antichissime. È proprio in questa capacità di
+ricombinare il conosciuto in forme inattese che si rivela la forza della creatività combinatoria.
+L’esplorazione invece implica il concetto di spazi concettuali condivisi, cioè quei perimetri di
+senso nei quali ognuno di noi nasce e cresce: linguaggi sedimentati, gusti culinari, abitudini
+quotidiane, etc. Una specie di grande mappa del proprio tempo e della propria società che
+ognuno di noi impara a conoscere e a dominare. La creatività come esplorazione parte proprio
+dall’ideadiunmovimentocheesplorizonedellamappasconosciute;un drivingoff ilcuisenso
+nonsta nella mèta: puòportare a scoprire villaggi nascosti oa nontrovare nulla di interessante
+perché il suo valore non è tanto in ciò che trova ma nel fatto che, qualunque cosa sia, sarà una
+sorpresa.Selacreativitàcombinatoriametteinsiemeelementigiàesistentiequellaesplorativa
+si muove all’interno di uno spazio concettuale dato (perché esplora nella mappa, non fuori
+dalla mappa), la creatività trasformativa cambia lo spazio stesso, ridefinendo le sue regole, i
+suoiconfini,eciòcheinessoèpensabile.Mentrelestradedelmondorealenonpossonoessere
+spostate, le ‘mappe mentali’ che guidano il nostro pensiero sì: esse possono essere modificate,
+ampliate, persino riscritte. In certi casi la trasformazione è lieve ma nei casi più significativi
+l’intera struttura cambia direzione, come se si decidesse di deviare un’autostrada o costruire
+un nuovo sistema di vie. È questo il momento in cui si producono idee che, rispetto al sistema
+di pensiero precedente, erano letteralmente impensabili. Per fare un esempio - che credo
+Margaret Boden condividerebbe - possiamo immaginarele tre forme di creatività applicate
+a un’attività quotidiana e apparentemente banale: l’organizzazione di una vacanza. La
+creatività combinatoria entra in gioco all’inizio, quando, unendo informazioni diverse (guide,
+recensioni, preventivi, etc.) diamo vita a un itinerario originale, non presente sui circuiti più
+conosciuti. Una volta arrivati sul posto, la creatività esplorativa entra in gioco quando ci
+accorgiamo che, al di là dei luoghi più battuti dai turisti e che in albergo ci hanno consigliato
+di visitare, ci sono stradine e quartieri quasi invisibili che proviamo a visitare, senza sapere
+cosatroveremo.Lacreativitàtrasformativa,infine,simanifestaquandodecidiamodiripensare
+ilsensostessodelviaggiare:nonpiùpartirepervederecosenuove,mapervivereun’esperienza
+capace di cambiare il nostro modo di intendere la vita. Accade, ad esempio, se scegliamo di
+restare un mese nello stesso luogo per impararne la lingua, lavorare con gli abitanti o
+contribuire a un progetto locale. In quel momento non stiamo più viaggiando dentro l’idea
+standard di turismo: stiamo ridisegnando il significato stesso del nostro concetto di viaggio.
+L’esempiodellavacanzacimostracome,perBoden, letreformedellacreativitànon
+sianoalternative,madiversigradidiunostessomovimento .Vistochenonsappiamocreare
+dal nulla, ogni atto creativo - anche il più rivoluzionario -è sempre, di base, una forma di
+combinazione; la differenza riguarda solo il livello a cui avviene la manipolazione: nella fase
+iniziale mescoliamo elementi già noti, nell’esplorazione ci spingiamo verso zone ancora poco
+battutedelnostrospazioculturale,nellatrasformazionearriviamoamodificarelamappastessa.
+Ma in tutti i casi la novità non nasce mai dal vuoto: nasce dal modo in cui la mente rielabora
+ciò che ha ereditato. È proprio su questa idea che Boden costruisceil confronto tra la
+creatività umana e quella artificiale: se la creatività consiste nel manipolare simboli, regole
+e strutture già date, allora — almeno in teoria — anche uncomputer può farlo. Un sistema di
+
+===== p.49 =====
+intelligenza artificiale può combinare, esplorare e, in un certo senso, persino trasformare gli
+spazi simbolici che gli vengono forniti. Non creaex nihilo, maex data: parte da ciò che gli
+vieneconsegnato—testi,immagini,suoni,modellilinguistici—eliricombinasecondoregole
+statistiche che ne amplificano le connessioni.
+Sono partito dall’idea che ‘creatività’ sia oggi una parola difensiva: la usiamo per ribadire
+una prerogativa che riteniamo esclusivamente umana, qualcosa che l’intelligenza artificiale
+non può riprodurre. Proviamo invece - grazie alle riflessioni di Boden - a ribaltare il piano:
+assumiamo cioè non solo che anche l’IA può dar vita a un ‘atto creativo combinatorio’ - con
+risultati stilisticamente e visivamente spesso eccellenti - ma soprattutto che non ci sia nessun
+bisogno di difenderci.L’esistenza, al nostro fianco, di un’altra specie simbolica capace di
+creare contenuti di alto livello non ci rende concorrenti ma coabitanti di un ecosistema
+culturale espanso. L’IA amplia il campo, non lo restringe: è una risorsa che aumenta le
+possibilità di ciascuno di noi, accelerando processi che la nostra mente potrebbe svolgere ma
+impiegherebbe mesi per portare a termine. Ci offre nuove mappe, ci indica sentieri possibili,
+ci mostra connessioni invisibili. Fa insomma ciò che ogni buona tecnologia ha sempre fatto:
+potenzia la nostra capacità di immaginare. Proprio per questo, la vera differenza tra la nostra
+creatività e quella artificiale non risiede nel risultato, che può essere migliore, peggiore o
+persino indistinguibile da ciò che crea una macchina. La nostra specificità non è una questione
+di performance ma di ‘metabolismo esistenziale’, di metamorfosi del vissuto: i dati che
+manipoliamo non sono per noi semplicemente dati ma vengono assorbiti, trasformati,
+incorporati nella nostra storia personale. Diventano parte del nostro orientamento emotivo, si
+mescolano a ciò che ricordiamo, si legano alle nostre attese, ai nostri dispiaceri, alle nostre
+scoperte. Ogni nostra idea è il prodotto di questa ‘digestione’ lenta, continua: un processo
+attraverso cui concetti e ricordi si scompongono, si contaminano, si ricombinano e diventano
+alimento per ciò che siamo e saremo.Siamo interpreti non perché sappiamo mettere in
+ordine i documenti ma perché la nostra identità non resta mai fuori da questo processo
+di analisi.
+Quando smettiamo di pensare all’IA come a una rivale o, peggio, come una nemica e
+la riconosciamo come alleata dentro un ecosistema creativo condiviso si apre finalmente lo
+spaziopervedereconluciditàleopportunitàdelnostrotempo.L’IAacceleraiprocessimanon
+può decidere cosa conta. Può generare mille varianti ma non può dire quali risuonano con la
+miastoria.Puòsuggerirecombinazionimanonpuòstabilirecosa,dentroquellecombinazioni,
+diventa parte di me. È proprio questa asimmetria a far emergere l’umano con più forza: più la
+macchina estende le mie possibilità, più diventa visibile, anzi necessario il gesto con cui
+seleziono e assorbo ciò che riconosco come mio.
+3. Il valore della ricerca
+Nel primo capitolo, seguendo Small, ho affermato che l’interpretazione è una pratica di senso
+fondata su una rigorosa analisi documentale ma anche, sempre inevitabilmente soggettiva.
+Ogninarrazioneumanisticanascedaunaselezionedifonti,daunagerarchiadiindizimaanche
+dalla interazione tra l’interpretante e l’oggetto che ha dinanzi.Rigore e interazione; analisi e
+vissuto. Il lavoro interpretativo non consiste infatti nel restituire ‘oggettivamente’ ciò che un
+testo dice ma nel formulare, in modo controllato e argomentato, un’ipotesi sul senso che quel
+testo ha potuto produrre nel suo mondo e, meglio ancora, sull’effetto che, quando lo leggo,
+produce nelmio mondo di senso e, tramite me, nelnostro tempo. Oggi questa specificità del
+lavoro umanistico non viene meno, ma si trova immersa in un ambiente in cui molte delle fasi
+tradizionalmente considerate ‘preparatorie’ possono essere, almeno in parte, automatizzate.È
+
+===== p.50 =====
+verosimile che nei prossimi anni le tecnologie digitali consentiranno di delegare alle
+macchine attività che fino a poco tempo fa richiedevano mesi di lavoro: dalla trascrizione
+automatica di manoscritti al riconoscimento di forme e motivi iconografici; dalla mappatura
+comparata di intericorpora alla ricostruzione 3D di contesti archeologici; dalla traduzione
+contestuale di testi antichi all’analisi filologica di varianti; fino ad arrivare a compiti materiali
+eoperativi-dronicapacidirealizzarerilieviadaltissimaprecisione,robotutilizzatinegliscavi
+stratigrafici, sensori in grado di monitorare micro-movimenti di superfici o pigmenti, sistemi
+automatici che organizzano e classificano grandi quantità di dati documentali. Una parte
+rilevante di ciò che, fino a ieri, costituiva l’ossatura del lavoro preliminare della ricerca potrà
+dunqueesseresvoltadasistemiautomaticiconvelocità,efficienzaeprofonditàimpossibiliper
+unsingoloindividuo:confrontaremigliaiadiquadri,rilevareregolaritàeanomalie;individuare
+patterncromaticiocompositivi;correlarelapresenzadicertescelteformaliconcontestistorici,
+ambienti culturali, scuole, persino con biografie d’autore; mappare, su una scala di grandezza
+e intensità per noi impossibile, il modo in cui una certa figura retorica, un certo motivo
+iconografico o una certa struttura narrativa si distribuiscono nello spazio e nel tempo;
+confrontare migliaia di epigrafi e calcolare somiglianze tra formule funerarie, evoluzioni
+linguistiche, mutamenti nella sintassi del ricordo; analizzare automaticamente le piante di
+centinaia di siti archeologici, ricostruendo pattern insediativi, ricorrenze tipologiche,
+correlazioni tra funzioni degli spazi e trasformazioni socio-economiche; classificare migliaia
+di monete e mettere in relazione motivi iconografici, luoghi di rinvenimento, analisi
+metallografiche e cicli politici; eseguire analisi stilometriche sucorpora enormi, mostrando
+variazioni nella voce narrante, nella densità retorica, nella distribuzione semantica dei lemmi
+lungo un intero secolo letterario; riconoscere strutture narrative ricorrenti nel cinema,
+collegarleageneri,periodi,areeculturali;puòmisurare,conunaprecisionepernoiimpossibile,
+la presenza di certi tropi visivi, di certi movimenti di macchina, di certi modelli di montaggio;
+analizzareregistrazioniaudioditradizioniorali,individuareoscillazioniprosodiche,ricorrenze
+metriche, micro-variazioni che sfuggirebbero all’orecchio umano; scandagliare migliaia di
+ritualidescrittiinfontietnograficheetrovareanalogietragesti,simboli,ruoli,funzionisociali,
+costruendo mappe comparative che un singolo antropologo non potrebbe mai realizzare da
+solo; correlare milioni di documenti digitalizzati, riconoscerepattern ricorrenti nell’apparato
+concettuale di un’epoca, o individuare gli attraversamenti invisibili di certe idee che migrano
+tra ambiti disciplinari diversi: tutte attività che l’IA già realizza e che realizzerà a velocità e
+prestazioni sempre crescenti. Quello che l’IA invece non può fare è assumersi la
+responsabilità che deriva dall’esercizio di interpretazione ‘pubblica’ di questi dati.Non
+perché le manchi qualche ingrediente misterioso ma perché non è situata in una biografia,
+personaleecomunitaria,inuntessutodirelazioni,inunterritoriodiparicheglichiederàconto
+diciòcheafferma.Nonrischianulla,nésimbolicamentenéesistenzialmente,nelproporreuna
+lettura.Noisì. Ogniinterpretazionechecondividiamo–unarticolo,unsaggio,uncapitolo
+di libro – ci espone. Prende posizione dentro un dibattito, contesta o conferma letture
+precedenti,simisuraconcriteridirigore,dionestàintellettuale,diresponsabilitàneiconfronti
+delle fonti e dei lettori. L’interpretazione, nelleHumanities, è un gesto pubblico e, in questo
+senso, normativo: non dice solo ‘così potrebbe essere andata’ ma, almeno in parte, afferma
+‘questa è,per me, una lettura più giusta, più adeguata, più capace di rendere conto di ciò che
+vedo’. Ed è questo il dovere ermenetico che l’IA ci aiuta a recuperare, come studiosi di
+Humanities: quello delper me. Avremo sempre più i compiti fatti da strumentisoftware
+capaci di analizzare quantità di dati per noi inimmaginabili; ma, a piè di pagina di questi
+dataset enormi e dettagliatissimi, ci sarà la nostra scelta narrativa: come e perché lo racconto
+al mio tempo? Serve? A chi? Come? Per costruire quale narrazione, didattica o accademica?
+
+===== p.51 =====
+La coesistenza con un’altraSymbolic Speciesnon ci esonera dal nostro lavoro, lo rende solo
+più esplicito.Ci costringe a chiarire meglio che cosa facciamo quando facciamo ricerca
+umanistica,aliberarelanostraattivitàdaciòchepersecoliabbiamoscambiatoperilsuo
+valoreaggiunto:lafaticamateriale,ilgestomanuale,ilsacrificioditempoeenergie.Lanostra
+tradizione accademica - anche quando non lo ammette - ha spesso confuso il merito
+epistemico con la quantità di sforzo fisico richiesto: l’andare in archivio come prova di
+dedizione, lo scavo archeologico come misura della veracità impolverata del lavoro, la
+consultazione infinita di bibliografie come testimonianza di rigore. L’arrivo dell’IA ci aiuta a
+smontare questa equazione: dimostra che la manovalanza della ricerca, per quanto nobile e
+necessaria fino a ieri, non è mai stata il cuore del nostro mestiere. Era un tramite, non un
+fondamento.Cheunamacchinapossasvolgereinpochiminuticiòcheprimarichiedevagiorni
+nelle sale studio di una biblioteca, o mesi di catalogazione, ce ne dimostra la marginalità e non
+rende il nostro lavoro meno prezioso: lo riconsegna al suo nucleo autentico. Ci libera tempo
+per ciò che davvero conta - pensare meglio, formulare domande più radicali, collegare
+fenomeni lontani, immaginare interpretazioni più profonde. Non è uno snaturamento, ma una
+restituzione: torna visibile la parte del nostro mestiere in cui la competenza incontra la
+responsabilità, e il dato diventa senso. L’IA non chiude il futuro delleHumanities: lo riapre.
+Le costringe a diventare contemporanee al loro tempo, a non confondere più la tradizione con
+l’immobilità, a non proteggersi dietro la nostalgia di un mondo in cui il sapere era raro, lento
+eprotettodamuraistituzionali.L’eradell’IAcirestituisceallenostreresponsabilitàoriginarie:
+leggere il mondo, non solo i testi; dialogare con comunità multiple, non solo con i nostri pari;
+trasformare l’eccesso di informazione in comprensione, non in difesa corporativa. È qui che
+l’ermeneticatrovailsuocompimento:noncomerifugiomacomepraticainterpretativacapace
+di affrontare il nuovo senza smarrire ciò che ci definisce.
+Piùl’intelligenzaartificialeestenderàlenostrepossibilitàdianalisiquantitativaediproduzione
+di contenuti, più diventerà evidente – e anzi urgentemente necessario – il gesto interpretativo
+che ci compete: quello con cui selezioniamo, tra le molte combinazioni possibili (anche quelle
+suggeritedaglialgoritmi),quellecheriteniamosignificativepernoi,perilnostrotempo,perle
+domande che poniamo e per i pubblici a cui ci rivolgiamo. Quando, tra qualche anno, ci
+troveremo a dover intervenire a un convegno, a fare lezione in aula o a parlare in un incontro
+pubblico, non conterà quale software avremo utilizzato per analizzare le fonti o quale LLM
+avrà scritto materialmente il testo del nostro intervento; ciò che conterà (come ha sempre
+contato, anche se non sempre ce ne siamo accorti) sarà la nostra capacità di rispondere di quel
+lavoro: conterà essere lì, al microfono, come ‘interpreti collocati’, portatori cioè di una storia
+personale e intellettuale, impegnati a spiegare perché abbiamo scelto proprio quella lettura e
+non un’altra, quali alternative abbiamo scartato, quali implicazioni riconosciamo al nostro
+discorso. Forse allora non diremo più, con orgoglio un po’ difensivo, “questa relazione è il
+frutto di tre mesi di fatica” ma “questo lavoro è il risultato di una presa di posizione, di una
+responsabilità assunta, di un’interpretazione situata”; del tempo libero, pieno e responsabile
+che le nuove tecnologie ci avranno regalato.
+
+===== p.52 =====
+Conclusioni (temporanee)
+Le discipline umanistiche hanno il compito, straordinario, di gestire l’album di famiglia
+dell’umanità e di scattare ogni giorno nuove foto: conservare traccia di ciò che abbiamo
+compiutoeosservareciòchestiamofacendoora.Perfarlo,negliultimidecennicisiamodotati
+di strumenti di indagine eccezionali, capaci di illuminare contesti, relazioni intellettuali,
+problemi testuali con una precisione un tempo impensabile. Sappiamo però che i documenti
+cheanalizziamosonoilresiduodiprocessipsichici,cognitivi,emotivieculturaliinfinitamente
+più complessi. A volte ci siamo illusi che la potenza dei nostri metodi potesse restituire quella
+complessità come un oggetto solido, come se ciò che chiamiamo ‘pensiero’ fosse qualcosa da
+recuperare nella sua interezza. Per inseguire questo obiettivo irraggiungibile abbiamo spesso
+scelto - talvolta senza accorgercene - di scomparire. Abbiamo tolto dal campo la nostra voce,
+le nostre inclinazioni, la nostra presenza, come se la neutralità fosse la misura della serietà
+professionale. Il risultato è stato paradossale:come individui abitiamo un mondo nel quale
+tutti, citando fonti raccolte male e capite poco, si espongono in modo iper-personalistico;
+come studiosi – che sanno cercare, validare e leggere le fonti – ci siamo invece nascosti,
+diventando anacronistici. L’anacronismo, in questo senso, non è solo un errore di datazione;
+èladistanzafraunmondochechiedevociresponsabiliepratichechecontinuanoaimmaginare
+la conoscenza come un archivio neutrale, protetto e autosufficiente.
+Ripensare il nostro diritto-dovere a una interpretazione vissuta come narrazione di un
+incontroèilfilochehaattraversatotuttiicapitolidiquestolibro.Nellaricerca,sitraducenella
+consapevolezzacheogni‘oggetto-fonteaumentato’èilpuntodipartenzadiunarelazione,non
+la soglia di un impossibile accesso all’oggetto-pensiero che lo ha generato. Nella sfera
+editoriale, chiama in causa i modi in cui facciamo circolare i risultati: non più solo ‘dove
+pubblicare per migliorare il nostrocurriculum’, ma ‘come rendere accessibile e verificabile
+ciò che abbiamo capito’. Nella didattica, ci chiede di pensare l’aula come luogo di incontro tra
+soggettività, non come spazio di trasmissione unidirezionale. Nello spazio pubblico, invita a
+concepire lePublic Humanitiesnon come spettacolarizzazione del sapere, ma come esercizio
+di ascolto e restituzione condivisa. Nel confronto con l’intelligenza artificiale, ci obbliga a
+riconoscere che il cuore del nostro lavoro non è la manovalanza sui dati, ma la responsabilità
+del senso che costruiamo a partire da quei dati. Questa apertura passa anche per le domande
+che consideriamo legittime. Alcune, che per lungo tempo abbiamo ritenuto centrali, andranno
+almeno affiancate da altre. Non più soltanto “cosa ha detto veramente Platone?”, ma “in che
+modo Platone è oggi il luogo di un incontro tra me che studio e chi mi ascolta?”. Non più
+soltanto “quanto mi costa pubblicare?”, ma “come posso far circolare meglio i risultati della
+mia ricerca, perché diventino materiali di lavoro per altri?”. Non più soltanto “come spiego
+questo contenuto?”, ma “quale relazione di senso si costruisce quando io porto questo
+contenuto davanti a queste persone, con le loro storie, le loro attese, le loro resistenze?”. Non
+più soltanto “chi scrive cosa?”, ma “chi risponde di ciò che viene scritto e di come viene
+usato?”. Sono domande che non sostituiscono il rigore, ma lo portano fino in fondo,
+chiedendoglidiassumereunadimensionerelazionaleepubblica.Nonèunaperditadicentralità
+o prestigio, è una restituzione di responsabilità.
+Se prendiamo sul serio la nostra presenza nelle interpretazioni, allora dobbiamo accettare che
+ogni gesto del nostro lavoro - dalla scelta di uncorpus alla forma di una lezione, dal modello
+editoriale a una serata in biblioteca, da un dataset costruito con l’IA a un laboratorio
+organizzato con una comunità locale – è anche una dichiarazione di valori. Non esiste una
+tecnica neutra che precede le scelte; esistono scelte tecniche che rendono visibili, o invisibili,
+
+===== p.53 =====
+i soggetti coinvolti. L’ermenetica proposta in queste pagine non è la soluzione di questo
+intreccio,maunmodopernoneluderlo:ricordarci,ognivolta,cheinterpretareèsempreanche
+rispondere di qualcuno e davanti a qualcuno.È costruire pratiche di tolleranza perché se ciò
+che produciamo sono interpretazioni e non verità assolute, il nostro compito non è prevalere
+sugli altri, ma imparare a rispondere delle nostre letture dentro un ecosistema plurale.
+Queste conclusioni sono, dichiaratamente, temporanee. Non solo perché ogni testo, appena
+pubblicato, comincia a invecchiare, ma perché gli scenari nei quali leHumanities si muovono
+cambiano con una velocità che nessuna sintesi può pretendere di fissare una volta per tutte. La
+solaconclusionenonprovvisoriachemisentodiproporreèunapratica:continuarearileggere
+criticamente le nostre abitudini di ricerca, di didattica, di comunicazione pubblica, di rapporto
+conletecnologie,chiedendocisesonoall’altezzadelmondocheabitiamoedelleresponsabilità
+che diciamo di voler assumere. Il resto – le forme concrete, gli esperimenti, gli errori, le
+revisioni – accadrà, come sempre, nei luoghi in cui leHumanities vivono davvero: negli
+archivi,nelleaule,nellecittà,nellereti,cioènegliincontritrasoggettiche,facendoesperienza
+di sé e degli altri, provano ancora a dare senso al loro album di famiglia.
+
+===== p.54 =====
+Bibliografia
+● Agazzi E., L’oggettività scientifica e i suoi contesti, Bompiani 2018.
+● Bartoccioni F., Gliozzo G., Lorenzi C., Sforzi A., Haklay M.,A focus on local public
+participation in scientific research: citizen science in the Italian landscape, First
+International European Citizen Science Association (ECSA) Conference, Berlin, 19-
+21/5/2016.
+● Bate J., The Public Value of the Humanities, Bloomsbury Publishing 2011.
+● bell hooks (pseudonimo di Watkins G. J.),Teaching to Transgress Education as the
+Practice of Freedom, Routledge 1994.
+● Benjamin W., Über den Begriff der Geschichte1940.
+● Berti E., Per una metafisica problematica e dialettica, inActa Philosophica, 1 (1992),
+pp. 176-190.
+● Bod R., A New History of the Humanities: The Search for Principles and Patterns
+from Antiquity to the Present, Oxford University Press 2013.
+● Bohannon J.,Who's downloading pirated papers? Everyone, inScience, 352 (2016),
+pp. 508-512.
+● Borgman C. L..Big Data, Little Data, No Data: Scholarship in the Networked World,
+MIT Press 2015.
+● Brookfield S., Becoming a Critically Reflective Teacher, Jossey-Bass 1995.
+● Brooks P., Jewett H. (eds.),The Humanities and Public Life, Fordham University
+Press 2014.
+● Bruner J., The Culture of Education, Harvard University Press 1996.
+● Carroll S. R., Garba I., Figueroa-Rodríguez O. L., Holbrook J., Lovett R.,
+Materechera S.,The CARE Principles for Indigenous Data Governance, inData
+Science Journal, 19/1 (2020), p. 43.
+● Catastini F., I festival di storia: una via italiana alla Public History?, inMemoria e
+ricerca: Rivista di storia contemporanea, 37 (2011), pp. 143-154.
+● Cauvin T., The Rise of Public History: An International Perspective, inHistoria
+Crítica, 68 (2018), pp. 3-26.
+● Checchi D., Malgarini M., Sarlo S.,Do performance-based research funding systems
+affect research production and impact?in Higher Education Quarterly, 73/1 (2019),
+pp. 45-69.
+● Chiurazzi G.,Il postmoderno, Bruno Mondadori 2002.
+● Contini G., Varianti e altra linguistica. Una raccolta di saggi (1938–1968), Einaudi
+1970.
+● Cuban L., Teachers and machines: The classroom use of technology since 1920,
+Teachers College Press 1986.
+● Deacon T. W. ,The Symbolic Species: The Co-evolution of Language and the Brain,
+W. W. Norton & Company,1997
+● Demantowsky M., What is Public History, inPublic History and School, De Gruyter
+2018, pp. 3-40.
+● Eco U., Semiotica e filosofia del linguaggio, Bompiani 1984.
+● Edgerton D. ,The Haldane principle and other invented traditions in science policy,
+in History and Policy, 88 (2009).
+● Ekström A., & Sörlin, S.,The Integrative Humanities: And the Third Research Policy
+Regime, inSmart Policies for Societies in Transition: The Innovation Challenge of
+Inclusion, Resilience and Sustainability, Edward Elgar Publishing 2022, pp. 189-212.
+● Floridi L.
+○ Information – A Very Short Introduction, Oxford University Press 2010.
+
+===== p.55 =====
+○ The Fourth Revolution - How the infosphere is reshaping human reality,
+Oxford University Press 2014.
+○ On why publishing, https://medium.com/@lfloridi/on-why-publishing-series-notes-to-myself-84200308aa67
+(2023)
+● Freire P., Pedagogy of the Oppressed, Continuum 1970.
+● Frodeman R., The Oxford Handbook of Interdisciplinarity, Oxford University Press
+2017.
+● Ginzburg C., Il filo e le tracce. Vero, falso, finto, Feltrinelli 2006.
+● Graff G., Clueless in Academe. How Schooling Obscures the Life of the Mind, Yale
+University Press 2003.Habermas J.,Nachmetaphysisches Denken. Philosophische
+Aufsätze, Suhrkamp Verlag 1988.
+● Grafton A., The Footnote: A Curious History, Harvard University Press 1997.
+● Haraway D., Situated Knowledges: The Science Question in Feminism and the
+Privilege of Partial Perspective, inFeminist Studies, 14/3 (1988), pp. 575-599.
+● Lepori B., Jongbloed B., Hicks D.,Handbook of Public Research Funding, Edward
+Elgar Publishing 2023.
+● Lewin K.
+○ Frontiers in group dynamics: Concept, method and reality in science; social
+equilibria and social change, inHuman Relations, 1 (1947), pp. 143-153.
+○ Field theory in social science: Selected theoretical papers, New York 1951.
+● Lipmann W., Public Opinion, Harcourt, Brace & Co. 1922.
+● Lyotard J.-F., La condition postmoderne, Les éditions de minuit 1979.
+● Martin B., R&D policy instruments. A critical review of what we do and don’t know,
+in Industry and Innovation, 23/2 (2016), pp. 157-176.
+● Martin B. R.,The Research Excellence Framework and the ‘impact agenda’: Are we
+creating a Frankenstein monster?, inResearch Evaluation, 20/3 (2011), pp. 247-254.
+● Mezirow J., Transformative Dimensions of Adult Learning, Jossey-Bass 1991.
+● Nentwich M., König R.,Cyberscience 2.0: Research in the Age of Digital Social
+Networks, Campus Verlag 2014.
+● Nussbaum M. C.
+○ Not for Profit: Why Democracy Needs the Humanities, Princeton University
+Press 2010.
+○ Nussbaum M. C.,Cultivating Humanity: A Classical Defense of Reform in
+Liberal Education, Harvard University Press 1997.
+● Palmer, P. J.,The Courage to Teach, Jossey-Bass 1988.
+● Pinker S., The language instinct. How the Mind Creates Language, William Morrow
+and Company 1994.
+● Pontika N., Knoth P., Cancellieri M., Pearce S.,Fostering Open Science to Research
+Using a Taxonomy and an eLearning Portal, inProceedings of the 15th International
+Conference on Knowledge Technologies and Data-driven Business, Association for
+Computing Machinery 2015.
+● Raffnsøe S., A History of the Humanities in the Modern University. A productive
+crisis, Brill 2024.
+● RidolfiM., Versolapublichistory.Fareeraccontarestorianeltempopresente ,Pacini
+2017.
+● Rogers E., Diffusion of innovations, Free press 1995.
+● Said E. W.,The World, the Text, and the Critic, Harvard University Press 1983.
+● Salvatori E., Hardcore history: ovvero la storia in podcast, inMemoria e ricerca, 30
+(2009), pp. 171-187.
+● Schön D., The Reflective Practitioner, Basic 1983.
+
+===== p.56 =====
+● SforziA.,TweddleJ.,VogelJ.,LoisG.,WägeleW.,LakemanFraserP., Citizenscience
+and the role of natural history museums. Citizen Science Innovation, inOpen Science,
+Society and Policy, 10 (2018), pp. 429-444.
+● Shoemaker P. J.,Gatekeeping, Sage 1991.
+● Shulman L. S.,Signature Pedagogies in the Professions, in Dædalus, 134/3 (2005),
+pp. 52-59.
+● Slaughter S., Laslie L.,Academic Capitalism, The Johns Hopkins University Press
+1997.
+● Small H., The Value of the Humanities. Oxford University Press 2013.
+● Stern N., Building on success and learning from experience: An independent review
+of the Research Excellence Framework. London: Department for Business, Energy
+and Industrial Strategy 2016.
+● Suber P., Open Access, MIT Press 2012.
+● Tennant J., Open Science is just Good Science,DARIAH Annual Event on Open
+Science, Paris 2018 (https://youtu.be/UEEcwRUgQu8).
+● ZeegersM.-BarronD., GatekeepersofKnowledge:Aconsiderationofthelibrary,the
+book and the scholar in the Western world, Oxford University Press 2010.
+● Watson M., When will ‘open science’ become simply ‘science’?, inGenome Biology,
+16/101 (2015).
+● Wenger E., Communities of Practice: Learning, Meaning, and Identity, Cambridge
+University Press 1998.
+● White H., Metahistory: The Historical Imagination in Nineteenth-Century Europe,
+Johns Hopkins University Press 1973.
+● Willinsky J., The Access Principle: The Case for Open Access to Research and
+Scholarship, MIT Press 2016.
+● Wilson J.R., Bulaitis Z.H.,What Is Public Humanities?in Public Humanities, 1/17
+(2025).
+● Xu X., Oancea A., Rose H.,The impacts of incentives for international publications
+on research cultures in Chinese humanities and social sciences, inMinerva, 59/4
+(2021), pp. 469-492.
+● Ylijoki O.-H.
+○ Academic nostalgia. A narrative approach to academic work, Helsinki School
+of Economics and Business Administration, Helsinki 2020.
+○ Ylijoki O.-H., Entangled in academic capitalism? A case-study on changing
+ideals and practices of university research, inHigher Education, 45/3 (2003),
+pp. 307-335.
