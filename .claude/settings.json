@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 \"$CLAUDE_PROJECT_DIR/brain/tools/mp_check.py\" --quiet --state \"$CLAUDE_PROJECT_DIR/brain/tools/mp_state.local.json\" 2>/dev/null || true",
+            "timeout": 30,
+            "statusMessage": "Controllo novità Macchine Pensanti…"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,9 @@
+.DS_Store
+*.pyc
+__pycache__/
+
+# stato per-macchina del monitor MP (non condiviso)
+brain/tools/mp_state.local.json
+
+# epub dei romanzi: opere pubblicate, diritti ceduti — restano solo in locale
+Romanzi/
