@@ -18,6 +18,12 @@
             "command": "python3 \"$CLAUDE_PROJECT_DIR/brain/tools/changes_check.py\" 2>/dev/null || true",
             "timeout": 30,
             "statusMessage": "Verifica modifiche esterne…"
+          },
+          {
+            "type": "command",
+            "command": "(bash \"$CLAUDE_PROJECT_DIR/brain/tools/git_autosync.sh\" &) >/dev/null 2>&1 || true",
+            "timeout": 10,
+            "statusMessage": "Autosync git…"
           }
         ]
       }

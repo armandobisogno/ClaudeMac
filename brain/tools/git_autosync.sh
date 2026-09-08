@@ -22,8 +22,10 @@ log() { printf '%s  %s\n' "$(date '+%Y-%m-%d %H:%M:%S')" "$1" >>"$LOG"; }
 cd "$REPO" 2>/dev/null || { log "repo non trovato: $REPO"; exit 0; }
 [[ -d .git ]] || { log "non e' un repo git: $REPO"; exit 0; }
 
-# lock: evita due sync in parallelo (timer + hook nello stesso istante)
-LOCK="$REPO/.git/autosync.lock"
+# lock: evita due sync in parallelo (timer + hook nello stesso istante).
+# Sta fuori dalla cartella Dropbox: dentro, il file provider aggiunge xattr
+# e il rmdir puo' fallire lasciando lock fantasma.
+LOCK="$HOME/.claude/claudews_autosync.lock"
 if ! mkdir "$LOCK" 2>/dev/null; then
   # lock vecchio di oltre 30 min = resto di un run interrotto: lo tolgo
   if [[ -d "$LOCK" ]] && [[ $(( $(date +%s) - $(stat -f %m "$LOCK") )) -gt 1800 ]]; then
