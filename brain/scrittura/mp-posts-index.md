@@ -1,9 +1,10 @@
 # Macchine Pensanti — indice newsletter (auto-generato)
 
-Rigenerato da `brain/tools/mp_check.py`. Totale: 44.
+Rigenerato da `brain/tools/mp_check.py`. Totale: 45.
 
 | Data | Titolo | Sottotitolo | URL |
 |---|---|---|---|
+| 2026-09-04 | A che ora pranza l'intelligenza artificiale? | Trentotto studiosi di tutto il mondo propongono di valutare l'IA con gli strumenti dell'ermeneutica filosofica | https://armandobisogno.substack.com/p/a-che-ora-pranza-lintelligenza-artificiale |
 | 2026-08-28 | Vuoto a perdere | Cinquecento foto sul telefono a fine estate, il promemoria che ti ricorda dov'eri tre anni fa e un'app che promette di far parlare i mort… | https://armandobisogno.substack.com/p/vuoto-a-perdere |
 | 2026-08-21 | Format e tormentoni | L'IA non sta impoverendo la nostra creatività. Ci avevamo già pensato noi | https://armandobisogno.substack.com/p/tormentoni-e-format |
 | 2026-08-14 | Substack, Pangram e Cyrano de Bergerac | Perché l'AI Detection ci ricorda che è bene diffidare un po' del prossimo | https://armandobisogno.substack.com/p/substack-pangram-e-cyrano-de-bergerac |

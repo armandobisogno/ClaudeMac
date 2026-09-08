@@ -1,11 +1,21 @@
 # Macchine Pensanti — archivio Note (auto-generato)
 
 Fonte: feed profilo Substack (user 107692472). Rigenerato da `brain/tools/mp_check.py`.
-Totale note raccolte: 36.
+Totale note raccolte: 37.
 
 > Il feed pubblico anonimo espone in modo denso solo le note recenti e un campione
 > rado di quelle precedenti. Le NUOVE note sono catturate a ogni controllo; per
 > l'archivio storico completo serve un export/copia-incolla dalla pagina /notes con login.
+
+### 2026-09-02 06:45  (c-327869915)
+
+Bradley Emi è il co-founder di Pangram, il software che Substack mette a disposizione di scrittori e lettori per verificare quanta IA c'è in un contenuto. 
+
+È quindi ovvio che, in questo articolo, il suo scopo sia dimostrare che ci sono sempre elementi di riconoscibilità in un testo prodotto con l’IA. 
+
+Detto questo, la sua spiegazione di cosa siano il pre-training e il post-training dei LLM e di come influenzino la qualità dei testi prodotti dalla IA secondo me merita di essere letta.
+
+_[quote-share post] Pangram_
 
 ### 2026-08-28 13:01  (c-324484455)  ❤3 ↻1
 
@@ -103,7 +113,7 @@ Che oggi sia questione della quale tanti parlano è un bene, perché genera magg
 
 _[quote-share post] Valentina Lanza_
 
-### 2026-08-19 08:00  (c-316898146)  ❤6 ↻1
+### 2026-08-19 08:00  (c-316898146)  ❤7 ↻1
 
 Perché la prima è più importante distinzione oggi non è tra ‘testi scritti da IA’ o ‘testi non scritti da IA’ ma tra ‘testi ben scritti’ e ‘testi pessimi’, e @Sandrone Dazieri lo spiega molto bene.
 
@@ -139,7 +149,7 @@ https://www.anthropic.com/news/claude-text-watermark
 
 _[link] How Claude’s text watermarking works — https://www.anthropic.com/news/claude-text-watermark_
 
-### 2026-08-17 08:00  (c-315169389)  ❤9 ↻3
+### 2026-08-17 08:00  (c-315169389)  ❤10 ↻3
 
 Pangram ha avuto un grande merito: spingere chi come noi lavora con la scrittura a riflettere su cosa significhi essere un autore, su cosa dia valore a un testo e, come sostiene @Luciano Ballerano, sulla centralità dell'esercizio di responsabilità. Perché alla fine quello che conta, da sempre, è chi ci mette la firma. E la faccia
 
