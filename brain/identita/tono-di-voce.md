@@ -82,6 +82,33 @@ emotiva; **Camilleri** come modello di ritmo del dialogo.
   dialogo fittissimo, comico in superficie, malinconico sotto; l'erudizione messa in
   bocca ai personaggi, mai in voce d'autore.
 - **Istituzionale:** più sobrio (poco materiale finora — da caratterizzare).
+- **Post social (IG/FB/LinkedIn), uno per ogni uscita MP, stesso testo sui tre canali:**
+  - **Apertura che accompagna**, mai un'affermazione secca o una domanda retorica a
+    effetto ("proviamo a pensare...", non "l'IA non è mai neutrale:"). Scartato anche
+    l'aneddoto narrato in prima persona come innesco diretto ("ho chiesto a
+    Claude...."): troppo assertivo, "violento" secondo Armando — il lettore va
+    accompagnato, non colpito.
+  - **Tesi centrale del pezzo in 2-3 righe**, ancorata a un'immagine quotidiana già
+    presente nell'articolo (qui: prodotto culturale = romanzo, quadro, documento
+    storico), non un riassunto astratto.
+  - **Chiusa morbida**: un'ipotesi sommessa ("forse vale anche per noi") piuttosto che
+    un imperativo ("dovremmo pretenderlo").
+  - **CTA fissa**: "Ne parlo nell'ultima uscita di Macchine Pensanti." + "Link in bio
+    alla newsletter."
+  - **Hashtag essenziali**: #macchinepensanti #IA #AI + 1 termine chiave del pezzo.
+  - Esempio validato (uscita "A che ora pranza l'intelligenza artificiale?", set 2026):
+    > Proviamo a pensare all'intelligenza artificiale non come una macchina che
+    > risponde, ma come un prodotto culturale: nasce dentro una cultura e con quella
+    > cultura continua a dialogare ogni volta che ci parla.
+    >
+    > Se è così, lo strumento giusto per capirla è lo stesso con cui da sempre
+    > leggiamo un romanzo, un quadro, un documento storico: l'ermeneutica.
+    >
+    > Ne parlo nell'ultima uscita di Macchine Pensanti.
+    >
+    > Link in bio alla newsletter.
+    >
+    > #macchinepensanti #IA #AI #ermeneutica
 
 ## Attacchi reali (da cui tarare il tono)
 
