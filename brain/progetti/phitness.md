@@ -68,3 +68,26 @@ aggregate per il docente (mai i contenuti privati); modalità «open» senza acc
   `assets/css/phitness.css`, `phitness-core.php` (Version 1.3.0 → **1.4.0**),
   `readme.txt` (Stable tag + changelog). Pacchetto: `Phitness/phitness-core-1.4.0.zip`
   (da ricaricare su WordPress).
+- **2026-09-21:** rivisti i testi #2 (`Sapere`, Apologia di Socrate) e #3
+  (`Pensare Dio`, argomento ontologico di Anselmo): tolto l'header
+  "PHITNESS/#N" e il titolo maiuscolo isolato (il testo #1 "Verità" non li usa
+  più), portati a prosa continua senza sottotitoli/elenchi puntati (testo #2
+  aveva 4 sottotitoli in grassetto + un elenco puntato), corretti refusi e
+  frasi incomplete nel #2 (l'accusa a Socrate, l'oracolo di Cherofonte),
+  aggiunta una chiusura riflessiva che riprende il tema iniziale in entrambi
+  (come fa il #1 con "che cos'è la verità?"), e nel #3 il registro "voi"
+  diretto→teatrale è stato riportato al "noi" inclusivo del #1 (es. "Notiamo"
+  non "Notate", "Immaginiamo" non "Immaginate"), comprimendo i due paragrafi
+  finali di istruzioni d'esercizio in un'unica chiusura aperta. File:
+  `Phitness/2. Sapere_Socrate.docx`, `Phitness/3. Pensare Dio.docx`.
+  Create anche le slide Canva corrispondenti clonando lo stile del mazzo
+  "Verità" (banda turchese, logo PHITNESS bicolore, frecce e X rossa per lo
+  schema "candidati eliminati"): **ESERCIZIO #2 - Sapere**
+  (politico/poeta/artigiano → chi è davvero sapiente, con politico scartato e
+  Socrate come risposta finale) e **ESERCIZIO #3 - Pensare Dio** (i cinque
+  passi di Anselmo compressi in tre tappe, poi la parodia di Gaunilone
+  sull'isola perfetta scartata mentre triangolo/Dio reggono), 13 slide
+  ciascuna. Nota: il mazzo Canva originale "Verità" e il file "1. Verità.docx"
+  risultavano già in fase di revisione live durante questa sessione
+  (probabilmente modifiche in corso di Armando in parallelo) — i nuovi mazzi
+  e i due testi sono stati allineati alla versione più aggiornata trovata.
