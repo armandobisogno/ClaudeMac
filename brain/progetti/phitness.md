@@ -56,3 +56,15 @@ aggregate per il docente (mai i contenuti privati); modalità «open» senza acc
   `includes/class-phitness-frontend.php` (`render_landing()`), `phitness-core.php`
   (Version 1.2.0 → **1.3.0**), `readme.txt` (Stable tag + changelog). Pacchetto:
   `Phitness/phitness-core-1.3.0.zip` (da ricaricare su WordPress).
+- **2026-09-21:** ritocchi al testo della landing (`render_landing()`): a capo dopo
+  «...esercizio di scrittura.» prima di «Per riprendere il tempo del pensiero.»;
+  la nota «Niente account, niente password...» ora in un riquadro più grande e
+  visibile (nuova classe CSS `.phit-lp-privacy`, non più `.phit-microcopy`) e
+  integrata con «Oppure invii il tuo testo per una revisione, in forma completamente
+  anonima.»; *device*, *topic*, *fitness* in corsivo nel testo; video dell'esercizio
+  filosofico descritto come «non più di venti minuti»; «Armando Bisogno» linkato a
+  armandobisogno.it; claim finale «Un'ora per te. Si comincia quando vuoi.» →
+  «Prenditi un momento per pensare.». File toccati: `includes/class-phitness-frontend.php`,
+  `assets/css/phitness.css`, `phitness-core.php` (Version 1.3.0 → **1.4.0**),
+  `readme.txt` (Stable tag + changelog). Pacchetto: `Phitness/phitness-core-1.4.0.zip`
+  (da ricaricare su WordPress).
