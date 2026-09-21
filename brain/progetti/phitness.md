@@ -91,3 +91,15 @@ aggregate per il docente (mai i contenuti privati); modalità «open» senza acc
   risultavano già in fase di revisione live durante questa sessione
   (probabilmente modifiche in corso di Armando in parallelo) — i nuovi mazzi
   e i due testi sono stati allineati alla versione più aggiornata trovata.
+  Su richiesta, applicato lo stesso trattamento anche al **testo #4**
+  (`Destino e libertà`, stoicismo/Crisippo/Epitteto): tolto l'header
+  maiuscolo, registro "voi" (Immaginate, notate, badate, pensate) riportato a
+  "noi"/impersonale in tutto il testo, e i due "movimenti" finali
+  dell'esercizio (smascherare l'argomento pigro + le due colonne di Epitteto)
+  compressi in un'unica chiusura riflessiva. File:
+  `Phitness/4. Destino e libertà.docx`. Creato anche il mazzo
+  **ESERCIZIO #4 - Destino e libertà** (13 slide, stesso stile clonato):
+  fan-out su "l'argomento pigro / il cilindro / il cane e il carro", build per
+  ciascuno dei tre, poi la chiusura "Siamo davvero liberi?" che le ripropone
+  tutte e tre scartando (X rossa) l'argomento pigro mentre cilindro e cane
+  restano validi.
