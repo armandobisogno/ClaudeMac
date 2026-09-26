@@ -123,6 +123,11 @@ Come costruiamo conoscenza affidabile quando il video non fa più fede.
   definizioni condivise perfino tra umani. Rif.: Mansouri & Taylor.
 
 ### Meta / di servizio
+- **Streghe, macchine e tesi di laurea** (25 set 2026) — annuncio del dialogo con
+  Raffaele Gaito su *What's Next* (seconda puntata insieme). Titolo scelto da Gaito:
+  "La ridicola caccia alle streghe dice tanto di noi umani". Concetto chiave: "ogni
+  strumento che inventiamo porta con sé un'immagine di chi lo usa" (paure, desideri,
+  ciò che si è disposti a delegare). Tocca anche l'uso dell'IA in ambito educativo.
 - **Una intelligenza fantastica** (4 lug 2026) — primo compleanno della NL; il libro in regalo.
 - **Il gioco di Claude** (24 lug 2026) — perché l'IA sembra magica: Shannon, Firth,
   predizione del token; Leibniz, il mulino della *Monadologia*.
