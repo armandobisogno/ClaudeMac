@@ -58,6 +58,17 @@ if [[ -z "$(git status --porcelain)" ]]; then
 fi
 
 git add -A
+
+# guardia: GitHub rifiuta i file > 100 MB e blocca tutto il push.
+# Tolgo dal commit quelli sopra i 95 MB (restano su disco) e lo segnalo.
+git diff --cached --name-only -z --diff-filter=AM | while IFS= read -r -d '' f; do
+  if [[ -f "$f" ]] && (( $(stat -f %z "$f") > 95000000 )); then
+    git reset --quiet -- "$f"
+    log "escluso dal commit perché > 95 MB: $f (aggiungilo a .gitignore)"
+  fi
+done
+[[ -z "$(git diff --cached --name-only)" ]] && exit 0
+
 git commit --quiet \
   -m "autosync $(date -u '+%Y-%m-%dT%H:%MZ')" \
   -m "commit automatico di ClaudeWS (timer 3h / hook SessionStart)"
