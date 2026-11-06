@@ -1,0 +1,1228 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Grammatica Inglese</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+/* Layout: indice a sinistra come in una grammatica scolastica (paragrafi §), pagina della lezione a destra: regola sopra, esercizi sotto */
+:root{
+  --paper:#F5F6F2; --surface:#FFFFFF; --ink:#1B222B; --muted:#5A6470; --line:#D8DCD3;
+  --accent:#24468F; --accent-soft:#E6ECF7; --mark:#F3E7A6; --ok:#2E7A4C; --ok-soft:#E3F2E8; --bad:#B03838; --bad-soft:#F8E5E3;
+  --warn:#9A6400; --warn-soft:#FBEFD2; --warn-mark:#F2C25B; --order:#6B46B8; --order-soft:#EEE7FA;
+  --f-display:"Young Serif", Georgia, "Times New Roman", serif;
+  --f-body:"Literata", Georgia, "Times New Roman", serif;
+  --f-ui:"IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --paper:#12161C; --surface:#1A2029; --ink:#E5E8EC; --muted:#9AA4B0; --line:#2C343F;
+  --accent:#93B2F2; --accent-soft:#1F2B44; --mark:#4A4422; --ok:#6CC28E; --ok-soft:#18311F; --bad:#EE8580; --bad-soft:#3A1F1E; --warn:#E8B85A; --warn-soft:#3A2E14; --warn-mark:#8A6418; --order:#B9A0F2; --order-soft:#2A2142; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#12161C; --surface:#1A2029; --ink:#E5E8EC; --muted:#9AA4B0; --line:#2C343F;
+  --accent:#93B2F2; --accent-soft:#1F2B44; --mark:#4A4422; --ok:#6CC28E; --ok-soft:#18311F; --bad:#EE8580; --bad-soft:#3A1F1E; --warn:#E8B85A; --warn-soft:#3A2E14; --warn-mark:#8A6418; --order:#B9A0F2; --order-soft:#2A2142; color-scheme:dark}
+html,body{background:var(--paper);color:var(--ink)}
+:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+body{margin:0}
+[hidden]{display:none!important}
+img{max-width:100%}
+/* conversazione */
+nav.idx a.conv{margin:4px -8px 6px;border:1px solid var(--line);background:var(--surface)}
+nav.idx a.conv.on{background:var(--accent-soft)}
+.conv-set{display:grid;gap:12px;margin-bottom:18px}
+.conv-set .lab{font-family:var(--f-ui);font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);font-weight:600;margin-bottom:6px}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{font-family:var(--f-ui);font-size:13.5px;padding:6px 12px;border-radius:999px;border:1px solid var(--line);background:var(--surface);color:var(--ink);cursor:pointer}
+.chip.sel{border-color:var(--accent);background:var(--accent-soft);color:var(--accent);font-weight:600}
+.chip:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.scen-d{font-size:15px;color:var(--muted);margin:6px 0 0}
+.conv-tools{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.conv-tools label{font-family:var(--f-ui);font-size:13.5px;display:inline-flex;gap:6px;align-items:center;color:var(--muted)}
+.chat{display:flex;flex-direction:column;gap:12px;margin:20px 0 8px}
+.msg{max-width:88%;padding:10px 14px;border-radius:14px;line-height:1.55;font-size:16.5px;overflow-wrap:anywhere}
+.msg.ai{align-self:flex-start;background:var(--surface);border:1px solid var(--line);border-bottom-left-radius:4px}
+.msg.me{align-self:flex-end;background:var(--accent-soft);border-bottom-right-radius:4px}
+.say{display:block;font-family:var(--f-ui);font-size:12.5px;background:none;border:none;color:var(--accent);cursor:pointer;padding:0;margin-top:6px}
+.say:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.corr{align-self:flex-end;max-width:88%;font-family:var(--f-ui);font-size:13.5px;display:grid;gap:5px;line-height:1.7}
+.corr .ok{color:var(--ok)}
+.corr .better{color:var(--muted)}
+.corr .better i{font-family:var(--f-body);font-size:15px;color:var(--ink)}
+.corr a{color:var(--accent);margin-left:4px}
+.tk.vo{background:var(--accent-soft);color:var(--accent)}
+.typing{align-self:flex-start;font-family:var(--f-ui);font-size:13.5px;color:var(--muted)}
+.composer{position:sticky;bottom:0;background:var(--paper);padding-top:10px;padding-bottom:calc(10px + env(safe-area-inset-bottom,0px));display:flex;gap:8px;align-items:flex-end;border-top:1px solid var(--line);z-index:5}
+.composer textarea{flex:1;min-width:0;font-family:var(--f-body);font-size:16px;line-height:1.45;padding:10px 12px;border:1px solid var(--line);border-radius:10px;background:var(--surface);color:var(--ink);resize:none;min-height:46px;max-height:160px}
+.composer textarea:focus{outline:2px solid var(--accent);outline-offset:0}
+.hint{font-family:var(--f-ui);font-size:12.5px;color:var(--muted);margin:6px 0 0}
+.report{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:18px 20px;margin-top:18px}
+.report h3{font-family:var(--f-display);font-weight:400;font-size:21px;margin:0 0 8px}
+.report h4{font-family:var(--f-ui);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:14px 0 6px}
+.report ul{margin:0;padding-left:20px}
+.report a{color:var(--accent)}
+.empty{color:var(--muted);font-size:16px;margin:8px 0 0}
+body{font-family:var(--f-body);font-size:17px;line-height:1.6}
+*{box-sizing:border-box}
+.app{display:grid;grid-template-columns:290px minmax(0,1fr);min-height:100vh}
+nav.idx{border-right:1px solid var(--line);padding-block:28px;padding-left:max(20px, env(safe-area-inset-left, 0px));padding-right:18px;position:sticky;top:0;height:100vh;overflow-y:auto;font-family:var(--f-ui);font-size:14px}
+.brand{font-family:var(--f-display);font-size:24px;line-height:1.15;margin:0 0 4px}
+.brand-sub{color:var(--muted);font-size:13px;margin:0 0 18px}
+.overall{margin:0 0 20px}
+.overall .bar{height:6px;background:var(--line);border-radius:3px;overflow:hidden}
+.overall .bar i{display:block;height:100%;background:var(--accent);width:0}
+.overall small{color:var(--muted);display:block;margin-top:6px;font-variant-numeric:tabular-nums}
+.unit{margin:18px 0 6px;font-size:11px;letter-spacing:.09em;text-transform:uppercase;color:var(--muted);font-weight:600}
+nav.idx a{display:grid;grid-template-columns:30px minmax(0,1fr) auto;gap:6px;align-items:baseline;padding:5px 8px;margin:0 -8px;border-radius:6px;color:var(--ink);text-decoration:none}
+nav.idx a:hover{background:var(--accent-soft)}
+nav.idx a.on{background:var(--accent-soft);color:var(--accent);font-weight:600}
+nav.idx a .n{color:var(--muted);font-variant-numeric:tabular-nums}
+nav.idx a .b{font-size:11px;font-variant-numeric:tabular-nums;color:var(--muted)}
+nav.idx a .b.good{color:var(--ok);font-weight:600}
+nav.idx a.rip{margin-top:14px;border:1px dashed var(--line)}
+.topbar{display:none}
+main{padding-block:36px 80px;padding-left:max(28px, env(safe-area-inset-left, 0px));padding-right:max(28px, env(safe-area-inset-right, 0px));min-width:0}
+.page{max-width:780px;margin:0 auto}
+.eyebrow{font-family:var(--f-ui);font-size:12px;letter-spacing:.09em;text-transform:uppercase;color:var(--muted);margin:0 0 6px}
+h1{font-family:var(--f-display);font-weight:400;font-size:clamp(30px,4.6vw,44px);line-height:1.08;margin:0 0 6px;text-wrap:balance}
+.lede{color:var(--muted);margin:0 0 28px;font-size:18px}
+.sec-h{font-family:var(--f-ui);font-size:12px;letter-spacing:.1em;text-transform:uppercase;font-weight:600;color:var(--accent);margin:0 0 12px;display:flex;align-items:center;gap:10px}
+.sec-h::after{content:"";flex:1;height:1px;background:var(--line)}
+.rule{margin-bottom:40px}
+.rule h3{font-family:var(--f-display);font-weight:400;font-size:21px;margin:26px 0 8px}
+.rule h3:first-child{margin-top:0}
+.rule p{margin:0 0 12px;max-width:68ch}
+.rule ul{margin:0 0 12px;padding-left:22px}
+.rule li{margin-bottom:4px}
+.rule b{font-weight:600}
+.rule em.f, .rule .f{font-style:normal;background:var(--mark);padding:0 3px;border-radius:2px}
+.ex{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:2px 18px;margin:6px 0 14px;padding:10px 14px;border-left:3px solid var(--line)}
+.ex i{font-style:italic}
+.ex span{color:var(--muted)}
+.tw{overflow-x:auto;margin:8px 0 16px}
+table.t{border-collapse:collapse;font-size:15px;min-width:100%}
+table.t th,table.t td{text-align:left;padding:6px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+table.t th{font-family:var(--f-ui);font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);font-weight:600}
+table.t td i{color:var(--muted)}
+table.t caption{caption-side:top;text-align:left;font-family:var(--f-display);font-size:17px;padding:0 0 6px}
+table.cj td{white-space:nowrap}
+table.cj td.ps{font-family:var(--f-ui);font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums;padding-right:4px}
+table.cj tr.p3 td{background:var(--accent-soft)}
+table.cj tr.pl1 td{border-top:2px solid var(--line)}
+.nb{background:var(--accent-soft);padding:12px 16px;border-radius:8px;margin:14px 0;font-size:16px}
+.nb::before{content:"Nota bene. ";font-family:var(--f-ui);font-weight:600;font-size:13px;color:var(--accent)}
+/* esercizi */
+.drill{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:22px 24px 24px}
+.tools{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-bottom:6px}
+.btn{font-family:var(--f-ui);font-size:14px;font-weight:500;padding:9px 16px;border-radius:8px;border:1px solid var(--line);background:var(--surface);color:var(--ink);cursor:pointer}
+.btn:hover{border-color:var(--accent);color:var(--accent)}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:var(--surface)}
+.btn.primary:hover{opacity:.9;color:var(--surface)}
+.btn:disabled{opacity:.5;cursor:default}
+.btn:focus-visible,input:focus-visible,.opt:focus-visible,nav a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.src{font-family:var(--f-ui);font-size:12px;color:var(--muted);margin:0 0 14px;min-height:18px}
+ol.items{list-style:none;margin:0;padding:0;counter-reset:it;display:grid;gap:18px}
+ol.items li{counter-increment:it;display:grid;grid-template-columns:28px minmax(0,1fr);gap:4px}
+ol.items li::before{content:counter(it) ".";font-family:var(--f-ui);font-size:14px;color:var(--muted);padding-top:3px;font-variant-numeric:tabular-nums}
+.q{line-height:2.1}
+.q input{font-family:var(--f-body);font-size:16px;border:none;border-bottom:2px solid var(--line);background:transparent;color:var(--ink);padding:0 4px;margin:0 2px;min-width:5ch;max-width:100%;border-radius:0}
+.q input:focus{border-bottom-color:var(--accent);outline:none;background:var(--accent-soft)}
+.wr input{display:block;width:100%;margin-top:6px;font-family:var(--f-body);font-size:16px;padding:8px 10px;border:1px solid var(--line);border-radius:6px;background:var(--paper);color:var(--ink)}
+.opts{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px}
+.opt{font-family:var(--f-body);font-size:15px;padding:5px 14px;border-radius:999px;border:1px solid var(--line);background:var(--paper);color:var(--ink);cursor:pointer}
+.opt.sel{border-color:var(--accent);background:var(--accent-soft);color:var(--accent);font-weight:600}
+.ok-in{border-bottom-color:var(--ok)!important;background:var(--ok-soft)!important}
+.bad-in{border-bottom-color:var(--bad)!important;background:var(--bad-soft)!important}
+.wr input.ok-in,.wr input.bad-in{border-color:currentColor}
+.opt.right{border-color:var(--ok);background:var(--ok-soft);color:var(--ok);font-weight:600}
+.opt.wrong{border-color:var(--bad);background:var(--bad-soft);color:var(--bad);text-decoration:line-through}
+.fb{font-family:var(--f-ui);font-size:13.5px;margin-top:6px;line-height:1.5}
+.fb .y{color:var(--ok);font-weight:600}
+.fb .n{color:var(--bad);font-weight:600}
+.fb .ans{font-family:var(--f-body);font-size:15px}
+.fb .why{color:var(--muted);margin-top:2px}
+.fb .w{color:var(--warn);font-weight:600}
+.fb .dl{margin-top:4px;line-height:2}
+.fb .lab{color:var(--muted)}
+.diff{font-family:var(--f-body);font-size:15.5px}
+.tk{padding:1px 3px;border-radius:3px;white-space:nowrap}
+.tk.ok{color:var(--ok)}
+.tk.sp{background:var(--warn-soft);color:var(--ink)}
+.tk.sp mark{background:var(--warn-mark);color:var(--ink);border-radius:2px;padding:0 1px}
+.tk.gr,.tk.ex{background:var(--bad-soft);color:var(--bad)}
+.tk.mi{border:1px dashed var(--bad);color:var(--bad)}
+.tk.or{background:var(--order-soft);color:var(--order)}
+.tk .fix{font-family:var(--f-ui);font-size:12px;font-weight:600;margin-left:4px}
+.tk.sp .fix{color:var(--warn)}
+.warn-in{border-bottom-color:var(--warn)!important;background:var(--warn-soft)!important}
+.legend{display:flex;flex-wrap:wrap;gap:6px 14px;font-family:var(--f-ui);font-size:12.5px;color:var(--muted);width:100%}
+.legend span{display:inline-flex;align-items:center;gap:6px}
+.legend i{display:inline-block;width:12px;height:12px;border-radius:3px}
+.check-row{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-top:22px;padding-top:18px;border-top:1px solid var(--line)}
+.score{font-family:var(--f-display);font-size:22px;font-variant-numeric:tabular-nums}
+.score small{font-family:var(--f-ui);font-size:13px;color:var(--muted);margin-left:6px}
+.pager{display:flex;justify-content:space-between;gap:12px;margin-top:36px;font-family:var(--f-ui);font-size:14px}
+.pager a{color:var(--accent);text-decoration:none;max-width:48%}
+.pager a:hover{text-decoration:underline}
+.busy{display:inline-block;width:12px;height:12px;border:2px solid var(--line);border-top-color:var(--accent);border-radius:50%;animation:sp 0.8s linear infinite;vertical-align:-2px;margin-right:6px}
+@keyframes sp{to{transform:rotate(360deg)}}
+@media (prefers-reduced-motion: reduce){.busy{animation:none}}
+@media (max-width:900px){
+  .app{grid-template-columns:minmax(0,1fr)}
+  nav.idx{position:fixed;inset:0 auto 0 0;width:min(320px,88vw);height:100%;z-index:20;background:var(--paper);transform:translateX(-102%);transition:transform .2s ease;padding-top:calc(20px + env(safe-area-inset-top, 0px));box-shadow:0 0 0 100vmax transparent}
+  nav.idx.open{transform:none;box-shadow:0 0 0 100vmax rgba(0,0,0,.35)}
+  .topbar{display:flex;position:sticky;top:env(safe-area-inset-top, 0px);z-index:10;background:var(--paper);border-bottom:1px solid var(--line);padding-block:10px;padding-left:max(16px, env(safe-area-inset-left, 0px));padding-right:max(16px, env(safe-area-inset-right, 0px));align-items:center;gap:12px;font-family:var(--f-ui)}
+  body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top, 0px);z-index:10;background:var(--paper)}
+  .topbar b{font-family:var(--f-display);font-weight:400;font-size:18px}
+  main{padding-block:24px 60px;padding-left:max(16px, env(safe-area-inset-left, 0px));padding-right:max(16px, env(safe-area-inset-right, 0px))}
+  .drill{padding:18px 16px}
+  .ex{grid-template-columns:minmax(0,1fr)}
+}
+</style>
+
+<div class="topbar"><button class="btn" id="menuBtn" aria-controls="idx">Indice</button><b>Grammatica Inglese</b></div>
+<div class="app">
+  <nav class="idx" id="idx" aria-label="Indice delle lezioni">
+    <p class="brand">Grammatica Inglese</p>
+    <p class="brand-sub">Regole ed esercizi, paragrafo per paragrafo</p>
+    <div class="overall"><div class="bar"><i id="ovBar"></i></div><small id="ovTxt">0 lezioni su 25 esercitate</small></div>
+    <div id="toc"></div>
+  </nav>
+  <main><div class="page" id="page"></div></main>
+</div>
+
+<script>
+/* ---------- utilità ---------- */
+const pick=a=>a[Math.floor(Math.random()*a.length)];
+const shuffle=a=>{a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a};
+const sampleN=(a,n)=>shuffle(a).slice(0,n);
+const cap=s=>s.charAt(0).toUpperCase()+s.slice(1);
+const alt=s=>String(s).split('|');
+const gap=(q,a,ex)=>({t:'gap',q,a:a.map(x=>Array.isArray(x)?x:alt(x)),ex});
+const choice=(q,o,a,ex)=>({t:'choice',q,o:shuffle(o),a,ex});
+const write=(q,a,ex)=>({t:'write',q,a:Array.isArray(a)?a:alt(a),ex});
+function build(spec){ // spec: [[quante, fn], ...]
+  const out=[],seen=new Set();
+  for(const [n,fn] of spec){let k=0,tries=0;while(k<n&&tries<60){tries++;const it=fn();if(!it||seen.has(it.q))continue;seen.add(it.q);out.push(it);k++}}
+  return out;
+}
+
+/* ---------- morfologia ---------- */
+const s3=b=>{if(b==='have')return'has';if(/(s|x|z|ch|sh|o)$/.test(b))return b+'es';if(/[^aeiou]y$/.test(b))return b.slice(0,-1)+'ies';return b+'s'};
+const ing=(b,d)=>{const w=b.split(' '),v=w[0];let r;if(v.endsWith('ie'))r=v.slice(0,-2)+'ying';else if(d)r=v+v.slice(-1)+'ing';else if(/[^aeiouy]e$/.test(v)&&v!=='be')r=v.slice(0,-1)+'ing';else r=v+'ing';w[0]=r;return w.join(' ')};
+const ed=(b,d)=>{if(b.endsWith('e'))return b+'d';if(/[^aeiou]y$/.test(b))return b.slice(0,-1)+'ied';if(d)return b+b.slice(-1)+'ed';return b+'ed'};
+
+const V=[ // base, past, pp, italiano, complementi, raddoppio
+ ['work',0,0,'lavorare',['in a bank','from home','in the city centre']],
+ ['live',0,0,'vivere',['in London','near the station','in a small flat']],
+ ['play',0,0,'giocare / suonare',['tennis','the piano','football in the park']],
+ ['watch',0,0,'guardare',['TV','the news','a film']],
+ ['cook',0,0,'cucinare',['dinner','pasta for everyone']],
+ ['study',0,0,'studiare',['English','history','in the library']],
+ ['wash',0,0,'lavare',['the car','the dishes']],
+ ['finish',0,0,'finire',['work at six','the report']],
+ ['stop',0,0,'fermarsi',['at the café','for a coffee'],1],
+ ['visit',0,0,'visitare',['my grandparents','the museum']],
+ ['open',0,0,'aprire',['the window','the shop at nine']],
+ ['walk',0,0,'camminare',['to school','the dog','in the park']],
+ ['clean',0,0,'pulire',['the kitchen','the house']],
+ ['carry',0,0,'portare',['a heavy bag','the shopping']],
+ ['listen',0,0,'ascoltare',['to music','to the radio']],
+ ['arrive',0,0,'arrivare',['late','at the office at eight']],
+ ['use',0,0,'usare',['the computer','a dictionary']],
+ ['help',0,0,'aiutare',['my brother','in the garden']],
+ ['call',0,0,'chiamare',['my mother','a taxi']],
+ ['dance',0,0,'ballare',['at parties','salsa']],
+ ['shop',0,0,'fare acquisti',['online','at the market'],1],
+ ['plan',0,0,'pianificare',['the holidays','the meeting'],1],
+ ['try',0,0,'provare',['new recipes','the local food']],
+ ['go','went','gone','andare',['to the gym','to bed early','to the cinema']],
+ ['have','had','had','avere / fare',['breakfast at seven','a shower','lunch with friends']],
+ ['eat','ate','eaten','mangiare',['pasta','a sandwich','fruit']],
+ ['drink','drank','drunk','bere',['coffee','green tea']],
+ ['write','wrote','written','scrivere',['emails','a letter','in my diary']],
+ ['read','read','read','leggere',['the newspaper','a novel']],
+ ['speak','spoke','spoken','parlare',['French','to the manager']],
+ ['take','took','taken','prendere',['the bus','photos']],
+ ['make','made','made','fare',['a cake','breakfast']],
+ ['buy','bought','bought','comprare',['bread','fresh fish']],
+ ['see','saw','seen','vedere',['the doctor','a film']],
+ ['meet','met','met','incontrare',['friends','my colleagues']],
+ ['get','got','got','alzarsi / prendere',['up early','a taxi home'],1],
+ ['run','ran','run','correre',['in the park','five kilometres'],1],
+ ['swim','swam','swum','nuotare',['in the sea','in the pool'],1],
+ ['drive','drove','driven','guidare',['to work','very fast']],
+ ['teach','taught','taught','insegnare',['maths','at a primary school']],
+ ['sleep','slept','slept','dormire',['eight hours','on the sofa']],
+ ['leave','left','left','partire / lasciare',['home at eight','the office early']],
+ ['do','did','done','fare',['the homework','yoga']],
+ ['sing','sang','sung','cantare',['in a choir','in the shower']],
+ ['wear','wore','worn','indossare',['a uniform','jeans']],
+ ['send','sent','sent','mandare',['messages','postcards']],
+ ['ride','rode','ridden','andare (in bici, a cavallo)',['a bike','a horse']],
+ ['catch','caught','caught','prendere (al volo)',['the train','the 8:15 bus']],
+ ['spend','spent','spent','trascorrere',['the weekend at home','a lot of money']],
+ ['sit','sat','sat','sedersi',['in the garden','by the window'],1],
+ ['fly','flew','flown','volare',['to Paris','with a cheap airline']],
+].map(([b,past,pp,it,c,d])=>({b,past:past||ed(b,d),pp:pp||ed(b,d),it,c,d:!!d,irr:!!past}));
+const REG=V.filter(v=>!v.irr), IRRV=V.filter(v=>v.irr);
+const vc=v=>pick(v.c);
+
+const IRR=[ // base, past, participio, italiano
+ ['be','was|were','been','essere'],['become','became','become','diventare'],['begin','began','begun','cominciare'],['bite','bit','bitten','mordere'],
+ ['blow','blew','blown','soffiare'],['break','broke','broken','rompere'],['bring','brought','brought','portare'],['build','built','built','costruire'],
+ ['burn','burnt|burned','burnt|burned','bruciare'],['buy','bought','bought','comprare'],['catch','caught','caught','prendere al volo'],['choose','chose','chosen','scegliere'],
+ ['come','came','come','venire'],['cost','cost','cost','costare'],['cut','cut','cut','tagliare'],['deal','dealt','dealt','trattare'],['dig','dug','dug','scavare'],
+ ['do','did','done','fare'],['draw','drew','drawn','disegnare'],['dream','dreamt|dreamed','dreamt|dreamed','sognare'],['drink','drank','drunk','bere'],
+ ['drive','drove','driven','guidare'],['eat','ate','eaten','mangiare'],['fall','fell','fallen','cadere'],['feed','fed','fed','nutrire'],['feel','felt','felt','sentire (provare)'],
+ ['fight','fought','fought','combattere'],['find','found','found','trovare'],['fly','flew','flown','volare'],['forbid','forbade','forbidden','proibire'],
+ ['forget','forgot','forgotten','dimenticare'],['forgive','forgave','forgiven','perdonare'],['freeze','froze','frozen','gelare'],['get','got','got|gotten','ottenere'],
+ ['give','gave','given','dare'],['go','went','gone','andare'],['grow','grew','grown','crescere'],['hang','hung','hung','appendere'],['have','had','had','avere'],
+ ['hear','heard','heard','udire'],['hide','hid','hidden','nascondere'],['hit','hit','hit','colpire'],['hold','held','held','tenere'],['hurt','hurt','hurt','fare male'],
+ ['keep','kept','kept','tenere, conservare'],['know','knew','known','sapere, conoscere'],['lay','laid','laid','posare'],['lead','led','led','guidare, condurre'],
+ ['learn','learnt|learned','learnt|learned','imparare'],['leave','left','left','partire, lasciare'],['lend','lent','lent','prestare'],['let','let','let','permettere'],
+ ['lie','lay','lain','giacere'],['light','lit','lit','accendere'],['lose','lost','lost','perdere'],['make','made','made','fare'],['mean','meant','meant','significare'],
+ ['meet','met','met','incontrare'],['pay','paid','paid','pagare'],['put','put','put','mettere'],['read','read','read','leggere'],['ride','rode','ridden','cavalcare'],
+ ['ring','rang','rung','suonare (campanello)'],['rise','rose','risen','sorgere'],['run','ran','run','correre'],['say','said','said','dire'],['see','saw','seen','vedere'],
+ ['seek','sought','sought','cercare'],['sell','sold','sold','vendere'],['send','sent','sent','mandare'],['shake','shook','shaken','scuotere'],['shine','shone','shone','splendere'],
+ ['shoot','shot','shot','sparare'],['show','showed','shown|showed','mostrare'],['shut','shut','shut','chiudere'],['sing','sang','sung','cantare'],['sink','sank','sunk','affondare'],
+ ['sit','sat','sat','sedersi'],['sleep','slept','slept','dormire'],['speak','spoke','spoken','parlare'],['spend','spent','spent','spendere'],['stand','stood','stood','stare in piedi'],
+ ['steal','stole','stolen','rubare'],['sting','stung','stung','pungere'],['strike','struck','struck','colpire'],['swear','swore','sworn','giurare'],['swim','swam','swum','nuotare'],
+ ['take','took','taken','prendere'],['teach','taught','taught','insegnare'],['tear','tore','torn','strappare'],['tell','told','told','raccontare'],['think','thought','thought','pensare'],
+ ['throw','threw','thrown','lanciare'],['understand','understood','understood','capire'],['wake','woke','woken','svegliare'],['wear','wore','worn','indossare'],
+ ['win','won','won','vincere'],['write','wrote','written','scrivere']];
+const IRRMAP=Object.fromEntries(IRR.map(r=>[r[0],r]));
+const pastOf=b=>IRRMAP[b]?alt(IRRMAP[b][1])[0]:ed(b,['stop','plan','shop'].includes(b));
+const ppOf=b=>IRRMAP[b]?alt(IRRMAP[b][2])[0]:ed(b,['stop','plan','shop'].includes(b));
+
+const SUBJ=[['I','1s'],['You','2'],['He','3s'],['She','3s'],['We','1p'],['They','3p'],['My sister','3s'],['Tom','3s'],['Anna','3s'],['Our neighbours','3p'],['The children','3p'],['My parents','3p']].map(([s,p])=>({s,p}));
+const subj=(f)=>pick(f?SUBJ.filter(f):SUBJ);
+const mid=x=>{if(x==='I')return'I';if(['You','He','She','It','We','They'].includes(x))return x.toLowerCase();if(/^(My|Our|The|Your)\b/.test(x))return x[0].toLowerCase()+x.slice(1);return x};
+const BE=p=>p==='1s'?'am':p==='3s'?'is':'are';
+const BENEG=p=>p==='1s'?'am not':p==='3s'?"isn't":"aren't";
+const WAS=p=>(p==='1s'||p==='3s')?'was':'were';
+const HAS=p=>p==='3s'?'has':'have';
+const DO=p=>p==='3s'?'does':'do';
+const PRES=(b,p)=>p==='3s'?s3(b):b;
+const notI=x=>x.s!=='I';
+
+/* paradigma classico: sei persone in fila */
+const PERS=[['I','1s','1ª sing.'],['you','2','2ª sing.'],['he / she / it','3s','3ª sing.'],['we','1p','1ª plur.'],['you','2p','2ª plur.'],['they','3p','3ª plur.']];
+function cj(caption,cols){
+  return `<div class="tw"><table class="t cj"><caption>${caption}</caption><tr><th></th>${cols.map(c=>`<th>${c[0]}</th>`).join('')}</tr>${PERS.map(([pr,p,lab])=>`<tr class="${p==='3s'?'p3':p==='1p'?'pl1':''}"><td class="ps">${lab}</td>${cols.map(c=>`<td>${c[1](pr,p)}</td>`).join('')}</tr>`).join('')}</table></div>`;
+}
+const CTR={am:"'m",is:"'s",are:"'re"};
+const ctr=(pr,p)=>p==='3s'?`he${CTR.is} / she${CTR.is} / it${CTR.is}`:`${pr}${CTR[BE(p)]}`;
+const Q=(aux,pr,rest)=>`<b>${cap(aux)}</b> ${pr}${rest?' '+rest:''}?`;
+
+/* ---------- lezioni ---------- */
+const UNITS={I:"Il nome e l'articolo",II:'I pronomi',III:'Aggettivi e avverbi',IV:'Il verbo: presente e passato',V:'Il verbo: futuro, modi, forma passiva',VI:'Sintassi'};
+const L=[];
+
+/* §1 Articoli */
+const ART=[["I'd like ___ apple, please.",'an'],["She's ___ engineer.",'an'],["He's ___ doctor.",'a'],["___ sun rises in the east.",'the'],["I saw a film last night. ___ film was very long.",'the'],["We usually have ___ lunch at one.",'—'],["I love ___ music.",'—'],["Can you close ___ door, please?",'the'],["My father plays ___ piano.",'the'],["She plays ___ tennis every Saturday.",'—'],["Rome is ___ capital of Italy.",'the'],["There's ___ university in my town.",'a'],["I'll be back in ___ hour.",'an'],["He's ___ honest man.",'an'],["___ Mount Everest is the highest mountain in the world.",'—'],["We crossed ___ Alps by car.",'the'],["They live in ___ United States.",'the'],["I don't like ___ dogs.",'—'],["___ dogs next door bark all night.",'the'],["What ___ beautiful day!",'a'],["She earns 2,000 euros ___ month.",'a'],["He's ___ best student in the class.",'the'],["I go to work by ___ bus.",'—'],["It's ___ unusual name.",'an'],["She wears ___ uniform at work.",'a'],["___ Thames flows through London.",'the'],["I play ___ guitar in a band.",'the'],["We had ___ breakfast at the hotel.",'—'],["It's time to go to ___ bed.",'—'],["Is there ___ post office near here?",'a']];
+const ARTEX={a:'A davanti a suono consonantico (anche u- /ju:/ e eu-).',an:'An davanti a suono vocalico (anche h muta: hour, honest).',the:'The: cosa nota, unica, superlativo, strumenti, fiumi, catene montuose, stati al plurale.','—':'Articolo zero: senso generale, pasti, sport, by + mezzo, nomi propri, espressioni fisse.'};
+L.push({unit:'I',title:'Gli articoli',sub:'a, an, the e l’articolo zero',rule:`
+<h3>Articolo indeterminativo: <i>a / an</i></h3>
+<p>Si usa con i nomi <b>numerabili singolari</b>: quando si nomina qualcosa per la prima volta, e sempre con le professioni. La scelta fra <i>a</i> e <i>an</i> dipende dal <b>suono</b> iniziale della parola seguente, non dalla lettera.</p>
+<div class="tw"><table class="t"><tr><th>a + suono consonantico</th><th>an + suono vocalico</th></tr>
+<tr><td>a book, a car</td><td>an apple, an egg</td></tr>
+<tr><td>a <b>u</b>niversity, a <b>u</b>niform <i>(/ju:/)</i></td><td>an <b>h</b>our, an <b>h</b>onest man <i>(h muta)</i></td></tr>
+<tr><td>a <b>Eu</b>ropean, a <b>o</b>ne-way ticket</td><td>an <b>u</b>mbrella, an <b>u</b>nusual name</td></tr></table></div>
+<div class="ex"><i>She's an engineer.</i><span>È ingegnere.</span><i>Twice a week.</i><span>Due volte alla settimana.</span></div>
+<h3>Articolo determinativo: <i>the</i></h3>
+<ul><li>cosa già nominata o nota a chi ascolta: <i>I saw a film. <span class="f">The</span> film was long.</i></li>
+<li>cosa unica: <i>the sun, the capital of Italy</i>; con il superlativo: <i>the best</i></li>
+<li>strumenti musicali: <i>play the piano</i></li>
+<li>fiumi, mari, catene montuose, stati al plurale: <i>the Thames, the Alps, the United States</i></li></ul>
+<h3>Articolo zero</h3>
+<p>Qui l'inglese si separa dall'italiano. <b>Nessun articolo</b> con:</p>
+<ul><li>plurali e non numerabili in senso generale: <i>I like dogs. Music is important.</i> (mi piacciono <u>i</u> cani; <u>la</u> musica)</li>
+<li>pasti, sport e giochi: <i>have lunch, play tennis</i></li>
+<li><i>by</i> + mezzo di trasporto: <i>by bus, by train</i></li>
+<li>nomi propri, città, quasi tutti i paesi, montagne singole: <i>Rome, Italy, Mount Everest</i></li>
+<li>espressioni fisse: <i>go to bed, at home, at work, go to school</i></li></ul>
+<p class="nb">Il nome generico plurale non vuole articolo (<i>Dogs are loyal</i>), ma se il gruppo è determinato sì: <i>The dogs next door bark all night</i>.</p>`,
+gen:()=>build([[8,()=>{const [q,a]=pick(ART);return choice(q,['a','an','the','—'],a,ARTEX[a])}]])});
+
+/* §2 Plurale */
+const PLUR=[['book','books'],['car','cars'],['box','boxes'],['bus','buses'],['watch','watches'],['dish','dishes'],['kiss','kisses'],['church','churches'],['fox','foxes'],['potato','potatoes'],['tomato','tomatoes'],['hero','heroes'],['photo','photos'],['piano','pianos'],['city','cities'],['baby','babies'],['country','countries'],['party','parties'],['day','days'],['boy','boys'],['key','keys'],['toy','toys'],['knife','knives'],['wife','wives'],['leaf','leaves'],['life','lives'],['half','halves'],['shelf','shelves'],['wolf','wolves'],['roof','roofs'],['chief','chiefs'],['man','men'],['woman','women'],['child','children'],['foot','feet'],['tooth','teeth'],['mouse','mice'],['person','people'],['goose','geese'],['sheep','sheep'],['fish','fish'],['deer','deer'],['series','series'],['ox','oxen'],['crisis','crises'],['phenomenon','phenomena']];
+const plEx=([s,p])=>{if(p===s)return'Plurale invariato.';if(['men','women','children','feet','teeth','mice','people','geese','oxen','crises','phenomena'].includes(p))return'Plurale irregolare: si impara a memoria.';if(p.endsWith('ves'))return'-f / -fe → -ves.';if(p.endsWith('ies'))return'Consonante + y → -ies.';if(/[aeiou]ys$/.test(p))return'Vocale + y → semplice -s.';if(p.endsWith('oes'))return'Alcuni nomi in -o prendono -es.';if(p.endsWith('es'))return'Dopo -s, -x, -ch, -sh si aggiunge -es.';if(['photos','pianos'].includes(p))return'Parole abbreviate o straniere in -o: solo -s.';if(['roofs','chiefs'].includes(p))return'Eccezione: roof e chief prendono solo -s.';return'Regola generale: + -s.'};
+L.push({unit:'I',title:'Il plurale dei nomi',sub:'regole ortografiche e plurali irregolari',rule:`
+<h3>Regola generale</h3><p>Il plurale si forma aggiungendo <span class="f">-s</span>: <i>book → books, car → cars</i>.</p>
+<h3>Varianti ortografiche</h3>
+<div class="tw"><table class="t"><tr><th>Terminazione</th><th>Regola</th><th>Esempi</th></tr>
+<tr><td>-s, -ss, -x, -ch, -sh</td><td>+ <b>-es</b></td><td>bus → buses, box → boxes, watch → watches</td></tr>
+<tr><td>consonante + -y</td><td>-y → <b>-ies</b></td><td>city → cities, baby → babies</td></tr>
+<tr><td>vocale + -y</td><td>+ -s</td><td>day → days, key → keys</td></tr>
+<tr><td>-f, -fe</td><td>→ <b>-ves</b></td><td>knife → knives, leaf → leaves <i>(ma roof → roofs, chief → chiefs)</i></td></tr>
+<tr><td>-o</td><td>+ -es in alcuni nomi comuni</td><td>potato → potatoes, tomato → tomatoes, hero → heroes <i>(ma photo → photos, piano → pianos)</i></td></tr></table></div>
+<h3>Plurali irregolari</h3><p>Resti dell'antico inglese, come le declinazioni «difficili» del latino: vanno imparati a memoria.</p>
+<div class="tw"><table class="t"><tr><th>Mutamento vocalico</th><th>In -en</th><th>Invariati</th><th>Dal latino e dal greco</th></tr>
+<tr><td>man → men<br>woman → women<br>foot → feet<br>tooth → teeth<br>mouse → mice<br>goose → geese</td><td>child → children<br>ox → oxen</td><td>sheep, fish, deer, series</td><td>crisis → crises<br>phenomenon → phenomena</td></tr></table></div>
+<p class="nb"><i>Person</i> ha come plurale corrente <i>people</i>. <i>People</i> è sempre plurale: <i>People <b>are</b> friendly here</i>.</p>`,
+gen:()=>build([[8,()=>{const w=pick(PLUR);return gap(`one ${w[0]} → two ___`,[w[1]],plEx(w))}]])});
+
+/* §3 Numerabili e non numerabili */
+const CNT_K=['eggs','apples','tomatoes','onions','glasses','plates','biscuits','bananas'], UNC_K=['water','milk','bread','rice','sugar','cheese','coffee','butter'];
+const CNT_G=['friends','books','students','questions','cousins','emails','chairs'], UNC_G=['money','time','information','advice','homework','luggage','furniture'];
+L.push({unit:'I',title:'Numerabili e non numerabili',sub:'some, any, much, many, a few, a little',rule:`
+<h3>Due classi di nomi</h3>
+<p>I nomi <b>numerabili</b> (countable) hanno singolare e plurale: <i>an egg, two eggs</i>. I <b>non numerabili</b> (uncountable) non hanno plurale e non prendono <i>a/an</i>: <i>water, money, bread</i>.</p>
+<p>Attenzione ai «falsi amici» grammaticali: in inglese sono non numerabili <i>information, advice, news, furniture, luggage, homework</i>. Per contarli si usa un'unità: <i>a piece of advice</i>.</p>
+<h3>Quantificatori</h3>
+<div class="tw"><table class="t"><tr><th></th><th>Numerabili plurali</th><th>Non numerabili</th></tr>
+<tr><td>frase affermativa</td><td><span class="f">some</span> eggs</td><td><span class="f">some</span> milk</td></tr>
+<tr><td>negativa e interrogativa</td><td><span class="f">any</span> eggs</td><td><span class="f">any</span> milk</td></tr>
+<tr><td>molto, molti</td><td><span class="f">many</span> friends</td><td><span class="f">much</span> money</td></tr>
+<tr><td>quanto, quanti?</td><td>How <span class="f">many</span>…?</td><td>How <span class="f">much</span>…?</td></tr>
+<tr><td>un po' di, alcuni</td><td>a <span class="f">few</span> friends</td><td>a <span class="f">little</span> time</td></tr>
+<tr><td>valgono per entrambi</td><td colspan="2"><i>a lot of, lots of, plenty of</i></td></tr></table></div>
+<p class="nb">Nelle offerte e richieste cortesi si usa <i>some</i> anche nella domanda: <i>Would you like some tea?</i> Nelle frasi affermative <i>much</i> suona formale: si preferisce <i>a lot of</i>.</p>`,
+gen:()=>build([
+ [3,()=>{const c=Math.random()<.5,n=pick(c?CNT_G:UNC_G);return choice(`How ___ ${n} have you got?`,['much','many'],c?'many':'much',c?'Many con i numerabili plurali.':`Much con i non numerabili (${n}).`)}],
+ [3,()=>{const c=Math.random()<.5,n=pick(c?CNT_K:UNC_K),k=pick(['pos','neg','q']);const be=c?'are':'is',ben=c?"aren't":"isn't";
+   const q=k==='pos'?`There ${be} ___ ${n} in the kitchen.`:k==='neg'?`There ${ben} ___ ${n} in the kitchen.`:`${cap(be)} there ___ ${n} in the kitchen?`;
+   return choice(q,['some','any'],k==='pos'?'some':'any',k==='pos'?'Some nella frase affermativa.':'Any nelle frasi negative e interrogative.')}],
+ [2,()=>{const c=Math.random()<.5,n=pick(c?CNT_G.concat(CNT_K):UNC_G.concat(UNC_K));return choice(`We need a ___ ${n}.`,['few','little'],c?'few':'little',c?'A few + numerabile plurale.':'A little + non numerabile.')}]])});
+
+/* §4 Genitivo sassone */
+const POSS=[['my father','sg'],['my sister','sg'],['Tom','sg'],['the teacher','sg'],['our neighbour','sg'],['my parents','pl'],['the students','pl'],['the girls','pl'],['the boys','pl'],['the children','irr'],['the women','irr'],['the men','irr'],['James','s'],['Charles','s']];
+const POBJ=['car','house','bag','books','room','bikes','phone','birthday','ideas','garden'];
+L.push({unit:'I',title:'Il genitivo sassone',sub:"il possesso con ’s",rule:`
+<h3>Forma</h3>
+<p>Per indicare il possesso di persone (e animali) l'inglese preferisce il <b>genitivo sassone</b>: il possessore viene <b>prima</b>, seguito da <span class="f">’s</span>, e la cosa posseduta perde l'articolo.</p>
+<div class="ex"><i>my father's car</i><span>la macchina di mio padre</span><i>Anna's birthday</i><span>il compleanno di Anna</span></div>
+<div class="tw"><table class="t"><tr><th>Possessore</th><th>Desinenza</th><th>Esempio</th></tr>
+<tr><td>singolare</td><td>’s</td><td>the teacher<b>'s</b> desk</td></tr>
+<tr><td>plurale regolare in -s</td><td>solo ’</td><td>the girl<b>s'</b> room</td></tr>
+<tr><td>plurale irregolare</td><td>’s</td><td>the children<b>'s</b> toys, the women<b>'s</b> team</td></tr>
+<tr><td>nome proprio in -s</td><td>’s (o solo ’)</td><td>James<b>'s</b> house / James<b>'</b> house</td></tr></table></div>
+<h3>Quando si usa <i>of</i></h3>
+<p>Con le cose si usa di norma <i>of</i>: <i>the end <b>of</b> the film, the roof <b>of</b> the house</i>. Con i tempi e alcune espressioni fisse resta il genitivo: <i>today's newspaper, a week's holiday</i>.</p>
+<p class="nb">Il genitivo può stare da solo quando il nome è sottinteso: <i>I'm going to the doctor's</i> (dal medico), <i>at Tom's</i> (a casa di Tom).</p>`,
+gen:()=>build([[8,()=>{const [p,k]=pick(POSS),o=pick(POBJ);const g=k==='pl'?p+"'":p+"'s";const ans=[`${g} ${o}`];if(k==='s')ans.push(`${p}' ${o}`);
+ return write(`Riscrivi con il genitivo sassone: the ${o} of ${p}`,ans,k==='pl'?'Plurale in -s: solo apostrofo.':k==='irr'?"Plurale irregolare: ’s.":k==='s'?"Nome in -s: ’s (accettato anche solo ’).":"Possessore singolare: ’s, e la cosa perde l’articolo.")}]])});
+
+/* §5 Pronomi personali e possessivi */
+const PR={I:['I','me','my','mine'],you:['you','you','your','yours'],he:['he','him','his','his'],she:['she','her','her','hers'],it:['it','it','its',null],we:['we','us','our','ours'],they:['they','them','their','theirs']};
+L.push({unit:'II',title:'Pronomi personali e possessivi',sub:'soggetto, complemento, aggettivo e pronome possessivo',rule:`
+<h3>Il paradigma</h3>
+<div class="tw"><table class="t"><tr><th>Soggetto</th><th>Complemento</th><th>Agg. possessivo</th><th>Pron. possessivo</th></tr>
+<tr><td>I</td><td>me</td><td>my</td><td>mine</td></tr><tr><td>you</td><td>you</td><td>your</td><td>yours</td></tr>
+<tr><td>he</td><td>him</td><td>his</td><td>his</td></tr><tr><td>she</td><td>her</td><td>her</td><td>hers</td></tr>
+<tr><td>it</td><td>it</td><td>its</td><td>—</td></tr><tr><td>we</td><td>us</td><td>our</td><td>ours</td></tr>
+<tr><td>they</td><td>them</td><td>their</td><td>theirs</td></tr></table></div>
+<h3>Uso</h3>
+<ul><li>Il <b>soggetto è obbligatorio</b>, anche dove l'italiano lo omette: <i><b>It</b> is raining. <b>She</b> is tired.</i></li>
+<li>Il pronome complemento segue il verbo o la preposizione: <i>Call <b>me</b>. Come with <b>us</b>.</i></li>
+<li>L'aggettivo possessivo concorda con il <b>possessore</b>, non con la cosa (diversamente dall'italiano): <i>his sister</i> (la sorella di lui), <i>her brother</i> (il fratello di lei). Non vuole articolo: <i>my book</i>.</li>
+<li>Il pronome possessivo sostituisce aggettivo + nome: <i>This book is <b>mine</b></i>.</li></ul>
+<p class="nb"><i>Its</i> (possessivo) non ha apostrofo; <i>it's</i> = <i>it is / it has</i>.</p>`,
+gen:()=>build([
+ [2,()=>{const k=pick(Object.keys(PR));return gap(`___ (${k}) can swim very well.`,[PR[k][0]],'Pronome soggetto: obbligatorio in inglese.')}],
+ [2,()=>{const k=pick(Object.keys(PR).filter(x=>x!=='I'||1));return gap(`Can you help ___ (${k})?`,[PR[k][1]],'Dopo il verbo: pronome complemento.')}],
+ [2,()=>{const k=pick(Object.keys(PR));return gap(`Is this ___ (${k}) umbrella?`,[PR[k][2]],'Aggettivo possessivo davanti al nome, senza articolo.')}],
+ [2,()=>{const k=pick(Object.keys(PR).filter(x=>x!=='it'));return gap(`That umbrella is ___ (${k}).`,[PR[k][3]],'Pronome possessivo: sostituisce aggettivo + nome.')}]])});
+
+/* §6 Riflessivi */
+const RS=[['I','myself'],['You','yourself|yourselves'],['He','himself'],['She','herself'],['We','ourselves'],['They','themselves'],['My brother','himself'],['The children','themselves'],['Anna','herself']];
+const RT=['hurt ___ while cooking.','enjoyed ___ at the party.','looked at ___ in the mirror.','taught ___ to play the guitar.','built the bookshelf ___.','introduced ___ to the new neighbours.'];
+const EACH=[["Tom and Anna love ___ very much.",'each other'],["The two neighbours never speak to ___.",'each other'],["The children dressed ___ without any help.",'themselves'],["We introduced ___ to the new teacher.",'ourselves'],["My sister and I phone ___ every day.",'each other'],["They blamed ___ for the accident.",'themselves']];
+L.push({unit:'II',title:'Pronomi riflessivi',sub:'myself, yourself… ed each other',rule:`
+<h3>Forme</h3>
+<div class="tw"><table class="t"><tr><th>Singolare</th><th>Plurale</th></tr>
+<tr><td>myself</td><td>ourselves</td></tr><tr><td>yourself</td><td>yourselves</td></tr><tr><td>himself / herself / itself</td><td>themselves</td></tr></table></div>
+<h3>Usi</h3>
+<ul><li><b>Riflessivo</b>: soggetto e oggetto coincidono. <i>She hurt <b>herself</b>.</i> (Si è fatta male.)</li>
+<li><b>Enfatico</b>: «da solo, proprio io». <i>I made the cake <b>myself</b>.</i></li>
+<li><b>by + riflessivo</b> = da solo, senza compagnia o aiuto: <i>He lives by himself.</i></li></ul>
+<p>Molti verbi riflessivi in italiano <b>non</b> lo sono in inglese: <i>get up</i> (alzarsi), <i>wash</i> (lavarsi), <i>feel</i> (sentirsi), <i>relax</i> (rilassarsi), <i>remember</i> (ricordarsi).</p>
+<h3>Reciproco: <i>each other</i></h3>
+<p>Quando l'azione è scambievole fra due o più persone: <i>Tom and Anna love <b>each other</b></i> (si amano l'un l'altro). Confronta: <i>They blamed themselves</i> (ciascuno sé stesso).</p>`,
+gen:()=>build([[6,()=>{const [s,r]=pick(RS);return gap(`${s} ${pick(RT)}`,[r],'Il riflessivo concorda con il soggetto.')}],
+ [2,()=>{const [q,a]=pick(EACH);return choice(q,['each other','themselves','ourselves'],a,a==='each other'?'Azione reciproca: each other.':'Azione rivolta al soggetto stesso: riflessivo.')}]])});
+
+/* §7 Relativi */
+const RP=['the woman','the man','the doctor','the students','the girl'], RPC=['lives next door','called you yesterday','teaches us English','won the competition'];
+const RT2=['the book','the car','the film','the keys','the photo'], RTC=['is on the table','I bought last week','we saw on Saturday','was in the drawer'];
+const RW=['car was stolen','dog barks all night','father is a pilot','house is for sale'];
+const RWH=[['the town','I grew up'],['the hotel','we stayed'],['the restaurant','we had dinner'],['the office','she works']];
+L.push({unit:'II',title:'I pronomi relativi',sub:'who, which, that, whose, where',rule:`
+<h3>Il quadro</h3>
+<div class="tw"><table class="t"><tr><th>Antecedente</th><th>Pronome</th><th>Esempio</th></tr>
+<tr><td>persona</td><td><b>who</b> (o that)</td><td>the woman <b>who</b> lives next door</td></tr>
+<tr><td>cosa, animale</td><td><b>which</b> (o that)</td><td>the book <b>which</b> is on the table</td></tr>
+<tr><td>possesso («il cui»)</td><td><b>whose</b></td><td>the man <b>whose</b> car was stolen</td></tr>
+<tr><td>luogo («dove, in cui»)</td><td><b>where</b></td><td>the town <b>where</b> I grew up</td></tr></table></div>
+<h3>Relative determinative e non determinative</h3>
+<p>Le <b>determinative</b> identificano di chi o di che cosa si parla; non hanno virgole e ammettono <i>that</i>. Quando il relativo è <b>complemento oggetto</b> si può omettere: <i>the book (that) I bought</i>.</p>
+<p>Le <b>non determinative</b> aggiungono un'informazione accessoria fra virgole; non ammettono <i>that</i> e il relativo non si omette: <i>My brother, <b>who</b> lives in Milan, is a doctor.</i></p>
+<p class="nb">La preposizione nell'inglese parlato va in fondo: <i>the girl (who) I was talking <b>to</b></i>. Nello stile formale: <i>the girl <b>to whom</b> I was talking</i>.</p>`,
+gen:()=>build([
+ [3,()=>choice(`I know ${pick(RP)} ___ ${pick(RPC)}.`,['who','which','whose','where'],'who','Antecedente persona: who (anche that).')],
+ [2,()=>choice(`Where's ${pick(RT2)} ___ ${pick(RTC)}?`,['who','which','whose','where'],'which','Antecedente cosa: which (anche that).')],
+ [2,()=>choice(`That's ${pick(RP)} ___ ${pick(RW)}.`,['who','which','whose','where'],'whose','Possesso: whose + nome.')],
+ [1,()=>{const [a,c]=pick(RWH);return choice(`This is ${a} ___ ${c}.`,['who','which','whose','where'],'where','Luogo: where.')}]])});
+
+/* §8 Comparativi e superlativi */
+const ADJ=[['big','bigger','biggest','house'],['small','smaller','smallest','room'],['tall','taller','tallest','building'],['old','older','oldest','church'],['cheap','cheaper','cheapest','hotel'],['expensive','more expensive','most expensive','restaurant'],['beautiful','more beautiful','most beautiful','beach'],['good','better','best','pizzeria'],['bad','worse','worst','film'],['far','farther|further','farthest|furthest','village'],['happy','happier','happiest','child'],['easy','easier','easiest','exercise'],['busy','busier','busiest','street'],['hot','hotter','hottest','summer'],['thin','thinner','thinnest','book'],['nice','nicer','nicest','café'],['large','larger','largest','park'],['interesting','more interesting','most interesting','museum'],['difficult','more difficult','most difficult','question'],['comfortable','more comfortable','most comfortable','chair'],['quiet','quieter','quietest','neighbourhood'],['modern','more modern','most modern','stadium'],['famous','more famous','most famous','singer'],['dangerous','more dangerous','most dangerous','road'],['heavy','heavier','heaviest','suitcase'],['funny','funnier','funniest','joke'],['safe','safer','safest','car'],['fast','faster','fastest','train'],['narrow','narrower','narrowest','street'],['clever','cleverer|more clever','cleverest|most clever','student']];
+const adjEx=(a,c)=>{if(['good','bad','far'].includes(a))return'Forma irregolare.';if(c.startsWith('more'))return'Aggettivo lungo (2+ sillabe): more / the most.';if(/[^aeiou][aeiou][^aeiouwy]$/.test(a)&&/(.)\1er/.test(c))return'Monosillabo CVC: raddoppia la consonante.';if(/y$/.test(a))return'-y → -ier / -iest.';if(/e$/.test(a))return'Termina in -e: solo -r / -st.';return'Monosillabo: -er / -est.'};
+L.push({unit:'III',title:'Comparativi e superlativi',sub:'-er / -est, more / most e le forme irregolari',rule:`
+<h3>Formazione</h3>
+<div class="tw"><table class="t"><tr><th>Aggettivo</th><th>Comparativo</th><th>Superlativo</th></tr>
+<tr><td>una sillaba: <i>cheap</i></td><td>cheap<b>er</b></td><td>the cheap<b>est</b></td></tr>
+<tr><td>in -e: <i>nice</i></td><td>nice<b>r</b></td><td>the nice<b>st</b></td></tr>
+<tr><td>consonante-vocale-consonante: <i>big</i></td><td>bi<b>gg</b>er</td><td>the bi<b>gg</b>est</td></tr>
+<tr><td>due sillabe in -y: <i>happy</i></td><td>happ<b>ier</b></td><td>the happ<b>iest</b></td></tr>
+<tr><td>due o più sillabe: <i>expensive</i></td><td><b>more</b> expensive</td><td>the <b>most</b> expensive</td></tr></table></div>
+<h3>Irregolari</h3>
+<div class="tw"><table class="t"><tr><th>Grado positivo</th><th>Comparativo</th><th>Superlativo</th></tr>
+<tr><td>good</td><td>better</td><td>the best</td></tr><tr><td>bad</td><td>worse</td><td>the worst</td></tr><tr><td>far</td><td>farther / further</td><td>the farthest / furthest</td></tr>
+<tr><td>much / many</td><td>more</td><td>the most</td></tr><tr><td>little</td><td>less</td><td>the least</td></tr></table></div>
+<h3>Costruzioni</h3>
+<ul><li>Comparativo di maggioranza + <b>than</b>: <i>Rome is bigger <b>than</b> Florence.</i></li>
+<li>Uguaglianza <b>as … as</b>: <i>She's <b>as</b> tall <b>as</b> her mother.</i> Negativa: <i>not as … as</i>.</li>
+<li>Superlativo con <b>the</b>, seguito da <b>in</b> per i luoghi e i gruppi: <i>the tallest building <b>in</b> the city</i>; <b>of</b> per periodi e gruppi numerati: <i>the best day <b>of</b> my life</i>.</li></ul>`,
+gen:()=>build([
+ [4,()=>{const [a,c,,n]=pick(ADJ);return gap(`This ${n} is ___ (${a}) than the other one.`,[c],adjEx(a,c))}],
+ [4,()=>{const [a,c,s,n]=pick(ADJ);return gap(`It's the ___ (${a}) ${n} I know.`,[s],adjEx(a,c))}]])});
+
+/* §9 Avverbi */
+const ADV=[['careful','carefully'],['quick','quickly'],['slow','slowly'],['good','well'],['bad','badly'],['fast','fast'],['hard','hard'],['beautiful','beautifully'],['quiet','quietly'],['terrible','terribly'],['loud','loudly'],['elegant','elegantly'],['easy','easily'],['happy','happily'],['gentle','gently'],['nervous','nervously']];
+const AG=[['drives','driver'],['works','worker'],['sings','singer'],['plays','player'],['cooks','cook'],['swims','swimmer'],['dances','dancer'],['writes','writer']];
+const advEx=(a,d)=>a===d?`${a}: aggettivo e avverbio hanno la stessa forma.`:a==='good'?'Good → well (irregolare).':/le$/.test(a)?'-le → -ly.':/y$/.test(a)?'-y → -ily.':'Aggettivo + -ly.';
+L.push({unit:'III',title:'Gli avverbi di modo',sub:'aggettivo o avverbio? la desinenza -ly',rule:`
+<h3>Aggettivo o avverbio</h3>
+<p>L'<b>aggettivo</b> descrive un nome (<i>a <b>careful</b> driver</i>); l'<b>avverbio</b> descrive un verbo, cioè il <i>modo</i> dell'azione (<i>he drives <b>carefully</b></i>). Dopo i verbi di stato (<i>be, look, seem, feel, taste, sound</i>) si usa l'aggettivo: <i>You look <b>tired</b>.</i></p>
+<h3>Formazione</h3>
+<div class="tw"><table class="t"><tr><th>Aggettivo</th><th>Regola</th><th>Avverbio</th></tr>
+<tr><td>quick, careful</td><td>+ -ly</td><td>quickly, carefully</td></tr>
+<tr><td>easy, happy</td><td>-y → -ily</td><td>easily, happily</td></tr>
+<tr><td>terrible, gentle</td><td>-le → -ly</td><td>terribly, gently</td></tr>
+<tr><td>good</td><td>irregolare</td><td><b>well</b></td></tr>
+<tr><td>fast, hard, late, early</td><td>forma identica</td><td>fast, hard, late, early</td></tr></table></div>
+<p class="nb"><i>Hardly</i> e <i>lately</i> esistono, ma significano altro: <i>hardly</i> = a malapena, <i>lately</i> = ultimamente.</p>
+<h3>Posizione</h3><p>L'avverbio di modo va <b>dopo il verbo e l'eventuale complemento oggetto</b>, mai fra verbo e oggetto: <i>She speaks English <b>fluently</b></i> (non <s>speaks fluently English</s>).</p>`,
+gen:()=>build([
+ [5,()=>{const [a,d]=pick(ADV),[v]=pick(AG);return gap(`${pick(['Anna','My brother','Tom','Our teacher'])} ${v} ___ (${a}).`,[d],'Descrive il verbo: avverbio. '+advEx(a,d))}],
+ [3,()=>{const [a]=pick(ADV),[,n]=pick(AG);return gap(`${pick(['Anna','My brother','Tom','Our teacher'])} is a very ___ (${a}) ${n}.`,[a],'Descrive un nome: aggettivo.')}]])});
+
+/* §10 Be e have got */
+const BEC=['tired today','from Italy','at home now','very happy','late again','in the garden'];
+const HGC=['two brothers','a new car','blue eyes','a bad cold','a lot of homework'];
+L.push({unit:'IV',title:'Essere e avere',sub:'be, have got, there is / there are',rule:`
+<h3>Il verbo <i>be</i> al presente</h3>
+${cj('Indicativo presente di <i>be</i>',[['Affermativa',(pr,p)=>`${pr} <b>${BE(p)}</b>`],['Contratta',ctr],['Negativa',(pr,p)=>`${pr} ${BENEG(p)}`],['Interrogativa',(pr,p)=>Q(BE(p),pr)]])}
+${cj('Past simple di <i>be</i>',[['Affermativa',(pr,p)=>`${pr} <b>${WAS(p)}</b>`],['Negativa',(pr,p)=>`${pr} ${WAS(p)}n't`],['Interrogativa',(pr,p)=>Q(WAS(p),pr)]])}
+<p>Molte espressioni italiane con <i>avere</i> in inglese vogliono <i>be</i>: <i>I'm hungry</i> (ho fame), <i>I'm cold</i> (ho freddo), <i>I'm 30</i> (ho trent'anni), <i>you're right</i> (hai ragione).</p>
+<h3><i>Have got</i></h3>
+<p>Per il possesso, nell'inglese britannico:</p>
+${cj('<i>Have got</i>',[['Affermativa',(pr,p)=>`${pr} <b>${HAS(p)}</b> got`],['Negativa',(pr,p)=>`${pr} ${HAS(p)}n't got`],['Interrogativa',(pr,p)=>Q(HAS(p),pr,'got')]])}
+<p>In alternativa <i>have</i> con l'ausiliare <i>do</i>: <i>Do you have a car?</i></p>
+<h3><i>There is / there are</i></h3>
+<p>«C'è / ci sono»: <i>There <b>is</b> a cat</i> (singolare e non numerabili), <i>There <b>are</b> two cats</i> (plurale).</p>`,
+gen:()=>build([
+ [2,()=>{const s=subj();return gap(`${s.s} ___ (be) ${pick(BEC)}.`,[BE(s.p)],`${s.s}: ${BE(s.p)}.`)}],
+ [2,()=>{const s=subj();return gap(`${s.s} ___ (not be) ${pick(BEC)}.`,[BENEG(s.p)],`Negativa: ${BE(s.p)} + not.`)}],
+ [1,()=>{const s=subj();return gap(`___ (be) ${mid(s.s)} ${pick(['ready','hungry','at work','cold'])}?`,[BE(s.p)],'Domanda: il verbo be va prima del soggetto.')}],
+ [2,()=>{const s=subj(),n=Math.random()<.5;return gap(`${s.s} ___ (${n?'not ':''}have got) ${pick(HGC)}.`,[n?`${HAS(s.p)}n't got`:`${HAS(s.p)} got`],s.p==='3s'?'Terza persona singolare: has got.':'Have got per tutte le persone tranne la terza singolare.')}],
+ [1,()=>{const [n,b]=pick([['a cat','is'],['two cats','are'],['some milk','is'],['a lot of people','are'],['any chairs','are'],['a problem','is']]);const neg=n.startsWith('any');return gap(`There ___ (${neg?'not ':''}be) ${n} here.`,[neg?"aren't":b],'There is + singolare/non numerabile, there are + plurale.')}]])});
+
+/* §11 Present simple */
+const FREQ=['usually','often','sometimes','always'];
+L.push({unit:'IV',title:'Il present simple',sub:'abitudini, fatti generali, la -s della terza persona',rule:`
+<h3>Uso</h3>
+<p>Azioni <b>abituali</b> e ripetute, fatti generali e permanenti: <i>I <b>work</b> in a bank. Water <b>boils</b> at 100 °C.</i> Lo accompagnano gli avverbi di frequenza (<i>always, usually, often, sometimes, never</i>), che si collocano <b>prima del verbo</b> ma <b>dopo</b> <i>be</i>: <i>She <b>often</b> plays tennis. She is <b>often</b> late.</i></p>
+<h3>Forma</h3>
+${cj('Present simple di <i>play</i>',[['Affermativa',(pr,p)=>`${pr} play${p==='3s'?'<b>s</b>':''}`],['Negativa',(pr,p)=>`${pr} <b>${DO(p)}n't</b> play`],['Interrogativa',(pr,p)=>Q(DO(p),pr,'play')]])}
+<p>Con <i>does / doesn't</i> la <b>-s</b> passa all'ausiliare e il verbo torna alla forma base: <i>Does she play?</i> (non <s>Does she plays?</s>)</p>
+<h3>Ortografia della terza persona</h3>
+<div class="tw"><table class="t"><tr><th>Terminazione</th><th>Regola</th><th>Esempi</th></tr>
+<tr><td>-s, -x, -ch, -sh, -o</td><td>+ -es</td><td>watches, washes, goes, does</td></tr>
+<tr><td>consonante + y</td><td>-ies</td><td>study → studies, carry → carries</td></tr>
+<tr><td>vocale + y</td><td>+ -s</td><td>play → plays</td></tr>
+<tr><td><i>have</i></td><td>irregolare</td><td>has</td></tr></table></div>`,
+gen:()=>build([
+ [4,()=>{const s=subj(),v=pick(V);return gap(`${s.s} ${pick(FREQ)} ___ (${v.b}) ${vc(v)}.`,[PRES(v.b,s.p)],s.p==='3s'?`Terza persona singolare: ${s3(v.b)}.`:'Forma base: nessuna -s.')}],
+ [2,()=>{const s=subj(),v=pick(V);return gap(`${s.s} ___ (not ${v.b}) ${vc(v)}.`,[`${DO(s.p)}n't ${v.b}`],`Negativa: ${DO(s.p)} not + forma base.`)}],
+ [2,()=>{const s=subj(notI),v=pick(V),c=vc(v);return write(`Volgi in forma interrogativa: ${s.s} ${PRES(v.b,s.p)} ${c}.`,[`${cap(DO(s.p))} ${mid(s.s)} ${v.b} ${c}?`],`${cap(DO(s.p))} + soggetto + forma base.`)}]])});
+
+/* §12 Present continuous */
+const STAT=[['want','a cup of tea'],['need','some help'],['like','this song'],['know','the answer'],['understand','the problem'],['believe','you']];
+L.push({unit:'IV',title:'Il present continuous',sub:'azioni in corso e confronto con il present simple',rule:`
+<h3>Forma</h3>
+<p><b>be</b> (am / is / are) + verbo in <b>-ing</b>.</p>
+${cj('Present continuous di <i>work</i>',[['Affermativa',(pr,p)=>`${pr} <b>${BE(p)}</b> work<b>ing</b>`],['Negativa',(pr,p)=>`${pr} ${BENEG(p)} working`],['Interrogativa',(pr,p)=>Q(BE(p),pr,'working')]])}
+<h3>Uso</h3>
+<ul><li>azione in corso <b>adesso</b>: <i>Look! It's raining.</i></li>
+<li>situazione temporanea: <i>I'm living with friends this month.</i></li>
+<li>programmi già fissati per il futuro (vedi § 18): <i>I'm meeting Sarah tonight.</i></li></ul>
+<div class="tw"><table class="t"><tr><th>Present simple</th><th>Present continuous</th></tr>
+<tr><td>every day, usually, on Mondays, twice a week</td><td>now, right now, at the moment, this week, Look!, Listen!</td></tr>
+<tr><td><i>She works from home on Fridays.</i></td><td><i>She's working from home today.</i></td></tr></table></div>
+<h3>Ortografia di -ing</h3>
+<div class="tw"><table class="t"><tr><th>Regola</th><th>Esempi</th></tr>
+<tr><td>-e muta cade</td><td>make → making, write → writing</td></tr>
+<tr><td>-ie → -ying</td><td>lie → lying, die → dying</td></tr>
+<tr><td>monosillabo consonante-vocale-consonante: raddoppio</td><td>swim → swimming, run → running, stop → stopping</td></tr></table></div>
+<p class="nb">I <b>verbi di stato</b> (<i>like, love, want, need, know, understand, believe, belong</i>) normalmente non hanno la forma continua: <i>I <b>want</b> a coffee now</i> (non <s>I'm wanting</s>).</p>`,
+gen:()=>build([
+ [3,()=>{const s=subj(),v=pick(V),m=pick(['Look!','Listen!','Right now','At the moment']);const head=m.endsWith('!')?`${m} ${s.s}`:`${m} ${mid(s.s)}`;return gap(`${head} ___ (${v.b}) ${vc(v)}.`,[`${BE(s.p)} ${ing(v.b,v.d)}`],`Azione in corso: ${BE(s.p)} + ${ing(v.b,v.d)}.`)}],
+ [1,()=>{const s=subj(),v=pick(V);return gap(`${s.s} ___ (not ${v.b}) ${vc(v)} at the moment.`,[`${BENEG(s.p)} ${ing(v.b,v.d)}`],'Negativa: be + not + -ing.')}],
+ [3,()=>{const s=subj(),v=pick(V),cont=Math.random()<.5;const m=cont?pick(['now','right now','at the moment']):pick(['every weekend','on Mondays','twice a week']);
+   return gap(`${s.s} ___ (${v.b}) ${vc(v)} ${m}.`,[cont?`${BE(s.p)} ${ing(v.b,v.d)}`:PRES(v.b,s.p)],cont?`«${m}»: present continuous.`:`«${m}»: azione abituale, present simple.`)}],
+ [1,()=>{const s=subj(),[v,c]=pick(STAT);return gap(`${s.s} ___ (${v}) ${c} right now.`,[PRES(v,s.p)],`${v} è un verbo di stato: present simple anche con «now».`)}]])});
+
+/* §13 Past simple regolare */
+const PT=['yesterday','last week','two days ago','last night','in 2020','last summer'];
+L.push({unit:'IV',title:'Il past simple (verbi regolari)',sub:'il passato concluso, -ed e did',rule:`
+<h3>Uso</h3>
+<p>Azione <b>conclusa</b> in un momento <b>definito</b> del passato. Corrisponde al passato prossimo e al passato remoto italiani: <i>I <b>visited</b> Rome last year</i> (ho visitato / visitai).</p>
+<p>Espressioni tipiche: <i>yesterday, last week, two days ago, in 2020, when I was a child</i>.</p>
+<h3>Forma</h3>
+${cj('Past simple di <i>work</i>',[['Affermativa',(pr)=>`${pr} work<b>ed</b>`],['Negativa',(pr)=>`${pr} <b>didn't</b> work`],['Interrogativa',(pr)=>Q('did',pr,'work')]])}
+<p>La forma è <b>uguale per tutte le persone</b>. Con <i>did / didn't</i> il verbo torna alla forma base: <i>Did you watch…?</i> (non <s>Did you watched</s>).</p>
+<h3>Ortografia di -ed</h3>
+<div class="tw"><table class="t"><tr><th>Regola</th><th>Esempi</th></tr>
+<tr><td>verbo in -e: + d</td><td>live → lived, arrive → arrived</td></tr>
+<tr><td>consonante + y → -ied</td><td>study → studied, carry → carried</td></tr>
+<tr><td>vocale + y: + ed</td><td>play → played</td></tr>
+<tr><td>consonante-vocale-consonante accentata: raddoppio</td><td>stop → stopped, plan → planned</td></tr></table></div>
+<p class="nb">La pronuncia di -ed: /t/ dopo suoni sordi (<i>worked</i>), /d/ dopo suoni sonori (<i>played</i>), /ɪd/ dopo t e d (<i>visited, needed</i>).</p>`,
+gen:()=>build([
+ [4,()=>{const s=subj(),v=pick(REG);return gap(`${s.s} ___ (${v.b}) ${vc(v)} ${pick(PT)}.`,[v.past],`Past simple regolare: ${v.past}.`)}],
+ [2,()=>{const s=subj(),v=pick(REG);return gap(`${s.s} ___ (not ${v.b}) ${vc(v)} ${pick(PT)}.`,[`didn't ${v.b}`],"Negativa: didn't + forma base.")}],
+ [2,()=>{const s=subj(notI),v=pick(REG),c=vc(v),t=pick(PT);return write(`Volgi in forma interrogativa: ${s.s} ${v.past} ${c} ${t}.`,[`Did ${mid(s.s)} ${v.b} ${c} ${t}?`],'Did + soggetto + forma base.')}]])});
+
+/* §14 Verbi irregolari */
+L.push({unit:'IV',title:'I verbi irregolari',sub:'il paradigma: base, past simple, participio passato',rule:`
+<h3>Il paradigma</h3>
+<p>Come in latino si impara <i>amo, amas, amavi, amatum, amare</i>, in inglese si memorizzano i <b>tre tempi principali</b>: forma base, past simple, participio passato. Il past simple serve al passato (§ 13); il participio ai tempi composti (§ 16–17) e al passivo (§ 21).</p>
+<h3>Quattro classi</h3>
+<div class="tw"><table class="t"><tr><th>Schema</th><th>Esempi</th></tr>
+<tr><td><b>A – A – A</b> (tre forme uguali)</td><td>cut – cut – cut; put, let, hit, shut, cost, hurt</td></tr>
+<tr><td><b>A – B – B</b> (past = participio)</td><td>buy – bought – bought; bring, think, teach, catch, make, sell, tell, find, keep, sleep</td></tr>
+<tr><td><b>A – B – A</b> (participio = base)</td><td>come – came – come; become, run</td></tr>
+<tr><td><b>A – B – C</b> (tre forme diverse)</td><td>write – wrote – written; go – went – gone; see – saw – seen; take – took – taken</td></tr></table></div>
+<p>Dentro le classi ci sono famiglie che aiutano la memoria: <i>sing – sang – sung</i> come <i>ring, drink, swim, sink</i>; <i>know – knew – known</i> come <i>grow, throw, blow, fly (flew, flown)</i>; <i>buy, bring, think, fight, catch, teach</i> fanno tutti <i>-ought / -aught</i>.</p>
+<h3>Tavola</h3>
+<div class="tw"><table class="t"><tr><th>Base</th><th>Past simple</th><th>Participio</th><th>Significato</th></tr>
+${IRR.map(r=>`<tr><td><b>${r[0]}</b></td><td>${r[1].replace('|',' / ')}</td><td>${r[2].replace('|',' / ')}</td><td><i>${r[3]}</i></td></tr>`).join('')}</table></div>
+<p class="nb">Le forme in <i>-t</i> (<i>learnt, dreamt, burnt</i>) sono britanniche; l'americano preferisce <i>learned, dreamed, burned</i>. Sono corrette entrambe.</p>`,
+gen:()=>build([
+ [5,()=>{const r=pick(IRR.filter(x=>x[0]!=='be'));return gap(`${r[0]} (${r[3]}): past ___ · participio ___`,[r[1],r[2]],`${r[0]} – ${r[1].replace('|',' / ')} – ${r[2].replace('|',' / ')}`)}],
+ [3,()=>{const s=subj(),v=pick(IRRV);return gap(`${s.s} ___ (${v.b}) ${vc(v)} ${pick(PT)}.`,[v.past],`${v.b} – ${v.past} – ${v.pp}`)}]])});
+
+/* §15 Past continuous */
+const INT=[['the phone ___ (ring)','rang'],['the lights ___ (go) out','went'],['the fire alarm ___ (go) off','went'],['it ___ (start) to rain','started'],['somebody ___ (knock) at the door','knocked'],['my boss ___ (call) me','called']];
+L.push({unit:'IV',title:'Il past continuous',sub:'l’azione in corso nel passato',rule:`
+<h3>Forma</h3>
+<p><b>was / were</b> + verbo in <b>-ing</b>.</p>
+${cj('Past continuous di <i>read</i>',[['Affermativa',(pr,p)=>`${pr} <b>${WAS(p)}</b> read<b>ing</b>`],['Negativa',(pr,p)=>`${pr} ${WAS(p)}n't reading`],['Interrogativa',(pr,p)=>Q(WAS(p),pr,'reading')]])}
+<h3>Uso</h3>
+<p>Corrisponde all'<b>imperfetto</b> italiano quando indica un'azione in svolgimento:</p>
+<ul><li>in un momento preciso del passato: <i>At 9 last night I <b>was watching</b> TV.</i></li>
+<li>come «sfondo» interrotto da un'azione breve al past simple: <i>I <b>was cooking</b> when the phone <b>rang</b>.</i></li>
+<li>due azioni in corso contemporaneamente: <i>While I <b>was working</b>, he <b>was sleeping</b>.</i></li></ul>
+<div class="ex"><i>When</i> + past simple<span>l'azione breve che interrompe</span><i>While</i> + past continuous<span>l'azione lunga in corso</span></div>
+<p class="nb">L'imperfetto italiano di abitudine (<i>da bambino giocavo a calcio</i>) non si rende con il past continuous ma con il past simple o con <i>used to</i>: <i>I <b>used to</b> play football.</i></p>`,
+gen:()=>build([
+ [3,()=>{const s=subj(),v=pick(V);return gap(`While ${mid(s.s)} ___ (${v.b}) ${vc(v)}, the phone rang.`,[`${WAS(s.p)} ${ing(v.b,v.d)}`],`While + azione in corso: ${WAS(s.p)} + -ing.`)}],
+ [3,()=>{const s=subj(),v=pick(V),[e,a]=pick(INT);return gap(`${s.s} ___ (${v.b}) ${vc(v)} when ${e}.`,[`${WAS(s.p)} ${ing(v.b,v.d)}`,a],'Azione lunga: past continuous; azione che interrompe: past simple.')}],
+ [2,()=>{const s=subj(),v=pick(V);return gap(`${s.s} ___ (not ${v.b}) ${vc(v)} at ten o'clock last night.`,[`${WAS(s.p)}n't ${ing(v.b,v.d)}`],`Negativa: ${WAS(s.p)} not + -ing.`)}]])});
+
+/* §16 Present perfect */
+const SINCE=['2019','last summer','Monday','I was a child','eight o’clock','Christmas','we met'], FOR=['three years','a long time','two weeks','ages','ten minutes','six months','a couple of days'];
+const PPV=[['lived here','live'],['known Tom','know'],['worked in this office','work'],['studied English','study'],['had this car','have'],['been in the choir','be']];
+L.push({unit:'IV',title:'Il present perfect',sub:'il passato che tocca il presente; for e since',rule:`
+<h3>Forma</h3>
+<p><b>have / has</b> + <b>participio passato</b>.</p>
+${cj('Present perfect di <i>see</i>',[['Affermativa',(pr,p)=>`${pr} <b>${HAS(p)}</b> seen`],['Negativa',(pr,p)=>`${pr} ${HAS(p)}n't seen`],['Interrogativa',(pr,p)=>Q(HAS(p),pr,'seen')]])}
+<h3>Uso</h3>
+<ul><li><b>esperienze</b> senza tempo precisato: <i>I've been to London twice. Have you ever eaten sushi?</i></li>
+<li>azione recente con effetti nel presente, con <i>just, already, yet</i>: <i>I've lost my keys. She hasn't arrived yet.</i></li>
+<li>periodo <b>non ancora concluso</b>: <i>this week, today, this year, recently</i>.</li>
+<li>situazione iniziata nel passato e <b>ancora in corso</b>, con <i>for / since</i>: <i>I've lived here <b>for</b> ten years</i> (ci abito da dieci anni).</li></ul>
+<div class="tw"><table class="t"><tr><th>for + durata</th><th>since + punto di partenza</th></tr>
+<tr><td>for three years, for ages, for a week</td><td>since 2019, since Monday, since I was a child</td></tr></table></div>
+<h3>Present perfect o past simple?</h3>
+<p>Se c'è un tempo <b>finito e determinato</b> (<i>yesterday, last week, in 2018, two days ago</i>) si usa il <b>past simple</b>: <i>I <b>saw</b> him yesterday</i>. Senza tempo determinato o con un periodo aperto, il present perfect: <i>I<b>'ve seen</b> him this week</i>.</p>
+<p class="nb">L'italiano «abito qui da dieci anni» usa il presente; l'inglese no: <i>I've lived here for ten years</i>, mai <s>I live here since…</s></p>`,
+gen:()=>build([
+ [3,()=>{const s=subj(),[c]=pick(PPV),f=Math.random()<.5;return choice(`${s.s} ${HAS(s.p)} ${c} ___ ${f?pick(FOR):pick(SINCE)}.`,['for','since'],f?'for':'since',f?'For + durata.':'Since + punto di partenza.')}],
+ [4,()=>{const s=subj(),v=pick(V),pf=Math.random()<.5,m=pf?pick(['this week','twice this month','recently','three times this year']):pick(['yesterday','last weekend','two days ago','in 2018']);
+   return gap(`${s.s} ___ (${v.b}) ${vc(v)} ${m}.`,[pf?`${HAS(s.p)} ${v.pp}`:v.past],pf?`«${m}»: periodo aperto, present perfect.`:`«${m}»: tempo concluso, past simple.`)}],
+ [1,()=>{const s=subj(),v=pick(V);return gap(`${s.s} ___ (not ${v.b}) ${vc(v)} yet.`,[`${HAS(s.p)}n't ${v.pp}`],'Yet nelle negative: present perfect.')}]])});
+
+/* §17 Past perfect */
+const PPCH=[["When I got to the station, the train ___ , so I took a taxi.",['had left','left','has left'],'had left'],["She didn't come to the cinema because she ___ the film before.",['had seen','saw','has seen'],'had seen'],["I couldn't open the door: I ___ my keys.",['had lost','lost','have lost'],'had lost'],["By the time the police arrived, the thieves ___ .",['had escaped','escaped','have escaped'],'had escaped'],["He was nervous: he ___ on a plane before.",["had never flown",'never flew','has never flown'],'had never flown'],["When we arrived at the party, everybody ___ home.",['had gone','went','has gone'],'had gone']];
+L.push({unit:'IV',title:'Il past perfect',sub:'il «trapassato»: prima di un altro passato',rule:`
+<h3>Forma</h3>
+<p><b>had</b> + <b>participio passato</b>, uguale per tutte le persone.</p>
+${cj('Past perfect di <i>finish</i>',[['Affermativa',(pr)=>`${pr} <b>had</b> finished`],['Negativa',(pr)=>`${pr} hadn't finished`],['Interrogativa',(pr)=>Q('had',pr,'finished')]])}
+<h3>Uso</h3>
+<p>Corrisponde al <b>trapassato prossimo</b> italiano («avevo finito»). Indica un'azione <b>anteriore</b> a un'altra azione già passata.</p>
+<div class="ex"><i>When I arrived, the film <b>had</b> already <b>started</b>.</i><span>Quando sono arrivato, il film era già cominciato (prima l'inizio, poi il mio arrivo).</span><i>When I arrived, the film <b>started</b>.</i><span>Quando sono arrivato, il film è cominciato (le due cose in sequenza).</span></div>
+<p>Si incontra spesso con <i>already, just, never, by the time, after, before</i>, e nel discorso indiretto (§ 24).</p>
+<p class="nb">Con <i>after</i> e <i>before</i> la sequenza è già chiara: il past perfect è facoltativo. <i>After he (had) finished work, he went home.</i></p>`,
+gen:()=>build([
+ [3,()=>{const s=subj(),v=pick(V);return gap(`By the time we got there, ${mid(s.s)} ___ (${v.b}) ${vc(v)}.`,[`had ${v.pp}`],`Azione anteriore: had + ${v.pp}.`)}],
+ [2,()=>{const s=subj(x=>['I','He','She','We','They'].includes(x.s)),v1=pick(V),v2=pick(V.filter(x=>x!==v1));return gap(`After ${mid(s.s)} ___ (${v1.b}) ${vc(v1)}, ${mid(s.s)} ___ (${v2.b}) ${vc(v2)}.`,[[`had ${v1.pp}`,v1.past],[v2.past]],'Prima azione: past perfect (o past simple dopo after); seconda: past simple.')}],
+ [3,()=>{const [q,o,a]=pick(PPCH);return choice(q,o,a,'Azione avvenuta prima di un altro momento passato: past perfect.')}]])});
+
+/* §18 Futuro */
+const FUT=[["Look at those black clouds! It ___ (rain).","is going to rain","Previsione basata su un indizio presente: going to."],["'I'm cold.' 'Wait, I ___ (close) the window.'","will close","Decisione presa sul momento: will."],["I ___ (meet) Sarah at seven tonight. We booked a table.","am meeting|am going to meet","Appuntamento fissato: present continuous."],["I think Italy ___ (win) the match.","will win","Opinione, previsione con I think: will."],["We've decided: we ___ (buy) a new car next year.","are going to buy","Intenzione già decisa: going to."],["The train ___ (leave) at 9:45 tomorrow morning.","leaves","Orario ufficiale: present simple."],["Be careful! You ___ (fall)!","are going to fall","Evidenza presente: going to."],["'The phone is ringing.' 'I ___ (answer) it.'","will answer","Decisione immediata: will."],["Don't worry, I ___ (not tell) anyone.","won't tell","Promessa: will (won't)."],["She's pregnant: she ___ (have) a baby in May.","is going to have","Evidenza presente: going to."],["Perhaps it ___ (snow) tomorrow.","will snow","Previsione incerta con perhaps: will."],["The film ___ (start) at 8:30, so hurry up.","starts","Orario di programmazione: present simple."],["I promise I ___ (call) you tonight.","will call","Promessa: will."],["We ___ (fly) to Lisbon on Friday. The tickets are in my bag.","are flying|are going to fly","Programma fissato: present continuous."],["I'm sure you ___ (love) this book.","will love","Previsione con I'm sure: will."],["He has saved enough money: he ___ (travel) around South America.","is going to travel","Progetto deciso: going to."],["Tomorrow ___ (be) Monday.","will be","Fatto futuro certo: will."],["I'll call you as soon as I ___ (arrive).","arrive","Dopo as soon as / when / if il futuro va al present simple."],["When she ___ (get) home, she'll have a shower.","gets","Proposizione temporale: present simple."],["What ___ you ___ (do) this weekend? Any plans?",[["are"],["doing","going to do"]],"Programmi: present continuous o going to."]];
+L.push({unit:'V',title:'Il futuro',sub:'will, be going to, present continuous, present simple',rule:`
+<h3>Quattro modi di parlare del futuro</h3>
+<div class="tw"><table class="t"><tr><th>Forma</th><th>Uso</th><th>Esempio</th></tr>
+<tr><td><b>will</b> + base</td><td>decisione presa sul momento; promessa; offerta; previsione e opinione (<i>I think, probably, I'm sure</i>)</td><td><i>I'll help you. I think it will rain.</i></td></tr>
+<tr><td><b>be going to</b> + base</td><td>intenzione già decisa; previsione basata su un indizio visibile</td><td><i>I'm going to study medicine. Look, it's going to rain!</i></td></tr>
+<tr><td><b>present continuous</b></td><td>appuntamento o programma fissato (data, biglietto, accordo)</td><td><i>I'm meeting Sarah tonight.</i></td></tr>
+<tr><td><b>present simple</b></td><td>orari ufficiali, calendari</td><td><i>The train leaves at 9:45.</i></td></tr></table></div>
+${cj('Futuro di <i>work</i>',[['Will',(pr)=>`${pr} <b>will</b> work`],['Will, negativa',(pr)=>`${pr} <b>won't</b> work`],['Will, interrogativa',(pr)=>Q('will',pr,'work')],['Be going to',(pr,p)=>`${pr} <b>${BE(p)} going to</b> work`]])}
+<h3>Le proposizioni temporali</h3>
+<p>Dopo <i>when, as soon as, before, after, until, if</i> l'inglese <b>non usa will</b>, ma il present simple: <i>I'll call you when I <b>arrive</b></i> (quando arriverò).</p>
+<p class="nb">Negativa di <i>will</i>: <i>will not → won't</i>. <i>Shall</i> sopravvive nelle proposte: <i>Shall we go?</i></p>`,
+gen:()=>build([[8,()=>{const [q,a,ex]=pick(FUT);return gap(q,Array.isArray(a)?a:[a],ex)}]])});
+
+/* §19 Modali */
+const MOD=[["You ___ smoke in the hospital. It's forbidden.",["mustn't","don't have to","shouldn't"],"mustn't","Divieto: mustn't."],["Tomorrow is Sunday, so I ___ get up early.",["don't have to","mustn't","can't"],"don't have to","Assenza di obbligo: don't have to."],["You look tired. You ___ go to bed earlier.",["should","must","can"],"should","Consiglio: should."],["___ you speak Spanish?",["Can","Must","Should"],"Can","Abilità: can."],["I ___ swim when I was five.",["could","can","might"],"could","Abilità nel passato: could."],["Take an umbrella. It ___ rain later.",["might","must","should"],"might","Possibilità: might."],["In the UK you ___ drive on the left.",["have to","can","might"],"have to","Obbligo esterno (legge): have to."],["___ I open the window? It's hot.",["May","Must","Should"],"May","Permesso, registro cortese: may."],["She ___ be at home: the lights are on.",["must","can't","should"],"must","Deduzione certa positiva: must."],["He ___ be French: his accent is clearly American.",["can't","mustn't","doesn't have to"],"can't","Deduzione certa negativa: can't."],["You ___ tell anyone. It's a secret!",["mustn't","don't have to","needn't"],"mustn't","Divieto: mustn't."],["Yesterday I ___ work late because of a deadline.",["had to","must","should"],"had to","Must non ha passato: had to."],["You ___ see that film. It's fantastic!",["should","mustn't","may"],"should","Consiglio: should."],["I'm not sure, but I ___ go to the party.",["might","must","have to"],"might","Incertezza: might."],["Will you ___ come tomorrow?",["be able to","can","could"],"be able to","Can non ha futuro: will be able to."],["You ___ pay: it's free.",["don't have to","mustn't","can't"],"don't have to","Non è necessario: don't have to."],["___ you pass me the salt, please?",["Could","Must","Should"],"Could","Richiesta cortese: could."],["Children ___ play with matches.",["mustn't","don't have to","needn't"],"mustn't","Divieto: mustn't."],["I ___ find my keys anywhere.",["can't","mustn't","shouldn't"],"can't","Impossibilità: can't."],["It's late. I really ___ go now.",["must","can","might"],"must","Obbligo sentito da chi parla: must."],["You ___ bring food; there will be plenty.",["needn't","mustn't","can't"],"needn't","Non è necessario: needn't."],["You ___ have told me earlier! Now it's too late.",["should","must","might"],"should","Rimprovero sul passato: should have + participio."]];
+L.push({unit:'V',title:'I verbi modali',sub:'can, could, must, have to, should, may, might',rule:`
+<h3>Caratteristiche formali</h3>
+<ul><li>sono seguiti dalla <b>forma base</b> senza <i>to</i>: <i>I can swim</i> (non <s>I can to swim</s>);</li>
+<li>non prendono la <b>-s</b> alla terza persona: <i>she can</i>;</li>
+<li>negativa e domanda <b>senza do</b>: <i>can't, Can you…?</i>;</li>
+<li>sono difettivi: per i tempi mancanti si usano sostituti (<i>be able to, have to</i>).</li></ul>
+<h3>Quadro dei significati</h3>
+<div class="tw"><table class="t"><tr><th>Significato</th><th>Modale</th><th>Esempio</th></tr>
+<tr><td>abilità</td><td>can, could (passato), be able to</td><td><i>I could swim at five.</i></td></tr>
+<tr><td>permesso, richiesta</td><td>can, could, may</td><td><i>May I come in?</i></td></tr>
+<tr><td>obbligo sentito da chi parla</td><td>must</td><td><i>I must call my mum.</i></td></tr>
+<tr><td>obbligo esterno (regole, leggi)</td><td>have to (past: had to)</td><td><i>You have to wear a helmet.</i></td></tr>
+<tr><td>divieto</td><td><b>mustn't</b></td><td><i>You mustn't smoke here.</i></td></tr>
+<tr><td>assenza di obbligo</td><td><b>don't have to</b>, needn't</td><td><i>You don't have to come.</i></td></tr>
+<tr><td>consiglio</td><td>should</td><td><i>You should rest.</i></td></tr>
+<tr><td>possibilità</td><td>may, might, could</td><td><i>It might rain.</i></td></tr>
+<tr><td>deduzione certa</td><td>must (sì), can't (no)</td><td><i>He must be tired. It can't be true.</i></td></tr></table></div>
+<p class="nb">Trappola per gli italiani: <i>mustn't</i> = non devi (è vietato); <i>don't have to</i> = non sei obbligato.</p>`,
+gen:()=>build([[8,()=>{const [q,o,a,ex]=pick(MOD);return choice(q,o,a,ex)}]])});
+
+/* §20 Periodo ipotetico */
+const CP=[['it','rain','','we','stay','at home'],['I','have','more time','I','learn','Chinese'],['she','study','harder','she','pass','the exam'],['we','leave','now','we','catch','the train'],['you','ask','him','he','help','you'],['they','win','the lottery','they','buy','a house by the sea'],['I','see','Tom','I','give','him your message'],['he','take','a taxi','he','arrive','on time'],['it','be','sunny','we','go','to the beach'],['I','know','the answer','I','tell','you'],['we','save','more money','we','travel','around the world'],['you','go','to bed earlier','you','feel','better'],['she','find','a job in London','she','move','there']];
+const ZERO=[["If you ___ (heat) ice, it ___ (melt).",['heat','melts']],["If you ___ (mix) red and white, you ___ (get) pink.",['mix','get']],["If plants ___ (not get) water, they ___ (die).",["don't get",'die']],["If I ___ (drink) coffee at night, I ___ (not sleep) well.",['drink',"don't sleep"]],["Water ___ (boil) if you ___ (heat) it to 100 degrees.",['boils','heat']]];
+const p3=x=>['he','she','it'].includes(x)?'3s':x==='I'?'1s':'pl';
+L.push({unit:'V',title:'Il periodo ipotetico',sub:'condizionali di tipo 0, 1, 2 e 3',rule:`
+<h3>Lo schema</h3>
+<div class="tw"><table class="t"><tr><th>Tipo</th><th>Proposizione con <i>if</i></th><th>Proposizione principale</th><th>Valore</th></tr>
+<tr><td><b>0</b></td><td>present simple</td><td>present simple</td><td>verità generale</td></tr>
+<tr><td><b>1</b></td><td>present simple</td><td><b>will</b> + base</td><td>ipotesi reale, probabile</td></tr>
+<tr><td><b>2</b></td><td>past simple</td><td><b>would</b> + base</td><td>ipotesi irreale o improbabile nel presente</td></tr>
+<tr><td><b>3</b></td><td>past perfect</td><td><b>would have</b> + participio</td><td>ipotesi irrealizzata nel passato</td></tr></table></div>
+<div class="ex"><i>If it rains, we stay at home.</i><span>(0) Quando piove, restiamo a casa.</span>
+<i>If it rains, we'll stay at home.</i><span>(1) Se pioverà, resteremo a casa.</span>
+<i>If I had more time, I would learn Chinese.</i><span>(2) Se avessi più tempo, imparerei il cinese.</span>
+<i>If she had studied, she would have passed.</i><span>(3) Se avesse studiato, sarebbe stata promossa.</span></div>
+<h3>Il condizionale</h3>
+${cj('Condizionale di <i>work</i>',[['Presente',(pr)=>`${pr} <b>would</b> work`],['Passato',(pr)=>`${pr} <b>would have</b> worked`],['Negativo',(pr)=>`${pr} <b>wouldn't</b> work`],['Interrogativo',(pr)=>Q('would',pr,'work')]])}
+<h3>Regole da non dimenticare</h3>
+<ul><li>Mai <i>will</i> o <i>would</i> nella proposizione con <i>if</i>: <i>If it <b>rains</b></i> (non <s>if it will rain</s>).</li>
+<li>Nel tipo 2, <i>be</i> fa <b>were</b> per tutte le persone nello stile curato: <i>If I were you…</i> (nel parlato anche <i>was</i>).</li>
+<li>L'ordine delle due proposizioni si può invertire; la virgola si mette quando <i>if</i> viene prima.</li></ul>`,
+gen:()=>build([
+ [1,()=>{const [q,a]=pick(ZERO);return gap('(tipo 0) '+q,[[a[0]],[a[1]]],'Verità generale: present simple in entrambe le proposizioni.')}],
+ [7,()=>{const [s1,v1,c1,s2,v2,c2]=pick(CP),t=pick([1,2,3]);const S1=s1==='I'?'I':s1,S2=s2==='I'?'I':s2;
+   let a1,a2,ex;
+   if(t===1){a1=v1==='be'?BE(p3(s1)):PRES(v1,p3(s1)==='3s'?'3s':'x');a2=`will ${v2}`;ex='Tipo 1: if + present simple, will + base.'}
+   else if(t===2){a1=v1==='be'?(p3(s1)==='pl'?'were':'were|was'):pastOf(v1);a2=`would ${v2}`;ex='Tipo 2: if + past simple, would + base.'}
+   else{a1=`had ${ppOf(v1)}`;a2=`would have ${ppOf(v2)}`;ex='Tipo 3: if + past perfect, would have + participio.'}
+   return gap(`(tipo ${t}) If ${S1} ___ (${v1})${c1?' '+c1:''}, ${S2} ___ (${v2}) ${c2}.`,[a1,a2],ex)}]])});
+
+/* §21 Passivo */
+const PAS=[['The cleaner','clean','the windows',1],['Our teacher','correct','the tests',1],['The mechanic','repair','the car',0],['The police','arrest','the thief',0,1],['My grandmother','make','these cakes',1],['A famous architect','design','the new museum',0],['The company','produce','electric bikes',1],['The gardener','water','the plants',1],['The postman','deliver','the letters',1],['Millions of people','watch','the final',0,1],['The chef','prepare','the sauce',0],['A local firm','build','the bridge',0],['The manager','sign','the contract',0]];
+const TENSE={pres:['present simple','every week'],past:['past simple','last year'],perf:['present perfect','already'],fut:['futuro con will','next month']};
+function passive(b,pl,t){const pp=ppOf(b);return t==='pres'?`${pl?'are':'is'} ${pp}`:t==='past'?`${pl?'were':'was'} ${pp}`:t==='perf'?`${pl?'have':'has'} been ${pp}`:`will be ${pp}`}
+function active(b,agPl,t){return t==='pres'?(agPl?b:s3(b)):t==='past'?pastOf(b):t==='perf'?`${agPl?'have':'has'} ${ppOf(b)}`:`will ${b}`}
+L.push({unit:'V',title:'La forma passiva',sub:'be + participio passato',rule:`
+<h3>Formazione</h3>
+<p>Il passivo si forma con <b>be</b> coniugato nel tempo voluto + <b>participio passato</b> del verbo. L'oggetto della frase attiva diventa soggetto; chi compie l'azione, se serve, si introduce con <b>by</b>.</p>
+<div class="ex"><i>The cleaner cleans the windows.</i><span>attiva</span><i>The windows are cleaned (by the cleaner).</i><span>passiva</span></div>
+<div class="tw"><table class="t"><tr><th>Tempo</th><th>Attiva</th><th>Passiva</th></tr>
+<tr><td>present simple</td><td>they build</td><td>it <b>is</b> built</td></tr>
+<tr><td>present continuous</td><td>they are building</td><td>it <b>is being</b> built</td></tr>
+<tr><td>past simple</td><td>they built</td><td>it <b>was</b> built</td></tr>
+<tr><td>present perfect</td><td>they have built</td><td>it <b>has been</b> built</td></tr>
+<tr><td>futuro</td><td>they will build</td><td>it <b>will be</b> built</td></tr>
+<tr><td>modali</td><td>they must build</td><td>it <b>must be</b> built</td></tr></table></div>
+<h3>Uso</h3>
+<p>Si usa quando conta più l'azione che chi la compie, o quando l'agente è ovvio o sconosciuto: <i>My bike was stolen. English is spoken here.</i> L'agente si omette quando non aggiunge informazione (<i>by someone, by people</i>).</p>
+<p class="nb">Il passivo inglese corrisponde spesso al <i>si</i> impersonale italiano: <i>English is spoken here</i> = qui si parla inglese.</p>`,
+gen:()=>build([
+ [4,()=>{const [ag,b,o,pl,agPl]=pick(PAS),t=pick(Object.keys(TENSE));const pv=passive(b,pl,t);const by=ag.toLowerCase().replace(/^the police$/,'the police');
+   return write(`Volgi al passivo (${TENSE[t][0]}): ${ag} ${active(b,agPl,t)} ${o}.`,[`${cap(o)} ${pv} by ${by}.`,`${cap(o)} ${pv}.`],`${TENSE[t][0]}: ${pv.replace(ppOf(b),'+ participio')}.`)}],
+ [4,()=>{const [,b,o,pl]=pick(PAS),t=pick(['pres','past','fut']);return gap(`${cap(o)} ___ (${b}) ${TENSE[t][1]}.`,[passive(b,pl,t)],`Passivo, ${TENSE[t][0]}: ${passive(b,pl,t)}.`)}]])});
+
+/* §22 Domande */
+const WH=x=>/^(in|to|at|near|from) /.test(x);
+const BEQ=[['Anna is at home.','Is Anna at home?'],['The shops are open on Sunday.','Are the shops open on Sunday?'],['Your brother was at the party.','Was your brother at the party?'],['They were tired.','Were they tired?'],['Tom has got a car.','Has Tom got a car?'],['She can drive.','Can she drive?'],['You will be here tomorrow.','Will you be here tomorrow?']];
+const WHO=[['Somebody broke the window.','Who broke the window?'],['Somebody called you this morning.','Who called you this morning?'],['Something happened last night.','What happened last night?'],['Somebody lives in that house.','Who lives in that house?'],['Something makes you happy.','What makes you happy?']];
+L.push({unit:'VI',title:'Le domande e l’ordine delle parole',sub:'ausiliari, wh-words, domande sul soggetto',rule:`
+<h3>L'ordine della frase</h3>
+<p>La frase affermativa inglese ha un ordine rigido: <b>soggetto – verbo – oggetto – modo – luogo – tempo</b>. <i>She plays the piano beautifully at home every evening.</i></p>
+<h3>L'inversione con l'ausiliare</h3>
+<p>Per formare la domanda l'<b>ausiliare</b> va prima del soggetto. Se il verbo non ha un ausiliare (present e past simple) si usa <b>do / does / did</b>.</p>
+<div class="tw"><table class="t"><tr><th>(Wh-word)</th><th>Ausiliare</th><th>Soggetto</th><th>Verbo</th><th>Resto</th></tr>
+<tr><td></td><td>Is</td><td>Anna</td><td>—</td><td>at home?</td></tr>
+<tr><td></td><td>Can</td><td>she</td><td>drive?</td><td></td></tr>
+<tr><td>Where</td><td>does</td><td>Tom</td><td>work?</td><td></td></tr>
+<tr><td>What</td><td>did</td><td>you</td><td>buy</td><td>yesterday?</td></tr>
+<tr><td>How long</td><td>have</td><td>you</td><td>lived</td><td>here?</td></tr></table></div>
+<p>Parole interrogative: <i>what, who, where, when, why, how, which, whose, how much / many, how long, how often</i>.</p>
+<h3>Domande sul soggetto</h3>
+<p>Quando <i>who</i> o <i>what</i> sono il <b>soggetto</b>, niente <i>do</i>: <i>Who <b>broke</b> the window?</i> (non <s>Who did break</s>). Confronta: <i>Who <b>did</b> you see?</i> (qui <i>who</i> è oggetto).</p>
+<p class="nb">La preposizione resta alla fine: <i>Who are you talking <b>to</b>? Where are you <b>from</b>?</i></p>`,
+gen:()=>build([
+ [3,()=>{const s=subj(notI),v=pick(V),c=vc(v),past=Math.random()<.5;const f=past?v.past:PRES(v.b,s.p),aux=past?'did':DO(s.p);return write(`Fai la domanda: ${s.s} ${f} ${c}${past?' yesterday':''}.`,[`${cap(aux)} ${mid(s.s)} ${v.b} ${c}${past?' yesterday':''}?`],`${cap(aux)} + soggetto + forma base.`)}],
+ [3,()=>{const s=subj(notI),v=pick(V.filter(x=>x.c.some(WH))),c=pick(v.c.filter(WH)),past=Math.random()<.5;const f=past?v.past:PRES(v.b,s.p),aux=past?'did':DO(s.p);return write(`Domanda con Where sulla frase: ${s.s} ${f} ${c}.`,[`Where ${aux} ${mid(s.s)} ${v.b}?`],`Where + ${aux} + soggetto + forma base.`)}],
+ [1,()=>{const [a,q]=pick(BEQ);return write(`Fai la domanda: ${a}`,[q],'Con be, have got e i modali basta l’inversione, senza do.')}],
+ [1,()=>{const [a,q]=pick(WHO);return write(`Domanda sul soggetto (Who / What): ${a}`,[q],'Domanda sul soggetto: nessun do.')}]])});
+
+/* §23 Gerundio e infinito */
+const GER=[['enjoy','enjoyed'],['finish','finished'],['avoid','avoided'],['keep','kept'],['give up','gave up'],['suggest','suggested'],['practise','practised'],['miss','missed']];
+const INF=[['want','wanted'],['decide','decided'],['hope','hoped'],['plan','planned'],['promise','promised'],['agree','agreed'],['refuse','refused'],['learn','learnt'],['need','needed'],['forget','forgot'],['manage','managed'],['offer','offered']];
+const PREP=["I'm good at","I'm interested in","I'm tired of","I'm looking forward to","Thanks for","I'm thinking of"];
+L.push({unit:'VI',title:'Gerundio e infinito',sub:'verbo + -ing o verbo + to',rule:`
+<h3>Il problema</h3>
+<p>Quando un verbo regge un altro verbo, l'inglese sceglie fra <b>gerundio</b> (-ing) e <b>infinito con to</b>. La scelta dipende dal primo verbo e va memorizzata, come i verbi che reggono il genitivo o il dativo in latino.</p>
+<div class="tw"><table class="t"><tr><th>+ -ing</th><th>+ to + base</th></tr>
+<tr><td>enjoy, finish, avoid, mind, keep, give up, suggest, practise, miss, can't stand</td><td>want, decide, hope, plan, promise, agree, refuse, learn, need, manage, offer, would like</td></tr>
+<tr><td><i>I enjoy <b>swimming</b>.</i></td><td><i>I want <b>to swim</b>.</i></td></tr></table></div>
+<h3>Dopo una preposizione: sempre -ing</h3>
+<p><i>I'm good at <b>cooking</b>. Thanks for <b>coming</b>.</i> Attenzione a <i>look forward <b>to</b></i>, dove <i>to</i> è preposizione: <i>I'm looking forward to <b>seeing</b> you</i>.</p>
+<h3>Infinito senza to</h3>
+<p>Dopo i modali e dopo <b>make</b> e <b>let</b> + oggetto: <i>My parents let me <b>go</b>. She made me <b>laugh</b>.</i></p>
+<p class="nb">Alcuni verbi cambiano significato: <i>I stopped <b>smoking</b></i> (ho smesso di fumare) / <i>I stopped <b>to smoke</b></i> (mi sono fermato per fumare); <i>remember / forget + -ing</i> = ricordare un fatto passato, <i>+ to</i> = ricordarsi di fare.</p>`,
+gen:()=>build([
+ [3,()=>{const s=subj(),[,g]=pick(GER),v=pick(V);return gap(`${s.s} ${g} ___ (${v.b}) ${vc(v)}.`,[ing(v.b,v.d)],`${g.split(' ')[0]} → verbo + -ing.`)}],
+ [3,()=>{const s=subj(),[,i]=pick(INF),v=pick(V);return gap(`${s.s} ${i} ___ (${v.b}) ${vc(v)}.`,[`to ${v.b}`],`${i} → verbo + to + forma base.`)}],
+ [1,()=>{const p=pick(PREP),v=pick(V);return gap(`${p} ___ (${v.b}) ${vc(v)}.`,[ing(v.b,v.d)],'Dopo una preposizione: -ing.')}],
+ [1,()=>{const m=pick(['My parents let me','The film made me','Our teacher let us','The boss made them']),[b,c]=pick([['go','to the party'],['laugh','a lot'],['leave','early'],['stay','at home'],['cry','']]);return gap(`${m} ___ (${b})${c?' '+c:''}.`,[b],'Make / let + oggetto + infinito senza to.')}]])});
+
+/* §24 Discorso indiretto */
+const SPK=[['Tom','he','his','him'],['Anna','she','her','her'],['My brother','he','his','him'],['Laura','she','her','her']];
+const DS=[["I am tired.",p=>`${p} was tired`],["I like this song.",p=>`${p} liked that song`],["I'm working from home.",p=>`${p} was working from home`],["I have lost my keys.",(p,x)=>`${p} had lost ${x} keys`],["I will call my mother.",(p,x)=>`${p} would call ${x} mother`],["I can't swim.",p=>`${p} couldn't swim`],["I saw the film yesterday.",p=>[`${p} had seen the film the day before`,`${p} had seen the film the previous day`]],["I live here.",p=>`${p} lived there`],["I must go now.",p=>[`${p} had to go then`,`${p} had to go`]],["I'm going to buy a car.",p=>`${p} was going to buy a car`],["I don't eat meat.",p=>`${p} didn't eat meat`]];
+const DQ=[["Where do you live?",()=>['where I lived']],["Are you hungry?",()=>['if I was hungry','whether I was hungry']],["What time is it?",()=>['what time it was']],["Have you finished?",()=>['if I had finished','whether I had finished']],["Can you help me?",(o)=>[`if I could help ${o}`,`whether I could help ${o}`]],["Why are you late?",()=>['why I was late']]];
+L.push({unit:'VI',title:'Il discorso indiretto',sub:'la concordanza dei tempi',rule:`
+<h3>La concordanza dei tempi</h3>
+<p>Quando il verbo introduttivo è al passato (<i>said, told, asked</i>), i tempi del discorso diretto <b>arretrano</b> di un grado, come nella <i>consecutio temporum</i>.</p>
+<div class="tw"><table class="t"><tr><th>Discorso diretto</th><th>Discorso indiretto</th></tr>
+<tr><td>present simple: <i>"I am tired."</i></td><td>past simple: <i>he said he <b>was</b> tired</i></td></tr>
+<tr><td>present continuous: <i>"I'm working."</i></td><td>past continuous: <i>was working</i></td></tr>
+<tr><td>past simple / present perfect</td><td>past perfect: <i>had seen, had lost</i></td></tr>
+<tr><td>will / can / must</td><td>would / could / had to</td></tr>
+<tr><td>am going to</td><td>was going to</td></tr></table></div>
+<h3>Pronomi e avverbi</h3>
+<p>Cambiano anche pronomi e indicatori di tempo e luogo: <i>I → he/she, my → his/her, now → then, here → there, this → that, today → that day, yesterday → the day before, tomorrow → the next day</i>.</p>
+<h3><i>Say</i> e <i>tell</i>; le domande</h3>
+<p><i>Say</i> non vuole la persona (<i>he said that…</i>); <i>tell</i> sì (<i>he told <b>me</b> that…</i>). <i>That</i> si può omettere.</p>
+<p>Nelle domande indirette l'ordine torna <b>affermativo</b> e sparisce <i>do</i>: <i>"Where do you live?" → She asked me where I <b>lived</b>.</i> Le domande sì/no prendono <b>if</b> o <b>whether</b>.</p>`,
+gen:()=>build([
+ [6,()=>{const [n,p,x]=pick(SPK),[d,f]=pick(DS);const r=[].concat(f(p,x));const ans=r.flatMap(t=>[`${n} said that ${t}.`,`${n} said ${t}.`]);return write(`Volgi al discorso indiretto: ${n} said: "${d}"`,ans,'Il tempo arretra di un grado; pronomi e avverbi si adattano.')}],
+ [2,()=>{const [n,,,o]=pick(SPK),[d,f]=pick(DQ);return write(`Volgi al discorso indiretto: ${n} asked me: "${d}"`,f(o).map(t=>`${n} asked me ${t}.`),'Domanda indiretta: ordine affermativo, niente do; if/whether per le domande sì/no.')}]])});
+
+/* §25 Preposizioni */
+const PTIME={at:["7 o'clock",'noon','midnight','the weekend','Christmas','night','half past six','the end of the film'],on:['Monday','my birthday','5th May','Christmas Day','Friday morning',"New Year's Eve",'a sunny afternoon'],in:['July','1999','the summer','the morning','the evening','the 21st century','winter','the 1980s']};
+const PPLACE=[["The keys are ___ the table.",'on'],["There's a spider ___ the wall.",'on'],["Wait for me ___ the bus stop.",'at'],["She's still ___ work.",'at'],["I left my phone ___ the car.",'in'],["He lives ___ a small village near Naples.",'in'],["Put the milk ___ the fridge.",'in'],["Our flat is ___ the second floor.",'on'],["Turn right ___ the traffic lights.",'at'],["The children are playing ___ the garden.",'in'],["I read it ___ page 12.",'on'],["There were fifty people ___ the party.",'at'],["I'm tired; I'm going to stay ___ bed.",'in'],["We met ___ the bus to Rome.",'on'],["Write your name ___ the top of the page.",'at'],["There's someone ___ the door.",'at'],["She lives ___ Milan.",'in'],["Is there any fish ___ the menu?",'on'],["Look at the girl ___ the photo.",'in'],["We spent the day ___ the beach.",'on'],["I'll meet you ___ the station.",'at'],["He's sitting ___ the corner of the room.",'in']];
+const PTEX={at:'At: ore, momenti precisi, feste, the weekend, night.',on:'On: giorni, date, giorni specifici con parti del giorno.',in:'In: mesi, anni, stagioni, secoli, parti del giorno.'};
+const PPEX={at:'At: un punto preciso, un luogo come funzione (fermata, stazione, lavoro, festa).',on:'On: su una superficie, piani, mezzi pubblici, pagine, menu, spiaggia.',in:'In: dentro uno spazio chiuso o un\'area (stanza, auto, città, paese, foto).'};
+L.push({unit:'VI',title:'Le preposizioni in, on, at',sub:'tempo e luogo',rule:`
+<h3>Tempo</h3>
+<div class="tw"><table class="t"><tr><th>at</th><th>on</th><th>in</th></tr>
+<tr><td>ore e momenti precisi: <i>at 7 o'clock, at noon, at midnight</i></td><td>giorni: <i>on Monday</i></td><td>mesi, anni: <i>in July, in 1999</i></td></tr>
+<tr><td>feste (periodo): <i>at Christmas, at Easter</i></td><td>date: <i>on 5th May</i></td><td>stagioni, secoli: <i>in winter, in the 21st century</i></td></tr>
+<tr><td><i>at the weekend, at night</i></td><td>giorno + parte: <i>on Friday morning</i></td><td>parti del giorno: <i>in the morning, in the evening</i></td></tr></table></div>
+<p>Nessuna preposizione con <i>this, next, last, every</i>: <i>next Monday, last year, every morning</i>.</p>
+<h3>Luogo</h3>
+<div class="tw"><table class="t"><tr><th>at = punto</th><th>on = superficie</th><th>in = spazio chiuso, area</th></tr>
+<tr><td><i>at the bus stop, at the door, at the traffic lights</i></td><td><i>on the table, on the wall, on the floor</i></td><td><i>in the kitchen, in a box, in the car</i></td></tr>
+<tr><td>luogo come funzione: <i>at work, at school, at home, at a party, at the station</i></td><td><i>on the second floor, on page 12, on the bus / train, on the beach</i></td><td>città e paesi: <i>in Milan, in Italy</i>; <i>in bed, in the photo</i></td></tr></table></div>
+<p class="nb"><i>In the car / in a taxi</i>, ma <i>on the bus / on the train / on a plane</i>. <i>Arrive in</i> una città o un paese, <i>arrive at</i> un edificio o un luogo puntuale.</p>`,
+gen:()=>build([
+ [4,()=>{const p=pick(['at','on','in']),x=pick(PTIME[p]);return choice(`It happened ___ ${x}.`,['at','on','in'],p,PTEX[p])}],
+ [4,()=>{const [q,a]=pick(PPLACE);return choice(q,['at','on','in'],a,PPEX[a])}]])});
+
+L.forEach((l,i)=>{l.n=i+1;l.id='p'+(i+1)});
+const RIP={id:'ripasso',n:0,unit:null,title:'Ripasso generale',sub:'un esercizio da otto paragrafi diversi',rule:null,gen:()=>sampleN(L,8).map(l=>{const it=l.gen()[0];it.from=l.n;return it})};
+
+/* ---------- correzione ---------- */
+function norm(s){
+  return String(s).toLowerCase().replace(/[’‘`´]/g,"'").replace(/[“”"«»]/g,' ').replace(/[.!?,;:]+/g,' ')
+   .replace(/\bwon't\b/g,'will not').replace(/\bcan't\b/g,'cannot').replace(/\bshan't\b/g,'shall not').replace(/n't\b/g,' not')
+   .replace(/'m\b/g,' am').replace(/'re\b/g,' are').replace(/'ve\b/g,' have').replace(/'ll\b/g,' will')
+   .replace(/\bcan not\b/g,'cannot').replace(/[—–-]/g,' — ').replace(/\s+/g,' ').trim();
+}
+function variants(s){const n=norm(s),out=new Set([n]);if(/'s\b/.test(n)){out.add(n.replace(/'s\b/g,' is'));out.add(n.replace(/'s\b/g,' has'))}if(/'d\b/.test(n)){out.add(n.replace(/'d\b/g,' would'));out.add(n.replace(/'d\b/g,' had'))}return[...out].map(x=>x.replace(/\s+/g,' ').trim())}
+const matches=(u,acc)=>{const uv=variants(u);return acc.some(a=>variants(a).some(v=>uv.includes(v)))};
+
+/* ---------- progressi (solo in questo browser) ---------- */
+const KEY='grammatica-inglese-v1';
+let prog={};try{prog=JSON.parse(localStorage.getItem(KEY)||'{}')||{}}catch(e){prog={}}
+const saveProg=()=>{try{localStorage.setItem(KEY,JSON.stringify(prog))}catch(e){}};
+
+/* ---------- interfaccia ---------- */
+const $=s=>document.querySelector(s);
+const el=(t,a={},...kids)=>{const e=document.createElement(t);for(const k in a){if(k==='class')e.className=a[k];else if(k==='html')e.innerHTML=a[k];else if(k.startsWith('on'))e.addEventListener(k.slice(2),a[k]);else e.setAttribute(k,a[k])}kids.flat().forEach(c=>c!=null&&e.append(c));return e};
+let cur=null,items=[],checked=false,source='';
+let sampleFn=null;
+
+function renderToc(){
+  const toc=$('#toc');toc.innerHTML='';let u=null,done=0;
+  toc.append(el('a',{href:'#conversazione',class:'conv'+(cur&&cur.id==='conversazione'?' on':''),onclick:e=>{e.preventDefault();open('conversazione')}},el('span',{class:'n'},'“ ”'),el('span',{},'Conversazione'),el('span',{class:'b'},'')));
+  L.forEach(l=>{if(l.unit!==u){u=l.unit;toc.append(el('div',{class:'unit'},`${u}. ${UNITS[u]}`))}
+    const p=prog[l.id];if(p)done++;
+    const b=p?el('span',{class:'b'+(p.best>=80?' good':'')},`${p.best}%`):el('span',{class:'b'},'');
+    toc.append(el('a',{href:'#'+l.id,class:cur&&cur.id===l.id?'on':'',onclick:e=>{e.preventDefault();open(l.id)}},el('span',{class:'n'},`§ ${l.n}`),el('span',{},l.title),b))});
+  const rp=prog.ripasso;
+  toc.append(el('a',{href:'#ripasso',class:'rip'+(cur&&cur.id==='ripasso'?' on':''),onclick:e=>{e.preventDefault();open('ripasso')}},el('span',{class:'n'},'∑'),el('span',{},'Ripasso generale'),el('span',{class:'b'},rp?`${rp.best}%`:'')));
+  $('#ovBar').style.width=(done/L.length*100)+'%';
+  $('#ovTxt').textContent=`${done} ${done===1?'lezione':'lezioni'} su ${L.length} esercitate`;
+}
+
+function open(id){
+  cur=id==='conversazione'?CONV:id==='ripasso'?RIP:(L.find(l=>l.id===id)||L[0]);
+  try{localStorage.setItem(KEY+'-last',cur.id)}catch(e){}
+  try{history.replaceState(null,'','#'+cur.id)}catch(e){}
+  $('#idx').classList.remove('open');
+  if(cur===CONV)renderConv();else renderPage();renderToc();window.scrollTo(0,0);
+}
+
+function renderPage(){
+  const pg=$('#page');pg.innerHTML='';const l=cur;
+  pg.append(el('p',{class:'eyebrow'},l.unit?`§ ${l.n} · ${l.unit}. ${UNITS[l.unit]}`:'Ripasso'),el('h1',{},l.title),el('p',{class:'lede'},l.sub));
+  if(l.rule){pg.append(el('h2',{class:'sec-h'},'Regola'),el('div',{class:'rule',html:l.rule}))}
+  const drill=el('section',{class:'drill',id:'drill'});
+  pg.append(el('h2',{class:'sec-h'},'Esercizi'),drill);
+  const i=L.indexOf(l);
+  const pager=el('div',{class:'pager'});
+  const prev=i>0?L[i-1]:null,next=i>=0&&i<L.length-1?L[i+1]:(i===-1?null:RIP);
+  pager.append(prev?el('a',{href:'#'+prev.id,onclick:e=>{e.preventDefault();open(prev.id)}},`← § ${prev.n} ${prev.title}`):el('span'));
+  if(next)pager.append(el('a',{href:'#'+next.id,onclick:e=>{e.preventDefault();open(next.id)}},next===RIP?'Ripasso generale →':`§ ${next.n} ${next.title} →`));
+  pg.append(pager);
+  newSet();
+}
+
+function newSet(){items=cur.gen();checked=false;source=cur===RIP?'Un esercizio da ciascuno di otto paragrafi scelti a caso.':'Serie generata: combinazioni nuove a ogni clic.';renderDrill()}
+
+function renderDrill(){
+  const d=$('#drill');d.innerHTML='';
+  const tools=el('div',{class:'tools'},
+    el('button',{class:'btn',id:'btnNew',onclick:newSet},'Nuova serie'));
+  if(sampleFn&&cur!==RIP)tools.append(el('button',{class:'btn',id:'btnAi',onclick:askClaude},'Serie scritta da Claude'));
+  d.append(tools,el('p',{class:'src',id:'src'},source));
+  const ol=el('ol',{class:'items'});
+  items.forEach((it,k)=>ol.append(renderItem(it,k)));
+  d.append(ol);
+  const row=el('div',{class:'check-row'},el('button',{class:'btn primary',id:'btnCheck',onclick:check},'Correggi'),el('span',{class:'score',id:'score'}));
+  d.append(row);
+}
+
+function sizeFor(ans){const m=Math.max(...ans.map(a=>a.length));return Math.min(Math.max(m+3,6),34)}
+function renderItem(it,k){
+  const li=el('li',{});const box=el('div',{});li.append(box);
+  if(it.t==='gap'){
+    const q=el('div',{class:'q'});const parts=it.q.split('___');
+    parts.forEach((p,j)=>{q.append(p);if(j<parts.length-1){const inp=el('input',{type:'text',id:`i${k}-${j}`,autocomplete:'off',autocapitalize:'off',spellcheck:'false','aria-label':`Esercizio ${k+1}, spazio ${j+1}`});inp.size=sizeFor(it.a[j]||['xxxxxx']);inp.addEventListener('keydown',onKey);q.append(inp)}});
+    box.append(q);
+  }else if(it.t==='choice'){
+    box.append(el('div',{class:'q'},it.q.replace('___','_____')));
+    const opts=el('div',{class:'opts',role:'group'});
+    it.o.forEach(o=>opts.append(el('button',{type:'button',class:'opt'+(it.sel===o?' sel':''),onclick:e=>{if(checked)return;it.sel=o;opts.querySelectorAll('.opt').forEach(b=>b.classList.toggle('sel',b.textContent===o))}},o)));
+    box.append(opts);
+  }else{
+    box.append(el('div',{class:'q'},it.q));
+    const w=el('div',{class:'wr'});const inp=el('input',{type:'text',id:`i${k}-0`,autocomplete:'off',autocapitalize:'sentences',spellcheck:'false','aria-label':`Esercizio ${k+1}`});inp.addEventListener('keydown',onKey);w.append(inp);box.append(w);
+  }
+  if(it.from)box.prepend(el('div',{class:'eyebrow'},`§ ${it.from}`));
+  box.append(el('div',{class:'fb',id:`fb${k}`}));
+  return li;
+}
+function onKey(e){if(e.key!=='Enter')return;e.preventDefault();const all=[...document.querySelectorAll('#drill input')];const i=all.indexOf(e.target);if(i<all.length-1)all[i+1].focus();else check()}
+
+/* ---------- analisi degli errori, parola per parola ---------- */
+const FUNC=new Set('a an the do does did is are am was were be been being have has had will would shall should can could cannot may might must not no to of in on at for since by with from about into some any much many few little who whom which that whose where what when why how this these those i me my mine you your yours he him his she her hers it its we us our ours they them their theirs myself yourself himself herself itself ourselves yourselves themselves than as more most less least if whether there then here going yet already just ever never each other'.split(' '));
+const FORM2BASE={};IRR.forEach(([b,p,pp])=>{FORM2BASE[b]=b;alt(p).forEach(x=>FORM2BASE[x]=b);alt(pp).forEach(x=>FORM2BASE[x]=b)});
+const stem=w=>w.replace(/(ies|ied|ier|iest|ily)$/,'y').replace(/(ing|est|ed|er|es|ly|s|d)$/,'');
+const infl=w=>/ing$/.test(w)?'ing':/ed$/.test(w)?'ed':/est$/.test(w)?'est':/er$/.test(w)?'er':/ly$/.test(w)?'ly':/s$/.test(w)?'s':'';
+function osa(a,b){const d=[...Array(a.length+1)].map((_,i)=>[i,...Array(b.length).fill(0)]);for(let j=0;j<=b.length;j++)d[0][j]=j;
+  for(let i=1;i<=a.length;i++)for(let j=1;j<=b.length;j++){const c=a[i-1]===b[j-1]?0:1;d[i][j]=Math.min(d[i-1][j]+1,d[i][j-1]+1,d[i-1][j-1]+c);if(i>1&&j>1&&a[i-1]===b[j-2]&&a[i-2]===b[j-1])d[i][j]=Math.min(d[i][j],d[i-2][j-2]+1)}
+  return d[a.length][b.length]}
+// 'spell' = stessa parola scritta male; 'gram' = forma o parola sbagliata
+function kindOf(u,c){
+  if(FUNC.has(u)||(FUNC.has(c)&&u.length<3))return'gram';
+  if(FORM2BASE[u]&&FORM2BASE[u]===FORM2BASE[c])return'gram';
+  if(FORM2BASE[c]&&!FORM2BASE[u]&&stem(u)===FORM2BASE[c])return'gram';
+  if(stem(u)===stem(c)&&stem(u).length>1&&infl(u)!==infl(c))return'gram';
+  const d=osa(u,c),L=Math.max(u.length,c.length);
+  return d<=(L>=5?2:1)&&d<L?'spell':'gram';
+}
+function align(U,C){
+  const n=U.length,m=C.length,D=[...Array(n+1)].map(()=>Array(m+1).fill(0)),S={};
+  const sub=(i,j)=>{const k=i+','+j;if(!(k in S))S[k]=U[i]===C[j]?0:kindOf(U[i],C[j])==='spell'?0.6:1.2;return S[k]};
+  for(let i=0;i<=n;i++)D[i][0]=i;for(let j=0;j<=m;j++)D[0][j]=j;
+  for(let i=1;i<=n;i++)for(let j=1;j<=m;j++)D[i][j]=Math.min(D[i-1][j-1]+sub(i-1,j-1),D[i-1][j]+1,D[i][j-1]+1);
+  const ops=[];let i=n,j=m;
+  while(i>0||j>0){
+    if(i>0&&j>0&&D[i][j]===D[i-1][j-1]+sub(i-1,j-1)){ops.unshift({op:U[i-1]===C[j-1]?'eq':'sub',u:i-1,c:j-1});i--;j--}
+    else if(i>0&&D[i][j]===D[i-1][j]+1){ops.unshift({op:'del',u:i-1});i--}
+    else{ops.unshift({op:'ins',u:i,c:j-1});j--}
+  }
+  return{cost:D[n][m],ops};
+}
+function analyze(user,accepted){
+  const NOAPO=/^(do|does|did|is|are|was|were|have|has|had|could|would|should|must|need|ca|wo)nt([.,!?;:]*)$/i;
+  const raw=user.trim().split(/\s+/).filter(Boolean).map(r=>{const m=r.match(NOAPO);const fixed=m?r.replace(/nt([.,!?;:]*)$/i,"n't$1"):r;return{raw:r,apo:m?fixed.replace(/[.,!?;:]+$/,''):null,ex:norm(fixed).split(' ').filter(Boolean)}});
+  const U=[];raw.forEach((r,ri)=>{r.first=U.length;r.ex.forEach(w=>U.push({w,ri,st:'ok'}))});
+  let best=null;
+  for(const a of accepted){const C=norm(a).split(' ').filter(Boolean);const r=align(U.map(x=>x.w),C);if(!best||r.cost<best.cost)best={...r,C,a}}
+  const missing=[];
+  for(const o of best.ops){
+    if(o.op==='sub'){U[o.u].st=kindOf(U[o.u].w,best.C[o.c]);U[o.u].fix=best.C[o.c]}
+    else if(o.op==='del')U[o.u].st='extra';
+    else if(o.op==='ins')missing.push({at:o.u,w:best.C[o.c]});
+  }
+  // parola presente ma fuori posto: ordine delle parole
+  U.forEach(t=>{if(t.st!=='extra')return;const k=missing.findIndex(m=>m.w===t.w);if(k>=0){t.st='order';missing.splice(k,1)}});
+  const rank={ok:0,spell:1,order:2,gram:3,extra:3};
+  raw.forEach((r,ri)=>{const ts=U.filter(t=>t.ri===ri);r.st=ts.reduce((s,t)=>rank[t.st]>rank[s]?t.st:s,'ok');r.fix=ts.map(t=>t.fix||t.w).join(' ');if(r.apo&&r.st==='ok'){r.st='spell';r.fix=r.apo;r.ex=[r.apo]}});
+  const worst=Math.max(0,...raw.map(r=>rank[r.st]),missing.length?3:0);
+  return{raw,missing,best:best.a,level:worst===1?'spell':'gram'};
+}
+function charMark(word,fix){
+  const a=word.toLowerCase(),b=fix.toLowerCase(),L=[...Array(a.length+1)].map(()=>Array(b.length+1).fill(0));
+  for(let i=a.length-1;i>=0;i--)for(let j=b.length-1;j>=0;j--)L[i][j]=a[i]===b[j]?L[i+1][j+1]+1:Math.max(L[i+1][j],L[i][j+1]);
+  // sequenza: lettere giuste, lettere sbagliate (evidenziate), ‸ dove manca una lettera
+  const seq=[];let i=0,j=0;
+  const push=(t,s)=>{const l=seq[seq.length-1];if(l&&l.t===t&&t!=='ins')l.s+=s;else if(!(l&&l.t==='ins'&&t==='ins'))seq.push({t,s})};
+  while(i<a.length||j<b.length){
+    if(i<a.length&&j<b.length&&a[i]===b[j]){push('ok',word[i]);i++;j++}
+    else if(i<a.length&&(j>=b.length||L[i+1][j]>=L[i][j+1])){push('bad',word[i]);i++}
+    else{push('ins','‸');j++}
+  }
+  return seq.map(x=>x.t==='ok'?x.s:el('mark',{title:x.t==='ins'?'manca una lettera':'lettera sbagliata o fuori posto'},x.s));
+}
+function renderDiff(an){
+  const box=el('span',{class:'diff'});const add=x=>{if(box.childNodes.length)box.append(' ');box.append(x)};
+  const miss=at=>an.missing.filter(m=>m.at===at).forEach(m=>add(el('span',{class:'tk mi',title:'parola mancante'},'+ '+m.w)));
+  an.raw.forEach(r=>{
+    miss(r.first);
+    const m=r.raw.match(/^(.*?)([.,!?;:]*)$/),word=m[1],punct=m[2];
+    if(r.st==='ok')add(el('span',{class:'tk ok'},r.raw));
+    else if(r.st==='spell')add(el('span',{class:'tk sp',title:'ortografia'},...(r.ex.length===1?charMark(word,r.fix):[el('mark',{},word)]),punct,el('span',{class:'fix'},'→ '+r.fix)));
+    else if(r.st==='order')add(el('span',{class:'tk or',title:'parola fuori posto'},'↔ '+r.raw));
+    else if(r.st==='extra')add(el('span',{class:'tk ex',title:'parola di troppo'},el('s',{},r.raw)));
+    else add(el('span',{class:'tk gr',title:'forma sbagliata'},el('s',{},word),punct,el('span',{class:'fix'},'→ '+r.fix)));
+  });
+  miss(an.raw.reduce((n,r)=>n+r.ex.length,0));
+  return box;
+}
+const LEGEND=[['var(--ok)','corretto'],['var(--warn-mark)','ortografia (lettere evidenziate)'],['var(--order)','parola fuori posto'],['var(--bad)','forma sbagliata, parola mancante o di troppo']];
+const fmt=n=>String(n).replace('.',',');
+
+function check(){
+  if(checked){newSet();return}
+  let pts=0;
+  items.forEach((it,k)=>{
+    const fb=$('#fb'+k);fb.innerHTML='';let lvl;
+    if(it.t==='choice'){
+      const right=it.sel===it.a;lvl=right?'ok':'gram';
+      document.querySelectorAll(`#drill li:nth-child(${k+1}) .opt`).forEach(b=>{if(b.textContent===it.a)b.classList.add('right');else if(b.textContent===it.sel)b.classList.add('wrong')});
+      fb.append(el('span',{class:right?'y':'n'},right?'Giusto. ':it.sel?'Sbagliato. ':'Nessuna risposta. '));
+      if(!right)fb.append('Soluzione: ',el('span',{class:'ans'},it.a),' ');
+    }else{
+      const fields=it.t==='gap'?it.a.map((acc,j)=>({inp:$(`#i${k}-${j}`),acc})):[{inp:$(`#i${k}-0`),acc:it.a}];
+      const res=fields.map(f=>{const v=f.inp.value;if(matches(v,f.acc))return{lvl:'ok'};if(!v.trim())return{lvl:'gram',empty:true,acc:f.acc};const an=analyze(v,f.acc);return{lvl:an.level,an,acc:f.acc}});
+      res.forEach((r,j)=>{const inp=fields[j].inp;inp.classList.add(r.lvl==='ok'?'ok-in':r.lvl==='spell'?'warn-in':'bad-in');inp.readOnly=true});
+      lvl=res.some(r=>r.lvl==='gram')?'gram':res.some(r=>r.lvl==='spell')?'spell':'ok';
+      fb.append(el('span',{class:lvl==='ok'?'y':lvl==='spell'?'w':'n'},lvl==='ok'?'Giusto.':lvl==='spell'?'Grammatica giusta, errore di ortografia (mezzo punto).':'Sbagliato.'));
+      res.forEach((r,j)=>{if(r.lvl==='ok')return;const line=el('div',{class:'dl'});
+        if(res.length>1)line.append(el('span',{class:'lab'},`${j+1}° spazio: `));
+        if(r.empty)line.append(el('span',{class:'lab'},'nessuna risposta · '));else line.append(renderDiff(r.an),' ');
+        line.append(el('span',{class:'lab'},' soluzione: '),el('span',{class:'ans'},r.an?r.an.best:r.acc[0]));fb.append(line)});
+    }
+    if(it.ex)fb.append(el('div',{class:'why'},it.ex));
+    pts+=lvl==='ok'?1:lvl==='spell'?0.5:0;
+  });
+  checked=true;
+  const pct=Math.round(pts/items.length*100);
+  $('#score').innerHTML='';$('#score').append(`${fmt(pts)} su ${items.length}`,el('small',{},pct>=80?'ottimo':pct>=60?'bene, ripassa gli errori':'rileggi la regola e riprova'));
+  const row=$('#score').parentNode;if(!row.querySelector('.legend'))row.append(el('div',{class:'legend'},...LEGEND.map(([c,t])=>el('span',{},el('i',{style:`background:${c}`}),t))));
+  $('#btnCheck').textContent='Nuova serie';
+  const p=prog[cur.id]||{best:0,n:0};p.best=Math.max(p.best,pct);p.last=pct;p.n++;prog[cur.id]=p;saveProg();renderToc();
+}
+
+/* ---------- serie scritta da Claude ---------- */
+const THEMES=['viaggi','lavoro in ufficio','cucina','sport','famiglia','vita in città','università','musica','salute','tecnologia','natura','storia','cinema','vacanze al mare','spesa e negozi'];
+async function askClaude(){
+  const b=$('#btnAi'),n=$('#btnNew');b.disabled=true;n.disabled=true;
+  const src=$('#src');src.innerHTML='';src.append(el('span',{class:'busy'}),'Claude sta scrivendo una serie nuova…');
+  const ruleText=el('div',{html:cur.rule}).textContent.replace(/\s+/g,' ').slice(0,3500);
+  const theme=pick(THEMES);
+  const prompt=`Sei un insegnante di grammatica inglese per un adulto italiano colto (livello B1-B2) che studia la grammatica in modo classico, con regole ed esercizi.
+Lezione: "${cur.title}" (${cur.sub}).
+Riassunto della regola:
+${ruleText}
+
+Scrivi 8 esercizi NUOVI e vari su questa regola, con frasi inglesi naturali e corrette. Tema suggerito per le frasi: ${theme}. Mescola almeno due dei tre tipi:
+- "gap": frase con uno o due spazi "___"; subito dopo ogni spazio, tra parentesi, l'indizio (es. il verbo base). "answers" è un array con UN array di risposte accettate per ciascuno spazio, nello stesso ordine.
+- "choice": frase con uno spazio "___" e 3 o 4 opzioni brevi; "answer" è identica a una delle opzioni.
+- "write": istruzione in italiano seguita dalla frase da trasformare; "answers" è un array di frasi complete accettate.
+Ogni esercizio ha "explain": spiegazione in italiano, massimo 20 parole, che richiama la regola.
+Rispondi SOLO con un array JSON, per esempio:
+[{"type":"gap","q":"She ___ (go) to school by bus.","answers":[["goes"]],"explain":"Terza persona singolare: -es dopo -o."},{"type":"choice","q":"I've lived here ___ 2019.","options":["for","since","from"],"answer":"since","explain":"Since + punto di partenza."},{"type":"write","q":"Volgi in forma interrogativa: They live in Rome.","answers":["Do they live in Rome?"],"explain":"Do + soggetto + forma base."}]`;
+  try{
+    const data=await sampleFn.json(prompt,{cache:false});
+    const out=(Array.isArray(data)?data:[]).map(x=>{
+      if(!x||typeof x.q!=='string')return null;
+      if(x.type==='gap'&&Array.isArray(x.answers)){const a=x.answers.map(r=>Array.isArray(r)?r.map(String):[String(r)]);if(x.q.split('___').length-1!==a.length)return null;return{t:'gap',q:x.q,a,ex:String(x.explain||'')}}
+      if(x.type==='choice'&&Array.isArray(x.options)&&x.options.map(String).includes(String(x.answer)))return{t:'choice',q:x.q,o:shuffle(x.options.map(String)),a:String(x.answer),ex:String(x.explain||'')};
+      if(x.type==='write'&&Array.isArray(x.answers)&&x.answers.length)return{t:'write',q:x.q,a:x.answers.map(String),ex:String(x.explain||'')};
+      return null}).filter(Boolean);
+    if(out.length<3)throw{code:'invalid_json'};
+    items=out;checked=false;source=`Serie scritta da Claude · tema: ${theme}`;renderDrill();
+  }catch(e){
+    const msg={not_granted:'Claude non è stato autorizzato per questa pagina: le serie generate restano disponibili.',sampling_disabled:'Claude non è disponibile per questo account.',rate_limited:'Troppe richieste ravvicinate: riprova fra qualche minuto.',invalid_json:'La risposta non era nel formato atteso: riprova.',session_expired:'Sessione scaduta: accedi di nuovo a claude.ai.'}[e&&e.code]||'Claude non ha risposto: riprova fra poco.';
+    if(e&&['not_granted','sampling_disabled','not_declared','capability_disabled','capability_removed'].includes(e.code))sampleFn=null;
+    b.disabled=false;n.disabled=false;src.textContent=msg;if(!sampleFn)b.remove();
+  }
+}
+
+/* ---------- conversazione ---------- */
+const CONV={id:'conversazione'};
+const SCEN=[
+ {k:'libera',t:'Conversazione libera',d:'Si parla di quello che vuoi: giornata, interessi, opinioni.',p:'a friendly free conversation about everyday life, interests and opinions'},
+ {k:'convegno',t:'Al convegno',d:'Pausa caffè a un convegno internazionale di studi umanistici.',p:"a coffee break at an international conference in the humanities; you are a foreign colleague curious about the learner's research"},
+ {k:'viaggio',t:'In albergo',d:'Check-in, richieste e informazioni in un hotel di Londra.',p:'a hotel in London: you are the receptionist, the learner is checking in and asking for information'},
+ {k:'ristorante',t:'Al ristorante',d:'Ordinare, chiedere consigli, pagare.',p:'a restaurant in Edinburgh: you are the waiter'},
+ {k:'lavoro',t:'Riunione di lavoro',d:'Organizzare un progetto comune con un collega britannico.',p:'a work meeting with a British colleague to plan a joint project'},
+ {k:'libri',t:'Libri e film',d:'Raccontare e discutere letture, film, musica.',p:'a relaxed chat about books, films and music the learner likes'},
+ {k:'medico',t:'Dal medico',d:'Spiegare i sintomi e capire i consigli del medico.',p:'a visit to a GP in England: you are the doctor'}];
+const LEVELS=['B1','B2','C1'];
+const CKEY=KEY+'-conv';
+let conv={scen:'libera',level:'B2',voice:false,msgs:[]},convBusy=false,convReport=null;
+try{Object.assign(conv,JSON.parse(localStorage.getItem(CKEY)||'{}'))}catch(e){}
+const saveConv=()=>{try{localStorage.setItem(CKEY,JSON.stringify(conv))}catch(e){}};
+const TYPECL={grammar:'gr',spelling:'sp',vocabulary:'vo',order:'or'};
+const TYPELAB={grammar:'grammatica',spelling:'ortografia',vocabulary:'lessico',order:'ordine delle parole'};
+
+function speak(text){
+  try{if(!('speechSynthesis' in window))return;speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(text);u.lang='en-GB';u.rate=.95;
+    const v=speechSynthesis.getVoices().find(v=>/^en[-_]GB/i.test(v.lang))||speechSynthesis.getVoices().find(v=>/^en/i.test(v.lang));if(v)u.voice=v;speechSynthesis.speak(u)}catch(e){}
+}
+function convInstr(){
+  const s=SCEN.find(x=>x.k===conv.scen)||SCEN[0];
+  return `You are an English conversation partner and tutor for an Italian adult learner (level ${conv.level}). Scenario: ${s.p}. Stay in role.
+Your reply: natural spoken British English, 1-3 short sentences suited to level ${conv.level}; end with a question or prompt that keeps the conversation going; never correct the learner inside the reply.
+Then analyse ONLY the learner's last message and list its real mistakes. Types: "grammar" (tenses, agreement, word forms, articles, prepositions, missing or extra words), "spelling", "vocabulary" (wrong or unnatural word, false friends), "order" (word order). Ignore capital letters and missing final punctuation. Never invent mistakes: if the message is correct, return an empty list.
+For each mistake: "wrong" = the exact words the learner wrote, "right" = the corrected words, "why" = short explanation in Italian (max 15 words), and when relevant "lesson" = the number of the matching section of the learner's grammar course: ${L.map(l=>l.n+' '+l.title).join('; ')}.
+"better": if the message is correct but unnatural, a more natural version; otherwise "".
+Reply ONLY with JSON: {"reply":"...","corrections":[{"type":"grammar","wrong":"...","right":"...","why":"...","lesson":11}],"better":""}`;
+}
+async function convSend(text){
+  if(convBusy||!sampleFn)return;
+  if(text){conv.msgs.push({role:'user',text});}
+  convBusy=true;convReport=null;saveConv();renderChat();
+  const hist=conv.msgs.slice(-16).map(m=>({role:m.role,content:m.role==='user'?m.text:JSON.stringify({reply:m.text})}));
+  const turns=[{role:'user',content:convInstr()},...hist];
+  if(!text)turns.push({role:'user',content:'(Start the conversation now with a short greeting and a first question. There is no learner message yet: return an empty corrections list.)'});
+  try{
+    const r=await sampleFn.json(turns,{cache:false,modelTier:'quick'});
+    if(!r||typeof r.reply!=='string')throw{code:'invalid_json'};
+    const last=conv.msgs[conv.msgs.length-1];
+    if(text&&last&&last.role==='user'){last.corr=(Array.isArray(r.corrections)?r.corrections:[]).filter(c=>c&&c.wrong&&c.right).map(c=>({type:TYPECL[c.type]?c.type:'grammar',wrong:String(c.wrong),right:String(c.right),why:String(c.why||''),lesson:Number(c.lesson)||null}));last.better=String(r.better||'')}
+    conv.msgs.push({role:'assistant',text:r.reply});
+    if(conv.voice)speak(r.reply);
+  }catch(e){
+    convErr(e);
+  }
+  convBusy=false;saveConv();renderChat();
+}
+function convErr(e){
+  const msg={not_granted:'Claude non è stato autorizzato per questa pagina.',sampling_disabled:'Claude non è disponibile per questo account.',rate_limited:'Troppe richieste ravvicinate: riprova fra qualche minuto.',invalid_json:'La risposta non era nel formato atteso: riprova.',session_expired:'Sessione scaduta: accedi di nuovo a claude.ai.'}[e&&e.code]||'Claude non ha risposto: riprova fra poco.';
+  const n=$('#convNote');if(n)n.textContent=msg;
+}
+async function convBilancio(){
+  if(convBusy||!sampleFn)return;
+  const mine=conv.msgs.filter(m=>m.role==='user');if(!mine.length)return;
+  convBusy=true;renderChat();
+  const data=mine.map(m=>`- "${m.text}"`+(m.corr&&m.corr.length?` (errori: ${m.corr.map(c=>`${c.wrong} → ${c.right}`).join('; ')})`:'')).join('\n');
+  const prompt=`Sei un insegnante di inglese. Ecco le frasi scritte da un adulto italiano (livello ${conv.level}) durante una conversazione, con gli errori già segnalati:
+${data}
+
+Scrivi un bilancio in italiano, sobrio e concreto. Indica le lezioni del corso da ripassare scegliendo da questo elenco: ${L.map(l=>l.n+' '+l.title).join('; ')}.
+Rispondi SOLO con JSON: {"giudizio":"2-3 frasi","puntiForti":["..."],"daRipassare":[{"problema":"...","lezione":11}],"parole":[{"en":"...","it":"..."}]}
+In "parole" metti fino a 6 parole o espressioni utili emerse o mancate nella conversazione.`;
+  try{convReport=await sampleFn.json(prompt,{cache:false});}catch(e){convErr(e)}
+  convBusy=false;renderChat();
+  const r=$('#convReport');if(r)r.scrollIntoView({behavior:'smooth',block:'start'});
+}
+
+function renderConv(){
+  const pg=$('#page');pg.innerHTML='';
+  pg.append(el('p',{class:'eyebrow'},'Esercizio orale e scritto'),el('h1',{},'Conversazione'),
+    el('p',{class:'lede'},'Claude risponde in inglese e, sotto ogni tua battuta, segnala gli errori con i colori della correzione e il paragrafo da ripassare.'));
+  if(!sampleFn){pg.append(el('p',{class:'empty'},'La conversazione usa Claude: funziona aprendo questa pagina su claude.ai con il tuo account. Se l’hai appena aperta, attendi qualche secondo.'));return}
+  const set=el('div',{class:'conv-set'});
+  const sc=el('div',{class:'chips'});SCEN.forEach(s=>sc.append(el('button',{type:'button',class:'chip'+(conv.scen===s.k?' sel':''),onclick:()=>{if(conv.scen===s.k)return;conv.scen=s.k;conv.msgs=[];convReport=null;saveConv();renderConv()}},s.t)));
+  const lv=el('div',{class:'chips'});LEVELS.forEach(l=>lv.append(el('button',{type:'button',class:'chip'+(conv.level===l?' sel':''),onclick:()=>{conv.level=l;saveConv();renderConv()}},l)));
+  set.append(el('div',{},el('div',{class:'lab'},'Situazione'),sc,el('p',{class:'scen-d'},(SCEN.find(s=>s.k===conv.scen)||SCEN[0]).d)),el('div',{},el('div',{class:'lab'},'Livello'),lv));
+  const vb=el('input',{type:'checkbox',id:'voiceChk'});vb.checked=!!conv.voice;vb.addEventListener('change',()=>{conv.voice=vb.checked;saveConv()});
+  const tools=el('div',{class:'conv-tools'},
+    el('button',{class:'btn',onclick:()=>{conv.msgs=[];convReport=null;saveConv();renderChat();convSend('')}},'Nuova conversazione'),
+    el('button',{class:'btn',id:'btnBil',onclick:convBilancio},'Bilancio'));
+  if('speechSynthesis' in window)tools.append(el('label',{for:'voiceChk'},vb,'Leggi ad alta voce le risposte'));
+  set.append(tools);
+  pg.append(set,el('div',{class:'chat',id:'chat'}),el('p',{class:'hint',id:'convNote'}),el('div',{id:'convReportBox'}));
+  const ta=el('textarea',{id:'convIn',rows:'1',placeholder:'Write in English…','aria-label':'La tua risposta in inglese',autocapitalize:'sentences'});
+  ta.addEventListener('input',()=>{ta.style.height='auto';ta.style.height=Math.min(ta.scrollHeight,160)+'px'});
+  ta.addEventListener('keydown',e=>{if(e.key==='Enter'&&!e.shiftKey){e.preventDefault();submit()}});
+  const submit=()=>{const t=ta.value.trim();if(!t||convBusy)return;ta.value='';ta.style.height='auto';convSend(t)};
+  pg.append(el('div',{class:'composer'},ta,el('button',{class:'btn primary',id:'btnSend',onclick:submit},'Invia')),
+    el('p',{class:'hint'},'Per parlare invece di scrivere, usa il microfono della tastiera del telefono. Invio manda il messaggio, Maiusc+Invio va a capo.'));
+  renderChat();
+  if(!conv.msgs.length)convSend('');
+}
+function renderChat(){
+  const ch=$('#chat');if(!ch)return;ch.innerHTML='';
+  conv.msgs.forEach(m=>{
+    if(m.role==='assistant'){ch.append(el('div',{class:'msg ai'},m.text,el('button',{class:'say',type:'button',onclick:()=>speak(m.text)},'Ascolta')));return}
+    ch.append(el('div',{class:'msg me'},m.text));
+    if(!m.corr)return;
+    const box=el('div',{class:'corr'});
+    if(!m.corr.length)box.append(el('span',{class:'ok'},m.better?'Corretto.':'Corretto, nessun errore.'));
+    m.corr.forEach(c=>{const line=el('div',{},el('span',{class:'tk '+TYPECL[c.type],title:TYPELAB[c.type]},el('s',{},c.wrong)),' → ',el('b',{},c.right),c.why?el('span',{class:'lab'},' · '+c.why):'');
+      const ls=c.lesson&&L[c.lesson-1];if(ls)line.append(el('a',{href:'#'+ls.id,onclick:e=>{e.preventDefault();open(ls.id)}},`§ ${ls.n}`));box.append(line)});
+    if(m.better)box.append(el('div',{class:'better'},'Più naturale: ',el('i',{},m.better)));
+    ch.append(box);
+  });
+  if(convBusy)ch.append(el('div',{class:'typing'},el('span',{class:'busy'}),'Claude sta scrivendo…'));
+  const b1=$('#btnSend'),b2=$('#btnBil');if(b1)b1.disabled=convBusy;if(b2)b2.disabled=convBusy||!conv.msgs.some(m=>m.role==='user');
+  if(conv.msgs.some(m=>m.corr&&m.corr.length)&&!$('#convLegend'))ch.after(el('div',{class:'legend',id:'convLegend'},...[['var(--bad)','grammatica'],['var(--warn-mark)','ortografia'],['var(--accent)','lessico'],['var(--order)','ordine delle parole']].map(([c,t])=>el('span',{},el('i',{style:`background:${c}`}),t))));
+  const rb=$('#convReportBox');if(rb){rb.innerHTML='';if(convReport)rb.append(renderReport(convReport))}
+  if(convBusy||conv.msgs.length)ch.lastChild?.scrollIntoView?.({block:'nearest'});
+}
+function renderReport(r){
+  const box=el('section',{class:'report',id:'convReport'},el('h3',{},'Bilancio della conversazione'),el('p',{},String(r.giudizio||'')));
+  if(Array.isArray(r.puntiForti)&&r.puntiForti.length)box.append(el('h4',{},'Punti forti'),el('ul',{},...r.puntiForti.map(x=>el('li',{},String(x)))));
+  if(Array.isArray(r.daRipassare)&&r.daRipassare.length)box.append(el('h4',{},'Da ripassare'),el('ul',{},...r.daRipassare.map(x=>{const ls=L[(Number(x.lezione)||0)-1];return el('li',{},String(x.problema||''),ls?el('a',{href:'#'+ls.id,onclick:e=>{e.preventDefault();open(ls.id)}},` § ${ls.n} ${ls.title}`):'')})));
+  if(Array.isArray(r.parole)&&r.parole.length)box.append(el('h4',{},'Parole ed espressioni'),el('ul',{},...r.parole.map(x=>el('li',{},el('i',{},String(x.en||'')),' — ',String(x.it||'')))));
+  return box;
+}
+
+/* ---------- avvio ---------- */
+$('#menuBtn').addEventListener('click',()=>$('#idx').classList.toggle('open'));
+let start=(location.hash||'').slice(1);
+if(!start){try{start=localStorage.getItem(KEY+'-last')||''}catch(e){}}
+open(start||'p1');
+try{window.claude?.use?.('sample').then(s=>{if(s){sampleFn=s;if(cur===CONV){renderConv();return}if(!checked&&cur!==RIP&&!$('#btnAi'))$('#btnNew').after(el('button',{class:'btn',id:'btnAi',onclick:askClaude},'Serie scritta da Claude'))}}).catch(()=>{})}catch(e){}
+</script>

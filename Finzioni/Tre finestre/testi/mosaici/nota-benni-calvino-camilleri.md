@@ -1,0 +1,5 @@
+Anche *Mosaici* comincia in una cucina, e anche qui c'entra il caffè: quello che il commissario Malversi si è dimenticato di comprare. Davanti al frigorifero aperto, con una parmigiana di melanzane come prova a carico, litiga con la figlia Laura. Ho chiesto a un'intelligenza artificiale di riscrivere quella pagina tre volte, come se l'avessero scritta Stefano Benni, Italo Calvino e Andrea Camilleri.
+
+Non è un gioco di bravura, e nemmeno una gara. È un esperimento di *restorying*: guardare la stessa storia attraverso vetri diversi, ciascuno dei quali distorce la luce a modo suo. Benni trasforma la predica paterna in una discesa agli inferi che finisce sotto i portici della stazione; Calvino dà del tu al commissario e lo mette davanti alle storie che sceglie di non leggere; Camilleri lo porta in Sicilia, dove la giornata senza caffè è persa già prima di cominciare.
+
+Le quattro versioni sono in ordine: prima la mia, poi le altre tre. In fondo a ciascuna ho lasciato i versi di *Black Coffee* che chiudono il prologo originale. Sono l'unica cosa che nessuna finestra ha cambiato.

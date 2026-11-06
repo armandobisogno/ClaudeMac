@@ -4,6 +4,7 @@ session_brief.py — brief di inizio sessione.
 
 1. Novita' di Macchine Pensanti (delega a mp_check.py --quiet).
 2. Scadenze della Direzione da brain/direzione/todo.md (scadute o entro 7 giorni).
+3. PFO di tirocinio da firmare (delega a firma_pfo.py nuovi --quiet).
 
 Pensato per l'hook SessionStart. Stampa solo se c'e' qualcosa; esce sempre 0.
 Aggiungere qui altri controlli di inizio sessione senza toccare settings.json.
@@ -71,7 +72,18 @@ def direzione_part():
     print()
 
 
+def tirocini_part():
+    try:
+        subprocess.run(
+            [sys.executable, str(TOOLS / "firma_pfo.py"), "nuovi", "--quiet"],
+            timeout=20, check=False, stderr=subprocess.DEVNULL,
+        )
+    except Exception:  # noqa: BLE001
+        pass
+
+
 if __name__ == "__main__":
     mp_part()
     direzione_part()
+    tirocini_part()
     sys.exit(0)

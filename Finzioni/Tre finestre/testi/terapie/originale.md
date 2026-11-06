@@ -1,0 +1,26 @@
+Sulle vetrate della cucina la pioggia batteva senza sosta mentre il professor Spiri, classe ’52, grecista pensionato del blasonato Liceo ‘G. Leopardi’ di Fossa Etrusca, continuava a ripetere a gran voce dalla cucina che il caffè puzzava. Che non lo si poteva usare. Mentre lo diceva, rigirava con rabbia il cucchiaino nel barattolo. Ne prendeva un po’, lo annusava e lo rigettava dentro. A ogni rimescolata, la polvere di caffè cadeva sul lavandino e si impiastricciava nei solchi del lavabo, bagnati da rivoli di sapone.
+
+La signora Franca, proprietaria insoddisfatta di un raffinatissimo negozio di oggettistica con la doppia vetrina sul corso principale di Fossa, sembrava poco interessata al problema del caffè. Dalla stanza da letto non replicava - né annuiva - alle giaculatorie del marito. Gli occhi erano rivolti a un ricamo di ragnatele sul soffitto. La signora stava lì, si sarebbe detto arresa.
+
+Un’oretta prima, come ogni mattina, il professore aveva caricato la sua moka da una tazza e aveva portato il caffè in camera alla moglie. Dopo aver fatto colazione ed essersi vestito, ne aveva caricata una seconda solo per lui, come sempre. Aveva versato il caffè in una tazzina e si era avvicinato alle finestre. Guardare gli scrosci impetuosi, mentre l’odore di mondo bagnato filtrava nella casa riscaldata dai termosifoni, lo faceva sentire assai bene.
+
+La vestaglia, le babbucce con la punta in pelle e la suola in panno, i biscottini all’anice che ogni mattina mangiava per evitare che il caffè gli facesse un buco nello stomaco: tutto gli sembrava contribuire a rinsaldare un inattaccabile bastione a difesa della sua serena tranquillità contro il potente accanirsi della bufera, che sulla strada insultava e inzuppava i passanti.
+
+‘Inattaccabile bastione’ e ‘potente accanirsi della bufera’ erano proprio le espressioni che aveva in testa, perché il professor Spiri pensava la realtà per immagini epiche. Come in una specie di perenne epopea omerica.
+
+«In fondo», disse a bassa voce, appannando con l’alito la finestra, «si è felici solo godendo di scampati pericoli».
+
+Immerso nei suoi pensieri, provò a dare un’altra possibilità a quel caffè.
+
+«Madonna santissima della Misericordia di Fontanarosa!» sbottò. «Questa roba ti fa passare la voglia di vivere!»
+
+Dopo un istante, ripensando a quel che aveva appena detto, gli si affacciò sul viso una specie di risata sottile, nascosta per pudore nel palmo della mano.
+
+«Scusami cara», aggiunse con tono morbido, inclinandosi leggermente con il busto in direzione del corridoio che separava la cucina dalla camera da letto. «Non volevo essere fuori luogo».
+
+La signora Spiri non rispose neanche stavolta. Si ostinava a non batter ciglio. Letteralmente. Il fatto che fosse morta da ormai quasi un’ora non aiutava la comunicazione.
+
+“Purtroppo, nemmeno da viva le cose sarebbero andate meglio”, pensò con un velo di tristezza il professore, senza allontanarsi dalle finestre inondate e seguendo con occhio pietoso il dimenarsi di una signora che, zuppa di pioggia, inseguiva un ombrello rosso trascinato via dal vento.
+
+> You better come on in my kitchen.  
+> It’s goin’ to be rainin’ outdoors.

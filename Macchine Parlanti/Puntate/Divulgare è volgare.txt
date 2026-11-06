@@ -1,0 +1,87 @@
+DIVULGARE È VOLGARE
+Appunti per una puntata di podcast sul concetto di divulgazione
+30 settembre 2026
+
+
+1. IL QUADRO DI PARTENZA: I TRE MODELLI
+
+Il riferimento teorico è la sequenza proposta da Massimiano Bucchi e Brian Trench (Handbook of Public Communication of Science and Technology), che articola tre modelli di comunicazione della scienza.
+
+Modello del deficit. La comunicazione va in una direzione sola, dall'esperto al pubblico. Il presupposto è che la diffidenza verso il sapere dipenda dall'ignoranza: basta informare. Radice storica: il rapporto Bodmer della Royal Society (1985). Il difetto: tratta il pubblico come contenitore vuoto e l'esperto come unica fonte legittima.
+
+Modello del dialogo. Si riconosce che il pubblico possiede saperi contestuali, locali, esperienziali, e che la fiducia dipende dalla relazione più che dalla quantità di dati. Strumenti tipici: focus group, consensus conference, caffè scientifici. Limite: il dialogo resta spesso consultivo.
+
+Modello della partecipazione. I cittadini entrano nella definizione dell'agenda di ricerca e nella governance. L'asimmetria tra esperto e profano diventa questione politica, non solo comunicativa.
+
+Bucchi precisa che non si tratta di una progressione cronologica: i tre modelli coesistono e ciascuno è appropriato in contesti diversi.
+
+Riferimenti collaterali: la critica di Brian Wynne al deficit model a partire dallo studio sui pastori del Cumbria dopo Chernobyl; Alan Irwin e Brian Wynne, Misunderstanding Science? (1996); Alan Irwin, Citizen Science.
+
+
+2. LA CORREZIONE PROPOSTA
+
+I tre modelli non sono ben ordinati, perché mettono sulla stessa scala due cose di ordine diverso: una condizione epistemica permanente e una scelta politica situata.
+
+Primo livello — il sapere di chi ascolta. Chi ascolta non sa nulla di quella specifica disciplina, ma è comunque portatore di un suo sapere. Può essere un sapere che sta attorno a quell'argomento, oppure un sapere che riguarda tutt'altro. In ogni caso chi ascolta non è mai neutro. Questa non è una fase storica del rapporto comunicativo: è la sua condizione costante.
+
+Chiamiamola competenza obliqua: non sul tema, ma su un altro dominio da cui si traggono analogie, o su un mondo pratico che fa cogliere implicazioni che l'esperto non vede. A questa si aggiunge un sapere di ricezione: riconoscere quando una spiegazione convince e quando qualcosa viene taciuto.
+
+Secondo livello — la titolarità politica. Ci sono casi in cui chi ascolta viene tirato dentro non per ciò che sa, ma perché è soggetto portatore di diritti e la decisione lo riguarda. Qui la partecipazione nasce dalla titolarità, non dalla conoscenza.
+
+Conseguenza: la trasmissione resta sempre asimmetrica, ma non è mai unidirezionale. E la valenza politica è un'aggiunta di natura diversa, non un grado superiore della stessa scala.
+
+
+3. DUE CASI DI PROVA
+
+Alessandro Barbero. Deficit model allo stato puro: lezioni lunghe, nessuna semplificazione spettacolare, l'esperto parla e gli altri ascoltano. Funziona proprio perché quel modello, quando l'esperto è generoso e non paternalista, non ha nulla di umiliante.
+
+Wikipedia. Apparentemente partecipazione radicale: chiunque può scrivere, nessuna autorità istituita. Ma il divieto di ricerca originale impone che ogni affermazione rinvii a una fonte autorevole esterna. Wikipedia non produce sapere nuovo: ridistribuisce sapere già validato altrove. Resta dunque strutturalmente dentro il deficit model, solo che l'esperto non è più una persona ma una rete di citazioni. In più esiste una gerarchia interna forte (amministratori, regole procedurali, guerre di edit): la competenza non è sparita, si è spostata dal contenuto alla procedura.
+
+Formula: partecipazione nella forma, deficit nella sostanza epistemica.
+
+
+4. IL CASO DEL PROFESSORE SU TIKTOK
+
+Lo spunto: un docente di liceo osserva che in classe la curiosità non si trova già data, va prodotta, e che per produrla ricorre a strumenti come un video su TikTok.
+
+Lettura debole: TikTok è solo un involucro, contenuto identico e confezione accattivante. Qui il deficit model regge, si è solo fatto più astuto sulla soglia d'accesso.
+
+Lettura forte: la grammatica social è già una forma di precomprensione. Chi cresce lì ha aspettative su cosa valga la pena sapere, su quanto un argomento debba durare prima di dimostrare la propria rilevanza, su chi sia credibile e perché. Non è un deficit di curiosità: è una curiosità che ha imparato altri criteri di attivazione. Il professore non addolcisce la pillola, traduce dentro un altro regime di attenzione — e la traduzione modifica anche il contenuto.
+
+Se entra nell'ottica del deficit ("voi siete neutri, io vengo a portarvi le cose") fallisce. Se entra nell'ottica del dialogo ("vengo a portarvi le cose, ma devo chiedermi qual è il pregresso da cui partite") funziona.
+
+Rischio da nominare nella puntata: se il criterio d'ingresso lo detta sempre il regime social, l'insegnante rincorre e finisce per non insegnare più nulla che quel regime non possa ospitare. Parte del sapere umanistico esiste proprio come resistenza a quella grammatica: la lentezza, la noia produttiva, il testo che non si lascia riassumere. Il dialogo autentico parte dal pregresso ma non ci rimane: si entra con TikTok e poi si pretendono trenta pagine di Agostino.
+
+
+5. DIDATTICA E DIVULGAZIONE
+
+L'asimmetria è identica nei due casi: anche in didattica chi si ha di fronte spesso non sa nulla. La differenza non sta lì.
+
+Criteri scartati perché empirici e non strutturali:
+— il mandato istituzionale (un corso di cucina è didattica, eppure ci si iscrive liberamente e si può abbandonare);
+— la continuità seriale (un podcast settimanale sul Medioevo ha una sua continuità, con puntate più o meno strette).
+
+Il criterio vero è la finalità.
+
+Entrambe offrono comprensione: spiegare la Guerra dei Trent'anni o la Seconda guerra mondiale in classe significa offrire uno sguardo. Ma la didattica, mentre offre una comprensione puntuale di un avvenimento, offre anche gli strumenti per costruire il proprio punto di vista, la propria strategia di comprensione. La divulgazione non ha questo come finalità: può arrivarci, ma per effetto collaterale.
+
+Il rapporto è dunque ricorsivo: in didattica il contenuto è anche occasione. Mentre si spiega la Guerra dei Trent'anni si insegna come si costruisce un'interpretazione storica, come si pesa una fonte, come si tengono insieme causa politica e causa religiosa. In divulgazione il contenuto è il fine.
+
+Due corollari.
+— La serialità didattica non è organizzativa ma epistemica: se ciò che si trasmette è una strategia di comprensione, servono più contenuti diversi su cui esercitarla, altrimenti resta legata al caso singolo.
+— La verifica discende dal fine: dove c'è una competenza da formare c'è necessariamente un modo per accertare se si è formata, e si verifica se lo strumento è diventato dello studente, non se ricorda l'anno della pace di Vestfalia. La divulgazione non ha esami perché non ha nulla da certificare.
+
+
+6. LA DELEGA EPISTEMICA (chiave di volta)
+
+Nella divulgazione la delega epistemica è quasi totale. Ricevo la lettura di un avvenimento — perché c'è stata la guerra, cosa è successo — ma poiché non sono dentro un percorso di trasmissione di competenze, devo fidarmi della capacità dello storico di leggere le cose.
+
+Nella didattica l'obiettivo è abbassare il livello della delega: arrivare, dopo anni, a un punto in cui lo studente non sappia fare esattamente come il maestro, ma sia capace di capire come il maestro lo ha fatto.
+
+Formula sintetica: la didattica è una relazione che lavora alla propria estinzione; la divulgazione no.
+
+Precisazione. Anche a fine percorso la delega non scende a zero: si trasforma. Lo studente non diventa capace di verificare tutto in proprio, resta dipendente da fonti e competenze altrui, ma diventa capace di valutare la delega — di riconoscere quando uno storico argomenta bene e quando bara, di sapere dove andrebbe a controllare. Non autonomia dalla delega, ma competenza nel delegare.
+
+Contraccolpo sulla divulgazione. Lì la fiducia non è un difetto: è la condizione che la rende possibile. Barbero funziona perché ci si fida. Ma questo la rende strutturalmente vulnerabile: la stessa forma può reggere un ciarlatano, e chi ascolta non ha strumenti interni per distinguerli — gli restano solo indizi esterni (l'istituzione, la reputazione, i modi).
+
+Da qui una possibile chiusura della puntata: forse è per questo che il divulgatore onesto tende a esibire il proprio ragionamento più del necessario. Non trasmette il metodo, ma lo mostra. È l'unico modo che ha per rendere ispezionabile una fiducia che ha comunque chiesto in anticipo.

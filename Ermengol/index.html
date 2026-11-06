@@ -1,0 +1,901 @@
+<title>Ermengol</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Symbols+2&text=%E2%99%94%E2%99%95%E2%99%96%E2%99%97%E2%99%98%E2%99%99%E2%99%9A%E2%99%9B%E2%99%9C%E2%99%9D%E2%99%9E%E2%99%9F&display=block">
+<style>
+/* Layout: la scacchiera è il centro; accanto (o sotto, sul telefono) il "cartiglio" di Ermengol, come una glossa a margine. */
+:root{
+  --bg:#ECEEEA; --surface:#F8F9F6; --surface-2:#E2E5E0; --line:#CDD2CB;
+  --ink:#1B2027; --muted:#5A636C;
+  --lapis:#27408B; --lapis-soft:#DCE3F3; --on-lapis:#F5F1E4;
+  --gold:#A9822F;
+  --good:#2E7A4C; --warn:#A8701A; --bad:#AE372B;
+  --sq-l:#E7DDC5; --sq-d:#A27C58;
+  --hl-last:rgba(214,168,62,.48); --hl-sel:rgba(39,64,139,.42); --dot:rgba(24,30,48,.32);
+  --f-display:"Instrument Serif", "Iowan Old Style", Georgia, serif;
+  --f-body:"IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --f-mono:"IBM Plex Mono", ui-monospace, Menlo, monospace;
+  --f-chess:"Noto Sans Symbols 2", "Segoe UI Symbol", "DejaVu Sans", "Apple Symbols", sans-serif;
+  --r:10px;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#11151B; --surface:#192029; --surface-2:#222B36; --line:#2E3946;
+  --ink:#E5E8EC; --muted:#9AA4AF;
+  --lapis:#8FA7F0; --lapis-soft:#22305A; --on-lapis:#11151B;
+  --gold:#D3AE60;
+  --good:#5FBF86; --warn:#E0A84C; --bad:#EE7A6C;
+  --sq-l:#D9CDB2; --sq-d:#8E6A4A;
+  --hl-last:rgba(214,168,62,.5); --hl-sel:rgba(110,140,230,.5); --dot:rgba(20,24,36,.4);
+  color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#11151B; --surface:#192029; --surface-2:#222B36; --line:#2E3946;
+  --ink:#E5E8EC; --muted:#9AA4AF;
+  --lapis:#8FA7F0; --lapis-soft:#22305A; --on-lapis:#11151B;
+  --gold:#D3AE60;
+  --good:#5FBF86; --warn:#E0A84C; --bad:#EE7A6C;
+  --sq-l:#D9CDB2; --sq-d:#8E6A4A;
+  --hl-last:rgba(214,168,62,.5); --hl-sel:rgba(110,140,230,.5); --dot:rgba(20,24,36,.4);
+  color-scheme:dark}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:15px;line-height:1.5;-webkit-tap-highlight-color:transparent}
+button,input,select{font:inherit;color:inherit}
+button{cursor:pointer}
+:focus-visible{outline:2px solid var(--lapis);outline-offset:2px}
+h1,h2,h3{font-family:var(--f-display);font-weight:400;text-wrap:balance;margin:0;line-height:1.1}
+.app{min-height:100%;display:flex;flex-direction:column}
+.wrap{width:100%;max-width:1180px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+
+/* header */
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;gap:12px;padding-block:10px}
+.brand{display:flex;align-items:center;gap:10px;background:none;border:0;padding:0}
+.brand b{font-family:var(--f-display);font-weight:400;font-size:26px;letter-spacing:.01em}
+.initial{width:34px;height:34px;flex:none;display:grid;place-items:center;background:var(--lapis);color:var(--gold);font-family:var(--f-display);font-size:26px;line-height:1;border-radius:4px;box-shadow:inset 0 0 0 2px color-mix(in srgb,var(--gold) 55%,transparent)}
+:root[data-theme="dark"] .initial{color:#E9C979}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .initial{color:#E9C979;background:#2B4592}}
+:root[data-theme="dark"] .initial{background:#2B4592}
+.initial.speaking{animation:pulse 1.2s ease-in-out infinite}
+@keyframes pulse{50%{box-shadow:inset 0 0 0 2px var(--gold),0 0 0 6px color-mix(in srgb,var(--lapis) 25%,transparent)}}
+.tabs-top{display:flex;gap:4px;margin-left:16px}
+.spacer{flex:1}
+.chip{font-size:12px;color:var(--muted);display:inline-flex;align-items:center;gap:6px;white-space:nowrap}
+.chip i{width:7px;height:7px;border-radius:50%;background:var(--muted);display:inline-block}
+.chip.ok i{background:var(--good)} .chip.busy i{background:var(--warn)}
+.iconbtn{border:1px solid var(--line);background:var(--surface);border-radius:999px;height:36px;min-width:36px;padding:0 12px;display:inline-flex;align-items:center;gap:6px;font-size:13px}
+.iconbtn[aria-pressed="true"]{background:var(--lapis);color:var(--on-lapis);border-color:var(--lapis)}
+.iconbtn svg{width:16px;height:16px}
+
+/* tabs */
+.tab{border:0;background:none;padding:8px 12px;border-radius:999px;color:var(--muted);font-weight:500;font-size:14px}
+.tab[aria-current="page"]{background:var(--surface-2);color:var(--ink)}
+.tabs-bottom{display:none}
+@media (max-width:760px){
+  .tabs-top{display:none}
+  .chip span{display:none}
+  .tabs-bottom{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:30;background:var(--surface);border-top:1px solid var(--line);padding:6px max(8px,env(safe-area-inset-right,0px)) calc(6px + env(safe-area-inset-bottom,0px)) max(8px,env(safe-area-inset-left,0px))}
+  .tabs-bottom .tab{flex:1;display:flex;flex-direction:column;align-items:center;gap:2px;font-size:11px;padding:6px 4px;border-radius:8px}
+  .tabs-bottom .tab svg{width:20px;height:20px}
+  main{padding-bottom:78px}
+}
+main{flex:1}
+.screen{padding-block:24px 40px;display:flex;flex-direction:column;gap:24px}
+
+/* buttons */
+.btn{border:1px solid var(--line);background:var(--surface);border-radius:8px;padding:9px 14px;font-weight:500;font-size:14px;line-height:1.2;text-align:left}
+.btn:hover{border-color:var(--muted)}
+.btn.primary{background:var(--lapis);border-color:var(--lapis);color:var(--on-lapis)}
+.btn.ghost{background:transparent}
+.btn.small{padding:6px 10px;font-size:13px}
+.btn.danger{color:var(--bad);border-color:color-mix(in srgb,var(--bad) 50%,var(--line))}
+.btn:disabled{opacity:.45;cursor:default}
+.row{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.eyebrow{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.muted{color:var(--muted)}
+
+/* home */
+.hello{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:24px;align-items:stretch}
+@media (max-width:860px){.hello{grid-template-columns:1fr}}
+.greet{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:24px;display:flex;flex-direction:column;gap:14px}
+.greet h1{font-size:clamp(34px,6vw,52px)}
+.greet p{margin:0;max-width:60ch;font-size:16px}
+.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+@media (max-width:860px){.cards{grid-template-columns:1fr}}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:16px;display:flex;flex-direction:column;gap:8px;text-align:left}
+button.card:hover{border-color:var(--lapis)}
+.card h3{font-size:24px}
+.card .big{font-family:var(--f-mono);font-size:13px;color:var(--muted)}
+.bar{height:5px;border-radius:3px;background:var(--surface-2);overflow:hidden}
+.bar i{display:block;height:100%;background:var(--gold)}
+.side{display:flex;flex-direction:column;gap:12px}
+.list{display:flex;flex-direction:column;border:1px solid var(--line);border-radius:var(--r);background:var(--surface);overflow:hidden}
+.list>*{padding:12px 14px;border-bottom:1px solid var(--line)}
+.list>*:last-child{border-bottom:0}
+.li{display:flex;gap:12px;align-items:center;justify-content:space-between;background:none;border-left:0;border-right:0;border-top:0;text-align:left;width:100%}
+button.li:hover{background:var(--surface-2)}
+.li .t{min-width:0}
+.li .t b{display:block;font-weight:500}
+.li .t small{color:var(--muted)}
+.pill{font-family:var(--f-mono);font-size:11px;padding:2px 7px;border-radius:999px;border:1px solid var(--line);color:var(--muted);white-space:nowrap}
+.pill.good{color:var(--good);border-color:color-mix(in srgb,var(--good) 45%,transparent)}
+.pill.bad{color:var(--bad);border-color:color-mix(in srgb,var(--bad) 45%,transparent)}
+.pill.warn{color:var(--warn);border-color:color-mix(in srgb,var(--warn) 45%,transparent)}
+.pill.lapis{color:var(--lapis);border-color:color-mix(in srgb,var(--lapis) 45%,transparent)}
+.sectionhead{display:flex;align-items:baseline;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.sectionhead h2{font-size:30px}
+
+/* lessons */
+.lessons{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px}
+.lesson{position:relative}
+.lesson .num{font-family:var(--f-display);font-size:40px;line-height:1;color:var(--gold)}
+.lesson p{margin:0;color:var(--muted);font-size:14px}
+.custom{background:var(--lapis-soft);border:1px solid color-mix(in srgb,var(--lapis) 30%,transparent);border-radius:var(--r);padding:18px;display:flex;flex-direction:column;gap:10px}
+.custom h3{font-size:24px}
+.field{display:flex;gap:8px;flex-wrap:wrap}
+.field input[type=text]{flex:1;min-width:0;border:1px solid var(--line);background:var(--surface);border-radius:8px;padding:9px 12px;font-size:16px}
+
+/* tavola */
+.tavola{display:grid;grid-template-columns:minmax(0,1fr) 400px;gap:24px;align-items:start;padding-block:18px 32px}
+@media (max-width:900px){.tavola{grid-template-columns:1fr;gap:14px;padding-block:12px 24px}}
+.boardcol{display:flex;flex-direction:column;gap:8px;align-items:center;min-width:0}
+.boardbox{width:min(100%,calc(100dvh - 150px));min-width:240px;max-width:680px}
+@media (max-width:900px){.boardbox{width:min(100%,calc(100dvh - 260px));min-width:min(100%,300px)}}
+.board{position:relative;width:100%;aspect-ratio:1;max-width:100%;display:grid;grid-template-columns:repeat(8,1fr);grid-template-rows:repeat(8,1fr);border-radius:4px;overflow:hidden;box-shadow:0 0 0 1px color-mix(in srgb,var(--sq-d) 70%,#000),0 10px 30px -14px rgba(0,0,0,.45);touch-action:none;user-select:none;-webkit-user-select:none}
+.sq{position:relative;display:grid;place-items:center}
+.sq.l{background:var(--sq-l)} .sq.d{background:var(--sq-d)}
+.sq.last::before,.sq.sel::before,.sq.hint::before{content:"";position:absolute;inset:0}
+.sq.last::before{background:var(--hl-last)}
+.sq.sel::before{background:var(--hl-sel)}
+.sq.hint::before{box-shadow:inset 0 0 0 4px var(--lapis)}
+.sq.check{background-image:radial-gradient(circle,rgba(220,40,30,.85) 0%,rgba(220,40,30,.35) 45%,transparent 70%)}
+.sq .dot{position:absolute;width:30%;height:30%;border-radius:50%;background:var(--dot);z-index:2;pointer-events:none}
+.sq .ring{position:absolute;inset:4%;border-radius:50%;box-shadow:inset 0 0 0 calc(var(--sq,40px)*.08) var(--dot);z-index:2;pointer-events:none}
+.co{position:absolute;font-family:var(--f-mono);font-size:max(9px,calc(var(--sq,40px)*.18));font-weight:500;line-height:1;pointer-events:none;z-index:1}
+.co.f{right:4%;bottom:4%} .co.r{left:5%;top:5%}
+.sq.l .co{color:var(--sq-d)} .sq.d .co{color:var(--sq-l)}
+.pc{position:relative;z-index:3;width:100%;height:100%;display:grid;place-items:center;font-family:var(--f-chess);font-size:calc(var(--sq,40px)*.8);line-height:1;pointer-events:none;font-variant-emoji:text}
+.pc i,.pc b{grid-area:1/1;font-style:normal;font-weight:400}
+.pc.w i{color:#FBF8EF} .pc.w b{color:#1A1A1C}
+.pc.b i{color:#18191C;text-shadow:0 0 1px rgba(255,255,255,.55)}
+.pc.lift{opacity:.25}
+.dragghost{position:fixed;z-index:100;pointer-events:none;transform:translate(-50%,-58%) scale(1.1)}
+.arrows{position:absolute;inset:0;width:100%;height:100%;z-index:4;pointer-events:none}
+.promo{position:absolute;inset:0;z-index:6;background:rgba(10,12,16,.55);display:grid;place-items:center}
+.promo div{display:flex;gap:6px;background:var(--surface);padding:8px;border-radius:10px}
+.promo button{width:calc(var(--sq,40px)*1.1);height:calc(var(--sq,40px)*1.1);border:1px solid var(--line);border-radius:8px;background:var(--sq-l);padding:0}
+.under{width:100%;display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap}
+.who{font-size:13px;color:var(--muted);display:flex;align-items:center;gap:8px}
+.who .sw{width:12px;height:12px;border-radius:2px;border:1px solid var(--muted)}
+.sw.w{background:#FBF8EF} .sw.b{background:#18191C}
+
+.panel{display:flex;flex-direction:column;gap:12px;min-width:0}
+.panelhead{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.panelhead h2{font-size:28px}
+.status{font-size:12px;font-family:var(--f-mono);color:var(--muted);display:flex;align-items:center;gap:6px}
+.status.think::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--warn);animation:blink 1s infinite}
+@keyframes blink{50%{opacity:.25}}
+.scroll{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:16px;display:flex;flex-direction:column;gap:12px;position:relative}
+.scroll .head{display:flex;align-items:center;gap:10px}
+.scroll .head .name{font-family:var(--f-display);font-size:22px;line-height:1}
+.scroll .head .badge{margin-left:auto}
+.scroll .text{font-size:16px;line-height:1.55;white-space:pre-wrap;min-width:0;overflow-wrap:anywhere}
+.scroll .text.thinking{color:var(--muted);font-style:italic}
+.scroll .acts{display:flex;flex-wrap:wrap;gap:8px}
+.scroll .replay{position:absolute;top:12px;right:12px}
+.badge.grave{color:var(--bad)} .badge.errore{color:var(--warn)} .badge.inacc{color:var(--muted)}
+.steps{display:flex;gap:5px;flex-wrap:wrap}
+.steps i{width:22px;height:5px;border-radius:3px;background:var(--surface-2)}
+.steps i.on{background:var(--gold)} .steps i.cur{background:var(--lapis)}
+.moves{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:10px 12px;font-family:var(--f-mono);font-size:13.5px;max-height:220px;overflow:auto;display:grid;grid-template-columns:2.6em 1fr 1fr;gap:2px 6px;align-content:start}
+.moves .n{color:var(--muted);padding:3px 0}
+.moves button{border:0;background:none;text-align:left;padding:3px 6px;border-radius:5px;font-family:inherit;font-size:inherit}
+.moves button:hover{background:var(--surface-2)}
+.moves button.cur{background:var(--lapis-soft)}
+.moves .g{color:var(--bad);font-weight:600} .moves .e{color:var(--warn);font-weight:600} .moves .i{color:var(--muted)}
+.navbar{display:flex;gap:6px;flex-wrap:wrap;align-items:center}
+.ask{display:flex;gap:8px}
+.ask input{flex:1;min-width:0;border:1px solid var(--line);background:var(--surface);border-radius:8px;padding:9px 12px;font-size:16px}
+.setup{display:flex;flex-direction:column;gap:14px}
+.seg{display:flex;border:1px solid var(--line);border-radius:8px;overflow:hidden;background:var(--surface)}
+.seg button{flex:1;border:0;background:none;padding:9px 6px;font-size:14px;border-right:1px solid var(--line)}
+.seg button:last-child{border-right:0}
+.seg button[aria-pressed="true"]{background:var(--lapis);color:var(--on-lapis)}
+.levelname{font-family:var(--f-display);font-size:22px}
+input[type=range]{width:100%;accent-color:var(--lapis)}
+label.lbl{display:flex;flex-direction:column;gap:6px;font-size:13px;color:var(--muted)}
+
+/* sheet */
+.sheetbg{position:fixed;inset:0;z-index:50;background:rgba(8,10,14,.45);display:flex;justify-content:flex-end}
+.sheet{width:min(420px,100%);height:100%;background:var(--bg);border-left:1px solid var(--line);padding:calc(20px + env(safe-area-inset-top,0px)) max(20px,env(safe-area-inset-right,0px)) calc(20px + env(safe-area-inset-bottom,0px)) 20px;overflow:auto;display:flex;flex-direction:column;gap:18px}
+.sheet h2{font-size:30px}
+.sheet select,.sheet input[type=text]{border:1px solid var(--line);background:var(--surface);border-radius:8px;padding:9px 10px;font-size:16px;width:100%}
+.toggle{display:flex;align-items:center;justify-content:space-between;gap:12px;font-size:14px}
+.toast{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(92px + env(safe-area-inset-bottom,0px));z-index:60;background:var(--ink);color:var(--bg);padding:9px 14px;border-radius:8px;font-size:14px;max-width:calc(100% - 32px)}
+@media (min-width:761px){.toast{bottom:24px}}
+.empty{border:1px dashed var(--line);border-radius:var(--r);padding:20px;color:var(--muted)}
+@media (prefers-reduced-motion: reduce){*{animation:none!important;transition:none!important}}
+</style>
+
+<div class="app">
+  <header class="top"><div class="wrap">
+    <button class="brand" data-go="home" aria-label="Ermengol, inizio"><span class="initial" id="avatarTop">E</span><b>Ermengol</b></button>
+    <nav class="tabs-top" id="tabsTop"></nav>
+    <span class="spacer"></span>
+    <span class="chip" id="sync"><i></i><span>Avvio…</span></span>
+    <button class="iconbtn" id="voiceBtn" aria-pressed="true" title="Voce di Ermengol"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5 6 9H2v6h4l5 4V5z"/><path d="M15.5 8.5a5 5 0 0 1 0 7"/><path d="M19 5a10 10 0 0 1 0 14"/></svg><span id="voiceLbl">Voce</span></button>
+    <button class="iconbtn" id="setBtn" title="Impostazioni" aria-label="Impostazioni"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"/></svg></button>
+  </div></header>
+  <main id="main"></main>
+  <nav class="tabs-bottom" id="tabsBottom"></nav>
+</div>
+<div id="sheetRoot"></div>
+<div class="toast" id="toast" hidden></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/chess.js/0.10.3/chess.min.js"></script>
+<script>
+(function(){
+"use strict";
+/* ---------- utilità ---------- */
+const $=(s,r=document)=>r.querySelector(s);
+const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const sleep=ms=>new Promise(r=>setTimeout(r,ms));
+const START="rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1";
+const pick=a=>a[Math.floor(Math.random()*a.length)];
+const lsGet=k=>{try{return localStorage.getItem(k)}catch(e){return null}};
+const lsSet=(k,v)=>{try{localStorage.setItem(k,v)}catch(e){}};
+const DEVICE=(()=>{let d=lsGet("erm.dev");if(!d){d=Math.random().toString(36).slice(2,10);lsSet("erm.dev",d)}return d})();
+const fmtDate=t=>new Date(t).toLocaleDateString("it-IT",{day:"numeric",month:"short"});
+
+/* ---------- notazione ---------- */
+const PIECE_IT={K:"R",Q:"D",R:"T",B:"A",N:"C"};
+const NAME_EN={k:"Re",q:"Donna",r:"Torre",b:"Alfiere",n:"Cavallo",p:"pedone"};
+const NAME_IT={R:"Re",D:"Donna",T:"Torre",A:"Alfiere",C:"Cavallo"};
+const itSan=san=>!san?"":san.replace(/^[KQRBN]/,c=>PIECE_IT[c]).replace(/=([QRBN])/,(m,c)=>"="+PIECE_IT[c]);
+const bare=s=>String(s||"").replace(/[+#?!]/g,"");
+const uciObj=u=>({from:u.slice(0,2),to:u.slice(2,4),promotion:u[4]||undefined});
+const toUci=m=>m.from+m.to+(m.promotion||"");
+const colName=c=>c==="w"?"Bianco":"Nero";
+const other=c=>c==="w"?"b":"w";
+function sanLine(fen,ucis,max=6){const c=new Chess(fen);const out=[];for(const u of (ucis||[]).slice(0,max)){const m=c.move(uciObj(u));if(!m)break;out.push(m.san)}return out}
+function numbered(fen,sans){const parts=fen.split(" ");let n=+parts[5]||1;let side=parts[1];const out=[];sans.forEach((s,i)=>{if(side==="w")out.push(n+". "+itSan(s));else out.push((i===0?n+"... ":"")+itSan(s));if(side==="b")n++;side=other(side)});return out.join(" ")}
+function describe(fen){const c=new Chess(fen);const g={w:{},b:{}};const order=["k","q","r","b","n","p"];
+  for(const f of "abcdefgh")for(let r=1;r<=8;r++){const p=c.get(f+r);if(p)(g[p.color][p.type]=g[p.color][p.type]||[]).push(f+r)}
+  const pl={k:"Re",q:"Donna",r:"Torri",b:"Alfieri",n:"Cavalli",p:"pedoni"};
+  const side=col=>order.filter(t=>g[col][t]).map(t=>{const a=g[col][t];return (a.length>1?pl[t]:NAME_EN[t])+" "+a.join(" ")}).join(", ");
+  return "Pezzi del Bianco: "+side("w")+". Pezzi del Nero: "+side("b")+"."}
+function speakable(t){
+  t=String(t||"").replace(/[*_`>]+/g,"").replace(/\(([^)]*)\)/g,", $1,");
+  t=t.replace(/\b\d+\.(\.\.)?\s?(?=[RDTACa-hO0])/g,"");
+  t=t.replace(/\bO-O-O\b|\b0-0-0\b/g,"arrocco lungo").replace(/\bO-O\b|\b0-0\b/g,"arrocco corto");
+  t=t.replace(/\b([RDTAC])([a-h]?[1-8]?)(x?)([a-h][1-8])(=[DTAC])?([+#])?/g,(m,p,d,x,sq,pr,ch)=>NAME_IT[p]+" "+(x?"prende in ":"")+sq+(pr?" e promuove a "+NAME_IT[pr[1]]:"")+(ch==="+"?", scacco":ch==="#"?", scacco matto":""));
+  t=t.replace(/\b([a-h])x([a-h][1-8])(=[DTAC])?([+#])?/g,(m,f,sq,pr,ch)=>"il pedone prende in "+sq+(pr?" e promuove a "+NAME_IT[pr[1]]:"")+(ch==="+"?", scacco":ch==="#"?", scacco matto":""));
+  t=t.replace(/\b([a-h][1-8])=([DTAC])/g,(m,sq,p)=>sq+" e promuove a "+NAME_IT[p]);
+  t=t.replace(/\b([a-h][1-8])\+/g,"$1, scacco").replace(/\b([a-h][1-8])#/g,"$1, scacco matto");
+  t=t.replace(/[?!]{2}/g,"").replace(/\s+/g," ");
+  return t.trim()}
+
+/* ---------- lezioni (posizioni verificate con Stockfish) ---------- */
+const LESSONS=[
+ {id:"minacce",title:"Le minacce dell'avversario",theme:"Prima di muovere: che cosa vuole lui?",steps:[
+  {say:"Cominciamo dalla domanda più importante degli scacchi. Non è «che cosa voglio fare io?», ma «che cosa vuole fare lui?». Prima di ogni tua mossa guarda l'ultima mossa dell'avversario e chiediti: che cosa minaccia?",moves:"e4 e5 Qh5"},
+  {say:"Qui il Bianco ha portato fuori la Donna molto presto. Da sola non fa paura, ma guarda la casa f7: è difesa soltanto dal Re. È il punto debole del Nero in apertura.",moves:"e4 e5 Qh5 Nc6",arrows:[["h5f7","bad"]]},
+  {ex:{moves:"e4 e5 Qh5 Nc6 Bc4",prompt:"Il Bianco ha appena giocato Ac4. Ora due pezzi guardano f7, e Dxf7 sarebbe matto. Difenditi.",accept:["Qe7","g6"],alts:[{san:"Qf6",note:"Df6 difende f7, ma toglie la casa migliore al Cavallo g8. De7 o g6 sono più precise."}],sol:["Qe7"],hint:"Ti basta un pezzo che difenda f7, oppure una mossa che scacci la Donna.",ok:"Giusto. De7 difende f7; g6 invece caccia la Donna. Dopo g6 resta attento: la Donna può tornare in f3 e minacciare di nuovo f7. Allora si risponde Cf6."}},
+  {say:"Ora una minaccia più sottile, da un'apertura vera: la Difesa dei due cavalli."},
+  {ex:{moves:"e4 e5 Nf3 Nc6 Bc4 Nf6 Ng5",prompt:"Il Cavallo in g5 e l'Alfiere in c4 attaccano f7 insieme. Che cosa fai?",accept:["d5"],sol:["d5"],hint:"Prova a chiudere la diagonale dell'Alfiere bianco con un pedone.",ok:"d5! Interrompe la linea dell'Alfiere verso f7 e apre le tue linee. Se avessi preso in e4 col Cavallo, Axf7 scacco sarebbe stato molto fastidioso."}},
+  {say:"La routine da portarti a casa è questa: prima di muovere controlla scacchi, catture e minacce. Prima le sue, poi le tue."}]},
+ {id:"forchetta",title:"La forchetta",theme:"Un pezzo, due bersagli",steps:[
+  {say:"Una forchetta è un pezzo che attacca due bersagli insieme. L'avversario può salvarne uno solo. Il Cavallo è il re delle forchette, perché salta e colpisce di sbieco, dove nessuno se lo aspetta.",fen:"r3k2r/pp3ppp/8/3N4/8/8/PPP2PPP/R3K2R w KQkq - 0 1"},
+  {ex:{fen:"r3k2r/pp3ppp/8/3N4/8/8/PPP2PPP/R3K2R w KQkq - 0 1",prompt:"Il tuo Cavallo in d5 può fare un danno doppio. Trova la mossa.",accept:["Nc7+"],sol:["Nc7+","Kd7","Nxa8"],hint:"Cerca una casa da cui il Cavallo dà scacco e attacca anche una Torre.",ok:"Scacco e attacco alla Torre. Il Re si sposta, e la Torre cade."}},
+  {say:"Anche un pedone può fare una forchetta, e spesso è la più dolorosa: costa poco e attacca due pezzi."},
+  {ex:{moves:"e4 e5 Nf3 Nc6 Bc4 Nf6 Nc3 Nxe4 Nxe4",prompt:"Il Bianco ha appena ripreso in e4 col Cavallo. Sembra che tu abbia perso un pezzo. Recuperalo.",accept:["d5"],sol:["d5"],hint:"Un tuo pedone può attaccare due pezzi bianchi nello stesso momento.",ok:"d5 attacca Alfiere e Cavallo. Uno dei due cade, e il materiale torna pari. È un trucco classico, da ricordare."}},
+  {say:"Quando due pezzi avversari stanno a distanza di salto di Cavallo da una stessa casa, o su due case vicine davanti a un tuo pedone, accendi la luce: forchetta."}]},
+ {id:"inchiodatura",title:"L'inchiodatura",theme:"Il pezzo che non può muoversi",steps:[
+  {say:"Un pezzo è inchiodato quando non può muoversi perché dietro di lui c'è qualcosa di più prezioso. Se dietro c'è il Re, l'inchiodatura è assoluta: muoverlo è proprio vietato.",fen:"4k3/pp4pp/5p2/4n3/8/8/PPPP1PPP/4R1K1 w - - 0 1",arrows:[["e1e8","lapis"]]},
+  {ex:{fen:"4k3/pp4pp/5p2/4n3/8/8/PPPP1PPP/4R1K1 w - - 0 1",prompt:"Il Cavallo nero in e5 è inchiodato al Re dalla tua Torre. Un pezzo inchiodato è un bersaglio. Attaccalo.",accept:["f4","d4"],sol:["f4"],hint:"Attacca il Cavallo con il più piccolo dei tuoi pezzi.",ok:"Il Cavallo non può scappare, e il pedone f6 da solo non basta a salvarlo. Lo vinci."}},
+  {say:"Se dietro il pezzo inchiodato c'è la Donna, l'inchiodatura è relativa: muoversi si può, se c'è un buon motivo. A volte il motivo è magnifico."},
+  {ex:{moves:"e4 e5 Nf3 d6 Bc4 Bg4 Nc3 g6",prompt:"Il Nero ha inchiodato il tuo Cavallo f3 contro la Donna. Ma l'inchiodatura è soltanto relativa. Puoi permetterti di ignorarla?",accept:["Nxe5"],sol:["Nxe5"],hint:"Il Cavallo f3 può prendere un pedone. Chiediti che cosa succede se il Nero ti prende la Donna.",ok:"Cxe5! Se ora il Nero prende la Donna con Axd1, segue Axf7 scacco, Re7 e Cd5 matto: è il matto di Légal. Se non la prende, hai vinto un pedone."}},
+  {say:"Davanti a un'inchiodatura fatti due domande. Posso attaccare il pezzo inchiodato? E l'inchiodatura è vera, o soltanto apparente?"}]},
+ {id:"infilata",title:"L'infilata",theme:"L'inchiodatura rovesciata",steps:[
+  {say:"L'infilata è un'inchiodatura rovesciata. Attacchi un pezzo di valore, che deve spostarsi, e così scopri il pezzo che gli stava dietro. Funziona con Alfieri, Torri e Donna, contro pezzi allineati.",fen:"8/pp3q1p/4k1p1/8/8/8/PP4PP/3R1BK1 w - - 0 1"},
+  {ex:{fen:"8/pp3q1p/4k1p1/8/8/8/PP4PP/3R1BK1 w - - 0 1",prompt:"Il Re nero e la Donna nera stanno sulla stessa diagonale. Approfittane.",accept:["Bc4+"],sol:["Bc4+","Ke7","Bxf7"],hint:"Un Alfiere che dà scacco lungo la diagonale che arriva fino a f7.",ok:"Scacco al Re: lui deve spostarsi, e la Donna in f7 è perduta. La Torre in d1, intanto, gli toglie le case sulla colonna d."}},
+  {say:"Ogni volta che due pezzi avversari stanno sulla stessa linea, con il più prezioso davanti, cerca l'infilata."}]},
+ {id:"scoperta",title:"L'attacco di scoperta",theme:"Due minacce in una mossa",steps:[
+  {say:"Quando un pezzo si sposta, apre una linea al pezzo che gli sta dietro. Se il pezzo che si muove attacca qualcosa e quello dietro attacca altro, l'avversario ha due problemi in una mossa sola. Se quello dietro dà scacco, si chiama scacco di scoperta: una delle armi più forti che esistano."},
+  {ex:{moves:"e4 e5 Nf3 Nf6 Nxe5 Nxe4 Qe2 Nf6",prompt:"Il Nero ha appena riportato il Cavallo in f6. La tua Donna in e2 guarda il Re nero sulla colonna e, ma il tuo Cavallo e5 le sta davanti. Spostalo nel modo giusto.",accept:["Nc6+"],sol:["Nc6+","Be7","Nxd8"],hint:"Il Cavallo si sposta scoprendo lo scacco della Donna. Da quale casa attacca anche la Donna nera?",ok:"Cc6! Scacco di scoperta della Donna, e il Cavallo attacca la Donna in d8. Il Nero deve parare lo scacco e perde la Donna. È una trappola vera della Difesa Russa."}},
+  {say:"Quando un tuo pezzo sta in mezzo tra un tuo pezzo a lungo raggio e un bersaglio, chiediti dove spostarlo per fare il massimo danno."}]},
+ {id:"traversa",title:"Il matto alla prima traversa",theme:"Il Re prigioniero dei suoi pedoni",steps:[
+  {say:"Il Re arroccato dietro tre pedoni è al sicuro dai pezzi, ma è anche prigioniero dei suoi pedoni. Se una Torre o una Donna avversaria arriva sull'ultima traversa, può essere matto.",fen:"6k1/5ppp/8/r7/8/8/5PPP/4R1K1 w - - 0 1"},
+  {ex:{fen:"6k1/5ppp/8/r7/8/8/5PPP/4R1K1 w - - 0 1",prompt:"Il Nero si è dimenticato della sua ultima traversa. Puniscilo.",accept:["Re8#"],sol:["Re8#"],hint:"La Torre e1 può arrivare dove il Re non ha difese.",ok:"Te8 matto. Il Re non ha case di fuga: gliele tolgono i suoi stessi pedoni."}},
+  {say:"Spesso però la traversa è difesa. Allora la tecnica è eliminare il difensore, o distrarlo."},
+  {ex:{fen:"4r1k1/pp1q1ppp/8/8/8/8/PP2QPPP/4R1K1 w - - 0 1",prompt:"Qui la casa e8 è difesa dalla Torre e dalla Donna nera. Ma anche tu hai due pezzi sulla colonna e.",accept:["Qxe8+"],sol:["Qxe8+","Qxe8","Rxe8#"],hint:"Conta attaccanti e difensori in e8. Saresti disposto a dare la Donna?",ok:"Dxe8 scacco! Dxe8, e Txe8 matto. Hai dato la Donna per dare matto: il materiale non conta, conta il Re."}},
+  {say:"Quando il gioco si calma, regala al tuo Re una finestra con h3 o g3. I maestri la chiamano luft, cioè aria."}]},
+ {id:"trappola",title:"Il pezzo intrappolato",theme:"Contare le vie di ritorno",steps:[
+  {say:"Un pezzo si può perdere anche senza tattiche brillanti: basta che resti senza case. Gli Alfieri, che vanno a caccia lontano, rischiano più di tutti di finire in gabbia."},
+  {ex:{moves:"e4 e5 Nf3 Nc6 Bb5 a6 Ba4 d6 d4 b5 Bb3 Nxd4 Nxd4 exd4 Qxd4",prompt:"Il Bianco ha appena ripreso in d4 con la Donna. Il suo Alfiere in b3 ha poche case. Chiudilo in gabbia.",accept:["c5"],sol:["c5"],hint:"Una spinta di pedone che attacca la Donna e prepara un'altra spinta.",ok:"c5! La Donna deve spostarsi, poi c4 chiude l'Alfiere in b3. È la trappola dell'Arca di Noè: l'Alfiere entra e non esce più."}},
+  {say:"Prima di mandare un pezzo in avanscoperta, conta le sue vie di ritorno."}]},
+ {id:"opposizione",title:"Re e pedone: l'opposizione",theme:"Il Re diventa un pezzo d'attacco",steps:[
+  {say:"Nei finali di Re e pedone il Re diventa un pezzo d'attacco. La regola d'oro: il Re va davanti al suo pedone, non dietro.",fen:"8/8/4k3/8/8/4K3/4P3/8 w - - 0 1"},
+  {ex:{fen:"8/8/4k3/8/8/4K3/4P3/8 w - - 0 1",prompt:"Re e pedone contro Re. Il tuo Re per ora sta dietro al pedone. Trova una mossa che vince.",accept:["Ke4","Kd4","Kf4"],sol:["Ke4"],hint:"Prima il Re, poi il pedone. Porta il Re avanti, davanti al pedone.",ok:"Il Re conquista la quarta traversa davanti al pedone, e il Nero non riesce più a fermarlo. Attento: Rd3 o Rf3 avrebbero solo pattato."}},
+  {say:"Si parla di opposizione quando i due Re stanno uno di fronte all'altro con una casa in mezzo. Chi deve muovere, in quella situazione, cede terreno. Per questo in difesa vuoi essere tu a prendere l'opposizione."},
+  {ex:{fen:"8/4k3/8/4PK2/8/8/8/8 b - - 0 1",prompt:"Ora difendi tu, con il Nero. Il Bianco vuole far avanzare il pedone. Una sola mossa pareggia.",accept:["Kf7"],sol:["Kf7"],hint:"Metti il tuo Re di fronte al Re bianco, con una casa in mezzo.",ok:"Rf7! Prendi l'opposizione: il Re bianco non può avanzare, e dopo e6 scacco torni in e8. Patta."}},
+  {say:"Opposizione: Re di fronte al Re, una casa in mezzo, e tocca all'altro muovere."}]}
+];
+const TEMI=["pezzo indifeso","forchetta","inchiodatura","infilata","scoperta","prima traversa","pezzo intrappolato","minaccia ignorata","apertura","struttura pedonale","finale","calcolo"];
+const TEMA_LEZ={"forchetta":"forchetta","inchiodatura":"inchiodatura","infilata":"infilata","scoperta":"scoperta","prima traversa":"traversa","pezzo intrappolato":"trappola","minaccia ignorata":"minacce","pezzo indifeso":"minacce","finale":"opposizione"};
+const LEVELS=[
+ {name:"Apprendista",skill:0,depth:1,mt:300},{name:"Novizio",skill:3,depth:2,mt:400},
+ {name:"Dilettante",skill:6,depth:3,mt:500},{name:"Giocatore di circolo",skill:9,depth:5,mt:600},
+ {name:"Circolo forte",skill:12,depth:7,mt:700},{name:"Candidato maestro",skill:15,depth:9,mt:800},
+ {name:"Maestro",skill:18,depth:11,mt:1000},{name:"Ermengol al completo",skill:20,depth:14,mt:1500}];
+const ANALYSIS={skill:20,depth:14,movetime:900};
+const CLS={grave:{lbl:"Errore grave",sym:"??",pill:"bad",c:"g"},errore:{lbl:"Errore",sym:"?",pill:"warn",c:"e"},inacc:{lbl:"Imprecisione",sym:"?!",pill:"",c:"i"}};
+
+/* ---------- stato ---------- */
+function freshState(){return{v:1,updatedAt:0,device:DEVICE,profile:{name:"Armando"},
+  settings:{voice:true,voiceURI:"",rate:1,announce:true,level:4,guided:true,color:"w"},
+  game:null,lessons:{},deck:[],history:[],custom:null,view:{screen:"home"}}}
+function migrate(s){const f=freshState();if(!s||typeof s!=="object")return f;
+  const o=Object.assign(f,s);o.settings=Object.assign(freshState().settings,s.settings||{});o.profile=Object.assign(freshState().profile,s.profile||{});
+  o.lessons=o.lessons||{};o.deck=Array.isArray(o.deck)?o.deck:[];o.history=Array.isArray(o.history)?o.history:[];o.view=o.view||{screen:"home"};return o}
+let S=freshState();
+try{const raw=lsGet("erm.state");if(raw)S=migrate(JSON.parse(raw))}catch(e){}
+
+/* ---------- salvataggio e sincronizzazione ---------- */
+const Store={ref:null,timer:null,writing:false,dirty:false,mode:"local",
+  async init(){
+    const cl=window.claude;if(!cl||!cl.use){this.setChip();return}
+    try{
+      const [db,user]=await Promise.all([cl.use("db"),cl.use("user")]);
+      const uid=user?await user.id():null;
+      if(!db||!uid){this.setChip();return}
+      this.ref=db.doc("data/users/"+uid+"/state");
+      const snap=await this.ref.get();
+      if(snap.exists){const r=snap.data();if((r.updatedAt||0)>(S.updatedAt||0))applyRemote(r,false);else if((S.updatedAt||0)>(r.updatedAt||0))this.flush()}
+      else if(S.updatedAt)this.flush();
+      this.mode="cloud";this.setChip();
+      this.ref.onSnapshot(s=>{if(!s.exists||s.metadata.hasPendingWrites)return;const r=s.data();
+        if(r.device!==DEVICE&&(r.updatedAt||0)>(S.updatedAt||0))applyRemote(r,true)},()=>{this.mode="local";this.setChip()});
+    }catch(e){this.mode="local";this.setChip()}
+  },
+  touch(){S.updatedAt=Date.now();S.device=DEVICE;lsSet("erm.state",JSON.stringify(S));
+    if(!this.ref)return;clearTimeout(this.timer);this.setChip("busy");this.timer=setTimeout(()=>this.flush(),1200)},
+  async flush(){if(!this.ref)return;clearTimeout(this.timer);if(this.writing){this.dirty=true;return}
+    this.writing=true;try{await this.ref.set(JSON.parse(JSON.stringify(S)));this.mode="cloud"}catch(e){this.mode="error"}
+    this.writing=false;this.setChip();if(this.dirty){this.dirty=false;this.flush()}},
+  setChip(st){const el=$("#sync");const span=el.querySelector("span");el.className="chip";
+    if(st==="busy"){el.classList.add("busy");span.textContent="Salvataggio…";el.title="Salvataggio in corso"}
+    else if(this.mode==="cloud"){el.classList.add("ok");span.textContent="Sincronizzato";el.title="Salvato nel tuo account: riprendi da qualsiasi dispositivo"}
+    else if(this.mode==="error"){span.textContent="Non salvato";el.title="Il salvataggio online non è riuscito; riprovo alla prossima mossa"}
+    else{span.textContent="Solo qui";el.title="Salvato solo su questo dispositivo: apri Ermengol da claude.ai, con il tuo account, per sincronizzare"}}
+};
+const touch=()=>Store.touch();
+document.addEventListener("visibilitychange",()=>{if(document.visibilityState==="hidden")Store.flush()});
+function applyRemote(r,live){S=migrate(JSON.parse(JSON.stringify(r)));lsSet("erm.state",JSON.stringify(S));Voice.pick();
+  if(live)toast("Aggiornato da un altro dispositivo");T.gen++;render()}
+
+/* ---------- voce ---------- */
+let speakingFlag=false;
+function setSpeaking(on){speakingFlag=on;document.querySelectorAll(".initial").forEach(e=>e.classList.toggle("speaking",on))}
+const Voice={list:[],cur:null,ok:"speechSynthesis" in window,
+  load(){if(!this.ok)return;this.list=speechSynthesis.getVoices().filter(v=>/^it/i.test(v.lang));this.pick()},
+  pick(){const p=S.settings.voiceURI;this.cur=this.list.find(v=>v.voiceURI===p)||this.list.find(v=>/luca|diego|cosimo|giorgio|paolo|andrea|male|maschile/i.test(v.name))||this.list.find(v=>/google|premium|enhanced/i.test(v.name))||this.list[0]||null},
+  speak(text,force){if(!this.ok||(!S.settings.voice&&!force))return;try{speechSynthesis.cancel()}catch(e){}
+    const s=speakable(text);if(!s)return;const raw=s.match(/[^.!?;:]+[.!?;:]*/g)||[s];const parts=[];
+    for(const r of raw){const t=r.trim();if(!t)continue;if(parts.length&&(parts[parts.length-1].length+t.length)<160)parts[parts.length-1]+=" "+t;else parts.push(t)}
+    parts.forEach((p,i)=>{const u=new SpeechSynthesisUtterance(p);u.lang="it-IT";if(this.cur)u.voice=this.cur;u.rate=S.settings.rate||1;u.pitch=.92;
+      if(i===0)u.onstart=()=>setSpeaking(true);if(i===parts.length-1){u.onend=()=>setSpeaking(false);u.onerror=()=>setSpeaking(false)}speechSynthesis.speak(u)})},
+  stop(){if(this.ok)try{speechSynthesis.cancel()}catch(e){}setSpeaking(false)}};
+if(Voice.ok){Voice.load();speechSynthesis.onvoiceschanged=()=>Voice.load()}
+let unlocked=false;
+document.addEventListener("pointerdown",()=>{if(unlocked||!Voice.ok)return;unlocked=true;try{const u=new SpeechSynthesisUtterance(" ");u.volume=0;speechSynthesis.speak(u)}catch(e){}},{capture:true});
+
+/* ---------- motore (Stockfish) ---------- */
+const CDN_SF="https://cdnjs.cloudflare.com/ajax/libs/stockfish.js/10.0.2/stockfish.js";
+const Engine={w:null,ready:null,ok:false,handler:null,queue:Promise.resolve(),
+  tryWorker(make,ms){return new Promise(res=>{let w;try{w=make()}catch(e){return res(null)}
+    const fail=()=>{clearTimeout(t);try{w.terminate()}catch(e){}res(null)};
+    const t=setTimeout(fail,ms);
+    w.onmessage=e=>{const s=String(e.data);if(s.startsWith("uciok")){clearTimeout(t);res(w)}else if(/abort|failed|CompileError|LinkError/i.test(s))fail()};
+    w.onerror=()=>{clearTimeout(t);try{w.terminate()}catch(e){}res(null)};w.postMessage("uci")})},
+  init(){if(this.ready)return this.ready;this.ready=(async()=>{
+    const c=[];if(typeof WebAssembly==="object")c.push([()=>new Worker("engine/stockfish.wasm.js"),12000]);
+    c.push([()=>new Worker("engine/stockfish.js"),30000]);
+    c.push([()=>new Worker(URL.createObjectURL(new Blob(['importScripts("'+CDN_SF+'")'],{type:"application/javascript"}))),30000]);
+    for(const [make,ms] of c){const w=await this.tryWorker(make,ms);if(w){this.w=w;this.ok=true;w.onmessage=e=>this.handler&&this.handler(String(e.data));w.postMessage("setoption name Hash value 16");return true}}
+    return false})();return this.ready},
+  analyse(fen,o){const job=this.queue.then(()=>this.run(fen,o||ANALYSIS));this.queue=job.catch(()=>{});return job},
+  async run(fen,o){await this.init();if(!this.ok)return null;
+    return new Promise(res=>{let last={};const side=fen.split(" ")[1];const sign=side==="w"?1:-1;let done=false;
+      const finish=best=>{if(done)return;done=true;clearTimeout(guard);this.handler=null;
+        const ev=last.type==="mate"?{mate:sign*last.v}:last.type==="cp"?{cp:sign*last.v}:null;res({best,eval:ev,pv:last.pv||[]})};
+      const guard=setTimeout(()=>{this.w.postMessage("stop")},(o.movetime||900)+6000);
+      this.handler=s=>{if(s.startsWith("info")&&s.includes(" pv ")&&!/bound/.test(s)){const mp=s.match(/ multipv (\d+)/);if(mp&&mp[1]!=="1")return;
+          const sc=s.match(/score (cp|mate) (-?\d+)/);if(sc)last={type:sc[1],v:+sc[2],pv:s.split(" pv ")[1].trim().split(/\s+/)}}
+        else if(s.startsWith("bestmove")){const b=s.split(/\s+/)[1];finish(b&&b!=="(none)"?b:null)}};
+      this.w.postMessage("setoption name Skill Level value "+(o.skill??20));this.w.postMessage("position fen "+fen);
+      this.w.postMessage("go depth "+(o.depth||12)+" movetime "+(o.movetime||900))})}};
+const winW=e=>!e?.5:e.mate!=null?(e.mate>0?1:0):1/(1+Math.exp(-.00368*e.cp));
+const winFor=(c,e)=>c==="w"?winW(e):1-winW(e);
+const fmtEval=e=>!e?"?":e.mate!=null?(e.mate>0?"matto per il Bianco in "+e.mate:"matto per il Nero in "+(-e.mate)):(e.cp>=0?"+":"")+(e.cp/100).toFixed(1);
+
+/* ---------- Claude (spiegazioni) ---------- */
+let sampleOff=false;
+async function askClaude(input,{json=false,onText,tier="default"}={}){
+  if(sampleOff)throw{code:"off"};const cl=window.claude;const sample=cl&&cl.use?await cl.use("sample"):null;
+  if(!sample){sampleOff=true;throw{code:"unavailable"}}
+  try{return json?await sample.json(input,{modelTier:tier}):await sample(input,{modelTier:tier,onText})}
+  catch(e){if(e&&e.code==="not_granted")sampleOff=true;throw e}}
+const persona=()=>`Sei Ermengol, un vecchio maestro di scacchi: paziente, caldo, con un filo di ironia, mai pedante. Insegni a ${S.profile.name||"il tuo allievo"}, un adulto che conosce bene le regole, gioca discretamente (livello da circolo) e vuole migliorare. Il tuo testo verrà letto ad alta voce: frasi brevi e naturali, niente elenchi puntati, niente markdown, niente emoji, niente simboli di valutazione come +- o ±. Scrivi le mosse in notazione algebrica italiana (R re, D donna, T torre, A alfiere, C cavallo; per i pedoni solo la casa, per esempio e4 o exd5). Dai del tu.`;
+
+/* ---------- runtime della tavola ---------- */
+const T={gen:0,chess:null,orient:"w",interactive:false,sel:null,arrows:[],hl:{},msg:null,status:"",thinking:false,viewPly:null,pendingA:null,hintLvl:0,ex:null,lesson:null,chat:[],confirm:null,drillId:null};
+
+/* ---------- navigazione ---------- */
+const TABS=[["home","Inizio",'<path d="M3 11 12 4l9 7"/><path d="M5 10v10h14V10"/>'],["lessons","Lezioni",'<path d="M4 5h7a3 3 0 0 1 3 3v12a2 2 0 0 0-2-2H4z"/><path d="M20 5h-4a3 3 0 0 0-3 3"/><path d="M20 5v13h-6"/>'],["game","Partita",'<path d="M9 20h6"/><path d="M8 17h8l-1-6h-6z"/><circle cx="12" cy="7" r="3"/>'],["ripasso","Ripasso",'<path d="M3 12a9 9 0 1 0 3-6.7"/><path d="M3 4v5h5"/>']];
+function tabHtml(bottom){const cur=S.view.screen==="tavola"?(S.view.mode==="game"?"game":S.view.mode==="drill"?"ripasso":"lessons"):S.view.screen;
+  return TABS.map(([k,l,ic])=>`<button class="tab" data-go="${k}" ${cur===k?'aria-current="page"':""}>${bottom?`<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">${ic}</svg>`:""}${l}</button>`).join("")}
+function go(k){Voice.stop();T.gen++;T.confirm=null;
+  if(k==="game"){S.view={screen:"tavola",mode:"game"}}
+  else S.view={screen:k};touch();render();window.scrollTo(0,0)}
+document.addEventListener("click",e=>{const g=e.target.closest("[data-go]");if(g){e.preventDefault();go(g.dataset.go)}});
+
+function render(){$("#tabsTop").innerHTML=tabHtml(false);$("#tabsBottom").innerHTML=tabHtml(true);
+  const vb=$("#voiceBtn");vb.setAttribute("aria-pressed",String(!!S.settings.voice));$("#voiceLbl").textContent=S.settings.voice?"Voce":"Muto";
+  const sc=S.view.screen;if(sc==="lessons")renderLessons();else if(sc==="ripasso")renderRipasso();else if(sc==="tavola")enterTavola();else renderHome()}
+
+/* ---------- INIZIO ---------- */
+function lessonsDone(){return LESSONS.filter(l=>S.lessons[l.id]?.completed).length}
+function activeDeck(){return S.deck.filter(d=>!d.mastered)}
+function nextLesson(){return LESSONS.find(l=>!S.lessons[l.id]?.completed)||LESSONS[0]}
+function resumeInfo(){const v=S.view;
+  if(S.game&&!S.game.result)return{lbl:"Riprendi la partita",sub:`Mossa ${Math.floor(S.game.moves.length/2)+1}, giochi col ${colName(S.game.color)} · ${LEVELS[S.game.level-1].name}`,fn:()=>{S.view={screen:"tavola",mode:"game"};touch();render()}};
+  const lid=S.lastLesson;if(lid&&!S.lessons[lid]?.completed){const L=LESSONS.find(l=>l.id===lid);if(L)return{lbl:"Riprendi la lezione",sub:L.title,fn:()=>openLesson(lid,S.lessons[lid]?.step||0)}}
+  const L=nextLesson();return{lbl:lessonsDone()?"Prossima lezione":"Prima lezione",sub:L.title,fn:()=>openLesson(L.id,0)}}
+function weakness(){const c={};S.deck.forEach(d=>{if(d.tema)c[d.tema]=(c[d.tema]||0)+1});return Object.entries(c).sort((a,b)=>b[1]-a[1])}
+function renderHome(){const name=S.profile.name||"";const r=resumeInfo();const first=!S.updatedAt;
+  const done=lessonsDone();const deck=activeDeck();const w=weakness();
+  const line=first?`Io sono Ermengol. Ti insegnerò a vedere la scacchiera come la vede un maestro: un po' con le lezioni, un po' giocando insieme. Quando sbagli, mi fermo e ne parliamo. Puoi interrompere quando vuoi: ricordo tutto io.`
+    :S.game&&!S.game.result?`La nostra partita è ancora aperta sulla scacchiera. Vuoi riprenderla?`
+    :deck.length?`Hai ${deck.length} ${deck.length===1?"posizione":"posizioni"} da rivedere, prese dai tuoi errori. È il modo più veloce per migliorare.`
+    :`Che cosa facciamo oggi? Una lezione, oppure una partita.`;
+  $("#main").innerHTML=`<div class="wrap screen">
+   <section class="hello">
+    <div class="greet">
+      <div class="row"><span class="initial">E</span><span class="eyebrow">Il tuo maestro</span></div>
+      <h1>${first?"Benvenuto":"Bentornato"}${name?", "+esc(name):""}.</h1>
+      <p id="greetLine">${esc(line)}</p>
+      <div class="row"><button class="btn primary" id="resume">${esc(r.lbl)} · <span style="opacity:.8">${esc(r.sub)}</span></button>
+      <button class="btn ghost" id="hear">Ascolta Ermengol</button></div>
+    </div>
+    <div class="side">
+      <div class="eyebrow">Su cosa lavorare</div>
+      ${w.length?`<div class="list">${w.slice(0,3).map(([t,n])=>{const lid=TEMA_LEZ[t];const L=LESSONS.find(l=>l.id===lid);return `<div class="li"><div class="t"><b>${esc(t[0].toUpperCase()+t.slice(1))}</b><small>${n} ${n===1?"errore":"errori"} nelle tue partite</small></div>${L?`<button class="btn small" data-lesson="${L.id}">Lezione</button>`:""}</div>`}).join("")}</div>`
+        :`<div class="empty">Quando giocherai, qui compariranno i temi dei tuoi errori più frequenti, con la lezione adatta.</div>`}
+      <div class="eyebrow">Ultime partite</div>
+      ${S.history.length?`<div class="list">${S.history.slice(0,4).map(h=>{const won=(h.result==="1-0"&&h.color==="w")||(h.result==="0-1"&&h.color==="b");const draw=h.result==="½-½";return `<div class="li"><div class="t"><b>${won?"Vittoria":draw?"Patta":"Sconfitta"} col ${colName(h.color)}</b><small>${fmtDate(h.date)} · ${esc(LEVELS[h.level-1]?.name||"")} · ${h.n} mosse</small></div><span class="pill ${h.errs?"warn":"good"}">${h.errs} ${h.errs===1?"errore":"errori"}</span></div>`}).join("")}</div>`
+        :`<div class="empty">Nessuna partita ancora. La prima la giochiamo quando vuoi.</div>`}
+    </div>
+   </section>
+   <section class="cards">
+    <button class="card" data-go="lessons"><span class="eyebrow">Lezioni</span><h3>${done} di ${LESSONS.length}</h3><div class="bar"><i style="width:${done/LESSONS.length*100}%"></i></div><span class="muted">Tattica, difesa, finali. Spiegate a voce, con esercizi.</span></button>
+    <button class="card" data-go="game"><span class="eyebrow">Partita</span><h3>${S.game&&!S.game.result?"In corso":"Nuova partita"}</h3><span class="big">Livello ${S.settings.level} · ${esc(LEVELS[S.settings.level-1].name)}</span><span class="muted">${S.settings.guided?"Guidata: mi fermo quando sbagli.":"Libera: commentiamo alla fine."}</span></button>
+    <button class="card" data-go="ripasso"><span class="eyebrow">Ripasso</span><h3>${deck.length} ${deck.length===1?"posizione":"posizioni"}</h3><span class="big">${S.deck.filter(d=>d.mastered).length} già imparate</span><span class="muted">Le posizioni in cui hai sbagliato, da rifare finché vengono.</span></button>
+   </section></div>`;
+  $("#resume").onclick=r.fn;$("#hear").onclick=()=>Voice.speak($("#greetLine").textContent,true);
+  document.querySelectorAll("[data-lesson]").forEach(b=>b.onclick=()=>openLesson(b.dataset.lesson,0))}
+
+/* ---------- LEZIONI ---------- */
+function renderLessons(){const w=weakness();
+  $("#main").innerHTML=`<div class="wrap screen">
+   <div class="sectionhead"><h2>Lezioni</h2><span class="muted">${lessonsDone()} completate su ${LESSONS.length}</span></div>
+   <div class="lessons">${LESSONS.map((L,i)=>{const st=S.lessons[L.id];const exN=L.steps.filter(s=>s.ex).length;
+     return `<button class="card lesson" data-lesson="${L.id}"><span class="num">${i+1}</span><h3>${esc(L.title)}</h3><p>${esc(L.theme)}</p><div class="row"><span class="pill ${st?.completed?"good":st?"lapis":""}">${st?.completed?"completata":st?"in corso":"da fare"}</span><span class="pill">${exN} ${exN===1?"esercizio":"esercizi"}</span></div></button>`}).join("")}</div>
+   <section class="custom">
+     <span class="eyebrow">Lezione su misura</span>
+     <h3>Chiedi a Ermengol una lezione su un tema</h3>
+     <p class="muted" style="margin:0">Per esempio: la Siciliana, come attaccare il Re arroccato, i pedoni passati, quando cambiare i pezzi.</p>
+     <form class="field" id="customForm"><input type="text" id="customTopic" placeholder="Il tema della lezione" autocomplete="off" value="${esc(w[0]?.[0]||"")}"><button class="btn primary">Prepara la lezione</button></form>
+     ${S.custom?`<div class="row"><button class="btn small" id="customOpen">Riapri: ${esc(S.custom.titolo)}</button></div>`:""}
+   </section></div>`;
+  document.querySelectorAll("[data-lesson]").forEach(b=>b.onclick=()=>{const st=S.lessons[b.dataset.lesson];openLesson(b.dataset.lesson,st&&!st.completed?st.step||0:0)});
+  $("#customForm").onsubmit=e=>{e.preventDefault();const t=$("#customTopic").value.trim();if(t)makeCustom(t)};
+  const co=$("#customOpen");if(co)co.onclick=()=>{S.view={screen:"tavola",mode:"custom",step:0};touch();render()}}
+function openLesson(id,step){S.lastLesson=id;S.lessons[id]=S.lessons[id]||{step:0,ex:[]};S.lessons[id].step=step;S.view={screen:"tavola",mode:"lesson",lessonId:id};touch();render();window.scrollTo(0,0)}
+
+/* ---------- RIPASSO ---------- */
+function renderRipasso(){const deck=activeDeck().slice().reverse();const mast=S.deck.filter(d=>d.mastered).length;
+  $("#main").innerHTML=`<div class="wrap screen">
+   <div class="sectionhead"><h2>Ripasso</h2><span class="muted">${deck.length} da rivedere · ${mast} imparate</span></div>
+   <p class="muted" style="margin:0;max-width:62ch">Ogni errore delle tue partite diventa un esercizio: la posizione com'era prima della mossa sbagliata. Quando trovi la mossa giusta due volte di fila, la posizione è imparata.</p>
+   ${deck.length?`<div class="row"><button class="btn primary" id="drillStart">Comincia il ripasso</button></div><div class="list">${deck.map(d=>`<button class="li" data-drill="${d.id}"><div class="t"><b>Partita del ${fmtDate(d.date)} · col ${colName(d.color)}</b><small>Hai giocato ${esc(itSan(d.san))}${d.tema?" · "+esc(d.tema):""}${d.streak?" · "+d.streak+" su 2":""}</small></div><span class="pill ${CLS[d.cls]?.pill||""}">${esc(CLS[d.cls]?.lbl||"")}</span></button>`).join("")}</div>`
+     :`<div class="empty">Non c'è niente da ripassare. Gioca una partita: gli errori che farai finiranno qui, pronti da rifare.</div><div class="row"><button class="btn primary" data-go="game">Gioca una partita</button></div>`}
+  </div>`;
+  const ds=$("#drillStart");if(ds)ds.onclick=()=>openDrill(deck[0].id);
+  document.querySelectorAll("[data-drill]").forEach(b=>b.onclick=()=>openDrill(b.dataset.drill))}
+function openDrill(id){S.view={screen:"tavola",mode:"drill",drillId:id};touch();render();window.scrollTo(0,0)}
+
+/* ---------- TAVOLA ---------- */
+function enterTavola(){const v=S.view;T.gen++;T.sel=null;T.arrows=[];T.hl={};T.msg=null;T.thinking=false;T.status="";T.viewPly=null;T.confirm=null;T.chat=[];T.hintLvl=0;
+  $("#main").innerHTML=`<div class="wrap tavola">
+   <div class="boardcol"><div class="boardbox"><div class="board" id="board" aria-label="Scacchiera"></div></div>
+     <div class="under boardbox" id="under"></div></div>
+   <div class="panel" id="panel"></div></div>`;
+  setupBoard();Engine.init();
+  if(v.mode==="lesson")lessonEnter();else if(v.mode==="drill")drillEnter();else if(v.mode==="custom")customEnter();else gameEnter()}
+function say(msg,speak=true){T.msg=msg;renderPanel();if(speak&&msg&&msg.text)Voice.speak(msg.text)}
+function status(s,thinking){T.status=s;T.thinking=!!thinking;const el=$("#status");if(el){el.textContent=s;el.className="status"+(thinking?" think":"")}}
+
+/* ---------- scacchiera ---------- */
+const GLYPH={k:"♚",q:"♛",r:"♜",b:"♝",n:"♞",p:"♟"},OUT={k:"♔",q:"♕",r:"♖",b:"♗",n:"♘",p:"♙"};
+const pieceHtml=p=>p.color==="w"?`<span class="pc w"><i>${GLYPH[p.type]}</i><b>${OUT[p.type]}</b></span>`:`<span class="pc b"><i>${GLYPH[p.type]}︎</i></span>`;
+let ro=null;
+function setupBoard(){const b=$("#board");if(ro)ro.disconnect();ro=new ResizeObserver(()=>b.style.setProperty("--sq",b.clientWidth/8+"px"));ro.observe(b);
+  b.addEventListener("pointerdown",onDown);}
+function boardChess(){if(S.view.mode==="game"&&T.viewPly!=null&&S.game){const c=new Chess(S.game.startFen);for(const u of S.game.moves.slice(0,T.viewPly))c.move(uciObj(u));return c}return T.chess}
+function squares(){const f="abcdefgh";const out=[];for(let r=0;r<8;r++)for(let c=0;c<8;c++){const file=T.orient==="w"?c:7-c;const rank=T.orient==="w"?8-r:r+1;out.push(f[file]+rank)}return out}
+function renderBoard(){const b=$("#board");if(!b)return;const c=boardChess();if(!c)return;
+  const hist=c.history({verbose:true});const last=hist[hist.length-1];
+  let lastFrom=last?.from,lastTo=last?.to;
+  if(S.view.mode==="game"&&T.viewPly!=null&&T.viewPly<S.game.moves.length&&T.reviewBefore){lastFrom=lastTo=null}
+  let checkSq=null;if(c.in_check()){const turn=c.turn();for(const s of squares()){const p=c.get(s);if(p&&p.type==="k"&&p.color===turn)checkSq=s}}
+  if(!last&&S.view.mode==="game"&&S.game&&T.viewPly==null){}
+  const targets={};if(T.sel){c.moves({square:T.sel,verbose:true}).forEach(m=>targets[m.to]=!!c.get(m.to))}
+  const sqs=squares();let h="";sqs.forEach((s,i)=>{const fi="abcdefgh".indexOf(s[0]),rk=+s[1];const light=(fi+rk)%2===1;
+    const cls=["sq",light?"l":"d"];if(s===lastFrom||s===lastTo)cls.push("last");if(s===T.sel)cls.push("sel");if(T.hl[s])cls.push(T.hl[s]);if(s===checkSq)cls.push("check");
+    const p=c.get(s);const row=Math.floor(i/8),col=i%8;
+    h+=`<div class="${cls.join(" ")}" data-sq="${s}">${col===0?`<span class="co r">${s[1]}</span>`:""}${row===7?`<span class="co f">${s[0]}</span>`:""}${p?pieceHtml(p):""}${s in targets?(targets[s]?'<span class="ring"></span>':'<span class="dot"></span>'):""}</div>`});
+  h+=arrowsSvg();b.innerHTML=h;renderUnder()}
+function sqXY(s){const f="abcdefgh".indexOf(s[0]),r=+s[1];return T.orient==="w"?[f+.5,8-r+.5]:[7-f+.5,r-1+.5]}
+function arrowsSvg(){if(!T.arrows.length)return"";const col={good:"var(--good)",bad:"var(--bad)",lapis:"var(--lapis)",gold:"var(--gold)"};
+  let defs="",lines="";T.arrows.forEach(([u,k],i)=>{const [x1,y1]=sqXY(u.slice(0,2)),[x2,y2]=sqXY(u.slice(2,4));const dx=x2-x1,dy=y2-y1,L=Math.hypot(dx,dy)||1;const ex=x2-dx/L*.32,ey=y2-dy/L*.32;
+    defs+=`<marker id="ah${i}" viewBox="0 0 10 10" refX="3" refY="5" markerWidth="3.2" markerHeight="3.2" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="${col[k]||col.lapis}"/></marker>`;
+    lines+=`<line x1="${x1}" y1="${y1}" x2="${ex}" y2="${ey}" stroke="${col[k]||col.lapis}" stroke-width=".17" stroke-linecap="round" opacity=".88" marker-end="url(#ah${i})"/>`});
+  return `<svg class="arrows" viewBox="0 0 8 8" aria-hidden="true"><defs>${defs}</defs>${lines}</svg>`}
+function renderUnder(){const u=$("#under");if(!u)return;const c=boardChess();let left="",right="";
+  if(S.view.mode==="game"&&S.game){const me=S.game.color;left=`<span class="who"><span class="sw ${me}"></span>Tu col ${colName(me)} · contro ${esc(LEVELS[S.game.level-1].name)}</span>`}
+  else if(c){left=`<span class="who"><span class="sw ${c.turn()}"></span>Muove il ${colName(c.turn())}</span>`}
+  right=`<button class="btn small ghost" id="flipBtn">Gira la scacchiera</button>`;u.innerHTML=left+right;
+  $("#flipBtn").onclick=()=>{T.orient=other(T.orient);T.flipped=!T.flipped;renderBoard()}}
+
+let drag=null;
+function onDown(e){const sqEl=e.target.closest(".sq");if(!sqEl)return;const s=sqEl.dataset.sq;
+  if(!T.interactive||T.viewPly!=null){return}const c=T.chess;const p=c.get(s);
+  if(T.sel&&T.sel!==s){const legal=c.moves({square:T.sel,verbose:true}).filter(m=>m.to===s);if(legal.length){tryMove(T.sel,s,legal);return}}
+  if(p&&p.color===c.turn()&&mayMove(p.color)){T.sel=s;renderBoard();
+    const b=$("#board");const pcEl=b.querySelector(`[data-sq="${s}"] .pc`);
+    drag={from:s,x:e.clientX,y:e.clientY,moved:false,el:null,src:pcEl,id:e.pointerId};
+    try{b.setPointerCapture(e.pointerId)}catch(_){}
+    b.onpointermove=ev=>{if(!drag)return;if(!drag.moved&&Math.hypot(ev.clientX-drag.x,ev.clientY-drag.y)>6){drag.moved=true;const g=drag.src.cloneNode(true);g.classList.add("dragghost");g.style.width=g.style.height=b.clientWidth/8+"px";g.style.fontSize=b.clientWidth/8*.8+"px";document.body.appendChild(g);drag.el=g;drag.src.classList.add("lift")}
+      if(drag.el){drag.el.style.left=ev.clientX+"px";drag.el.style.top=ev.clientY+"px"}};
+    b.onpointerup=ev=>{b.onpointermove=b.onpointerup=null;if(!drag)return;const d=drag;drag=null;if(d.el){d.el.remove();const t=document.elementFromPoint(ev.clientX,ev.clientY)?.closest?.(".sq");
+        const to=t?.dataset.sq;if(to&&to!==d.from){const legal=c.moves({square:d.from,verbose:true}).filter(m=>m.to===to);if(legal.length){tryMove(d.from,to,legal);return}}renderBoard()}};
+    b.onpointercancel=()=>{if(drag?.el)drag.el.remove();drag=null;renderBoard()};
+  }else{T.sel=null;renderBoard()}}
+function mayMove(color){const m=S.view.mode;if(m==="game")return S.game&&!S.game.result&&color===S.game.color;return true}
+function tryMove(from,to,legal){T.sel=null;if(legal.some(m=>m.promotion)){promoChooser(from,to);return}userMove({from,to})}
+function promoChooser(from,to){const b=$("#board");const col=T.chess.turn();const d=document.createElement("div");d.className="promo";
+  d.innerHTML=`<div>${["q","r","b","n"].map(t=>`<button data-p="${t}" aria-label="${NAME_EN[t]}">${pieceHtml({type:t,color:col})}</button>`).join("")}</div>`;
+  d.addEventListener("pointerdown",e=>e.stopPropagation());
+  d.onclick=e=>{const btn=e.target.closest("button");d.remove();if(btn)userMove({from,to,promotion:btn.dataset.p});else renderBoard()};b.appendChild(d)}
+function userMove(mv){const m=S.view.mode;if(m==="game")gameUserMove(mv);else if(m==="lesson")lessonMove(mv);else if(m==="drill")drillMove(mv);else if(m==="custom"){const r=T.chess.move(mv);if(r){T.arrows=[];renderBoard()}}}
+
+/* ---------- pannello ---------- */
+function renderPanel(){const p=$("#panel");if(!p)return;const m=S.view.mode;let head="",extra="";
+  if(m==="game"){head=S.game?`<h2>${S.game.result?"Partita finita":"Partita"}</h2>`:`<h2>Nuova partita</h2>`}
+  else if(m==="lesson"){const L=T.lesson?.L;head=`<div><div class="eyebrow">Lezione ${LESSONS.indexOf(L)+1}</div><h2>${esc(L?.title||"")}</h2></div>`}
+  else if(m==="drill"){head=`<div><div class="eyebrow">Ripasso</div><h2>Trova di meglio</h2></div>`}
+  else if(m==="custom"){head=`<div><div class="eyebrow">Lezione su misura</div><h2>${esc(S.custom?.titolo||"")}</h2></div>`}
+  const msg=T.msg;
+  let scroll="";if(msg){const badge=msg.badge?`<span class="pill badge ${msg.badge} ${CLS[msg.badge]?.pill||""}">${esc(CLS[msg.badge]?.lbl||msg.badge)}</span>`:"";
+    scroll=`<div class="scroll"><div class="head"><span class="initial">E</span><span class="name">Ermengol</span>${badge}${msg.text&&!msg.thinking?`<button class="btn small ghost" id="replay" title="Ripeti a voce" style="${badge?"":"margin-left:auto"}">Ripeti</button>`:""}</div>
+     ${msg.title?`<div class="eyebrow">${esc(msg.title)}</div>`:""}
+     <div class="text ${msg.thinking?"thinking":""}" id="msgText">${esc(msg.text||"")}</div>
+     ${msg.html||""}
+     ${msg.actions&&msg.actions.length?`<div class="acts">${msg.actions.map((a,i)=>`<button class="btn ${a.kind||""}" data-act="${i}" ${a.disabled?"disabled":""}>${esc(a.label)}</button>`).join("")}</div>`:""}</div>`}
+  if(m==="game")extra=gameExtra();else if(m==="lesson")extra=lessonExtra();else if(m==="custom")extra=customExtra();else if(m==="drill")extra=drillExtra();
+  const askBox=(m!=="game"||S.game)&&!sampleOff?`<form class="ask" id="askForm"><input type="text" id="askIn" placeholder="Chiedi a Ermengol…" autocomplete="off"><button class="btn">Chiedi</button></form>`:"";
+  p.innerHTML=`<div class="panelhead">${head}<span class="status ${T.thinking?"think":""}" id="status">${esc(T.status)}</span></div>${m==="game"&&!S.game?"":scroll}${extra}${askBox}`;
+  if(msg&&msg.actions)p.querySelectorAll("[data-act]").forEach(b=>b.onclick=()=>msg.actions[+b.dataset.act].fn());
+  const rp=$("#replay");if(rp)rp.onclick=()=>Voice.speak(msg.text,true);
+  const af=$("#askForm");if(af)af.onsubmit=e=>{e.preventDefault();const q=$("#askIn").value.trim();if(q)askFree(q)};
+  if(m==="game")bindGameExtra();if(m==="lesson")bindLessonExtra();if(m==="custom")bindCustomExtra();if(m==="drill")bindDrillExtra()}
+
+/* ---------- PARTITA ---------- */
+function gameChess(){const c=new Chess(S.game.startFen);for(const u of S.game.moves)c.move(uciObj(u));return c}
+function gameEnter(){if(!S.game){setupEnter();return}
+  T.chess=gameChess();T.orient=S.game.color;renderBoard();
+  if(S.game.result){T.interactive=false;say(endMsg(),false);return}
+  const back=S.game.moves.length>0;
+  afterPosition(back?pick(["Riprendiamo da dove eravamo.","Eccoci di nuovo alla scacchiera.","Rieccoci. La posizione è quella che avevamo lasciato."]):null)}
+function setupEnter(){T.chess=new Chess(START);T.orient=S.settings.color==="b"?"b":"w";T.interactive=false;T.msg=null;renderBoard();renderPanel()}
+function gameExtra(){if(!S.game){const st=S.settings;const L=LEVELS[st.level-1];
+    return `<div class="scroll setup"><div class="head"><span class="initial">E</span><span class="name">Ermengol</span></div>
+      <div class="text">Scegli il colore e la mia forza. In modalità guidata, quando sbagli mi fermo e ne parliamo. In modalità libera ti lascio giocare e commentiamo alla fine.</div>
+      <label class="lbl">Colore<div class="seg" id="segColor">${[["w","Bianco"],["b","Nero"],["r","A caso"]].map(([k,l])=>`<button type="button" data-v="${k}" aria-pressed="${st.color===k}">${l}</button>`).join("")}</div></label>
+      <label class="lbl">Forza di Ermengol · <span class="levelname" id="lvlName">${st.level}. ${esc(L.name)}</span><input type="range" min="1" max="8" step="1" value="${st.level}" id="lvl"></label>
+      <label class="lbl">Modalità<div class="seg" id="segMode"><button type="button" data-v="1" aria-pressed="${st.guided}">Guidata</button><button type="button" data-v="0" aria-pressed="${!st.guided}">Libera</button></div></label>
+      <div class="acts"><button class="btn primary" id="startGame">Comincia la partita</button></div></div>`}
+  const g=S.game;const sans=sanLine(g.startFen,g.moves,999);let rows="";
+  for(let i=0;i<sans.length;i+=2){rows+=`<span class="n">${i/2+1}.</span>`+[i,i+1].map(j=>{if(j>=sans.length)return"<span></span>";const a=g.ann[j];const cur=T.viewPly!=null&&(T.reviewBefore?T.viewPly===j:T.viewPly===j+1);
+      return `<button data-ply="${j}" class="${cur?"cur":""}">${esc(itSan(sans[j]))}${a?`<span class="${CLS[a.cls].c}">${CLS[a.cls].sym}</span>`:""}</button>`}).join("")}
+  const myTurn=!g.result&&T.chess&&T.chess.turn()===g.color&&T.viewPly==null;
+  const conf=T.confirm==="resign"?`<div class="scroll"><div class="text">Vuoi davvero abbandonare la partita?</div><div class="acts"><button class="btn danger" id="resignYes">Sì, abbandono</button><button class="btn" id="resignNo">No, continuo</button></div></div>`:"";
+  const conf2=T.confirm==="new"?`<div class="scroll"><div class="text">Lasciamo questa partita e ne cominciamo un'altra?</div><div class="acts"><button class="btn danger" id="newYes">Sì, nuova partita</button><button class="btn" id="newNo">No</button></div></div>`:"";
+  return `${conf}${conf2}<div class="navbar">
+    ${!g.result?`<button class="btn small" id="hintBtn" ${myTurn?"":"disabled"}>${T.hintLvl?"Mostrami la mossa":"Suggerimento"}</button><button class="btn small" id="undoBtn" ${g.moves.length&&T.viewPly==null?"":"disabled"}>Annulla mossa</button><button class="btn small ghost" id="resignBtn">Abbandono</button>`:`<button class="btn small primary" id="newGame2">Nuova partita</button>`}
+    ${!g.result?`<button class="btn small ghost" id="newGame">Nuova partita</button>`:""}</div>
+    ${sans.length?`<div class="moves" id="moves">${rows}</div>`:""}
+    ${sans.length?`<div class="navbar"><button class="btn small" id="navPrev" aria-label="Mossa precedente">◀</button><button class="btn small" id="navNext" aria-label="Mossa successiva">▶</button>${T.viewPly!=null?`<button class="btn small primary" id="navLive">${g.result?"Posizione finale":"Torna alla partita"}</button>`:""}</div>`:""}`}
+function bindGameExtra(){const st=S.settings;
+  if(!S.game){document.querySelectorAll("#segColor button").forEach(b=>b.onclick=()=>{st.color=b.dataset.v;T.orient=st.color==="b"?"b":"w";touch();renderPanel();renderBoard()});
+    document.querySelectorAll("#segMode button").forEach(b=>b.onclick=()=>{st.guided=b.dataset.v==="1";touch();renderPanel()});
+    const lv=$("#lvl");lv.oninput=()=>{st.level=+lv.value;$("#lvlName").textContent=st.level+". "+LEVELS[st.level-1].name};lv.onchange=()=>touch();
+    $("#startGame").onclick=startGame;return}
+  const on=(id,f)=>{const e=$("#"+id);if(e)e.onclick=f};
+  on("hintBtn",hint);on("undoBtn",undoMove);
+  on("resignBtn",()=>{T.confirm="resign";renderPanel()});on("resignNo",()=>{T.confirm=null;renderPanel()});on("resignYes",()=>{T.confirm=null;finishGame("abbandono")});
+  on("newGame",()=>{T.confirm="new";renderPanel()});on("newNo",()=>{T.confirm=null;renderPanel()});on("newYes",()=>{T.confirm=null;if(!S.game.result)finishGame("abbandono",true);S.game=null;touch();T.gen++;setupEnter()});
+  on("newGame2",()=>{S.game=null;touch();T.gen++;setupEnter()});
+  document.querySelectorAll("#moves [data-ply]").forEach(b=>b.onclick=()=>viewPly(+b.dataset.ply));
+  on("navPrev",()=>{const cur=T.viewPly??S.game.moves.length;setView(Math.max(0,cur-1))});
+  on("navNext",()=>{const cur=T.viewPly??S.game.moves.length;setView(Math.min(S.game.moves.length,cur+1))});
+  on("navLive",()=>{T.viewPly=null;T.reviewBefore=false;T.arrows=[];renderBoard();renderPanel()});
+  const mv=$("#moves");if(mv&&T.viewPly==null)mv.scrollTop=mv.scrollHeight}
+function setView(n){T.reviewBefore=false;T.arrows=[];T.viewPly=n>=S.game.moves.length&&!S.game.result?null:n;renderBoard();renderPanel()}
+function viewPly(j){const g=S.game;const a=g.ann[j];T.sel=null;
+  if(a){T.viewPly=j;T.reviewBefore=true;T.arrows=[[a.uci,"bad"],[a.bestUci,"good"]];renderBoard();
+    say({badge:a.cls,title:`Mossa ${Math.floor(j/2)+1}: hai giocato ${itSan(a.san)}`,text:a.expl||`In rosso la tua mossa, in verde la migliore: ${itSan(a.bestSan)}. ${a.refPv?.length?"Dopo la tua, l'avversario poteva rispondere "+itSan(a.refPv[0])+".":""}`,
+      actions:a.expl?[]:[{label:"Spiegami perché",fn:()=>explain(j,true)}]},!!a.expl)}
+  else{T.viewPly=j+1>=g.moves.length&&!g.result?null:j+1;T.reviewBefore=false;T.arrows=[];renderBoard();renderPanel()}}
+function startGame(){const st=S.settings;const color=st.color==="r"?(Math.random()<.5?"w":"b"):st.color;
+  S.game={id:Date.now().toString(36),startFen:START,moves:[],color,level:st.level,guided:st.guided,ann:{},result:null,started:Date.now(),hints:0,takebacks:0};
+  S.view={screen:"tavola",mode:"game"};touch();T.chess=gameChess();T.orient=color;T.viewPly=null;renderBoard();
+  afterPosition(color==="w"?`Cominciamo. Hai il Bianco, quindi la prima mossa è tua.`:`Cominciamo. Tu hai il Nero: apro io.`)}
+function afterPosition(intro){const c=T.chess;renderBoard();
+  if(c.game_over()){finishGame();return}
+  if(c.turn()===S.game.color)userTurn(intro);else engineTurn(intro)}
+function userTurn(intro){T.interactive=true;T.hintLvl=0;status("Tocca a te");if(intro)say({text:intro});else renderPanel();
+  const fen=T.chess.fen();T.pendingA={fen,p:Engine.analyse(fen,ANALYSIS)}}
+async function engineTurn(intro){T.interactive=false;const my=++T.gen;status("Ermengol pensa…",true);if(intro)say({text:intro});else renderPanel();
+  const fen=T.chess.fen();const L=LEVELS[S.game.level-1];const t0=Date.now();
+  const r=await Engine.analyse(fen,{skill:L.skill,depth:L.depth,movetime:L.mt});if(my!==T.gen)return;
+  if(!r||!r.best){status("");say({text:Engine.ok?"Qualcosa non è andato: non riesco a trovare una mossa. Prova a ricaricare la pagina.":"Il motore di gioco non si è caricato su questo dispositivo, quindi per ora non posso giocare. Le lezioni funzionano lo stesso.",actions:[{label:"Vai alle lezioni",fn:()=>go("lessons")}]});return}
+  const wait=500-(Date.now()-t0);if(wait>0)await sleep(wait);if(my!==T.gen)return;
+  const m=T.chess.move(uciObj(r.best));if(!m)return;S.game.moves.push(toUci(m));touch();
+  if(S.settings.announce&&!speakingFlag)Voice.speak(itSan(m.san));
+  afterPosition()}
+async function gameUserMove(mv){const c=T.chess;const fenBefore=c.fen();const m=c.move(mv);if(!m){renderBoard();return}
+  const ply=S.game.moves.length;S.game.moves.push(toUci(m));touch();T.interactive=false;T.arrows=[];T.hl={};T.msg=null;renderBoard();
+  if(c.game_over()){finishGame();return}
+  const my=++T.gen;status("Ermengol osserva…",true);renderPanel();
+  const a=T.pendingA&&T.pendingA.fen===fenBefore?await T.pendingA.p:await Engine.analyse(fenBefore,ANALYSIS);
+  const b=await Engine.analyse(c.fen(),ANALYSIS);if(my!==T.gen)return;
+  const ann=judge(fenBefore,m,a,b,ply);
+  if(ann){S.game.ann[ply]=ann;addToDeck(ann);touch()}
+  if(ann&&S.game.guided&&ann.cls!=="inacc"){intervene(ply);return}
+  if(ann&&S.game.guided)say({text:pick(["Piccola imprecisione: c'era qualcosa di meglio. Ne parliamo alla fine.","Mossa giocabile, ma non la più precisa. La segno e andiamo avanti.","Non è un errore grave, ma c'era di meglio. Lo rivedremo."])});
+  engineTurn()}
+function judge(fen,m,a,b,ply){if(!a||!b||!a.best||!a.eval||!b.eval)return null;const col=fen.split(" ")[1];
+  if(toUci(m)===a.best)return null;const before=winFor(col,a.eval),after=winFor(col,b.eval);const loss=before-after;
+  const cls=loss>=.2?"grave":loss>=.1?"errore":loss>=.05?"inacc":null;if(!cls)return null;
+  if(cls==="inacc"&&after>.92)return null;
+  const after_fen=new Chess(fen);after_fen.move(m);
+  return{cls,ply,fen,color:col,san:m.san,uci:toUci(m),bestUci:a.best,bestSan:sanLine(fen,[a.best])[0]||"",bestPv:sanLine(fen,a.pv,6),refUci:b.best,refPv:sanLine(after_fen.fen(),b.pv,6),evB:a.eval,evA:b.eval,loss:+loss.toFixed(3)}}
+function addToDeck(a){if(a.cls==="inacc")return;if(S.deck.some(d=>d.fen===a.fen))return;
+  S.deck.push({id:Date.now().toString(36)+Math.random().toString(36).slice(2,5),fen:a.fen,color:a.color,san:a.san,uci:a.uci,bestUci:a.bestUci,bestSan:a.bestSan,bestPv:a.bestPv,refPv:a.refPv,evB:a.evB,cls:a.cls,date:Date.now(),streak:0,tries:0,gameId:S.game?.id});
+  if(S.deck.length>120){const i=S.deck.findIndex(d=>d.mastered);S.deck.splice(i>=0?i:0,1)}}
+function threatHint(a){const opp=colName(other(a.color));const r=a.refPv[0]||"";
+  if(r.includes("#"))return `Attenzione: dopo questa mossa il ${opp} ha un matto. Riesci a vederlo?`;
+  if(a.evA&&a.evA.mate!=null&&((a.color==="w")?a.evA.mate<0:a.evA.mate>0))return `Attenzione: dopo questa mossa il ${opp} ha un attacco che porta al matto. Guarda bene il tuo Re.`;
+  if(r.includes("x"))return `Dopo questa mossa il ${opp} può prendere qualcosa. Guarda la posizione con i suoi occhi: che cosa resta indifeso?`;
+  if(r.includes("+"))return `Dopo questa mossa il ${opp} ha uno scacco molto fastidioso. Lo vedi?`;
+  return `Il ${opp} ha una risposta forte. Prova a guardare la scacchiera dalla sua parte: che cosa vorresti fare, al suo posto?`}
+function intervene(ply){const a=S.game.ann[ply];T.arrows=[];renderBoard();status("");
+  const open=a.cls==="grave"?pick(["Fermati un momento.","Aspetta, aspetta.","Ferma tutto un istante."]):pick(["Un momento.","Fermiamoci un attimo.","Mmh. Guardiamo meglio."]);
+  say({badge:a.cls,keep:true,text:`${open} Hai giocato ${itSan(a.san)}. ${threatHint(a)}`,actions:interveneActions(ply,false)})}
+function interveneActions(ply,shown){const a=S.game.ann[ply];const acts=[];
+  if(!shown)acts.push({label:"Mostrami la risposta",fn:()=>showRefutation(ply)});
+  if(!a.expl&&!sampleOff)acts.push({label:"Spiegami perché",fn:()=>explain(ply)});
+  acts.push({label:"Riprovo la mossa",kind:"primary",fn:()=>takeBackTo(ply,true)});
+  acts.push({label:"Vado avanti",fn:()=>{T.arrows=[];T.msg=null;renderBoard();engineTurn()}});return acts}
+function showRefutation(ply){const a=S.game.ann[ply];const opp=colName(other(a.color));T.arrows=a.refUci?[[a.refUci,"bad"]]:[];renderBoard();
+  const rest=a.refPv.slice(1,4);
+  say({badge:a.cls,keep:true,text:`Il ${opp} risponderebbe ${itSan(a.refPv[0])}${rest.length?", e la linea più probabile continua con "+rest.map(itSan).join(", "):""}. La valutazione passa da ${fmtEval(a.evB)} a ${fmtEval(a.evA)}. Al posto della tua mossa era meglio ${itSan(a.bestSan)}.`,actions:interveneActions(ply,true)})}
+async function explain(ply,review){const a=S.game.ann[ply];const g=S.game;const name=S.profile.name||"l'allievo";
+  const prev=sanLine(g.startFen,g.moves.slice(0,ply),999);
+  say({badge:a.cls,keep:true,thinking:true,text:"Ermengol riflette…"},false);status("Ermengol riflette…",true);
+  const prompt=`${persona()}
+
+Situazione. ${describe(a.fen)}
+Tocca al ${colName(a.color)}, cioè a ${name}. Mosse della partita fin qui: ${prev.length?numbered(g.startFen,prev):"nessuna"}.
+${name} ha giocato ${itSan(a.san)}.
+Analisi del motore, affidabile, da non contraddire: valutazione prima della mossa ${fmtEval(a.evB)}, dopo la mossa ${fmtEval(a.evA)} (numeri positivi = vantaggio del Bianco). La mossa migliore era ${itSan(a.bestSan)}, con la linea ${a.bestPv.map(itSan).join(" ")}. Dopo la mossa giocata, la risposta più forte dell'avversario è ${a.refPv.map(itSan).join(" ")}.
+
+Compito: spiega in 3-5 frasi perché ${itSan(a.san)} è ${CLS[a.cls].lbl.toLowerCase()}. Indica il motivo concreto (un pezzo che resta indifeso, una tattica, una casa debole, una minaccia ignorata) usando soltanto le linee del motore, senza inventarne altre. Poi spiega l'idea della mossa migliore. Chiudi con una frase che sia un principio pratico da ricordare.
+Rispondi solo in JSON: {"spiegazione": "...", "tema": "..."} dove tema è uno tra: ${TEMI.join(", ")}.`;
+  let text,tema=null;
+  try{const r=await askClaude(prompt,{json:true});text=String(r.spiegazione||"").trim();tema=TEMI.includes(r.tema)?r.tema:null}
+  catch(e){text=fallbackExpl(a)+(e&&e.code==="rate_limited"?" (Per ora non posso ragionarci più a fondo: riprova tra poco.)":"")}
+  if(!text)text=fallbackExpl(a);
+  a.expl=text;if(tema){a.tema=tema;const d=S.deck.find(x=>x.fen===a.fen);if(d)d.tema=tema}touch();status("");
+  if(review||S.game.result||T.viewPly!=null){say({badge:a.cls,text});return}
+  say({badge:a.cls,keep:true,text,actions:interveneActions(ply,true).filter(x=>x.label!=="Spiegami perché")})}
+function fallbackExpl(a){const opp=colName(other(a.color));return `Hai giocato ${itSan(a.san)}. Il problema è la risposta ${itSan(a.refPv[0]||"")} del ${opp}${a.refPv.length>1?", che continua con "+a.refPv.slice(1,4).map(itSan).join(", "):""}. La valutazione passa da ${fmtEval(a.evB)} a ${fmtEval(a.evA)}. La mossa migliore era ${itSan(a.bestSan)}${a.bestPv.length>1?", con l'idea "+a.bestPv.slice(1,4).map(itSan).join(", "):""}.`}
+function takeBackTo(ply,retry){T.gen++;S.game.moves=S.game.moves.slice(0,ply);Object.keys(S.game.ann).forEach(k=>{if(+k>=ply)delete S.game.ann[k]});S.game.takebacks++;touch();
+  T.chess=gameChess();T.arrows=[];T.viewPly=null;renderBoard();
+  userTurn(retry?pick(["Bene. La posizione è di nuovo quella di prima: cerca una mossa migliore.","Ecco la posizione di prima. Con calma: scacchi, catture, minacce.","Riproviamo. Guarda prima che cosa vuole l'avversario."]):null)}
+function undoMove(){if(!S.game||!S.game.moves.length)return;const g=S.game;
+  const turnAt=k=>{const cc=new Chess(g.startFen);g.moves.slice(0,k).forEach(u=>cc.move(uciObj(u)));return cc.turn()};
+  let n=g.moves.length-1;while(n>=0&&turnAt(n)!==g.color)n--;
+  if(n<0){T.gen++;g.moves=[];g.ann={};touch();T.chess=gameChess();T.msg=null;afterPosition();return}
+  takeBackTo(n,false);T.msg=null;renderPanel()}
+async function hint(){if(!T.pendingA||!T.interactive)return;const a=await T.pendingA.p;if(!a||!a.best)return;S.game.hints++;touch();
+  const from=a.best.slice(0,2);const p=T.chess.get(from);
+  if(!T.hintLvl){T.hintLvl=1;T.hl={[from]:"hint"};renderBoard();say({text:pick([`Guarda il tuo ${NAME_EN[p.type]} in ${from}.`,`Io penserei a una mossa di ${p.type==="p"?"pedone, quello in "+from:NAME_EN[p.type]+", quello in "+from}.`])})}
+  else{T.hintLvl=2;T.hl={};T.arrows=[[a.best,"lapis"]];renderBoard();const san=sanLine(T.chess.fen(),[a.best])[0];say({text:`La mossa che giocherei è ${itSan(san)}.`})}}
+function finishGame(reason,silent){const g=S.game;const c=gameChess();let r="½-½",why=reason||"";
+  if(reason==="abbandono"){r=g.color==="w"?"0-1":"1-0"}
+  else if(c.in_checkmate()){r=c.turn()==="w"?"0-1":"1-0";why="scacco matto"}
+  else if(c.in_stalemate())why="stallo";else if(c.in_threefold_repetition())why="ripetizione";else if(c.insufficient_material())why="materiale insufficiente";else if(c.in_draw())why="regola delle 50 mosse";
+  g.result={r,why};const anns=Object.values(g.ann);const errs=anns.filter(a=>a.cls!=="inacc").length;
+  S.history.unshift({id:g.id,date:Date.now(),color:g.color,level:g.level,result:r,why,n:Math.ceil(g.moves.length/2),errs,grave:anns.filter(a=>a.cls==="grave").length});S.history=S.history.slice(0,40);
+  touch();T.interactive=false;T.gen++;status("");if(silent)return;renderBoard();say(endMsg())}
+function endMsg(){const g=S.game;const r=g.result;const won=(r.r==="1-0"&&g.color==="w")||(r.r==="0-1"&&g.color==="b");const draw=r.r==="½-½";
+  const anns=Object.entries(g.ann).sort((a,b)=>a[0]-b[0]);const grave=anns.filter(([,a])=>a.cls==="grave").length,err=anns.filter(([,a])=>a.cls==="errore").length,ina=anns.filter(([,a])=>a.cls==="inacc").length;
+  let t=won?(r.why==="scacco matto"?"Scacco matto. Hai vinto, complimenti.":"Hai vinto."):draw?`Patta, per ${r.why}.`:r.why==="abbandono"?"Hai abbandonato. Capita: anche questo fa parte del gioco.":"Scacco matto. Questa volta ho vinto io.";
+  t+=grave+err+ina===0?" Non ho trovato errori nelle tue mosse: partita pulita.":` Ho segnato ${[grave&&grave+" "+(grave===1?"errore grave":"errori gravi"),err&&err+" "+(err===1?"errore":"errori"),ina&&ina+" "+(ina===1?"imprecisione":"imprecisioni")].filter(Boolean).join(", ")}. Gli errori sono finiti nel ripasso.`;
+  if(won&&grave===0&&g.level<8)t+=" Credo che tu sia pronto per un livello più alto.";
+  const acts=[];if(anns.length)acts.push({label:"Rivediamo gli errori",kind:"primary",fn:()=>viewPly(+anns[0][0])});
+  if(!sampleOff&&g.moves.length>6)acts.push({label:"Il commento di Ermengol",fn:gameComment});
+  if(won&&grave===0&&g.level<8)acts.push({label:"Rivincita al livello "+(g.level+1),fn:()=>{S.settings.level=g.level+1;S.settings.color=g.color==="w"?"b":"w";startGame()}});
+  else acts.push({label:"Rivincita",fn:()=>{S.settings.level=g.level;S.settings.color=g.color==="w"?"b":"w";startGame()}});
+  return{text:t,actions:acts}}
+async function gameComment(){const g=S.game;const sans=sanLine(g.startFen,g.moves,999);const anns=Object.values(g.ann);
+  say({thinking:true,text:"Ermengol ripensa alla partita…"},false);status("Ermengol riflette…",true);
+  const prompt=`${persona()}
+
+Partita appena finita. ${S.profile.name||"L'allievo"} aveva il ${colName(g.color)}, contro di te a forza "${LEVELS[g.level-1].name}". Risultato ${g.result.r} (${g.result.why||"fine"}).
+Mosse: ${numbered(g.startFen,sans)}.
+Errori rilevati dal motore: ${anns.length?anns.map(a=>`mossa ${Math.floor(a.ply/2)+1}: giocato ${itSan(a.san)} invece di ${itSan(a.bestSan)} (${CLS[a.cls].lbl.toLowerCase()}${a.tema?", tema "+a.tema:""})`).join("; "):"nessuno"}.
+Lezioni disponibili: ${LESSONS.map(l=>l.title).join("; ")}.
+
+Fai un commento di 4-6 frasi, come un maestro dopo la partita: che cosa è andato bene, qual è stato il momento decisivo, una sola cosa concreta su cui lavorare e, se adatta, quale delle lezioni rifare. Non inventare mosse che non sono nella partita.`;
+  try{const r=await askClaude(prompt,{onText:({text})=>{const el=$("#msgText");if(el){el.textContent=text;el.classList.remove("thinking")}}});status("");say({text:r.text.trim(),actions:endMsg().actions.filter(a=>a.label!=="Il commento di Ermengol")})}
+  catch(e){status("");say({text:"Adesso non riesco a commentare la partita. Puoi comunque rivedere gli errori uno per uno.",actions:endMsg().actions.filter(a=>a.label!=="Il commento di Ermengol")})}}
+
+/* ---------- LEZIONE ---------- */
+function exFen(x){if(x.fen)return x.fen;const c=new Chess();(x.moves||"").split(" ").filter(Boolean).forEach(s=>c.move(s));return c.fen()}
+function lessonEnter(){const L=LESSONS.find(l=>l.id===S.view.lessonId)||LESSONS[0];const st=S.lessons[L.id]=S.lessons[L.id]||{step:0,ex:[]};
+  T.lesson={L,step:Math.min(st.step||0,L.steps.length-1)};showStep()}
+function showStep(){const {L,step}=T.lesson;const s=L.steps[step];T.arrows=[];T.hl={};T.sel=null;T.ex=null;
+  S.lessons[L.id].step=step;touch();
+  if(s.ex){const fen=exFen(s.ex);T.chess=new Chess(fen);T.orient=T.chess.turn();T.ex={...s.ex,idx:0,wrong:0,fen};T.interactive=true;renderBoard();
+    const pre=s.ex.moves?`Posizione dopo ${numbered(START,sanLine(START,movesToUci(s.ex.moves),99))}. `:"";
+    say({title:`Esercizio · muove il ${colName(T.chess.turn())}`,text:s.ex.prompt,html:pre?`<div class="muted" style="font-family:var(--f-mono);font-size:12.5px">${esc(pre)}</div>`:"",actions:exActions()});return}
+  if(s.fen||s.moves){T.chess=new Chess(s.fen||exFen({moves:s.moves}));const nx=L.steps.slice(step).find(x=>x.ex);T.orient=nx?new Chess(exFen(nx.ex)).turn():T.chess.turn()}
+  else if(!T.chess){T.chess=new Chess(START)}
+  T.arrows=(s.arrows||[]).map(a=>a.slice());T.interactive=false;renderBoard();
+  const last=step===L.steps.length-1;const acts=[];
+  if(step>0)acts.push({label:"Indietro",fn:()=>{T.lesson.step--;showStep()}});
+  if(!last)acts.push({label:"Avanti",kind:"primary",fn:()=>{T.lesson.step++;showStep()}});
+  else{acts.push({label:"Lezione completata",kind:"primary",fn:()=>completeLesson()})}
+  say({text:s.say,actions:acts})}
+function movesToUci(str){const c=new Chess();const out=[];str.split(" ").filter(Boolean).forEach(s=>{const m=c.move(s);if(m)out.push(toUci(m))});return out}
+function exActions(){const acts=[];if(T.ex.wrong>=1||T.ex.hinted)acts.push({label:"Mostrami la soluzione",fn:showSolution});else acts.push({label:"Suggerimento",fn:()=>{T.ex.hinted=true;say({title:"Suggerimento",text:T.ex.hint,actions:exActions()})}});
+  if(T.lesson.step>0)acts.push({label:"Indietro",kind:"ghost",fn:()=>{T.lesson.step--;showStep()}});return acts}
+function showSolution(){const x=T.ex;const san=x.sol[x.idx];const c=new Chess(T.chess.fen());const m=c.move(san);if(m){T.arrows=[[toUci(m),"good"]];renderBoard()}
+  say({title:"La soluzione",text:`La mossa è ${itSan(san)}. Giocala tu sulla scacchiera.`,actions:[]});x.shown=true}
+async function lessonMove(mv){const x=T.ex;if(!x){return}const c=T.chess;const m=c.move(mv);if(!m){renderBoard();return}
+  T.arrows=[];T.hl={};renderBoard();const s=bare(m.san);
+  const okFirst=x.idx===0&&(x.accept.map(bare).includes(s));const alt=x.idx===0&&(x.alts||[]).find(a=>bare(a.san)===s);
+  const okNext=x.idx>0&&bare(x.sol[x.idx])===s;
+  if(okFirst||okNext||alt){if(okFirst&&bare(x.sol[0])!==s){x.sol=[m.san]}
+    x.idx++;if(alt)x.altNote=alt.note;
+    if(x.idx<x.sol.length){T.interactive=false;status("");await sleep(650);const r=c.move(x.sol[x.idx]);x.idx++;renderBoard();
+      if(x.idx<x.sol.length){T.interactive=true;say({title:"Bene. Continua",text:pick(["Bene. E adesso?","Giusto. Ora completa l'idea.","Esatto. Prosegui."]),actions:[]});return}}
+    exDone();return}
+  T.interactive=false;x.wrong++;
+  say({text:x.wrong===1?`${pick(["Non è questa.","No, non ancora.","Mmh, non ci siamo."])} ${x.hint}`:pick(["Ancora no. Se vuoi, ti mostro la soluzione.","No. Guarda di nuovo le mosse forzanti: scacchi e catture."]),actions:[]},true);
+  await sleep(900);c.undo();T.interactive=true;renderBoard();T.msg.actions=exActions();renderPanel()}
+function exDone(){const {L,step}=T.lesson;T.interactive=false;const st=S.lessons[L.id];if(!st.ex.includes(step)&&!T.ex.shown)st.ex.push(step);touch();
+  const txt=(T.ex.altNote?T.ex.altNote+" ":"")+T.ex.ok;const last=step===L.steps.length-1;
+  say({title:T.ex.shown?"Risolto con aiuto":"Esatto",text:txt,actions:[last?{label:"Lezione completata",kind:"primary",fn:completeLesson}:{label:"Avanti",kind:"primary",fn:()=>{T.lesson.step++;showStep()}},{label:"Rifai l'esercizio",fn:()=>showStep()}]})}
+function completeLesson(){const {L}=T.lesson;S.lessons[L.id].completed=true;S.lessons[L.id].step=0;touch();const i=LESSONS.indexOf(L);const nx=LESSONS[i+1];
+  say({text:nx?`Lezione completata. La prossima è «${nx.title}». Oppure, per fissare le idee, una partita: è lì che si vede se hai capito.`:"Hai completato tutte le lezioni. Adesso la scuola vera sono le partite, e il ripasso dei tuoi errori. E se vuoi, chiedimi una lezione su misura.",
+    actions:[nx?{label:"Prossima lezione",kind:"primary",fn:()=>openLesson(nx.id,0)}:{label:"Lezione su misura",kind:"primary",fn:()=>go("lessons")},{label:"Gioca una partita",fn:()=>go("game")},{label:"Tutte le lezioni",kind:"ghost",fn:()=>go("lessons")}]})}
+function lessonExtra(){const {L,step}=T.lesson;const st=S.lessons[L.id];
+  return `<div class="steps" aria-label="Passo ${step+1} di ${L.steps.length}">${L.steps.map((s,i)=>`<i class="${i===step?"cur":i<step||(s.ex&&st.ex.includes(i))?"on":""}"></i>`).join("")}</div>`}
+function bindLessonExtra(){}
+
+/* ---------- RIPASSO (esercizio) ---------- */
+function drillEnter(){const d=S.deck.find(x=>x.id===S.view.drillId);if(!d){go("ripasso");return}T.drill=d;T.drillWrong=0;
+  T.chess=new Chess(d.fen);T.orient=d.color;T.interactive=true;renderBoard();
+  say({title:`Partita del ${fmtDate(d.date)} · muove il ${colName(d.color)}`,text:`In questa posizione hai giocato ${itSan(d.san)}${d.tema?" ("+d.tema+")":""}. Trova una mossa migliore.`,actions:[{label:"Ricordami il problema",fn:()=>say({text:`Dopo ${itSan(d.san)} l'avversario rispondeva ${itSan(d.refPv?.[0]||"")}${d.refPv?.length>1?", e poi "+d.refPv.slice(1,3).map(itSan).join(", "):""}.`,actions:[{label:"Mostrami la soluzione",fn:drillSolution}]})}]})}
+function drillExtra(){const n=activeDeck().length;return `<div class="muted" style="font-size:13px">${n} ${n===1?"posizione":"posizioni"} da rivedere · questa: ${T.drill?.streak||0} su 2</div>`}
+function bindDrillExtra(){}
+function drillSolution(){const d=T.drill;T.arrows=[[d.bestUci,"good"]];renderBoard();say({text:`La mossa migliore era ${itSan(d.bestSan)}${d.bestPv?.length>1?", con l'idea "+d.bestPv.slice(1,4).map(itSan).join(", "):""}. Giocala tu.`,actions:[]});d.streak=0;T.drillShown=true;touch()}
+async function drillMove(mv){const d=T.drill;const c=T.chess;const fen=c.fen();const m=c.move(mv);if(!m){renderBoard();return}T.arrows=[];renderBoard();T.interactive=false;
+  let good=toUci(m)===d.bestUci,also=false;
+  if(!good){status("Ermengol controlla…",true);const r=await Engine.analyse(c.fen(),ANALYSIS);status("");
+    if(r&&r.eval&&d.evB){const loss=winFor(d.color,d.evB)-winFor(d.color,r.eval);if(loss<.05){good=true;also=true}}
+    if(!good){d.tries++;d.streak=0;touch();T.drillWrong++;const reply=r&&r.best?sanLine(c.fen(),[r.best])[0]:null;
+      say({text:`No, c'è ancora un problema${reply?": l'avversario risponderebbe "+itSan(reply):""}. Riprova.`,actions:[{label:"Mostrami la soluzione",fn:drillSolution}]});
+      await sleep(1100);c.undo();T.interactive=true;renderBoard();return}}
+  if(T.drillShown){T.drillShown=false}else{d.streak=(d.streak||0)+1}
+  if(d.streak>=2)d.mastered=true;touch();
+  const next=activeDeck().filter(x=>x.id!==d.id).slice(-1)[0];
+  say({title:d.mastered?"Posizione imparata":"Giusto",text:(also?`Anche ${itSan(m.san)} va bene. Io avrei giocato ${itSan(d.bestSan)}. `:`${itSan(m.san)}, esatto. `)+(d.mastered?"Questa posizione ormai la conosci: la tolgo dal ripasso.":"Te la riproporrò un'altra volta, per fissarla."),
+    actions:[next?{label:"Prossima posizione",kind:"primary",fn:()=>openDrill(next.id)}:{label:"Fine del ripasso",kind:"primary",fn:()=>go("ripasso")},{label:"Torna all'elenco",kind:"ghost",fn:()=>go("ripasso")}]})}
+
+/* ---------- LEZIONE SU MISURA ---------- */
+async function makeCustom(topic){S.view={screen:"tavola",mode:"custom",step:0};S.custom={titolo:topic,passi:[{testo:"Preparo la lezione…"}],loading:true};render();
+  say({thinking:true,text:"Ermengol prepara la lezione…"},false);status("Ermengol prepara…",true);
+  const prompt=`${persona()}
+
+Prepara una breve lezione sul tema: "${topic}". Struttura: da 4 a 6 passi. Ogni passo ha "testo" (2-4 frasi, da leggere a voce) e, se serve, "mosse": una sequenza di mosse in notazione SAN inglese (K Q R B N; esempio "e4 e5 Nf3 Nc6 Bc4") giocate dalla posizione iniziale, separate da spazi, senza numeri, che porta a una posizione che illustra quel passo. Usa soltanto sequenze legali e famose di cui sei sicuro; se il tema non si presta, ometti "mosse". L'ultimo passo riassume in un principio pratico.
+Rispondi solo in JSON: {"titolo":"...","passi":[{"testo":"...","mosse":"..."}]}`;
+  try{const r=await askClaude(prompt,{json:true,tier:"default"});
+    const passi=(Array.isArray(r.passi)?r.passi:[]).slice(0,8).map(p=>{let mosse=null;if(p.mosse){const c=new Chess();const ok=String(p.mosse).replace(/\d+\.+/g," ").split(/\s+/).filter(Boolean).every(s=>c.move(s));if(ok)mosse=String(p.mosse).replace(/\d+\.+/g," ").trim()}return{testo:String(p.testo||""),mosse}}).filter(p=>p.testo);
+    if(!passi.length)throw{code:"empty"};S.custom={titolo:String(r.titolo||topic),passi};S.view.step=0;touch();status("");customEnter()}
+  catch(e){status("");S.custom=null;touch();say({text:e&&e.code==="not_granted"?"Per preparare lezioni su misura devo poter usare Claude: l'hai negato per questa visita. Ricarica la pagina se vuoi riprovare.":"Adesso non riesco a preparare la lezione. Riprova tra un po', oppure scegli una delle lezioni pronte.",actions:[{label:"Torna alle lezioni",fn:()=>go("lessons")}]})}}
+function customEnter(){const C=S.custom;if(!C||C.loading){if(!C)go("lessons");return}const i=Math.min(S.view.step||0,C.passi.length-1);const p=C.passi[i];
+  if(p.mosse){T.chess=new Chess();p.mosse.split(/\s+/).forEach(s=>T.chess.move(s))}else if(!T.chess)T.chess=new Chess();
+  T.interactive=true;T.arrows=[];renderBoard();
+  const acts=[];if(i>0)acts.push({label:"Indietro",fn:()=>{S.view.step=i-1;touch();customEnter()}});
+  acts.push(i<C.passi.length-1?{label:"Avanti",kind:"primary",fn:()=>{S.view.step=i+1;touch();customEnter()}}:{label:"Fine",kind:"primary",fn:()=>go("lessons")});
+  say({title:`Passo ${i+1} di ${C.passi.length}`,text:p.testo,actions:acts})}
+function customExtra(){return S.custom&&!S.custom.loading?`<div class="muted" style="font-size:13px">Puoi muovere i pezzi liberamente per provare le idee della lezione.</div>`:""}
+function bindCustomExtra(){}
+
+/* ---------- domande libere ---------- */
+async function askFree(q){const c=boardChess();const m=S.view.mode;let ctx="";
+  if(c)ctx=`Posizione sulla scacchiera. ${describe(c.fen())} Muove il ${colName(c.turn())}. FEN: ${c.fen()}.`;
+  if(m==="game"&&S.game){const sans=sanLine(S.game.startFen,S.game.moves,999);ctx+=` È una partita: ${S.profile.name||"l'allievo"} ha il ${colName(S.game.color)}. Mosse: ${sans.length?numbered(S.game.startFen,sans):"nessuna"}.`;
+    if(T.pendingA){const a=await Promise.race([T.pendingA.p,sleep(2500).then(()=>null)]);if(a&&a.eval)ctx+=` Il motore valuta la posizione ${fmtEval(a.eval)} e suggerisce ${itSan(sanLine(T.pendingA.fen,[a.best])[0]||"")}. Se ti chiede la mossa da giocare in una partita in corso, non dargliela subito: aiutalo a trovarla con una domanda o un indizio.`}}
+  if(m==="lesson"&&T.lesson)ctx+=` Siete nella lezione «${T.lesson.L.title}».`;
+  T.chat.push({q,a:null});T.chat=T.chat.slice(-4);
+  const hist=T.chat.slice(0,-1).filter(x=>x.a).map(x=>`Allievo: ${x.q}\nErmengol: ${x.a}`).join("\n");
+  const prompt=`${persona()}\n\n${ctx}\n${hist?"Conversazione recente:\n"+hist+"\n":""}\nDomanda dell'allievo: ${q}\n\nRispondi in al massimo 6 frasi, concrete e riferite alla posizione se c'entra. Se non sei sicuro di una variante, dillo invece di inventare.`;
+  const keep=T.msg;say({thinking:true,text:"Ermengol riflette…",title:"Domanda: "+q},false);status("Ermengol riflette…",true);
+  try{const r=await askClaude(prompt,{onText:({text})=>{const el=$("#msgText");if(el){el.textContent=text;el.classList.remove("thinking")}}});T.chat[T.chat.length-1].a=r.text;status("");
+    say({title:"Domanda: "+q,text:r.text.trim(),actions:keep&&keep.actions&&keep.actions.length?[{label:"Torna al discorso",fn:()=>say(keep,false)}]:[]})}
+  catch(e){status("");say({text:e&&e.code==="not_granted"?"Per rispondere alle domande devo poter usare Claude, e per questa visita l'hai negato.":"Adesso non riesco a rispondere. Riprova tra poco.",actions:keep?[{label:"Torna al discorso",fn:()=>say(keep,false)}]:[]});if(sampleOff)renderPanel()}}
+
+/* ---------- impostazioni ---------- */
+function openSettings(){const st=S.settings;const r=$("#sheetRoot");
+  r.innerHTML=`<div class="sheetbg" id="sheetBg"><div class="sheet" role="dialog" aria-label="Impostazioni">
+   <div class="row" style="justify-content:space-between"><h2>Impostazioni</h2><button class="btn small" id="closeSet">Chiudi</button></div>
+   <label class="lbl">Come ti chiama Ermengol<input type="text" id="setName" value="${esc(S.profile.name)}"></label>
+   <div class="toggle"><span>Ermengol parla a voce</span><input type="checkbox" id="setVoice" ${st.voice?"checked":""}></div>
+   <div class="toggle"><span>Annuncia a voce le sue mosse</span><input type="checkbox" id="setAnn" ${st.announce?"checked":""}></div>
+   <label class="lbl">Voce${Voice.list.length?`<select id="setVoiceSel"><option value="">Automatica</option>${Voice.list.map(v=>`<option value="${esc(v.voiceURI)}" ${v.voiceURI===st.voiceURI?"selected":""}>${esc(v.name)}</option>`).join("")}</select>`:`<span>${Voice.ok?"Nessuna voce italiana trovata su questo dispositivo: verrà usata quella predefinita.":"Questo browser non supporta la sintesi vocale."}</span>`}</label>
+   <label class="lbl">Velocità della voce · <span id="rateV">${st.rate.toFixed(2)}</span><input type="range" id="setRate" min="0.7" max="1.3" step="0.05" value="${st.rate}"></label>
+   <div class="row"><button class="btn" id="testVoice">Prova la voce</button></div>
+   <hr style="border:0;border-top:1px solid var(--line);width:100%">
+   <div class="muted" style="font-size:13px">${Store.mode==="cloud"?"I tuoi progressi sono salvati nel tuo account Claude: apri Ermengol da un altro dispositivo con lo stesso account e riprendi da dove eri.":"In questo momento i progressi sono salvati solo su questo dispositivo. Aprendo Ermengol da claude.ai con il tuo account, si sincronizzano."}</div>
+   <div id="resetBox"><button class="btn danger small" id="resetBtn">Azzera tutti i progressi</button></div>
+   <div class="muted" style="font-size:12px">Motore: Stockfish 10 (GPL v3) ${Engine.ok?"· attivo":"· in caricamento"}.</div>
+  </div></div>`;
+  const close=()=>{r.innerHTML="";render()};$("#closeSet").onclick=close;$("#sheetBg").onclick=e=>{if(e.target.id==="sheetBg")close()};
+  $("#setName").onchange=e=>{S.profile.name=e.target.value.trim();touch()};
+  $("#setVoice").onchange=e=>{st.voice=e.target.checked;touch();if(!st.voice)Voice.stop()};
+  $("#setAnn").onchange=e=>{st.announce=e.target.checked;touch()};
+  const vs=$("#setVoiceSel");if(vs)vs.onchange=()=>{st.voiceURI=vs.value;Voice.pick();touch()};
+  $("#setRate").oninput=e=>{st.rate=+e.target.value;$("#rateV").textContent=st.rate.toFixed(2)};$("#setRate").onchange=()=>touch();
+  $("#testVoice").onclick=()=>Voice.speak(`Ciao${S.profile.name?" "+S.profile.name:""}. Io sono Ermengol. Dopo e4 e5, Cavallo f3, il Nero deve difendere il pedone.`.replace("e4 e5, Cavallo f3","e4 e5 Cf3"),true);
+  $("#resetBtn").onclick=()=>{$("#resetBox").innerHTML=`<div class="text" style="margin-bottom:8px">Cancello lezioni, partite e ripasso, su tutti i dispositivi. Sei sicuro?</div><div class="row"><button class="btn danger small" id="resetYes">Sì, azzera</button><button class="btn small" id="resetNo">Annulla</button></div>`;
+    $("#resetNo").onclick=()=>openSettings();$("#resetYes").onclick=()=>{const keep={profile:S.profile,settings:S.settings};S=freshState();S.profile=keep.profile;S.settings=keep.settings;touch();Store.flush();close();toast("Progressi azzerati")}}}
+$("#setBtn").onclick=openSettings;
+$("#voiceBtn").onclick=()=>{S.settings.voice=!S.settings.voice;touch();if(!S.settings.voice)Voice.stop();else Voice.speak("Eccomi.");render()};
+let toastT=null;function toast(t){const el=$("#toast");el.textContent=t;el.hidden=false;clearTimeout(toastT);toastT=setTimeout(()=>el.hidden=true,2600)}
+
+/* ---------- avvio ---------- */
+function start(data){if(data&&data.S)S=migrate(data.S);render();Store.init();Engine.init()}
+const hot=window.claude&&window.claude.hot;
+if(hot&&hot.snapshot)try{hot.snapshot(()=>({S}))}catch(e){}
+if(hot&&hot.ready)hot.ready(start);else start(hot&&hot.data||{});
+})();
+</script>

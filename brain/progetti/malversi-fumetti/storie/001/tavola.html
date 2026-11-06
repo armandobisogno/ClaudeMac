@@ -1,0 +1,40 @@
+<!doctype html><html lang="it"><head><meta charset="utf-8">
+<title>Malversi 001</title><style>
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&family=Special+Elite&family=Oswald:wght@600&display=swap');
+* { box-sizing: border-box; margin: 0; }
+body { width: 1600px; height: 1934px; background: #fff; font-family: 'Comic Neue', sans-serif; }
+.head { height: 120px; padding: 28px 40px 0; display: flex; align-items: baseline; gap: 22px;
+        border-bottom: 0; }
+.head .serie { font-family: 'Oswald', sans-serif; font-size: 58px; letter-spacing: 3px; }
+.head .tit { font-family: 'Special Elite', serif; font-size: 30px; }
+.head .num { margin-left: auto; font-family: 'Oswald', sans-serif; font-size: 26px; }
+.grid { padding: 0 40px; display: grid; grid-template-columns: 749px 749px; gap: 22px; }
+.v { position: relative; width: 749px; height: 560px; border: 4px solid #000; overflow: hidden; }
+.v img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.t { position: absolute; font-size: 23px; line-height: 1.15; color: #000; text-transform: uppercase; }
+.balloon { background: #fff; border: 3px solid #000; border-radius: 50% / 45%; padding: 26px 34px;
+            text-align: center; }
+.didascalia { background: #fdf6d8; border: 3px solid #000; padding: 8px 12px; font-size: 22px;
+               text-transform: none; font-family: 'Special Elite', serif; }
+.schermo { background: #000; color: #fff; border: 2px solid #fff; padding: 10px 14px; font-size: 21px;
+            text-transform: none; font-family: 'Special Elite', monospace; }
+.balloon::after, .balloon::before { content: ''; position: absolute; border-style: solid; }
+.coda-bl::before { left: 24%; bottom: -42px; border-width: 42px 28px 0 0; border-color: #000 transparent transparent; }
+.coda-bl::after  { left: calc(24% + 3px); bottom: -35px; border-width: 38px 22px 0 0; border-color: #fff transparent transparent; }
+.coda-br::before { right: 24%; bottom: -42px; border-width: 42px 0 0 28px; border-color: #000 transparent transparent; }
+.coda-br::after  { right: calc(24% + 3px); bottom: -35px; border-width: 38px 0 0 22px; border-color: #fff transparent transparent; }
+.coda-bc::before { left: calc(50% - 14px); bottom: -42px; border-width: 42px 14px 0; border-color: #000 transparent transparent; }
+.coda-bc::after  { left: calc(50% - 10px); bottom: -35px; border-width: 38px 10px 0; border-color: #fff transparent transparent; }
+.coda-tc::before { left: calc(50% - 14px); top: -42px; border-width: 0 14px 42px; border-color: transparent transparent #000; }
+.coda-tc::after  { left: calc(50% - 10px); top: -35px; border-width: 0 10px 38px; border-color: transparent transparent #fff; }
+.coda-r::before { right: -44px; top: calc(50% - 13px); border-width: 13px 0 13px 44px; border-color: transparent transparent transparent #000; }
+.coda-r::after  { right: -36px; top: calc(50% - 9px); border-width: 9px 0 9px 39px; border-color: transparent transparent transparent #fff; }
+.coda-l::before { left: -44px; top: calc(50% - 13px); border-width: 13px 44px 13px 0; border-color: transparent #000 transparent transparent; }
+.coda-l::after  { left: -36px; top: calc(50% - 9px); border-width: 9px 39px 9px 0; border-color: transparent #fff transparent transparent; }
+.foot { padding: 14px 40px; font-family: 'Special Elite', serif; font-size: 18px; text-align: right; }
+</style></head><body>
+<div class="head"><span class="serie">MALVERSI</span><span class="tit">Il verbale intelligente</span>
+<span class="num">N. 001</span></div>
+<div class="grid"><div class="v"><img src="vignette/v1.png"><div class="t didascalia" style="left:1.2%;top:1.5%;width:23%">Fossa Etrusca. Martedì.<br>Il Ministero ha mandato il futuro.</div><div class="t balloon coda-bl" style="left:42%;top:2%;width:40%">Dottore, fa tutto da solo! Gli racconti il fatto e lui scrive il verbale!</div></div><div class="v"><img src="vignette/v2.png"><div class="t balloon coda-br" style="left:3%;top:5%;width:32%">Tutto da solo.<br>Come i guai.</div></div><div class="v"><img src="vignette/v3.png"><div class="t balloon coda-l" style="left:62%;top:4%;width:36%">Signora Iannaccone, via dei Tigli. Dice che il vicino le ruba il basilico dal balcone. Da tre anni. Lo sa perché il vicino fa il pesto buono.</div></div><div class="v"><img src="vignette/v4.png"><div class="t schermo" style="left:9%;top:80%;width:74%">&gt; Segnalazione di presunto furto di materiale vegetale.<br>&gt; Rischio: BASSO. Priorità: NESSUNA.</div></div><div class="v"><img src="vignette/v5.png"><div class="t balloon coda-bl" style="left:40%;top:2%;width:30%">Ha capito il furto. Non ha capito il pesto.</div><div class="t balloon coda-tc" style="left:67%;top:70%;width:30%">Dottore, è una macchina.</div></div><div class="v"><img src="vignette/v6.png"><div class="t balloon coda-r" style="left:2%;top:2%;width:48%">Appunto. La signora Iannaccone non chiedeva giustizia, Graziella. Chiedeva qualcuno che la stesse a sentire.</div><div class="t didascalia" style="left:2%;top:81%;width:58%">«I got to keep moving, blues falling down like hail» — Robert Johnson</div></div></div>
+<div class="foot">testi di Armando Bisogno · dai romanzi Terapie e Mosaici (De Tomi)</div>
+</body></html>

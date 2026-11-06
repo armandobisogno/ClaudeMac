@@ -1,0 +1,92 @@
+<!doctype html><html lang="it"><head><meta charset="utf-8">
+<!-- Copertina di Ermete Metello: il codice 56LA aperto, con le fasi lunari annotate in verticale nel margine destro.
+     Tratto e palette di Tre finestre. Render: Chrome headless 1600x2400 → ../copertina.png -->
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<style>
+html,body{margin:0;width:1600px;height:2400px;overflow:hidden;background:#1a1f26}
+.wrap{position:relative;width:1600px;height:2400px;font-family:'Cormorant Garamond',Georgia,serif;color:#efe8dc}
+svg{position:absolute;inset:0}
+.top{position:absolute;top:150px;left:0;right:0;text-align:center;letter-spacing:.32em;font-size:40px;text-transform:uppercase;color:#c9bfae}
+.title{position:absolute;top:1660px;left:0;right:0;text-align:center;font-size:178px;font-weight:500;line-height:1}
+.sub{position:absolute;top:1880px;left:0;right:0;text-align:center;font-style:italic;font-size:58px;color:#d8cfbf}
+.who{position:absolute;bottom:150px;left:0;right:0;text-align:center;font-size:42px;letter-spacing:.14em;color:#b9ae9c}
+.who b{font-weight:500;color:#efe8dc;letter-spacing:.2em}
+</style></head><body><div class="wrap">
+<svg width="1600" height="2400" viewBox="0 0 1600 2400">
+ <defs>
+  <radialGradient id="glow" cx=".5" cy=".4" r=".55"><stop offset="0" stop-color="#e9c98a" stop-opacity=".2"/><stop offset="1" stop-color="#e9c98a" stop-opacity="0"/></radialGradient>
+  <mask id="m1" maskUnits="userSpaceOnUse" x="-30" y="-30" width="60" height="60"><rect x="-30" y="-30" width="60" height="60" fill="#fff"/><circle cx="9" cy="0" r="17" fill="#000"/></mask>
+  <mask id="m2" maskUnits="userSpaceOnUse" x="-30" y="-30" width="60" height="60"><rect x="-30" y="-30" width="60" height="60" fill="#fff"/><circle cx="-9" cy="0" r="17" fill="#000"/></mask>
+ <mask id="m3" maskUnits="userSpaceOnUse" x="-30" y="-30" width="60" height="60"><rect x="-30" y="-30" width="60" height="60" fill="#fff"/><ellipse cx="-17" cy="0" rx="8" ry="17" fill="#000"/><rect x="-30" y="-30" width="13" height="60" fill="#000"/></mask>
+  <mask id="m4" maskUnits="userSpaceOnUse" x="-30" y="-30" width="60" height="60"><rect x="-30" y="-30" width="60" height="60" fill="#fff"/><ellipse cx="17" cy="0" rx="8" ry="17" fill="#000"/><rect x="17" y="-30" width="13" height="60" fill="#000"/></mask>
+ </defs>
+ <rect width="1600" height="2400" fill="#1a1f26"/>
+ <rect width="1600" height="2400" fill="url(#glow)"/>
+
+ <!-- il codice aperto -->
+ <g fill="none" stroke="#efe8dc" stroke-linecap="round" stroke-linejoin="round">
+  <!-- piatti della legatura, appena visibili -->
+  <path d="M300,560 Q550,520 800,575 Q1050,520 1300,560 L1300,1440 Q1050,1400 800,1455 Q550,1400 300,1440 Z" stroke-width="6" stroke-opacity=".35"/>
+  <!-- pagine -->
+  <path d="M325,545 Q560,500 800,560 L800,1440 Q560,1380 325,1425 Z" stroke-width="8" stroke-opacity=".9" fill="#efe8dc" fill-opacity=".04"/>
+  <path d="M1275,545 Q1040,500 800,560 L800,1440 Q1040,1380 1275,1425 Z" stroke-width="8" stroke-opacity=".9" fill="#efe8dc" fill-opacity=".04"/>
+  <!-- spessore dei fogli -->
+  <path d="M325,1425 Q560,1395 800,1458 Q1040,1395 1275,1425" stroke-width="5" stroke-opacity=".45"/>
+  <path d="M325,1440 Q560,1410 800,1472 Q1040,1410 1275,1440" stroke-width="4" stroke-opacity=".3"/>
+ </g>
+
+ <!-- pagina sinistra: righe di scrittura -->
+ <g stroke="#efe8dc" stroke-width="5" stroke-linecap="round" stroke-opacity=".45">
+  <line x1="580" y1="660" x2="735" y2="672"/>
+  <line x1="580" y1="715" x2="735" y2="727"/>
+  <line x1="580" y1="770" x2="735" y2="782"/>
+  <line x1="395" y1="825" x2="735" y2="842"/>
+  <line x1="395" y1="880" x2="735" y2="897"/>
+  <line x1="395" y1="935" x2="735" y2="952"/>
+  <line x1="395" y1="990" x2="735" y2="1007"/>
+  <line x1="395" y1="1045" x2="735" y2="1062"/>
+  <line x1="395" y1="1100" x2="735" y2="1117"/>
+  <line x1="395" y1="1155" x2="735" y2="1172"/>
+  <line x1="395" y1="1210" x2="735" y2="1227"/>
+  <line x1="395" y1="1265" x2="620" y2="1276"/>
+ </g>
+ <!-- iniziale rubricata -->
+ <text x="400" y="790" font-family="Cormorant Garamond,Georgia,serif" font-size="190" font-weight="500" fill="#b8322a" fill-opacity=".95">H</text>
+
+ <!-- pagina destra: righe più corte, il margine resta libero -->
+ <g stroke="#efe8dc" stroke-width="5" stroke-linecap="round" stroke-opacity=".45">
+  <line x1="865" y1="672" x2="1100" y2="660"/>
+  <line x1="865" y1="727" x2="1100" y2="715"/>
+  <line x1="865" y1="782" x2="1100" y2="770"/>
+  <line x1="865" y1="837" x2="1100" y2="825"/>
+  <line x1="865" y1="892" x2="1100" y2="880"/>
+  <line x1="865" y1="947" x2="1100" y2="935"/>
+  <line x1="865" y1="1002" x2="1100" y2="990"/>
+  <line x1="865" y1="1057" x2="1100" y2="1045"/>
+  <line x1="865" y1="1112" x2="1100" y2="1100"/>
+  <line x1="865" y1="1167" x2="1100" y2="1155"/>
+  <line x1="865" y1="1222" x2="1100" y2="1210"/>
+  <line x1="865" y1="1277" x2="1010" y2="1270"/>
+ </g>
+
+ <!-- il diario lunare, in verticale nel margine destro -->
+ <g fill="#f1e3c0">
+  <g transform="translate(1185,660)"><circle r="17" fill="none" stroke="#f1e3c0" stroke-width="3" opacity=".7"/></g>
+  <g transform="translate(1185,740)"><circle r="17" mask="url(#m2)"/></g>
+  <g transform="translate(1185,820)"><path d="M0,-17 A17,17 0 0 1 0,17 Z"/><circle r="17" fill="none" stroke="#f1e3c0" stroke-width="3" opacity=".5"/></g>
+  <g transform="translate(1185,900)"><path d="M0,-17 A17,17 0 0 1 0,17 A8,17 0 0 1 0,-17 Z"/></g>
+  <g transform="translate(1185,980)"><circle r="17"/></g>
+  <g transform="translate(1185,1060)"><path d="M0,-17 A17,17 0 0 0 0,17 A8,17 0 0 0 0,-17 Z"/></g>
+  <g transform="translate(1185,1140)"><path d="M0,-17 A17,17 0 0 0 0,17 Z"/><circle r="17" fill="none" stroke="#f1e3c0" stroke-width="3" opacity=".5"/></g>
+  <g transform="translate(1185,1220)"><circle r="17" mask="url(#m1)"/></g>
+  <g transform="translate(1185,1300)"><circle r="17" fill="none" stroke="#f1e3c0" stroke-width="3" opacity=".7"/></g>
+ </g>
+
+ <!-- segnalibro -->
+ <path d="M790,560 L790,1560 L774,1535 L758,1560 L758,1450" fill="none" stroke="#b8322a" stroke-width="9" stroke-linejoin="round" stroke-opacity=".9"/>
+</svg>
+<div class="top">Finzioni</div>
+<div class="title">Ermete Metello</div>
+<div class="sub">Storia di un monaco</div>
+<div class="who"><b>ARMANDO BISOGNO</b><br><span style="font-size:36px;line-height:2.2">testo integralmente prodotto da Claude Code</span></div>
+</div></body></html>

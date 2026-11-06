@@ -1,0 +1,421 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-07T20:00:00+02:00",
+  "title": "Design System: Armando Bisogno — La collana",
+  "extensions": {
+    "colorMeta": {
+      "blue": {
+        "role": "primary",
+        "displayName": "Blu collana",
+        "canonical": "#4F7CB6",
+        "tonalRamp": [
+          "#0F1A2A",
+          "#1F3760",
+          "#2E4E80",
+          "#3E659A",
+          "#4A75AD",
+          "#4F7CB6",
+          "#9DBDE6",
+          "#E3E9F2"
+        ]
+      },
+      "field": {
+        "role": "primary",
+        "displayName": "Campo",
+        "canonical": "#4A75AD"
+      },
+      "deep": {
+        "role": "primary",
+        "displayName": "Dorso",
+        "canonical": "#1F3760"
+      },
+      "link": {
+        "role": "primary",
+        "displayName": "Inchiostro blu",
+        "canonical": "#24406B"
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "Carta fredda",
+        "canonical": "#F4F5F7",
+        "tonalRamp": [
+          "#101317",
+          "#171B21",
+          "#1B2027",
+          "#4A4F57",
+          "#AEB4BD",
+          "#E9EBEF",
+          "#F4F5F7",
+          "#FFFFFF"
+        ]
+      },
+      "paper-2": {
+        "role": "neutral",
+        "displayName": "Carta 2",
+        "canonical": "#E9EBEF"
+      },
+      "card": {
+        "role": "neutral",
+        "displayName": "Bianco pagina",
+        "canonical": "#FFFFFF"
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Inchiostro",
+        "canonical": "#121417"
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Grigio nota",
+        "canonical": "#4A4F57"
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Nome in copertina",
+        "purpose": "Solo il nome dell'autore nella testata della home."
+      },
+      "volume-number": {
+        "displayName": "Numero del volume",
+        "purpose": "header.site::after sulle pagine di sezione, in --deep, tagliato dal bordo."
+      },
+      "volume-title": {
+        "displayName": "Nome del volume",
+        "purpose": "Nome dell'area dentro il campo blu della testata."
+      },
+      "headline": {
+        "displayName": "Titolo di copertina",
+        "purpose": ".hero h1 in Garamond."
+      },
+      "headline-section": {
+        "displayName": "Titolo di sezione",
+        "purpose": ".head h2."
+      },
+      "numeral": {
+        "displayName": "Numero",
+        "purpose": "Catalogo, passi, anni: Archivo 700 in --blue."
+      },
+      "label": {
+        "displayName": "Nota di sezione",
+        "purpose": "Nota con filetto in coda, 15px; .eyebrow, .sublabel, .meta, .pager."
+      },
+      "display-mobile": {
+        "displayName": "Nome in copertina (telefono)",
+        "purpose": "Nome dell'autore sotto 861px."
+      },
+      "author-mark": {
+        "displayName": "Firma",
+        "purpose": "Nome nel piè di pagina."
+      },
+      "brand": {
+        "displayName": "Marchio",
+        "purpose": "Nome in testata sulle pagine di sezione."
+      },
+      "headline-home": {
+        "displayName": "Titolo della home",
+        "purpose": ".home .hero.home h1."
+      },
+      "pull": {
+        "displayName": "Pull",
+        "purpose": "Citazione grande nelle bande."
+      },
+      "headline-article": {
+        "displayName": "Titolo d'articolo",
+        "purpose": ".article h1."
+      },
+      "headline-column": {
+        "displayName": "Titolo in colonna",
+        "purpose": ".split > .head h2."
+      },
+      "title-xl": {
+        "displayName": "Titolo di blocco XL",
+        "purpose": "Catalogo, feed, formati."
+      },
+      "title-lg": {
+        "displayName": "Titolo di blocco L",
+        "purpose": "Media card, passi, lezioni."
+      },
+      "title-md": {
+        "displayName": "Titolo di blocco M",
+        "purpose": "Video."
+      },
+      "epigraph": {
+        "displayName": "Epigrafe",
+        "purpose": "Citazione corsiva sulla banda del dorso."
+      },
+      "title-36": {
+        "displayName": "Titolo 36",
+        "purpose": ".entry h2."
+      },
+      "title-30": {
+        "displayName": "Titolo 30",
+        "purpose": ".card h3, .formbox h3, .give b."
+      },
+      "title-28": {
+        "displayName": "Titolo 28",
+        "purpose": ".timeline strong, .entry h3."
+      },
+      "title-26": {
+        "displayName": "Titolo 26",
+        "purpose": ".book h3, .posts h3."
+      },
+      "title-24": {
+        "displayName": "Titolo 24",
+        "purpose": ".biblio h3."
+      },
+      "lead": {
+        "displayName": "Lead",
+        "purpose": "Sottotitolo di copertina e di sezione."
+      },
+      "body-article": {
+        "displayName": "Corpo d'articolo",
+        "purpose": ".entry 21px/1.6."
+      },
+      "body": {
+        "displayName": "Corpo",
+        "purpose": "Testo di base 20px."
+      },
+      "text-19": {
+        "displayName": "Testo di scheda",
+        "purpose": "Lezioni, formati, timeline."
+      },
+      "text-18": {
+        "displayName": "Testo compatto",
+        "purpose": "Libri, tabelle, campi."
+      },
+      "text-17": {
+        "displayName": "Opzione",
+        "purpose": ".choice .opt."
+      },
+      "numeral-step": {
+        "displayName": "Numero dei passi",
+        "purpose": ".steps li::before."
+      },
+      "numeral-mobile": {
+        "displayName": "Numero del catalogo (telefono)",
+        "purpose": ".path::before sotto 861px."
+      },
+      "year": {
+        "displayName": "Anno",
+        "purpose": ".book .yr."
+      },
+      "year-sm": {
+        "displayName": "Anno piccolo",
+        "purpose": ".biblio .yr."
+      },
+      "nav-mobile": {
+        "displayName": "Menu (telefono)",
+        "purpose": "Voci del menu aperto."
+      },
+      "button": {
+        "displayName": "Bottone",
+        "purpose": ".btn, esiti del modulo, slot «Accesso aperto»."
+      },
+      "action": {
+        "displayName": "Azione",
+        "purpose": ".more, .back, .go-on."
+      },
+      "nav": {
+        "displayName": "Indice",
+        "purpose": "Voci dell'indice, testo del piè di pagina."
+      },
+      "note": {
+        "displayName": "Nota",
+        "purpose": ".note, a.pub, riga sorgente·data del feed."
+      },
+      "label-sm": {
+        "displayName": "Nota di blocco",
+        "purpose": "Nota con filetto in coda, 14px; .chip, label, legend."
+      },
+      "caption": {
+        "displayName": "Didascalia",
+        "purpose": "Didascalie, intestazioni del footer, th."
+      },
+      "index-number": {
+        "displayName": "Numerino dell'indice",
+        "purpose": "nav.main a .n."
+      }
+    },
+    "shadows": [
+      {
+        "name": "book-shelf",
+        "value": "inset 3px 0 0 rgba(255,255,255,.18),0 18px 30px -12px rgba(18,24,40,.35)",
+        "purpose": "Copertine sullo scaffale (.book3d)."
+      },
+      {
+        "name": "book-feature",
+        "value": "inset 4px 0 0 rgba(255,255,255,.18),0 30px 50px -20px rgba(0,0,0,.45)",
+        "purpose": "Libro in evidenza nell'hero."
+      },
+      {
+        "name": "focus-ring-input",
+        "value": "0 0 0 3px color-mix(in srgb,var(--blue) 30%,transparent)",
+        "purpose": "Solo stato di focus dei campi."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease",
+        "value": "cubic-bezier(.22,1,.36,1)",
+        "purpose": "Easing unico del sistema."
+      },
+      {
+        "name": "state",
+        "value": ".2s",
+        "purpose": "Cambi di colore/bordo."
+      },
+      {
+        "name": "row-fill",
+        "value": "clip-path .55s",
+        "purpose": "Riempimento blu della riga del catalogo."
+      },
+      {
+        "name": "cover-compose",
+        "value": ".9s–1.2s, ritardi .25s–.59s",
+        "purpose": "Composizione della copertina, una volta, solo senza reduced-motion."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "struttura",
+        "value": "860px"
+      },
+      {
+        "name": "carosello",
+        "value": "620px"
+      },
+      {
+        "name": "archivio",
+        "value": "560px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Bottone primario",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Azione principale: campo blu, angoli vivi, freccia.",
+      "html": "<a class=\"ds-btn ds-btn-primary\" href=\"#\">Richiedi un incontro</a>",
+      "css": ".ds-btn{display:inline-flex;align-items:center;gap:12px;padding:15px 22px;border-radius:0;font:600 16px/1 Archivo,'Helvetica Neue',Arial,sans-serif;text-decoration:none;border:2px solid transparent;cursor:pointer;transition:background-color .2s cubic-bezier(.22,1,.36,1),color .2s cubic-bezier(.22,1,.36,1)}.ds-btn::after{content:'→';transition:transform .3s cubic-bezier(.22,1,.36,1)}.ds-btn:hover::after{transform:translateX(4px)}.ds-btn:active{transform:scale(.98)}.ds-btn:focus-visible{outline:2px solid #4F7CB6;outline-offset:3px}.ds-btn-primary{background:#4A75AD;color:#fff}.ds-btn-primary:hover{background:#1F3760}"
+    },
+    {
+      "name": "Bottone ghost",
+      "kind": "button",
+      "refersTo": "button-ghost",
+      "description": "Azione secondaria: bordo d'inchiostro, si riempie al passaggio.",
+      "html": "<a class=\"ds-btn-ghost\" href=\"#\">Scarica l'ePub</a>",
+      "css": ".ds-btn-ghost{display:inline-flex;align-items:center;gap:12px;padding:15px 22px;border-radius:0;font:600 16px/1 Archivo,'Helvetica Neue',Arial,sans-serif;text-decoration:none;border:2px solid #121417;color:#121417;background:none;transition:background-color .2s,color .2s}.ds-btn-ghost::after{content:'→'}.ds-btn-ghost:hover{background:#121417;color:#F4F5F7}.ds-btn-ghost:focus-visible{outline:2px solid #4F7CB6;outline-offset:3px}"
+    },
+    {
+      "name": "Bottone chiaro su campo",
+      "kind": "button",
+      "refersTo": "button-light",
+      "description": "Azione dentro una banda blu.",
+      "html": "<div style=\"background:#4A75AD;padding:24px\"><a class=\"ds-btn-light\" href=\"#\">Scaricalo gratis su Zenodo</a></div>",
+      "css": ".ds-btn-light{display:inline-flex;align-items:center;gap:12px;padding:15px 22px;border-radius:0;font:600 16px/1 Archivo,'Helvetica Neue',Arial,sans-serif;text-decoration:none;background:#fff;color:#121417;border:2px solid transparent;transition:background-color .2s,color .2s}.ds-btn-light::after{content:'→'}.ds-btn-light:hover{background:#121417;color:#fff}"
+    },
+    {
+      "name": "Testata con indice",
+      "kind": "nav",
+      "refersTo": "header-field",
+      "description": "Campo blu con autore, indice numerato e numero del volume tagliato.",
+      "html": "<header class=\"ds-head\"><a class=\"ds-brand\" href=\"#\">Armando Bisogno</a><nav class=\"ds-nav\"><a href=\"#\" aria-current=\"page\"><span>1</span>Ricerca</a><a href=\"#\"><span>2</span>IA e nuove tecnologie</a><a href=\"#\"><span>3</span>Romanzi</a></nav><div class=\"ds-voltitle\">Ricerca</div><div class=\"ds-volnum\" aria-hidden=\"true\">1</div></header>",
+      "css": ".ds-head{position:relative;overflow:hidden;background:#4A75AD;color:#fff;font-family:Archivo,'Helvetica Neue',Arial,sans-serif;min-height:220px;padding:22px 32px;display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:16px}.ds-brand{font-weight:600;font-size:21px;color:#fff;text-decoration:none}.ds-nav{display:flex;gap:6px 26px;flex-wrap:wrap}.ds-nav a{display:inline-flex;gap:7px;align-items:baseline;color:rgba(255,255,255,.88);text-decoration:none;font-size:15.5px;font-weight:500;padding:4px 0;border-bottom:2px solid transparent;transition:color .2s,border-color .2s}.ds-nav a span{font-size:12px;font-weight:700;opacity:.75}.ds-nav a:hover{color:#fff;border-bottom-color:rgba(255,255,255,.5)}.ds-nav a[aria-current]{color:#fff;border-bottom-color:#fff}.ds-nav a:focus-visible{outline:2px solid #fff;outline-offset:3px}.ds-voltitle{position:absolute;left:32px;bottom:28px;font:600 44px/1 Archivo,sans-serif;letter-spacing:-.025em}.ds-volnum{position:absolute;right:24px;bottom:-.24em;font:700 220px/1 Archivo,sans-serif;letter-spacing:-.05em;color:#1F3760;pointer-events:none}"
+    },
+    {
+      "name": "Riga del catalogo",
+      "kind": "custom",
+      "refersTo": "catalog-row",
+      "description": "Un volume per riga; al passaggio si riempie di blu da sinistra.",
+      "html": "<div class=\"ds-paths\"><a class=\"ds-path\" href=\"#\"><span class=\"ds-n\">1</span><h3>Agostino e il Medioevo</h3><p>Cinque libri sul pensiero tardoantico e altomedievale.</p><span class=\"ds-more\">Scopri la ricerca →</span></a><a class=\"ds-path\" href=\"#\"><span class=\"ds-n\">2</span><h3>Le macchine, lette da un umanista</h3><p>Newsletter, podcast, un libro aperto.</p><span class=\"ds-more\">Leggi e ascolta →</span></a></div>",
+      "css": ".ds-paths{border-bottom:3px solid #121417;background:#F4F5F7}.ds-path{position:relative;isolation:isolate;display:grid;grid-template-columns:80px 1fr 1fr auto;gap:24px;align-items:center;padding:28px 0;border-top:1px solid #121417;text-decoration:none;color:#121417;transition:color .35s cubic-bezier(.22,1,.36,1)}.ds-path:first-child{border-top:0}.ds-path::after{content:'';position:absolute;inset:0 -24px;z-index:-1;background:#4A75AD;clip-path:inset(0 100% 0 0);transition:clip-path .55s cubic-bezier(.22,1,.36,1)}.ds-n{font:700 72px/.8 Archivo,sans-serif;letter-spacing:-.04em;color:#4F7CB6;transition:color .35s}.ds-path h3{margin:0;font:400 40px/1 'EB Garamond',Garamond,serif}.ds-path p{margin:0;color:#4A4F57;font:400 20px/1.45 'EB Garamond',serif}.ds-more{font:600 15.5px Archivo,sans-serif;color:#24406B}.ds-path:hover,.ds-path:focus-visible{color:#fff}.ds-path:hover::after,.ds-path:focus-visible::after{clip-path:inset(0 0 0 0)}.ds-path:hover .ds-n,.ds-path:hover p,.ds-path:hover .ds-more,.ds-path:focus-visible .ds-n,.ds-path:focus-visible p,.ds-path:focus-visible .ds-more{color:#fff}.ds-path:focus-visible{outline:2px solid #4F7CB6;outline-offset:-3px}"
+    },
+    {
+      "name": "Campo di testo",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "Input ad angoli vivi, Garamond, focus blu.",
+      "html": "<label class=\"ds-label\">Nome<input class=\"ds-input\" type=\"text\" placeholder=\"Il tuo nome\"></label>",
+      "css": ".ds-label{display:flex;flex-direction:column;gap:6px;font:600 14px Archivo,sans-serif;color:#121417}.ds-input{font:400 18px 'EB Garamond',Garamond,serif;color:#121417;background:#F4F5F7;border:1.5px solid rgba(18,20,23,.4);border-radius:0;padding:12px 14px;width:100%;transition:border-color .2s,box-shadow .2s}.ds-input:focus{outline:none;border-color:#4F7CB6;box-shadow:0 0 0 3px rgba(79,124,182,.3)}"
+    },
+    {
+      "name": "Scheda editoriale",
+      "kind": "card",
+      "refersTo": "trailing-note-card",
+      "description": "Blocco senza scatola: filetto 1px in testa, titolo, testo, nota con filetto in chiusura, poi l'azione.",
+      "html": "<article class=\"ds-card\"><h3>Un libro aperto</h3><p>Ogni riflessione è un tentativo di mettere in ordine le idee.</p><span class=\"ds-chip\">Riflessioni in costruzione</span><a class=\"ds-more\" href=\"#\">Invitami a parlarne →</a></article>",
+      "css": ".ds-card{border-top:1px solid #121417;padding-top:18px;display:flex;flex-direction:column;gap:10px;max-width:22rem}.ds-card h3{margin:0;font:400 32px/1.04 'EB Garamond',serif;letter-spacing:-.01em;color:#121417}.ds-card p{margin:0;font:400 20px/1.5 'EB Garamond',serif;color:#4A4F57}.ds-chip{display:flex;align-items:center;gap:10px;font:500 14px/1.2 Archivo,sans-serif;color:#4A4F57}.ds-chip::before{content:'';width:24px;height:2px;background:currentColor}.ds-more{font:600 15.5px Archivo,sans-serif;color:#24406B;text-decoration:none;display:inline-flex;gap:8px;transition:gap .3s cubic-bezier(.22,1,.36,1)}.ds-more:hover{gap:14px}.ds-more:focus-visible{outline:2px solid #4F7CB6;outline-offset:3px}"
+    },
+    {
+      "name": "Nota con filetto in coda",
+      "kind": "chip",
+      "refersTo": "trailing-note",
+      "description": "Unico schema di etichetta: trattino 24×2px + Archivo 500 --muted, sempre dopo il titolo.",
+      "html": "<div class=\"ds-head\"><h2>Un metodo, molti luoghi</h2><span class=\"ds-note\">Che cosa faccio</span></div>",
+      "css": ".ds-head{display:flex;flex-direction:column;gap:14px;border-top:3px solid #121417;padding-top:24px}.ds-head h2{margin:0;font:400 48px/1 'EB Garamond',Garamond,serif;letter-spacing:-.02em;color:#121417}.ds-note{display:flex;align-items:center;gap:10px;font:500 15px/1.3 Archivo,'Helvetica Neue',Arial,sans-serif;letter-spacing:.01em;color:#4A4F57}.ds-note::before{content:'';width:24px;height:2px;background:currentColor}"
+    }
+  ],
+  "narrative": {
+    "northStar": "La collana",
+    "overview": "Il sito è una collana editoriale nello spirito Munari/Einaudi: ogni area è un volume numerato e ogni volume ha la stessa copertina. In testa, un campo blu pieno che possiede l'intera larghezza; dentro, l'autore in grottesco e l'indice numerato; sulle pagine di sezione, il numero del volume enorme, pieno nel blu scuro del dorso, tagliato dal bordo inferiore del campo. Sotto il campo, su carta bianca fredda, il titolo in Garamond molto grande. In home il frontespizio è il nome stesso di Armando, e la foto scontornata esce dal campo blu.\n\nLa densità è quella di un libro, non di un'interfaccia: testo di base a 20px in Garamond con numeri old-style, giustezza di 34em, sezioni separate da un filetto di 3px d'inchiostro allineato alla giustezza. Niente schede, niente ombre di interfaccia, niente angoli arrotondati. I contenuti veri sono l'unica immagine. Il movimento è uno solo e avviene una volta; l'unica interazione-firma è la riga del volume che si riempie di blu al passaggio.",
+    "keyCharacteristics": [
+      "Campi pieni di blu che possiedono intere regioni (testata, bande di sezione, riga attiva del catalogo).",
+      "Due voci tipografiche con ruoli netti: Garamond per titoli e testo, Archivo per autore, numeri, navigazione, note e azioni.",
+      "Numeri come segno grafico principale: indice, volume, catalogo, passi.",
+      "Angoli vivi ovunque (border-radius:0), filetti di 3px e 1px d'inchiostro.",
+      "Modalità scura completa via token, sotto prefers-color-scheme e [data-theme=\"dark\"]."
+    ],
+    "rules": [
+      {
+        "name": "The Field Rule",
+        "body": "Il blu si usa in campi pieni a tutta larghezza (o a tutta riga), non in pennellate: testata, bande, riga attiva. Sotto il testo bianco va sempre --field, mai --blue.",
+        "section": "colors"
+      },
+      {
+        "name": "The Spine Rule",
+        "body": "Il --deep è il dorso: chiude o separa (epigrafe, piè di pagina, numero del volume), non apre mai una pagina.",
+        "section": "colors"
+      },
+      {
+        "name": "The Two Voices Rule",
+        "body": "Garamond per ciò che si legge, Archivo per ciò che si conta o si sceglie. Un titolo non è mai in grottesco (eccezioni: il nome dell'autore e il nome del volume, che sono il frontespizio); un numero non è mai in Garamond.",
+        "section": "typography"
+      },
+      {
+        "name": "The No Caps Rule",
+        "body": "Nessun maiuscoletto né tracking largo sulle note: text-transform:none, letter-spacing ≤ .04em.",
+        "section": "typography"
+      },
+      {
+        "name": "The Flat Surface Rule",
+        "body": "Nessuna superficie d'interfaccia ha ombra; l'ombra è riservata a un oggetto fisico fotografato o simulato (libro, mockup).",
+        "section": "elevation"
+      },
+      {
+        "name": "The Closed Ramp Rule",
+        "body": "Nessuna dimensione nuova: un testo nuovo prende un gradino esistente. Fuori scala restano solo il badge «attuale» (11px, .versions), il glifo dei bottoni del carosello (22px, oggi SVG) e la parola «Phitness» nel lockup (34px), tutti a uso singolo.",
+        "section": "typography"
+      }
+    ],
+    "dos": [
+      "Do aprire ogni volume con il campo --field a tutta larghezza, numero del volume in --deep tagliato dal bordo e nome del volume in Archivo 600 dentro il campo.",
+      "Do numerare: ogni elenco di volumi, passi o anni usa il Numeral Archivo 700 in --blue.",
+      "Do separare con filetti: 3px --rule per aprire, 1px tra le righe, --hair dentro gli elenchi.",
+      "Do mettere sotto il testo bianco sempre --field o --deep, mai --blue.",
+      "Do etichettare solo con la nota con filetto in coda (24×2px + Archivo 500 --muted, 15px di sezione / 14px di blocco), o con la sua variante in margine su desktop.",
+      "Do prendere ogni dimensione di testo dalla scala chiusa di Typography.",
+      "Do tenere border-radius:0 su ogni elemento.",
+      "Do lasciare che le immagini siano solo materiale vero (copertine, quadri, foto) e che l'ombra appartenga solo ai libri."
+    ],
+    "donts": [
+      "Don't mettere un'etichetta o una nota sopra un titolo, a nessuna larghezza.",
+      "Don't usare schede con fondo, bordo su quattro lati e ombra (la griglia a schede è rifiutata); l'unica scatola è .formbox.",
+      "Don't usare --blue per testo piccolo su --paper (sotto 4.5:1): per il testo piccolo blu c'è --link.",
+      "Don't introdurre stili style=\"\" nei template: ogni valore passa da una classe di style.css.",
+      "Don't introdurre maiuscoletto, tracking largo, crema/seppia o filetti sottili decorativi da «pagina d'autore».",
+      "Don't aggiungere altre animazioni d'ingresso allo scroll: la copertina si compone una volta sola.",
+      "Don't introdurre una seconda tinta d'accento: l'arancio #F2B35E vive solo nel marchio Φ di Phitness."
+    ]
+  }
+}

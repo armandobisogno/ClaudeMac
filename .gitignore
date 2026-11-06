@@ -25,3 +25,27 @@ Direzione/
 
 # plugin WordPress Rassegna (codice + zip): non nel second brain
 /Rassegna/
+
+
+# Sito: pacchetti zip rigenerabili
+/Sito/tema/*.zip
+/Sito/ab-deploy.zip
+
+# Dati sanitari: restano solo in Dropbox, mai su GitHub
+Documenti personali e ufficiali/Salute/
+
+# Tirocini (PFO): dati degli studenti — solo locale
+Documenti di passaggio/Tirocini/
+
+# Audio e video: pesanti (GitHub rifiuta i file > 100 MB) — restano solo in Dropbox
+*.wav
+*.pkf
+*.mp3
+*.m4a
+*.mp4
+*.m4v
+*.mov
+*.zip
+
+# Documenti di passaggio: vaschetta d'ingresso, materiale altrui/riservato — solo locale
+Documenti di passaggio/

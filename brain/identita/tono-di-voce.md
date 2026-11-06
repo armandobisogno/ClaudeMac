@@ -38,6 +38,9 @@ sotto. Coerenza di stile personale attraverso registri diversi.
 - Ci si rivolge al lettore: "proviamo a…", "chiediamoci…", "se vi capita di…".
 - Niente gergo non spiegato, niente neutralità finta, niente tono accademico rigido,
   niente giudizio morale spocchioso.
+- **Elegante, non ammiccante** (ott 2026): niente «per capirci», «si dirà», «Ecco:»,
+  anglicismi giocosi, strizzate d'occhio o CTA enfatiche. Periodi distesi e sorvegliati,
+  prima persona misurata («Credo che il punto stia qui»).
 
 ## Ritmo
 

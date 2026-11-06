@@ -1,0 +1,100 @@
+{
+  "title": "Scegli il mondo visivo di armandobisogno.it",
+  "question": "Il dado ha assegnato «La collana». Tienila, prendi un'alternativa o rilancia.",
+  "options": [
+    {
+      "id": "assigned",
+      "label": "La collana",
+      "kicker": "IL DADO",
+      "lineage": "Le collane Einaudi di Bruno Munari (anni '60-'70)",
+      "thesis": "Il sito come una collana editoriale: ogni area è un volume con la stessa copertina rigorosa e un colore che possiede la pagina.",
+      "palette": ["#F4F4F1", "#4F7CB6", "#1B2B4B", "#111111"],
+      "materials": ["griglia di copertina Munari", "campi pieni di blu", "carta bianca da libro"],
+      "viewport": "La home è la copertina del volume zero: fascia blu con il nome, il titolo nella finestra di copertina, la tua foto scontornata che esce dal riquadro.",
+      "risk": "Se la griglia viene composta con timidezza, sembra solo un sito ordinato.",
+      "raised": [
+        {"from": "La forgia", "raise": "Ogni area occupa una riga intera, un volume per riga: niente griglia a quattro colonne."},
+        {"from": "La cava di nuvole", "raise": "Il blu non è un accento: possiede intere regioni della pagina, come il colore della collana."},
+        {"from": "Il terminale a fosfori", "raise": "La gerarchia nasce da posizione e corpo, senza etichette sopra i titoli."},
+        {"from": "La bacheca ANSI", "raise": "Uscite numerate: ogni volume ha il suo numero di collana e tutti si richiamano a vicenda."}
+      ]
+    },
+    {
+      "id": "model-pick",
+      "label": "Olivetti",
+      "kicker": "IMPECCABLE’S PICK",
+      "lineage": "I manifesti di Giovanni Pintori per Olivetti (anni '50)",
+      "thesis": "Umanesimo e macchine nella grafica italiana che li ha uniti per prima: forme geometriche giocose, numeri e lettere come figure.",
+      "palette": ["#FFFFFF", "#4F7CB6", "#E8402E", "#F4C430", "#111111"],
+      "materials": ["forme piatte ritagliate", "carattere grottesco", "molto bianco"],
+      "viewport": "Il titolo composto in grande con forme colorate che si muovono come in un manifesto Pintori, e la tua foto inserita nella composizione.",
+      "risk": "È la direzione più vicina alla tua tesi e la più riconoscibile: può scivolare nel manifesto decorativo sulle pagine con molto testo."
+    },
+    {
+      "id": "challenger-passport",
+      "label": "Il passaporto",
+      "verdict": "competitive",
+      "lineage": "Un passaporto pieno di visti e timbri",
+      "thesis": "Un metodo, molti luoghi: ogni area è un timbro d'ingresso in un libretto che diventa un'autobiografia.",
+      "palette": ["#1F3A68", "#E6EEF2", "#4F7CB6", "#6B3E8E", "#B33A3A"],
+      "materials": ["carta di sicurezza a guilloche", "timbri a inchiostro", "righe OCR"],
+      "viewport": "La pagina dati del passaporto: la tua foto, il nome, i quattro «visti» già timbrati.",
+      "case": "Si fonde bene con «molti luoghi», ma perde in chiarezza: troppa finzione burocratica attorno a contenuti veri.",
+      "risk": "Rischia di sembrare un travestimento più che un ritratto.",
+      "hero": "https://impeccable.style/worlds/cards/vernacular-ephemera-well-traveled-passport-hero.webp"
+    },
+    {
+      "id": "challenger-pulp",
+      "label": "Lo scaffale dei tascabili",
+      "verdict": "competitive",
+      "lineage": "Gli espositori girevoli di tascabili gialli e pulp",
+      "thesis": "Ogni area è un tascabile girato di faccia sull'espositore; scorrere è far girare lo scaffale.",
+      "palette": ["#1A2B55", "#F2C230", "#C8322B", "#EFE6D2"],
+      "materials": ["copertine dipinte", "carta da tascabile", "titoli condensati"],
+      "viewport": "Un espositore con i quattro volumi: uno di faccia, gli altri di costa.",
+      "case": "I lettori dei romanzi ci si riconoscono subito; ricerca e Phitness invece ci stanno strette.",
+      "risk": "Va contro il tuo «troppo stravagante»: il tono pulp schiaccia Agostino.",
+      "hero": "https://impeccable.style/worlds/cards/posters-covers-sleeves-pulp-rack-hero.webp"
+    },
+    {
+      "id": "challenger-forge", "label": "La forgia", "verdict": "declined",
+      "lineage": "Un fabbro al maglio", "thesis": "Ogni colpo allunga il metallo.",
+      "palette": ["#1A1A1A", "#E2571E", "#9AA0A6"], "materials": ["metallo", "scaglie"],
+      "viewport": "Barra incandescente sotto il maglio.", "risk": "Estraneo al tuo mondo.",
+      "case": "Si fonde male: nessun visitatore ci si riconosce.", "kept": "Una riga intera per ogni area."
+    },
+    {
+      "id": "challenger-cloud", "label": "La cava di nuvole", "verdict": "declined",
+      "lineage": "Un mondo surreale", "thesis": "Si tagliano blocchi di tempo atmosferico.",
+      "palette": ["#F7F9FB", "#4F8FD8", "#7B8794"], "materials": ["nuvole", "vuoti blu"],
+      "viewport": "Una parete di cumuli tagliata.", "risk": "Stravagante.",
+      "case": "Si fonde male: distrae dai contenuti.", "kept": "Il blu possiede intere regioni."
+    },
+    {
+      "id": "challenger-terminal", "label": "Il terminale a fosfori", "verdict": "declined",
+      "lineage": "Un terminale verde di notte", "thesis": "Il sito come trascrizione continua.",
+      "palette": ["#0B0F0B", "#39FF6A"], "materials": ["vetro curvo", "scanline"],
+      "viewport": "Un cursore che lampeggia.", "risk": "Aria da startup tecnologica.",
+      "case": "Si fonde male: freddo e tecnologico, l'opposto di quello che vuoi.", "kept": "Gerarchia da posizione e corpo, senza etichette."
+    },
+    {
+      "id": "challenger-bbs", "label": "La bacheca ANSI", "verdict": "declined",
+      "lineage": "BBS degli anni '90", "thesis": "Un quartiere fatto di testo.",
+      "palette": ["#000000", "#00C8C8", "#C800C8"], "materials": ["blocchi di caratteri"],
+      "viewport": "Schermata titolo a 16 colori.", "risk": "Stravagante.",
+      "case": "Si fonde male: solo nostalgia per pochi.", "kept": "Uscite numerate."
+    }
+  ],
+  "reroll": {"registers": ["safer", "bolder"]},
+  "buildPath": {"value": "code"},
+  "canon": true,
+  "canonCard": {
+    "label": "Lo standard del genere",
+    "thesis": "Il sito d'autore come lo fanno tutti, ma eseguito benissimo.",
+    "palette": ["#FAF8F4", "#152238", "#4F7CB6"],
+    "materials": ["carta calda", "serif", "filetti"],
+    "viewport": "Foto e titolo in apertura, aree in elenco: la rifinitura 1.2 già in anteprima.",
+    "risk": "Indistinguibile da molti siti di studiosi, per scelta."
+  },
+  "steer": true
+}

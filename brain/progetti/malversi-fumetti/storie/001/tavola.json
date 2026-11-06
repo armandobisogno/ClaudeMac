@@ -1,0 +1,105 @@
+{
+ "numero": "001",
+ "titolo": "Il verbale intelligente",
+ "vignette": [
+  {
+   "img": "vignette/v1.png",
+   "testi": [
+    {
+     "tipo": "didascalia",
+     "testo": "Fossa Etrusca. Martedì.\nIl Ministero ha mandato il futuro.",
+     "x": 1.2,
+     "y": 1.5,
+     "w": 23
+    },
+    {
+     "tipo": "balloon",
+     "testo": "Dottore, fa tutto da solo! Gli racconti il fatto e lui scrive il verbale!",
+     "x": 42,
+     "y": 2,
+     "w": 40,
+     "coda": "bl"
+    }
+   ]
+  },
+  {
+   "img": "vignette/v2.png",
+   "testi": [
+    {
+     "tipo": "balloon",
+     "testo": "Tutto da solo.\nCome i guai.",
+     "x": 3,
+     "y": 5,
+     "w": 32,
+     "coda": "br"
+    }
+   ]
+  },
+  {
+   "img": "vignette/v3.png",
+   "testi": [
+    {
+     "tipo": "balloon",
+     "testo": "Signora Iannaccone, via dei Tigli. Dice che il vicino le ruba il basilico dal balcone. Da tre anni. Lo sa perché il vicino fa il pesto buono.",
+     "x": 62,
+     "y": 4,
+     "w": 36,
+     "coda": "l"
+    }
+   ]
+  },
+  {
+   "img": "vignette/v4.png",
+   "testi": [
+    {
+     "tipo": "schermo",
+     "testo": "> Segnalazione di presunto furto di materiale vegetale.\n> Rischio: BASSO. Priorità: NESSUNA.",
+     "x": 9,
+     "y": 80,
+     "w": 74
+    }
+   ]
+  },
+  {
+   "img": "vignette/v5.png",
+   "testi": [
+    {
+     "tipo": "balloon",
+     "testo": "Ha capito il furto. Non ha capito il pesto.",
+     "x": 40,
+     "y": 2,
+     "w": 30,
+     "coda": "bl"
+    },
+    {
+     "tipo": "balloon",
+     "testo": "Dottore, è una macchina.",
+     "x": 67,
+     "y": 70,
+     "w": 30,
+     "coda": "tc"
+    }
+   ]
+  },
+  {
+   "img": "vignette/v6.png",
+   "testi": [
+    {
+     "tipo": "balloon",
+     "testo": "Appunto. La signora Iannaccone non chiedeva giustizia, Graziella. Chiedeva qualcuno che la stesse a sentire.",
+     "x": 2,
+     "y": 2,
+     "w": 48,
+     "coda": "r"
+    },
+    {
+     "tipo": "didascalia",
+     "testo": "«I got to keep moving, blues falling down like hail» — Robert Johnson",
+     "x": 2,
+     "y": 81,
+     "w": 58
+    }
+   ]
+  }
+ ]
+}

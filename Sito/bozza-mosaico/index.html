@@ -1,0 +1,236 @@
+<title>Armando Bisogno · Mosaico</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&family=Quicksand:wght@300;400;500&display=swap">
+<style>
+/* Layout: pagina bianca, nome spaziato in testa, menu centrato con separatori verticali; home = solo mosaico di immagini, pagine interne = colonna di testo giustificato */
+:root{
+  --bg:#FFFFFF;
+  --ink:#141518;
+  --ink-soft:#4A4F58;
+  --accent:#4F7CB6;
+  --accent-ink:#375C8F;
+  --line:#D9DEE6;
+  --pad:#F1F3F6;
+  --veil:rgba(20,24,32,.62);
+  --on-veil:#FFFFFF;
+  --btn-dark:#141518;
+  --on-btn:#FFFFFF;
+  --f-name:"Montserrat","Helvetica Neue",Arial,sans-serif;
+  --f-body:"Quicksand","Avenir Next","Helvetica Neue",Arial,sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#121417;--ink:#ECEEF1;--ink-soft:#A9B0BB;--accent:#8DB0E0;--accent-ink:#A9C4EA;--line:#2C3138;--pad:#E9ECF0;--veil:rgba(8,10,14,.7);--btn-dark:#ECEEF1;--on-btn:#121417;color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#121417;--ink:#ECEEF1;--ink-soft:#A9B0BB;--accent:#8DB0E0;--accent-ink:#A9C4EA;--line:#2C3138;--pad:#E9ECF0;--veil:rgba(8,10,14,.7);--btn-dark:#ECEEF1;--on-btn:#121417;color-scheme:dark}
+
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-weight:400;font-size:15px;line-height:1.75;padding-inline:clamp(16px,5vw,64px);padding-block:0;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+
+/* Testata */
+.top{max-width:1180px;margin-inline:auto;padding-block:22px 0}
+.name{font-family:var(--f-name);font-weight:600;font-size:clamp(17px,2.1vw,23px);letter-spacing:.42em;text-decoration:none;display:inline-block;padding-inline-start:clamp(0px,1.5vw,16px);white-space:nowrap}
+.nav{display:flex;flex-wrap:wrap;justify-content:center;margin-block:46px 0;padding:0;list-style:none}
+.nav li{display:flex;align-items:center}
+.nav li+li::before{content:"";width:1px;height:22px;background:var(--accent);margin-inline:clamp(10px,3.4vw,44px)}
+.nav a{text-decoration:none;font-size:14.5px;color:var(--ink);padding-block:4px;transition:color .2s}
+.nav a:hover,.nav a[aria-current="page"]{color:var(--accent-ink)}
+
+main{max-width:1180px;margin-inline:auto;padding-block:clamp(48px,9vw,130px) 40px}
+section[data-page]{animation:in .5s ease both}
+@keyframes in{from{opacity:.0001}to{opacity:1}}
+@media (prefers-reduced-motion:reduce){section[data-page]{animation:none}.tile img{transition:none!important}}
+
+/* Home: mosaico */
+.spread{display:flex;justify-content:center;align-items:flex-end;gap:clamp(12px,3vw,40px);margin-block-end:18px;flex-wrap:wrap}
+.spread .tile{flex:0 1 auto}
+.spread .tile.w{width:min(560px,100%)}
+.spread .tile.n{width:min(210px,44%)}
+.wall{columns:3 280px;column-gap:18px}
+.wall .tile{break-inside:avoid;margin-block-end:18px}
+.tile{display:block;position:relative;overflow:hidden;text-decoration:none;color:var(--on-veil)}
+.tile img{display:block;width:100%;height:auto;transition:transform .7s cubic-bezier(.2,.7,.2,1)}
+.tile.pad{background:var(--pad);padding:12% 18%}
+.tile figcaption{position:absolute;inset:auto 0 0 0;padding:14px 16px;background:var(--veil);font-size:13px;line-height:1.4;letter-spacing:.02em;transform:translateY(101%);transition:transform .35s ease}
+.tile figcaption b{display:block;font-family:var(--f-name);font-weight:600;font-size:10.5px;letter-spacing:.24em;text-transform:uppercase;margin-block-end:3px;opacity:.85}
+.tile:hover img,.tile:focus-visible img{transform:scale(1.03)}
+.tile:hover figcaption,.tile:focus-visible figcaption{transform:none}
+@media (hover:none){.tile figcaption{transform:none;position:static;background:none;color:var(--ink-soft);padding:6px 0 0}.tile figcaption b{color:var(--accent-ink)}}
+
+/* Pagine interne */
+.page{max-width:790px;margin-inline:auto}
+.page h1{font-weight:300;font-size:clamp(26px,3.4vw,34px);line-height:1.25;margin:0 0 18px;padding-inline-start:clamp(0px,5vw,44px);text-wrap:balance;letter-spacing:.01em}
+.page p{text-align:justify;hyphens:auto;margin:0 0 1.35em;letter-spacing:.015em}
+.page h2{font-family:var(--f-name);font-weight:600;font-size:12px;letter-spacing:.3em;text-transform:uppercase;margin:3.2em 0 1.2em;color:var(--accent-ink)}
+.btns{display:flex;flex-wrap:wrap;gap:14px 28px;margin-block:2.2em 0;padding-inline-start:10px}
+.btn{display:inline-block;padding:7px 25px;text-decoration:none;font-size:14px;background:var(--btn-dark);color:var(--on-btn);transition:opacity .2s}
+.btn.alt{background:var(--accent);color:#fff}
+.btn:hover{opacity:.82}
+.mail{font-family:var(--f-name);font-weight:500;letter-spacing:.08em;user-select:all}
+
+/* Elenchi con copertina */
+.works{display:grid;gap:34px;margin:0;padding:0;list-style:none}
+.work{display:grid;grid-template-columns:110px 1fr;gap:26px;align-items:start}
+.work>div{min-width:0}
+.work img{width:110px;height:auto;display:block}
+.work h3{font-weight:500;font-size:17px;margin:0 0 2px;letter-spacing:.01em}
+.work .meta{font-size:12.5px;color:var(--ink-soft);letter-spacing:.06em;margin:0 0 6px}
+.work p{margin:0 0 6px}
+.work a.more{font-size:13.5px;color:var(--accent-ink);text-decoration:none;border-bottom:1px solid currentColor}
+@media (max-width:520px){.work{grid-template-columns:76px 1fr;gap:16px}.work img{width:76px}}
+
+.portrait{float:right;width:min(240px,42%);margin:6px 0 16px 28px}
+.portrait img{display:block;width:100%;filter:grayscale(1)}
+@media (max-width:560px){.portrait{float:none;width:100%;margin:0 0 20px}}
+
+footer{max-width:1180px;margin-inline:auto;padding-block:50px 40px;text-align:center;font-size:13px;letter-spacing:.06em;color:var(--ink-soft)}
+footer p{margin:0}
+.note{display:block;margin-top:8px;font-size:11.5px;opacity:.75}
+
+@media (max-width:700px){
+  .nav{margin-block-start:28px;gap:6px 0}
+  .nav li+li::before{height:16px;margin-inline:10px}
+  .nav a{font-size:13.5px}
+  .name{letter-spacing:.3em}
+}
+</style>
+
+<header class="top">
+  <a class="name" href="#home">Armando Bisogno</a>
+  <nav aria-label="Sezioni">
+    <ul class="nav">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#ricerca">Ricerca</a></li>
+      <li><a href="#ia">IA e nuove tecnologie</a></li>
+      <li><a href="#romanzi">Romanzi</a></li>
+      <li><a href="#phitness">Phitness</a></li>
+      <li><a href="#profilo">Profilo</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+<!-- HOME -->
+<section data-page="home" aria-label="Home">
+  <div class="spread">
+    <a class="tile w" href="#romanzi"><figure style="margin:0"><img src="img/libro-romanzi.png" alt="Terapie e Mosaici, i romanzi del commissario Malversi"><figcaption><b>Romanzi</b>Terapie e Mosaici, i gialli del commissario Malversi</figcaption></figure></a>
+    <a class="tile n" href="#ricerca"><figure style="margin:0"><img src="img/cover-fragile.jpg" alt="Il racconto fragile"><figcaption><b>Ricerca</b>Il racconto fragile, ad accesso aperto</figcaption></figure></a>
+  </div>
+  <div class="wall">
+    <a class="tile" href="#phitness"><figure style="margin:0"><img src="img/armando-palco.jpg" alt="Armando Bisogno sul palco"><figcaption><b>Phitness</b>Filosofia per aziende e comunità</figcaption></figure></a>
+    <a class="tile pad" href="#ricerca"><figure style="margin:0"><img src="img/libro-eterno.png" alt="L'eterno assente"><figcaption><b>Ricerca</b>L'eterno assente · 2021</figcaption></figure></a>
+    <a class="tile" href="#ia"><figure style="margin:0"><img src="img/uso-ia-mappa-dispac.jpg" alt="Mappa DiSPaC"><figcaption><b>Con l'IA</b>Mappa DiSPaC</figcaption></figure></a>
+    <a class="tile" href="#ia"><figure style="margin:0"><img src="img/finzioni-redeo.jpg" alt="Redeo ad me, dalle Finzioni"><figcaption><b>Finzioni</b>Testi scritti dall'IA</figcaption></figure></a>
+    <a class="tile pad" href="#ia"><figure style="margin:0"><img src="img/logo-mp.png" alt="Macchine Pensanti"><figcaption><b>Newsletter</b>Macchine Pensanti</figcaption></figure></a>
+    <a class="tile" href="#phitness"><figure style="margin:0"><img src="img/lez-socrate.jpg" alt="Un esercizio di Phitness"><figcaption><b>Phitness</b>Un allenamento per il pensiero</figcaption></figure></a>
+    <a class="tile pad" href="#ricerca"><figure style="margin:0"><img src="img/cover-ermenetica.jpg" alt="Ermenetica"><figcaption><b>Manifesto</b>Ermenetica, per le Humanities di oggi</figcaption></figure></a>
+    <a class="tile" href="#ia"><figure style="margin:0"><img src="img/yt-vSJJ7Qz-0Ok.jpg" alt="Conversazione con Raffaele Gaito"><figcaption><b>Interviste</b>Due conversazioni con Raffaele Gaito</figcaption></figure></a>
+    <a class="tile pad" href="#ricerca"><figure style="margin:0"><img src="img/libro-demagistro.png" alt="Il De magistro di Agostino"><figcaption><b>Ricerca</b>Il De magistro di Agostino · 2014</figcaption></figure></a>
+    <a class="tile" href="#ia"><figure style="margin:0"><img src="img/finzioni-ermete-metello.jpg" alt="Ermete Metello, dalle Finzioni"><figcaption><b>Finzioni</b>Ermete Metello</figcaption></figure></a>
+    <a class="tile" href="#phitness"><figure style="margin:0"><img src="img/lez-vermeer.jpg" alt="Un esercizio di Phitness"><figcaption><b>Phitness</b>Leggere con attenzione</figcaption></figure></a>
+    <a class="tile pad" href="#ia"><figure style="margin:0"><img src="img/libro-uif.png" alt="Una intelligenza fantastica"><figcaption><b>Libro aperto</b>Una intelligenza fantastica</figcaption></figure></a>
+    <a class="tile" href="#profilo"><figure style="margin:0"><img src="img/armando.jpg" alt="Ritratto di Armando Bisogno"><figcaption><b>Profilo</b>Studioso, docente, life addicted</figcaption></figure></a>
+    <a class="tile pad" href="#ricerca"><figure style="margin:0"><img src="img/libro-sententiae.png" alt="Sententiae philosophorum"><figcaption><b>Ricerca</b>Sententiae philosophorum · 2011</figcaption></figure></a>
+    <a class="tile" href="#ia"><figure style="margin:0"><img src="img/logo-mparl.jpg" alt="Macchine Parlanti"><figcaption><b>Micropodcast</b>Macchine Parlanti</figcaption></figure></a>
+    <a class="tile" href="#phitness"><figure style="margin:0"><img src="img/lez-tommaso.jpg" alt="Un esercizio di Phitness"><figcaption><b>Phitness</b>Scrivere dopo aver pensato</figcaption></figure></a>
+    <a class="tile" href="#ia"><figure style="margin:0"><img src="img/finzioni-tre-finestre.jpg" alt="Tre finestre, dalle Finzioni"><figcaption><b>Finzioni</b>Tre finestre</figcaption></figure></a>
+    <a class="tile pad" href="#ricerca"><figure style="margin:0"><img src="img/libro-carolingio.png" alt="Il metodo carolingio"><figcaption><b>Ricerca</b>Il metodo carolingio · 2008</figcaption></figure></a>
+    <a class="tile" href="#ia"><figure style="margin:0"><img src="img/yt-4VpAuIZK5Rg.jpg" alt="Conversazione con Raffaele Gaito"><figcaption><b>Interviste</b>Verificare se un testo è umano è inutile</figcaption></figure></a>
+    <a class="tile" href="#ia"><figure style="margin:0"><img src="img/finzioni-epistula.jpg" alt="Epistula de contagio, dalle Finzioni"><figcaption><b>Finzioni</b>Epistula de contagio</figcaption></figure></a>
+    <a class="tile" href="#phitness"><figure style="margin:0"><img src="img/lez-cioccolataia.jpg" alt="Un esercizio di Phitness"><figcaption><b>Phitness</b>Zero performance, solo esercizio</figcaption></figure></a>
+  </div>
+</section>
+
+<!-- RICERCA -->
+<section data-page="ricerca" class="page" hidden>
+  <h1>Leggere il Medioevo, ripensare le Humanities</h1>
+  <p>Dalla tesi sul libero arbitrio in Giovanni Scoto al dottorato sull'età carolingia, fino ad Agostino. Sullo sfondo, la filosofia del linguaggio, il rapporto tra politica, religione e filosofia, quello tra discipline umanistiche e mondo contemporaneo.</p>
+  <h2>Cinque libri sul Medioevo</h2>
+  <ul class="works">
+    <li class="work"><img src="img/cover-fragile.jpg" alt=""><div><h3>Il racconto fragile</h3><p class="meta">Accesso aperto · Zenodo</p><p>Le <i>Confessioni</i> come racconto di una fragilità esposta. Una versione più breve, in attesa della versione più ampia, che uscirà nel 2027, anch'essa ad accesso aperto.</p><a class="more" href="https://doi.org/10.5281/zenodo.17847701" target="_blank" rel="noopener">Scaricalo gratis su Zenodo</a></div></li>
+    <li class="work"><img src="img/libro-eterno.png" alt=""><div><h3>L'eterno assente</h3><p class="meta">2021 · Città Nuova · Institutiones</p><p>Il percorso intellettuale di Agostino letto come una ricerca della verità.</p><a class="more" href="https://edizionicittanuova.it/autori/armando-bisogno/" target="_blank" rel="noopener">Città Nuova</a></div></li>
+    <li class="work"><img src="img/libro-demagistro.png" alt=""><div><h3>Il De magistro di Agostino</h3><p class="meta">2014 · Città Nuova · Traditiones</p><p>Traduzione commentata. Quanto le parole servono a farsi capire, e quanto diventano un ostacolo.</p><a class="more" href="https://edizionicittanuova.it/autori/armando-bisogno/" target="_blank" rel="noopener">Città Nuova</a></div></li>
+    <li class="work"><img src="img/libro-sententiae.png" alt=""><div><h3>Sententiae philosophorum</h3><p class="meta">2011 · Città Nuova · Collationes</p><p>Che cos'è la storia della filosofia? Perché gli altomedievali leggevano i pensatori del passato, e con quale metodo.</p><a class="more" href="https://edizionicittanuova.it/autori/armando-bisogno/" target="_blank" rel="noopener">Città Nuova</a></div></li>
+    <li class="work"><img src="img/libro-carolingio.png" alt=""><div><h3>Il metodo carolingio</h3><p class="meta">2008 · Brepols · Nutrix</p><p>I filosofi e i teologi delle corti carolinge pensati come un unico pensatore, con un'unità di intenzione e di metodo.</p><a class="more" href="https://www.brepols.net/products/IS-9782503528625-1" target="_blank" rel="noopener">Brepols</a></div></li>
+  </ul>
+  <h2>Un manifesto per le Humanities di oggi</h2>
+  <ul class="works">
+    <li class="work"><img src="img/cover-ermenetica.jpg" alt=""><div><h3>Ermenetica</h3><p class="meta">Accesso aperto · Zenodo</p><p><i>Ermenetica</i> è un neologismo: ermeneutica più etica. Oggi chi si occupa di discipline umanistiche non può interpretare senza assumersi una responsabilità. Il nostro tempo ha bisogno di sguardi umanistici, purché chi li offre non si nasconda dietro la presunta oggettività dei numeri e rivendichi il proprio ruolo di interprete posizionato, con la sua storia intellettuale e culturale.</p><a class="more" href="https://doi.org/10.5281/zenodo.17997307" target="_blank" rel="noopener">Scaricalo gratis su Zenodo</a></div></li>
+  </ul>
+</section>
+
+<!-- IA -->
+<section data-page="ia" class="page" hidden>
+  <h1>Le macchine, lette da un umanista</h1>
+  <p>Una newsletter, un podcast e un libro aperto. Tre modi di fare la stessa cosa: leggere le nuove tecnologie con gli strumenti delle Humanities.</p>
+  <ul class="works" style="margin-top:2.4em">
+    <li class="work"><img src="img/logo-mp.png" alt=""><div><h3>Macchine Pensanti</h3><p class="meta">Newsletter</p><p>Una lettura umanistica delle nuove tecnologie e in particolare dell'intelligenza artificiale.</p><a class="more" href="https://armandobisogno.substack.com/" target="_blank" rel="noopener">Iscriviti su Substack</a></div></li>
+    <li class="work"><img src="img/logo-mparl.jpg" alt=""><div><h3>Macchine Parlanti</h3><p class="meta">Micropodcast</p><p>Puntate brevi sulle nuove tecnologie e sulla cultura contemporanea.</p><a class="more" href="https://macchineparlanti.substack.com/" target="_blank" rel="noopener">Ascolta</a></div></li>
+    <li class="work"><img src="img/libro-uif.png" alt=""><div><h3>Una intelligenza fantastica</h3><p class="meta">Libro aperto</p><p>Otto riflessioni aperte sull'intelligenza artificiale, lette con gli occhi di uno studioso di filosofia. Un libro che cresce con gli inviti delle comunità che vogliono discuterne.</p><a class="more" href="https://armandobisogno.it/una-intelligenza-fantastica/" target="_blank" rel="noopener">Scaricalo gratis</a></div></li>
+  </ul>
+  <h2>Due conversazioni con Raffaele Gaito</h2>
+  <ul class="works">
+    <li class="work"><img src="img/yt-vSJJ7Qz-0Ok.jpg" alt=""><div><h3>Se l'IA può replicare la nostra creatività, che cosa ci rimane?</h3><p class="meta">Intervista 1 · YouTube</p><a class="more" href="https://www.youtube.com/watch?v=vSJJ7Qz-0Ok" target="_blank" rel="noopener">Guarda il video</a></div></li>
+    <li class="work"><img src="img/yt-4VpAuIZK5Rg.jpg" alt=""><div><h3>Verificare se un testo è umano è inutile</h3><p class="meta">Intervista 2 · YouTube</p><a class="more" href="https://www.youtube.com/watch?v=4VpAuIZK5Rg" target="_blank" rel="noopener">Guarda il video</a></div></li>
+  </ul>
+  <h2>L'IA nel mio lavoro</h2>
+  <ul class="works">
+    <li class="work"><img src="img/uso-ia-mappa-dispac.jpg" alt=""><div><h3>Mappa DiSPaC</h3><p class="meta">Mappa interattiva · con Claude</p><p>La mappa del Dipartimento di Scienze del Patrimonio Culturale dell'Università di Salerno: docenti, ambiti di ricerca, corsi e i temi che li collegano, ricavati dal catalogo delle pubblicazioni.</p><a class="more" href="https://armandobisogno.it/mappa-dispac/" target="_blank" rel="noopener">Apri la mappa</a></div></li>
+    <li class="work"><img src="img/finzioni-redeo.jpg" alt=""><div><h3>Finzioni</h3><p class="meta">Testi scritti dall'IA</p><p>Una raccolta di esperimenti e <i>divertissement</i> letterari e di ricerca, scritti integralmente o in massima parte dall'IA.</p><a class="more" href="https://armandobisogno.it/finzioni/" target="_blank" rel="noopener">Entra in Finzioni</a></div></li>
+  </ul>
+</section>
+
+<!-- ROMANZI -->
+<section data-page="romanzi" class="page" hidden>
+  <h1>I gialli del commissario Malversi</h1>
+  <p><i>Terapie</i> e <i>Mosaici</i> sono due romanzi ambientati a Fossa Etrusca, città immaginaria di provincia. Le indagini di Malversi passano attraverso le pagine di un diario terapeutico, tra istituzioni, tracce e blues.</p>
+  <img src="img/libro-romanzi.png" alt="Terapie e Mosaici" style="display:block;width:min(560px,100%);margin:2.2em auto 0">
+  <div class="btns"><a class="btn" href="https://detomieditore.it/products/terapie-mosaici-collezione" target="_blank" rel="noopener">Acquista su De Tomi</a></div>
+</section>
+
+<!-- PHITNESS -->
+<section data-page="phitness" class="page" hidden>
+  <h1>Un allenamento per il pensiero</h1>
+  <p>Phitness è un <i>fitness</i> filosofico. Porta nella tua azienda o nella tua comunità un esercizio guidato per recuperare tre capacità che il tempo di oggi consuma: concentrarsi su un problema, leggere con attenzione, scrivere dopo aver pensato.</p>
+  <h2>Tre esercizi, sempre in quest'ordine</h2>
+  <p><b>Esercizio filosofico.</b> Un problema della storia della filosofia, presentato in modo chiaro, per allenare la mente a restare focalizzata su un solo tema, per approfondirlo e discuterlo insieme.</p>
+  <p><b>Esercizio di lettura.</b> Uno o più testi, letti in silenzio. Concentrarsi sulle parole per pe(n)sarne il significato. Poi ci si confronta insieme: chi vuole racconta che cosa ha trovato in quelle pagine.</p>
+  <p><b>Esercizio di scrittura.</b> Scrivere un testo su un argomento dato al momento. Alla fine della sessione, chi vuole può condividere il suo testo in forma anonima e ricevere un <i>feedback</i>. Nessuno saprà chi ha scritto cosa. Nemmeno io.</p>
+  <h2>Zero performance, solo esercizio</h2>
+  <p>Phitness non è una gara né una valutazione. Nessuno viene interrogato, nessuno deve scrivere più o meglio dei colleghi. È un tempo restituito al pensiero, con i ritmi di ciascuno.</p>
+  <div class="btns"><a class="btn" href="#profilo">Richiedi un incontro</a><a class="btn alt" href="https://phitness.it" target="_blank" rel="noopener">phitness.it</a></div>
+</section>
+
+<!-- PROFILO -->
+<section data-page="profilo" class="page" hidden>
+  <h1>Armando Bisogno</h1>
+  <figure class="portrait"><img src="img/armando.jpg" alt="Ritratto di Armando Bisogno"></figure>
+  <p>Studioso, docente, <i>life addicted</i>. Laurea in Storia della filosofia medievale all'Università di Napoli Federico II, con Valeria Sorge, sul libero arbitrio in Giovanni Scoto. Dottorato all'Università di Salerno con Giulio d'Onofrio, sull'età carolingia.</p>
+  <p>Oggi insegno Storia della filosofia medievale all'Università di Salerno, dove sono anche Direttore del Dipartimento di Scienze del Patrimonio Culturale.</p>
+  <p>Studio Agostino da trent'anni. Scrivo di intelligenza artificiale, racconto storie di provincia e porto la filosofia fuori dall'aula.</p>
+  <p>Per inviti, conferenze e collaborazioni: <span class="mail">arbisogno@unisa.it</span></p>
+  <div class="btns" style="clear:both"><a class="btn" href="https://armandobisogno.substack.com/" target="_blank" rel="noopener">Macchine Pensanti</a><a class="btn alt" href="https://www.unisa.it/" target="_blank" rel="noopener">Università di Salerno</a></div>
+</section>
+</main>
+
+<footer>
+  <p>· Armando Bisogno · Filosofia, scrittura e nuove tecnologie ·</p>
+  <span class="note">Bozza di impaginazione · non pubblicata</span>
+</footer>
+
+<script>
+(function(){
+  var pages=["home","ricerca","ia","romanzi","phitness","profilo"];
+  function show(){
+    var id=(location.hash||"#home").slice(1); if(pages.indexOf(id)<0) id="home";
+    document.querySelectorAll("section[data-page]").forEach(function(s){s.hidden=s.dataset.page!==id});
+    document.querySelectorAll(".nav a").forEach(function(a){
+      if(a.getAttribute("href")==="#"+id) a.setAttribute("aria-current","page"); else a.removeAttribute("aria-current");
+    });
+    window.scrollTo(0,0);
+  }
+  window.addEventListener("hashchange",show); show();
+})();
+</script>

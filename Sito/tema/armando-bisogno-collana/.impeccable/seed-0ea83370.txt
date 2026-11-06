@@ -1,0 +1,129 @@
+DIRECTION CONCEPT SEED (key: 0ea83370; mode: experience; source: api; approved pool: c3b204a1eed6; 306/564 human-approved; rerun with --scope direction --mode experience --from 0ea83370 --candidate-count 7 to reproduce this roll against this catalog revision)
+ASSIGNED INDEX: 3
+  After ordering the grounded directions by resonance, build candidate
+  3 of your own grounded list; the assignment never points at a
+  challenger. The assignment is the roll, not a suggestion: your top-ranked
+  direction is what every run would ship, so the script decides which grounded
+  direction gets built. Each direction joins a durable visual system to a
+  concrete expression for the requested first surface, decided as one. It must
+  survive the current task plus navigation, quiet and dense content,
+  interaction and state, and a substantially different future surface. In an
+  attended run, present the assigned direction fully committed and offer
+  re-roll. You may add ONE card for your top-ranked grounded candidate when
+  it is not the assigned direction, kicker IMPECCABLE’S PICK, with an honest risk line
+  naming its familiarity; one pick card, never a ranked lineup, and the pick
+  never takes the lead position. When the assignment IS your top candidate,
+  there is no pick card. Re-roll yourself only
+  on named factual grounds, when the assignment cannot carry the product's
+  truth or task; taste is never grounds.
+  The assignment exists to refuse the model's ranking rut, never to outrank
+  the user or the brief. Never expose assignment metadata in user-facing labels.
+CHALLENGERS:
+  1. a white-hot iron bar drawn under a power hammer, where each blow sends black scale outward and lengthens the metal with brutal clarity
+     SOURCE ID: metal-forging-patina-blacksmith-scale-shower
+     CREATIVE SPARK: The hammer falls; a halo of black scale leaps from orange iron, and the square billet becomes visibly longer in a single strike.
+     SYSTEM GRAMMAR:
+       - Palette/material: forge-dark ground with anvil-gray steel, the workpiece graded from black through cherry to white heat, scale flecks as black particle texture
+       - Type/composition: heavy stenciled industrial caps with tabular force numerals, one blow per full-width row, measurements ruled like a smith's chalk marks
+       - Topology/navigation: Move through heats and blows while cross-section, length, and force remain registered.
+       - Controls/state: Heat, strike, rotate, and measure with cold, forging-hot, scaling, distorted, and normalized states.
+       - Responsive/motion: Present one blow per deliberate step and replace impact animation with before-after geometry and force values.
+     WEB LEVERAGE: Fast local deformation and particle shedding can be bounded to user-triggered moments while measured state stays in the DOM.
+     QUALITY BAR: board https://impeccable.style/worlds/cards/metal-forging-patina-blacksmith-scale-shower.webp · hero https://impeccable.style/worlds/cards/metal-forging-patina-blacksmith-scale-shower-hero.webp
+  2. a cloud quarry, where workers cut blocks of weather, reveal blue voids, and assemble temporary buildings that rain from their own walls
+     SOURCE ID: dream-surreal-impossible-worlds-cloud-quarry
+     CREATIVE SPARK: A silver saw opens a cumulus cliff, a cube of thunder rolls onto a crane, and a pale fog arch is set over the valley before dissolving into rain.
+     SYSTEM GRAMMAR:
+       - Palette/material: cumulus white block mass as ground, cut faces opening onto sky blue voids, thunder gray for heavy stock, one silver saw line as the active edge
+       - Type/composition: quarry-stencil industrial caps on tally boards, measurements in mono, composition stacked like cut blocks with deep blue gaps between sections
+       - Topology/navigation: Explore cloud strata through density, weather content, cut face, transport path, and atmospheric structure.
+       - Controls/state: Cut, lift, join, warm, and release cloud blocks while their weather remains active.
+       - Responsive/motion: Use sectional cloud blocks on phones and replace vapor motion with textured state changes.
+     WEB LEVERAGE: Volumetric rendering, procedural weather, and direct constructive gestures let users build transient architecture with predictable dissolution.
+     QUALITY BAR: board https://impeccable.style/worlds/cards/dream-surreal-impossible-worlds-cloud-quarry.webp · hero https://impeccable.style/worlds/cards/dream-surreal-impossible-worlds-cloud-quarry-hero.webp
+  3. a green-phosphor terminal in a midnight machine room, where a blinking cursor, scanline glow, and afterimage trails make text feel alive on glass
+     SOURCE ID: signals-instruments-phosphor-terminal-midnight
+     CREATIVE SPARK: The cursor breathes; each typed line lands with a faint bloom and its ghost lingers a half-second after the scroll.
+     SYSTEM GRAMMAR:
+       - Palette/material: P1 phosphor green on near-black curved glass, dimmer green afterimage for history, bright bloom for the cursor line; the tube's dark ground holds all
+       - Type/composition: one monospaced bitmap face in a fixed 80-column field, no other type exists; hierarchy is made of indentation, case, and full-width rules
+       - Topology/navigation: the surface is one continuous scrolling transcript; place is position in the conversation's history.
+       - Controls/state: input is a first-class typed dialogue; system states print themselves rather than appearing as chrome.
+       - Responsive/motion: phosphor bloom and trails scale with capability
+     WEB LEVERAGE: A live transcript log with CSS phosphor glow, searchable history, and full keyboard-first operation.
+     QUALITY BAR: board https://impeccable.style/worlds/cards/signals-instruments-phosphor-terminal-midnight.webp · hero https://impeccable.style/worlds/cards/signals-instruments-phosphor-terminal-midnight-hero.webp
+  4. a dial-up bulletin board at 2 a.m., where ANSI title screens in sixteen colors, block-character art, and one phone line make a neighborhood out of text
+     SOURCE ID: medium-native-ansi-bbs-nightboard
+     CREATIVE SPARK: The title screen pours in line by line at modem speed, cyan on black, and being the only caller connected feels like owning the night.
+     SYSTEM GRAMMAR:
+       - Palette/material: sixteen ANSI colors on terminal black, cyan and magenta block art as chrome, blinking white on blue reserved for new mail and live presence
+       - Type/composition: CP437 block glyphs and box-drawing rules composing all chrome on an 80 by 25 cell grid, centered title art over numbered menu lines
+       - Topology/navigation: everything is a text screen with numbered exits; the character grid is the only geometry.
+       - Controls/state: presence is scarce and precious; who is online, new posts, and mail land as textmode events.
+       - Responsive/motion: the grid rescales by character cell; the pour-in reveal respects
+     WEB LEVERAGE: A true character-grid renderer with line-by-line streamed arrival and complete keyboard operation.
+     QUALITY BAR: board https://impeccable.style/worlds/cards/medium-native-ansi-bbs-nightboard.webp · hero https://impeccable.style/worlds/cards/medium-native-ansi-bbs-nightboard-hero.webp
+  5. a pulp paperback rack, lurid painted covers jostling spine-out and face-out, each promising doom in three tiers of breathless cover lines
+     SOURCE ID: posters-covers-sleeves-pulp-rack
+     CREATIVE SPARK: In a drugstore corner the wire rack creaks around, and every turn faces out another painted blonde, another smoking gun, another promise that this one ends badly.
+     SYSTEM GRAMMAR:
+       - Palette/material: night-blue painted scenes under taxi yellow and lipstick red cover lines, cheap ivory pulp stock as ground, red reserved for the chosen cover
+       - Type/composition: brush script over condensed gothic caps, cover lines breaking into italics for the promise of doom, the painting always owning the center
+       - Topology/navigation: a wire rack of pockets, most items show spines and chosen ones turn face-out, browsing is spinning tiers rather than scanning lists
+       - Controls/state: attention promotes a spine to a full painted cover, the three-tier cover-line stack ranks hook, title, and dread in fixed positions
+       - Responsive/motion: narrow widths show one face-out and a fan of spines, wide shows the whole carousel; motion is the rack's squeaky spin
+     WEB LEVERAGE: 3D CSS transforms spin the rack's tiers, with scroll-snap landing each pocket face-out.
+     QUALITY BAR: board https://impeccable.style/worlds/cards/posters-covers-sleeves-pulp-rack.webp · hero https://impeccable.style/worlds/cards/posters-covers-sleeves-pulp-rack-hero.webp
+  6. a well-traveled passport, where visa plates, entry stamps, and security paper accumulate into an involuntary autobiography of borders
+     SOURCE ID: vernacular-ephemera-well-traveled-passport
+     CREATIVE SPARK: No two stamps align: purple ovals, faded dates, a full-page visa with a hologram bird, and your face getting older near the front.
+     SYSTEM GRAMMAR:
+       - Palette/material: burgundy cover with a gold-blocked crest, guilloché-tinted security pages in rose and pale green, each border's stamp ink accumulating as the record
+       - Type/composition: OCR-B machine lines anchoring the data page, engraved capitals on the cover, stamps landing at any angle over a ruled page grid that stays official
+       - Topology/navigation: chronological pages hold accumulated records; the document itself is identity plus history.
+       - Controls/state: each grant occupies real page space with an official mark; renewals open a fresh booklet that references the old.
+       - Responsive/motion: spreads become single pages on phones; new stamps land with one press, then stay still forever.
+     WEB LEVERAGE: Verifiable stamp permalinks and printable pages make the record portable, with offline access to the booklet.
+     QUALITY BAR: board https://impeccable.style/worlds/cards/vernacular-ephemera-well-traveled-passport.webp · hero https://impeccable.style/worlds/cards/vernacular-ephemera-well-traveled-passport-hero.webp
+Fuse each challenger before judging it: the challenger supplies the form
+  and its system grammar, the product supplies every fact, and clarity wins
+  conflicts. Weigh the fused result against the assigned direction on exactly
+  two axes, audience identification and product clarity. Losing to strong
+  grounded material is a valid outcome; beating a thin or tool-monoculture
+  list is the point. A fused challenger that wins both axes becomes the build.
+  Close the weighing with a verdict per challenger, decided before any
+  borrowing is considered: wins (beats the assigned direction on both axes),
+  competitive (holds one axis), or declined (loses both). A declined
+  challenger is not spent: name the one discipline of its system the assigned
+  direction lacks, and raise the assigned direction to match before
+  presenting it. A donation transfers ambition and system discipline, never
+  the challenger's clothes; one world owns the page. Write each raise as its
+  own named line on the presented direction, and carry every verdict, kept
+  line, and raise into the decision page payload.
+When you can view images, open the QUALITY BAR board and hero for any
+challenger you weigh seriously and for the world you build. They exist as a
+craft bar, the finish level and commitment the build is expected to reach,
+never as a mockup to copy; your surface serves this product, not that render.
+PRODUCT.md and explicit incumbent brand commitments constrain every direction.
+The seed never chooses exact colors, fonts, tokens, or a user preference, and
+it never permits the world and first surface to be selected independently.
+The CREATIVE SPARK is a complete visual system, not a theme or decorative
+reference. Translate every supplied system rule into the product: palette and
+material, type and composition, topology, controls and states, and adaptation.
+Keep the source's visible character, scale, rhythm, and interaction instead of
+reducing vivid grammar to generic nouns. When the source is already a credible
+interface language, commit to it across navigation, content, controls, and
+states. Otherwise keep a literal carrier only when it becomes functional.
+Ambitious motion, spatial media, or interaction is welcome when it strengthens
+the product without weakening semantics, performance, or fallback behavior.
+TELEMETRY: after the user's choice resolves, rerun this script once with
+  --kind <assigned|pick|challenger|canon> --from 0ea83370 --scope direction --mode experience,
+  adding --chosen <challenger-id> when a dealt challenger won and keeping
+  --register <safer|bolder> when the resolved round came from a steered hand.
+  One ping per resolved attended round. The ping is anonymous, the card kind
+  plus the catalog id when one won; your grounded candidates' names never
+  leave the machine, and the ping is skipped automatically when DO_NOT_TRACK
+  or IMPECCABLE_NO_TELEMETRY is set.
+A user- or brief-pinned decision beats the roll, always.
+ASSIGNED INDEX (restated for truncated readers): 3. Build candidate
+3 of your own grounded list; seed key 0ea83370.
