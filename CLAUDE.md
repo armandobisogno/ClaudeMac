@@ -4,13 +4,13 @@ Professore di Storia della filosofia medievale e Direttore del DiSPaC (Universit
 
 **Rispondi sempre in italiano**, anche nelle risposte tecniche.
 
-Questo file è condiviso tra i vari Mac, perché la cartella sta su Dropbox. La memoria di Claude (`~/.claude/projects/…/memory`) invece è **locale a ogni computer**: quello che vale ovunque va scritto qui o in `brain/`.
+Questo file è condiviso tra i vari Mac, perché la cartella sta su Dropbox. Lo stesso vale per la **memoria di Claude**, che sta in `brain/memoria/`: la cartella locale `~/.claude/projects/<chiave>/memory` è solo un link lì. Il link lo crea da solo `session_brief.py` a ogni inizio sessione, su qualunque Mac. Se su un computer trova note proprie, le mette in `brain/memoria/_da_unire/<computer>/`: in quel caso vanno unite alle schede esistenti e poi la cartella va cancellata. `brain/memoria/` è fuori da GitHub (note di direzione e salute): la sincronizza Dropbox, che ne conserva anche le versioni.
 
 ## Mappa
 
 | Cartella | Contenuto | Git |
 |---|---|---|
-| `brain/` | second brain: identità e ToV (`identita/`), scrittura MP, ricerca, progetti, strumenti (`tools/`) | sì (tranne `brain/direzione/`) |
+| `brain/` | second brain: identità e ToV (`identita/`), scrittura MP, ricerca, progetti, strumenti (`tools/`), memoria di Claude (`memoria/`) | sì (tranne `direzione/` e `memoria/`) |
 | `Direzione/` | Consigli e Giunte, Programmazione, Deleghe, Eventi e saluti, Personale, SMA 2026, Mappa Dispac | **no** |
 | `Documenti di passaggio/` («DdP») | vaschetta d'ingresso: i file arrivano qui e vanno **smistati** nelle cartelle giuste; resta fissa solo `Tirocini/` | **no** |
 | `Ricerca/` | corpus Agostino, Paper, Relazioni, Lavori in corso (*Il racconto fragile*, *L'illusione necessaria*, EUG, Forme), Biblioteca, Monografie | **no** (diritti editoriali) |
@@ -44,7 +44,7 @@ Questo file è condiviso tra i vari Mac, perché la cartella sta su Dropbox. La 
 
 - **Git**: il repo è `github.com/armandobisogno/ClaudeMac` (privato). `git_autosync.sh` fa pull, commit e push a ogni sessione. La cartella `.git` sta dentro Dropbox: evitare di lavorare su due Mac **nello stesso momento**.
 - **Mai su git** file sopra i 95 MB, audio e video, dati sanitari, dati di studenti, verbali riservati. Lo script scarta da solo i file troppo grandi; il resto lo regola `.gitignore`.
-- **Dipende dalla singola macchina** (va configurato su ognuna): token GitHub nel portachiavi, variabili d'ambiente (`PH_WP_*` per Phitness, `AB_WP_APP_PASSWORD` per il sito), timer launchd, file `brain/tools/*.local.json` e la memoria di Claude.
+- **Dipende dalla singola macchina** (va configurato su ognuna): token GitHub nel portachiavi, variabili d'ambiente (`PH_WP_*` per Phitness, `AB_WP_APP_PASSWORD` per il sito), timer launchd, file `brain/tools/*.local.json`.
 - Il percorso di Dropbox può cambiare da Mac a Mac (`~/Library/CloudStorage/Dropbox/` oppure `~/Dropbox/`). Negli script usare percorsi relativi al repo, mai assoluti.
 - Le Note vocali → Diario e le routine MP girano **in cloud** (claude.ai/code/routines), non su questo Mac.
 - Su questo Mac mancano node e LibreOffice. I .docx si generano con script Python che scrivono direttamente il formato Word (vedi `build_paper.py`); per contare le pagine si usa Word tramite osascript.

@@ -82,7 +82,49 @@ def tirocini_part():
         pass
 
 
+def memoria_part():
+    """Collega la memoria locale di Claude a brain/memoria (condivisa via Dropbox).
+
+    Claude Code tiene la memoria in ~/.claude/projects/<chiave>/memory, una per
+    computer. Qui la si trasforma in un link a brain/memoria. Se su questo Mac
+    c'era gia' una memoria propria, i file nuovi o diversi finiscono in
+    brain/memoria/_da_unire/<computer>/ e la cartella originale resta come
+    memory.bak-<data>: niente si perde.
+    """
+    import os, re as _re, shutil, socket, filecmp
+    shared = BRAIN / "memoria"
+    if not shared.is_dir():
+        return
+    roots = {os.environ.get("CLAUDE_PROJECT_DIR") or str(BRAIN.parent)}
+    roots |= {os.path.realpath(r) for r in roots}
+    for root in roots:
+        key = _re.sub(r"[^A-Za-z0-9]", "-", root)
+        mem = pathlib.Path.home() / ".claude" / "projects" / key / "memory"
+        if mem.is_symlink() and mem.resolve() == shared.resolve():
+            continue
+        mem.parent.mkdir(parents=True, exist_ok=True)
+        if mem.is_symlink():
+            mem.unlink()
+        elif mem.is_dir():
+            try:
+                nome = subprocess.run(["scutil", "--get", "LocalHostName"], capture_output=True, text=True, timeout=5).stdout.strip()
+            except Exception:
+                nome = ""
+            dest = shared / "_da_unire" / (nome or socket.gethostname().split(".")[0])
+            for f in mem.glob("*.md"):
+                g = shared / f.name
+                if not g.exists() or not filecmp.cmp(f, g, shallow=False):
+                    dest.mkdir(parents=True, exist_ok=True)
+                    shutil.copy2(f, dest / f.name)
+            mem.rename(mem.with_name("memory.bak-" + datetime.date.today().isoformat()))
+            if dest.exists():
+                print(f"🧠 Memoria: trovate note locali di questo computer, messe in {dest.relative_to(BRAIN.parent)} — da unire.")
+        mem.symlink_to(shared)
+        print("🧠 Memoria di Claude collegata a brain/memoria (condivisa tra i computer).")
+
+
 if __name__ == "__main__":
+    memoria_part()
     mp_part()
     direzione_part()
     tirocini_part()
