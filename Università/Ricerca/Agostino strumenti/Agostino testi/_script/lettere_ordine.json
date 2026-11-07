@@ -1,0 +1,5892 @@
+[
+{
+"file": "lettera_001_testo.htm",
+"label": "1",
+"id": "1",
+"tav": {
+"mitt": "Agostino",
+"dest": "Ermogeniano",
+"luogo": "Cassiciàco",
+"data": "fine del 386"
+},
+"src": "Anoz",
+"data": "386-387",
+"det": "inverno",
+"key": [
+386,
+1
+],
+"cuando": false
+},
+{
+"file": "lettera_003_testo.htm",
+"label": "3",
+"id": "3",
+"tav": {
+"mitt": "Agostino",
+"dest": "Nebridio",
+"luogo": "Cassiciàco",
+"data": "inizio del 387"
+},
+"src": "Anoz",
+"data": "387",
+"det": "gennaio o febbraio",
+"key": [
+387,
+2
+],
+"cuando": false
+},
+{
+"file": "lettera_002_testo.htm",
+"label": "2",
+"id": "2",
+"tav": {
+"mitt": "Agostino",
+"dest": "Zenobio",
+"luogo": "Cassiciàco",
+"data": "fine del 386"
+},
+"src": "Anoz",
+"data": "387",
+"det": "gennaio",
+"key": [
+387,
+3
+],
+"cuando": false
+},
+{
+"file": "lettera_004_testo.htm",
+"label": "4",
+"id": "4",
+"tav": {
+"mitt": "Agostino",
+"dest": "Nebridio",
+"luogo": "Cassiciàco",
+"data": "inizio del 387"
+},
+"src": "Anoz",
+"data": "387",
+"det": "gennaio",
+"key": [
+387,
+4
+],
+"cuando": false
+},
+{
+"file": "lettera_005_testo.htm",
+"label": "5",
+"id": "5",
+"tav": {
+"mitt": "Nebridio",
+"dest": "Agostino",
+"luogo": "?",
+"data": "388/391"
+},
+"src": "Tavola NBA",
+"data": "388/391",
+"det": "",
+"key": [
+388,
+100000
+],
+"cuando": false
+},
+{
+"file": "lettera_006_testo.htm",
+"label": "6",
+"id": "6",
+"tav": {
+"mitt": "Nebridio",
+"dest": "Agostino",
+"luogo": "?",
+"data": "388/391"
+},
+"src": "Tavola NBA",
+"data": "388/391",
+"det": "",
+"key": [
+388,
+100000
+],
+"cuando": false
+},
+{
+"file": "lettera_008_testo.htm",
+"label": "8",
+"id": "8",
+"tav": {
+"mitt": "Nebridio",
+"dest": "Agostino",
+"luogo": "Tagaste",
+"data": "388/391"
+},
+"src": "Tavola NBA",
+"data": "388/391",
+"det": "",
+"key": [
+388,
+100000
+],
+"cuando": false
+},
+{
+"file": "lettera_009_testo.htm",
+"label": "9",
+"id": "9",
+"tav": {
+"mitt": "Agostino",
+"dest": "Nebridio",
+"luogo": "?",
+"data": "388/391"
+},
+"src": "Anoz",
+"data": "389-390",
+"det": "",
+"key": [
+389,
+5
+],
+"cuando": false
+},
+{
+"file": "lettera_010_testo.htm",
+"label": "10",
+"id": "10",
+"tav": {
+"mitt": "Agostino",
+"dest": "Nebridio",
+"luogo": "Tagaste",
+"data": "388/391"
+},
+"src": "Anoz",
+"data": "389-390",
+"det": "",
+"key": [
+389,
+6
+],
+"cuando": false
+},
+{
+"file": "lettera_007_testo.htm",
+"label": "7",
+"id": "7",
+"tav": {
+"mitt": "Agostino",
+"dest": "Nebridio",
+"luogo": "Tagaste",
+"data": "388/391"
+},
+"src": "Anoz",
+"data": "389",
+"det": "inizio",
+"key": [
+389,
+7
+],
+"cuando": false
+},
+{
+"file": "lettera_017_testo.htm",
+"label": "17",
+"id": "17",
+"tav": {
+"mitt": "Agostino",
+"dest": "Massimo",
+"luogo": "Tagaste",
+"data": "390/91"
+},
+"src": "Anoz",
+"data": "390-391",
+"det": "inverno",
+"key": [
+390,
+8
+],
+"cuando": false
+},
+{
+"file": "lettera_018_testo.htm",
+"label": "18",
+"id": "18",
+"tav": {
+"mitt": "Agostino",
+"dest": "Celestino",
+"luogo": "Tagaste",
+"data": "390/91"
+},
+"src": "Anoz",
+"data": "390-391",
+"det": "inverno",
+"key": [
+390,
+9
+],
+"cuando": false
+},
+{
+"file": "lettera_019_testo.htm",
+"label": "19",
+"id": "19",
+"tav": {
+"mitt": "Agostino",
+"dest": "Gaio",
+"luogo": "Tagaste",
+"data": "390/91"
+},
+"src": "Anoz",
+"data": "390-391",
+"det": "inverno",
+"key": [
+390,
+10
+],
+"cuando": false
+},
+{
+"file": "lettera_020_testo.htm",
+"label": "20",
+"id": "20",
+"tav": {
+"mitt": "Agostino",
+"dest": "Antonino",
+"luogo": "Tagaste",
+"data": "390/91"
+},
+"src": "Anoz",
+"data": "390-391",
+"det": "inverno",
+"key": [
+390,
+11
+],
+"cuando": false
+},
+{
+"file": "lettera_011_testo.htm",
+"label": "11",
+"id": "11",
+"tav": {
+"mitt": "Agostino",
+"dest": "Nebridio",
+"luogo": "Tagaste",
+"data": "388/391"
+},
+"src": "Anoz",
+"data": "390",
+"det": "fine",
+"key": [
+390,
+12
+],
+"cuando": false
+},
+{
+"file": "lettera_012_testo.htm",
+"label": "12",
+"id": "12",
+"tav": {
+"mitt": "Agostino",
+"dest": "Nebridio",
+"luogo": "Tagaste",
+"data": "388/391"
+},
+"src": "Anoz",
+"data": "390",
+"det": "fine",
+"key": [
+390,
+13
+],
+"cuando": false
+},
+{
+"file": "lettera_013_testo.htm",
+"label": "13",
+"id": "13",
+"tav": {
+"mitt": "Agostino",
+"dest": "Nebridio",
+"luogo": "Cassiciàco",
+"data": "inizio del 387"
+},
+"src": "Anoz",
+"data": "390",
+"det": "fine",
+"key": [
+390,
+14
+],
+"cuando": false
+},
+{
+"file": "lettera_014_testo.htm",
+"label": "14",
+"id": "14",
+"tav": {
+"mitt": "Agostino",
+"dest": "Nebridio",
+"luogo": "Tagaste",
+"data": "388/391"
+},
+"src": "Anoz",
+"data": "390",
+"det": "fine",
+"key": [
+390,
+15
+],
+"cuando": false
+},
+{
+"file": "lettera_015_testo.htm",
+"label": "15",
+"id": "15",
+"tav": {
+"mitt": "Agostino",
+"dest": "Romaniano",
+"luogo": "Tagaste",
+"data": "390"
+},
+"src": "Tavola NBA",
+"data": "390",
+"det": "",
+"key": [
+390,
+100000
+],
+"cuando": false
+},
+{
+"file": "lettera_021_testo.htm",
+"label": "21",
+"id": "21",
+"tav": {
+"mitt": "Agostino",
+"dest": "Valerio",
+"luogo": "Ippona",
+"data": "poco prima: Pasqua 391"
+},
+"src": "Anoz",
+"data": "391",
+"det": "prima del 6 aprile",
+"key": [
+391,
+16
+],
+"cuando": false
+},
+{
+"file": "lettera_016_testo.htm",
+"label": "16",
+"id": "16",
+"tav": {
+"mitt": "Massimo",
+"dest": "Agostino",
+"luogo": "Madaura",
+"data": "prima del 1-III-391 ( 1 )"
+},
+"src": "Tavola NBA",
+"data": "prima del 1-III-391 ( 1 )",
+"det": "",
+"key": [
+391,
+100000
+],
+"cuando": false
+},
+{
+"file": "lettera_022_testo.htm",
+"label": "22",
+"id": "22",
+"tav": {
+"mitt": "Agostino",
+"dest": "Aurelio",
+"luogo": "Ippona",
+"data": "ca. 392 ( 2 )"
+},
+"src": "Anoz",
+"data": "verso 392",
+"det": "",
+"key": [
+392,
+17
+],
+"cuando": false
+},
+{
+"file": "lettera_023_testo.htm",
+"label": "23",
+"id": "23",
+"tav": {
+"mitt": "Agostino",
+"dest": "Massimino donatista",
+"luogo": "Ippona",
+"data": "ca. 392"
+},
+"src": "Anoz",
+"data": "verso 392",
+"det": "",
+"key": [
+392,
+18
+],
+"cuando": false
+},
+{
+"file": "lettera_308_testo.htm",
+"label": "27*",
+"id": "27*",
+"tav": {
+"mitt": "Girolamo",
+"dest": "Aurelio",
+"luogo": "Roma",
+"data": "392-393"
+},
+"src": "Tavola NBA",
+"data": "392-393",
+"det": "",
+"key": [
+392,
+100000
+],
+"cuando": false
+},
+{
+"file": "lettera_251_testo.htm",
+"label": "243",
+"id": "243",
+"tav": {
+"mitt": "Agostino",
+"dest": "Leto",
+"luogo": "Ippona",
+"data": "dopo il 395"
+},
+"src": "Anoz",
+"data": "394 o 405",
+"det": "",
+"key": [
+394,
+19
+],
+"cuando": false
+},
+{
+"file": "lettera_250_testo.htm",
+"label": "242",
+"id": "242",
+"tav": {
+"mitt": "Agostino",
+"dest": "Elpidio",
+"luogo": "Ippona",
+"data": "dopo il 395"
+},
+"src": "Anoz",
+"data": "395-430",
+"det": "",
+"key": [
+395,
+20
+],
+"cuando": false
+},
+{
+"file": "lettera_255_testo.htm",
+"label": "247",
+"id": "247",
+"tav": {
+"mitt": "Agostino",
+"dest": "Romolo",
+"luogo": "Ippona",
+"data": "dopo il 395"
+},
+"src": "Anoz",
+"data": "395-430",
+"det": "",
+"key": [
+395,
+21
+],
+"cuando": false
+},
+{
+"file": "lettera_266_testo.htm",
+"label": "257",
+"id": "257",
+"tav": {
+"mitt": "Agostino",
+"dest": "Oronzio",
+"luogo": "Ippona",
+"data": "dopo il 395"
+},
+"src": "Anoz",
+"data": "395-430",
+"det": "",
+"key": [
+395,
+22
+],
+"cuando": false
+},
+{
+"file": "lettera_026_testo.htm",
+"label": "26",
+"id": "26",
+"tav": {
+"mitt": "Agostino",
+"dest": "Licenzio",
+"luogo": "Ippona",
+"data": "394/95"
+},
+"src": "Anoz",
+"data": "395",
+"det": "15 aprile-15 maggio",
+"key": [
+395,
+23
+],
+"cuando": false
+},
+{
+"file": "lettera_027_testo.htm",
+"label": "27",
+"id": "27",
+"tav": {
+"mitt": "Agostino",
+"dest": "Paolino",
+"luogo": "Ippona",
+"data": "inizio estate 396"
+},
+"src": "Anoz",
+"data": "395",
+"det": "15 aprile-15 maggio",
+"key": [
+395,
+24
+],
+"cuando": false
+},
+{
+"file": "lettera_028_testo.htm",
+"label": "28",
+"id": "28",
+"tav": {
+"mitt": "Agostino",
+"dest": "Girolamo",
+"luogo": "Ippona",
+"data": "fine 394/inizio 395 ( 4 )"
+},
+"src": "Anoz",
+"data": "395",
+"det": "prob. primavera",
+"key": [
+395,
+25
+],
+"cuando": false
+},
+{
+"file": "lettera_029_testo.htm",
+"label": "29",
+"id": "29",
+"tav": {
+"mitt": "Agostino",
+"dest": "Alipio",
+"luogo": "Ippona",
+"data": "aprile/maggio 395 ( 5 )"
+},
+"src": "Anoz",
+"data": "395",
+"det": "poco dopo il 4 maggio",
+"key": [
+395,
+26
+],
+"cuando": false
+},
+{
+"file": "lettera_031_testo.htm",
+"label": "31",
+"id": "31",
+"tav": {
+"mitt": "Agostino",
+"dest": "Paolino",
+"luogo": "Ippona",
+"data": "inizio 397"
+},
+"src": "Anoz",
+"data": "395",
+"det": "fine primavera",
+"key": [
+395,
+27
+],
+"cuando": false
+},
+{
+"file": "lettera_044_testo.htm",
+"label": "44",
+"id": "44",
+"tav": {
+"mitt": "Agostino",
+"dest": "Glorio, Eleusio, etc.",
+"luogo": "Ippona",
+"data": "stesso tempo, ma anteriore alla precedente"
+},
+"src": "Anoz",
+"data": "395",
+"det": "estate-autunno",
+"key": [
+395,
+28
+],
+"cuando": false
+},
+{
+"file": "lettera_043_testo.htm",
+"label": "43",
+"id": "43",
+"tav": {
+"mitt": "Agostino",
+"dest": "Glorio, Eleusio, etc.",
+"luogo": "Ippona",
+"data": "396/inizio 397 (M. = fine 397)"
+},
+"src": "Anoz",
+"data": "395",
+"det": "fine",
+"key": [
+395,
+29
+],
+"cuando": false
+},
+{
+"file": "lettera_267_testo.htm",
+"label": "258",
+"id": "258",
+"tav": {
+"mitt": "Agostino",
+"dest": "Marziano",
+"luogo": "Ippona",
+"data": "dopo il 395"
+},
+"src": "Anoz",
+"data": "verso 395",
+"det": "",
+"key": [
+395,
+30
+],
+"cuando": false
+},
+{
+"file": "lettera_024_testo.htm",
+"label": "24",
+"id": "24",
+"tav": {
+"mitt": "Paolino",
+"dest": "Alipio",
+"luogo": "Nola",
+"data": "autunno 395 ( 3 )"
+},
+"src": "Tavola NBA",
+"data": "autunno 395 ( 3 )",
+"det": "",
+"key": [
+395,
+100000
+],
+"cuando": false
+},
+{
+"file": "lettera_025_testo.htm",
+"label": "25",
+"id": "25",
+"tav": {
+"mitt": "Paolino",
+"dest": "Agostino",
+"luogo": "Nola",
+"data": "autunno 395"
+},
+"src": "Tavola NBA",
+"data": "autunno 395",
+"det": "",
+"key": [
+395,
+100000
+],
+"cuando": false
+},
+{
+"file": "lettera_242_testo.htm",
+"label": "234",
+"id": "234",
+"tav": {
+"mitt": "Longiniano",
+"dest": "Agostino",
+"luogo": "?",
+"data": "dopo il 395"
+},
+"src": "Tavola NBA",
+"data": "dopo il 395",
+"det": "",
+"key": [
+395,
+100000
+],
+"cuando": false
+},
+{
+"file": "lettera_254_testo.htm",
+"label": "246",
+"id": "246",
+"tav": {
+"mitt": "Agostino",
+"dest": "Lampadio",
+"luogo": "Ippona",
+"data": "dopo il 395"
+},
+"src": "Tavola NBA",
+"data": "dopo il 395",
+"det": "",
+"key": [
+395,
+100000
+],
+"cuando": true
+},
+{
+"file": "lettera_269_testo.htm",
+"label": "260",
+"id": "260",
+"tav": {
+"mitt": "Audace",
+"dest": "Agostino",
+"luogo": "?",
+"data": "dopo il 395"
+},
+"src": "Tavola NBA",
+"data": "dopo il 395",
+"det": "",
+"key": [
+395,
+100000
+],
+"cuando": false
+},
+{
+"file": "lettera_041_testo.htm",
+"label": "41",
+"id": "41",
+"tav": {
+"mitt": "Alipio e Agostino",
+"dest": "Aurelio",
+"luogo": "Ippona",
+"data": "396/97 (M.)"
+},
+"src": "Anoz",
+"data": "396 o 397",
+"det": "",
+"key": [
+396,
+31
+],
+"cuando": false
+},
+{
+"file": "lettera_033_testo.htm",
+"label": "33",
+"id": "33",
+"tav": {
+"mitt": "Agostino",
+"dest": "Proculiano",
+"luogo": "Ippona",
+"data": "prima del 396"
+},
+"src": "Anoz",
+"data": "396",
+"det": "",
+"key": [
+396,
+32
+],
+"cuando": false
+},
+{
+"file": "lettera_034_testo.htm",
+"label": "34",
+"id": "34",
+"tav": {
+"mitt": "Agostino",
+"dest": "Eusebio",
+"luogo": "Ippona",
+"data": "396/97"
+},
+"src": "Anoz",
+"data": "396",
+"det": "",
+"key": [
+396,
+33
+],
+"cuando": false
+},
+{
+"file": "lettera_035_testo.htm",
+"label": "35",
+"id": "35",
+"tav": {
+"mitt": "Agostino",
+"dest": "Eusebio",
+"luogo": "Ippona",
+"data": "396/97"
+},
+"src": "Anoz",
+"data": "396",
+"det": "prima della primavera",
+"key": [
+396,
+34
+],
+"cuando": false
+},
+{
+"file": "lettera_037_testo.htm",
+"label": "37",
+"id": "37",
+"tav": {
+"mitt": "Agostino",
+"dest": "Simpliciano",
+"luogo": "Ippona",
+"data": "397"
+},
+"src": "Anoz",
+"data": "396",
+"det": "primavera",
+"key": [
+396,
+35
+],
+"cuando": false
+},
+{
+"file": "lettera_030_testo.htm",
+"label": "30",
+"id": "30",
+"tav": {
+"mitt": "Paolino",
+"dest": "Agostino",
+"luogo": "Nola",
+"data": "primavera 396"
+},
+"src": "Tavola NBA",
+"data": "primavera 396",
+"det": "",
+"key": [
+396,
+100000
+],
+"cuando": false
+},
+{
+"file": "lettera_046_testo.htm",
+"label": "46",
+"id": "46",
+"tav": {
+"mitt": "Publicola",
+"dest": "Agostino",
+"luogo": "?",
+"data": "396/99"
+},
+"src": "Tavola NBA",
+"data": "396/99",
+"det": "",
+"key": [
+396,
+100000
+],
+"cuando": false
+},
+{
+"file": "lettera_038_testo.htm",
+"label": "38",
+"id": "38",
+"tav": {
+"mitt": "Agostino",
+"dest": "Profuturo",
+"luogo": "Ippona",
+"data": "ca. metà 397"
+},
+"src": "Anoz",
+"data": "397",
+"det": "inizio",
+"key": [
+397,
+36
+],
+"cuando": false
+},
+{
+"file": "lettera_042_testo.htm",
+"label": "42",
+"id": "42",
+"tav": {
+"mitt": "Agostino",
+"dest": "Paolino",
+"luogo": "Ippona",
+"data": "autunno 398"
+},
+"src": "Anoz",
+"data": "397",
+"det": "prob. autunno",
+"key": [
+397,
+37
+],
+"cuando": false
+},
+{
+"file": "lettera_039_testo.htm",
+"label": "39",
+"id": "39",
+"tav": {
+"mitt": "Girolamo",
+"dest": "Agostino",
+"luogo": "Betlemme",
+"data": "397"
+},
+"src": "Tavola NBA",
+"data": "397",
+"det": "",
+"key": [
+397,
+100000
+],
+"cuando": false
+},
+{
+"file": "lettera_111_testo.htm",
+"label": "110",
+"id": "110",
+"tav": {
+"mitt": "Agostino",
+"dest": "Severo",
+"luogo": "Ippona",
+"data": "data incerta ( 23 ) (401/26)"
+},
+"src": "Anoz",
+"data": "398 o 399",
+"det": "",
+"key": [
+398,
+38
+],
+"cuando": false
+},
+{
+"file": "lettera_040_testo.htm",
+"label": "40",
+"id": "40",
+"tav": {
+"mitt": "Agostino",
+"dest": "Girolamo",
+"luogo": "Ippona",
+"data": "ca. 399 ( 8 )"
+},
+"src": "Anoz",
+"data": "398",
+"det": "",
+"key": [
+398,
+39
+],
+"cuando": false
+},
+{
+"file": "lettera_045_testo.htm",
+"label": "45",
+"id": "45",
+"tav": {
+"mitt": "Agostino",
+"dest": "Alipio e Paolino",
+"luogo": "Ippona",
+"data": "inizio del 398"
+},
+"src": "Anoz",
+"data": "398",
+"det": "inizio",
+"key": [
+398,
+40
+],
+"cuando": false
+},
+{
+"file": "lettera_048_testo.htm",
+"label": "48",
+"id": "48",
+"tav": {
+"mitt": "Agostino",
+"dest": "Eudossio abate e monaci",
+"luogo": "Ippona",
+"data": "398"
+},
+"src": "Anoz",
+"data": "398",
+"det": "primavera o prima del 31 luglio",
+"key": [
+398,
+41
+],
+"cuando": false
+},
+{
+"file": "lettera_049_testo.htm",
+"label": "49",
+"id": "49",
+"tav": {
+"mitt": "Agostino",
+"dest": "Onorato donatista",
+"luogo": "Ippona",
+"data": "396/410 (M. = ca. 398)"
+},
+"src": "Anoz",
+"data": "verso 398",
+"det": "",
+"key": [
+398,
+42
+],
+"cuando": false
+},
+{
+"file": "lettera_279_testo.htm",
+"label": "270",
+"id": "270",
+"tav": {
+"mitt": "Anonimo",
+"dest": "Agostino",
+"luogo": "Ippona",
+"data": "data incerta: 401/426: post. all' ep. 110"
+},
+"src": "Anoz",
+"data": "post 398 o 399",
+"det": "",
+"key": [
+398,
+43
+],
+"cuando": false
+},
+{
+"file": "lettera_051_testo.htm",
+"label": "51",
+"id": "51",
+"tav": {
+"mitt": "Agostino",
+"dest": "Crispino",
+"luogo": "Ippona",
+"data": "399/400"
+},
+"src": "Anoz",
+"data": "post 27 aprile 399-400",
+"det": "",
+"key": [
+399,
+44
+],
+"cuando": false
+},
+{
+"file": "lettera_050_testo.htm",
+"label": "50",
+"id": "50",
+"tav": {
+"mitt": "Agostino",
+"dest": "Capi Colonia Suffetana",
+"luogo": "Ippona",
+"data": "non molto dopo il 10-VI-399 ( 9 )"
+},
+"src": "Anoz",
+"data": "399",
+"det": "poco dopo il 10 luglio",
+"key": [
+399,
+45
+],
+"cuando": false
+},
+{
+"file": "lettera_047_testo.htm",
+"label": "47",
+"id": "47",
+"tav": {
+"mitt": "Agostino",
+"dest": "Publicola",
+"luogo": "Ippona",
+"data": "396/99"
+},
+"src": "Anoz",
+"data": "399",
+"det": "non dopo l'autunno",
+"key": [
+399,
+46
+],
+"cuando": false
+},
+{
+"file": "lettera_052_testo.htm",
+"label": "52",
+"id": "52",
+"tav": {
+"mitt": "Agostino",
+"dest": "Severino",
+"luogo": "Ippona",
+"data": "forse dopo 398 (M. = verso 400)"
+},
+"src": "Anoz",
+"data": "verso 400",
+"det": "",
+"key": [
+400,
+47
+],
+"cuando": false
+},
+{
+"file": "lettera_066_testo.htm",
+"label": "66",
+"id": "66",
+"tav": {
+"mitt": "Agostino",
+"dest": "Crispino di Calama",
+"luogo": "Ippona?",
+"data": "anteriore al 401 (M. = 400/01)"
+},
+"src": "Anoz",
+"data": "400-ante 13 settembre 401",
+"det": "",
+"key": [
+400,
+48
+],
+"cuando": false
+},
+{
+"file": "lettera_053_testo.htm",
+"label": "53",
+"id": "53",
+"tav": {
+"mitt": "Fortunato, Alipio e Agostino",
+"dest": "Generoso",
+"luogo": "Ippona?",
+"data": "398/400"
+},
+"src": "Anoz",
+"data": "400",
+"det": "",
+"key": [
+400,
+49
+],
+"cuando": false
+},
+{
+"file": "lettera_277_testo.htm",
+"label": "268",
+"id": "268",
+"tav": {
+"mitt": "Agostino",
+"dest": "Ai suoi fedeli",
+"luogo": "Ippona",
+"data": "dopo il 395"
+},
+"src": "Anoz",
+"data": "401 o 402?",
+"det": "",
+"key": [
+401,
+50
+],
+"cuando": false
+},
+{
+"file": "lettera_059_testo.htm",
+"label": "59",
+"id": "59",
+"tav": {
+"mitt": "Agostino",
+"dest": "Vittorino",
+"luogo": "Ippona",
+"data": "402"
+},
+"src": "Anoz",
+"data": "401",
+"det": "novembre",
+"key": [
+401,
+51
+],
+"cuando": false
+},
+{
+"file": "lettera_060_testo.htm",
+"label": "60",
+"id": "60",
+"tav": {
+"mitt": "Agostino",
+"dest": "Aurelio",
+"luogo": "Ippona",
+"data": "fine 401/estate 402 ( 12 )"
+},
+"src": "Anoz",
+"data": "401",
+"det": "fine",
+"key": [
+401,
+52
+],
+"cuando": false
+},
+{
+"file": "lettera_064_testo.htm",
+"label": "64",
+"id": "64",
+"tav": {
+"mitt": "Agostino",
+"dest": "Quinziano",
+"luogo": "Ippona?",
+"data": "fine 401/estate 402"
+},
+"src": "Anoz",
+"data": "401",
+"det": "poco dopo Natale",
+"key": [
+401,
+53
+],
+"cuando": false
+},
+{
+"file": "lettera_061_testo.htm",
+"label": "61",
+"id": "61",
+"tav": {
+"mitt": "Agostino",
+"dest": "Teodoro",
+"luogo": "Ippona",
+"data": "fine 401/inizio 402"
+},
+"src": "Anoz",
+"data": "401-402",
+"det": "inverno",
+"key": [
+401,
+54
+],
+"cuando": false
+},
+{
+"file": "lettera_110_testo.htm",
+"label": "109",
+"id": "109",
+"tav": {
+"mitt": "Severo",
+"dest": "Agostino",
+"luogo": "Milevi",
+"data": "data incerta ( 23 ) (401/26)"
+},
+"src": "Tavola NBA",
+"data": "data incerta ( 23 ) (401/26)",
+"det": "",
+"key": [
+401,
+100000
+],
+"cuando": false
+},
+{
+"file": "lettera_057_testo.htm",
+"label": "57",
+"id": "57",
+"tav": {
+"mitt": "Agostino",
+"dest": "Celere",
+"luogo": "Ippona",
+"data": "396/410 (M. verso 400)"
+},
+"src": "Anoz",
+"data": "402 o 403?",
+"det": "",
+"key": [
+402,
+55
+],
+"cuando": false
+},
+{
+"file": "lettera_067_testo.htm",
+"label": "67",
+"id": "67",
+"tav": {
+"mitt": "Agostino",
+"dest": "Girolamo",
+"luogo": "Ippona?",
+"data": "402 ( 15 )"
+},
+"src": "Anoz",
+"data": "402",
+"det": "",
+"key": [
+402,
+56
+],
+"cuando": false
+},
+{
+"file": "lettera_276_testo.htm",
+"label": "267",
+"id": "267",
+"tav": {
+"mitt": "Agostino",
+"dest": "Fiorentina",
+"luogo": "Ippona",
+"data": "dopo il 395"
+},
+"src": "Anoz",
+"data": "402",
+"det": "",
+"key": [
+402,
+57
+],
+"cuando": false
+},
+{
+"file": "lettera_056_testo.htm",
+"label": "56",
+"id": "56",
+"tav": {
+"mitt": "Agostino",
+"dest": "Celere",
+"luogo": "Ippona",
+"data": "396/410 (M. verso 400)"
+},
+"src": "Anoz",
+"data": "402",
+"det": "primavera, dopo il 6 aprile",
+"key": [
+402,
+58
+],
+"cuando": false
+},
+{
+"file": "lettera_065_testo.htm",
+"label": "65",
+"id": "65",
+"tav": {
+"mitt": "Agostino",
+"dest": "Santippo",
+"luogo": "Ippona?",
+"data": "27-XII-401/7-IV-402 ( 14 )"
+},
+"src": "Anoz",
+"data": "402",
+"det": "primavera, dopo il 6 aprile",
+"key": [
+402,
+59
+],
+"cuando": false
+},
+{
+"file": "lettera_069_testo.htm",
+"label": "69",
+"id": "69",
+"tav": {
+"mitt": "Alipio e Agostino",
+"dest": "Castorio",
+"luogo": "Ippona",
+"data": "fine 402"
+},
+"src": "Anoz",
+"data": "402",
+"det": "primavera, dopo il 6 aprile",
+"key": [
+402,
+60
+],
+"cuando": false
+},
+{
+"file": "lettera_083_testo.htm",
+"label": "83",
+"id": "83",
+"tav": {
+"mitt": "Agostino",
+"dest": "Alipio e i suoi fratelli",
+"luogo": "Ippona",
+"data": "404/405"
+},
+"src": "Anoz",
+"data": "402",
+"det": "primavera, dopo il 6 aprile",
+"key": [
+402,
+61
+],
+"cuando": false
+},
+{
+"file": "lettera_062_testo.htm",
+"label": "62",
+"id": "62",
+"tav": {
+"mitt": "Alipio, Agostino e Sansucio",
+"dest": "Severo",
+"luogo": "Ippona?",
+"data": "giugno/luglio 402 ( 13 )"
+},
+"src": "Anoz",
+"data": "402",
+"det": "poco prima del 27 agosto",
+"key": [
+402,
+62
+],
+"cuando": false
+},
+{
+"file": "lettera_063_testo.htm",
+"label": "63",
+"id": "63",
+"tav": {
+"mitt": "Agostino e fratelli",
+"dest": "Severo",
+"luogo": "Ippona?",
+"data": "estate 402"
+},
+"src": "Anoz",
+"data": "402",
+"det": "poco prima del 27 agosto",
+"key": [
+402,
+63
+],
+"cuando": false
+},
+{
+"file": "lettera_070_testo.htm",
+"label": "70",
+"id": "70",
+"tav": {
+"mitt": "Alipio e Agostino",
+"dest": "Naucellione",
+"luogo": "Ippona",
+"data": "dopo il 397 op. 400 (M. = verso 402)"
+},
+"src": "Anoz",
+"data": "verso 402",
+"det": "",
+"key": [
+402,
+64
+],
+"cuando": false
+},
+{
+"file": "lettera_068_testo.htm",
+"label": "68",
+"id": "68",
+"tav": {
+"mitt": "Girolamo",
+"dest": "Agostino",
+"luogo": "Betlemme",
+"data": "402 ( 15 )"
+},
+"src": "Tavola NBA",
+"data": "402 ( 15 )",
+"det": "",
+"key": [
+402,
+100000
+],
+"cuando": false
+},
+{
+"file": "lettera_103_testo.htm",
+"label": "102",
+"id": "102",
+"tav": {
+"mitt": "Agostino",
+"dest": "Deogratias",
+"luogo": "Ippona",
+"data": "406/12"
+},
+"src": "Anoz",
+"data": "403 o 404?",
+"det": "",
+"key": [
+403,
+65
+],
+"cuando": false
+},
+{
+"file": "lettera_076_testo.htm",
+"label": "76",
+"id": "76",
+"tav": {
+"mitt": "Agostino",
+"dest": "Donatisti",
+"luogo": "Ippona",
+"data": "fine 403"
+},
+"src": "Anoz",
+"data": "non ante 403",
+"det": "",
+"key": [
+403,
+66
+],
+"cuando": false
+},
+{
+"file": "lettera_071_testo.htm",
+"label": "71",
+"id": "71",
+"tav": {
+"mitt": "Agostino",
+"dest": "Girolamo",
+"luogo": "Ippona",
+"data": "403"
+},
+"src": "Anoz",
+"data": "403",
+"det": "",
+"key": [
+403,
+67
+],
+"cuando": false
+},
+{
+"file": "lettera_054_testo.htm",
+"label": "54",
+"id": "54",
+"tav": {
+"mitt": "Agostino",
+"dest": "Gennaro",
+"luogo": "Ippona",
+"data": "400"
+},
+"src": "Anoz",
+"data": "403",
+"det": "luglio-dicembre",
+"key": [
+403,
+68
+],
+"cuando": false
+},
+{
+"file": "lettera_055_testo.htm",
+"label": "55",
+"id": "55",
+"tav": {
+"mitt": "Agostino",
+"dest": "Gennaro",
+"luogo": "Ippona",
+"data": "400"
+},
+"src": "Anoz",
+"data": "403",
+"det": "luglio-dicembre",
+"key": [
+403,
+69
+],
+"cuando": false
+},
+{
+"file": "lettera_077_testo.htm",
+"label": "77",
+"id": "77",
+"tav": {
+"mitt": "Agostino",
+"dest": "Felice e Ilarino",
+"luogo": "Ippona",
+"data": "401/408"
+},
+"src": "Anoz",
+"data": "403",
+"det": "dicembre",
+"key": [
+403,
+70
+],
+"cuando": false
+},
+{
+"file": "lettera_084_testo.htm",
+"label": "84",
+"id": "84",
+"tav": {
+"mitt": "Agostino",
+"dest": "Novato",
+"luogo": "Ippona",
+"data": "397/411"
+},
+"src": "Anoz",
+"data": "verso 403",
+"det": "",
+"key": [
+403,
+71
+],
+"cuando": false
+},
+{
+"file": "lettera_072_testo.htm",
+"label": "72",
+"id": "72",
+"tav": {
+"mitt": "Girolamo",
+"dest": "Agostino",
+"luogo": "Betlemme",
+"data": "403/404"
+},
+"src": "Tavola NBA",
+"data": "403/404",
+"det": "",
+"key": [
+403,
+100000
+],
+"cuando": false
+},
+{
+"file": "lettera_246_testo.htm",
+"label": "238",
+"id": "238",
+"tav": {
+"mitt": "Agostino",
+"dest": "Pascenzio",
+"luogo": "Ippona",
+"data": "?"
+},
+"src": "Anoz",
+"data": "404-411",
+"det": "",
+"key": [
+404,
+72
+],
+"cuando": false
+},
+{
+"file": "lettera_247_testo.htm",
+"label": "239",
+"id": "239",
+"tav": {
+"mitt": "Agostino",
+"dest": "Pascenzio",
+"luogo": "Ippona",
+"data": "verso il 404"
+},
+"src": "Anoz",
+"data": "404-411",
+"det": "",
+"key": [
+404,
+73
+],
+"cuando": false
+},
+{
+"file": "lettera_249_testo.htm",
+"label": "241",
+"id": "241",
+"tav": {
+"mitt": "Agostino",
+"dest": "Pascenzio",
+"luogo": "Ippona",
+"data": "?"
+},
+"src": "Anoz",
+"data": "404-411",
+"det": "",
+"key": [
+404,
+74
+],
+"cuando": false
+},
+{
+"file": "lettera_073_testo.htm",
+"label": "73",
+"id": "73",
+"tav": {
+"mitt": "Agostino",
+"dest": "Girolamo",
+"luogo": "Ippona",
+"data": "404"
+},
+"src": "Anoz",
+"data": "404",
+"det": "",
+"key": [
+404,
+75
+],
+"cuando": false
+},
+{
+"file": "lettera_074_testo.htm",
+"label": "74",
+"id": "74",
+"tav": {
+"mitt": "Agostino",
+"dest": "Presidio",
+"luogo": "Ippona",
+"data": "404"
+},
+"src": "Anoz",
+"data": "404",
+"det": "",
+"key": [
+404,
+76
+],
+"cuando": false
+},
+{
+"file": "lettera_078_testo.htm",
+"label": "78",
+"id": "78",
+"tav": {
+"mitt": "Agostino",
+"dest": "Clero e fedeli d'Ippona",
+"luogo": "Ippona",
+"data": "(M. = verso 404)"
+},
+"src": "Anoz",
+"data": "404",
+"det": "",
+"key": [
+404,
+77
+],
+"cuando": false
+},
+{
+"file": "lettera_079_testo.htm",
+"label": "79",
+"id": "79",
+"tav": {
+"mitt": "Agostino",
+"dest": "Un prete manicheo",
+"luogo": "Ippona",
+"data": "404 ( 16 )"
+},
+"src": "Anoz",
+"data": "404",
+"det": "prima del 14 dicembre",
+"key": [
+404,
+78
+],
+"cuando": false
+},
+{
+"file": "lettera_075_testo.htm",
+"label": "75",
+"id": "75",
+"tav": {
+"mitt": "Girolamo",
+"dest": "Agostino",
+"luogo": "Betlemme",
+"data": "verso fine 404"
+},
+"src": "Tavola NBA",
+"data": "verso fine 404",
+"det": "",
+"key": [
+404,
+100000
+],
+"cuando": false
+},
+{
+"file": "lettera_081_testo.htm",
+"label": "81",
+"id": "81",
+"tav": {
+"mitt": "Girolamo",
+"dest": "Agostino",
+"luogo": "Betlemme",
+"data": "404/405"
+},
+"src": "Tavola NBA",
+"data": "404/405",
+"det": "",
+"key": [
+404,
+100000
+],
+"cuando": false
+},
+{
+"file": "lettera_248_testo.htm",
+"label": "240",
+"id": "240",
+"tav": {
+"mitt": "Pascenzio",
+"dest": "Agostino",
+"luogo": "?",
+"data": "verso il 404"
+},
+"src": "Tavola NBA",
+"data": "verso il 404",
+"det": "",
+"key": [
+404,
+100000
+],
+"cuando": false
+},
+{
+"file": "lettera_085_testo.htm",
+"label": "85",
+"id": "85",
+"tav": {
+"mitt": "Agostino",
+"dest": "Paolo",
+"luogo": "Ippona",
+"data": "forse 405/07"
+},
+"src": "Anoz",
+"data": "405-407?",
+"det": "",
+"key": [
+405,
+79
+],
+"cuando": false
+},
+{
+"file": "lettera_058_testo.htm",
+"label": "58",
+"id": "58",
+"tav": {
+"mitt": "Agostino",
+"dest": "Pammachio",
+"luogo": "Ippona",
+"data": "luglio 410? (non post. al 410)"
+},
+"src": "Anoz",
+"data": "405 o 406?",
+"det": "",
+"key": [
+405,
+80
+],
+"cuando": false
+},
+{
+"file": "lettera_080_testo.htm",
+"label": "80",
+"id": "80",
+"tav": {
+"mitt": "Agostino",
+"dest": "Paolino",
+"luogo": "Ippona",
+"data": "fine 404 (Goldb.) inizio 405 (Lietz.) marzo 405 (Courc.)"
+},
+"src": "Anoz",
+"data": "405",
+"det": "",
+"key": [
+405,
+81
+],
+"cuando": false
+},
+{
+"file": "lettera_082_testo.htm",
+"label": "82",
+"id": "82",
+"tav": {
+"mitt": "Agostino",
+"dest": "Girolamo",
+"luogo": "Ippona",
+"data": "404/405"
+},
+"src": "Anoz",
+"data": "405",
+"det": "non prima dell'estate",
+"key": [
+405,
+82
+],
+"cuando": false
+},
+{
+"file": "lettera_094_testo.htm",
+"label": "93",
+"id": "93",
+"tav": {
+"mitt": "Agostino",
+"dest": "Vincenzo rogatista",
+"luogo": "Ippona",
+"data": "407/08"
+},
+"src": "Anoz",
+"data": "407 o 408",
+"det": "",
+"key": [
+407,
+83
+],
+"cuando": false
+},
+{
+"file": "lettera_086_testo.htm",
+"label": "86",
+"id": "86",
+"tav": {
+"mitt": "Agostino",
+"dest": "Ceciliano",
+"luogo": "Ippona",
+"data": "406/09"
+},
+"src": "Anoz",
+"data": "407",
+"det": "poco prima di Pasqua (14 aprile)",
+"key": [
+407,
+84
+],
+"cuando": false
+},
+{
+"file": "lettera_087_testo.htm",
+"label": "87",
+"id": "87",
+"tav": {
+"mitt": "Agostino",
+"dest": "Emerito",
+"luogo": "Ippona",
+"data": "405/11"
+},
+"src": "Anoz",
+"data": "407",
+"det": "poco prima di Pasqua (14 aprile)",
+"key": [
+407,
+85
+],
+"cuando": false
+},
+{
+"file": "lettera_088_testo.htm",
+"label": "88",
+"id": "88",
+"tav": {
+"mitt": "Clero cattolico d'Ippona",
+"dest": "Gennaro donatista",
+"luogo": "Ippona",
+"data": "406/11 (M. = 406)"
+},
+"src": "Anoz",
+"data": "407",
+"det": "poco prima di Pasqua (14 aprile)",
+"key": [
+407,
+86
+],
+"cuando": false
+},
+{
+"file": "lettera_089_testo.htm",
+"label": "89",
+"id": "89",
+"tav": {
+"mitt": "Agostino",
+"dest": "Festo",
+"luogo": "Ippona",
+"data": "405/11 (M. = ca. 406)"
+},
+"src": "Anoz",
+"data": "407",
+"det": "poco prima di Pasqua (14 aprile)",
+"key": [
+407,
+87
+],
+"cuando": false
+},
+{
+"file": "lettera_240_testo.htm",
+"label": "232",
+"id": "232",
+"tav": {
+"mitt": "Agostino",
+"dest": "Ai Madauresi",
+"luogo": "Ippona",
+"data": "dopo il 400 opp. il 408"
+},
+"src": "Anoz",
+"data": "408-410",
+"det": "",
+"key": [
+408,
+88
+],
+"cuando": false
+},
+{
+"file": "lettera_102_testo.htm",
+"label": "101",
+"id": "101",
+"tav": {
+"mitt": "Agostino",
+"dest": "Memorio",
+"luogo": "Ippona",
+"data": "408/09"
+},
+"src": "Anoz",
+"data": "408 o 409",
+"det": "",
+"key": [
+408,
+89
+],
+"cuando": false
+},
+{
+"file": "lettera_275_testo.htm",
+"label": "266",
+"id": "266",
+"tav": {
+"mitt": "Agostino",
+"dest": "Fiorentina",
+"luogo": "Ippona",
+"data": "dopo il 395"
+},
+"src": "Anoz",
+"data": "408 o 409",
+"det": "",
+"key": [
+408,
+90
+],
+"cuando": false
+},
+{
+"file": "lettera_092_testo.htm",
+"label": "92",
+"id": "92",
+"tav": {
+"mitt": "Agostino",
+"dest": "Italica",
+"luogo": "Ippona",
+"data": "408"
+},
+"src": "Anoz",
+"data": "408",
+"det": "",
+"key": [
+408,
+91
+],
+"cuando": false
+},
+{
+"file": "lettera_093_testo.htm",
+"label": "92/A",
+"id": "92A",
+"tav": {
+"mitt": "Agostino",
+"dest": "Cipriano",
+"luogo": "Ippona",
+"data": "408"
+},
+"src": "Anoz",
+"data": "408",
+"det": "",
+"key": [
+408,
+92
+],
+"cuando": false
+},
+{
+"file": "lettera_100_testo.htm",
+"label": "99",
+"id": "99",
+"tav": {
+"mitt": "Agostino",
+"dest": "Italica",
+"luogo": "Ippona",
+"data": "408"
+},
+"src": "Anoz",
+"data": "408",
+"det": "",
+"key": [
+408,
+93
+],
+"cuando": false
+},
+{
+"file": "lettera_268_testo.htm",
+"label": "259",
+"id": "259",
+"tav": {
+"mitt": "Agostino",
+"dest": "Cornelio",
+"luogo": "Ippona",
+"data": "verso il 429/430"
+},
+"src": "Anoz",
+"data": "molto prob. 408",
+"det": "",
+"key": [
+408,
+94
+],
+"cuando": false
+},
+{
+"file": "lettera_241_testo.htm",
+"label": "233",
+"id": "233",
+"tav": {
+"mitt": "Agostino",
+"dest": "Longiniano",
+"luogo": "Ippona",
+"data": "dopo il 395"
+},
+"src": "Anoz",
+"data": "ante agosto 408?",
+"det": "",
+"key": [
+408,
+95
+],
+"cuando": false
+},
+{
+"file": "lettera_243_testo.htm",
+"label": "235",
+"id": "235",
+"tav": {
+"mitt": "Agostino",
+"dest": "Longiniano",
+"luogo": "Ippona",
+"data": "dopo il 395"
+},
+"src": "Anoz",
+"data": "ante agosto 408?",
+"det": "",
+"key": [
+408,
+96
+],
+"cuando": false
+},
+{
+"file": "lettera_091_testo.htm",
+"label": "91",
+"id": "91",
+"tav": {
+"mitt": "Agostino",
+"dest": "Nettario",
+"luogo": "Ippona",
+"data": "408/09 (Huisman = 408) ( 17 )"
+},
+"src": "Anoz",
+"data": "408",
+"det": "inizio agosto",
+"key": [
+408,
+97
+],
+"cuando": false
+},
+{
+"file": "lettera_096_testo.htm",
+"label": "95",
+"id": "95",
+"tav": {
+"mitt": "Agostino",
+"dest": "Paolino",
+"luogo": "Cartagine",
+"data": "estate/fine 408"
+},
+"src": "Anoz",
+"data": "408",
+"det": "agosto",
+"key": [
+408,
+98
+],
+"cuando": false
+},
+{
+"file": "lettera_097_testo.htm",
+"label": "96",
+"id": "96",
+"tav": {
+"mitt": "Agostino",
+"dest": "Olimpio",
+"luogo": "Ippona",
+"data": "sett./nov. 408"
+},
+"src": "Anoz",
+"data": "408",
+"det": "settembre",
+"key": [
+408,
+99
+],
+"cuando": false
+},
+{
+"file": "lettera_098_testo.htm",
+"label": "97",
+"id": "97",
+"tav": {
+"mitt": "Agostino",
+"dest": "Olimpio",
+"luogo": "Ippona",
+"data": "sett./nov. 408"
+},
+"src": "Anoz",
+"data": "408",
+"det": "fine",
+"key": [
+408,
+100
+],
+"cuando": false
+},
+{
+"file": "lettera_090_testo.htm",
+"label": "90",
+"id": "90",
+"tav": {
+"mitt": "Nettario",
+"dest": "Agostino",
+"luogo": "Calama",
+"data": "408/09 (M.) (Huisman = 408)"
+},
+"src": "Tavola NBA",
+"data": "408/09 (M.) (Huisman = 408)",
+"det": "",
+"key": [
+408,
+100000
+],
+"cuando": false
+},
+{
+"file": "lettera_095_testo.htm",
+"label": "94",
+"id": "94",
+"tav": {
+"mitt": "Paolino",
+"dest": "Agostino",
+"luogo": "Nola",
+"data": "15-V-408"
+},
+"src": "Tavola NBA",
+"data": "15-V-408",
+"det": "",
+"key": [
+408,
+100000
+],
+"cuando": false
+},
+{
+"file": "lettera_114_testo.htm",
+"label": "113",
+"id": "113",
+"tav": {
+"mitt": "Agostino",
+"dest": "Cresconio",
+"luogo": "Ippona",
+"data": "tra il 409 e il 423"
+},
+"src": "Anoz",
+"data": "409-423",
+"det": "",
+"key": [
+409,
+101
+],
+"cuando": false
+},
+{
+"file": "lettera_115_testo.htm",
+"label": "114",
+"id": "114",
+"tav": {
+"mitt": "Agostino",
+"dest": "Fiorentino",
+"luogo": "Ippona",
+"data": "tra il 409 e il 423"
+},
+"src": "Anoz",
+"data": "409-423",
+"det": "",
+"key": [
+409,
+102
+],
+"cuando": false
+},
+{
+"file": "lettera_116_testo.htm",
+"label": "115",
+"id": "115",
+"tav": {
+"mitt": "Agostino",
+"dest": "Fortunato",
+"luogo": "Ippona",
+"data": "tra il 409 e il 423"
+},
+"src": "Anoz",
+"data": "409-423",
+"det": "",
+"key": [
+409,
+103
+],
+"cuando": false
+},
+{
+"file": "lettera_117_testo.htm",
+"label": "116",
+"id": "116",
+"tav": {
+"mitt": "Agostino",
+"dest": "Generoso",
+"luogo": "Ippona",
+"data": "tra il 409 e il 423"
+},
+"src": "Anoz",
+"data": "409-423",
+"det": "",
+"key": [
+409,
+104
+],
+"cuando": false
+},
+{
+"file": "lettera_106_testo.htm",
+"label": "105",
+"id": "105",
+"tav": {
+"mitt": "Agostino",
+"dest": "Donatisti",
+"luogo": "Ippona",
+"data": "409/sett. 410 ( 22 )"
+},
+"src": "Anoz",
+"data": "409-settembre 410",
+"det": "",
+"key": [
+409,
+105
+],
+"cuando": false
+},
+{
+"file": "lettera_107_testo.htm",
+"label": "106",
+"id": "106",
+"tav": {
+"mitt": "Agostino",
+"dest": "Macrobio",
+"luogo": "Ippona",
+"data": "409"
+},
+"src": "Anoz",
+"data": "409",
+"det": "",
+"key": [
+409,
+106
+],
+"cuando": false
+},
+{
+"file": "lettera_101_testo.htm",
+"label": "100",
+"id": "100",
+"tav": {
+"mitt": "Agostino",
+"dest": "Donato proconsole",
+"luogo": "Ippona",
+"data": "fine 408 ( 19 )"
+},
+"src": "Anoz",
+"data": "409",
+"det": "inizio, dopo il 15 gennaio",
+"key": [
+409,
+107
+],
+"cuando": false
+},
+{
+"file": "lettera_105_testo.htm",
+"label": "104",
+"id": "104",
+"tav": {
+"mitt": "Agostino",
+"dest": "Nettario",
+"luogo": "Ippona",
+"data": "marzo/aprile 409 ( 21 )"
+},
+"src": "Anoz",
+"data": "409",
+"det": "marzo o aprile",
+"key": [
+409,
+108
+],
+"cuando": false
+},
+{
+"file": "lettera_112_testo.htm",
+"label": "111",
+"id": "111",
+"tav": {
+"mitt": "Agostino",
+"dest": "Vittoriano",
+"luogo": "Ippona",
+"data": "fine del 409"
+},
+"src": "Anoz",
+"data": "409",
+"det": "fine",
+"key": [
+409,
+109
+],
+"cuando": false
+},
+{
+"file": "lettera_113_testo.htm",
+"label": "112",
+"id": "112",
+"tav": {
+"mitt": "Agostino",
+"dest": "Donato",
+"luogo": "Ippona",
+"data": "fine 409/inizio 410"
+},
+"src": "Anoz",
+"data": "409-410",
+"det": "inverno",
+"key": [
+409,
+110
+],
+"cuando": false
+},
+{
+"file": "lettera_104_testo.htm",
+"label": "103",
+"id": "103",
+"tav": {
+"mitt": "Nettario",
+"dest": "Agostino",
+"luogo": "Calama",
+"data": "marzo/aprile 409 ( 21 )"
+},
+"src": "Tavola NBA",
+"data": "marzo/aprile 409 ( 21 )",
+"det": "",
+"key": [
+409,
+100000
+],
+"cuando": false
+},
+{
+"file": "lettera_108_testo.htm",
+"label": "107",
+"id": "107",
+"tav": {
+"mitt": "Massimo e Teodoro",
+"dest": "Agostino",
+"luogo": "Ippona",
+"data": "409/410"
+},
+"src": "Tavola NBA",
+"data": "409/410",
+"det": "",
+"key": [
+409,
+100000
+],
+"cuando": false
+},
+{
+"file": "lettera_147_testo.htm",
+"label": "146",
+"id": "146",
+"tav": {
+"mitt": "Agostino",
+"dest": "Pelagio",
+"luogo": "Ippona",
+"data": "410 ( 28 ) Goldbacher: 412/413."
+},
+"src": "Anoz",
+"data": "410 o 412-413",
+"det": "",
+"key": [
+410,
+111
+],
+"cuando": false
+},
+{
+"file": "lettera_262_testo.htm",
+"label": "253",
+"id": "253",
+"tav": {
+"mitt": "Agostino",
+"dest": "Bennato",
+"luogo": "Ippona",
+"data": "dopo il 395"
+},
+"src": "Anoz",
+"data": "prob. 410 o 411",
+"det": "",
+"key": [
+410,
+112
+],
+"cuando": false
+},
+{
+"file": "lettera_263_testo.htm",
+"label": "254",
+"id": "254",
+"tav": {
+"mitt": "Agostino",
+"dest": "Bennato",
+"luogo": "Ippona",
+"data": "dopo il 395"
+},
+"src": "Anoz",
+"data": "prob. 410 o 411",
+"det": "",
+"key": [
+410,
+113
+],
+"cuando": false
+},
+{
+"file": "lettera_264_testo.htm",
+"label": "255",
+"id": "255",
+"tav": {
+"mitt": "Agostino",
+"dest": "Rustico",
+"luogo": "Ippona",
+"data": "dopo il 395"
+},
+"src": "Anoz",
+"data": "prob. 410 o 411",
+"det": "",
+"key": [
+410,
+114
+],
+"cuando": false
+},
+{
+"file": "lettera_265_testo.htm",
+"label": "256",
+"id": "256",
+"tav": {
+"mitt": "Agostino",
+"dest": "Cristino",
+"luogo": "Ippona",
+"data": "dopo il 395"
+},
+"src": "Anoz",
+"data": "prob. 410 o 411",
+"det": "",
+"key": [
+410,
+115
+],
+"cuando": false
+},
+{
+"file": "lettera_119_testo.htm",
+"label": "118",
+"id": "118",
+"tav": {
+"mitt": "Agostino",
+"dest": "Dioscoro",
+"luogo": "Ippona",
+"data": "fine 410/inizio 411"
+},
+"src": "Anoz",
+"data": "410",
+"det": "",
+"key": [
+410,
+116
+],
+"cuando": false
+},
+{
+"file": "lettera_145_testo.htm",
+"label": "144",
+"id": "144",
+"tav": {
+"mitt": "Agostino",
+"dest": "Donatisti di Cirta convertiti",
+"luogo": "Ippona",
+"data": "probabilmente prima del 411 (M. = fine 412)"
+},
+"src": "Anoz",
+"data": "410",
+"det": "",
+"key": [
+410,
+117
+],
+"cuando": false
+},
+{
+"file": "lettera_109_testo.htm",
+"label": "108",
+"id": "108",
+"tav": {
+"mitt": "Agostino",
+"dest": "Macrobio",
+"luogo": "Ippona",
+"data": "fine 409/agosto 410"
+},
+"src": "Anoz",
+"data": "410",
+"det": "prima del 25 agosto",
+"key": [
+410,
+118
+],
+"cuando": false
+},
+{
+"file": "lettera_123_testo.htm",
+"label": "122",
+"id": "122",
+"tav": {
+"mitt": "Agostino",
+"dest": "Clero e fedeli d'Ippona",
+"luogo": "Ippona (villa presso)",
+"data": "410"
+},
+"src": "Anoz",
+"data": "410",
+"det": "fine",
+"key": [
+410,
+119
+],
+"cuando": false
+},
+{
+"file": "lettera_128_testo.htm",
+"label": "127",
+"id": "127",
+"tav": {
+"mitt": "Agostino",
+"dest": "Armentario e Paolina",
+"luogo": "Ippona",
+"data": "fine 410"
+},
+"src": "Anoz",
+"data": "410",
+"det": "fine",
+"key": [
+410,
+120
+],
+"cuando": false
+},
+{
+"file": "lettera_261_testo.htm",
+"label": "252",
+"id": "252",
+"tav": {
+"mitt": "Agostino",
+"dest": "Felice",
+"luogo": "Ippona",
+"data": "dopo il 395"
+},
+"src": "Anoz",
+"data": "post 410",
+"det": "",
+"key": [
+410,
+121
+],
+"cuando": false
+},
+{
+"file": "lettera_125_testo.htm",
+"label": "124",
+"id": "124",
+"tav": {
+"mitt": "Agostino",
+"dest": "Albina, Piniano, Melania",
+"luogo": "Ippona",
+"data": "410/411"
+},
+"src": "Anoz",
+"data": "410-411",
+"det": "inverno",
+"key": [
+410,
+122
+],
+"cuando": false
+},
+{
+"file": "lettera_118_testo.htm",
+"label": "117",
+"id": "117",
+"tav": {
+"mitt": "Dioscoro",
+"dest": "Agostino",
+"luogo": "Cartagine?",
+"data": "autunno 410"
+},
+"src": "Tavola NBA",
+"data": "autunno 410",
+"det": "",
+"key": [
+410,
+100000
+],
+"cuando": false
+},
+{
+"file": "lettera_120_testo.htm",
+"label": "119",
+"id": "119",
+"tav": {
+"mitt": "Consenzio",
+"dest": "Agostino",
+"luogo": "?",
+"data": "410"
+},
+"src": "Tavola NBA",
+"data": "410",
+"det": "",
+"key": [
+410,
+100000
+],
+"cuando": false
+},
+{
+"file": "lettera_244_testo.htm",
+"label": "236",
+"id": "236",
+"tav": {
+"mitt": "Agostino",
+"dest": "Deuterio",
+"luogo": "Ippona",
+"data": "dopo il 395"
+},
+"src": "Anoz",
+"data": "1 giugno 411-20 marzo 419",
+"det": "",
+"key": [
+411,
+123
+],
+"cuando": false
+},
+{
+"file": "lettera_175_testo.htm",
+"label": "173",
+"id": "173",
+"tav": {
+"mitt": "Agostino",
+"dest": "Donato",
+"luogo": "Ippona",
+"data": "411/414 (M. = verso 412)"
+},
+"src": "Anoz",
+"data": "post giugno 411-414",
+"det": "",
+"key": [
+411,
+124
+],
+"cuando": false
+},
+{
+"file": "lettera_099_testo.htm",
+"label": "98",
+"id": "98",
+"tav": {
+"mitt": "Agostino",
+"dest": "Bonifacio",
+"luogo": "Ippona",
+"data": "408/14 ( 18 )"
+},
+"src": "Anoz",
+"data": "411-413",
+"det": "",
+"key": [
+411,
+125
+],
+"cuando": false
+},
+{
+"file": "lettera_133_testo.htm",
+"label": "132",
+"id": "132",
+"tav": {
+"mitt": "Agostino",
+"dest": "Volusiano",
+"luogo": "Ippona",
+"data": "411/412"
+},
+"src": "Anoz",
+"data": "411 o 412",
+"det": "",
+"key": [
+411,
+126
+],
+"cuando": false
+},
+{
+"file": "lettera_138_testo.htm",
+"label": "137",
+"id": "137",
+"tav": {
+"mitt": "Agostino",
+"dest": "Volusiano",
+"luogo": "Ippona",
+"data": "411/412"
+},
+"src": "Anoz",
+"data": "411 o 412",
+"det": "",
+"key": [
+411,
+127
+],
+"cuando": false
+},
+{
+"file": "lettera_126_testo.htm",
+"label": "125",
+"id": "125",
+"tav": {
+"mitt": "Agostino",
+"dest": "Alipio",
+"luogo": "Ippona",
+"data": "primavera 411"
+},
+"src": "Anoz",
+"data": "411",
+"det": "primavera",
+"key": [
+411,
+128
+],
+"cuando": false
+},
+{
+"file": "lettera_127_testo.htm",
+"label": "126",
+"id": "126",
+"tav": {
+"mitt": "Agostino",
+"dest": "Albina",
+"luogo": "Ippona",
+"data": "primavera 411"
+},
+"src": "Anoz",
+"data": "411",
+"det": "primavera",
+"key": [
+411,
+129
+],
+"cuando": false
+},
+{
+"file": "lettera_129_testo.htm",
+"label": "128",
+"id": "128",
+"tav": {
+"mitt": "Aurelio, Silvano e vescovi cattolici",
+"dest": "Marcellino",
+"luogo": "Cartagine",
+"data": "ca. 25-V-411 ( 25 )"
+},
+"src": "Anoz",
+"data": "411",
+"det": "verso il 25 maggio",
+"key": [
+411,
+130
+],
+"cuando": false
+},
+{
+"file": "lettera_130_testo.htm",
+"label": "129",
+"id": "129",
+"tav": {
+"mitt": "Aurelio e suddetti",
+"dest": "Marcellino",
+"luogo": "Cartagine",
+"data": "ca. 30-V-411 ( 25 )"
+},
+"src": "Anoz",
+"data": "411",
+"det": "verso il 30 maggio",
+"key": [
+411,
+131
+],
+"cuando": false
+},
+{
+"file": "lettera_257_testo.htm",
+"label": "249",
+"id": "249",
+"tav": {
+"mitt": "Agostino",
+"dest": "Restituto",
+"luogo": "Ippona",
+"data": "dopo il 395"
+},
+"src": "Anoz",
+"data": "ante giugno 411?",
+"det": "",
+"key": [
+411,
+132
+],
+"cuando": false
+},
+{
+"file": "lettera_149_testo.htm",
+"label": "148",
+"id": "148",
+"tav": {
+"mitt": "Agostino",
+"dest": "Fortunaziano",
+"luogo": "Ippona",
+"data": "413/414"
+},
+"src": "Anoz",
+"data": "411",
+"det": "autunno",
+"key": [
+411,
+133
+],
+"cuando": false
+},
+{
+"file": "lettera_134_testo.htm",
+"label": "133",
+"id": "133",
+"tav": {
+"mitt": "Agostino",
+"dest": "Marcellino",
+"luogo": "Ippona",
+"data": "ca. fine del 411"
+},
+"src": "Anoz",
+"data": "411",
+"det": "fine",
+"key": [
+411,
+134
+],
+"cuando": false
+},
+{
+"file": "lettera_135_testo.htm",
+"label": "134",
+"id": "134",
+"tav": {
+"mitt": "Agostino",
+"dest": "Apringio",
+"luogo": "Ippona",
+"data": "ca. fine del 411"
+},
+"src": "Anoz",
+"data": "411",
+"det": "fine",
+"key": [
+411,
+135
+],
+"cuando": false
+},
+{
+"file": "lettera_139_testo.htm",
+"label": "138",
+"id": "138",
+"tav": {
+"mitt": "Agostino",
+"dest": "Marcellino",
+"luogo": "Ippona",
+"data": "411/412"
+},
+"src": "Anoz",
+"data": "411",
+"det": "fine",
+"key": [
+411,
+136
+],
+"cuando": false
+},
+{
+"file": "lettera_260_testo.htm",
+"label": "251",
+"id": "251",
+"tav": {
+"mitt": "Agostino",
+"dest": "Pancario",
+"luogo": "Ippona",
+"data": "dopo il 395"
+},
+"src": "Anoz",
+"data": "prob. 411",
+"det": "",
+"key": [
+411,
+137
+],
+"cuando": false
+},
+{
+"file": "lettera_216_testo.htm",
+"label": "210",
+"id": "210",
+"tav": {
+"mitt": "Agostino e i suoi Fratelli",
+"dest": "Felicita, Rustico e alle suore",
+"luogo": "Ippona",
+"data": "?"
+},
+"src": "Anoz",
+"data": "poco dopo il 411",
+"det": "",
+"key": [
+411,
+138
+],
+"cuando": false
+},
+{
+"file": "lettera_217_testo.htm",
+"label": "211",
+"id": "211",
+"tav": {
+"mitt": "Agostino",
+"dest": "Monache di Ippona",
+"luogo": "Ippona",
+"data": "424? ( 45 )"
+},
+"src": "Anoz",
+"data": "poco dopo il 411",
+"det": "",
+"key": [
+411,
+139
+],
+"cuando": false
+},
+{
+"file": "lettera_136_testo.htm",
+"label": "135",
+"id": "135",
+"tav": {
+"mitt": "Volusiano",
+"dest": "Agostino",
+"luogo": "?",
+"data": "411/412"
+},
+"src": "Tavola NBA",
+"data": "411/412",
+"det": "",
+"key": [
+411,
+100000
+],
+"cuando": false
+},
+{
+"file": "lettera_137_testo.htm",
+"label": "136",
+"id": "136",
+"tav": {
+"mitt": "Marcellino",
+"dest": "Agostino",
+"luogo": "?",
+"data": "411/412"
+},
+"src": "Tavola NBA",
+"data": "411/412",
+"det": "",
+"key": [
+411,
+100000
+],
+"cuando": false
+},
+{
+"file": "lettera_166_testo.htm",
+"label": "165",
+"id": "165",
+"tav": {
+"mitt": "Girolamo",
+"dest": "Marcellino e Anapsichia",
+"luogo": "Betlemme",
+"data": "verso fine 411"
+},
+"src": "Tavola NBA",
+"data": "verso fine 411",
+"det": "",
+"key": [
+411,
+100000
+],
+"cuando": false
+},
+{
+"file": "lettera_256_testo.htm",
+"label": "248",
+"id": "248",
+"tav": {
+"mitt": "Agostino",
+"dest": "Sebastiano",
+"luogo": "Ippona",
+"data": "dopo il 395"
+},
+"src": "Anoz",
+"data": "412-414?",
+"det": "",
+"key": [
+412,
+140
+],
+"cuando": false
+},
+{
+"file": "lettera_272_testo.htm",
+"label": "263",
+"id": "263",
+"tav": {
+"mitt": "Agostino",
+"dest": "Sàpida",
+"luogo": "lppona",
+"data": "dopo il 395"
+},
+"src": "Anoz",
+"data": "412-414?",
+"det": "",
+"key": [
+412,
+141
+],
+"cuando": false
+},
+{
+"file": "lettera_132_testo.htm",
+"label": "131",
+"id": "131",
+"tav": {
+"mitt": "Agostino",
+"dest": "Proba",
+"luogo": "Ippona",
+"data": "412/413"
+},
+"src": "Anoz",
+"data": "412 o 413",
+"det": "",
+"key": [
+412,
+142
+],
+"cuando": false
+},
+{
+"file": "lettera_146_testo.htm",
+"label": "145",
+"id": "145",
+"tav": {
+"mitt": "Agostino",
+"dest": "Anastasio",
+"luogo": "Ippona",
+"data": "413/414 (Kunzelmann, p. 456, n. 6)"
+},
+"src": "Anoz",
+"data": "412 o 413",
+"det": "",
+"key": [
+412,
+143
+],
+"cuando": false
+},
+{
+"file": "lettera_131_testo.htm",
+"label": "130",
+"id": "130",
+"tav": {
+"mitt": "Agostino",
+"dest": "Proba",
+"luogo": "Ippona",
+"data": "dopo il 411"
+},
+"src": "Anoz",
+"data": "412",
+"det": "",
+"key": [
+412,
+144
+],
+"cuando": false
+},
+{
+"file": "lettera_141_testo.htm",
+"label": "140",
+"id": "140",
+"tav": {
+"mitt": "Agostino",
+"dest": "Onorato",
+"luogo": "Ippona",
+"data": "411/412"
+},
+"src": "Anoz",
+"data": "412",
+"det": "inizio",
+"key": [
+412,
+145
+],
+"cuando": false
+},
+{
+"file": "lettera_140_testo.htm",
+"label": "139",
+"id": "139",
+"tav": {
+"mitt": "Agostino",
+"dest": "Marcellino",
+"luogo": "Ippona",
+"data": "411/28-II-412"
+},
+"src": "Anoz",
+"data": "412",
+"det": "gennaio-febbraio",
+"key": [
+412,
+146
+],
+"cuando": false
+},
+{
+"file": "lettera_142_testo.htm",
+"label": "141",
+"id": "141",
+"tav": {
+"mitt": "I vescovi del Conc. di Cirta",
+"dest": "Donatisti",
+"luogo": "Cirta",
+"data": "14-VI-412 ( 27 )"
+},
+"src": "Anoz",
+"data": "412",
+"det": "venerdì 14 giugno",
+"key": [
+412,
+147
+],
+"cuando": false
+},
+{
+"file": "lettera_144_testo.htm",
+"label": "143",
+"id": "143",
+"tav": {
+"mitt": "Agostino",
+"dest": "Marcellino",
+"luogo": "Ippona",
+"data": "forse del 412"
+},
+"src": "Anoz",
+"data": "412",
+"det": "estate",
+"key": [
+412,
+148
+],
+"cuando": false
+},
+{
+"file": "lettera_148_testo.htm",
+"label": "147",
+"id": "147",
+"tav": {
+"mitt": "Agostino",
+"dest": "Paolino",
+"luogo": "Ippona",
+"data": "413/414"
+},
+"src": "Anoz",
+"data": "estate 412-inizio 413",
+"det": "",
+"key": [
+412,
+149
+],
+"cuando": false
+},
+{
+"file": "lettera_143_testo.htm",
+"label": "142",
+"id": "142",
+"tav": {
+"mitt": "Agostino",
+"dest": "Saturnino e Eufrate",
+"luogo": "Ippona",
+"data": "verso il 412"
+},
+"src": "Anoz",
+"data": "verso 412",
+"det": "",
+"key": [
+412,
+150
+],
+"cuando": false
+},
+{
+"file": "lettera_285_testo.htm",
+"label": "5*",
+"id": "5*",
+"tav": {
+"mitt": "Agostino",
+"dest": "Valentiniano",
+"luogo": "Ippona",
+"data": "ultimi anni (?)"
+},
+"src": "Anoz",
+"data": "post 412",
+"det": "",
+"key": [
+412,
+151
+],
+"cuando": false
+},
+{
+"file": "lettera_310_testo.htm",
+"label": "29*",
+"id": "29*",
+"tav": {
+"mitt": "Agostino",
+"dest": "Paolino",
+"luogo": "Ippona",
+"data": "Dopo il 412 (?)"
+},
+"src": "Anoz",
+"data": "post 412",
+"det": "",
+"key": [
+412,
+152
+],
+"cuando": false
+},
+{
+"file": "lettera_154_testo.htm",
+"label": "153",
+"id": "153",
+"tav": {
+"mitt": "Agostino",
+"dest": "Macedonio",
+"luogo": "Ippona",
+"data": "413/414"
+},
+"src": "Anoz",
+"data": "413 o 414",
+"det": "",
+"key": [
+413,
+153
+],
+"cuando": false
+},
+{
+"file": "lettera_151_testo.htm",
+"label": "150",
+"id": "150",
+"tav": {
+"mitt": "Agostino",
+"dest": "Proba e Giuliana",
+"luogo": "Ippona",
+"data": "fine 413/inizio 414"
+},
+"src": "Anoz",
+"data": "413-414",
+"det": "inverno",
+"key": [
+413,
+154
+],
+"cuando": false
+},
+{
+"file": "lettera_122_testo.htm",
+"label": "121",
+"id": "121",
+"tav": {
+"mitt": "Paolino",
+"dest": "Agostino",
+"luogo": "Nola",
+"data": "inizio 413"
+},
+"src": "Tavola NBA",
+"data": "inizio 413",
+"det": "",
+"key": [
+413,
+100000
+],
+"cuando": false
+},
+{
+"file": "lettera_153_testo.htm",
+"label": "152",
+"id": "152",
+"tav": {
+"mitt": "Macedonio",
+"dest": "Agostino",
+"luogo": "Cartagine",
+"data": "413/414"
+},
+"src": "Tavola NBA",
+"data": "413/414",
+"det": "",
+"key": [
+413,
+100000
+],
+"cuando": false
+},
+{
+"file": "lettera_155_testo.htm",
+"label": "154",
+"id": "154",
+"tav": {
+"mitt": "Macedonio",
+"dest": "Agostino",
+"luogo": "Cartagine",
+"data": "413/414"
+},
+"src": "Tavola NBA",
+"data": "413/414",
+"det": "",
+"key": [
+413,
+100000
+],
+"cuando": false
+},
+{
+"file": "lettera_157_testo.htm",
+"label": "156",
+"id": "156",
+"tav": {
+"mitt": "Ilario",
+"dest": "Agostino",
+"luogo": "Siracusa",
+"data": "413/414"
+},
+"src": "Tavola NBA",
+"data": "413/414",
+"det": "",
+"key": [
+413,
+100000
+],
+"cuando": false
+},
+{
+"file": "lettera_158_testo.htm",
+"label": "157",
+"id": "157",
+"tav": {
+"mitt": "Agostino",
+"dest": "Ilario",
+"luogo": "Ippona",
+"data": "414/inizio 415"
+},
+"src": "Anoz",
+"data": "414",
+"det": "",
+"key": [
+414,
+155
+],
+"cuando": false
+},
+{
+"file": "lettera_211_testo.htm",
+"label": "205",
+"id": "205",
+"tav": {
+"mitt": "Agostino",
+"dest": "Consenzio",
+"luogo": "Ippona",
+"data": "419 ( 43 )"
+},
+"src": "Anoz",
+"data": "414",
+"det": "",
+"key": [
+414,
+156
+],
+"cuando": false
+},
+{
+"file": "lettera_152_testo.htm",
+"label": "151",
+"id": "151",
+"tav": {
+"mitt": "Agostino",
+"dest": "Ceciliano",
+"luogo": "Ippona",
+"data": "fine 413"
+},
+"src": "Anoz",
+"data": "414",
+"det": "primavera",
+"key": [
+414,
+157
+],
+"cuando": false
+},
+{
+"file": "lettera_160_testo.htm",
+"label": "159",
+"id": "159",
+"tav": {
+"mitt": "Agostino",
+"dest": "Evodio",
+"luogo": "Ippona",
+"data": "414/415"
+},
+"src": "Anoz",
+"data": "414 o 415",
+"det": "",
+"key": [
+414,
+158
+],
+"cuando": false
+},
+{
+"file": "lettera_163_testo.htm",
+"label": "162",
+"id": "162",
+"tav": {
+"mitt": "Agostino",
+"dest": "Evodio",
+"luogo": "Ippona",
+"data": "414/415"
+},
+"src": "Anoz",
+"data": "414 o 415",
+"det": "",
+"key": [
+414,
+159
+],
+"cuando": false
+},
+{
+"file": "lettera_159_testo.htm",
+"label": "158",
+"id": "158",
+"tav": {
+"mitt": "Evodio",
+"dest": "Agostino",
+"luogo": "Uzali",
+"data": "414/415"
+},
+"src": "Tavola NBA",
+"data": "414/415",
+"det": "",
+"key": [
+414,
+100000
+],
+"cuando": false
+},
+{
+"file": "lettera_161_testo.htm",
+"label": "160",
+"id": "160",
+"tav": {
+"mitt": "Evodio",
+"dest": "Agostino",
+"luogo": "Uzali",
+"data": "414/415"
+},
+"src": "Tavola NBA",
+"data": "414/415",
+"det": "",
+"key": [
+414,
+100000
+],
+"cuando": false
+},
+{
+"file": "lettera_162_testo.htm",
+"label": "161",
+"id": "161",
+"tav": {
+"mitt": "Evodio",
+"dest": "Agostino",
+"luogo": "Uzali",
+"data": "414/415"
+},
+"src": "Tavola NBA",
+"data": "414/415",
+"det": "",
+"key": [
+414,
+100000
+],
+"cuando": false
+},
+{
+"file": "lettera_164_testo.htm",
+"label": "163",
+"id": "163",
+"tav": {
+"mitt": "Evodio",
+"dest": "Agostino",
+"luogo": "Uzali",
+"data": "414/415"
+},
+"src": "Tavola NBA",
+"data": "414/415",
+"det": "",
+"key": [
+414,
+100000
+],
+"cuando": false
+},
+{
+"file": "lettera_283_testo.htm",
+"label": "3*",
+"id": "3*",
+"tav": {
+"mitt": "Agostino",
+"dest": "Felice",
+"luogo": "Ippona",
+"data": "ultimi anni (?)"
+},
+"src": "Anoz",
+"data": "415-430",
+"det": "",
+"key": [
+415,
+160
+],
+"cuando": false
+},
+{
+"file": "lettera_270_testo.htm",
+"label": "261",
+"id": "261",
+"tav": {
+"mitt": "Agostino",
+"dest": "Audace",
+"luogo": "Ippona",
+"data": "dopo il 395"
+},
+"src": "Anoz",
+"data": "415-425",
+"det": "",
+"key": [
+415,
+161
+],
+"cuando": false
+},
+{
+"file": "lettera_309_testo.htm",
+"label": "28*",
+"id": "28*",
+"tav": {
+"mitt": "Agostino",
+"dest": "Novato",
+"luogo": "Ippona",
+"data": "418 c."
+},
+"src": "Anoz",
+"data": "415-417",
+"det": "",
+"key": [
+415,
+162
+],
+"cuando": false
+},
+{
+"file": "lettera_165_testo.htm",
+"label": "164",
+"id": "164",
+"tav": {
+"mitt": "Agostino",
+"dest": "Evodio",
+"luogo": "Ippona",
+"data": "414/415"
+},
+"src": "Anoz",
+"data": "415",
+"det": "",
+"key": [
+415,
+163
+],
+"cuando": false
+},
+{
+"file": "lettera_167_testo.htm",
+"label": "166",
+"id": "166",
+"tav": {
+"mitt": "Agostino",
+"dest": "Girolamo",
+"luogo": "Ippona",
+"data": "primavera del 415"
+},
+"src": "Anoz",
+"data": "415",
+"det": "primavera",
+"key": [
+415,
+164
+],
+"cuando": false
+},
+{
+"file": "lettera_168_testo.htm",
+"label": "167",
+"id": "167",
+"tav": {
+"mitt": "Agostino",
+"dest": "Girolamo",
+"luogo": "Ippona",
+"data": "primavera del 415"
+},
+"src": "Anoz",
+"data": "415",
+"det": "primavera",
+"key": [
+415,
+165
+],
+"cuando": false
+},
+{
+"file": "lettera_121_testo.htm",
+"label": "120",
+"id": "120",
+"tav": {
+"mitt": "Agostino",
+"dest": "Consenzio",
+"luogo": "Ippona",
+"data": "?"
+},
+"src": "Anoz",
+"data": "415",
+"det": "estate o autunno",
+"key": [
+415,
+166
+],
+"cuando": false
+},
+{
+"file": "lettera_150_testo.htm",
+"label": "149",
+"id": "149",
+"tav": {
+"mitt": "Agostino",
+"dest": "Paolino",
+"luogo": "Ippona",
+"data": "fine 415"
+},
+"src": "Anoz",
+"data": "415",
+"det": "fine",
+"key": [
+415,
+167
+],
+"cuando": false
+},
+{
+"file": "lettera_170_testo.htm",
+"label": "169",
+"id": "169",
+"tav": {
+"mitt": "Agostino",
+"dest": "Evodio",
+"luogo": "Ippona",
+"data": "415"
+},
+"src": "Anoz",
+"data": "415",
+"det": "fine",
+"key": [
+415,
+168
+],
+"cuando": false
+},
+{
+"file": "lettera_169_testo.htm",
+"label": "168",
+"id": "168",
+"tav": {
+"mitt": "Timasio e Giacomo",
+"dest": "Agostino",
+"luogo": "?",
+"data": "415"
+},
+"src": "Tavola NBA",
+"data": "415",
+"det": "",
+"key": [
+415,
+100000
+],
+"cuando": false
+},
+{
+"file": "lettera_259_testo.htm",
+"label": "250/A",
+"id": "250A",
+"tav": {
+"mitt": "Agostino",
+"dest": "Classiciano",
+"luogo": "Ippona",
+"data": "verso 415/420"
+},
+"src": "Tavola NBA",
+"data": "verso 415/420",
+"det": "",
+"key": [
+415,
+100000
+],
+"cuando": false
+},
+{
+"file": "lettera_226_testo.htm",
+"label": "218",
+"id": "218",
+"tav": {
+"mitt": "Agostino",
+"dest": "Palatino",
+"luogo": "Ippona",
+"data": "427/28"
+},
+"src": "Anoz",
+"data": "416 o 417",
+"det": "",
+"key": [
+416,
+169
+],
+"cuando": false
+},
+{
+"file": "lettera_156_testo.htm",
+"label": "155",
+"id": "155",
+"tav": {
+"mitt": "Agostino",
+"dest": "Macedonio",
+"luogo": "Ippona",
+"data": "413/414"
+},
+"src": "Anoz",
+"data": "416",
+"det": "",
+"key": [
+416,
+170
+],
+"cuando": false
+},
+{
+"file": "lettera_176_testo.htm",
+"label": "173/A",
+"id": "173A",
+"tav": {
+"mitt": "Agostino",
+"dest": "Deogratias e Teodoro",
+"luogo": "Ippona",
+"data": "416"
+},
+"src": "Anoz",
+"data": "416",
+"det": "",
+"key": [
+416,
+171
+],
+"cuando": false
+},
+{
+"file": "lettera_177_testo.htm",
+"label": "174",
+"id": "174",
+"tav": {
+"mitt": "Agostino",
+"dest": "Aurelio",
+"luogo": "Ippona",
+"data": "416"
+},
+"src": "Anoz",
+"data": "416",
+"det": "",
+"key": [
+416,
+172
+],
+"cuando": false
+},
+{
+"file": "lettera_181_testo.htm",
+"label": "178",
+"id": "178",
+"tav": {
+"mitt": "Agostino",
+"dest": "Ilario",
+"luogo": "Ippona",
+"data": "416"
+},
+"src": "Anoz",
+"data": "416",
+"det": "",
+"key": [
+416,
+173
+],
+"cuando": false
+},
+{
+"file": "lettera_183_testo.htm",
+"label": "180",
+"id": "180",
+"tav": {
+"mitt": "Agostino",
+"dest": "Oceano",
+"luogo": "Ippona",
+"data": "416 (inizio?)"
+},
+"src": "Anoz",
+"data": "416",
+"det": "inizio?",
+"key": [
+416,
+174
+],
+"cuando": false
+},
+{
+"file": "lettera_182_testo.htm",
+"label": "179",
+"id": "179",
+"tav": {
+"mitt": "Agostino",
+"dest": "Giovanni, vescovo di Gerusalemme",
+"luogo": "Ippona",
+"data": "416"
+},
+"src": "Anoz",
+"data": "416",
+"det": "15 maggio-inizio giugno",
+"key": [
+416,
+175
+],
+"cuando": false
+},
+{
+"file": "lettera_299_testo.htm",
+"label": "19*",
+"id": "19*",
+"tav": {
+"mitt": "Agostino",
+"dest": "Girolamo",
+"luogo": "Ippona",
+"data": "416 c."
+},
+"src": "Anoz",
+"data": "416",
+"det": "estate",
+"key": [
+416,
+176
+],
+"cuando": false
+},
+{
+"file": "lettera_179_testo.htm",
+"label": "176",
+"id": "176",
+"tav": {
+"mitt": "Padri del Conc. Milev.",
+"dest": "Innocenzo papa",
+"luogo": "Milevi (Numidia)",
+"data": "416"
+},
+"src": "Anoz",
+"data": "416",
+"det": "estate",
+"key": [
+416,
+177
+],
+"cuando": false
+},
+{
+"file": "lettera_180_testo.htm",
+"label": "177",
+"id": "177",
+"tav": {
+"mitt": "Aurelio, Alipio, Agostino, Evodio e Possidio",
+"dest": "Innocenzo papa",
+"luogo": "Cartagine",
+"data": "416"
+},
+"src": "Anoz",
+"data": "416",
+"det": "autunno",
+"key": [
+416,
+178
+],
+"cuando": false
+},
+{
+"file": "lettera_218_testo.htm",
+"label": "212",
+"id": "212",
+"tav": {
+"mitt": "Agostino",
+"dest": "Quintiliano",
+"luogo": "Ippona",
+"data": "424/25"
+},
+"src": "Anoz",
+"data": "post 416",
+"det": "",
+"key": [
+416,
+179
+],
+"cuando": false
+},
+{
+"file": "lettera_174_testo.htm",
+"label": "172",
+"id": "172",
+"tav": {
+"mitt": "Girolamo",
+"dest": "Agostino",
+"luogo": "Betlemme",
+"data": "inizio 416"
+},
+"src": "Tavola NBA",
+"data": "inizio 416",
+"det": "",
+"key": [
+416,
+100000
+],
+"cuando": false
+},
+{
+"file": "lettera_178_testo.htm",
+"label": "175",
+"id": "175",
+"tav": {
+"mitt": "Padri del Conc. Cartag.",
+"dest": "Innocenzo papa",
+"luogo": "Cartagine",
+"data": "416"
+},
+"src": "Tavola NBA",
+"data": "416",
+"det": "",
+"key": [
+416,
+100000
+],
+"cuando": false
+},
+{
+"file": "lettera_187_testo.htm",
+"label": "184",
+"id": "184",
+"tav": {
+"mitt": "Innocenzo papa",
+"dest": "Aurelio e Agostino",
+"luogo": "Roma",
+"data": "prima del 416"
+},
+"src": "Tavola NBA",
+"data": "prima del 416",
+"det": "",
+"key": [
+416,
+100000
+],
+"cuando": false
+},
+{
+"file": "lettera_191_testo.htm",
+"label": "186",
+"id": "186",
+"tav": {
+"mitt": "Agostino e Alipio",
+"dest": "Paolino",
+"luogo": "Ippona",
+"data": "aprile/agosto 417"
+},
+"src": "Anoz",
+"data": "417",
+"det": "marzo-settembre",
+"key": [
+417,
+180
+],
+"cuando": false
+},
+{
+"file": "lettera_284_testo.htm",
+"label": "4*",
+"id": "4*",
+"tav": {
+"mitt": "Agostino",
+"dest": "Cirillo",
+"luogo": "Ippona",
+"data": "417"
+},
+"src": "Anoz",
+"data": "417",
+"det": "estate",
+"key": [
+417,
+181
+],
+"cuando": false
+},
+{
+"file": "lettera_192_testo.htm",
+"label": "187",
+"id": "187",
+"tav": {
+"mitt": "Agostino",
+"dest": "Dàrdano",
+"luogo": "Ippona",
+"data": "estate 417"
+},
+"src": "Anoz",
+"data": "417",
+"det": "estate",
+"key": [
+417,
+182
+],
+"cuando": false
+},
+{
+"file": "lettera_036_testo.htm",
+"label": "36",
+"id": "36",
+"tav": {
+"mitt": "Agostino",
+"dest": "Casulano",
+"luogo": "Ippona",
+"data": "dopo il 395"
+},
+"src": "Anoz",
+"data": "estate 417-autunno 419",
+"det": "",
+"key": [
+417,
+183
+],
+"cuando": false
+},
+{
+"file": "lettera_185_testo.htm",
+"label": "182",
+"id": "182",
+"tav": {
+"mitt": "Innocenzo papa",
+"dest": "Padri Conc. Mil.",
+"luogo": "Roma",
+"data": "27 gennaio 417"
+},
+"src": "Tavola NBA",
+"data": "27 gennaio 417",
+"det": "",
+"key": [
+417,
+100000
+],
+"cuando": false
+},
+{
+"file": "lettera_202_testo.htm",
+"label": "197",
+"id": "197",
+"tav": {
+"mitt": "Agostino",
+"dest": "Esichio",
+"luogo": "Ippona",
+"data": "fine 419/inizio 420"
+},
+"src": "Anoz",
+"data": "418-420",
+"det": "",
+"key": [
+418,
+184
+],
+"cuando": false
+},
+{
+"file": "lettera_204_testo.htm",
+"label": "199",
+"id": "199",
+"tav": {
+"mitt": "Agostino",
+"dest": "Esichio",
+"luogo": "Ippona",
+"data": "?"
+},
+"src": "Anoz",
+"data": "418-420",
+"det": "",
+"key": [
+418,
+185
+],
+"cuando": false
+},
+{
+"file": "lettera_273_testo.htm",
+"label": "264",
+"id": "264",
+"tav": {
+"mitt": "Agostino",
+"dest": "Massima",
+"luogo": "Ippona",
+"data": "dopo il 395"
+},
+"src": "Anoz",
+"data": "418",
+"det": "",
+"key": [
+418,
+186
+],
+"cuando": false
+},
+{
+"file": "lettera_193_testo.htm",
+"label": "188",
+"id": "188",
+"tav": {
+"mitt": "Alipio e Agostino",
+"dest": "Giuliana",
+"luogo": "Ippona",
+"data": "ottobre 417/aprile 418"
+},
+"src": "Anoz",
+"data": "418",
+"det": "inizio",
+"key": [
+418,
+187
+],
+"cuando": false
+},
+{
+"file": "lettera_227_testo.htm",
+"label": "219",
+"id": "219",
+"tav": {
+"mitt": "Aurelio, Agostino, Fiorenzo e Secondino",
+"dest": "Proculo e Cillenio",
+"luogo": "Cartagine",
+"data": "426 ( 50 )"
+},
+"src": "Anoz",
+"data": "418",
+"det": "maggio-luglio",
+"key": [
+418,
+188
+],
+"cuando": false
+},
+{
+"file": "lettera_210_testo.htm",
+"label": "204",
+"id": "204",
+"tav": {
+"mitt": "Agostino",
+"dest": "Dulcizio",
+"luogo": "Ippona",
+"data": "verso il 419 (M. = verso il 420)"
+},
+"src": "Anoz",
+"data": "418",
+"det": "prima del 20 settembre",
+"key": [
+418,
+189
+],
+"cuando": false
+},
+{
+"file": "lettera_195_testo.htm",
+"label": "190",
+"id": "190",
+"tav": {
+"mitt": "Agostino",
+"dest": "Ottato",
+"luogo": "Cesarea (Mauritania Caesariensis)",
+"data": "estate/autunno 418"
+},
+"src": "Anoz",
+"data": "418",
+"det": "fine settembre-metà ottobre",
+"key": [
+418,
+190
+],
+"cuando": false
+},
+{
+"file": "lettera_196_testo.htm",
+"label": "191",
+"id": "191",
+"tav": {
+"mitt": "Agostino",
+"dest": "Sisto",
+"luogo": "Ippona",
+"data": "?"
+},
+"src": "Anoz",
+"data": "418",
+"det": "fine ottobre",
+"key": [
+418,
+191
+],
+"cuando": false
+},
+{
+"file": "lettera_197_testo.htm",
+"label": "192",
+"id": "192",
+"tav": {
+"mitt": "Agostino",
+"dest": "Celestino, diac.",
+"luogo": "Ippona",
+"data": "verso fine 418"
+},
+"src": "Anoz",
+"data": "418",
+"det": "fine ottobre",
+"key": [
+418,
+192
+],
+"cuando": false
+},
+{
+"file": "lettera_198_testo.htm",
+"label": "193",
+"id": "193",
+"tav": {
+"mitt": "Agostino",
+"dest": "Mercatore",
+"luogo": "Ippona",
+"data": "?"
+},
+"src": "Anoz",
+"data": "418",
+"det": "fine ottobre",
+"key": [
+418,
+193
+],
+"cuando": false
+},
+{
+"file": "lettera_201_testo.htm",
+"label": "196",
+"id": "196",
+"tav": {
+"mitt": "Agostino",
+"dest": "Asellico",
+"luogo": "Ippona",
+"data": "418 (autunno?)"
+},
+"src": "Anoz",
+"data": "418",
+"det": "autunno?",
+"key": [
+418,
+194
+],
+"cuando": false
+},
+{
+"file": "lettera_188_testo.htm",
+"label": "184/A",
+"id": "184A",
+"tav": {
+"mitt": "Agostino",
+"dest": "Pietro e Abramo",
+"luogo": "Ippona",
+"data": "verso il 418"
+},
+"src": "Anoz",
+"data": "verso 418",
+"det": "",
+"key": [
+418,
+195
+],
+"cuando": false
+},
+{
+"file": "lettera_212_testo.htm",
+"label": "206",
+"id": "206",
+"tav": {
+"mitt": "Agostino",
+"dest": "Valerio",
+"luogo": "Ippona",
+"data": "?"
+},
+"src": "Anoz",
+"data": "verso 418",
+"det": "",
+"key": [
+418,
+196
+],
+"cuando": false
+},
+{
+"file": "lettera_271_testo.htm",
+"label": "262",
+"id": "262",
+"tav": {
+"mitt": "Agostino",
+"dest": "Ecdicia",
+"luogo": "Ippona",
+"data": "dopo il 395"
+},
+"src": "Anoz",
+"data": "verso 418",
+"det": "",
+"key": [
+418,
+197
+],
+"cuando": false
+},
+{
+"file": "lettera_245_testo.htm",
+"label": "237",
+"id": "237",
+"tav": {
+"mitt": "Agostino",
+"dest": "Cerezio",
+"luogo": "Ippona",
+"data": "dopo il 395"
+},
+"src": "Anoz",
+"data": "verso 418?",
+"det": "",
+"key": [
+418,
+198
+],
+"cuando": false
+},
+{
+"file": "lettera_199_testo.htm",
+"label": "194",
+"id": "194",
+"tav": {
+"mitt": "Agostino",
+"dest": "Sisto, prete",
+"luogo": "Ippona",
+"data": "fine 418/inizio 419"
+},
+"src": "Anoz",
+"data": "418-419",
+"det": "inverno",
+"key": [
+418,
+199
+],
+"cuando": false
+},
+{
+"file": "lettera_124_testo.htm",
+"label": "123",
+"id": "123",
+"tav": {
+"mitt": "Girolamo",
+"dest": "Agostino",
+"luogo": "Betlemme",
+"data": "ca. fine 418 ( 24 )"
+},
+"src": "Tavola NBA",
+"data": "ca. fine 418 ( 24 )",
+"det": "",
+"key": [
+418,
+100000
+],
+"cuando": false
+},
+{
+"file": "lettera_200_testo.htm",
+"label": "195",
+"id": "195",
+"tav": {
+"mitt": "Girolamo",
+"dest": "Agostino",
+"luogo": "Betlemme",
+"data": "ca. autunno 418"
+},
+"src": "Tavola NBA",
+"data": "ca. autunno 418",
+"det": "",
+"key": [
+418,
+100000
+],
+"cuando": false
+},
+{
+"file": "lettera_205_testo.htm",
+"label": "200",
+"id": "200",
+"tav": {
+"mitt": "Agostino",
+"dest": "Valerio",
+"luogo": "Ippona",
+"data": "ca. fine del 418"
+},
+"src": "Anoz",
+"data": "419",
+"det": "inizio",
+"key": [
+419,
+200
+],
+"cuando": false
+},
+{
+"file": "lettera_208_testo.htm",
+"label": "202/A",
+"id": "202A",
+"tav": {
+"mitt": "Agostino",
+"dest": "Ottato",
+"luogo": "Ippona",
+"data": "verso primavera 420"
+},
+"src": "Anoz",
+"data": "419",
+"det": "settembre-novembre",
+"key": [
+419,
+201
+],
+"cuando": false
+},
+{
+"file": "lettera_306_testo.htm",
+"label": "25*",
+"id": "25*",
+"tav": {
+"mitt": "Agostino",
+"dest": "Deogratias, Teodoro, Tiziano, Quinziano, Quodvultdeus, Conte",
+"luogo": "Ippona",
+"data": "419"
+},
+"src": "Anoz",
+"data": "419",
+"det": "seconda metà di settembre",
+"key": [
+419,
+202
+],
+"cuando": false
+},
+{
+"file": "lettera_294_testo.htm",
+"label": "14*",
+"id": "14*",
+"tav": {
+"mitt": "Agostino",
+"dest": "Doroteo",
+"luogo": "Ippona",
+"data": "419 c."
+},
+"src": "Anoz",
+"data": "419",
+"det": "ottobre",
+"key": [
+419,
+203
+],
+"cuando": false
+},
+{
+"file": "lettera_295_testo.htm",
+"label": "15*",
+"id": "15*",
+"tav": {
+"mitt": "Agostino",
+"dest": "Alcuni vescovi",
+"luogo": "Ippona",
+"data": "419 c."
+},
+"src": "Anoz",
+"data": "419",
+"det": "ottobre",
+"key": [
+419,
+204
+],
+"cuando": false
+},
+{
+"file": "lettera_296_testo.htm",
+"label": "16*",
+"id": "16*",
+"tav": {
+"mitt": "Agostino",
+"dest": "Aurelio",
+"luogo": "Ippona",
+"data": "419 c."
+},
+"src": "Anoz",
+"data": "419",
+"det": "verso Natale",
+"key": [
+419,
+205
+],
+"cuando": false
+},
+{
+"file": "lettera_304_testo.htm",
+"label": "23/A*",
+"id": "23A*",
+"tav": {
+"mitt": "Agostino",
+"dest": "(?)",
+"luogo": "Ippona",
+"data": "419 c."
+},
+"src": "Anoz",
+"data": "419",
+"det": "1 dicembre",
+"key": [
+419,
+206
+],
+"cuando": false
+},
+{
+"file": "lettera_206_testo.htm",
+"label": "201",
+"id": "201",
+"tav": {
+"mitt": "Onorio e Teodosio imperatori",
+"dest": "Aurelio",
+"luogo": "Ravenna",
+"data": "9-VI-419"
+},
+"src": "Tavola NBA",
+"data": "9-VI-419",
+"det": "",
+"key": [
+419,
+100000
+],
+"cuando": false
+},
+{
+"file": "lettera_207_testo.htm",
+"label": "202",
+"id": "202",
+"tav": {
+"mitt": "Girolamo",
+"dest": "Alipio e Agostino",
+"luogo": "Betlemme",
+"data": "419 (autunno?)"
+},
+"src": "Tavola NBA",
+"data": "419 (autunno?)",
+"det": "",
+"key": [
+419,
+100000
+],
+"cuando": false
+},
+{
+"file": "lettera_292_testo.htm",
+"label": "12*",
+"id": "12*",
+"tav": {
+"mitt": "Consenzio",
+"dest": "Agostino",
+"luogo": "Ippona",
+"data": "419 c."
+},
+"src": "Tavola NBA",
+"data": "419 c.",
+"det": "",
+"key": [
+419,
+100000
+],
+"cuando": false
+},
+{
+"file": "lettera_303_testo.htm",
+"label": "23*",
+"id": "23*",
+"tav": {
+"mitt": "Agostino",
+"dest": "Renato",
+"luogo": "Ippona",
+"data": "419"
+},
+"src": "Tavola NBA",
+"data": "419",
+"det": "",
+"key": [
+419,
+100000
+],
+"cuando": false
+},
+{
+"file": "lettera_302_testo.htm",
+"label": "22*",
+"id": "22*",
+"tav": {
+"mitt": "Agostino",
+"dest": "Alipio, Pellegrino",
+"luogo": "Ippona",
+"data": "420"
+},
+"src": "Anoz",
+"data": "420",
+"det": "marzo",
+"key": [
+420,
+207
+],
+"cuando": false
+},
+{
+"file": "lettera_209_testo.htm",
+"label": "203",
+"id": "203",
+"tav": {
+"mitt": "Agostino",
+"dest": "Largo",
+"luogo": "Ippona",
+"data": "418/420"
+},
+"src": "Anoz",
+"data": "prob. 420",
+"det": "",
+"key": [
+420,
+208
+],
+"cuando": false
+},
+{
+"file": "lettera_274_testo.htm",
+"label": "265",
+"id": "265",
+"tav": {
+"mitt": "Agostino",
+"dest": "Seleuciana",
+"luogo": "Ippona",
+"data": "dopo il 395"
+},
+"src": "Anoz",
+"data": "420?",
+"det": "",
+"key": [
+420,
+209
+],
+"cuando": false
+},
+{
+"file": "lettera_301_testo.htm",
+"label": "21*",
+"id": "21*",
+"tav": {
+"mitt": "Agostino",
+"dest": "Ai Suppesi",
+"luogo": "Ippona",
+"data": "ultimi anni"
+},
+"src": "Anoz",
+"data": "verso 420?",
+"det": "",
+"key": [
+420,
+210
+],
+"cuando": false
+},
+{
+"file": "lettera_307_testo.htm",
+"label": "26*",
+"id": "26*",
+"tav": {
+"mitt": "Agostino",
+"dest": "Onorio (?) - Onorato (?)",
+"luogo": "Ippona",
+"data": "Ultimi anni"
+},
+"src": "Anoz",
+"data": "verso 420?",
+"det": "",
+"key": [
+420,
+211
+],
+"cuando": false
+},
+{
+"file": "lettera_286_testo.htm",
+"label": "6*",
+"id": "6*",
+"tav": {
+"mitt": "Agostino",
+"dest": "Attico",
+"luogo": "Ippona",
+"data": "416 o 425 (?)"
+},
+"src": "Anoz",
+"data": "post 420",
+"det": "",
+"key": [
+420,
+212
+],
+"cuando": false
+},
+{
+"file": "lettera_203_testo.htm",
+"label": "198",
+"id": "198",
+"tav": {
+"mitt": "Esichio",
+"dest": "Agostino",
+"luogo": "Salona, presso Spalato",
+"data": "anteriore al 13-X-420 ( 41 )"
+},
+"src": "Tavola NBA",
+"data": "anteriore al 13-X-420 ( 41 )",
+"det": "",
+"key": [
+420,
+100000
+],
+"cuando": false
+},
+{
+"file": "lettera_291_testo.htm",
+"label": "11*",
+"id": "11*",
+"tav": {
+"mitt": "Consenzio",
+"dest": "Agostino",
+"luogo": "Ippona",
+"data": "420 c."
+},
+"src": "Tavola NBA",
+"data": "420 c.",
+"det": "",
+"key": [
+420,
+100000
+],
+"cuando": false
+},
+{
+"file": "lettera_171_testo.htm",
+"label": "170",
+"id": "170",
+"tav": {
+"mitt": "Alipio e Agostino",
+"dest": "Massimo",
+"luogo": "Ippona",
+"data": "posteriore al 414"
+},
+"src": "Anoz",
+"data": "421-423?",
+"det": "",
+"key": [
+421,
+213
+],
+"cuando": false
+},
+{
+"file": "lettera_172_testo.htm",
+"label": "171",
+"id": "171",
+"tav": {
+"mitt": "Alipio e Agostino",
+"dest": "Peregrino",
+"luogo": "Ippona",
+"data": "posteriore al 414"
+},
+"src": "Anoz",
+"data": "421-423?",
+"det": "",
+"key": [
+421,
+214
+],
+"cuando": false
+},
+{
+"file": "lettera_253_testo.htm",
+"label": "245",
+"id": "245",
+"tav": {
+"mitt": "Agostino",
+"dest": "Possidio",
+"luogo": "Ippona",
+"data": "M. = verso 401"
+},
+"src": "Anoz",
+"data": "421 o 422",
+"det": "",
+"key": [
+421,
+215
+],
+"cuando": false
+},
+{
+"file": "lettera_213_testo.htm",
+"label": "207",
+"id": "207",
+"tav": {
+"mitt": "Agostino",
+"dest": "Claudio",
+"luogo": "Ippona",
+"data": "421/22"
+},
+"src": "Anoz",
+"data": "421",
+"det": "",
+"key": [
+421,
+216
+],
+"cuando": false
+},
+{
+"file": "lettera_300_testo.htm",
+"label": "20*",
+"id": "20*",
+"tav": {
+"mitt": "Agostino",
+"dest": "Fabiola",
+"luogo": "Ippona",
+"data": "422-423"
+},
+"src": "Anoz",
+"data": "422",
+"det": "autunno-inizio inverno",
+"key": [
+422,
+217
+],
+"cuando": false
+},
+{
+"file": "lettera_215_testo.htm",
+"label": "209",
+"id": "209",
+"tav": {
+"mitt": "Agostino",
+"dest": "Celestino papa",
+"luogo": "Ippona",
+"data": "verso fine 422 (M. = inizio 423)"
+},
+"src": "Anoz",
+"data": "422",
+"det": "autunno-inizio inverno",
+"key": [
+422,
+218
+],
+"cuando": false
+},
+{
+"file": "lettera_214_testo.htm",
+"label": "208",
+"id": "208",
+"tav": {
+"mitt": "Agostino",
+"dest": "Felicia",
+"luogo": "Ippona",
+"data": "prob. 422/inizio 423"
+},
+"src": "Anoz",
+"data": "422 o 423",
+"det": "prob. inverno",
+"key": [
+422,
+219
+],
+"cuando": false
+},
+{
+"file": "lettera_189_testo.htm",
+"label": "185",
+"id": "185",
+"tav": {
+"mitt": "Agostino",
+"dest": "Bonifacio",
+"luogo": "Ippona",
+"data": "inizio del 417"
+},
+"src": "Anoz",
+"data": "423-427",
+"det": "",
+"key": [
+423,
+220
+],
+"cuando": false
+},
+{
+"file": "lettera_194_testo.htm",
+"label": "189",
+"id": "189",
+"tav": {
+"mitt": "Agostino",
+"dest": "Bonifacio",
+"luogo": "Ippona",
+"data": "417"
+},
+"src": "Anoz",
+"data": "423-427",
+"det": "",
+"key": [
+423,
+221
+],
+"cuando": false
+},
+{
+"file": "lettera_297_testo.htm",
+"label": "17*",
+"id": "17*",
+"tav": {
+"mitt": "Agostino",
+"dest": "Bonifacio",
+"luogo": "Ippona",
+"data": "dopo il 417"
+},
+"src": "Anoz",
+"data": "prob. 423-427",
+"det": "",
+"key": [
+423,
+222
+],
+"cuando": false
+},
+{
+"file": "lettera_223_testo.htm",
+"label": "215/A",
+"id": "215A",
+"tav": {
+"mitt": "Agostino",
+"dest": "Valentino",
+"luogo": "Ippona",
+"data": "426/27 ( 49 )"
+},
+"src": "Anoz",
+"data": "426 o 427",
+"det": "",
+"key": [
+426,
+223
+],
+"cuando": false
+},
+{
+"file": "lettera_221_testo.htm",
+"label": "214",
+"id": "214",
+"tav": {
+"mitt": "Agostino",
+"dest": "Valentino e i suoi monaci",
+"luogo": "Ippona",
+"data": "426/27 (prima di Pasqua)"
+},
+"src": "Anoz",
+"data": "426",
+"det": "primavera",
+"key": [
+426,
+224
+],
+"cuando": false
+},
+{
+"file": "lettera_222_testo.htm",
+"label": "215",
+"id": "215",
+"tav": {
+"mitt": "Agostino",
+"dest": "Valentino e i suoi monaci",
+"luogo": "Ippona",
+"data": "426/27 (dopo Pasqua) ( 48 )"
+},
+"src": "Anoz",
+"data": "426",
+"det": "primavera",
+"key": [
+426,
+225
+],
+"cuando": false
+},
+{
+"file": "lettera_220_testo.htm",
+"label": "213",
+"id": "213",
+"tav": {
+"mitt": "Verbale per la designazione del successore di A. alla cattedra di Ippona",
+"dest": "",
+"luogo": "Ippona",
+"data": "26-IX-426"
+},
+"src": "Anoz",
+"data": "426",
+"det": "domenica 26 settembre",
+"key": [
+426,
+226
+],
+"cuando": false
+},
+{
+"file": "lettera_281_testo.htm",
+"label": "1/A*",
+"id": "1A*",
+"tav": {
+"mitt": "Agostino",
+"dest": "Fermo",
+"luogo": "Ippona",
+"data": "426-428"
+},
+"src": "Anoz",
+"data": "426 o 427",
+"det": "inverno",
+"key": [
+426,
+227
+],
+"cuando": false
+},
+{
+"file": "lettera_219_testo.htm",
+"label": "212/A",
+"id": "212A",
+"tav": {
+"mitt": "Agostino",
+"dest": "Firmo",
+"luogo": "Ippona",
+"data": "426"
+},
+"src": "Tavola NBA",
+"data": "426",
+"det": "",
+"key": [
+426,
+100000
+],
+"cuando": false
+},
+{
+"file": "lettera_224_testo.htm",
+"label": "216",
+"id": "216",
+"tav": {
+"mitt": "Valentino",
+"dest": "Agostino",
+"luogo": "Adrumeto",
+"data": "426/27"
+},
+"src": "Tavola NBA",
+"data": "426/27",
+"det": "",
+"key": [
+426,
+100000
+],
+"cuando": false
+},
+{
+"file": "lettera_287_testo.htm",
+"label": "7*",
+"id": "7*",
+"tav": {
+"mitt": "Agostino",
+"dest": "Faustino",
+"luogo": "Ippona",
+"data": "426-428"
+},
+"src": "Tavola NBA",
+"data": "426-428",
+"det": "",
+"key": [
+426,
+100000
+],
+"cuando": false
+},
+{
+"file": "lettera_258_testo.htm",
+"label": "250",
+"id": "250",
+"tav": {
+"mitt": "Agostino",
+"dest": "Ausilio",
+"luogo": "Ippona",
+"data": "verso 415/420"
+},
+"src": "Anoz",
+"data": "427-430",
+"det": "",
+"key": [
+427,
+228
+],
+"cuando": false
+},
+{
+"file": "lettera_280_testo.htm",
+"label": "1*",
+"id": "1*",
+"tav": {
+"mitt": "Agostino",
+"dest": "Classiciano",
+"luogo": "Ippona",
+"data": "ultimi anni"
+},
+"src": "Anoz",
+"data": "post 24 settembre 427-ante 28 agosto 430",
+"det": "",
+"key": [
+427,
+229
+],
+"cuando": false
+},
+{
+"file": "lettera_225_testo.htm",
+"label": "217",
+"id": "217",
+"tav": {
+"mitt": "Agostino",
+"dest": "Vitale",
+"luogo": "Ippona",
+"data": "426/28"
+},
+"src": "Anoz",
+"data": "427",
+"det": "",
+"key": [
+427,
+230
+],
+"cuando": false
+},
+{
+"file": "lettera_228_testo.htm",
+"label": "220",
+"id": "220",
+"tav": {
+"mitt": "Agostino",
+"dest": "Bonifacio",
+"luogo": "Ippona",
+"data": "428 ( 51 )"
+},
+"src": "Anoz",
+"data": "427",
+"det": "",
+"key": [
+427,
+231
+],
+"cuando": false
+},
+{
+"file": "lettera_237_testo.htm",
+"label": "229",
+"id": "229",
+"tav": {
+"mitt": "Agostino",
+"dest": "Dario",
+"luogo": "Ippona",
+"data": "inverno 429/30"
+},
+"src": "Anoz",
+"data": "427",
+"det": "",
+"key": [
+427,
+232
+],
+"cuando": false
+},
+{
+"file": "lettera_289_testo.htm",
+"label": "9*",
+"id": "9*",
+"tav": {
+"mitt": "Agostino",
+"dest": "Alipio",
+"luogo": "Ippona",
+"data": "423-429"
+},
+"src": "Anoz",
+"data": "427-429",
+"det": "27 agosto",
+"key": [
+427,
+233
+],
+"cuando": false
+},
+{
+"file": "lettera_229_testo.htm",
+"label": "221",
+"id": "221",
+"tav": {
+"mitt": "Quodvultdeus",
+"dest": "Agostino",
+"luogo": "?",
+"data": "427/28"
+},
+"src": "Tavola NBA",
+"data": "427/28",
+"det": "",
+"key": [
+427,
+100000
+],
+"cuando": false
+},
+{
+"file": "lettera_231_testo.htm",
+"label": "223",
+"id": "223",
+"tav": {
+"mitt": "Quodvultdeus",
+"dest": "Agostino",
+"luogo": "?",
+"data": "427/28"
+},
+"src": "Tavola NBA",
+"data": "427/28",
+"det": "",
+"key": [
+427,
+100000
+],
+"cuando": false
+},
+{
+"file": "lettera_305_testo.htm",
+"label": "24*",
+"id": "24*",
+"tav": {
+"mitt": "Agostino",
+"dest": "Eustochio",
+"luogo": "Ippona",
+"data": "prima 422 o 428"
+},
+"src": "Anoz",
+"data": "prob. ante 428",
+"det": "",
+"key": [
+428,
+234
+],
+"cuando": false
+},
+{
+"file": "lettera_290_testo.htm",
+"label": "10*",
+"id": "10*",
+"tav": {
+"mitt": "Agostino",
+"dest": "Alipio",
+"luogo": "Ippona",
+"data": "422-423 (?) o 428 (?)"
+},
+"src": "Anoz",
+"data": "428",
+"det": "",
+"key": [
+428,
+235
+],
+"cuando": false
+},
+{
+"file": "lettera_252_testo.htm",
+"label": "244",
+"id": "244",
+"tav": {
+"mitt": "Agostino",
+"dest": "Crisimo",
+"luogo": "Ippona",
+"data": "dopo il 395"
+},
+"src": "Anoz",
+"data": "428",
+"det": "",
+"key": [
+428,
+236
+],
+"cuando": false
+},
+{
+"file": "lettera_230_testo.htm",
+"label": "222",
+"id": "222",
+"tav": {
+"mitt": "Agostino",
+"dest": "Quodvultdeus",
+"luogo": "Ippona",
+"data": "427/28"
+},
+"src": "Anoz",
+"data": "428",
+"det": "inizio",
+"key": [
+428,
+237
+],
+"cuando": false
+},
+{
+"file": "lettera_232_testo.htm",
+"label": "224",
+"id": "224",
+"tav": {
+"mitt": "Agostino",
+"dest": "Quodvultdeus",
+"luogo": "Ippona",
+"data": "427/28"
+},
+"src": "Anoz",
+"data": "428",
+"det": "inizio",
+"key": [
+428,
+238
+],
+"cuando": false
+},
+{
+"file": "lettera_282_testo.htm",
+"label": "2*",
+"id": "2*",
+"tav": {
+"mitt": "Agostino",
+"dest": "Fermo",
+"luogo": "Ippona",
+"data": "428 c."
+},
+"src": "Anoz",
+"data": "prob. 428",
+"det": "",
+"key": [
+428,
+239
+],
+"cuando": false
+},
+{
+"file": "lettera_239_testo.htm",
+"label": "231",
+"id": "231",
+"tav": {
+"mitt": "Agostino",
+"dest": "Dario",
+"luogo": "Ippona",
+"data": "fine 429/inizio 430"
+},
+"src": "Anoz",
+"data": "429",
+"det": "",
+"key": [
+429,
+240
+],
+"cuando": false
+},
+{
+"file": "lettera_236_testo.htm",
+"label": "228",
+"id": "228",
+"tav": {
+"mitt": "Agostino",
+"dest": "Onorato",
+"luogo": "Ippona",
+"data": "ca. estate 429 ( 55 )"
+},
+"src": "Anoz",
+"data": "429",
+"det": "estate",
+"key": [
+429,
+241
+],
+"cuando": false
+},
+{
+"file": "lettera_233_testo.htm",
+"label": "225",
+"id": "225",
+"tav": {
+"mitt": "Prospero",
+"dest": "Agostino",
+"luogo": "Marsiglia",
+"data": "429 ( 53 )"
+},
+"src": "Tavola NBA",
+"data": "429 ( 53 )",
+"det": "",
+"key": [
+429,
+100000
+],
+"cuando": false
+},
+{
+"file": "lettera_234_testo.htm",
+"label": "226",
+"id": "226",
+"tav": {
+"mitt": "Ilario",
+"dest": "Agostino",
+"luogo": "Marsiglia",
+"data": "429 ( 53 )"
+},
+"src": "Tavola NBA",
+"data": "429 ( 53 )",
+"det": "",
+"key": [
+429,
+100000
+],
+"cuando": false
+},
+{
+"file": "lettera_238_testo.htm",
+"label": "230",
+"id": "230",
+"tav": {
+"mitt": "Dario",
+"dest": "Agostino",
+"luogo": "Cartagine",
+"data": "ca. fine 429"
+},
+"src": "Tavola NBA",
+"data": "ca. fine 429",
+"det": "",
+"key": [
+429,
+100000
+],
+"cuando": false
+},
+{
+"file": "lettera_032_testo.htm",
+"label": "32",
+"id": "32",
+"tav": {
+"mitt": "Paolino",
+"dest": "Romaniano",
+"luogo": "Nola",
+"data": "poco prima della precedente"
+},
+"src": "non datata",
+"data": "",
+"det": "",
+"key": [
+9999,
+0
+],
+"cuando": false
+},
+{
+"file": "lettera_173_testo.htm",
+"label": "171/A",
+"id": "171A",
+"tav": {
+"mitt": "Agostino",
+"dest": "Massimo",
+"luogo": "Ippona",
+"data": "?"
+},
+"src": "non datata",
+"data": "",
+"det": "",
+"key": [
+9999,
+0
+],
+"cuando": true
+},
+{
+"file": "lettera_184_testo.htm",
+"label": "181",
+"id": "181",
+"tav": {
+"mitt": "Innocenzo papa",
+"dest": "Padri Conc. Cart.",
+"luogo": "Roma",
+"data": "?"
+},
+"src": "non datata",
+"data": "",
+"det": "",
+"key": [
+9999,
+0
+],
+"cuando": false
+},
+{
+"file": "lettera_186_testo.htm",
+"label": "183",
+"id": "183",
+"tav": {
+"mitt": "Innocenzo papa",
+"dest": "Ai 5 vescovi dell' ep. 177",
+"luogo": "Roma",
+"data": "?"
+},
+"src": "non datata",
+"data": "",
+"det": "",
+"key": [
+9999,
+0
+],
+"cuando": false
+},
+{
+"file": "lettera_190_testo.htm",
+"label": "185/A",
+"id": "185A",
+"tav": {
+"mitt": "Agostino",
+"dest": "Bonifacio",
+"luogo": "Ippona",
+"data": "?"
+},
+"src": "non datata",
+"data": "",
+"det": "",
+"key": [
+9999,
+0
+],
+"cuando": true
+},
+{
+"file": "lettera_288_testo.htm",
+"label": "8*",
+"id": "8*",
+"tav": {
+"mitt": "Agostino",
+"dest": "Vittore",
+"luogo": "Ippona",
+"data": "ultimi anni (?)"
+},
+"src": "non datata",
+"data": "",
+"det": "",
+"key": [
+9999,
+0
+],
+"cuando": true
+},
+{
+"file": "lettera_293_testo.htm",
+"label": "13*",
+"id": "13*",
+"tav": {
+"mitt": "Agostino",
+"dest": "Restituto",
+"luogo": "Ippona",
+"data": "ultimi anni (?)"
+},
+"src": "non datata",
+"data": "",
+"det": "",
+"key": [
+9999,
+0
+],
+"cuando": true
+},
+{
+"file": "lettera_298_testo.htm",
+"label": "18*",
+"id": "18*",
+"tav": {
+"mitt": "Agostino",
+"dest": "Ai Memblibani",
+"luogo": "Ippona",
+"data": "ultimi anni (?)"
+},
+"src": "non datata",
+"data": "",
+"det": "",
+"key": [
+9999,
+0
+],
+"cuando": true
+},
+{
+"file": "lettera_235_testo.htm",
+"label": "227",
+"id": "227",
+"tav": {
+"mitt": "Agostino",
+"dest": "Alipio",
+"luogo": "Ippona",
+"data": "?"
+},
+"src": "Anoz",
+"data": "ultimi anni di Agostino",
+"det": "",
+"key": [
+9999,
+242
+],
+"cuando": false
+},
+{
+"file": "lettera_278_testo.htm",
+"label": "269",
+"id": "269",
+"tav": {
+"mitt": "Agostino",
+"dest": "Nobilio",
+"luogo": "Ippona",
+"data": "probabilmente inverno 429/30"
+},
+"src": "Anoz",
+"data": "fine della vita di Agostino, inverno",
+"det": "",
+"key": [
+9999,
+243
+],
+"cuando": false
+}
+]

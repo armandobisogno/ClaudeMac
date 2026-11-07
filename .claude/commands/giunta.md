@@ -1,6 +1,6 @@
 ---
 description: Dal PDF del dossier Consiglio produce la sintesi schematica per la Giunta (.md + PDF stampabile), con tutti i punti raggruppati per tipologia e importanza
-argument-hint: "[percorso PDF opzionale; se vuoto prende il più recente in Direzione/Consigli e Giunte/]"
+argument-hint: "[percorso PDF opzionale; se vuoto prende il più recente in Università/Direzione/Consigli e Giunte/]"
 ---
 
 Sei "giunta" di Armando Bisogno, Direttore del Dipartimento di Scienze del
@@ -23,9 +23,9 @@ Tre file, **accanto al PDF**, con lo stesso nome-base del PDF:
 - `<stem>-sintesi-giunta.html` — sorgente impaginata, ritoccabile a mano
 - `<stem>-sintesi-giunta.pdf` — la stessa sintesi, impaginata per la seduta
 
-Es. da `Direzione/Consigli e Giunte/090926.pdf` →
-`Direzione/Consigli e Giunte/090926-sintesi-giunta.{md,html,pdf}`.
-La cartella `Direzione/` è in `.gitignore`: gli output restano solo in locale.
+Es. da `Università/Direzione/Consigli e Giunte/090926.pdf` →
+`Università/Direzione/Consigli e Giunte/090926-sintesi-giunta.{md,html,pdf}`.
+La cartella `Università/Direzione/` è in `.gitignore`: gli output restano solo in locale.
 
 ## Regole d'oro
 
@@ -49,7 +49,7 @@ Esegui:
 ```
 python3 brain/tools/odg_extract.py $ARGUMENTS
 ```
-(senza argomento prende il `.pdf` più recente in `Direzione/Consigli e Giunte/`,
+(senza argomento prende il `.pdf` più recente in `Università/Direzione/Consigli e Giunte/`,
 esclusi i file `*-sintesi-giunta.*`). Annota dall'output: percorso del PDF,
 `stem`, numero pagine, elenco **Oggetti** (con pagina), numero e pagine dei
 **decreti d'urgenza da portare a ratifica**, pagine con **verbo deliberativo**.
@@ -173,7 +173,7 @@ tabella del quadro sinottico con bordi leggeri, titoli di sezione distinguibili,
 `▶` ben visibile, blocchi `page-break-inside: avoid` sui singoli punti. Niente
 CSS o font esterni. È la sorgente editabile del PDF (per ritoccare a mano). Poi:
 ```
-brain/tools/html_to_pdf.sh <stem>-sintesi-giunta.html "Direzione/Consigli e Giunte/<stem>-sintesi-giunta.pdf"
+brain/tools/html_to_pdf.sh <stem>-sintesi-giunta.html "Università/Direzione/Consigli e Giunte/<stem>-sintesi-giunta.pdf"
 ```
 Se lo script esce con codice 3 (nessun browser), segnalalo: il .md resta
 comunque il documento buono.
@@ -186,7 +186,7 @@ controllo integrità.
 ## Vincoli
 - Scrivi **solo** i file `<stem>-sintesi-giunta.{md,pdf,html}`. Non toccare il PDF
   di partenza né altri file della cartella.
-- Niente rete, niente Notion, niente git/commit/push: la cartella `Direzione/` è
+- Niente rete, niente Notion, niente git/commit/push: la cartella `Università/Direzione/` è
   locale e riservata (contiene nomi e questioni di personale).
 - Non chiedere conferme: procedi con le scelte migliori e segnala i dubbi nel
   controllo integrità e nel riepilogo.

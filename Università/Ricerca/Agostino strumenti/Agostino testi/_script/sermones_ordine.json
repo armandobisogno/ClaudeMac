@@ -1,0 +1,12090 @@
+[
+{
+"file": "discorso_243_testo.htm",
+"label": "190",
+"id": "190",
+"coll": "main",
+"src": "Anoz",
+"data": "391-400",
+"det": "",
+"key": [
+391,
+1
+],
+"tav": {
+"arg": "Natale",
+"luogo": "-",
+"data": "25-12 391-400 (K, Be)"
+},
+"cuando": false
+},
+{
+"file": "discorso_475_testo.htm",
+"label": "335",
+"id": "335",
+"coll": "main",
+"src": "Anoz",
+"data": "391-400",
+"det": "",
+"key": [
+391,
+2
+],
+"tav": {
+"arg": "Festa Martiri",
+"luogo": "-",
+"data": "410-412 (K, Be)"
+},
+"cuando": false
+},
+{
+"file": "discorso_098_testo.htm",
+"label": "75",
+"id": "75",
+"coll": "main",
+"src": "Anoz",
+"data": "391-399",
+"det": "",
+"key": [
+391,
+3
+],
+"tav": {
+"arg": "Mt 14, 24-33",
+"luogo": "-",
+"data": "prima 400 (K, Be)"
+},
+"cuando": false
+},
+{
+"file": "discorso_147_testo.htm",
+"label": "113/B",
+"id": "113B",
+"coll": "main",
+"src": "Anoz",
+"data": "391-398",
+"det": "",
+"key": [
+391,
+4
+],
+"tav": {
+"arg": "Lc 16, 19-31",
+"luogo": "-",
+"data": "c. 399 (K, Be)"
+},
+"cuando": false
+},
+{
+"file": "discorso_237_testo.htm",
+"label": "184",
+"id": "184",
+"coll": "main",
+"src": "Anoz",
+"data": "391-396",
+"det": "",
+"key": [
+391,
+5
+],
+"tav": {
+"arg": "Natale",
+"luogo": "-",
+"data": "25-12 dopo 411-412 (K, Be)"
+},
+"cuando": false
+},
+{
+"file": "discorso_515_testo.htm",
+"label": "353",
+"id": "353",
+"coll": "main",
+"src": "Anoz",
+"data": "391-396",
+"det": "",
+"key": [
+391,
+6
+],
+"tav": {
+"arg": "Esortazione ai neofiti",
+"luogo": "Ippona Bas, Leontiana",
+"data": "Domenica ottava P. 391-396 (K, Be)"
+},
+"cuando": false
+},
+{
+"file": "discorso_214_testo.htm",
+"label": "164/A",
+"id": "164A",
+"coll": "main",
+"src": "Anoz",
+"data": "391-395",
+"det": "",
+"key": [
+391,
+7
+],
+"tav": {
+"arg": "Gal 6, 9-10",
+"luogo": "Ippona",
+"data": "durante presbiterato"
+},
+"cuando": false
+},
+{
+"file": "discorso_273_testo.htm",
+"label": "216",
+"id": "216",
+"coll": "main",
+"src": "Anoz",
+"data": "391",
+"det": "domenica 30 marzo",
+"key": [
+391,
+8
+],
+"tav": {
+"arg": "nel giorno degli Scrutini",
+"luogo": "Ippona",
+"data": "390-391 (W) due sett. prima P. 391 (K) epoca presbiter. (Po) marzo 391 (Po)"
+},
+"cuando": false
+},
+{
+"file": "discorso_080_testo.htm",
+"label": "63/A",
+"id": "63A",
+"coll": "main",
+"src": "Anoz",
+"data": "393-405",
+"det": "",
+"key": [
+393,
+9
+],
+"tav": {
+"arg": "Mt 9, 18-22",
+"luogo": "-",
+"data": "393-405"
+},
+"cuando": false
+},
+{
+"file": "discorso_255_testo.htm",
+"label": "200",
+"id": "200",
+"coll": "main",
+"src": "Anoz",
+"data": "393-405",
+"det": "",
+"key": [
+393,
+10
+],
+"tav": {
+"arg": "Epifania",
+"luogo": "Ippona",
+"data": "6-1 393-405 (K, Be)"
+},
+"cuando": false
+},
+{
+"file": "discorso_281_testo.htm",
+"label": "221",
+"id": "221",
+"coll": "main",
+"src": "Anoz",
+"data": "393-405",
+"det": "",
+"key": [
+393,
+11
+],
+"tav": {
+"arg": "Pasqua",
+"luogo": "Ippona",
+"data": "vigilia di P. 412-415? (Be) 393-405 (K)"
+},
+"cuando": false
+},
+{
+"file": "discorso_382_testo.htm",
+"label": "271",
+"id": "271",
+"coll": "main",
+"src": "Anoz",
+"data": "393-405",
+"det": "",
+"key": [
+393,
+12
+],
+"tav": {
+"arg": "Pentecoste",
+"luogo": "-",
+"data": "Pentecoste 393-405 (K, Be)"
+},
+"cuando": false
+},
+{
+"file": "discorso_068_testo.htm",
+"label": "55",
+"id": "55",
+"coll": "main",
+"src": "Anoz",
+"data": "393-404",
+"det": "",
+"key": [
+393,
+13
+],
+"tav": {
+"arg": "Mt 5, 22",
+"luogo": "-",
+"data": "prima 405 (B) prima 409 (Ro)"
+},
+"cuando": false
+},
+{
+"file": "discorso_358_testo.htm",
+"label": "259",
+"id": "259",
+"coll": "main",
+"src": "Anoz",
+"data": "393-400",
+"det": "",
+"key": [
+393,
+14
+],
+"tav": {
+"arg": "T. P. Io 20, 19-29",
+"luogo": "Ippona Bas. Maior (Po)",
+"data": "domenica ottava P. c. 393 (KBe) c. 400 (Po)"
+},
+"cuando": false
+},
+{
+"file": "discorso_362_testo.htm",
+"label": "260/C",
+"id": "260C",
+"coll": "main",
+"src": "Anoz",
+"data": "393-395",
+"det": "",
+"key": [
+393,
+15
+],
+"tav": {
+"arg": "T. P.",
+"luogo": "Ippona Bas. Leontiana",
+"data": "domenica ottava P. 393-395 (F) dal 410 (Po)"
+},
+"cuando": false
+},
+{
+"file": "discorso_007_testo.htm",
+"label": "6",
+"id": "6",
+"coll": "main",
+"src": "Anoz",
+"data": "394-395",
+"det": "",
+"key": [
+394,
+16
+],
+"tav": {
+"arg": "Ex 3",
+"luogo": "-",
+"data": "-"
+},
+"cuando": false
+},
+{
+"file": "discorso_013_testo.htm",
+"label": "12",
+"id": "12",
+"coll": "main",
+"src": "Anoz",
+"data": "394-395",
+"det": "",
+"key": [
+394,
+17
+],
+"tav": {
+"arg": "Iob 1, 6-7; Mt 5, 8",
+"luogo": "-",
+"data": "394-395"
+},
+"cuando": false
+},
+{
+"file": "discorso_062_testo.htm",
+"label": "50",
+"id": "50",
+"coll": "main",
+"src": "Anoz",
+"data": "394-395",
+"det": "",
+"key": [
+394,
+18
+],
+"tav": {
+"arg": "Agg 2, 9",
+"luogo": "-",
+"data": "391-393 (L, Be) 394-395 (K, B)"
+},
+"cuando": false
+},
+{
+"file": "discorso_578_testo.htm",
+"label": "159/A",
+"id": "159A",
+"coll": "main",
+"src": "Anoz",
+"data": "394-395",
+"det": "",
+"key": [
+394,
+19
+],
+"tav": {
+"arg": "Nessun legame umano al di sopra di Cristo",
+"luogo": "(Cartagine ?) luogo del S. D. 12",
+"data": "estate 397 festa d'un martire 394-395 (H.)"
+},
+"cuando": false
+},
+{
+"file": "discorso_578_testo.htm",
+"label": "Dolbeau 13",
+"code": "159/A",
+"coll": "nuovi",
+"src": "Anoz",
+"data": "394-395",
+"det": "",
+"key": [
+394,
+19
+],
+"tav": {
+"arg": "Nessun legame umano al di sopra di Cristo",
+"luogo": "(Cartagine ?) luogo del S. D. 12",
+"data": "estate 397 festa d'un martire 394-395 (H.)"
+},
+"cuando": false
+},
+{
+"file": "discorso_441_testo.htm",
+"label": "309",
+"id": "309",
+"coll": "main",
+"src": "Anoz",
+"data": "394",
+"det": "giovedì 14 settembre",
+"key": [
+394,
+20
+],
+"tav": {
+"arg": "S. Cipriano",
+"luogo": "Cartagine Bas. Cypriani",
+"data": "14-9"
+},
+"cuando": false
+},
+{
+"file": "discorso_275_testo.htm",
+"label": "218",
+"id": "218",
+"coll": "main",
+"src": "Anoz",
+"data": "395-419",
+"det": "",
+"key": [
+395,
+21
+],
+"tav": {
+"arg": "Passione",
+"luogo": "Ippona",
+"data": "venerdì santo (Maur.) prima 420 (K, B, Be)"
+},
+"cuando": false
+},
+{
+"file": "discorso_598_testo.htm",
+"label": "218 augm.",
+"id": "218AUG",
+"coll": "main",
+"src": "Anoz",
+"data": "395-419",
+"det": "",
+"key": [
+395,
+21
+],
+"tav": {
+"arg": "Passione",
+"luogo": "Ippona",
+"data": "venerdì santo (Maur.) prima 420 (K, B, Be)"
+},
+"cuando": false
+},
+{
+"file": "discorso_598_testo.htm",
+"label": "Étaix 5",
+"code": "218 augm.",
+"coll": "nuovi",
+"src": "Anoz",
+"data": "395-419",
+"det": "",
+"key": [
+395,
+21
+],
+"tav": {
+"arg": "Passione",
+"luogo": "Ippona",
+"data": "venerdì santo (Maur.) prima 420 (K, B, Be)"
+},
+"cuando": false
+},
+{
+"file": "discorso_043_testo.htm",
+"label": "33",
+"id": "33",
+"coll": "main",
+"src": "Anoz",
+"data": "395-405",
+"det": "",
+"key": [
+395,
+22
+],
+"tav": {
+"arg": "Ps 143, 9",
+"luogo": "-",
+"data": "405-411"
+},
+"cuando": false
+},
+{
+"file": "discorso_450_testo.htm",
+"label": "313/E",
+"id": "313E",
+"coll": "main",
+"src": "Anoz",
+"data": "395 o 396",
+"det": "14 settembre",
+"key": [
+395,
+23
+],
+"tav": {
+"arg": "S. Cipriano",
+"luogo": "Cartagine Bas. Cypriani Utica?",
+"data": "14-9-410 (K)"
+},
+"cuando": false
+},
+{
+"file": "discorso_129_testo.htm",
+"label": "100",
+"id": "100",
+"coll": "main",
+"src": "Anoz",
+"data": "395",
+"det": "",
+"key": [
+395,
+24
+],
+"tav": {
+"arg": "Lc 9, 57-62",
+"luogo": "-",
+"data": "c. 417 (K, Be) 417 o 3955? (B)"
+},
+"cuando": false
+},
+{
+"file": "discorso_051_testo.htm",
+"label": "40",
+"id": "40",
+"coll": "main",
+"src": "Tavola NBA",
+"data": "anniv. ordin. episc. Ag. 395-396 dopo 396 (Be) dopo 396 o 400 (K)",
+"det": "",
+"key": [
+395,
+100000
+],
+"tav": {
+"arg": "Eccli 5, 8",
+"luogo": "Ippona",
+"data": "anniv. ordin. episc. Ag. 395-396 dopo 396 (Be) dopo 396 o 400 (K)"
+},
+"cuando": false
+},
+{
+"file": "discorso_516_testo.htm",
+"label": "354",
+"id": "354",
+"coll": "main",
+"src": "Anoz",
+"data": "396-410",
+"det": "",
+"key": [
+396,
+25
+],
+"tav": {
+"arg": "Esortazione ai religiosi",
+"luogo": "-",
+"data": "prima 410 (K, Be)"
+},
+"cuando": false
+},
+{
+"file": "discorso_367_testo.htm",
+"label": "263",
+"id": "263",
+"coll": "main",
+"src": "Anoz",
+"data": "396 o 397",
+"det": "Ascensione",
+"key": [
+396,
+26
+],
+"tav": {
+"arg": "Ascensione",
+"luogo": "-",
+"data": "396-397 (K)"
+},
+"cuando": false
+},
+{
+"file": "discorso_372_testo.htm",
+"label": "265/B",
+"id": "265B",
+"coll": "main",
+"src": "Anoz",
+"data": "396 o 397",
+"det": "Ascensione",
+"key": [
+396,
+27
+],
+"tav": {
+"arg": "Ascensione",
+"luogo": "-",
+"data": "396-397 (K, B, Be) c. 412 (Ba)"
+},
+"cuando": false
+},
+{
+"file": "discorso_386_testo.htm",
+"label": "273",
+"id": "273",
+"coll": "main",
+"src": "Anoz",
+"data": "396",
+"det": "lunedì 21 gennaio",
+"key": [
+396,
+28
+],
+"tav": {
+"arg": "SS. Fruttuoso, Augurio e Eulogio",
+"luogo": "Ippona Mem. Theogenis",
+"data": "21-1-396 (K, B, Be, P)"
+},
+"cuando": false
+},
+{
+"file": "discorso_349_testo.htm",
+"label": "252",
+"id": "252",
+"coll": "main",
+"src": "Anoz",
+"data": "396",
+"det": "venerdì santo 18 aprile",
+"key": [
+396,
+29
+],
+"tav": {
+"arg": "T. P. Io 21, 1-14",
+"luogo": "Cartagine (Mo) Ippona Bas. Leontiana (P, L)",
+"data": "settimana di P. c. 395 (Mo, L) c. 396 (K, Po, B)"
+},
+"cuando": false
+},
+{
+"file": "discorso_155_testo.htm",
+"label": "120",
+"id": "120",
+"coll": "main",
+"src": "Anoz",
+"data": "post 396",
+"det": "",
+"key": [
+396,
+30
+],
+"tav": {
+"arg": "Io 1, 1-9",
+"luogo": "Ippona",
+"data": "Pasqua dopo 396 (K, Be)"
+},
+"cuando": false
+},
+{
+"file": "discorso_230_testo.htm",
+"label": "178",
+"id": "178",
+"coll": "main",
+"src": "Anoz",
+"data": "post 396",
+"det": "",
+"key": [
+396,
+31
+],
+"tav": {
+"arg": "Tit 1, 9",
+"luogo": "-",
+"data": "dopo 396 (K, Be)"
+},
+"cuando": false
+},
+{
+"file": "discorso_368_testo.htm",
+"label": "263/A",
+"id": "263A",
+"coll": "main",
+"src": "Anoz",
+"data": "397-400",
+"det": "Ascensione",
+"key": [
+397,
+32
+],
+"tav": {
+"arg": "Ascensione",
+"luogo": "-",
+"data": "396-397 (K, Be) dopo 396. 400 (Ba)"
+},
+"cuando": false
+},
+{
+"file": "discorso_576_testo.htm",
+"label": "90/A",
+"id": "90A",
+"coll": "main",
+"src": "Anoz",
+"data": "397 o 398",
+"det": "",
+"key": [
+397,
+33
+],
+"tav": {
+"arg": "L'amore di Dio e del prossimo",
+"luogo": "(Cartagine ?)",
+"data": "(estate 397 ?) 397-398 (H.)"
+},
+"cuando": false
+},
+{
+"file": "discorso_576_testo.htm",
+"label": "Dolbeau 11",
+"code": "90/A",
+"coll": "nuovi",
+"src": "Anoz",
+"data": "397 o 398",
+"det": "",
+"key": [
+397,
+33
+],
+"tav": {
+"arg": "L'amore di Dio e del prossimo",
+"luogo": "(Cartagine ?)",
+"data": "(estate 397 ?) 397-398 (H.)"
+},
+"cuando": false
+},
+{
+"file": "discorso_039_testo.htm",
+"label": "29/A",
+"id": "29A",
+"coll": "main",
+"src": "Anoz",
+"data": "397",
+"det": "prob. vigilia di Pentecoste 23 maggio",
+"key": [
+397,
+34
+],
+"tav": {
+"arg": "Ps 117, 1",
+"luogo": "Cartagine",
+"data": "Vigilia di Pentecoste 23-5-397"
+},
+"cuando": false
+},
+{
+"file": "discorso_440_testo.htm",
+"label": "308/A",
+"id": "308A",
+"coll": "main",
+"src": "Anoz",
+"data": "397",
+"det": "domenica 13 settembre, sera",
+"key": [
+397,
+35
+],
+"tav": {
+"arg": "S. Cipriano Ps 131, 17-18",
+"luogo": "Cartagine Bas. Cypriani",
+"data": "13-9-397/400"
+},
+"cuando": false
+},
+{
+"file": "discorso_451_testo.htm",
+"label": "313/F",
+"id": "313F",
+"coll": "main",
+"src": "Anoz",
+"data": "397",
+"det": "lunedì 14 settembre, sera",
+"key": [
+397,
+36
+],
+"tav": {
+"arg": "S. Cipriano Ps 51, 10",
+"luogo": "Cartagine Bas. Cypriani",
+"data": "14-9-397/400"
+},
+"cuando": false
+},
+{
+"file": "discorso_436_testo.htm",
+"label": "306/C",
+"id": "306C",
+"coll": "main",
+"src": "Anoz",
+"data": "397?",
+"det": "21 agosto",
+"key": [
+397,
+37
+],
+"tav": {
+"arg": "S. Quadrato Mt 16, 25",
+"luogo": "Cartagine Bas. Cypriani",
+"data": "21-8 c. 396-397"
+},
+"cuando": false
+},
+{
+"file": "discorso_582_testo.htm",
+"label": "110/A",
+"id": "110A",
+"coll": "main",
+"src": "Tavola NBA",
+"data": "(estate 397 ?) 403-404 (? H.)",
+"det": "",
+"key": [
+397,
+100000
+],
+"tav": {
+"arg": "Lc 13, 1-16",
+"luogo": "(Cartagine ?) luogo del S. D. 16",
+"data": "(estate 397 ?) 403-404 (? H.)"
+},
+"cuando": false
+},
+{
+"file": "discorso_427_testo.htm",
+"label": "301/A",
+"id": "301A",
+"coll": "main",
+"src": "Anoz",
+"data": "399",
+"det": "lunedì 1 agosto",
+"key": [
+399,
+38
+],
+"tav": {
+"arg": "SS. Maccabei Lc 14, 28-33",
+"luogo": "Bulla regia [Hammam Darradji] (P, Po)",
+"data": "1-8 prima 400 (K, Be, V, P)"
+},
+"cuando": false
+},
+{
+"file": "discorso_126_testo.htm",
+"label": "97/A",
+"id": "97A",
+"coll": "main",
+"src": "Tavola NBA",
+"data": "tempo pasquale 399",
+"det": "",
+"key": [
+399,
+100000
+],
+"tav": {
+"arg": "Lc 5, 31-32",
+"luogo": "-",
+"data": "tempo pasquale 399"
+},
+"cuando": false
+},
+{
+"file": "discorso_502_testo.htm",
+"label": "346/A",
+"id": "346A",
+"coll": "main",
+"src": "Tavola NBA",
+"data": "dicembre 399 (K, L, Be)",
+"det": "",
+"key": [
+399,
+100000
+],
+"tav": {
+"arg": "Pellegrinaggio terreno",
+"luogo": "-",
+"data": "dicembre 399 (K, L, Be)"
+},
+"cuando": false
+},
+{
+"file": "discorso_240_testo.htm",
+"label": "187",
+"id": "187",
+"coll": "main",
+"src": "Anoz",
+"data": "ante 400",
+"det": "",
+"key": [
+400,
+39
+],
+"tav": {
+"arg": "Natale",
+"luogo": "-",
+"data": "25-12 prima 411-412 (K, Be)"
+},
+"cuando": false
+},
+{
+"file": "discorso_118_testo.htm",
+"label": "91",
+"id": "91",
+"coll": "main",
+"src": "Anoz",
+"data": "verso 400",
+"det": "",
+"key": [
+400,
+40
+],
+"tav": {
+"arg": "Mt 22, 42-23, 12",
+"luogo": "-",
+"data": "dopo 400 (Ba)"
+},
+"cuando": false
+},
+{
+"file": "discorso_096_testo.htm",
+"label": "73/A",
+"id": "73A",
+"coll": "main",
+"src": "Anoz",
+"data": "400-410",
+"det": "",
+"key": [
+400,
+41
+],
+"tav": {
+"arg": "Mt 13, 24-30",
+"luogo": "-",
+"data": "400-410 (K, Be)"
+},
+"cuando": false
+},
+{
+"file": "discorso_257_testo.htm",
+"label": "202",
+"id": "202",
+"coll": "main",
+"src": "Anoz",
+"data": "400-410",
+"det": "",
+"key": [
+400,
+42
+],
+"tav": {
+"arg": "Epifania",
+"luogo": "-",
+"data": "6-1 405-411 (K, Be)"
+},
+"cuando": false
+},
+{
+"file": "discorso_276_testo.htm",
+"label": "218/A",
+"id": "218A",
+"coll": "main",
+"src": "Anoz",
+"data": "400-410",
+"det": "",
+"key": [
+400,
+43
+],
+"tav": {
+"arg": "Passione",
+"luogo": "Ippona",
+"data": "-"
+},
+"cuando": false
+},
+{
+"file": "discorso_300_testo.htm",
+"label": "228/A",
+"id": "228A",
+"coll": "main",
+"src": "Anoz",
+"data": "400-410",
+"det": "",
+"key": [
+400,
+44
+],
+"tav": {
+"arg": "Pasqua",
+"luogo": "Ippona",
+"data": "Pasqua 400-410 (Po)"
+},
+"cuando": false
+},
+{
+"file": "discorso_311_testo.htm",
+"label": "229/I",
+"id": "229I",
+"coll": "main",
+"src": "Anoz",
+"data": "400-410",
+"det": "",
+"key": [
+400,
+45
+],
+"tav": {
+"arg": "T. P.",
+"luogo": "Ippona",
+"data": "mercoledì dopo P. 393-405 (K, Be) 400-410"
+},
+"cuando": false
+},
+{
+"file": "discorso_360_testo.htm",
+"label": "260/A",
+"id": "260A",
+"coll": "main",
+"src": "Anoz",
+"data": "400-410",
+"det": "",
+"key": [
+400,
+46
+],
+"tav": {
+"arg": "T. P.",
+"luogo": "Ippona",
+"data": "domenica ottava P. 393-405 (K, Be)"
+},
+"cuando": false
+},
+{
+"file": "discorso_048_testo.htm",
+"label": "37",
+"id": "37",
+"coll": "main",
+"src": "Anoz",
+"data": "400-410",
+"det": "17 luglio, sera",
+"key": [
+400,
+47
+],
+"tav": {
+"arg": "Prov 13, 7-8",
+"luogo": "-",
+"data": "prima del 410 (K, L, Be) 410-413 (B)"
+},
+"cuando": false
+},
+{
+"file": "discorso_414_testo.htm",
+"label": "295",
+"id": "295",
+"coll": "main",
+"src": "Anoz",
+"data": "400-410",
+"det": "29 giugno",
+"key": [
+400,
+48
+],
+"tav": {
+"arg": "SS. Pietro e Paolo",
+"luogo": "-",
+"data": "29-6-413/411 (K, B, Be) prima 405 (Mo)"
+},
+"cuando": false
+},
+{
+"file": "discorso_361_testo.htm",
+"label": "260/B",
+"id": "260B",
+"coll": "main",
+"src": "Anoz",
+"data": "verso 400-410",
+"det": "",
+"key": [
+400,
+49
+],
+"tav": {
+"arg": "T. P.",
+"luogo": "Ippona",
+"data": "domenica ottava P. c. 400-410"
+},
+"cuando": false
+},
+{
+"file": "discorso_041_testo.htm",
+"label": "31",
+"id": "31",
+"coll": "main",
+"src": "Anoz",
+"data": "prob. 400-408",
+"det": "",
+"key": [
+400,
+50
+],
+"tav": {
+"arg": "Ps 125, 5",
+"luogo": "-",
+"data": "prima del 405"
+},
+"cuando": false
+},
+{
+"file": "discorso_027_testo.htm",
+"label": "22",
+"id": "22",
+"coll": "main",
+"src": "Anoz",
+"data": "400-405",
+"det": "",
+"key": [
+400,
+51
+],
+"tav": {
+"arg": "Ps 67, 3",
+"luogo": "Cartagine (?)",
+"data": "dopo marzo 399 (M) 400-405 (K, L, Be)"
+},
+"cuando": false
+},
+{
+"file": "discorso_160_testo.htm",
+"label": "125",
+"id": "125",
+"coll": "main",
+"src": "Anoz",
+"data": "400-405",
+"det": "",
+"key": [
+400,
+52
+],
+"tav": {
+"arg": "Io 5, 2-5",
+"luogo": "-",
+"data": "416-417 (K, Be) quaresima 416-417 (B)"
+},
+"cuando": false
+},
+{
+"file": "discorso_284_testo.htm",
+"label": "223/A",
+"id": "223A",
+"coll": "main",
+"src": "Anoz",
+"data": "400-405",
+"det": "",
+"key": [
+400,
+53
+],
+"tav": {
+"arg": "Pasqua",
+"luogo": "Ippona",
+"data": "notte di P. c. 399"
+},
+"cuando": false
+},
+{
+"file": "discorso_468_testo.htm",
+"label": "328",
+"id": "328",
+"coll": "main",
+"src": "Anoz",
+"data": "400-405",
+"det": "",
+"key": [
+400,
+54
+],
+"tav": {
+"arg": "Festa Martiri",
+"luogo": "-",
+"data": "405/411"
+},
+"cuando": false
+},
+{
+"file": "discorso_141_testo.htm",
+"label": "110",
+"id": "110",
+"coll": "main",
+"src": "Anoz",
+"data": "400-405?",
+"det": "",
+"key": [
+400,
+55
+],
+"tav": {
+"arg": "Lc 13, 6-17",
+"luogo": "-",
+"data": "410-412 (K, Be)"
+},
+"cuando": false
+},
+{
+"file": "discorso_263_testo.htm",
+"label": "207",
+"id": "207",
+"coll": "main",
+"src": "Anoz",
+"data": "verso 400",
+"det": "",
+"key": [
+400,
+56
+],
+"tav": {
+"arg": "Quaresima",
+"luogo": "-",
+"data": "inizio quaresima"
+},
+"cuando": false
+},
+{
+"file": "discorso_289_testo.htm",
+"label": "223/F",
+"id": "223F",
+"coll": "main",
+"src": "Anoz",
+"data": "verso 400",
+"det": "",
+"key": [
+400,
+57
+],
+"tav": {
+"arg": "Pasqua",
+"luogo": "Ippona",
+"data": "veglia pasquale"
+},
+"cuando": false
+},
+{
+"file": "discorso_239_testo.htm",
+"label": "186",
+"id": "186",
+"coll": "main",
+"src": "Anoz",
+"data": "post 400",
+"det": "",
+"key": [
+400,
+58
+],
+"tav": {
+"arg": "Natale",
+"luogo": "-",
+"data": "25-12 411-416 (K, Be) dopo 400 (Ba)"
+},
+"cuando": false
+},
+{
+"file": "discorso_052_testo.htm",
+"label": "41",
+"id": "41",
+"coll": "main",
+"src": "Tavola NBA",
+"data": "dopo 400 (?)",
+"det": "",
+"key": [
+400,
+100000
+],
+"tav": {
+"arg": "Eccli 22, 28",
+"luogo": "-",
+"data": "dopo 400 (?)"
+},
+"cuando": true
+},
+{
+"file": "discorso_251_testo.htm",
+"label": "197",
+"id": "197",
+"coll": "main",
+"src": "Tavola NBA",
+"data": "1-1 prima 400 (K, B, Be) prima 420 (Mo)",
+"det": "",
+"key": [
+400,
+100000
+],
+"tav": {
+"arg": "I° gennaio",
+"luogo": "-",
+"data": "1-1 prima 400 (K, B, Be) prima 420 (Mo)"
+},
+"cuando": false
+},
+{
+"file": "discorso_476_testo.htm",
+"label": "335/A",
+"id": "335A",
+"coll": "main",
+"src": "Anoz",
+"data": "ante 401",
+"det": "",
+"key": [
+401,
+59
+],
+"tav": {
+"arg": "SS. Primo, Vittoria e Perpetua",
+"luogo": "-",
+"data": "prima 401 (K)"
+},
+"cuando": false
+},
+{
+"file": "discorso_265_testo.htm",
+"label": "209",
+"id": "209",
+"coll": "main",
+"src": "Anoz",
+"data": "401 o 402",
+"det": "",
+"key": [
+401,
+60
+],
+"tav": {
+"arg": "Quaresima",
+"luogo": "-",
+"data": "inizio quaresima"
+},
+"cuando": false
+},
+{
+"file": "discorso_031_testo.htm",
+"label": "24",
+"id": "24",
+"coll": "main",
+"src": "Anoz",
+"data": "401",
+"det": "domenica 16 giugno, sera",
+"key": [
+401,
+61
+],
+"tav": {
+"arg": "Ps 82, 2",
+"luogo": "Cartagine",
+"data": "domenica 16-6-401"
+},
+"cuando": false
+},
+{
+"file": "discorso_393_testo.htm",
+"label": "279",
+"id": "279",
+"coll": "main",
+"src": "Anoz",
+"data": "401",
+"det": "domenica 23 giugno",
+"key": [
+401,
+62
+],
+"tav": {
+"arg": "Conversione Paolo; conversione Faustino",
+"luogo": "Cartagine",
+"data": "23-6-401 (K, L, P, B)"
+},
+"cuando": false
+},
+{
+"file": "discorso_402_testo.htm",
+"label": "288",
+"id": "288",
+"coll": "main",
+"src": "Anoz",
+"data": "401",
+"det": "lunedì 24 giugno",
+"key": [
+401,
+63
+],
+"tav": {
+"arg": "Nat. S. Giovanni B.",
+"luogo": "Cartagine",
+"data": "24-6-401 (K, Be, P)"
+},
+"cuando": false
+},
+{
+"file": "discorso_432_testo.htm",
+"label": "305/A",
+"id": "305A",
+"coll": "main",
+"src": "Anoz",
+"data": "401",
+"det": "sabato 10 agosto",
+"key": [
+401,
+64
+],
+"tav": {
+"arg": "S. Lorenzo Mt 23, 29-39",
+"luogo": "Cartagine Bas. Restituta",
+"data": "10-8-401"
+},
+"cuando": false
+},
+{
+"file": "discorso_446_testo.htm",
+"label": "313/A",
+"id": "313A",
+"coll": "main",
+"src": "Anoz",
+"data": "401",
+"det": "sabato 14 settembre, mattina",
+"key": [
+401,
+65
+],
+"tav": {
+"arg": "S. Cipriano",
+"luogo": "Cartagine Bas. Cypriani",
+"data": "149 c. 400/401"
+},
+"cuando": false
+},
+{
+"file": "discorso_447_testo.htm",
+"label": "313/B",
+"id": "313B",
+"coll": "main",
+"src": "Anoz",
+"data": "401",
+"det": "sabato 14 settembre, sera",
+"key": [
+401,
+66
+],
+"tav": {
+"arg": "S. Cipriano",
+"luogo": "Cartagine",
+"data": "14-9 c. 400/401"
+},
+"cuando": false
+},
+{
+"file": "discorso_409_testo.htm",
+"label": "293/B",
+"id": "293B",
+"coll": "main",
+"src": "Anoz",
+"data": "401?",
+"det": "24 giugno, sera",
+"key": [
+401,
+67
+],
+"tav": {
+"arg": "S. Giovanni B.",
+"luogo": "Cartagine (P)",
+"data": "401 (K, P, Be)"
+},
+"cuando": false
+},
+{
+"file": "discorso_406_testo.htm",
+"label": "292",
+"id": "292",
+"coll": "main",
+"src": "Anoz",
+"data": "402-405",
+"det": "24 giugno",
+"key": [
+402,
+68
+],
+"tav": {
+"arg": "S. Giovanni B. Mt 7, 17",
+"luogo": "Cartagine ad mensam S. Cypriani",
+"data": "24-6-393-405 (K, B, Be)"
+},
+"cuando": false
+},
+{
+"file": "discorso_543_testo.htm",
+"label": "375/C",
+"id": "375C",
+"coll": "main",
+"src": "Tavola NBA",
+"data": "T. P. 402-404",
+"det": "",
+"key": [
+402,
+100000
+],
+"tav": {
+"arg": "Apparizione all'apostolo Tommaso Io 20, 24-31",
+"luogo": "Ippona",
+"data": "T. P. 402-404"
+},
+"cuando": false
+},
+{
+"file": "discorso_377_testo.htm",
+"label": "266",
+"id": "266",
+"coll": "main",
+"src": "Anoz",
+"data": "403-408",
+"det": "",
+"key": [
+403,
+69
+],
+"tav": {
+"arg": "Pentecoste Ps 140, 5",
+"luogo": "Cartagine",
+"data": "Vigilia di Pentecoste 23-5-397 (L, P) 28-5-410 (K)"
+},
+"cuando": false
+},
+{
+"file": "discorso_077_testo.htm",
+"label": "62",
+"id": "62",
+"coll": "main",
+"src": "Anoz",
+"data": "403 o 404",
+"det": "",
+"key": [
+403,
+70
+],
+"tav": {
+"arg": "Mt 8, 5-13; Lc 8, 43-48 1 Cor 8, 10-12",
+"luogo": "Cartagine",
+"data": "c. 399"
+},
+"cuando": false
+},
+{
+"file": "discorso_094_testo.htm",
+"label": "72/A",
+"id": "72A",
+"coll": "main",
+"src": "Anoz",
+"data": "403 o 404",
+"det": "",
+"key": [
+403,
+71
+],
+"tav": {
+"arg": "Mt 12, 38-50",
+"luogo": "-",
+"data": "417-418 (K, Be)"
+},
+"cuando": false
+},
+{
+"file": "discorso_144_testo.htm",
+"label": "112/A",
+"id": "112A",
+"coll": "main",
+"src": "Anoz",
+"data": "403 o 404",
+"det": "",
+"key": [
+403,
+72
+],
+"tav": {
+"arg": "Lc 15, 11-32",
+"luogo": "-",
+"data": "c. 400"
+},
+"cuando": false
+},
+{
+"file": "discorso_498_testo.htm",
+"label": "343",
+"id": "343",
+"coll": "main",
+"src": "Anoz",
+"data": "403 o 404",
+"det": "",
+"key": [
+403,
+73
+],
+"tav": {
+"arg": "Susanna e Giuseppe modelli di castità",
+"luogo": "Cartagine",
+"data": "6/14-5-397 (L, B) 7/13-5-397 (P)"
+},
+"cuando": false
+},
+{
+"file": "discorso_093_testo.htm",
+"label": "72",
+"id": "72",
+"coll": "main",
+"src": "Anoz",
+"data": "403 o 404?",
+"det": "",
+"key": [
+403,
+74
+],
+"tav": {
+"arg": "Mt 12, 33",
+"luogo": "Cartagine",
+"data": "tra 17-7 e 10-8 397"
+},
+"cuando": false
+},
+{
+"file": "discorso_581_testo.htm",
+"label": "72 augm.",
+"id": "72AUG",
+"coll": "main",
+"src": "Anoz",
+"data": "403 o 404?",
+"det": "",
+"key": [
+403,
+74
+],
+"tav": {
+"arg": "Mt 12, 33",
+"luogo": "Cartagine",
+"data": "tra 17-7 e 10-8 397"
+},
+"cuando": false
+},
+{
+"file": "discorso_581_testo.htm",
+"label": "Dolbeau 16",
+"code": "72 augm.",
+"coll": "nuovi",
+"src": "Anoz",
+"data": "403 o 404?",
+"det": "",
+"key": [
+403,
+74
+],
+"tav": {
+"arg": "Mt 12, 33",
+"luogo": "Cartagine",
+"data": "tra 17-7 e 10-8 397"
+},
+"cuando": false
+},
+{
+"file": "discorso_582_testo.htm",
+"label": "Dolbeau 17",
+"code": "110/A",
+"coll": "nuovi",
+"src": "Anoz",
+"data": "403 o 404?",
+"det": "",
+"key": [
+403,
+75
+],
+"tav": {
+"arg": "Lc 13, 1-16",
+"luogo": "(Cartagine ?) luogo del S. D. 16",
+"data": "(estate 397 ?) 403-404 (? H.)"
+},
+"cuando": false
+},
+{
+"file": "discorso_337_testo.htm",
+"label": "241",
+"id": "241",
+"coll": "main",
+"src": "Anoz",
+"data": "403 o 404?",
+"det": "",
+"key": [
+403,
+76
+],
+"tav": {
+"arg": "T. P. Lc 24, 13-35",
+"luogo": "Ippona",
+"data": "settimana di P. 405-410 (Be, Po) T. P. 405-410 (K)"
+},
+"cuando": false
+},
+{
+"file": "discorso_009_testo.htm",
+"label": "8",
+"id": "8",
+"coll": "main",
+"src": "Anoz",
+"data": "403",
+"det": "",
+"key": [
+403,
+77
+],
+"tav": {
+"arg": "Ex 20, 2-27",
+"luogo": "Cartagine Bas. Cypriani",
+"data": "411 prima 415 (M)"
+},
+"cuando": false
+},
+{
+"file": "discorso_004_testo.htm",
+"label": "4",
+"id": "4",
+"coll": "main",
+"src": "Anoz",
+"data": "403",
+"det": "mercoledì 22 gennaio",
+"key": [
+403,
+78
+],
+"tav": {
+"arg": "Gen 27, 1-40",
+"luogo": "-",
+"data": "22 gennaio 410-419"
+},
+"cuando": false
+},
+{
+"file": "discorso_006_testo.htm",
+"label": "5",
+"id": "5",
+"coll": "main",
+"src": "Anoz",
+"data": "403",
+"det": "quaresima",
+"key": [
+403,
+79
+],
+"tav": {
+"arg": "Gen 32, 22-32",
+"luogo": "-",
+"data": "21 gennaio 410-419 408-411 (Be)"
+},
+"cuando": false
+},
+{
+"file": "discorso_320_testo.htm",
+"label": "229/R",
+"id": "229R",
+"coll": "main",
+"src": "Anoz",
+"data": "403",
+"det": "domenica 8ª di Pasqua 29 marzo, sera",
+"key": [
+403,
+80
+],
+"tav": {
+"arg": "T. P. Gen 1, 6-8",
+"luogo": "Ippona",
+"data": "lunedì dopo P. (L) Pasqua 400-410 (Po)"
+},
+"cuando": false
+},
+{
+"file": "discorso_321_testo.htm",
+"label": "229/S",
+"id": "229S",
+"coll": "main",
+"src": "Anoz",
+"data": "403",
+"det": "lunedì 30 marzo",
+"key": [
+403,
+81
+],
+"tav": {
+"arg": "T. P. Gen 1, 9-13",
+"luogo": "Ippona",
+"data": "martedì dopo P. (L) lunedì di P. 400-410 (Po)"
+},
+"cuando": false
+},
+{
+"file": "discorso_322_testo.htm",
+"label": "229/T",
+"id": "229T",
+"coll": "main",
+"src": "Anoz",
+"data": "403",
+"det": "martedì 31 marzo",
+"key": [
+403,
+82
+],
+"tav": {
+"arg": "T. P. Gen 1, 14-19",
+"luogo": "Ippona",
+"data": "mercoledì dopo P. (L) martedì d. P. 400-410 (Po)"
+},
+"cuando": false
+},
+{
+"file": "discorso_323_testo.htm",
+"label": "229/U",
+"id": "229U",
+"coll": "main",
+"src": "Anoz",
+"data": "403",
+"det": "mercoledì 1 aprile",
+"key": [
+403,
+83
+],
+"tav": {
+"arg": "T. P. Gen 1, 20-23",
+"luogo": "Ippona",
+"data": "giovedì dopo P. (L) merc. di P. 400-410 (Po)"
+},
+"cuando": false
+},
+{
+"file": "discorso_324_testo.htm",
+"label": "229/V",
+"id": "229V",
+"coll": "main",
+"src": "Anoz",
+"data": "403",
+"det": "giovedì 2 aprile",
+"key": [
+403,
+84
+],
+"tav": {
+"arg": "T. P. Gen 1, 24-31",
+"luogo": "Ippona",
+"data": "venerdì dopo P. (L) giov. di P. 400-410 (Po)"
+},
+"cuando": false
+},
+{
+"file": "discorso_448_testo.htm",
+"label": "313/C",
+"id": "313C",
+"coll": "main",
+"src": "Anoz",
+"data": "403",
+"det": "lunedì 14 settembre, mattina",
+"key": [
+403,
+85
+],
+"tav": {
+"arg": "S. Cipriano",
+"luogo": "Cartagine Bas. Cypriani",
+"data": "14-9-396/397 403 (P)"
+},
+"cuando": false
+},
+{
+"file": "discorso_042_testo.htm",
+"label": "32",
+"id": "32",
+"coll": "main",
+"src": "Anoz",
+"data": "403",
+"det": "giovedì 17 settembre",
+"key": [
+403,
+86
+],
+"tav": {
+"arg": "Davide e Golia",
+"luogo": "Cartagine Bas. Tricilarum",
+"data": "settembre 403 17-9-403 (P)"
+},
+"cuando": false
+},
+{
+"file": "discorso_526_testo.htm",
+"label": "361",
+"id": "361",
+"coll": "main",
+"src": "Anoz",
+"data": "403",
+"det": "dicembre",
+"key": [
+403,
+87
+],
+"tav": {
+"arg": "La resurrezione dei morti",
+"luogo": "-",
+"data": "inverno 410-411"
+},
+"cuando": false
+},
+{
+"file": "discorso_527_testo.htm",
+"label": "362",
+"id": "362",
+"coll": "main",
+"src": "Anoz",
+"data": "403",
+"det": "dicembre",
+"key": [
+403,
+88
+],
+"tav": {
+"arg": "La resurrezione dei morti",
+"luogo": "-",
+"data": "inverno 410-411"
+},
+"cuando": false
+},
+{
+"file": "discorso_586_testo.htm",
+"label": "159/B",
+"id": "159B",
+"coll": "main",
+"src": "Anoz",
+"data": "403",
+"det": "inizio dicembre",
+"key": [
+403,
+89
+],
+"tav": {
+"arg": "Rom 11, 33 Ps 59, 3; 118, 71",
+"luogo": "Tignica",
+"data": "inverno 403-404"
+},
+"cuando": false
+},
+{
+"file": "discorso_586_testo.htm",
+"label": "Dolbeau 21",
+"code": "159/B",
+"coll": "nuovi",
+"src": "Anoz",
+"data": "403",
+"det": "inizio dicembre",
+"key": [
+403,
+89
+],
+"tav": {
+"arg": "Rom 11, 33 Ps 59, 3; 118, 71",
+"luogo": "Tignica",
+"data": "inverno 403-404"
+},
+"cuando": false
+},
+{
+"file": "discorso_590_testo.htm",
+"label": "360/B",
+"id": "360B",
+"coll": "main",
+"src": "Anoz",
+"data": "403",
+"det": "inizio dicembre",
+"key": [
+403,
+90
+],
+"tav": {
+"arg": "Appello dei pagani alla conversione",
+"luogo": "Boseth",
+"data": "inverno 403-404"
+},
+"cuando": false
+},
+{
+"file": "discorso_590_testo.htm",
+"label": "Dolbeau 25",
+"code": "360/B",
+"coll": "nuovi",
+"src": "Anoz",
+"data": "403",
+"det": "inizio dicembre",
+"key": [
+403,
+90
+],
+"tav": {
+"arg": "Appello dei pagani alla conversione",
+"luogo": "Boseth",
+"data": "inverno 403-404"
+},
+"cuando": false
+},
+{
+"file": "discorso_570_testo.htm",
+"label": "114/B",
+"id": "114B",
+"coll": "main",
+"src": "Anoz",
+"data": "403",
+"det": "domenica 6 dicembre",
+"key": [
+403,
+91
+],
+"tav": {
+"arg": "Fine dei tempi Lc 17, 26-27",
+"luogo": "Cartagine",
+"data": "dicembre 403 di domenica"
+},
+"cuando": false
+},
+{
+"file": "discorso_570_testo.htm",
+"label": "Dolbeau 5",
+"code": "114/B",
+"coll": "nuovi",
+"src": "Anoz",
+"data": "403",
+"det": "domenica 6 dicembre",
+"key": [
+403,
+91
+],
+"tav": {
+"arg": "Fine dei tempi Lc 17, 26-27",
+"luogo": "Cartagine",
+"data": "dicembre 403 di domenica"
+},
+"cuando": false
+},
+{
+"file": "discorso_571_testo.htm",
+"label": "23/B",
+"id": "23B",
+"coll": "main",
+"src": "Anoz",
+"data": "403",
+"det": "lunedì 7-giovedì 10 dicembre",
+"key": [
+403,
+92
+],
+"tav": {
+"arg": "Idolatria Ps 81, 1",
+"luogo": "Cartagine",
+"data": "inverno 403-404"
+},
+"cuando": false
+},
+{
+"file": "discorso_571_testo.htm",
+"label": "Dolbeau 6",
+"code": "23/B",
+"coll": "nuovi",
+"src": "Anoz",
+"data": "403",
+"det": "lunedì 7-giovedì 10 dicembre",
+"key": [
+403,
+92
+],
+"tav": {
+"arg": "Idolatria Ps 81, 1",
+"luogo": "Cartagine",
+"data": "inverno 403-404"
+},
+"cuando": false
+},
+{
+"file": "discorso_495_testo.htm",
+"label": "341",
+"id": "341",
+"coll": "main",
+"src": "Anoz",
+"data": "403",
+"det": "sabato 12 dicembre",
+"key": [
+403,
+93
+],
+"tav": {
+"arg": "Triplice aspetto di Cristo nella Scrittura Chiesa",
+"luogo": "Cartagine Bas. Restituta",
+"data": "12-12-418/419"
+},
+"cuando": false
+},
+{
+"file": "discorso_587_testo.htm",
+"label": "341 augm.",
+"id": "341AUG",
+"coll": "main",
+"src": "Anoz",
+"data": "403",
+"det": "sabato 12 dicembre",
+"key": [
+403,
+93
+],
+"tav": {
+"arg": "Triplice aspetto di Cristo nella Scrittura Chiesa",
+"luogo": "Cartagine Bas. Restituta",
+"data": "12-12-418/419"
+},
+"cuando": false
+},
+{
+"file": "discorso_587_testo.htm",
+"label": "Dolbeau 22",
+"code": "341 augm.",
+"coll": "nuovi",
+"src": "Anoz",
+"data": "403",
+"det": "sabato 12 dicembre",
+"key": [
+403,
+93
+],
+"tav": {
+"arg": "Triplice aspetto di Cristo nella Scrittura Chiesa",
+"luogo": "Cartagine Bas. Restituta",
+"data": "12-12-418/419"
+},
+"cuando": false
+},
+{
+"file": "discorso_063_testo.htm",
+"label": "51",
+"id": "51",
+"coll": "main",
+"src": "Anoz",
+"data": "403",
+"det": "fine dicembre",
+"key": [
+403,
+94
+],
+"tav": {
+"arg": "Genealogia di Cristo",
+"luogo": "-",
+"data": "poco dopo Natale 417-418 1-1-418 (V)"
+},
+"cuando": false
+},
+{
+"file": "discorso_510_testo.htm",
+"label": "350/A",
+"id": "350A",
+"coll": "main",
+"src": "Anoz",
+"data": "inverno 403?",
+"det": "",
+"key": [
+403,
+95
+],
+"tav": {
+"arg": "La carità",
+"luogo": "-",
+"data": "c. 399"
+},
+"cuando": false
+},
+{
+"file": "discorso_132_testo.htm",
+"label": "103",
+"id": "103",
+"coll": "main",
+"src": "Anoz",
+"data": "verso 403?",
+"det": "",
+"key": [
+403,
+96
+],
+"tav": {
+"arg": "Lc 10, 38-42",
+"luogo": "-",
+"data": "-"
+},
+"cuando": false
+},
+{
+"file": "discorso_202_testo.htm",
+"label": "157",
+"id": "157",
+"coll": "main",
+"src": "Anoz",
+"data": "403?",
+"det": "",
+"key": [
+403,
+97
+],
+"tav": {
+"arg": "Rom 8, 12-17",
+"luogo": "Cartagine",
+"data": "-"
+},
+"cuando": false
+},
+{
+"file": "discorso_010_testo.htm",
+"label": "9",
+"id": "9",
+"coll": "main",
+"src": "Anoz",
+"data": "403 o 404",
+"det": "inverno",
+"key": [
+403,
+98
+],
+"tav": {
+"arg": "Ex 20 Ps 143, 9",
+"luogo": "Cartagine Chusa (L)",
+"data": "-"
+},
+"cuando": false
+},
+{
+"file": "discorso_130_testo.htm",
+"label": "101",
+"id": "101",
+"coll": "main",
+"src": "Anoz",
+"data": "403 o 404",
+"det": "inverno",
+"key": [
+403,
+99
+],
+"tav": {
+"arg": "Lc 10, 2-6",
+"luogo": "Cartagine Bas. Fausti",
+"data": "inizio episcopato (W) 396-397"
+},
+"cuando": false
+},
+{
+"file": "discorso_517_testo.htm",
+"label": "354/A",
+"id": "354A",
+"coll": "main",
+"src": "Anoz",
+"data": "403 o 404",
+"det": "inverno",
+"key": [
+403,
+100
+],
+"tav": {
+"arg": "Il bene del matrimonio",
+"luogo": "(Cartagine ?) luogo del S. D. 13",
+"data": "estate 397 403-404 (H.)"
+},
+"cuando": false
+},
+{
+"file": "discorso_577_testo.htm",
+"label": "Dolbeau 12",
+"code": "354/A",
+"coll": "nuovi",
+"src": "Anoz",
+"data": "403 o 404",
+"det": "inverno",
+"key": [
+403,
+100
+],
+"tav": {
+"arg": "Il bene del matrimonio",
+"luogo": "(Cartagine ?) luogo del S. D. 13",
+"data": "estate 397 403-404 (H.)"
+},
+"cuando": false
+},
+{
+"file": "discorso_524_testo.htm",
+"label": "359/A",
+"id": "359A",
+"coll": "main",
+"src": "Anoz",
+"data": "403 o 404?",
+"det": "inverno?",
+"key": [
+403,
+101
+],
+"tav": {
+"arg": "La pazienza Lc 16, 1-9",
+"luogo": "Tuneba (L)",
+"data": "-"
+},
+"cuando": false
+},
+{
+"file": "discorso_541_testo.htm",
+"label": "375/A",
+"id": "375A",
+"coll": "main",
+"src": "Anoz",
+"data": "403 o 404?",
+"det": "vigilia pasquale",
+"key": [
+403,
+102
+],
+"tav": {
+"arg": "I sacramenti pasquali",
+"luogo": "Ippona",
+"data": "Pasqua 396-397"
+},
+"cuando": false
+},
+{
+"file": "discorso_478_testo.htm",
+"label": "335/C",
+"id": "335C",
+"coll": "main",
+"src": "Anoz",
+"data": "404-408?",
+"det": "",
+"key": [
+404,
+103
+],
+"tav": {
+"arg": "Festa Martiri",
+"luogo": "-",
+"data": "405-411 (L)"
+},
+"cuando": false
+},
+{
+"file": "discorso_184_testo.htm",
+"label": "142",
+"id": "142",
+"coll": "main",
+"src": "Anoz",
+"data": "404-406",
+"det": "",
+"key": [
+404,
+104
+],
+"tav": {
+"arg": "Io 14, 6",
+"luogo": "-",
+"data": "-"
+},
+"cuando": false
+},
+{
+"file": "discorso_572_testo.htm",
+"label": "142 augm.",
+"id": "142AUG",
+"coll": "main",
+"src": "Anoz",
+"data": "404-406",
+"det": "",
+"key": [
+404,
+104
+],
+"tav": {
+"arg": "Io 14, 6",
+"luogo": "-",
+"data": "-"
+},
+"cuando": false
+},
+{
+"file": "discorso_572_testo.htm",
+"label": "Dolbeau 7",
+"code": "142 augm.",
+"coll": "nuovi",
+"src": "Anoz",
+"data": "404-406",
+"det": "",
+"key": [
+404,
+104
+],
+"tav": {
+"arg": "Io 14, 6",
+"luogo": "-",
+"data": "-"
+},
+"cuando": false
+},
+{
+"file": "discorso_193_testo.htm",
+"label": "149",
+"id": "149",
+"coll": "main",
+"src": "Anoz",
+"data": "404 o 405",
+"det": "",
+"key": [
+404,
+105
+],
+"tav": {
+"arg": "Act 10 Mt 5, 16-6, 4",
+"luogo": "-",
+"data": "c. 400 (Po) 412 (K, Be) tempo pasquale (B)"
+},
+"cuando": false
+},
+{
+"file": "discorso_002_testo.htm",
+"label": "2",
+"id": "2",
+"coll": "main",
+"src": "Anoz",
+"data": "verso 404 o 405",
+"det": "",
+"key": [
+404,
+106
+],
+"tav": {
+"arg": "Gen 22, 1-19",
+"luogo": "-",
+"data": "391"
+},
+"cuando": false
+},
+{
+"file": "discorso_208_testo.htm",
+"label": "162/A",
+"id": "162A",
+"coll": "main",
+"src": "Anoz",
+"data": "404",
+"det": "primi mesi",
+"key": [
+404,
+107
+],
+"tav": {
+"arg": "1 Cor 12, 31ss.",
+"luogo": "Cartagine",
+"data": "401 (Mor) 404 (K, B, L, Be)"
+},
+"cuando": false
+},
+{
+"file": "discorso_252_testo.htm",
+"label": "198",
+"id": "198",
+"coll": "main",
+"src": "Anoz",
+"data": "404",
+"det": "venerdì 1 gennaio",
+"key": [
+404,
+108
+],
+"tav": {
+"arg": "I° gennaio",
+"luogo": "Ippona",
+"data": "1-1"
+},
+"cuando": false
+},
+{
+"file": "discorso_591_testo.htm",
+"label": "198 augm.",
+"id": "198AUG",
+"coll": "main",
+"src": "Anoz",
+"data": "404",
+"det": "venerdì 1 gennaio",
+"key": [
+404,
+108
+],
+"tav": {
+"arg": "I° gennaio",
+"luogo": "Ippona",
+"data": "1-1"
+},
+"cuando": false
+},
+{
+"file": "discorso_591_testo.htm",
+"label": "Dolbeau 26",
+"code": "198 augm.",
+"coll": "nuovi",
+"src": "Anoz",
+"data": "404",
+"det": "venerdì 1 gennaio",
+"key": [
+404,
+108
+],
+"tav": {
+"arg": "I° gennaio",
+"luogo": "Ippona",
+"data": "1-1"
+},
+"cuando": false
+},
+{
+"file": "discorso_567_testo.htm",
+"label": "359/B",
+"id": "359B",
+"coll": "main",
+"src": "Anoz",
+"data": "404",
+"det": "sabato 23 gennaio",
+"key": [
+404,
+109
+],
+"tav": {
+"arg": "Importanza dell'obbedienza",
+"luogo": "Cartagine",
+"data": "23-1-404"
+},
+"cuando": false
+},
+{
+"file": "discorso_567_testo.htm",
+"label": "Dolbeau 2",
+"code": "359/B",
+"coll": "nuovi",
+"src": "Anoz",
+"data": "404",
+"det": "sabato 23 gennaio",
+"key": [
+404,
+109
+],
+"tav": {
+"arg": "Importanza dell'obbedienza",
+"luogo": "Cartagine",
+"data": "23-1-404"
+},
+"cuando": false
+},
+{
+"file": "discorso_514_testo.htm",
+"label": "352",
+"id": "352",
+"coll": "main",
+"src": "Anoz",
+"data": "404",
+"det": "lunedì 7 marzo",
+"key": [
+404,
+110
+],
+"tav": {
+"arg": "La penitenza",
+"luogo": "-",
+"data": "396-400 (K, Ba)"
+},
+"cuando": false
+},
+{
+"file": "discorso_419_testo.htm",
+"label": "299/A",
+"id": "299A",
+"coll": "main",
+"src": "Anoz",
+"data": "404",
+"det": "mercoledì 29 giugno",
+"key": [
+404,
+111
+],
+"tav": {
+"arg": "SS. Pietro e Paolo",
+"luogo": "-",
+"data": "29-6"
+},
+"cuando": false
+},
+{
+"file": "discorso_569_testo.htm",
+"label": "299/A augm.",
+"id": "299AAUG",
+"coll": "main",
+"src": "Anoz",
+"data": "404",
+"det": "mercoledì 29 giugno",
+"key": [
+404,
+111
+],
+"tav": {
+"arg": "SS. Pietro e Paolo",
+"luogo": "-",
+"data": "29-6"
+},
+"cuando": false
+},
+{
+"file": "discorso_569_testo.htm",
+"label": "Dolbeau 4",
+"code": "299/A augm.",
+"coll": "nuovi",
+"src": "Anoz",
+"data": "404",
+"det": "mercoledì 29 giugno",
+"key": [
+404,
+111
+],
+"tav": {
+"arg": "SS. Pietro e Paolo",
+"luogo": "-",
+"data": "29-6"
+},
+"cuando": false
+},
+{
+"file": "discorso_589_testo.htm",
+"label": "360/A",
+"id": "360A",
+"coll": "main",
+"src": "Anoz",
+"data": "prob. 404",
+"det": "giovedì 30 giugno",
+"key": [
+404,
+112
+],
+"tav": {
+"arg": "Testimonia contro i pagani e i donatisti",
+"luogo": "fuori d'Ippona",
+"data": "inverno 403-404 30-6 (Hi.)"
+},
+"cuando": false
+},
+{
+"file": "discorso_589_testo.htm",
+"label": "Dolbeau 24",
+"code": "360/A",
+"coll": "nuovi",
+"src": "Anoz",
+"data": "prob. 404",
+"det": "giovedì 30 giugno",
+"key": [
+404,
+112
+],
+"tav": {
+"arg": "Testimonia contro i pagani e i donatisti",
+"luogo": "fuori d'Ippona",
+"data": "inverno 403-404 30-6 (Hi.)"
+},
+"cuando": false
+},
+{
+"file": "discorso_044_testo.htm",
+"label": "33/A",
+"id": "33A",
+"coll": "main",
+"src": "Anoz",
+"data": "404",
+"det": "domenica 11 settembre",
+"key": [
+404,
+113
+],
+"tav": {
+"arg": "Ps 145, 2",
+"luogo": "Utica",
+"data": "11-9-410"
+},
+"cuando": false
+},
+{
+"file": "discorso_017_testo.htm",
+"label": "15/A",
+"id": "15A",
+"coll": "main",
+"src": "Anoz",
+"data": "404",
+"det": "giovedì 22 settembre",
+"key": [
+404,
+114
+],
+"tav": {
+"arg": "Ps 32, 1",
+"luogo": "Hippo Diarrhytus [Biserta] Bas. Margarita",
+"data": "giovedì 22-9 410 (Bo) 418 (Mo) 410, 421, 427 (W)"
+},
+"cuando": false
+},
+{
+"file": "discorso_146_testo.htm",
+"label": "113/A",
+"id": "113A",
+"coll": "main",
+"src": "Anoz",
+"data": "404",
+"det": "domenica 25 settembre",
+"key": [
+404,
+115
+],
+"tav": {
+"arg": "Lc 16, 19-31",
+"luogo": "B Bas. Quadrati",
+"data": "domenica 25-9 410, 411, 427 (W) 410 (K, Be, L, P)"
+},
+"cuando": false
+},
+{
+"file": "discorso_115_testo.htm",
+"label": "88",
+"id": "88",
+"coll": "main",
+"src": "Anoz",
+"data": "verso 404",
+"det": "",
+"key": [
+404,
+116
+],
+"tav": {
+"arg": "Mt 20, 29, 34",
+"luogo": "-",
+"data": "c. 400"
+},
+"cuando": false
+},
+{
+"file": "discorso_159_testo.htm",
+"label": "124",
+"id": "124",
+"coll": "main",
+"src": "Anoz",
+"data": "verso 404?",
+"det": "",
+"key": [
+404,
+117
+],
+"tav": {
+"arg": "Io 5, 2",
+"luogo": "-",
+"data": "prima 410 (K, Be)"
+},
+"cuando": false
+},
+{
+"file": "discorso_231_testo.htm",
+"label": "179",
+"id": "179",
+"coll": "main",
+"src": "Anoz",
+"data": "ante 405?",
+"det": "",
+"key": [
+405,
+118
+],
+"tav": {
+"arg": "Iac 1, 19-22",
+"luogo": "Cartagine",
+"data": "prima 405 (B) prima 409 (Ro)"
+},
+"cuando": false
+},
+{
+"file": "discorso_594_testo.htm",
+"label": "Dolbeau 29",
+"code": "Discorso sulla provvidenza di Dio",
+"coll": "nuovi",
+"src": "Anoz",
+"data": "405-415?",
+"det": "",
+"key": [
+405,
+119
+],
+"tav": null,
+"cuando": false
+},
+{
+"file": "discorso_399_testo.htm",
+"label": "285",
+"id": "285",
+"coll": "main",
+"src": "Anoz",
+"data": "405-412",
+"det": "22 maggio",
+"key": [
+405,
+120
+],
+"tav": {
+"arg": "SS. Casto e Emilio",
+"luogo": "Cartagine",
+"data": "22-5-SS. Casto e Emilio 397 (L, P, Be) 405-410 (B, Mo) c. 416 (K)"
+},
+"cuando": false
+},
+{
+"file": "discorso_066_testo.htm",
+"label": "53/A",
+"id": "53A",
+"coll": "main",
+"src": "Anoz",
+"data": "405-411",
+"det": "",
+"key": [
+405,
+121
+],
+"tav": {
+"arg": "Mt 5, 3, 10 Le beatitudini",
+"luogo": "-",
+"data": "405-411 (K, Be) fine ministero (Mo)"
+},
+"cuando": false
+},
+{
+"file": "discorso_189_testo.htm",
+"label": "146",
+"id": "146",
+"coll": "main",
+"src": "Anoz",
+"data": "405-411",
+"det": "",
+"key": [
+405,
+122
+],
+"tav": {
+"arg": "Io 21, 24, 29",
+"luogo": "Ippona",
+"data": "prima 400 (Po) 405-411 (B, K)"
+},
+"cuando": false
+},
+{
+"file": "discorso_302_testo.htm",
+"label": "229",
+"id": "229",
+"coll": "main",
+"src": "Anoz",
+"data": "405-411",
+"det": "",
+"key": [
+405,
+123
+],
+"tav": {
+"arg": "Pasqua",
+"luogo": "Ippona",
+"data": "Pasqua 405-411 (B, K)"
+},
+"cuando": false
+},
+{
+"file": "discorso_383_testo.htm",
+"label": "272",
+"id": "272",
+"coll": "main",
+"src": "Anoz",
+"data": "405-411",
+"det": "",
+"key": [
+405,
+124
+],
+"tav": {
+"arg": "Pentecoste",
+"luogo": "-",
+"data": "Pentecoste (Maur.) Pasqua 405-411 (K)"
+},
+"cuando": false
+},
+{
+"file": "discorso_467_testo.htm",
+"label": "327",
+"id": "327",
+"coll": "main",
+"src": "Anoz",
+"data": "405-411",
+"det": "",
+"key": [
+405,
+125
+],
+"tav": {
+"arg": "Festa Martiri",
+"luogo": "-",
+"data": "405/411"
+},
+"cuando": false
+},
+{
+"file": "discorso_379_testo.htm",
+"label": "268",
+"id": "268",
+"coll": "main",
+"src": "Anoz",
+"data": "405-410",
+"det": "",
+"key": [
+405,
+126
+],
+"tav": {
+"arg": "Pentecoste",
+"luogo": "-",
+"data": "Pentecoste prima 405 (Mo) 405-410 (K, Be)"
+},
+"cuando": false
+},
+{
+"file": "discorso_380_testo.htm",
+"label": "269",
+"id": "269",
+"coll": "main",
+"src": "Anoz",
+"data": "405-410",
+"det": "",
+"key": [
+405,
+127
+],
+"tav": {
+"arg": "Pentecoste",
+"luogo": "Cartagine ? (P)",
+"data": "Pentecosate prima 405 (Mo) 14-5-411 (K, B, P)"
+},
+"cuando": false
+},
+{
+"file": "discorso_165_testo.htm",
+"label": "129",
+"id": "129",
+"coll": "main",
+"src": "Anoz",
+"data": "405-409",
+"det": "",
+"key": [
+405,
+128
+],
+"tav": {
+"arg": "Io 5, 39-47",
+"luogo": "-",
+"data": "prima 405 (Mo, B) 393-405 (K, Be)"
+},
+"cuando": false
+},
+{
+"file": "discorso_003_testo.htm",
+"label": "3",
+"id": "3",
+"coll": "main",
+"src": "Anoz",
+"data": "405-408",
+"det": "",
+"key": [
+405,
+129
+],
+"tav": {
+"arg": "Gen 21, 9-10",
+"luogo": "-",
+"data": "407-408 (K) prima del 420 (M)"
+},
+"cuando": false
+},
+{
+"file": "discorso_082_testo.htm",
+"label": "64",
+"id": "64",
+"coll": "main",
+"src": "Anoz",
+"data": "405-408",
+"det": "",
+"key": [
+405,
+130
+],
+"tav": {
+"arg": "Mt 10, 16",
+"luogo": "-",
+"data": "festa dei martiri"
+},
+"cuando": false
+},
+{
+"file": "discorso_116_testo.htm",
+"label": "89",
+"id": "89",
+"coll": "main",
+"src": "Anoz",
+"data": "405",
+"det": "",
+"key": [
+405,
+131
+],
+"tav": {
+"arg": "Mt 21, 18-22",
+"luogo": "Cartagine",
+"data": "22-5/24-6 396-397"
+},
+"cuando": false
+},
+{
+"file": "discorso_170_testo.htm",
+"label": "133",
+"id": "133",
+"coll": "main",
+"src": "Anoz",
+"data": "405",
+"det": "",
+"key": [
+405,
+132
+],
+"tav": {
+"arg": "Io 7, 2-10",
+"luogo": "Cartagine",
+"data": "22-5/24-6 397"
+},
+"cuando": false
+},
+{
+"file": "discorso_575_testo.htm",
+"label": "162/C",
+"id": "162C",
+"coll": "main",
+"src": "Anoz",
+"data": "405",
+"det": "",
+"key": [
+405,
+133
+],
+"tav": {
+"arg": "Paolo ad Antiochia Gal 2",
+"luogo": "Cartagine collegato ai S. 133 e 89",
+"data": "giugno 397 405 (H.); 418 (Dr.)"
+},
+"cuando": false
+},
+{
+"file": "discorso_575_testo.htm",
+"label": "Dolbeau 10",
+"code": "162/C",
+"coll": "nuovi",
+"src": "Anoz",
+"data": "405",
+"det": "",
+"key": [
+405,
+133
+],
+"tav": {
+"arg": "Paolo ad Antiochia Gal 2",
+"luogo": "Cartagine collegato ai S. 133 e 89",
+"data": "giugno 397 405 (H.); 418 (Dr.)"
+},
+"cuando": false
+},
+{
+"file": "discorso_443_testo.htm",
+"label": "311",
+"id": "311",
+"coll": "main",
+"src": "Anoz",
+"data": "405",
+"det": "giovedì 14 settembre",
+"key": [
+405,
+134
+],
+"tav": {
+"arg": "S. Cipriano",
+"luogo": "Cartagine Bas. Cypriani",
+"data": "14-9-401/405"
+},
+"cuando": false
+},
+{
+"file": "discorso_122_testo.htm",
+"label": "94/A",
+"id": "94A",
+"coll": "main",
+"src": "Anoz",
+"data": "405?",
+"det": "",
+"key": [
+405,
+135
+],
+"tav": {
+"arg": "Mc 6, 17-29",
+"luogo": "Ippona",
+"data": "dopo 396 (K, Be) 405 (P)"
+},
+"cuando": false
+},
+{
+"file": "discorso_434_testo.htm",
+"label": "306/A",
+"id": "306A",
+"coll": "main",
+"src": "Anoz",
+"data": "405?",
+"det": "18 agosto",
+"key": [
+405,
+136
+],
+"tav": {
+"arg": "Martiri di Massa Candida",
+"luogo": "Cartagine",
+"data": "18-8-405/411"
+},
+"cuando": false
+},
+{
+"file": "discorso_503_testo.htm",
+"label": "346/B",
+"id": "346B",
+"coll": "main",
+"src": "Anoz",
+"data": "verso 405?",
+"det": "",
+"key": [
+405,
+137
+],
+"tav": {
+"arg": "Pellegrinaggio terreno",
+"luogo": "-",
+"data": "393-405 (K, Be)"
+},
+"cuando": false
+},
+{
+"file": "discorso_085_testo.htm",
+"label": "65/A",
+"id": "65A",
+"coll": "main",
+"src": "Anoz",
+"data": "406 o 407",
+"det": "",
+"key": [
+406,
+138
+],
+"tav": {
+"arg": "Mt 10, 37",
+"luogo": "-",
+"data": "414-418? (V, Et)"
+},
+"cuando": false
+},
+{
+"file": "discorso_445_testo.htm",
+"label": "313",
+"id": "313",
+"coll": "main",
+"src": "Anoz",
+"data": "406",
+"det": "venerdì 14 settembre",
+"key": [
+406,
+139
+],
+"tav": {
+"arg": "S. Cipriano",
+"luogo": "Cartagine Bas. Cyprian",
+"data": "14-9"
+},
+"cuando": false
+},
+{
+"file": "discorso_057_testo.htm",
+"label": "46",
+"id": "46",
+"coll": "main",
+"src": "Anoz",
+"data": "407 o 408",
+"det": "",
+"key": [
+407,
+140
+],
+"tav": {
+"arg": "Ez 34, 1-16",
+"luogo": "Ippona (Mo) C (L)",
+"data": "409-410 dopo 17-6-414 (L) 408 (Be) 410-411 (Bo)"
+},
+"cuando": false
+},
+{
+"file": "discorso_058_testo.htm",
+"label": "47",
+"id": "47",
+"coll": "main",
+"src": "Anoz",
+"data": "407 o 408",
+"det": "",
+"key": [
+407,
+141
+],
+"tav": {
+"arg": "Ez 34, 17-31",
+"luogo": "Ippona",
+"data": "409-410 dopo 17-6-416 (L) dopo 12-2-405 (B)"
+},
+"cuando": false
+},
+{
+"file": "discorso_573_testo.htm",
+"label": "29/B",
+"id": "29B",
+"coll": "main",
+"src": "Anoz",
+"data": "prob. 407 o 404",
+"det": "vigilia di Pentecoste",
+"key": [
+407,
+142
+],
+"tav": {
+"arg": "Senso della parola: confessare Ps 117, 1",
+"luogo": "(Cartagine ?)",
+"data": "vigilia di Pentecoste (397 ?) dopo S. 266 403-408 (H.); 418 (Dr.)"
+},
+"cuando": false
+},
+{
+"file": "discorso_573_testo.htm",
+"label": "Dolbeau 8",
+"code": "29/B",
+"coll": "nuovi",
+"src": "Anoz",
+"data": "prob. 407 o 404",
+"det": "vigilia di Pentecoste",
+"key": [
+407,
+142
+],
+"tav": {
+"arg": "Senso della parola: confessare Ps 117, 1",
+"luogo": "(Cartagine ?)",
+"data": "vigilia di Pentecoste (397 ?) dopo S. 266 403-408 (H.); 418 (Dr.)"
+},
+"cuando": false
+},
+{
+"file": "discorso_277_testo.htm",
+"label": "218/B",
+"id": "218B",
+"coll": "main",
+"src": "Anoz",
+"data": "407",
+"det": "venerdì santo 12 aprile",
+"key": [
+407,
+143
+],
+"tav": {
+"arg": "Passione",
+"luogo": "Ippona",
+"data": "venerdì santo c. 397 (K, Be)"
+},
+"cuando": false
+},
+{
+"file": "discorso_592_testo.htm",
+"label": "360/C",
+"id": "360C",
+"coll": "main",
+"src": "Anoz",
+"data": "407",
+"det": "autunno",
+"key": [
+407,
+144
+],
+"tav": {
+"arg": "Unità della Chiesa",
+"luogo": "fuori d'Ippona non lontano da Siniti",
+"data": "autunno 407"
+},
+"cuando": false
+},
+{
+"file": "discorso_592_testo.htm",
+"label": "Dolbeau 27",
+"code": "360/C",
+"coll": "nuovi",
+"src": "Anoz",
+"data": "407",
+"det": "autunno",
+"key": [
+407,
+144
+],
+"tav": {
+"arg": "Unità della Chiesa",
+"luogo": "fuori d'Ippona non lontano da Siniti",
+"data": "autunno 407"
+},
+"cuando": false
+},
+{
+"file": "discorso_549_testo.htm",
+"label": "380",
+"id": "380",
+"coll": "main",
+"src": "Anoz",
+"data": "407",
+"det": "lunedì 24 giugno",
+"key": [
+407,
+145
+],
+"tav": {
+"arg": "S. Giovanni B.",
+"luogo": "-",
+"data": "24-6"
+},
+"cuando": false
+},
+{
+"file": "discorso_408_testo.htm",
+"label": "293/A",
+"id": "293A",
+"coll": "main",
+"src": "Anoz",
+"data": "prob. 407",
+"det": "lunedì 24 giugno",
+"key": [
+407,
+146
+],
+"tav": {
+"arg": "S. Giovanni B.",
+"luogo": "Ippona",
+"data": "24-6"
+},
+"cuando": false
+},
+{
+"file": "discorso_568_testo.htm",
+"label": "293/A augm.",
+"id": "293AAUG",
+"coll": "main",
+"src": "Anoz",
+"data": "prob. 407",
+"det": "lunedì 24 giugno",
+"key": [
+407,
+146
+],
+"tav": {
+"arg": "S. Giovanni B.",
+"luogo": "Ippona",
+"data": "24-6"
+},
+"cuando": false
+},
+{
+"file": "discorso_568_testo.htm",
+"label": "Dolbeau 3",
+"code": "293/A augm.",
+"coll": "nuovi",
+"src": "Anoz",
+"data": "prob. 407",
+"det": "lunedì 24 giugno",
+"key": [
+407,
+146
+],
+"tav": {
+"arg": "S. Giovanni B.",
+"luogo": "Ippona",
+"data": "24-6"
+},
+"cuando": false
+},
+{
+"file": "discorso_056_testo.htm",
+"label": "45",
+"id": "45",
+"coll": "main",
+"src": "Anoz",
+"data": "prob. 408-411",
+"det": "quaresima",
+"key": [
+408,
+147
+],
+"tav": {
+"arg": "Is 57, 13 2 Cor 7, 1",
+"luogo": "-",
+"data": "408-411 prima 420 (Mo)"
+},
+"cuando": false
+},
+{
+"file": "discorso_109_testo.htm",
+"label": "82",
+"id": "82",
+"coll": "main",
+"src": "Anoz",
+"data": "408-409",
+"det": "inverno",
+"key": [
+408,
+148
+],
+"tav": {
+"arg": "Mt 18, 15-18",
+"luogo": "Milevi?",
+"data": "c. 408-409"
+},
+"cuando": false
+},
+{
+"file": "discorso_110_testo.htm",
+"label": "83",
+"id": "83",
+"coll": "main",
+"src": "Anoz",
+"data": "408-409",
+"det": "inverno",
+"key": [
+408,
+149
+],
+"tav": {
+"arg": "Mt 18, 21-35",
+"luogo": "Milevi?",
+"data": "c. 408-409"
+},
+"cuando": false
+},
+{
+"file": "discorso_465_testo.htm",
+"label": "325",
+"id": "325",
+"coll": "main",
+"src": "Anoz",
+"data": "408",
+"det": "domenica 15 novembre, mattina",
+"key": [
+408,
+150
+],
+"tav": {
+"arg": "Festa Martiri",
+"luogo": "Ippona Mem. Martyrum",
+"data": "15-11-405/411"
+},
+"cuando": false
+},
+{
+"file": "discorso_191_testo.htm",
+"label": "147/A",
+"id": "147A",
+"coll": "main",
+"src": "Anoz",
+"data": "409 o 410",
+"det": "",
+"key": [
+409,
+151
+],
+"tav": {
+"arg": "Io 21, 15-17",
+"luogo": "-",
+"data": "sabato, dopo Pasqua 409-410 (B)"
+},
+"cuando": false
+},
+{
+"file": "discorso_154_testo.htm",
+"label": "119",
+"id": "119",
+"coll": "main",
+"src": "Anoz",
+"data": "prob. 409",
+"det": "domenica di Pasqua 18 aprile",
+"key": [
+409,
+152
+],
+"tav": {
+"arg": "Io 1, 1-14",
+"luogo": "Cartagine Bas. Pauli (Mor) Ippona (L, P, Po)",
+"data": "Pasqua dopo 409 (L)"
+},
+"cuando": false
+},
+{
+"file": "discorso_539_testo.htm",
+"label": "374",
+"id": "374",
+"coll": "main",
+"src": "Anoz",
+"data": "verso 409",
+"det": "Epifania",
+"key": [
+409,
+153
+],
+"tav": {
+"arg": "Epifania",
+"luogo": "-",
+"data": "Epifania"
+},
+"cuando": false
+},
+{
+"file": "discorso_588_testo.htm",
+"label": "374 augm.",
+"id": "374AUG",
+"coll": "main",
+"src": "Anoz",
+"data": "verso 409",
+"det": "Epifania",
+"key": [
+409,
+153
+],
+"tav": {
+"arg": "Epifania",
+"luogo": "-",
+"data": "Epifania"
+},
+"cuando": false
+},
+{
+"file": "discorso_588_testo.htm",
+"label": "Dolbeau 23",
+"code": "374 augm.",
+"coll": "nuovi",
+"src": "Anoz",
+"data": "verso 409",
+"det": "Epifania",
+"key": [
+409,
+153
+],
+"tav": {
+"arg": "Epifania",
+"luogo": "-",
+"data": "Epifania"
+},
+"cuando": false
+},
+{
+"file": "discorso_242_testo.htm",
+"label": "189",
+"id": "189",
+"coll": "main",
+"src": "Anoz",
+"data": "ante 410",
+"det": "",
+"key": [
+410,
+154
+],
+"tav": {
+"arg": "-",
+"luogo": "25-12 prima 410 (K, Be)",
+"data": "F RANGIPANE 4 MA 1, 209-211 PL 38, 1005-1007 PL 46, 980-983"
+},
+"cuando": false
+},
+{
+"file": "discorso_306_testo.htm",
+"label": "229/D",
+"id": "229D",
+"coll": "main",
+"src": "Anoz",
+"data": "ante 410",
+"det": "",
+"key": [
+410,
+155
+],
+"tav": {
+"arg": "Pasqua",
+"luogo": "Ippona",
+"data": "Pasqua prima 410 (K, Be)"
+},
+"cuando": false
+},
+{
+"file": "discorso_550_testo.htm",
+"label": "381",
+"id": "381",
+"coll": "main",
+"src": "Anoz",
+"data": "ante 24 agosto 410",
+"det": "29 giugno",
+"key": [
+410,
+156
+],
+"tav": {
+"arg": "SS. Pietro e Paolo",
+"luogo": "-",
+"data": "29-6"
+},
+"cuando": false
+},
+{
+"file": "discorso_046_testo.htm",
+"label": "35",
+"id": "35",
+"coll": "main",
+"src": "Anoz",
+"data": "ante 410?",
+"det": "",
+"key": [
+410,
+157
+],
+"tav": {
+"arg": "Prov 9, 12",
+"luogo": "Ippona",
+"data": "prima del 410"
+},
+"cuando": false
+},
+{
+"file": "discorso_267_testo.htm",
+"label": "211",
+"id": "211",
+"coll": "main",
+"src": "Anoz",
+"data": "ante 410?",
+"det": "",
+"key": [
+410,
+158
+],
+"tav": {
+"arg": "Quaresima",
+"luogo": "-",
+"data": "quaresima prima 410 (K, B) 412-415? (Be)"
+},
+"cuando": false
+},
+{
+"file": "discorso_270_testo.htm",
+"label": "213",
+"id": "213",
+"coll": "main",
+"src": "Anoz",
+"data": "ante 410?",
+"det": "",
+"key": [
+410,
+159
+],
+"tav": {
+"arg": "Trad. Symb.",
+"luogo": "Ippona",
+"data": "due settimane prima P. 410"
+},
+"cuando": false
+},
+{
+"file": "discorso_354_testo.htm",
+"label": "255/A",
+"id": "255A",
+"coll": "main",
+"src": "Anoz",
+"data": "dal 410",
+"det": "",
+"key": [
+410,
+160
+],
+"tav": {
+"arg": "T. P.",
+"luogo": "Ippona Bas. Leontiana",
+"data": "T. P. ; domenica ottava di P. dal 410 (Po)"
+},
+"cuando": false
+},
+{
+"file": "discorso_364_testo.htm",
+"label": "260/E",
+"id": "260E",
+"coll": "main",
+"src": "Anoz",
+"data": "dal 410",
+"det": "",
+"key": [
+410,
+161
+],
+"tav": {
+"arg": "T. P. Act4, 19-20",
+"luogo": "Ippona Mem. martyrum",
+"data": "domenica ottava P. dal 410 (Po)"
+},
+"cuando": false
+},
+{
+"file": "discorso_241_testo.htm",
+"label": "188",
+"id": "188",
+"coll": "main",
+"src": "Anoz",
+"data": "410-420",
+"det": "",
+"key": [
+410,
+162
+],
+"tav": {
+"arg": "Natale",
+"luogo": "-",
+"data": "25-12"
+},
+"cuando": false
+},
+{
+"file": "discorso_357_testo.htm",
+"label": "258",
+"id": "258",
+"coll": "main",
+"src": "Anoz",
+"data": "410-413",
+"det": "",
+"key": [
+410,
+163
+],
+"tav": {
+"arg": "T. P. Ps 117, 24",
+"luogo": "Cartagine Bas. Maiorum (Maur.) Ippona Bas. Maior (L, P)",
+"data": "domenica ottava P. 410-412 (K) 412-413 (Be)"
+},
+"cuando": false
+},
+{
+"file": "discorso_185_testo.htm",
+"label": "143",
+"id": "143",
+"coll": "main",
+"src": "Anoz",
+"data": "410-412",
+"det": "",
+"key": [
+410,
+164
+],
+"tav": {
+"arg": "Io 16, 7-11",
+"luogo": "-",
+"data": "410-412 (K, Be)"
+},
+"cuando": false
+},
+{
+"file": "discorso_217_testo.htm",
+"label": "167",
+"id": "167",
+"coll": "main",
+"src": "Anoz",
+"data": "410-412",
+"det": "",
+"key": [
+410,
+165
+],
+"tav": {
+"arg": "Eph 5, 15-16",
+"luogo": "-",
+"data": "410-412 (K, Be)"
+},
+"cuando": false
+},
+{
+"file": "discorso_258_testo.htm",
+"label": "203",
+"id": "203",
+"coll": "main",
+"src": "Anoz",
+"data": "410-412",
+"det": "",
+"key": [
+410,
+166
+],
+"tav": {
+"arg": "Epifania",
+"luogo": "-",
+"data": "6-1 410-412 (K, Be)"
+},
+"cuando": false
+},
+{
+"file": "discorso_303_testo.htm",
+"label": "229/A",
+"id": "229A",
+"coll": "main",
+"src": "Anoz",
+"data": "410-412",
+"det": "",
+"key": [
+410,
+167
+],
+"tav": {
+"arg": "Pasqua",
+"luogo": "Ippona",
+"data": "Pasqua 410-412"
+},
+"cuando": false
+},
+{
+"file": "discorso_388_testo.htm",
+"label": "275",
+"id": "275",
+"coll": "main",
+"src": "Anoz",
+"data": "410-412",
+"det": "",
+"key": [
+410,
+168
+],
+"tav": {
+"arg": "S. Vincenzo",
+"luogo": "-",
+"data": "-"
+},
+"cuando": false
+},
+{
+"file": "discorso_604_testo.htm",
+"label": "313/G",
+"id": "313G",
+"coll": "main",
+"src": "Anoz",
+"data": "410-412",
+"det": "10 dicembre",
+"key": [
+410,
+169
+],
+"tav": {
+"arg": "S. Cipriano",
+"luogo": "-",
+"data": "-"
+},
+"cuando": false
+},
+{
+"file": "discorso_264_testo.htm",
+"label": "208",
+"id": "208",
+"coll": "main",
+"src": "Anoz",
+"data": "verso 410-412",
+"det": "",
+"key": [
+410,
+170
+],
+"tav": {
+"arg": "Quaresima",
+"luogo": "-",
+"data": "inizio quaresima"
+},
+"cuando": false
+},
+{
+"file": "discorso_330_testo.htm",
+"label": "235",
+"id": "235",
+"coll": "main",
+"src": "Anoz",
+"data": "verso 410-412",
+"det": "",
+"key": [
+410,
+171
+],
+"tav": {
+"arg": "T. P. Lc 24, 13-35",
+"luogo": "Ippona Cattedrale (P)",
+"data": "settimana di P. dopo 400 (K) 410-412 (Po)"
+},
+"cuando": false
+},
+{
+"file": "discorso_331_testo.htm",
+"label": "236",
+"id": "236",
+"coll": "main",
+"src": "Anoz",
+"data": "verso 410-412",
+"det": "",
+"key": [
+410,
+172
+],
+"tav": {
+"arg": "T. P. Lc 24, 13-35",
+"luogo": "Ippona",
+"data": "settimana di P. c. 410-412 (Po)"
+},
+"cuando": false
+},
+{
+"file": "discorso_334_testo.htm",
+"label": "238",
+"id": "238",
+"coll": "main",
+"src": "Anoz",
+"data": "verso 410-412",
+"det": "",
+"key": [
+410,
+173
+],
+"tav": {
+"arg": "T. P. Lc 24, 36-53",
+"luogo": "Ippona",
+"data": "settimana di P. c. 400-412 (Po) 395-405 (Be)"
+},
+"cuando": false
+},
+{
+"file": "discorso_335_testo.htm",
+"label": "239",
+"id": "239",
+"coll": "main",
+"src": "Anoz",
+"data": "verso 410-412",
+"det": "",
+"key": [
+410,
+174
+],
+"tav": {
+"arg": "T. P. Mc 16, 1-16",
+"luogo": "Ippona",
+"data": "settimana di P. prima 400 (K, Be) c. 410-412 (Po)"
+},
+"cuando": false
+},
+{
+"file": "discorso_342_testo.htm",
+"label": "245",
+"id": "245",
+"coll": "main",
+"src": "Anoz",
+"data": "verso 410-412",
+"det": "",
+"key": [
+410,
+175
+],
+"tav": {
+"arg": "T. P. Lc 20, 1-18",
+"luogo": "Ippona",
+"data": "settimana di P. 410-412 (Po)"
+},
+"cuando": false
+},
+{
+"file": "discorso_344_testo.htm",
+"label": "247",
+"id": "247",
+"coll": "main",
+"src": "Anoz",
+"data": "verso 410-412",
+"det": "",
+"key": [
+410,
+176
+],
+"tav": {
+"arg": "T. P. Io 20, 19-23",
+"luogo": "Ippona",
+"data": "settimana di P. venerdì di P. c. 400 (K) giovedì d. P. 410-412 (Po)"
+},
+"cuando": false
+},
+{
+"file": "discorso_345_testo.htm",
+"label": "248",
+"id": "248",
+"coll": "main",
+"src": "Anoz",
+"data": "verso 410-412",
+"det": "",
+"key": [
+410,
+177
+],
+"tav": {
+"arg": "T. P. Io 21, 1-14",
+"luogo": "Ippona",
+"data": "settimana di P. venerdì d. P. 412-416 (K) 410-412 (Po) 412-416 (Be)"
+},
+"cuando": false
+},
+{
+"file": "discorso_350_testo.htm",
+"label": "252/A",
+"id": "252A",
+"coll": "main",
+"src": "Anoz",
+"data": "verso 410-412",
+"det": "",
+"key": [
+410,
+178
+],
+"tav": {
+"arg": "T. P. Io 21, 1-14",
+"luogo": "Ippona",
+"data": "ottava di P. (W, Mo) venerdì d. P. 400 (K) settimana di P. c. 410-412"
+},
+"cuando": false
+},
+{
+"file": "discorso_545_testo.htm",
+"label": "376/A",
+"id": "376A",
+"coll": "main",
+"src": "Anoz",
+"data": "verso 410-412",
+"det": "",
+"key": [
+410,
+179
+],
+"tav": {
+"arg": "Allocuzione ai neofiti",
+"luogo": "-",
+"data": "-"
+},
+"cuando": false
+},
+{
+"file": "discorso_100_testo.htm",
+"label": "77",
+"id": "77",
+"coll": "main",
+"src": "Anoz",
+"data": "410-412?",
+"det": "",
+"key": [
+410,
+180
+],
+"tav": {
+"arg": "Mt15, 21-28",
+"luogo": "-",
+"data": "-"
+},
+"cuando": false
+},
+{
+"file": "discorso_047_testo.htm",
+"label": "36",
+"id": "36",
+"coll": "main",
+"src": "Anoz",
+"data": "410-413?",
+"det": "",
+"key": [
+410,
+181
+],
+"tav": {
+"arg": "Prov 13, 7-8",
+"luogo": "-",
+"data": "prima del 410 (K, L, Be) 410-413 (B)"
+},
+"cuando": false
+},
+{
+"file": "discorso_001_testo.htm",
+"label": "1",
+"id": "1",
+"coll": "main",
+"src": "Anoz",
+"data": "verso 410 o 411",
+"det": "",
+"key": [
+410,
+182
+],
+"tav": {
+"arg": "Gen 1, 1-Io 1, 1",
+"luogo": "-",
+"data": "391-393 394-395 (V)"
+},
+"cuando": false
+},
+{
+"file": "discorso_212_testo.htm",
+"label": "163/B",
+"id": "163B",
+"coll": "main",
+"src": "Anoz",
+"data": "410",
+"det": "giovedì 8 settembre",
+"key": [
+410,
+183
+],
+"tav": {
+"arg": "Gal 6, 1-10",
+"luogo": "Cartagine Bas. Cypriana",
+"data": "8-9-410"
+},
+"cuando": false
+},
+{
+"file": "discorso_108_testo.htm",
+"label": "81",
+"id": "81",
+"coll": "main",
+"src": "Anoz",
+"data": "410",
+"det": "ottobre o novembre",
+"key": [
+410,
+184
+],
+"tav": {
+"arg": "Mt 18, 7-9",
+"luogo": "Ippona",
+"data": "c. 410-411"
+},
+"cuando": false
+},
+{
+"file": "discorso_107_testo.htm",
+"label": "80",
+"id": "80",
+"coll": "main",
+"src": "Anoz",
+"data": "verso 410",
+"det": "",
+"key": [
+410,
+185
+],
+"tav": {
+"arg": "Mt 17, 18-20",
+"luogo": "-",
+"data": "c. 410 (K, Be)"
+},
+"cuando": false
+},
+{
+"file": "discorso_504_testo.htm",
+"label": "346/C",
+"id": "346C",
+"coll": "main",
+"src": "Anoz",
+"data": "verso 410",
+"det": "",
+"key": [
+410,
+186
+],
+"tav": {
+"arg": "Difficoltà della vita",
+"luogo": "-",
+"data": "c. 410 (K, B, Be)"
+},
+"cuando": false
+},
+{
+"file": "discorso_216_testo.htm",
+"label": "166",
+"id": "166",
+"coll": "main",
+"src": "Anoz",
+"data": "post 410",
+"det": "",
+"key": [
+410,
+187
+],
+"tav": {
+"arg": "Eph 4, 25; Ps 115, 11",
+"luogo": "Ippona Mem. martyrum",
+"data": "domenica, ottava di Pasqua 410?"
+},
+"cuando": false
+},
+{
+"file": "discorso_316_testo.htm",
+"label": "229/N",
+"id": "229N",
+"coll": "main",
+"src": "Anoz",
+"data": "post 410",
+"det": "",
+"key": [
+410,
+188
+],
+"tav": {
+"arg": "T. P. Io 21, 15-25",
+"luogo": "Ippona",
+"data": "sabato dopo P. dal 410 (Po)"
+},
+"cuando": false
+},
+{
+"file": "discorso_452_testo.htm",
+"label": "313/H",
+"id": "313H",
+"coll": "main",
+"src": "Tavola NBA",
+"data": "10-12-410/412",
+"det": "",
+"key": [
+410,
+100000
+],
+"tav": {
+"arg": "S. Eulalia",
+"luogo": "-",
+"data": "10-12-410/412"
+},
+"cuando": false
+},
+{
+"file": "discorso_469_testo.htm",
+"label": "329",
+"id": "329",
+"coll": "main",
+"src": "Tavola NBA",
+"data": "410-412",
+"det": "",
+"key": [
+410,
+100000
+],
+"tav": {
+"arg": "Festa Martiri",
+"luogo": "-",
+"data": "410-412"
+},
+"cuando": true
+},
+{
+"file": "discorso_544_testo.htm",
+"label": "376",
+"id": "376",
+"coll": "main",
+"src": "Tavola NBA",
+"data": "domenica ottava P. 410-412 (Po)",
+"det": "",
+"key": [
+410,
+100000
+],
+"tav": {
+"arg": "Allocuzione ai neofiti",
+"luogo": "Ippona Bas. Maior",
+"data": "domenica ottava P. 410-412 (Po)"
+},
+"cuando": false
+},
+{
+"file": "discorso_049_testo.htm",
+"label": "38",
+"id": "38",
+"coll": "main",
+"src": "Anoz",
+"data": "ante 411",
+"det": "",
+"key": [
+411,
+189
+],
+"tav": {
+"arg": "Continenza e Temperanza",
+"luogo": "-",
+"data": "-"
+},
+"cuando": false
+},
+{
+"file": "discorso_301_testo.htm",
+"label": "228/B",
+"id": "228B",
+"coll": "main",
+"src": "Anoz",
+"data": "ante 411",
+"det": "",
+"key": [
+411,
+190
+],
+"tav": {
+"arg": "Pasqua",
+"luogo": "Ippona",
+"data": "Pasqua"
+},
+"cuando": false
+},
+{
+"file": "discorso_338_testo.htm",
+"label": "242",
+"id": "242",
+"coll": "main",
+"src": "Anoz",
+"data": "dal 411",
+"det": "",
+"key": [
+411,
+191
+],
+"tav": {
+"arg": "T. P. Lc 24, 36-53",
+"luogo": "Ippona",
+"data": "settimana di P. 400-412 (Ba) T. P. 404-410 (K)"
+},
+"cuando": false
+},
+{
+"file": "discorso_137_testo.htm",
+"label": "107",
+"id": "107",
+"coll": "main",
+"src": "Anoz",
+"data": "411-419",
+"det": "",
+"key": [
+411,
+192
+],
+"tav": {
+"arg": "Lc 12, 13-21",
+"luogo": "Cartagine",
+"data": "411 (K, Be) prima 410 (Mo)"
+},
+"cuando": false
+},
+{
+"file": "discorso_256_testo.htm",
+"label": "201",
+"id": "201",
+"coll": "main",
+"src": "Anoz",
+"data": "411-415",
+"det": "",
+"key": [
+411,
+193
+],
+"tav": {
+"arg": "Epifania",
+"luogo": "-",
+"data": "6-1"
+},
+"cuando": false
+},
+{
+"file": "discorso_247_testo.htm",
+"label": "194",
+"id": "194",
+"coll": "main",
+"src": "Anoz",
+"data": "ante 411 o 412",
+"det": "",
+"key": [
+411,
+194
+],
+"tav": {
+"arg": "Natale",
+"luogo": "-",
+"data": "25-12 prima 411-412 (K, Be)"
+},
+"cuando": false
+},
+{
+"file": "discorso_244_testo.htm",
+"label": "191",
+"id": "191",
+"coll": "main",
+"src": "Anoz",
+"data": "411 o 412",
+"det": "",
+"key": [
+411,
+195
+],
+"tav": {
+"arg": "Natale",
+"luogo": "-",
+"data": "25-12 411-412 (K, Be)"
+},
+"cuando": false
+},
+{
+"file": "discorso_012_testo.htm",
+"label": "11",
+"id": "11",
+"coll": "main",
+"src": "Anoz",
+"data": "411 o 412?",
+"det": "",
+"key": [
+411,
+196
+],
+"tav": {
+"arg": "3 Reg 17, 8-16",
+"luogo": "-",
+"data": "411-412 (Bo)"
+},
+"cuando": false
+},
+{
+"file": "discorso_245_testo.htm",
+"label": "192",
+"id": "192",
+"coll": "main",
+"src": "Anoz",
+"data": "post 411 o 412",
+"det": "",
+"key": [
+411,
+197
+],
+"tav": {
+"arg": "Natale",
+"luogo": "-",
+"data": "24-12 dopo 411-412 (K, Be)"
+},
+"cuando": false
+},
+{
+"file": "discorso_248_testo.htm",
+"label": "195",
+"id": "195",
+"coll": "main",
+"src": "Anoz",
+"data": "post 411 o 412",
+"det": "",
+"key": [
+411,
+198
+],
+"tav": {
+"arg": "Natale",
+"luogo": "-",
+"data": "25-12 dopo 411-412 (K, Be)"
+},
+"cuando": false
+},
+{
+"file": "discorso_278_testo.htm",
+"label": "218/C",
+"id": "218C",
+"coll": "main",
+"src": "Anoz",
+"data": "post 411 o 412",
+"det": "",
+"key": [
+411,
+199
+],
+"tav": {
+"arg": "Passione",
+"luogo": "Ippona",
+"data": "venerdì santo prima 410 (K, B) 412-415? (B)"
+},
+"cuando": false
+},
+{
+"file": "discorso_067_testo.htm",
+"label": "54",
+"id": "54",
+"coll": "main",
+"src": "Anoz",
+"data": "post 411 o 412?",
+"det": "",
+"key": [
+411,
+200
+],
+"tav": {
+"arg": "Mt 5, 16; 6, 1",
+"luogo": "Ippona (V)",
+"data": "409-410 (K, Be)"
+},
+"cuando": false
+},
+{
+"file": "discorso_032_testo.htm",
+"label": "25",
+"id": "25",
+"coll": "main",
+"src": "Anoz",
+"data": "411-412",
+"det": "inverno",
+"key": [
+411,
+201
+],
+"tav": {
+"arg": "Ps 93, 12",
+"luogo": "Ippona",
+"data": "inverno c. 410 inverno 411-412 (P) inverno c. 412 (B)"
+},
+"cuando": false
+},
+{
+"file": "discorso_033_testo.htm",
+"label": "25/A",
+"id": "25A",
+"coll": "main",
+"src": "Anoz",
+"data": "411-412",
+"det": "inverno",
+"key": [
+411,
+202
+],
+"tav": {
+"arg": "Ps 93, 12-13",
+"luogo": "Cartagine Bas. Maiorum",
+"data": "dopo 396 (K, Be) inverno 412-413 (P)"
+},
+"cuando": false
+},
+{
+"file": "discorso_111_testo.htm",
+"label": "84",
+"id": "84",
+"coll": "main",
+"src": "Anoz",
+"data": "411",
+"det": "",
+"key": [
+411,
+203
+],
+"tav": {
+"arg": "Mt 19, 17",
+"luogo": "Cartagine",
+"data": "411 (B)"
+},
+"cuando": false
+},
+{
+"file": "discorso_117_testo.htm",
+"label": "90",
+"id": "90",
+"coll": "main",
+"src": "Anoz",
+"data": "411",
+"det": "",
+"key": [
+411,
+204
+],
+"tav": {
+"arg": "Mt 22, 1-14",
+"luogo": "Cartagine Bas. Restituta",
+"data": "prima 420 (Mo) 412-416 (K, Be) 411 (B) estate 413? (P)"
+},
+"cuando": false
+},
+{
+"file": "discorso_143_testo.htm",
+"label": "112",
+"id": "112",
+"coll": "main",
+"src": "Anoz",
+"data": "411",
+"det": "",
+"key": [
+411,
+205
+],
+"tav": {
+"arg": "Lc 14, 16-24",
+"luogo": "Cartagine Bas. Rastituta",
+"data": "412-420 (Mo) dopo 411 (V)"
+},
+"cuando": false
+},
+{
+"file": "discorso_366_testo.htm",
+"label": "262",
+"id": "262",
+"coll": "main",
+"src": "Anoz",
+"data": "411",
+"det": "Ascensione 4 maggio",
+"key": [
+411,
+206
+],
+"tav": {
+"arg": "Ascensione",
+"luogo": "Ippona Bas. Leontiana",
+"data": "4-5-411"
+},
+"cuando": false
+},
+{
+"file": "discorso_520_testo.htm",
+"label": "357",
+"id": "357",
+"coll": "main",
+"src": "Anoz",
+"data": "411",
+"det": "mercoledì 17 maggio",
+"key": [
+411,
+207
+],
+"tav": {
+"arg": "Elogio della pace",
+"luogo": "Cartagine",
+"data": "maggio 411"
+},
+"cuando": false
+},
+{
+"file": "discorso_521_testo.htm",
+"label": "358",
+"id": "358",
+"coll": "main",
+"src": "Anoz",
+"data": "411",
+"det": "venerdì 26-mercoledì 31 maggio",
+"key": [
+411,
+208
+],
+"tav": {
+"arg": "Pace e carità",
+"luogo": "Cartagine",
+"data": "maggio 411"
+},
+"cuando": false
+},
+{
+"file": "discorso_415_testo.htm",
+"label": "296",
+"id": "296",
+"coll": "main",
+"src": "Anoz",
+"data": "411",
+"det": "mercoledì 29 giugno",
+"key": [
+411,
+209
+],
+"tav": {
+"arg": "SS. Pietro e Paolo",
+"luogo": "Cartagine",
+"data": "29-6-410-411"
+},
+"cuando": false
+},
+{
+"file": "discorso_128_testo.htm",
+"label": "99",
+"id": "99",
+"coll": "main",
+"src": "Anoz",
+"data": "411",
+"det": "estate",
+"key": [
+411,
+210
+],
+"tav": {
+"arg": "Lc 7, 36-50",
+"luogo": "-",
+"data": "411-412"
+},
+"cuando": false
+},
+{
+"file": "discorso_178_testo.htm",
+"label": "138",
+"id": "138",
+"coll": "main",
+"src": "Anoz",
+"data": "411",
+"det": "prob. estate",
+"key": [
+411,
+211
+],
+"tav": {
+"arg": "Io 10, 11-16",
+"luogo": "Cartagine",
+"data": "411-412"
+},
+"cuando": false
+},
+{
+"file": "discorso_500_testo.htm",
+"label": "345",
+"id": "345",
+"coll": "main",
+"src": "Anoz",
+"data": "411",
+"det": "domenica 30 luglio",
+"key": [
+411,
+212
+],
+"tav": {
+"arg": "Festa Martiri Disprezzo del mondo",
+"luogo": "Cartagine",
+"data": "411 (P) c. 428 (K, Po, Be) 411, 416 o 418 (V)"
+},
+"cuando": false
+},
+{
+"file": "discorso_523_testo.htm",
+"label": "359",
+"id": "359",
+"coll": "main",
+"src": "Anoz",
+"data": "411",
+"det": "inizio autunno",
+"key": [
+411,
+213
+],
+"tav": {
+"arg": "Lotta e pace con i Donatisti",
+"luogo": "Hippo Diarrhytus [Biserta] Bas. Florentia",
+"data": "dedicazione bas. 411-412"
+},
+"cuando": false
+},
+{
+"file": "discorso_525_testo.htm",
+"label": "360",
+"id": "360",
+"coll": "main",
+"src": "Anoz",
+"data": "411",
+"det": "inizio autunno",
+"key": [
+411,
+214
+],
+"tav": {
+"arg": "Conversione di un Donatista",
+"luogo": "Ippona ?",
+"data": "vigilia S. Massimiano 411 (K, Be)"
+},
+"cuando": false
+},
+{
+"file": "discorso_213_testo.htm",
+"label": "164",
+"id": "164",
+"coll": "main",
+"src": "Anoz",
+"data": "411",
+"det": "fine",
+"key": [
+411,
+215
+],
+"tav": {
+"arg": "Gal 6, 2-5",
+"luogo": "Ippona",
+"data": "411"
+},
+"cuando": false
+},
+{
+"file": "discorso_494_testo.htm",
+"label": "340/A",
+"id": "340A",
+"coll": "main",
+"src": "Anoz",
+"data": "411",
+"det": "fine",
+"key": [
+411,
+216
+],
+"tav": {
+"arg": "Ministero episcopale",
+"luogo": "Fussala (Mo, P) Hippo Diarrhytus [Biserta] (L)",
+"data": "410-412"
+},
+"cuando": false
+},
+{
+"file": "discorso_019_testo.htm",
+"label": "16/A",
+"id": "16A",
+"coll": "main",
+"src": "Anoz",
+"data": "prob. 411",
+"det": "domenica 18 giugno",
+"key": [
+411,
+217
+],
+"tav": {
+"arg": "Ps 38, 13",
+"luogo": "Cartagine Bas. Maiorum",
+"data": "domenica 18 giugno 411 411 o 405 (P)"
+},
+"cuando": false
+},
+{
+"file": "discorso_024_testo.htm",
+"label": "20",
+"id": "20",
+"coll": "main",
+"src": "Anoz",
+"data": "post 411",
+"det": "",
+"key": [
+411,
+218
+],
+"tav": {
+"arg": "Ps 50, 12",
+"luogo": "-",
+"data": "391 (K) dopo 391 (Be)"
+},
+"cuando": false
+},
+{
+"file": "discorso_593_testo.htm",
+"label": "20/B",
+"id": "20B",
+"coll": "main",
+"src": "Tavola NBA",
+"data": "dopo una malattia 411 o v. 427 (Hi.)",
+"det": "",
+"key": [
+411,
+100000
+],
+"tav": {
+"arg": "Salute del corpo",
+"luogo": "(Ippona ?)",
+"data": "dopo una malattia 411 o v. 427 (Hi.)"
+},
+"cuando": true
+},
+{
+"file": "discorso_593_testo.htm",
+"label": "Dolbeau 28",
+"code": "20/B",
+"coll": "nuovi",
+"src": "Tavola NBA",
+"data": "dopo una malattia 411 o v. 427 (Hi.)",
+"det": "",
+"key": [
+411,
+100000
+],
+"tav": {
+"arg": "Salute del corpo",
+"luogo": "(Ippona ?)",
+"data": "dopo una malattia 411 o v. 427 (Hi.)"
+},
+"cuando": true
+},
+{
+"file": "discorso_326_testo.htm",
+"label": "231",
+"id": "231",
+"coll": "main",
+"src": "Anoz",
+"data": "dal 412",
+"det": "",
+"key": [
+412,
+219
+],
+"tav": {
+"arg": "T. P. Mc 16, 1-16",
+"luogo": "Ippona",
+"data": "settimana di P. dopo 400 (K) dal 412 (Po)"
+},
+"cuando": false
+},
+{
+"file": "discorso_327_testo.htm",
+"label": "232",
+"id": "232",
+"coll": "main",
+"src": "Anoz",
+"data": "dal 412",
+"det": "",
+"key": [
+412,
+220
+],
+"tav": {
+"arg": "T. P. Lc 24, 13-35",
+"luogo": "Ippona",
+"data": "settimana di P. dopo 400 (K, M) 412-413 (Be)"
+},
+"cuando": false
+},
+{
+"file": "discorso_328_testo.htm",
+"label": "233",
+"id": "233",
+"coll": "main",
+"src": "Anoz",
+"data": "dal 412",
+"det": "",
+"key": [
+412,
+221
+],
+"tav": {
+"arg": "T. P. Mc 16, 1-16",
+"luogo": "Ippona",
+"data": "settimana di P. dopo 400 (Be) da 412 (Po) lunedì di P. 418 (L)"
+},
+"cuando": false
+},
+{
+"file": "discorso_329_testo.htm",
+"label": "234",
+"id": "234",
+"coll": "main",
+"src": "Anoz",
+"data": "dal 412",
+"det": "",
+"key": [
+412,
+222
+],
+"tav": {
+"arg": "T. P. Lc 24, 13-35",
+"luogo": "Ippona Cattedrale (P)",
+"data": "settimana di P. dopo 400 (K, Be) 418 (L, B)"
+},
+"cuando": false
+},
+{
+"file": "discorso_333_testo.htm",
+"label": "237",
+"id": "237",
+"coll": "main",
+"src": "Anoz",
+"data": "dal 412",
+"det": "",
+"key": [
+412,
+223
+],
+"tav": {
+"arg": "T. P. Lc 24, 36-53",
+"luogo": "Ippona",
+"data": "settimana di P. 402-404 (Ba) 412-413 (Be)"
+},
+"cuando": false
+},
+{
+"file": "discorso_336_testo.htm",
+"label": "240",
+"id": "240",
+"coll": "main",
+"src": "Anoz",
+"data": "dal 412",
+"det": "",
+"key": [
+412,
+224
+],
+"tav": {
+"arg": "T. P. Mc 16, 1-16",
+"luogo": "Ippona",
+"data": "settimana di P. dal 412 (Po) 405-412 (Be) T. P. 405-410 (K)"
+},
+"cuando": false
+},
+{
+"file": "discorso_339_testo.htm",
+"label": "242/A",
+"id": "242A",
+"coll": "main",
+"src": "Anoz",
+"data": "dal 412",
+"det": "",
+"key": [
+412,
+225
+],
+"tav": {
+"arg": "T. P.",
+"luogo": "Ippona",
+"data": "settimana di P. 410-411 (K, Be) dal 412 (Po)"
+},
+"cuando": false
+},
+{
+"file": "discorso_340_testo.htm",
+"label": "243",
+"id": "243",
+"coll": "main",
+"src": "Anoz",
+"data": "dal 412",
+"det": "",
+"key": [
+412,
+226
+],
+"tav": {
+"arg": "T. P. Lc 20, 1-18",
+"luogo": "Ippona",
+"data": "settimana di P. giovedì d. P. 408-409 (K, Be) dopo 409 (LL)"
+},
+"cuando": false
+},
+{
+"file": "discorso_346_testo.htm",
+"label": "249",
+"id": "249",
+"coll": "main",
+"src": "Anoz",
+"data": "dal 412",
+"det": "",
+"key": [
+412,
+227
+],
+"tav": {
+"arg": "T. P. Io 21, 1-14",
+"luogo": "Ippona",
+"data": "settimana di P. prima 405 (Mo) venerdì d. P. 410-412 (K) c. 418) (L)"
+},
+"cuando": false
+},
+{
+"file": "discorso_347_testo.htm",
+"label": "250",
+"id": "250",
+"coll": "main",
+"src": "Anoz",
+"data": "dal 412",
+"det": "",
+"key": [
+412,
+228
+],
+"tav": {
+"arg": "T. P. Io 21, 1-14",
+"luogo": "Ippona",
+"data": "settimana di P. venerdì d. P. 412-413 (Be) dal 412 (Po) c. 416 (K)"
+},
+"cuando": false
+},
+{
+"file": "discorso_351_testo.htm",
+"label": "253",
+"id": "253",
+"coll": "main",
+"src": "Anoz",
+"data": "dal 412",
+"det": "",
+"key": [
+412,
+229
+],
+"tav": {
+"arg": "T. P. Io 21, 15-25",
+"luogo": "Ippona",
+"data": "sabato d. P. dal 412 (Po) 412-413"
+},
+"cuando": false
+},
+{
+"file": "discorso_356_testo.htm",
+"label": "257",
+"id": "257",
+"coll": "main",
+"src": "Anoz",
+"data": "dal 412",
+"det": "",
+"key": [
+412,
+230
+],
+"tav": {
+"arg": "T. P. Ps 115, 11",
+"luogo": "Ippona Mem. martyrum",
+"data": "domenica ottava P. 410-412 (K) 412-413 (Be)"
+},
+"cuando": false
+},
+{
+"file": "discorso_359_testo.htm",
+"label": "260",
+"id": "260",
+"coll": "main",
+"src": "Anoz",
+"data": "dal 412",
+"det": "",
+"key": [
+412,
+231
+],
+"tav": {
+"arg": "T. P. Io 20, 19-29",
+"luogo": "Ippona Bas. Leontiana",
+"data": "domenica ottava P. dopo 409 (L) dopo 412 (Po)"
+},
+"cuando": false
+},
+{
+"file": "discorso_020_testo.htm",
+"label": "16/B",
+"id": "16B",
+"coll": "main",
+"src": "Anoz",
+"data": "412-416",
+"det": "",
+"key": [
+412,
+232
+],
+"tav": {
+"arg": "Ps 40, 5",
+"luogo": "-",
+"data": "412-416 (K, Be)"
+},
+"cuando": false
+},
+{
+"file": "discorso_177_testo.htm",
+"label": "137",
+"id": "137",
+"coll": "main",
+"src": "Anoz",
+"data": "412-416",
+"det": "",
+"key": [
+412,
+233
+],
+"tav": {
+"arg": "Io 10, 1-15",
+"luogo": "-",
+"data": "quaresima (L, Po) 400-405 (K) prima 404 (M) prima 420 (Mo)"
+},
+"cuando": false
+},
+{
+"file": "discorso_238_testo.htm",
+"label": "185",
+"id": "185",
+"coll": "main",
+"src": "Anoz",
+"data": "412-416",
+"det": "",
+"key": [
+412,
+234
+],
+"tav": {
+"arg": "Natale",
+"luogo": "-",
+"data": "25-12 412-416 (K, Be)"
+},
+"cuando": false
+},
+{
+"file": "discorso_250_testo.htm",
+"label": "196/A",
+"id": "196A",
+"coll": "main",
+"src": "Anoz",
+"data": "412-416",
+"det": "",
+"key": [
+412,
+235
+],
+"tav": {
+"arg": "I° gennaio",
+"luogo": "-",
+"data": "-"
+},
+"cuando": false
+},
+{
+"file": "discorso_295_testo.htm",
+"label": "224",
+"id": "224",
+"coll": "main",
+"src": "Anoz",
+"data": "412-416",
+"det": "",
+"key": [
+412,
+236
+],
+"tav": {
+"arg": "Pasqua",
+"luogo": "Ippona Bas. Leontiana",
+"data": "Pasqua 412-416 (K, Be, Po)"
+},
+"cuando": false
+},
+{
+"file": "discorso_348_testo.htm",
+"label": "251",
+"id": "251",
+"coll": "main",
+"src": "Anoz",
+"data": "412-416",
+"det": "",
+"key": [
+412,
+237
+],
+"tav": {
+"arg": "T. P. Io 21, 1-14",
+"luogo": "Ippona",
+"data": "settimana di P. venerdì d. P. 412-416 d. 409 (L)"
+},
+"cuando": false
+},
+{
+"file": "discorso_392_testo.htm",
+"label": "278",
+"id": "278",
+"coll": "main",
+"src": "Anoz",
+"data": "412-416",
+"det": "",
+"key": [
+412,
+238
+],
+"tav": {
+"arg": "S. Vincenzo",
+"luogo": "-",
+"data": "T. P. 400-410 (Po) T. P. 412-416 (K, Be)"
+},
+"cuando": false
+},
+{
+"file": "discorso_404_testo.htm",
+"label": "290",
+"id": "290",
+"coll": "main",
+"src": "Anoz",
+"data": "412-416",
+"det": "24 giugno",
+"key": [
+412,
+239
+],
+"tav": {
+"arg": "S. Giovanni B.",
+"luogo": "-",
+"data": "24-6-412/416 (K)"
+},
+"cuando": false
+},
+{
+"file": "discorso_405_testo.htm",
+"label": "291",
+"id": "291",
+"coll": "main",
+"src": "Anoz",
+"data": "412-416",
+"det": "24 giugno",
+"key": [
+412,
+240
+],
+"tav": {
+"arg": "S. Giovanni B.",
+"luogo": "-",
+"data": "24-6-412/416 (K, Be)"
+},
+"cuando": false
+},
+{
+"file": "discorso_425_testo.htm",
+"label": "300",
+"id": "300",
+"coll": "main",
+"src": "Anoz",
+"data": "412-416",
+"det": "17 luglio",
+"key": [
+412,
+241
+],
+"tav": {
+"arg": "SS. Maccabei",
+"luogo": "-",
+"data": "1-8"
+},
+"cuando": false
+},
+{
+"file": "discorso_187_testo.htm",
+"label": "145",
+"id": "145",
+"coll": "main",
+"src": "Anoz",
+"data": "412-415",
+"det": "",
+"key": [
+412,
+242
+],
+"tav": {
+"arg": "Io 16, 24",
+"luogo": "Cartagine",
+"data": "prima 22-5-397 (L) 14/22-5-397 (P) 415 o 397 (B)"
+},
+"cuando": false
+},
+{
+"file": "discorso_269_testo.htm",
+"label": "212",
+"id": "212",
+"coll": "main",
+"src": "Anoz",
+"data": "412-415?",
+"det": "",
+"key": [
+412,
+243
+],
+"tav": {
+"arg": "Trad. Symb.",
+"luogo": "Ippona",
+"data": "due settimane prima P. 410-412 (K) 412-415 (Be)"
+},
+"cuando": false
+},
+{
+"file": "discorso_538_testo.htm",
+"label": "373",
+"id": "373",
+"coll": "main",
+"src": "Anoz",
+"data": "412 o 413",
+"det": "Epifania",
+"key": [
+412,
+244
+],
+"tav": {
+"arg": "Epifania",
+"luogo": "-",
+"data": "Epifania"
+},
+"cuando": false
+},
+{
+"file": "discorso_008_testo.htm",
+"label": "7",
+"id": "7",
+"coll": "main",
+"src": "Anoz",
+"data": "412 o 413",
+"det": "mercoledì e venerdì di Pentecoste",
+"key": [
+412,
+245
+],
+"tav": {
+"arg": "Ex 3, 2-14",
+"luogo": "Cartagine",
+"data": "397 o 409 (Be) 412 (B) 27-5-397 (L) dopo 409 (R)"
+},
+"cuando": false
+},
+{
+"file": "discorso_036_testo.htm",
+"label": "28",
+"id": "28",
+"coll": "main",
+"src": "Anoz",
+"data": "412 o 413",
+"det": "mercoledì e venerdì di Pentecoste",
+"key": [
+412,
+246
+],
+"tav": {
+"arg": "Ps 104, 3",
+"luogo": "Cartagine",
+"data": "27-5-397 (L) dopo 24-5-397 (P)"
+},
+"cuando": false
+},
+{
+"file": "discorso_150_testo.htm",
+"label": "115",
+"id": "115",
+"coll": "main",
+"src": "Anoz",
+"data": "412 o 413?",
+"det": "",
+"key": [
+412,
+247
+],
+"tav": {
+"arg": "Lc 18, 1-17",
+"luogo": "-",
+"data": "413 (K, Be) 412-413? (B)"
+},
+"cuando": false
+},
+{
+"file": "discorso_352_testo.htm",
+"label": "254",
+"id": "254",
+"coll": "main",
+"src": "Anoz",
+"data": "412 o 413?",
+"det": "",
+"key": [
+412,
+248
+],
+"tav": {
+"arg": "T. P. Lc 13, 6-9",
+"luogo": "Ippona Cattedrale (P) Mem. martyrum (Po)",
+"data": "settimana di P. (Maur.) T. P. 412-416 (K, B, Be)"
+},
+"cuando": false
+},
+{
+"file": "discorso_073_testo.htm",
+"label": "60",
+"id": "60",
+"coll": "main",
+"src": "Anoz",
+"data": "412",
+"det": "",
+"key": [
+412,
+249
+],
+"tav": {
+"arg": "Ps 38, 7; Mt 6, 19-21",
+"luogo": "Cartagine",
+"data": "14/22-5-397"
+},
+"cuando": false
+},
+{
+"file": "discorso_120_testo.htm",
+"label": "93",
+"id": "93",
+"coll": "main",
+"src": "Anoz",
+"data": "412",
+"det": "",
+"key": [
+412,
+250
+],
+"tav": {
+"arg": "Mt 25, 1-13",
+"luogo": "Cartagine",
+"data": "411-412 (K, Be)"
+},
+"cuando": false
+},
+{
+"file": "discorso_134_testo.htm",
+"label": "105",
+"id": "105",
+"coll": "main",
+"src": "Anoz",
+"data": "412",
+"det": "",
+"key": [
+412,
+251
+],
+"tav": {
+"arg": "Lc 11, 5-13",
+"luogo": "Cartagine",
+"data": "410-411"
+},
+"cuando": false
+},
+{
+"file": "discorso_069_testo.htm",
+"label": "56",
+"id": "56",
+"coll": "main",
+"src": "Anoz",
+"data": "412",
+"det": "domenica 7 aprile?",
+"key": [
+412,
+252
+],
+"tav": {
+"arg": "Mt 6, 9-13",
+"luogo": "Ippona",
+"data": "una settimana prima di P. 410 (Mo) 410-412 prima 410 (V)"
+},
+"cuando": false
+},
+{
+"file": "discorso_315_testo.htm",
+"label": "229/M",
+"id": "229M",
+"coll": "main",
+"src": "Anoz",
+"data": "412",
+"det": "prob. venerdì santo 19 aprile",
+"key": [
+412,
+253
+],
+"tav": {
+"arg": "T. P. Io 21, 1-14",
+"luogo": "Ippona",
+"data": "venerdì dopo P. 19-4-412 (K) c. 412 (B, Be, Po)"
+},
+"cuando": false
+},
+{
+"file": "discorso_370_testo.htm",
+"label": "265",
+"id": "265",
+"coll": "main",
+"src": "Anoz",
+"data": "412",
+"det": "Ascensione 23 maggio",
+"key": [
+412,
+254
+],
+"tav": {
+"arg": "Ascensione",
+"luogo": "-",
+"data": "prima 405 (Mo) 23-5-412 (K, B)"
+},
+"cuando": false
+},
+{
+"file": "discorso_378_testo.htm",
+"label": "267",
+"id": "267",
+"coll": "main",
+"src": "Anoz",
+"data": "412",
+"det": "Pentecoste 2 giugno",
+"key": [
+412,
+255
+],
+"tav": {
+"arg": "Pentecoste",
+"luogo": "-",
+"data": "Pentecoste 2-6-412 (K)"
+},
+"cuando": false
+},
+{
+"file": "discorso_397_testo.htm",
+"label": "283",
+"id": "283",
+"coll": "main",
+"src": "Anoz",
+"data": "412",
+"det": "lunedì 22 luglio",
+"key": [
+412,
+256
+],
+"tav": {
+"arg": "SS. Martiri Massil.",
+"luogo": "-",
+"data": "412-416 (K, Be)"
+},
+"cuando": false
+},
+{
+"file": "discorso_580_testo.htm",
+"label": "283 augm.",
+"id": "283AUG",
+"coll": "main",
+"src": "Anoz",
+"data": "412",
+"det": "lunedì 22 luglio",
+"key": [
+412,
+256
+],
+"tav": {
+"arg": "SS. Martiri Massil.",
+"luogo": "-",
+"data": "412-416 (K, Be)"
+},
+"cuando": false
+},
+{
+"file": "discorso_580_testo.htm",
+"label": "Dolbeau 15",
+"code": "283 augm.",
+"coll": "nuovi",
+"src": "Anoz",
+"data": "412",
+"det": "lunedì 22 luglio",
+"key": [
+412,
+256
+],
+"tav": {
+"arg": "SS. Martiri Massil.",
+"luogo": "-",
+"data": "412-416 (K, Be)"
+},
+"cuando": false
+},
+{
+"file": "discorso_428_testo.htm",
+"label": "302",
+"id": "302",
+"coll": "main",
+"src": "Anoz",
+"data": "412",
+"det": "sabato 10 agosto",
+"key": [
+412,
+257
+],
+"tav": {
+"arg": "S. Lorenzo",
+"luogo": "Ippona",
+"data": "10-8 c. 400 (K, Be)"
+},
+"cuando": false
+},
+{
+"file": "discorso_534_testo.htm",
+"label": "369",
+"id": "369",
+"coll": "main",
+"src": "Anoz",
+"data": "412",
+"det": "mercoledì 25 dicembre",
+"key": [
+412,
+258
+],
+"tav": {
+"arg": "Natività G. C. Io 12, 25",
+"luogo": "Cartagine Bas. Restituta",
+"data": "Natale 412?"
+},
+"cuando": false
+},
+{
+"file": "discorso_075_testo.htm",
+"label": "61",
+"id": "61",
+"coll": "main",
+"src": "Anoz",
+"data": "verso 412",
+"det": "",
+"key": [
+412,
+259
+],
+"tav": {
+"arg": "Mt 7, 7-11",
+"luogo": "Ippona",
+"data": "412-416"
+},
+"cuando": false
+},
+{
+"file": "discorso_175_testo.htm",
+"label": "136/B",
+"id": "136B",
+"coll": "main",
+"src": "Anoz",
+"data": "verso 412",
+"det": "",
+"key": [
+412,
+260
+],
+"tav": {
+"arg": "Io 9, 1-41",
+"luogo": "-",
+"data": "quaresima (L)"
+},
+"cuando": false
+},
+{
+"file": "discorso_229_testo.htm",
+"label": "177",
+"id": "177",
+"coll": "main",
+"src": "Anoz",
+"data": "verso 412",
+"det": "",
+"key": [
+412,
+261
+],
+"tav": {
+"arg": "1 Tim 6, 7-19",
+"luogo": "Cartagine",
+"data": "410-412 c. 22-5/24-6-397 (L, P)"
+},
+"cuando": false
+},
+{
+"file": "discorso_376_testo.htm",
+"label": "265/F",
+"id": "265F",
+"coll": "main",
+"src": "Anoz",
+"data": "verso 412",
+"det": "",
+"key": [
+412,
+262
+],
+"tav": {
+"arg": "Ascensione",
+"luogo": "-",
+"data": "Ascensione"
+},
+"cuando": false
+},
+{
+"file": "discorso_508_testo.htm",
+"label": "349",
+"id": "349",
+"coll": "main",
+"src": "Anoz",
+"data": "verso 412",
+"det": "",
+"key": [
+412,
+263
+],
+"tav": {
+"arg": "La carità Lc 18, 38-42",
+"luogo": "Ippona",
+"data": "inverno c. 412 (B)"
+},
+"cuando": false
+},
+{
+"file": "discorso_011_testo.htm",
+"label": "10",
+"id": "10",
+"coll": "main",
+"src": "Anoz",
+"data": "post 412",
+"det": "",
+"key": [
+412,
+264
+],
+"tav": {
+"arg": "3 Reg 3, 16-27",
+"luogo": "Sinite [Chemtou]",
+"data": "giugno 411 (K) 412 (M-Be) dopo 412 (B)"
+},
+"cuando": false
+},
+{
+"file": "discorso_188_testo.htm",
+"label": "145/A",
+"id": "145A",
+"coll": "main",
+"src": "Anoz",
+"data": "post 412",
+"det": "",
+"key": [
+412,
+265
+],
+"tav": {
+"arg": "Io 20, 24-29",
+"luogo": "Ippona",
+"data": "dopo 412 (Po)"
+},
+"cuando": false
+},
+{
+"file": "discorso_190_testo.htm",
+"label": "147",
+"id": "147",
+"coll": "main",
+"src": "Anoz",
+"data": "post 412",
+"det": "",
+"key": [
+412,
+266
+],
+"tav": {
+"arg": "Io 21, 15-19",
+"luogo": "Ippona",
+"data": "dopo 412 (Po)"
+},
+"cuando": false
+},
+{
+"file": "discorso_192_testo.htm",
+"label": "148",
+"id": "148",
+"coll": "main",
+"src": "Anoz",
+"data": "post 412",
+"det": "",
+"key": [
+412,
+267
+],
+"tav": {
+"arg": "Act 5, 4",
+"luogo": "Ippona Mem. martyrum",
+"data": "domenica, ottava di Pasqua, dopo 409 (L) ; dal 412 (Po)"
+},
+"cuando": false
+},
+{
+"file": "discorso_283_testo.htm",
+"label": "223",
+"id": "223",
+"coll": "main",
+"src": "Anoz",
+"data": "post 412",
+"det": "",
+"key": [
+412,
+268
+],
+"tav": {
+"arg": "Pasqua",
+"luogo": "Ippona Bas. Leontiana",
+"data": "vigilia di P. 400-405"
+},
+"cuando": false
+},
+{
+"file": "discorso_307_testo.htm",
+"label": "229/E",
+"id": "229E",
+"coll": "main",
+"src": "Anoz",
+"data": "post 412",
+"det": "",
+"key": [
+412,
+269
+],
+"tav": {
+"arg": "T. P.",
+"luogo": "Ippona",
+"data": "lunedì dopo P. dopo 412 (Po)"
+},
+"cuando": false
+},
+{
+"file": "discorso_308_testo.htm",
+"label": "229/F",
+"id": "229F",
+"coll": "main",
+"src": "Anoz",
+"data": "post 412",
+"det": "",
+"key": [
+412,
+270
+],
+"tav": {
+"arg": "T. P.",
+"luogo": "Ippona",
+"data": "lunedì dopo P. c. 418 (K, Be)"
+},
+"cuando": false
+},
+{
+"file": "discorso_310_testo.htm",
+"label": "229/H",
+"id": "229H",
+"coll": "main",
+"src": "Anoz",
+"data": "post 412",
+"det": "",
+"key": [
+412,
+271
+],
+"tav": {
+"arg": "T. P.",
+"luogo": "Ippona",
+"data": "giovedì dopo P. dopo 412 (Po)"
+},
+"cuando": false
+},
+{
+"file": "discorso_313_testo.htm",
+"label": "229/K",
+"id": "229K",
+"coll": "main",
+"src": "Anoz",
+"data": "post 412",
+"det": "",
+"key": [
+412,
+272
+],
+"tav": {
+"arg": "T. P. Io 20, 11-18",
+"luogo": "Ippona",
+"data": "giovedì dopo P. dal 412 (Po)"
+},
+"cuando": false
+},
+{
+"file": "discorso_314_testo.htm",
+"label": "229/L",
+"id": "229L",
+"coll": "main",
+"src": "Anoz",
+"data": "post 412",
+"det": "",
+"key": [
+412,
+273
+],
+"tav": {
+"arg": "T. P. Io 20, 1-18",
+"luogo": "Ippona",
+"data": "giovedì dopo P. dal 412"
+},
+"cuando": false
+},
+{
+"file": "discorso_485_testo.htm",
+"label": "335/J",
+"id": "335J",
+"coll": "main",
+"src": "Anoz",
+"data": "post 412",
+"det": "",
+"key": [
+412,
+274
+],
+"tav": {
+"arg": "Festa Martiri",
+"luogo": "-",
+"data": "-"
+},
+"cuando": false
+},
+{
+"file": "discorso_491_testo.htm",
+"label": "338",
+"id": "338",
+"coll": "main",
+"src": "Tavola NBA",
+"data": "412 (K, Be)",
+"det": "",
+"key": [
+412,
+100000
+],
+"tav": {
+"arg": "Dedicazione di una chiesa",
+"luogo": "-",
+"data": "412 (K, Be)"
+},
+"cuando": true
+},
+{
+"file": "discorso_138_testo.htm",
+"label": "107/A",
+"id": "107A",
+"coll": "main",
+"src": "Anoz",
+"data": "413-420",
+"det": "",
+"key": [
+413,
+275
+],
+"tav": {
+"arg": "Lc 12, 13-21",
+"luogo": "-",
+"data": "-"
+},
+"cuando": false
+},
+{
+"file": "discorso_226_testo.htm",
+"label": "175",
+"id": "175",
+"coll": "main",
+"src": "Anoz",
+"data": "413 o 414",
+"det": "",
+"key": [
+413,
+276
+],
+"tav": {
+"arg": "1 Tim 1, 15-16",
+"luogo": "-",
+"data": "412 (K, Be)"
+},
+"cuando": false
+},
+{
+"file": "discorso_227_testo.htm",
+"label": "176",
+"id": "176",
+"coll": "main",
+"src": "Anoz",
+"data": "413 o 414",
+"det": "",
+"key": [
+413,
+277
+],
+"tav": {
+"arg": "Lc 17, 2-19",
+"luogo": "-",
+"data": "414 (K, Be)"
+},
+"cuando": false
+},
+{
+"file": "discorso_171_testo.htm",
+"label": "134",
+"id": "134",
+"coll": "main",
+"src": "Anoz",
+"data": "413 o 414?",
+"det": "",
+"key": [
+413,
+278
+],
+"tav": {
+"arg": "Io 8, 31-34",
+"luogo": "Cartagine Bas. Fausti",
+"data": "domenica 420 (B) 413 (P)"
+},
+"cuando": false
+},
+{
+"file": "discorso_225_testo.htm",
+"label": "174",
+"id": "174",
+"coll": "main",
+"src": "Anoz",
+"data": "413",
+"det": "domenica",
+"key": [
+413,
+279
+],
+"tav": {
+"arg": "1 Tim 1, 15; Lc 19, 1-10",
+"luogo": "Cartagine Bas. Celerinae",
+"data": "una domenica 411 o 413"
+},
+"cuando": false
+},
+{
+"file": "discorso_142_testo.htm",
+"label": "111",
+"id": "111",
+"coll": "main",
+"src": "Anoz",
+"data": "413",
+"det": "sabato 19 gennaio",
+"key": [
+413,
+280
+],
+"tav": {
+"arg": "Lc 13, 21-24",
+"luogo": "Cartagine Bas. Fausti",
+"data": "c. 417 (K) 19-1-413 o 415 (L) 19-1-413 (P)"
+},
+"cuando": false
+},
+{
+"file": "discorso_029_testo.htm",
+"label": "23",
+"id": "23",
+"coll": "main",
+"src": "Anoz",
+"data": "413",
+"det": "domenica 20 gennaio",
+"key": [
+413,
+281
+],
+"tav": {
+"arg": "Ps 72, 24",
+"luogo": "Cartagine Bas. Fausti",
+"data": "20 gennaio 413-415 verso 410 (Me)"
+},
+"cuando": false
+},
+{
+"file": "discorso_065_testo.htm",
+"label": "53",
+"id": "53",
+"coll": "main",
+"src": "Anoz",
+"data": "413",
+"det": "lunedì 21 gennaio",
+"key": [
+413,
+282
+],
+"tav": {
+"arg": "Mt 5, 3-12 Le beatitudini",
+"luogo": "Cartagine Bas. Tricilarum",
+"data": "21 gennaio (S. Agnese) 413 poco dopo 415 (L. Ca)"
+},
+"cuando": false
+},
+{
+"file": "discorso_390_testo.htm",
+"label": "277",
+"id": "277",
+"coll": "main",
+"src": "Anoz",
+"data": "413",
+"det": "martedì 22 gennaio",
+"key": [
+413,
+283
+],
+"tav": {
+"arg": "S. Vincenzo",
+"luogo": "Cartagine Bas. Restituta; Vallis Bas. Restituta o Bas. Vincentii",
+"data": "22-1-410/412 (K) 413-415 (K, B, Be, P)"
+},
+"cuando": false
+},
+{
+"file": "discorso_089_testo.htm",
+"label": "69",
+"id": "69",
+"coll": "main",
+"src": "Anoz",
+"data": "413",
+"det": "sabato 26 gennaio-venerdì 1 febbraio",
+"key": [
+413,
+284
+],
+"tav": {
+"arg": "Mt 11, 25-29",
+"luogo": "Cartagine",
+"data": "26-1/1-2 413 (DB, P)"
+},
+"cuando": false
+},
+{
+"file": "discorso_090_testo.htm",
+"label": "70",
+"id": "70",
+"coll": "main",
+"src": "Anoz",
+"data": "413",
+"det": "sabato 2 febbraio",
+"key": [
+413,
+285
+],
+"tav": {
+"arg": "Mt 11, 28-30",
+"luogo": "Cartagine",
+"data": "2-2-413 (P)"
+},
+"cuando": false
+},
+{
+"file": "discorso_070_testo.htm",
+"label": "57",
+"id": "57",
+"coll": "main",
+"src": "Anoz",
+"data": "413",
+"det": "domenica 30 marzo?",
+"key": [
+413,
+286
+],
+"tav": {
+"arg": "Mt 6, 9-13",
+"luogo": "Ippona",
+"data": "una settimana prima di P. (V) prima 410 (V)"
+},
+"cuando": false
+},
+{
+"file": "discorso_343_testo.htm",
+"label": "246",
+"id": "246",
+"coll": "main",
+"src": "Anoz",
+"data": "413",
+"det": "giovedì santo 10 aprile",
+"key": [
+413,
+287
+],
+"tav": {
+"arg": "T. P. Io 20, 1-18",
+"luogo": "Ippona",
+"data": "settimana di P. 10-4-413 (K) 412-413 (B, Be)"
+},
+"cuando": false
+},
+{
+"file": "discorso_407_testo.htm",
+"label": "293",
+"id": "293",
+"coll": "main",
+"src": "Anoz",
+"data": "413",
+"det": "martedì 24 giugno",
+"key": [
+413,
+288
+],
+"tav": {
+"arg": "S. Giovanni B.",
+"luogo": "Cartagine Bas. Maiorum",
+"data": "24-6-413 (K, B)"
+},
+"cuando": false
+},
+{
+"file": "discorso_413_testo.htm",
+"label": "294",
+"id": "294",
+"coll": "main",
+"src": "Anoz",
+"data": "413",
+"det": "venerdì 27 giugno",
+"key": [
+413,
+289
+],
+"tav": {
+"arg": "S. Gudene",
+"luogo": "Cartagine Bas. Maiorum",
+"data": "27-6-413 (K, B, Be, P)"
+},
+"cuando": false
+},
+{
+"file": "discorso_418_testo.htm",
+"label": "299",
+"id": "299",
+"coll": "main",
+"src": "Anoz",
+"data": "413",
+"det": "domenica 29 giugno",
+"key": [
+413,
+290
+],
+"tav": {
+"arg": "SS. Pietro e Paolo",
+"luogo": "-",
+"data": "29-6-418"
+},
+"cuando": false
+},
+{
+"file": "discorso_422_testo.htm",
+"label": "299/D",
+"id": "299D",
+"coll": "main",
+"src": "Anoz",
+"data": "413",
+"det": "giovedì 17 luglio",
+"key": [
+413,
+291
+],
+"tav": {
+"arg": "SS. Martiri Scilit.",
+"luogo": "Cartagine Bas. Novarum",
+"data": "17-7 entro 413 (P)"
+},
+"cuando": false
+},
+{
+"file": "discorso_431_testo.htm",
+"label": "305",
+"id": "305",
+"coll": "main",
+"src": "Anoz",
+"data": "413?",
+"det": "10 agosto",
+"key": [
+413,
+292
+],
+"tav": {
+"arg": "S. Lorenzo",
+"luogo": "-",
+"data": "10-8-413? (P) prima 417 (K, Be)"
+},
+"cuando": false
+},
+{
+"file": "discorso_513_testo.htm",
+"label": "351",
+"id": "351",
+"coll": "main",
+"src": "Anoz",
+"data": "verso 413?",
+"det": "",
+"key": [
+413,
+293
+],
+"tav": {
+"arg": "La penitenza",
+"luogo": "-",
+"data": "391 (K, Be)"
+},
+"cuando": false
+},
+{
+"file": "discorso_579_testo.htm",
+"label": "352/A",
+"id": "352A",
+"coll": "main",
+"src": "Anoz",
+"data": "prob. 413 o 414",
+"det": "",
+"key": [
+413,
+294
+],
+"tav": {
+"arg": "Richiamo alla conversione Mc 1, 15",
+"luogo": "(Cartagine ?)",
+"data": "(estate 397 ?) v. 413-414 (H.)"
+},
+"cuando": false
+},
+{
+"file": "discorso_579_testo.htm",
+"label": "Dolbeau 14",
+"code": "352/A",
+"coll": "nuovi",
+"src": "Anoz",
+"data": "prob. 413 o 414",
+"det": "",
+"key": [
+413,
+294
+],
+"tav": {
+"arg": "Richiamo alla conversione Mc 1, 15",
+"luogo": "(Cartagine ?)",
+"data": "(estate 397 ?) v. 413-414 (H.)"
+},
+"cuando": false
+},
+{
+"file": "discorso_054_testo.htm",
+"label": "43",
+"id": "43",
+"coll": "main",
+"src": "Anoz",
+"data": "414",
+"det": "",
+"key": [
+414,
+295
+],
+"tav": {
+"arg": "Is 7, 9 2 Pt 1, 18",
+"luogo": "-",
+"data": "-"
+},
+"cuando": false
+},
+{
+"file": "discorso_528_testo.htm",
+"label": "363",
+"id": "363",
+"coll": "main",
+"src": "Anoz",
+"data": "414",
+"det": "",
+"key": [
+414,
+296
+],
+"tav": {
+"arg": "Cantico di Mosè Ex 15, 1-21",
+"luogo": "Ippona",
+"data": "412-416 (k, Be)"
+},
+"cuando": false
+},
+{
+"file": "discorso_071_testo.htm",
+"label": "58",
+"id": "58",
+"coll": "main",
+"src": "Anoz",
+"data": "414",
+"det": "domenica 15 marzo?",
+"key": [
+414,
+297
+],
+"tav": {
+"arg": "Mt 6, 9-13",
+"luogo": "Ippona",
+"data": "una settimana prima di P. (V) 412-416"
+},
+"cuando": false
+},
+{
+"file": "discorso_156_testo.htm",
+"label": "121",
+"id": "121",
+"coll": "main",
+"src": "Anoz",
+"data": "414?",
+"det": "",
+"key": [
+414,
+298
+],
+"tav": {
+"arg": "Io 1, 1-14",
+"luogo": "Ippona",
+"data": "Pasqua 412-413 (Be)"
+},
+"cuando": false
+},
+{
+"file": "discorso_064_testo.htm",
+"label": "52",
+"id": "52",
+"coll": "main",
+"src": "Anoz",
+"data": "414 o 415",
+"det": "",
+"key": [
+414,
+299
+],
+"tav": {
+"arg": "Mt 3, 13-17 La Trinità",
+"luogo": "-",
+"data": "410-412 419-420 (Bo)"
+},
+"cuando": false
+},
+{
+"file": "discorso_298_testo.htm",
+"label": "227",
+"id": "227",
+"coll": "main",
+"src": "Anoz",
+"data": "414 o 415",
+"det": "",
+"key": [
+414,
+300
+],
+"tav": {
+"arg": "Pasqua",
+"luogo": "Ippona",
+"data": "mattino di P. 412-413 (Be) 416. 417"
+},
+"cuando": false
+},
+{
+"file": "discorso_438_testo.htm",
+"label": "307",
+"id": "307",
+"coll": "main",
+"src": "Anoz",
+"data": "414 o 415",
+"det": "",
+"key": [
+414,
+301
+],
+"tav": {
+"arg": "Decollazione S. Giovanni B.",
+"luogo": "-",
+"data": "29-8 o 27-12 c. 414-415"
+},
+"cuando": false
+},
+{
+"file": "discorso_233_testo.htm",
+"label": "180",
+"id": "180",
+"coll": "main",
+"src": "Anoz",
+"data": "414 o 415?",
+"det": "",
+"key": [
+414,
+302
+],
+"tav": {
+"arg": "Iac 5, 12",
+"luogo": "-",
+"data": "414. 415"
+},
+"cuando": false
+},
+{
+"file": "discorso_288_testo.htm",
+"label": "223/E",
+"id": "223E",
+"coll": "main",
+"src": "Anoz",
+"data": "414 o 415?",
+"det": "",
+"key": [
+414,
+303
+],
+"tav": {
+"arg": "Pasqua",
+"luogo": "Ippona",
+"data": "veglia pasquale"
+},
+"cuando": false
+},
+{
+"file": "discorso_470_testo.htm",
+"label": "330",
+"id": "330",
+"coll": "main",
+"src": "Anoz",
+"data": "415-430",
+"det": "18 agosto",
+"key": [
+415,
+304
+],
+"tav": {
+"arg": "Festa Martiri",
+"luogo": "Cartagine Bas. Cypriani",
+"data": "18-8-397"
+},
+"cuando": false
+},
+{
+"file": "discorso_124_testo.htm",
+"label": "96",
+"id": "96",
+"coll": "main",
+"src": "Anoz",
+"data": "415-425",
+"det": "",
+"key": [
+415,
+305
+],
+"tav": {
+"arg": "Mc 8, 34",
+"luogo": "-",
+"data": "416-417"
+},
+"cuando": false
+},
+{
+"file": "discorso_453_testo.htm",
+"label": "314",
+"id": "314",
+"coll": "main",
+"src": "Anoz",
+"data": "415-425",
+"det": "26 dicembre",
+"key": [
+415,
+306
+],
+"tav": {
+"arg": "S. Stefano",
+"luogo": "-",
+"data": "26-12 prima 425 (K, Be)"
+},
+"cuando": false
+},
+{
+"file": "discorso_246_testo.htm",
+"label": "193",
+"id": "193",
+"coll": "main",
+"src": "Anoz",
+"data": "415-425?",
+"det": "",
+"key": [
+415,
+307
+],
+"tav": {
+"arg": "-",
+"luogo": "-",
+"data": "25-12 410 (B, K, Be)"
+},
+"cuando": false
+},
+{
+"file": "discorso_161_testo.htm",
+"label": "125/A",
+"id": "125A",
+"coll": "main",
+"src": "Anoz",
+"data": "415-420",
+"det": "",
+"key": [
+415,
+308
+],
+"tav": {
+"arg": "Io 5, 1-18",
+"luogo": "-",
+"data": "un sabato, in inverno"
+},
+"cuando": false
+},
+{
+"file": "discorso_206_testo.htm",
+"label": "161",
+"id": "161",
+"coll": "main",
+"src": "Anoz",
+"data": "415-420",
+"det": "",
+"key": [
+415,
+309
+],
+"tav": {
+"arg": "1 Cor 6, 9-19",
+"luogo": "-",
+"data": "-"
+},
+"cuando": false
+},
+{
+"file": "discorso_477_testo.htm",
+"label": "335/B",
+"id": "335B",
+"coll": "main",
+"src": "Anoz",
+"data": "415-420",
+"det": "",
+"key": [
+415,
+310
+],
+"tav": {
+"arg": "Festa Martiri",
+"luogo": "-",
+"data": "410-412 (K, Be)"
+},
+"cuando": false
+},
+{
+"file": "discorso_433_testo.htm",
+"label": "306",
+"id": "306",
+"coll": "main",
+"src": "Anoz",
+"data": "415-420",
+"det": "18 agosto",
+"key": [
+415,
+311
+],
+"tav": {
+"arg": "Martiri di Massa Candida",
+"luogo": "Cartagine Bas. Cypriani Utica? (P)",
+"data": "18-8"
+},
+"cuando": false
+},
+{
+"file": "discorso_583_testo.htm",
+"label": "306/E",
+"id": "306E",
+"coll": "main",
+"src": "Anoz",
+"data": "415-420",
+"det": "21 agosto",
+"key": [
+415,
+312
+],
+"tav": {
+"arg": "Imitare i martiri",
+"luogo": "(Cartagine ?) luogo del S. 306",
+"data": "21-8 (397 ?) festa di Quadrato 415-420 (H.)"
+},
+"cuando": false
+},
+{
+"file": "discorso_583_testo.htm",
+"label": "Dolbeau 18",
+"code": "306/E",
+"coll": "nuovi",
+"src": "Anoz",
+"data": "415-420",
+"det": "21 agosto",
+"key": [
+415,
+312
+],
+"tav": {
+"arg": "Imitare i martiri",
+"luogo": "(Cartagine ?) luogo del S. 306",
+"data": "21-8 (397 ?) festa di Quadrato 415-420 (H.)"
+},
+"cuando": false
+},
+{
+"file": "discorso_391_testo.htm",
+"label": "277/A",
+"id": "277A",
+"coll": "main",
+"src": "Anoz",
+"data": "415-420?",
+"det": "",
+"key": [
+415,
+313
+],
+"tav": {
+"arg": "S. Vincenzo",
+"luogo": "-",
+"data": "22-1 - S. Vincenzo 410-412 (K, Be)"
+},
+"cuando": false
+},
+{
+"file": "discorso_387_testo.htm",
+"label": "274",
+"id": "274",
+"coll": "main",
+"src": "Anoz",
+"data": "prob. 415-420",
+"det": "",
+"key": [
+415,
+314
+],
+"tav": {
+"arg": "S. Vincenzo",
+"luogo": "-",
+"data": "22-1-410 (K, Be)"
+},
+"cuando": false
+},
+{
+"file": "discorso_163_testo.htm",
+"label": "127",
+"id": "127",
+"coll": "main",
+"src": "Anoz",
+"data": "415-418",
+"det": "",
+"key": [
+415,
+315
+],
+"tav": {
+"arg": "Io 5, 25-29",
+"luogo": "-",
+"data": "410-420 (K, B, Be)"
+},
+"cuando": false
+},
+{
+"file": "discorso_205_testo.htm",
+"label": "160",
+"id": "160",
+"coll": "main",
+"src": "Anoz",
+"data": "verso 415 o 416",
+"det": "",
+"key": [
+415,
+316
+],
+"tav": {
+"arg": "1 Cor 1, 31",
+"luogo": "Cartagine",
+"data": "c. 24-6-397 (L, P) 412-416 o 397 (B)"
+},
+"cuando": false
+},
+{
+"file": "discorso_101_testo.htm",
+"label": "77/A",
+"id": "77A",
+"coll": "main",
+"src": "Anoz",
+"data": "415",
+"det": "",
+"key": [
+415,
+317
+],
+"tav": {
+"arg": "Mt 15, 22-28",
+"luogo": "-",
+"data": "414-416 (K, B, Be)"
+},
+"cuando": false
+},
+{
+"file": "discorso_232_testo.htm",
+"label": "179/A",
+"id": "179A",
+"coll": "main",
+"src": "Anoz",
+"data": "415",
+"det": "",
+"key": [
+415,
+318
+],
+"tav": {
+"arg": "Iac 2, 10",
+"luogo": "-",
+"data": "prima 410 (K, Be)"
+},
+"cuando": false
+},
+{
+"file": "discorso_072_testo.htm",
+"label": "59",
+"id": "59",
+"coll": "main",
+"src": "Anoz",
+"data": "415",
+"det": "domenica 4 aprile?",
+"key": [
+415,
+319
+],
+"tav": {
+"arg": "Mt 6, 9-13",
+"luogo": "Ippona",
+"data": "una settimana prima di P. 410 412-415 (Be)"
+},
+"cuando": false
+},
+{
+"file": "discorso_585_testo.htm",
+"label": "14/A",
+"id": "14A",
+"coll": "main",
+"src": "Anoz",
+"data": "415",
+"det": "luglio-dicembre",
+"key": [
+415,
+320
+],
+"tav": {
+"arg": "Il fine dell'uomo Ps 17, 36",
+"luogo": "- luogo del S. D. 19",
+"data": "in settimana (dopo 404) 415 (H.)"
+},
+"cuando": false
+},
+{
+"file": "discorso_585_testo.htm",
+"label": "Dolbeau 20",
+"code": "14/A",
+"coll": "nuovi",
+"src": "Anoz",
+"data": "415",
+"det": "luglio-dicembre",
+"key": [
+415,
+320
+],
+"tav": {
+"arg": "Il fine dell'uomo Ps 17, 36",
+"luogo": "- luogo del S. D. 19",
+"data": "in settimana (dopo 404) 415 (H.)"
+},
+"cuando": false
+},
+{
+"file": "discorso_584_testo.htm",
+"label": "130/A",
+"id": "130A",
+"coll": "main",
+"src": "Anoz",
+"data": "415",
+"det": "luglio-dicembre",
+"key": [
+415,
+321
+],
+"tav": {
+"arg": "Credere in Cristo Io 6, 27-29",
+"luogo": "- luogo del S. D. 20",
+"data": "di domenica (dopo 404) 415 (H.); 419 (Hi.)"
+},
+"cuando": false
+},
+{
+"file": "discorso_584_testo.htm",
+"label": "Dolbeau 19",
+"code": "130/A",
+"coll": "nuovi",
+"src": "Anoz",
+"data": "415",
+"det": "luglio-dicembre",
+"key": [
+415,
+321
+],
+"tav": {
+"arg": "Credere in Cristo Io 6, 27-29",
+"luogo": "- luogo del S. D. 20",
+"data": "di domenica (dopo 404) 415 (H.); 419 (Hi.)"
+},
+"cuando": false
+},
+{
+"file": "discorso_480_testo.htm",
+"label": "335/E",
+"id": "335E",
+"coll": "main",
+"src": "Anoz",
+"data": "prob. 415",
+"det": "mercoledì 18 agosto",
+"key": [
+415,
+322
+],
+"tav": {
+"arg": "Festa Martiri",
+"luogo": "-",
+"data": "17-7 (B)"
+},
+"cuando": false
+},
+{
+"file": "discorso_442_testo.htm",
+"label": "310",
+"id": "310",
+"coll": "main",
+"src": "Anoz",
+"data": "415",
+"det": "martedì 14 settembre",
+"key": [
+415,
+323
+],
+"tav": {
+"arg": "S. Cipriano",
+"luogo": "Ippona (Po)",
+"data": "14-9"
+},
+"cuando": false
+},
+{
+"file": "discorso_087_testo.htm",
+"label": "67",
+"id": "67",
+"coll": "main",
+"src": "Anoz",
+"data": "verso 415",
+"det": "",
+"key": [
+415,
+324
+],
+"tav": {
+"arg": "Mt 11, 25; Lc 10, 21",
+"luogo": "-",
+"data": "dopo 400 (Ba)"
+},
+"cuando": false
+},
+{
+"file": "discorso_099_testo.htm",
+"label": "76",
+"id": "76",
+"coll": "main",
+"src": "Anoz",
+"data": "verso 415",
+"det": "",
+"key": [
+415,
+325
+],
+"tav": {
+"arg": "Mt 14, 24-33",
+"luogo": "-",
+"data": "410-412 (K, B, Be)"
+},
+"cuando": false
+},
+{
+"file": "discorso_133_testo.htm",
+"label": "104",
+"id": "104",
+"coll": "main",
+"src": "Anoz",
+"data": "verso 415",
+"det": "",
+"key": [
+415,
+326
+],
+"tav": {
+"arg": "Lc 10, 38-42",
+"luogo": "-",
+"data": "-"
+},
+"cuando": false
+},
+{
+"file": "discorso_261_testo.htm",
+"label": "205",
+"id": "205",
+"coll": "main",
+"src": "Anoz",
+"data": "verso 415",
+"det": "",
+"key": [
+415,
+327
+],
+"tav": {
+"arg": "Quaresima",
+"luogo": "-",
+"data": "inizio quaresima"
+},
+"cuando": false
+},
+{
+"file": "discorso_403_testo.htm",
+"label": "289",
+"id": "289",
+"coll": "main",
+"src": "Anoz",
+"data": "verso 415?",
+"det": "24 giugno",
+"key": [
+415,
+328
+],
+"tav": {
+"arg": "Nat. S. Giovanni B.",
+"luogo": "-",
+"data": "24-6 prima 410 (K, Be)"
+},
+"cuando": false
+},
+{
+"file": "discorso_416_testo.htm",
+"label": "297",
+"id": "297",
+"coll": "main",
+"src": "Anoz",
+"data": "416-420",
+"det": "29 giugno",
+"key": [
+416,
+329
+],
+"tav": {
+"arg": "SS. Pietro e Paolo",
+"luogo": "-",
+"data": "29-6-416/420 (K, Be)"
+},
+"cuando": false
+},
+{
+"file": "discorso_417_testo.htm",
+"label": "298",
+"id": "298",
+"coll": "main",
+"src": "Anoz",
+"data": "416-420",
+"det": "29 giugno",
+"key": [
+416,
+330
+],
+"tav": {
+"arg": "SS. Pietro e Paolo",
+"luogo": "Ippona",
+"data": "29-6-416/420 (K, B, Be) 426-430 (P)"
+},
+"cuando": false
+},
+{
+"file": "discorso_173_testo.htm",
+"label": "136",
+"id": "136",
+"coll": "main",
+"src": "Anoz",
+"data": "416-418",
+"det": "",
+"key": [
+416,
+331
+],
+"tav": {
+"arg": "Io 9, 1-14",
+"luogo": "-",
+"data": "418-420 (K, B, Be)"
+},
+"cuando": false
+},
+{
+"file": "discorso_179_testo.htm",
+"label": "139",
+"id": "139",
+"coll": "main",
+"src": "Anoz",
+"data": "416-418",
+"det": "",
+"key": [
+416,
+332
+],
+"tav": {
+"arg": "Io 10, 30",
+"luogo": "-",
+"data": "416-418 (K, Be)"
+},
+"cuando": false
+},
+{
+"file": "discorso_374_testo.htm",
+"label": "265/D",
+"id": "265D",
+"coll": "main",
+"src": "Anoz",
+"data": "416-418",
+"det": "",
+"key": [
+416,
+333
+],
+"tav": {
+"arg": "Ascensione",
+"luogo": "-",
+"data": "dopo 400 (Ba) 417-418 (K, Be)"
+},
+"cuando": false
+},
+{
+"file": "discorso_389_testo.htm",
+"label": "276",
+"id": "276",
+"coll": "main",
+"src": "Anoz",
+"data": "416-418",
+"det": "",
+"key": [
+416,
+334
+],
+"tav": {
+"arg": "S. Vincenzo",
+"luogo": "-",
+"data": "22-1 - S. Vincenzo"
+},
+"cuando": false
+},
+{
+"file": "discorso_162_testo.htm",
+"label": "126",
+"id": "126",
+"coll": "main",
+"src": "Anoz",
+"data": "416 o 417",
+"det": "",
+"key": [
+416,
+335
+],
+"tav": {
+"arg": "Io 5, 19",
+"luogo": "-",
+"data": "dopo 409 (Po) 417-418"
+},
+"cuando": false
+},
+{
+"file": "discorso_297_testo.htm",
+"label": "226",
+"id": "226",
+"coll": "main",
+"src": "Anoz",
+"data": "416 o 417",
+"det": "",
+"key": [
+416,
+336
+],
+"tav": {
+"arg": "Pasqua",
+"luogo": "Ippona",
+"data": "Pasqua 416-417 (K, Be)"
+},
+"cuando": false
+},
+{
+"file": "discorso_309_testo.htm",
+"label": "229/G",
+"id": "229G",
+"coll": "main",
+"src": "Anoz",
+"data": "416 o 417",
+"det": "",
+"key": [
+416,
+337
+],
+"tav": {
+"arg": "T. P.",
+"luogo": "Ippona",
+"data": "martedì dopo P. 416-417 (K, B, Be)"
+},
+"cuando": false
+},
+{
+"file": "discorso_363_testo.htm",
+"label": "260/D",
+"id": "260D",
+"coll": "main",
+"src": "Anoz",
+"data": "416 o 417",
+"det": "",
+"key": [
+416,
+338
+],
+"tav": {
+"arg": "T. P.",
+"luogo": "Ippona Bas. Leontiana",
+"data": "domenica ottava P. 416-417 (K, Be) dal 412 (Po)"
+},
+"cuando": false
+},
+{
+"file": "discorso_454_testo.htm",
+"label": "315",
+"id": "315",
+"coll": "main",
+"src": "Anoz",
+"data": "416 o 417",
+"det": "26 dicembre",
+"key": [
+416,
+339
+],
+"tav": {
+"arg": "S. Stefano",
+"luogo": "Ippona Mem. Stephani",
+"data": "T. P. 416-417 (K) 26-12 (L) 416-417 (Be)"
+},
+"cuando": false
+},
+{
+"file": "discorso_262_testo.htm",
+"label": "206",
+"id": "206",
+"coll": "main",
+"src": "Anoz",
+"data": "verso 416 o 417",
+"det": "",
+"key": [
+416,
+340
+],
+"tav": {
+"arg": "Quaresima",
+"luogo": "-",
+"data": "inizio quaresima"
+},
+"cuando": false
+},
+{
+"file": "discorso_164_testo.htm",
+"label": "128",
+"id": "128",
+"coll": "main",
+"src": "Anoz",
+"data": "416",
+"det": "",
+"key": [
+416,
+341
+],
+"tav": {
+"arg": "Io 5, 31-35",
+"luogo": "-",
+"data": "412-416 (K, B, Be) un sabato (P)"
+},
+"cuando": false
+},
+{
+"file": "discorso_507_testo.htm",
+"label": "348/A",
+"id": "348A",
+"coll": "main",
+"src": "Anoz",
+"data": "416",
+"det": "15 maggio-inizio giugno",
+"key": [
+416,
+342
+],
+"tav": {
+"arg": "La preghiera",
+"luogo": "-",
+"data": "414-415"
+},
+"cuando": false
+},
+{
+"file": "discorso_595_testo.htm",
+"label": "348/A augm.",
+"id": "348AAUG",
+"coll": "main",
+"src": "Anoz",
+"data": "416",
+"det": "15 maggio-inizio giugno",
+"key": [
+416,
+342
+],
+"tav": {
+"arg": "La preghiera",
+"luogo": "-",
+"data": "414-415"
+},
+"cuando": false
+},
+{
+"file": "discorso_595_testo.htm",
+"label": "Dolbeau 30",
+"code": "348/A augm.",
+"coll": "nuovi",
+"src": "Anoz",
+"data": "416",
+"det": "15 maggio-inizio giugno",
+"key": [
+416,
+342
+],
+"tav": {
+"arg": "La preghiera",
+"luogo": "-",
+"data": "414-415"
+},
+"cuando": false
+},
+{
+"file": "discorso_040_testo.htm",
+"label": "30",
+"id": "30",
+"coll": "main",
+"src": "Anoz",
+"data": "416",
+"det": "domenica, settembre-ottobre",
+"key": [
+416,
+343
+],
+"tav": {
+"arg": "Ps 118, 33; Rom 7, 14",
+"luogo": "Cartagine Bas. Tricilarum",
+"data": "412-416 412-416 o 419 (Bo)"
+},
+"cuando": false
+},
+{
+"file": "discorso_220_testo.htm",
+"label": "169",
+"id": "169",
+"coll": "main",
+"src": "Anoz",
+"data": "416",
+"det": "settembre",
+"key": [
+416,
+344
+],
+"tav": {
+"arg": "Phil 3, 3-16",
+"luogo": "Cartagine Bas. Cypriani",
+"data": "418 (K, B, Be)"
+},
+"cuando": false
+},
+{
+"file": "discorso_194_testo.htm",
+"label": "150",
+"id": "150",
+"coll": "main",
+"src": "Anoz",
+"data": "416",
+"det": "martedì 17 ottobre",
+"key": [
+416,
+345
+],
+"tav": {
+"arg": "Act 17, 17-34",
+"luogo": "Cartagine",
+"data": "413-414"
+},
+"cuando": false
+},
+{
+"file": "discorso_026_testo.htm",
+"label": "21",
+"id": "21",
+"coll": "main",
+"src": "Anoz",
+"data": "verso 416",
+"det": "",
+"key": [
+416,
+346
+],
+"tav": {
+"arg": "Ps 63, 11",
+"luogo": "-",
+"data": "verso 416 (B) inverno (P)"
+},
+"cuando": false
+},
+{
+"file": "discorso_030_testo.htm",
+"label": "23/A",
+"id": "23A",
+"coll": "main",
+"src": "Anoz",
+"data": "verso 416",
+"det": "",
+"key": [
+416,
+347
+],
+"tav": {
+"arg": "Ps 74, 2",
+"luogo": "-",
+"data": "412-416"
+},
+"cuando": false
+},
+{
+"file": "discorso_186_testo.htm",
+"label": "144",
+"id": "144",
+"coll": "main",
+"src": "Anoz",
+"data": "verso 416",
+"det": "",
+"key": [
+416,
+348
+],
+"tav": {
+"arg": "Io 16, 7-11",
+"luogo": "-",
+"data": "412-416 (K, Be)"
+},
+"cuando": false
+},
+{
+"file": "discorso_219_testo.htm",
+"label": "168",
+"id": "168",
+"coll": "main",
+"src": "Anoz",
+"data": "verso 416",
+"det": "",
+"key": [
+416,
+349
+],
+"tav": {
+"arg": "Eph 6, 23",
+"luogo": "-",
+"data": "poco prima 416 (K, B, Be)"
+},
+"cuando": false
+},
+{
+"file": "discorso_234_testo.htm",
+"label": "181",
+"id": "181",
+"coll": "main",
+"src": "Anoz",
+"data": "verso 416",
+"det": "",
+"key": [
+416,
+350
+],
+"tav": {
+"arg": "1 Io 1, 8-9",
+"luogo": "-",
+"data": "416-417"
+},
+"cuando": false
+},
+{
+"file": "discorso_381_testo.htm",
+"label": "270",
+"id": "270",
+"coll": "main",
+"src": "Anoz",
+"data": "416?",
+"det": "",
+"key": [
+416,
+351
+],
+"tav": {
+"arg": "Pentecoste",
+"luogo": "-",
+"data": "Pentecoste 416? (K, B, Be)"
+},
+"cuando": false
+},
+{
+"file": "discorso_211_testo.htm",
+"label": "163/A",
+"id": "163A",
+"coll": "main",
+"src": "Anoz",
+"data": "post 416",
+"det": "domenica",
+"key": [
+416,
+352
+],
+"tav": {
+"arg": "Gal 5, 16-17",
+"luogo": "-",
+"data": "una domenica c. 416"
+},
+"cuando": false
+},
+{
+"file": "discorso_236_testo.htm",
+"label": "183",
+"id": "183",
+"coll": "main",
+"src": "Anoz",
+"data": "417-419?",
+"det": "",
+"key": [
+417,
+353
+],
+"tav": {
+"arg": "1 Io 4, 2",
+"luogo": "-",
+"data": "dopo 416 417 o 419? (B)"
+},
+"cuando": false
+},
+{
+"file": "discorso_312_testo.htm",
+"label": "229/J",
+"id": "229J",
+"coll": "main",
+"src": "Anoz",
+"data": "417 o 418",
+"det": "",
+"key": [
+417,
+354
+],
+"tav": {
+"arg": "T. P. c 24, 6-53",
+"luogo": "Ippona",
+"data": "mercoledì dopo P. 417-418 (K, Be) 400-410 (Po)"
+},
+"cuando": false
+},
+{
+"file": "discorso_199_testo.htm",
+"label": "154/A",
+"id": "154A",
+"coll": "main",
+"src": "Anoz",
+"data": "417",
+"det": "",
+"key": [
+417,
+355
+],
+"tav": {
+"arg": "Rom 7, 15ss.",
+"luogo": "-",
+"data": "417 (K, Be)"
+},
+"cuando": false
+},
+{
+"file": "discorso_385_testo.htm",
+"label": "272/B",
+"id": "272B",
+"coll": "main",
+"src": "Anoz",
+"data": "417",
+"det": "Pentecoste 10 giugno, sera",
+"key": [
+417,
+356
+],
+"tav": {
+"arg": "Pentecoste V. e N. T.",
+"luogo": "Ippona Mem. Theogenis",
+"data": "Pentecoste 10-6-417 (K, B, Be)"
+},
+"cuando": false
+},
+{
+"file": "discorso_596_testo.htm",
+"label": "272/B augm.",
+"id": "272BAUG",
+"coll": "main",
+"src": "Anoz",
+"data": "417",
+"det": "Pentecoste 10 giugno, sera",
+"key": [
+417,
+356
+],
+"tav": {
+"arg": "Pentecoste V. e N. T.",
+"luogo": "Ippona Mem. Theogenis",
+"data": "Pentecoste 10-6-417 (K, B, Be)"
+},
+"cuando": false
+},
+{
+"file": "discorso_596_testo.htm",
+"label": "Dolbeau 31",
+"code": "272/B augm.",
+"coll": "nuovi",
+"src": "Anoz",
+"data": "417",
+"det": "Pentecoste 10 giugno, sera",
+"key": [
+417,
+356
+],
+"tav": {
+"arg": "Pentecoste V. e N. T.",
+"luogo": "Ippona Mem. Theogenis",
+"data": "Pentecoste 10-6-417 (K, B, Be)"
+},
+"cuando": false
+},
+{
+"file": "discorso_426_testo.htm",
+"label": "301",
+"id": "301",
+"coll": "main",
+"src": "Anoz",
+"data": "417",
+"det": "mercoledì 1 agosto",
+"key": [
+417,
+357
+],
+"tav": {
+"arg": "SS. Maccabei",
+"luogo": "-",
+"data": "1-8 c. 417 (K, Be)"
+},
+"cuando": false
+},
+{
+"file": "discorso_444_testo.htm",
+"label": "312",
+"id": "312",
+"coll": "main",
+"src": "Anoz",
+"data": "molto prob. 417",
+"det": "venerdì 14 settembre",
+"key": [
+417,
+358
+],
+"tav": {
+"arg": "S. Cipriano",
+"luogo": "Cartagine Bas. Cypriani",
+"data": "14-9 c. 417 (K, Be, P)"
+},
+"cuando": false
+},
+{
+"file": "discorso_167_testo.htm",
+"label": "131",
+"id": "131",
+"coll": "main",
+"src": "Anoz",
+"data": "417",
+"det": "domenica 23 settembre",
+"key": [
+417,
+359
+],
+"tav": {
+"arg": "Io 6, 54-66",
+"luogo": "Cartagine Bas. Cypriani",
+"data": "domenica 23-9-417"
+},
+"cuando": false
+},
+{
+"file": "discorso_210_testo.htm",
+"label": "163",
+"id": "163",
+"coll": "main",
+"src": "Anoz",
+"data": "417",
+"det": "lunedì 24 settembre",
+"key": [
+417,
+360
+],
+"tav": {
+"arg": "Gal 5, 16-17",
+"luogo": "Cartagine Bas. Honoriana",
+"data": "417 lunedì 24-9 (B)"
+},
+"cuando": false
+},
+{
+"file": "discorso_215_testo.htm",
+"label": "165",
+"id": "165",
+"coll": "main",
+"src": "Anoz",
+"data": "417",
+"det": "prob. dopo il 24 settembre",
+"key": [
+417,
+361
+],
+"tav": {
+"arg": "Eph 3, 9-10; Rom 9, 11",
+"luogo": "Cartagine Bas. Maiorum",
+"data": "417"
+},
+"cuando": false
+},
+{
+"file": "discorso_034_testo.htm",
+"label": "26",
+"id": "26",
+"coll": "main",
+"src": "Anoz",
+"data": "417",
+"det": "martedì 25 settembre",
+"key": [
+417,
+362
+],
+"tav": {
+"arg": "Ps 94, 6; Gal 3, 21",
+"luogo": "Cartagine Bas. Teodosiana",
+"data": "25-9-417 (B) 18-10-417 (Maur.) 18-10-418 (K, L, Pl) 417-418 (Be)"
+},
+"cuando": false
+},
+{
+"file": "discorso_195_testo.htm",
+"label": "151",
+"id": "151",
+"coll": "main",
+"src": "Anoz",
+"data": "417",
+"det": "lunedì 1-venerdì 12 ottobre",
+"key": [
+417,
+363
+],
+"tav": {
+"arg": "Rom 7, 15-25",
+"luogo": "Cartagine",
+"data": "sett. - ott. 418 (K, L) 419 (P) ott. 417 (B)"
+},
+"cuando": false
+},
+{
+"file": "discorso_196_testo.htm",
+"label": "152",
+"id": "152",
+"coll": "main",
+"src": "Anoz",
+"data": "417",
+"det": "lunedì 1-venerdì 12 ottobre",
+"key": [
+417,
+364
+],
+"tav": {
+"arg": "Rom 7, 15-8, 4",
+"luogo": "Cartagine",
+"data": "ott. 418 (K, L) 419 (P) ott. 417 (B)"
+},
+"cuando": false
+},
+{
+"file": "discorso_197_testo.htm",
+"label": "153",
+"id": "153",
+"coll": "main",
+"src": "Anoz",
+"data": "417",
+"det": "sabato 13 ottobre",
+"key": [
+417,
+365
+],
+"tav": {
+"arg": "Rom 7, 5-13",
+"luogo": "Cartagine",
+"data": "13-10-418 (K, L) ott. 417 (B)"
+},
+"cuando": false
+},
+{
+"file": "discorso_198_testo.htm",
+"label": "154",
+"id": "154",
+"coll": "main",
+"src": "Anoz",
+"data": "417",
+"det": "domenica 14 ottobre",
+"key": [
+417,
+366
+],
+"tav": {
+"arg": "Rom 7, 14-25",
+"luogo": "Cartagine Bas. Cypriani",
+"data": "14-10-418 (K, L) ott. 417 (B)"
+},
+"cuando": false
+},
+{
+"file": "discorso_200_testo.htm",
+"label": "155",
+"id": "155",
+"coll": "main",
+"src": "Anoz",
+"data": "417",
+"det": "lunedì 15 ottobre",
+"key": [
+417,
+367
+],
+"tav": {
+"arg": "Rom 8, 1-11",
+"luogo": "Cartagine Bas. Scillitanorum",
+"data": "1510-417 (Maur.) 15-10-418 (K, L) 15-10-419 (P) ott. 417 (B)"
+},
+"cuando": false
+},
+{
+"file": "discorso_201_testo.htm",
+"label": "156",
+"id": "156",
+"coll": "main",
+"src": "Anoz",
+"data": "417",
+"det": "mercoledì 17 ottobre",
+"key": [
+417,
+368
+],
+"tav": {
+"arg": "Rom 8, 12-17",
+"luogo": "Cartagine Bas. Gratiani",
+"data": "17-10-417 (Maur.) 418 (K, L, Be) 419 (P) 417 (B)"
+},
+"cuando": false
+},
+{
+"file": "discorso_221_testo.htm",
+"label": "170",
+"id": "170",
+"coll": "main",
+"src": "Anoz",
+"data": "417",
+"det": "novembre o dicembre",
+"key": [
+417,
+369
+],
+"tav": {
+"arg": "Phil 3, 3-15; Io 6, 39",
+"luogo": "-",
+"data": "c. 417"
+},
+"cuando": false
+},
+{
+"file": "discorso_023_testo.htm",
+"label": "19",
+"id": "19",
+"coll": "main",
+"src": "Anoz",
+"data": "prob. 417",
+"det": "dicembre",
+"key": [
+417,
+370
+],
+"tav": {
+"arg": "Ps 50; 72",
+"luogo": "Cartagine Bas. Restituta",
+"data": "dicembre 419"
+},
+"cuando": false
+},
+{
+"file": "discorso_235_testo.htm",
+"label": "182",
+"id": "182",
+"coll": "main",
+"src": "Anoz",
+"data": "verso 417",
+"det": "",
+"key": [
+417,
+371
+],
+"tav": {
+"arg": "1 Io 4, 1-3",
+"luogo": "-",
+"data": "dopo 416"
+},
+"cuando": false
+},
+{
+"file": "discorso_420_testo.htm",
+"label": "299/B",
+"id": "299B",
+"coll": "main",
+"src": "Anoz",
+"data": "post 417",
+"det": "29 giugno",
+"key": [
+417,
+372
+],
+"tav": {
+"arg": "SS. Pietro e Paolo",
+"luogo": "-",
+"data": "29-6"
+},
+"cuando": false
+},
+{
+"file": "discorso_421_testo.htm",
+"label": "299/C",
+"id": "299C",
+"coll": "main",
+"src": "Anoz",
+"data": "post 417",
+"det": "29 giugno",
+"key": [
+417,
+373
+],
+"tav": {
+"arg": "SS. Pietro e Paolo",
+"luogo": "-",
+"data": "29-6-416/420 (K, Be)"
+},
+"cuando": false
+},
+{
+"file": "discorso_430_testo.htm",
+"label": "304",
+"id": "304",
+"coll": "main",
+"src": "Anoz",
+"data": "post 417",
+"det": "10 agosto",
+"key": [
+417,
+374
+],
+"tav": {
+"arg": "S. Lorenzo",
+"luogo": "-",
+"data": "10-8-417 (B) dopo 417 (K, BeP)"
+},
+"cuando": false
+},
+{
+"file": "discorso_127_testo.htm",
+"label": "98",
+"id": "98",
+"coll": "main",
+"src": "Anoz",
+"data": "non ante 418",
+"det": "",
+"key": [
+418,
+375
+],
+"tav": {
+"arg": "Lc 7, 11-15",
+"luogo": "-",
+"data": "poco prima 418 (Be)"
+},
+"cuando": false
+},
+{
+"file": "discorso_204_testo.htm",
+"label": "159",
+"id": "159",
+"coll": "main",
+"src": "Anoz",
+"data": "418-420",
+"det": "",
+"key": [
+418,
+376
+],
+"tav": {
+"arg": "Rom 8, 30-31; Iac 1, 2-4",
+"luogo": "-",
+"data": "prima 409 (Ro) c. 418 (K, B, Be)"
+},
+"cuando": false
+},
+{
+"file": "discorso_172_testo.htm",
+"label": "135",
+"id": "135",
+"coll": "main",
+"src": "Anoz",
+"data": "418",
+"det": "",
+"key": [
+418,
+377
+],
+"tav": {
+"arg": "Io 9, 1-41",
+"luogo": "-",
+"data": "417 (K) 418 (B)"
+},
+"cuando": false
+},
+{
+"file": "discorso_341_testo.htm",
+"label": "244",
+"id": "244",
+"coll": "main",
+"src": "Anoz",
+"data": "418",
+"det": "giovedì santo 11 aprile",
+"key": [
+418,
+378
+],
+"tav": {
+"arg": "T. P. Io 20, 1-18",
+"luogo": "Ippona",
+"data": "settimana di P. giovedi d. P. 418 (K, B) dal 412 (Po)"
+},
+"cuando": false
+},
+{
+"file": "discorso_318_testo.htm",
+"label": "229/P",
+"id": "229P",
+"coll": "main",
+"src": "Anoz",
+"data": "418",
+"det": "sabato santo 13 aprile",
+"key": [
+418,
+379
+],
+"tav": {
+"arg": "T. P. Io 21, 15-23",
+"luogo": "Ippona",
+"data": "sabato dopo P. dal 412 (Po)"
+},
+"cuando": false
+},
+{
+"file": "discorso_355_testo.htm",
+"label": "256",
+"id": "256",
+"coll": "main",
+"src": "Anoz",
+"data": "418",
+"det": "domenica 5 maggio",
+"key": [
+418,
+380
+],
+"tav": {
+"arg": "T. P.",
+"luogo": "Cartagine (Mor, P)",
+"data": "settimana di P. domenica 5-5-418 (K, B, Be, P, Mor)"
+},
+"cuando": false
+},
+{
+"file": "discorso_353_testo.htm",
+"label": "255",
+"id": "255",
+"coll": "main",
+"src": "Anoz",
+"data": "418",
+"det": "domenica 5-giovedì 16 maggio",
+"key": [
+418,
+381
+],
+"tav": {
+"arg": "T. P. Lc 10, 38-42 L'Alleluia",
+"luogo": "Cartagine ?",
+"data": "settimana di P. 418"
+},
+"cuando": false
+},
+{
+"file": "discorso_398_testo.htm",
+"label": "284",
+"id": "284",
+"coll": "main",
+"src": "Anoz",
+"data": "418",
+"det": "mercoledì 8 maggio",
+"key": [
+418,
+382
+],
+"tav": {
+"arg": "SS. Mariano e Giacomo",
+"luogo": "Cartagine",
+"data": "6-5-397 (L, P) 8-5-418 (K, B, Mo)"
+},
+"cuando": false
+},
+{
+"file": "discorso_365_testo.htm",
+"label": "261",
+"id": "261",
+"coll": "main",
+"src": "Anoz",
+"data": "418",
+"det": "Ascensione 16 maggio",
+"key": [
+418,
+383
+],
+"tav": {
+"arg": "Ascensione",
+"luogo": "Cartagine Bas. Fausti",
+"data": "14-5-397 (L) 19-5-410 (K, Po) 16-5-418 (Pe)"
+},
+"cuando": false
+},
+{
+"file": "discorso_045_testo.htm",
+"label": "34",
+"id": "34",
+"coll": "main",
+"src": "Anoz",
+"data": "418",
+"det": "venerdì 17-venerdì 24 maggio",
+"key": [
+418,
+384
+],
+"tav": {
+"arg": "Ps 145, 2",
+"luogo": "Cartagine Bas. Maiorum",
+"data": "17/24-5-418"
+},
+"cuando": false
+},
+{
+"file": "discorso_038_testo.htm",
+"label": "29",
+"id": "29",
+"coll": "main",
+"src": "Anoz",
+"data": "418",
+"det": "vigilia di Pentecoste 25 maggio",
+"key": [
+418,
+385
+],
+"tav": {
+"arg": "Ps 117, 1",
+"luogo": "Cartagine Bas. Restituta",
+"data": "Vigilia di Pentecoste 23-5-397 (L) 25-5-418 (P)"
+},
+"cuando": false
+},
+{
+"file": "discorso_014_testo.htm",
+"label": "13",
+"id": "13",
+"coll": "main",
+"src": "Anoz",
+"data": "418",
+"det": "lunedì 27 maggio",
+"key": [
+418,
+386
+],
+"tav": {
+"arg": "Ps 2, 10",
+"luogo": "Cartagine S. Cipriano",
+"data": "27-5-412-416 (K) 27-5-418 (P, B)"
+},
+"cuando": false
+},
+{
+"file": "discorso_015_testo.htm",
+"label": "14",
+"id": "14",
+"coll": "main",
+"src": "Anoz",
+"data": "418",
+"det": "poco dopo il 27 maggio",
+"key": [
+418,
+387
+],
+"tav": {
+"arg": "Ps 9, 14",
+"luogo": "Cartagine Bas. Novarum",
+"data": "dopo 27-5-418 una domenica"
+},
+"cuando": false
+},
+{
+"file": "discorso_016_testo.htm",
+"label": "15",
+"id": "15",
+"coll": "main",
+"src": "Anoz",
+"data": "418",
+"det": "poco dopo il 27 maggio",
+"key": [
+418,
+388
+],
+"tav": {
+"arg": "Ps 25, 8",
+"luogo": "Cartagine Bas. Petri",
+"data": "dopo 27-5-418"
+},
+"cuando": false
+},
+{
+"file": "discorso_059_testo.htm",
+"label": "48",
+"id": "48",
+"coll": "main",
+"src": "Anoz",
+"data": "418",
+"det": "poco dopo il 27 maggio",
+"key": [
+418,
+389
+],
+"tav": {
+"arg": "Mich 6, 6-7",
+"luogo": "Cartagine Bas. Celerinae",
+"data": "domenica dopo 26-5-418"
+},
+"cuando": false
+},
+{
+"file": "discorso_060_testo.htm",
+"label": "49",
+"id": "49",
+"coll": "main",
+"src": "Anoz",
+"data": "418",
+"det": "domenica poco dopo il 26 maggio",
+"key": [
+418,
+390
+],
+"tav": {
+"arg": "Mich 6, 6-8",
+"luogo": "Cartagine Bas. Cypriani",
+"data": "domenica dopo 26-5-418"
+},
+"cuando": false
+},
+{
+"file": "discorso_151_testo.htm",
+"label": "116",
+"id": "116",
+"coll": "main",
+"src": "Anoz",
+"data": "418?",
+"det": "mercoledì di Pasqua",
+"key": [
+418,
+391
+],
+"tav": {
+"arg": "Lc 24, 36-47",
+"luogo": "-",
+"data": "tempo pasquale 400-405 (K, Be) 418 (L)"
+},
+"cuando": false
+},
+{
+"file": "discorso_153_testo.htm",
+"label": "118",
+"id": "118",
+"coll": "main",
+"src": "Anoz",
+"data": "verso 418",
+"det": "",
+"key": [
+418,
+392
+],
+"tav": {
+"arg": "Io 1, 1-3",
+"luogo": "-",
+"data": "418 (K, Be) c. 418 (M)"
+},
+"cuando": false
+},
+{
+"file": "discorso_203_testo.htm",
+"label": "158",
+"id": "158",
+"coll": "main",
+"src": "Anoz",
+"data": "verso 418",
+"det": "",
+"key": [
+418,
+393
+],
+"tav": {
+"arg": "Rom 8, 30-31",
+"luogo": "-",
+"data": "dopo 409 (Ro) 417 (B) 418 (K)"
+},
+"cuando": false
+},
+{
+"file": "discorso_472_testo.htm",
+"label": "332",
+"id": "332",
+"coll": "main",
+"src": "Anoz",
+"data": "verso 418",
+"det": "",
+"key": [
+418,
+394
+],
+"tav": {
+"arg": "Festa Martiri",
+"luogo": "-",
+"data": "410-412"
+},
+"cuando": false
+},
+{
+"file": "discorso_274_testo.htm",
+"label": "217",
+"id": "217",
+"coll": "main",
+"src": "Anoz",
+"data": "post 418",
+"det": "",
+"key": [
+418,
+395
+],
+"tav": {
+"arg": "Io 17, 3-24",
+"luogo": "Ippona",
+"data": "poco prima P. (W, Maur.) Natale 417-418 (K) dopo 418 (Be)"
+},
+"cuando": false
+},
+{
+"file": "discorso_224_testo.htm",
+"label": "173",
+"id": "173",
+"coll": "main",
+"src": "Anoz",
+"data": "post 418?",
+"det": "",
+"key": [
+418,
+396
+],
+"tav": {
+"arg": "1 Thess 4, 13",
+"luogo": "-",
+"data": "giorno defunti c. 418 (B)"
+},
+"cuando": false
+},
+{
+"file": "discorso_092_testo.htm",
+"label": "71",
+"id": "71",
+"coll": "main",
+"src": "Anoz",
+"data": "419 o 420",
+"det": "",
+"key": [
+419,
+397
+],
+"tav": {
+"arg": "Mt 12, 31-32",
+"luogo": "-",
+"data": "prima 420 (Mo) 417 (K, V) dopo 418 (B)"
+},
+"cuando": false
+},
+{
+"file": "discorso_565_testo.htm",
+"label": "396",
+"id": "396",
+"coll": "main",
+"src": "Anoz",
+"data": "419",
+"det": "giovedì 17 aprile",
+"key": [
+419,
+398
+],
+"tav": {
+"arg": "Funerali di un vescovo",
+"luogo": "Hippo Diarrhytus [Biserta] Bas. Florentia",
+"data": "18-4-412 (L) 17-4-419 (P)"
+},
+"cuando": false
+},
+{
+"file": "discorso_449_testo.htm",
+"label": "313/D",
+"id": "313D",
+"coll": "main",
+"src": "Anoz",
+"data": "419",
+"det": "domenica 14 settembre, mattina",
+"key": [
+419,
+399
+],
+"tav": {
+"arg": "S. Cipriano",
+"luogo": "Cartagine",
+"data": "14-9"
+},
+"cuando": false
+},
+{
+"file": "discorso_035_testo.htm",
+"label": "27",
+"id": "27",
+"coll": "main",
+"src": "Anoz",
+"data": "419",
+"det": "sabato 18 ottobre",
+"key": [
+419,
+400
+],
+"tav": {
+"arg": "Ps 95, 1-3; Rom 9, 18, 19",
+"luogo": "-",
+"data": "418 408 (Po)"
+},
+"cuando": false
+},
+{
+"file": "discorso_180_testo.htm",
+"label": "139/A",
+"id": "139A",
+"coll": "main",
+"src": "Anoz",
+"data": "420-430",
+"det": "",
+"key": [
+420,
+401
+],
+"tav": {
+"arg": "Io 11, 1-44",
+"luogo": "-",
+"data": "420-430"
+},
+"cuando": false
+},
+{
+"file": "discorso_169_testo.htm",
+"label": "132/A",
+"id": "132A",
+"coll": "main",
+"src": "Anoz",
+"data": "420-430?",
+"det": "",
+"key": [
+420,
+402
+],
+"tav": {
+"arg": "Io 6, 58",
+"luogo": "-",
+"data": "quaresima"
+},
+"cuando": false
+},
+{
+"file": "discorso_317_testo.htm",
+"label": "229/O",
+"id": "229O",
+"coll": "main",
+"src": "Anoz",
+"data": "420-422",
+"det": "",
+"key": [
+420,
+403
+],
+"tav": {
+"arg": "T. P. Io 21, 15-25",
+"luogo": "Ippona",
+"data": "sabato dopo P. 421-423 (B, Be)"
+},
+"cuando": false
+},
+{
+"file": "discorso_037_testo.htm",
+"label": "28/A",
+"id": "28A",
+"coll": "main",
+"src": "Anoz",
+"data": "420",
+"det": "primavera",
+"key": [
+420,
+404
+],
+"tav": {
+"arg": "Ps 115, 11 Prov 23, 1-5",
+"luogo": "(Cartagine ?)",
+"data": "(maggio-giugno 397 ?) 419-420 (H.)"
+},
+"cuando": false
+},
+{
+"file": "discorso_574_testo.htm",
+"label": "Dolbeau 9",
+"code": "28/A",
+"coll": "nuovi",
+"src": "Anoz",
+"data": "420",
+"det": "primavera",
+"key": [
+420,
+404
+],
+"tav": {
+"arg": "Ps 115, 11 Prov 23, 1-5",
+"luogo": "(Cartagine ?)",
+"data": "(maggio-giugno 397 ?) 419-420 (H.)"
+},
+"cuando": false
+},
+{
+"file": "discorso_025_testo.htm",
+"label": "20/A",
+"id": "20A",
+"coll": "main",
+"src": "Anoz",
+"data": "verso 420",
+"det": "",
+"key": [
+420,
+405
+],
+"tav": {
+"arg": "Ps 56, 2",
+"luogo": "-",
+"data": "-"
+},
+"cuando": false
+},
+{
+"file": "discorso_168_testo.htm",
+"label": "132",
+"id": "132",
+"coll": "main",
+"src": "Anoz",
+"data": "verso 420",
+"det": "",
+"key": [
+420,
+406
+],
+"tav": {
+"arg": "Io 6, 56-57",
+"luogo": "-",
+"data": "quaresima"
+},
+"cuando": false
+},
+{
+"file": "discorso_371_testo.htm",
+"label": "265/A",
+"id": "265A",
+"coll": "main",
+"src": "Anoz",
+"data": "verso 420",
+"det": "",
+"key": [
+420,
+407
+],
+"tav": {
+"arg": "Ascensione",
+"luogo": "-",
+"data": "-"
+},
+"cuando": false
+},
+{
+"file": "discorso_483_testo.htm",
+"label": "335/H",
+"id": "335H",
+"coll": "main",
+"src": "Anoz",
+"data": "verso 420",
+"det": "",
+"key": [
+420,
+408
+],
+"tav": {
+"arg": "Festa Martiri",
+"luogo": "-",
+"data": "Quaresima (Po)"
+},
+"cuando": false
+},
+{
+"file": "discorso_505_testo.htm",
+"label": "347",
+"id": "347",
+"coll": "main",
+"src": "Anoz",
+"data": "verso 420?",
+"det": "",
+"key": [
+420,
+409
+],
+"tav": {
+"arg": "Timore di Dio",
+"luogo": "-",
+"data": "-"
+},
+"cuando": false
+},
+{
+"file": "discorso_561_testo.htm",
+"label": "392",
+"id": "392",
+"coll": "main",
+"src": "Anoz",
+"data": "verso 420?",
+"det": "",
+"key": [
+420,
+410
+],
+"tav": {
+"arg": "Ai coniugi",
+"luogo": "-",
+"data": "Quaresima"
+},
+"cuando": false
+},
+{
+"file": "discorso_152_testo.htm",
+"label": "117",
+"id": "117",
+"coll": "main",
+"src": "Anoz",
+"data": "post 420",
+"det": "",
+"key": [
+420,
+411
+],
+"tav": {
+"arg": "Io 1, 1-3",
+"luogo": "-",
+"data": "418 (K, Be, Po) dopo 420 (B)"
+},
+"cuando": false
+},
+{
+"file": "discorso_249_testo.htm",
+"label": "196",
+"id": "196",
+"coll": "main",
+"src": "Anoz",
+"data": "post 420",
+"det": "",
+"key": [
+420,
+412
+],
+"tav": {
+"arg": "Natale",
+"luogo": "Ippona",
+"data": "25-12 dopo 396 (K, Be)"
+},
+"cuando": false
+},
+{
+"file": "discorso_369_testo.htm",
+"label": "264",
+"id": "264",
+"coll": "main",
+"src": "Anoz",
+"data": "post 420",
+"det": "",
+"key": [
+420,
+413
+],
+"tav": {
+"arg": "Ascensione",
+"luogo": "-",
+"data": "413. 420 (K, B, Be)"
+},
+"cuando": false
+},
+{
+"file": "discorso_423_testo.htm",
+"label": "299/E",
+"id": "299E",
+"coll": "main",
+"src": "Anoz",
+"data": "421",
+"det": "domenica 17 luglio",
+"key": [
+421,
+414
+],
+"tav": {
+"arg": "SS. Martiri Scilit.",
+"luogo": "Cartagine Bas. Novarum",
+"data": "17-7-397? (L, P)"
+},
+"cuando": false
+},
+{
+"file": "discorso_114_testo.htm",
+"label": "87",
+"id": "87",
+"coll": "main",
+"src": "Anoz",
+"data": "424-429?",
+"det": "",
+"key": [
+424,
+415
+],
+"tav": {
+"arg": "Mt 20, 1-16",
+"luogo": "-",
+"data": "domenica (Maur., K)"
+},
+"cuando": false
+},
+{
+"file": "discorso_079_testo.htm",
+"label": "63",
+"id": "63",
+"coll": "main",
+"src": "Anoz",
+"data": "424 o 425",
+"det": "",
+"key": [
+424,
+416
+],
+"tav": {
+"arg": "Mt 8, 23-27",
+"luogo": "-",
+"data": "-"
+},
+"cuando": false
+},
+{
+"file": "discorso_148_testo.htm",
+"label": "114",
+"id": "114",
+"coll": "main",
+"src": "Anoz",
+"data": "424",
+"det": "",
+"key": [
+424,
+417
+],
+"tav": {
+"arg": "Lc 17, 3-4",
+"luogo": "Cartagine Bas. Cypriani",
+"data": "c. 423"
+},
+"cuando": false
+},
+{
+"file": "discorso_021_testo.htm",
+"label": "17",
+"id": "17",
+"coll": "main",
+"src": "Anoz",
+"data": "425-430",
+"det": "",
+"key": [
+425,
+418
+],
+"tav": {
+"arg": "Ps 49, 3. 21",
+"luogo": "Ippona",
+"data": "-"
+},
+"cuando": false
+},
+{
+"file": "discorso_088_testo.htm",
+"label": "68",
+"id": "68",
+"coll": "main",
+"src": "Anoz",
+"data": "425-430",
+"det": "",
+"key": [
+425,
+419
+],
+"tav": {
+"arg": "Mt 11, 25-27",
+"luogo": "Ippona (P)",
+"data": "425-430"
+},
+"cuando": false
+},
+{
+"file": "discorso_271_testo.htm",
+"label": "214",
+"id": "214",
+"coll": "main",
+"src": "Anoz",
+"data": "425-430",
+"det": "",
+"key": [
+425,
+420
+],
+"tav": {
+"arg": "Trad. Symb.",
+"luogo": "Ippona",
+"data": "due settimane prima P. (V) 391 (Maur.) dopo 412 (V)"
+},
+"cuando": false
+},
+{
+"file": "discorso_492_testo.htm",
+"label": "339",
+"id": "339",
+"coll": "main",
+"src": "Anoz",
+"data": "425-430",
+"det": "",
+"key": [
+425,
+421
+],
+"tav": {
+"arg": "Ministero episcopale",
+"luogo": "Ippona",
+"data": "Anniv. ordin. Ag. 395-400 c."
+},
+"cuando": false
+},
+{
+"file": "discorso_509_testo.htm",
+"label": "350",
+"id": "350",
+"coll": "main",
+"src": "Anoz",
+"data": "425-430",
+"det": "",
+"key": [
+425,
+422
+],
+"tav": {
+"arg": "La carità",
+"luogo": "-",
+"data": "425-430 (K, Be)"
+},
+"cuando": false
+},
+{
+"file": "discorso_458_testo.htm",
+"label": "319",
+"id": "319",
+"coll": "main",
+"src": "Anoz",
+"data": "425-429",
+"det": "fine giugno o inizio luglio",
+"key": [
+425,
+423
+],
+"tav": {
+"arg": "S. Stefano",
+"luogo": "Ippona Mem. Stephani",
+"data": "425"
+},
+"cuando": false
+},
+{
+"file": "discorso_429_testo.htm",
+"label": "303",
+"id": "303",
+"coll": "main",
+"src": "Anoz",
+"data": "425-429?",
+"det": "10 agosto",
+"key": [
+425,
+424
+],
+"tav": {
+"arg": "S. Lorenzo",
+"luogo": "-",
+"data": "10-8-425/430 (K;Be)"
+},
+"cuando": false
+},
+{
+"file": "discorso_457_testo.htm",
+"label": "318",
+"id": "318",
+"coll": "main",
+"src": "Anoz",
+"data": "425",
+"det": "fine giugno o inizio luglio",
+"key": [
+425,
+425
+],
+"tav": {
+"arg": "S. Stefano",
+"luogo": "Ippona Mem. Stephani",
+"data": "425"
+},
+"cuando": false
+},
+{
+"file": "discorso_518_testo.htm",
+"label": "355",
+"id": "355",
+"coll": "main",
+"src": "Anoz",
+"data": "425",
+"det": "venerdì 18 dicembre",
+"key": [
+425,
+426
+],
+"tav": {
+"arg": "La vita dei chierici",
+"luogo": "Ippona",
+"data": "425-426"
+},
+"cuando": false
+},
+{
+"file": "discorso_456_testo.htm",
+"label": "317",
+"id": "317",
+"coll": "main",
+"src": "Anoz",
+"data": "425",
+"det": "sabato 26 dicembre",
+"key": [
+425,
+427
+],
+"tav": {
+"arg": "S. Stefano",
+"luogo": "Ippona Mem. Stephani",
+"data": "424-425"
+},
+"cuando": false
+},
+{
+"file": "discorso_076_testo.htm",
+"label": "61/A",
+"id": "61A",
+"coll": "main",
+"src": "Anoz",
+"data": "verso 425",
+"det": "",
+"key": [
+425,
+428
+],
+"tav": {
+"arg": "Mt 7, 7-8",
+"luogo": "-",
+"data": "c. 425"
+},
+"cuando": false
+},
+{
+"file": "discorso_272_testo.htm",
+"label": "215",
+"id": "215",
+"coll": "main",
+"src": "Anoz",
+"data": "verso 425?",
+"det": "",
+"key": [
+425,
+429
+],
+"tav": {
+"arg": "Redd. Symb.",
+"luogo": "Ippona",
+"data": "una settimana prima P. (K, Po, V)"
+},
+"cuando": false
+},
+{
+"file": "discorso_490_testo.htm",
+"label": "337",
+"id": "337",
+"coll": "main",
+"src": "Anoz",
+"data": "verso 425?",
+"det": "",
+"key": [
+425,
+430
+],
+"tav": {
+"arg": "Dedicazione di una chiesa",
+"luogo": "-",
+"data": "Inizio ministero (Maur.)"
+},
+"cuando": false
+},
+{
+"file": "discorso_435_testo.htm",
+"label": "306/B",
+"id": "306B",
+"coll": "main",
+"src": "Anoz",
+"data": "post 425?",
+"det": "21 agosto",
+"key": [
+425,
+431
+],
+"tav": {
+"arg": "S. Quadrato Rom 6, 19",
+"luogo": "-",
+"data": "21-8 c. 399 (K, Be)"
+},
+"cuando": false
+},
+{
+"file": "discorso_455_testo.htm",
+"label": "316",
+"id": "316",
+"coll": "main",
+"src": "Anoz",
+"data": "post 425",
+"det": "26 dicembre",
+"key": [
+425,
+432
+],
+"tav": {
+"arg": "S. Stefano",
+"luogo": "Ippona Mem. Stephani",
+"data": "26-12 (L) T. P. c. 425 (K)"
+},
+"cuando": false
+},
+{
+"file": "discorso_400_testo.htm",
+"label": "286",
+"id": "286",
+"coll": "main",
+"src": "Anoz",
+"data": "426-429",
+"det": "19 giugno",
+"key": [
+426,
+433
+],
+"tav": {
+"arg": "SS. Gervasio e Protasio",
+"luogo": "Argentarium",
+"data": "19-6 c. 425 (K, L, B, ) 426-430 (P)"
+},
+"cuando": false
+},
+{
+"file": "discorso_401_testo.htm",
+"label": "287",
+"id": "287",
+"coll": "main",
+"src": "Anoz",
+"data": "426-429",
+"det": "24 giugno",
+"key": [
+426,
+434
+],
+"tav": {
+"arg": "Nat. S. Giovanni B.",
+"luogo": "Ippona ?",
+"data": "24-6-425/430"
+},
+"cuando": false
+},
+{
+"file": "discorso_095_testo.htm",
+"label": "73",
+"id": "73",
+"coll": "main",
+"src": "Anoz",
+"data": "426-429",
+"det": "19-24 giugno",
+"key": [
+426,
+435
+],
+"tav": {
+"arg": "Mt 13, 4-30",
+"luogo": "Ippona",
+"data": "410 (K) 425 (L) 426-430 (P)"
+},
+"cuando": false
+},
+{
+"file": "discorso_105_testo.htm",
+"label": "79",
+"id": "79",
+"coll": "main",
+"src": "Anoz",
+"data": "426-429",
+"det": "19-24 giugno",
+"key": [
+426,
+436
+],
+"tav": {
+"arg": "Mt 17, 1-9",
+"luogo": "Ippona",
+"data": "c. 425 19/24-6 426-430 (P) quaresima? (B)"
+},
+"cuando": false
+},
+{
+"file": "discorso_112_testo.htm",
+"label": "85",
+"id": "85",
+"coll": "main",
+"src": "Anoz",
+"data": "426-429",
+"det": "19-24 giugno",
+"key": [
+426,
+437
+],
+"tav": {
+"arg": "Mt 19, 17-25",
+"luogo": "Ippona",
+"data": "19/24-6 dopo 425 (L) 19/24-6 426-430 (P)"
+},
+"cuando": false
+},
+{
+"file": "discorso_119_testo.htm",
+"label": "92",
+"id": "92",
+"coll": "main",
+"src": "Anoz",
+"data": "426-429",
+"det": "poco dopo il 24 giugno",
+"key": [
+426,
+438
+],
+"tav": {
+"arg": "Mt 22, 42-46",
+"luogo": "Ippona",
+"data": "391-405 (K, Be) dopo 29-6-425 (L) dopo 29-6-426-430 (P)"
+},
+"cuando": false
+},
+{
+"file": "discorso_121_testo.htm",
+"label": "94",
+"id": "94",
+"coll": "main",
+"src": "Anoz",
+"data": "426-429",
+"det": "poco dopo il 24 giugno",
+"key": [
+426,
+439
+],
+"tav": {
+"arg": "Mt 25, 24-30",
+"luogo": "Ippona",
+"data": "c. 425 dopo 29-6-426-430 (P)"
+},
+"cuando": false
+},
+{
+"file": "discorso_519_testo.htm",
+"label": "356",
+"id": "356",
+"coll": "main",
+"src": "Anoz",
+"data": "426",
+"det": "gennaio, dopo martedì 6",
+"key": [
+426,
+440
+],
+"tav": {
+"arg": "La vita dei chierici",
+"luogo": "Ippona Mem. 8 Martiri",
+"data": "426"
+},
+"cuando": false
+},
+{
+"file": "discorso_460_testo.htm",
+"label": "320",
+"id": "320",
+"coll": "main",
+"src": "Anoz",
+"data": "426",
+"det": "prob. domenica di Pasqua 11 aprile",
+"key": [
+426,
+441
+],
+"tav": {
+"arg": "Un miracolo di S. Stefano",
+"luogo": "Ippona",
+"data": "Pasqua 19-4-425/426 dopo 412 (Po)"
+},
+"cuando": false
+},
+{
+"file": "discorso_461_testo.htm",
+"label": "321",
+"id": "321",
+"coll": "main",
+"src": "Anoz",
+"data": "426",
+"det": "prob. lunedì di Pasqua 12 aprile",
+"key": [
+426,
+442
+],
+"tav": {
+"arg": "Su una guarigione miracolosa di S. Stefano",
+"luogo": "Ippona",
+"data": "lunedì d. P. 20-4-425/426 dopo 412 (Po)"
+},
+"cuando": false
+},
+{
+"file": "discorso_462_testo.htm",
+"label": "322",
+"id": "322",
+"coll": "main",
+"src": "Anoz",
+"data": "426",
+"det": "prob. martedì di Pasqua 13 aprile",
+"key": [
+426,
+443
+],
+"tav": {
+"arg": "Su una guarigione miracolosa",
+"luogo": "Ippona",
+"data": "martedì dopo P. dal 412 (Po) 21-4-421 426 (L, Pe)"
+},
+"cuando": false
+},
+{
+"file": "discorso_463_testo.htm",
+"label": "323",
+"id": "323",
+"coll": "main",
+"src": "Anoz",
+"data": "426",
+"det": "prob. martedì di Pasqua 13 aprile",
+"key": [
+426,
+444
+],
+"tav": {
+"arg": "Su una guarigione miracolosa",
+"luogo": "Ippona",
+"data": "martedì dopo P. dal 425/426 dal 412 (P)"
+},
+"cuando": false
+},
+{
+"file": "discorso_464_testo.htm",
+"label": "324",
+"id": "324",
+"coll": "main",
+"src": "Anoz",
+"data": "426",
+"det": "prob. mercoledì di Pasqua 14 aprile",
+"key": [
+426,
+445
+],
+"tav": {
+"arg": "Su una guarigione miracolosa",
+"luogo": "Ippona",
+"data": "mercoledì dopo P. 425/426 dal 412 (P)"
+},
+"cuando": false
+},
+{
+"file": "discorso_166_testo.htm",
+"label": "130",
+"id": "130",
+"coll": "main",
+"src": "Anoz",
+"data": "post 426",
+"det": "",
+"key": [
+426,
+446
+],
+"tav": {
+"arg": "Io 6, 5-15",
+"luogo": "-",
+"data": "dopo 400 (Ba)"
+},
+"cuando": false
+},
+{
+"file": "discorso_181_testo.htm",
+"label": "140",
+"id": "140",
+"coll": "main",
+"src": "Anoz",
+"data": "427 o 428",
+"det": "Natale",
+"key": [
+427,
+447
+],
+"tav": {
+"arg": "Io 11, 1-44",
+"luogo": "-",
+"data": "Natale? 427?"
+},
+"cuando": false
+},
+{
+"file": "discorso_506_testo.htm",
+"label": "348",
+"id": "348",
+"coll": "main",
+"src": "Anoz",
+"data": "428-430",
+"det": "",
+"key": [
+428,
+448
+],
+"tav": {
+"arg": "Timore di Dio",
+"luogo": "-",
+"data": "425-430 (K, Be)"
+},
+"cuando": false
+},
+{
+"file": "discorso_296_testo.htm",
+"label": "225",
+"id": "225",
+"coll": "main",
+"src": "Anoz",
+"data": "428 o 429",
+"det": "",
+"key": [
+428,
+449
+],
+"tav": {
+"arg": "Pasqua",
+"luogo": "Ippona",
+"data": "Pasqua 400-405 (M)"
+},
+"cuando": false
+},
+{
+"file": "discorso_149_testo.htm",
+"label": "114/A",
+"id": "114A",
+"coll": "main",
+"src": "Anoz",
+"data": "428",
+"det": "",
+"key": [
+428,
+450
+],
+"tav": {
+"arg": "Lc 17, 3-4",
+"luogo": "-",
+"data": "c. 428 428-429 (M)"
+},
+"cuando": false
+},
+{
+"file": "discorso_499_testo.htm",
+"label": "344",
+"id": "344",
+"coll": "main",
+"src": "Anoz",
+"data": "428",
+"det": "",
+"key": [
+428,
+451
+],
+"tav": {
+"arg": "Amore di Dio, amore del mondo",
+"luogo": "Cartagine",
+"data": "c. 428"
+},
+"cuando": false
+},
+{
+"file": "discorso_113_testo.htm",
+"label": "86",
+"id": "86",
+"coll": "main",
+"src": "Anoz",
+"data": "429 o 430",
+"det": "",
+"key": [
+429,
+452
+],
+"tav": {
+"arg": "Mt 19, 21",
+"luogo": "-",
+"data": "fine ministero (M)"
+},
+"cuando": false
+},
+{
+"file": "discorso_005_testo.htm",
+"label": "4/A",
+"id": "4A",
+"coll": "main",
+"src": "non datato",
+"data": "",
+"det": "",
+"key": [
+9999,
+0
+],
+"tav": {
+"arg": "Gen 30, 37-42",
+"luogo": "-",
+"data": "-"
+},
+"cuando": false
+},
+{
+"file": "discorso_018_testo.htm",
+"label": "16",
+"id": "16",
+"coll": "main",
+"src": "non datato",
+"data": "",
+"det": "",
+"key": [
+9999,
+0
+],
+"tav": {
+"arg": "Ps 33, 13",
+"luogo": "-",
+"data": "PL 38, 121-124 CC 41, 213-216"
+},
+"cuando": true
+},
+{
+"file": "discorso_022_testo.htm",
+"label": "18",
+"id": "18",
+"coll": "main",
+"src": "non datato",
+"data": "",
+"det": "",
+"key": [
+9999,
+0
+],
+"tav": {
+"arg": "Ps 49, 3",
+"luogo": "-",
+"data": "-"
+},
+"cuando": true
+},
+{
+"file": "discorso_028_testo.htm",
+"label": "22/A",
+"id": "22A",
+"coll": "main",
+"src": "non datato",
+"data": "",
+"det": "",
+"key": [
+9999,
+0
+],
+"tav": {
+"arg": "Ps 70, 4",
+"luogo": "-",
+"data": "-"
+},
+"cuando": true
+},
+{
+"file": "discorso_050_testo.htm",
+"label": "39",
+"id": "39",
+"coll": "main",
+"src": "non datato",
+"data": "",
+"det": "",
+"key": [
+9999,
+0
+],
+"tav": {
+"arg": "Eccli 5, 8-9",
+"luogo": "-",
+"data": "-"
+},
+"cuando": true
+},
+{
+"file": "discorso_053_testo.htm",
+"label": "42",
+"id": "42",
+"coll": "main",
+"src": "non datato",
+"data": "",
+"det": "",
+"key": [
+9999,
+0
+],
+"tav": {
+"arg": "Lc 6, 37 Is 1, 11 Ps 139, 1",
+"luogo": "-",
+"data": "-"
+},
+"cuando": true
+},
+{
+"file": "discorso_055_testo.htm",
+"label": "44",
+"id": "44",
+"coll": "main",
+"src": "non datato",
+"data": "",
+"det": "",
+"key": [
+9999,
+0
+],
+"tav": {
+"arg": "Is 53, 2-9",
+"luogo": "-",
+"data": "-"
+},
+"cuando": false
+},
+{
+"file": "discorso_061_testo.htm",
+"label": "49/A",
+"id": "49A",
+"coll": "main",
+"src": "non datato",
+"data": "",
+"det": "",
+"key": [
+9999,
+0
+],
+"tav": {
+"arg": "Mich 6, 8",
+"luogo": "-",
+"data": "-"
+},
+"cuando": true
+},
+{
+"file": "discorso_074_testo.htm",
+"label": "60/A",
+"id": "60A",
+"coll": "main",
+"src": "non datato",
+"data": "",
+"det": "",
+"key": [
+9999,
+0
+],
+"tav": {
+"arg": "Mt 7, 6-8",
+"luogo": "-",
+"data": "-"
+},
+"cuando": true
+},
+{
+"file": "discorso_078_testo.htm",
+"label": "62/A",
+"id": "62A",
+"coll": "main",
+"src": "non datato",
+"data": "",
+"det": "",
+"key": [
+9999,
+0
+],
+"tav": {
+"arg": "Mt 8, 8-13",
+"luogo": "-",
+"data": "-"
+},
+"cuando": true
+},
+{
+"file": "discorso_081_testo.htm",
+"label": "63/B",
+"id": "63B",
+"coll": "main",
+"src": "non datato",
+"data": "",
+"det": "",
+"key": [
+9999,
+0
+],
+"tav": {
+"arg": "Mt 9, 18-26",
+"luogo": "-",
+"data": "-"
+},
+"cuando": true
+},
+{
+"file": "discorso_083_testo.htm",
+"label": "64/A",
+"id": "64A",
+"coll": "main",
+"src": "non datato",
+"data": "",
+"det": "",
+"key": [
+9999,
+0
+],
+"tav": {
+"arg": "Mt 10, 16",
+"luogo": "-",
+"data": "festa dei martiri"
+},
+"cuando": true
+},
+{
+"file": "discorso_084_testo.htm",
+"label": "65",
+"id": "65",
+"coll": "main",
+"src": "non datato",
+"data": "",
+"det": "",
+"key": [
+9999,
+0
+],
+"tav": {
+"arg": "Mt 10, 28",
+"luogo": "-",
+"data": "festa dei martiri"
+},
+"cuando": true
+},
+{
+"file": "discorso_086_testo.htm",
+"label": "66",
+"id": "66",
+"coll": "main",
+"src": "non datato",
+"data": "",
+"det": "",
+"key": [
+9999,
+0
+],
+"tav": {
+"arg": "Mt 11, 2-11",
+"luogo": "-",
+"data": "-"
+},
+"cuando": true
+},
+{
+"file": "discorso_091_testo.htm",
+"label": "70/A",
+"id": "70A",
+"coll": "main",
+"src": "non datato",
+"data": "",
+"det": "",
+"key": [
+9999,
+0
+],
+"tav": {
+"arg": "Mt 11, 28-30",
+"luogo": "-",
+"data": "-"
+},
+"cuando": true
+},
+{
+"file": "discorso_097_testo.htm",
+"label": "74",
+"id": "74",
+"coll": "main",
+"src": "non datato",
+"data": "",
+"det": "",
+"key": [
+9999,
+0
+],
+"tav": {
+"arg": "Mt 13, 52",
+"luogo": "-",
+"data": "-"
+},
+"cuando": true
+},
+{
+"file": "discorso_102_testo.htm",
+"label": "77/B",
+"id": "77B",
+"coll": "main",
+"src": "non datato",
+"data": "",
+"det": "",
+"key": [
+9999,
+0
+],
+"tav": {
+"arg": "Mt 15, 22-28",
+"luogo": "-",
+"data": "-"
+},
+"cuando": true
+},
+{
+"file": "discorso_103_testo.htm",
+"label": "77/C",
+"id": "77C",
+"coll": "main",
+"src": "non datato",
+"data": "",
+"det": "",
+"key": [
+9999,
+0
+],
+"tav": {
+"arg": "Mt 16, 24",
+"luogo": "-",
+"data": "-"
+},
+"cuando": true
+},
+{
+"file": "discorso_104_testo.htm",
+"label": "78",
+"id": "78",
+"coll": "main",
+"src": "non datato",
+"data": "",
+"det": "",
+"key": [
+9999,
+0
+],
+"tav": {
+"arg": "Mt 17, 1-9",
+"luogo": "-",
+"data": "quaresima? (B)"
+},
+"cuando": true
+},
+{
+"file": "discorso_106_testo.htm",
+"label": "79/A",
+"id": "79A",
+"coll": "main",
+"src": "non datato",
+"data": "",
+"det": "",
+"key": [
+9999,
+0
+],
+"tav": {
+"arg": "Mt 17, 1-8",
+"luogo": "-",
+"data": "-"
+},
+"cuando": true
+},
+{
+"file": "discorso_123_testo.htm",
+"label": "95",
+"id": "95",
+"coll": "main",
+"src": "non datato",
+"data": "",
+"det": "",
+"key": [
+9999,
+0
+],
+"tav": {
+"arg": "Mc 8, 1-9; Mt 22, 11-14",
+"luogo": "-",
+"data": "inverno (K)"
+},
+"cuando": true
+},
+{
+"file": "discorso_125_testo.htm",
+"label": "97",
+"id": "97",
+"coll": "main",
+"src": "non datato",
+"data": "",
+"det": "",
+"key": [
+9999,
+0
+],
+"tav": {
+"arg": "Mc 13, 32",
+"luogo": "-",
+"data": "-"
+},
+"cuando": true
+},
+{
+"file": "discorso_131_testo.htm",
+"label": "102",
+"id": "102",
+"coll": "main",
+"src": "non datato",
+"data": "",
+"det": "",
+"key": [
+9999,
+0
+],
+"tav": {
+"arg": "Lc 10, 16",
+"luogo": "-",
+"data": "-"
+},
+"cuando": true
+},
+{
+"file": "discorso_135_testo.htm",
+"label": "105/A",
+"id": "105A",
+"coll": "main",
+"src": "non datato",
+"data": "",
+"det": "",
+"key": [
+9999,
+0
+],
+"tav": {
+"arg": "Lc 11, 9ss.",
+"luogo": "-",
+"data": "-"
+},
+"cuando": true
+},
+{
+"file": "discorso_136_testo.htm",
+"label": "106",
+"id": "106",
+"coll": "main",
+"src": "non datato",
+"data": "",
+"det": "",
+"key": [
+9999,
+0
+],
+"tav": {
+"arg": "Lc 11, 39-42",
+"luogo": "-",
+"data": "-"
+},
+"cuando": true
+},
+{
+"file": "discorso_139_testo.htm",
+"label": "108",
+"id": "108",
+"coll": "main",
+"src": "non datato",
+"data": "",
+"det": "",
+"key": [
+9999,
+0
+],
+"tav": {
+"arg": "Lc 12, 35-36; Ps 33, 13-15",
+"luogo": "-",
+"data": "-"
+},
+"cuando": true
+},
+{
+"file": "discorso_140_testo.htm",
+"label": "109",
+"id": "109",
+"coll": "main",
+"src": "non datato",
+"data": "",
+"det": "",
+"key": [
+9999,
+0
+],
+"tav": {
+"arg": "Lc 12, 56-59",
+"luogo": "-",
+"data": "-"
+},
+"cuando": true
+},
+{
+"file": "discorso_145_testo.htm",
+"label": "113",
+"id": "113",
+"coll": "main",
+"src": "non datato",
+"data": "",
+"det": "",
+"key": [
+9999,
+0
+],
+"tav": {
+"arg": "Lc 16, 9",
+"luogo": "-",
+"data": "-"
+},
+"cuando": true
+},
+{
+"file": "discorso_157_testo.htm",
+"label": "122",
+"id": "122",
+"coll": "main",
+"src": "non datato",
+"data": "",
+"det": "",
+"key": [
+9999,
+0
+],
+"tav": {
+"arg": "Io 1, 48-51",
+"luogo": "-",
+"data": "-"
+},
+"cuando": true
+},
+{
+"file": "discorso_158_testo.htm",
+"label": "123",
+"id": "123",
+"coll": "main",
+"src": "non datato",
+"data": "",
+"det": "",
+"key": [
+9999,
+0
+],
+"tav": {
+"arg": "Io 2, 1-11",
+"luogo": "-",
+"data": "-"
+},
+"cuando": true
+},
+{
+"file": "discorso_174_testo.htm",
+"label": "136/A",
+"id": "136A",
+"coll": "main",
+"src": "non datato",
+"data": "",
+"det": "",
+"key": [
+9999,
+0
+],
+"tav": {
+"arg": "Io 9, 1-41",
+"luogo": "-",
+"data": "-"
+},
+"cuando": true
+},
+{
+"file": "discorso_176_testo.htm",
+"label": "136/C",
+"id": "136C",
+"coll": "main",
+"src": "non datato",
+"data": "",
+"det": "",
+"key": [
+9999,
+0
+],
+"tav": {
+"arg": "Io 9, 1-41",
+"luogo": "-",
+"data": "quaresima (L)"
+},
+"cuando": true
+},
+{
+"file": "discorso_182_testo.htm",
+"label": "140/A",
+"id": "140A",
+"coll": "main",
+"src": "non datato",
+"data": "",
+"det": "",
+"key": [
+9999,
+0
+],
+"tav": {
+"arg": "Io 13, 34",
+"luogo": "-",
+"data": "-"
+},
+"cuando": true
+},
+{
+"file": "discorso_183_testo.htm",
+"label": "141",
+"id": "141",
+"coll": "main",
+"src": "non datato",
+"data": "",
+"det": "",
+"key": [
+9999,
+0
+],
+"tav": {
+"arg": "Io 14, 6",
+"luogo": "Bo (Maur.)",
+"data": "-"
+},
+"cuando": true
+},
+{
+"file": "discorso_207_testo.htm",
+"label": "162",
+"id": "162",
+"coll": "main",
+"src": "non datato",
+"data": "",
+"det": "",
+"key": [
+9999,
+0
+],
+"tav": {
+"arg": "1 Cor 6, 9-18",
+"luogo": "-",
+"data": "-"
+},
+"cuando": true
+},
+{
+"file": "discorso_209_testo.htm",
+"label": "162/B",
+"id": "162B",
+"coll": "main",
+"src": "non datato",
+"data": "",
+"det": "",
+"key": [
+9999,
+0
+],
+"tav": {
+"arg": "2 Cor 5, 20",
+"luogo": "-",
+"data": "-"
+},
+"cuando": false
+},
+{
+"file": "discorso_218_testo.htm",
+"label": "167/A",
+"id": "167A",
+"coll": "main",
+"src": "non datato",
+"data": "",
+"det": "",
+"key": [
+9999,
+0
+],
+"tav": {
+"arg": "Eph 6, 12",
+"luogo": "-",
+"data": "-"
+},
+"cuando": true
+},
+{
+"file": "discorso_222_testo.htm",
+"label": "171",
+"id": "171",
+"coll": "main",
+"src": "non datato",
+"data": "",
+"det": "",
+"key": [
+9999,
+0
+],
+"tav": {
+"arg": "Phil 4, 4-6",
+"luogo": "-",
+"data": "-"
+},
+"cuando": true
+},
+{
+"file": "discorso_223_testo.htm",
+"label": "172",
+"id": "172",
+"coll": "main",
+"src": "non datato",
+"data": "",
+"det": "",
+"key": [
+9999,
+0
+],
+"tav": {
+"arg": "1 Thess 4, 13",
+"luogo": "-",
+"data": "giorno defunti (B)"
+},
+"cuando": true
+},
+{
+"file": "discorso_228_testo.htm",
+"label": "176/A",
+"id": "176A",
+"coll": "main",
+"src": "non datato",
+"data": "",
+"det": "",
+"key": [
+9999,
+0
+],
+"tav": {
+"arg": "1 Tim 3, 2",
+"luogo": "-",
+"data": "-"
+},
+"cuando": true
+},
+{
+"file": "discorso_253_testo.htm",
+"label": "198/A",
+"id": "198A",
+"coll": "main",
+"src": "non datato",
+"data": "",
+"det": "",
+"key": [
+9999,
+0
+],
+"tav": {
+"arg": "I° gennaio",
+"luogo": "-",
+"data": "1-1"
+},
+"cuando": false
+},
+{
+"file": "discorso_254_testo.htm",
+"label": "199",
+"id": "199",
+"coll": "main",
+"src": "non datato",
+"data": "",
+"det": "",
+"key": [
+9999,
+0
+],
+"tav": {
+"arg": "Epifania",
+"luogo": "-",
+"data": "6-1"
+},
+"cuando": true
+},
+{
+"file": "discorso_259_testo.htm",
+"label": "204",
+"id": "204",
+"coll": "main",
+"src": "non datato",
+"data": "",
+"det": "",
+"key": [
+9999,
+0
+],
+"tav": {
+"arg": "Epifania",
+"luogo": "-",
+"data": "6-1"
+},
+"cuando": true
+},
+{
+"file": "discorso_597_testo.htm",
+"label": "204/A",
+"id": "204A",
+"coll": "main",
+"src": "non datato",
+"data": "",
+"det": "",
+"key": [
+9999,
+0
+],
+"tav": {
+"arg": "Epifania",
+"luogo": "-",
+"data": "incompleto rimaneggiato"
+},
+"cuando": true
+},
+{
+"file": "discorso_266_testo.htm",
+"label": "210",
+"id": "210",
+"coll": "main",
+"src": "non datato",
+"data": "",
+"det": "",
+"key": [
+9999,
+0
+],
+"tav": {
+"arg": "Quaresima",
+"luogo": "-",
+"data": "inizio quaresima"
+},
+"cuando": true
+},
+{
+"file": "discorso_268_testo.htm",
+"label": "211/A",
+"id": "211A",
+"coll": "main",
+"src": "non datato",
+"data": "",
+"det": "",
+"key": [
+9999,
+0
+],
+"tav": {
+"arg": "Quaresima",
+"luogo": "-",
+"data": "-"
+},
+"cuando": false
+},
+{
+"file": "discorso_566_testo.htm",
+"label": "214/A",
+"id": "214A",
+"coll": "main",
+"src": "non datato",
+"data": "",
+"det": "",
+"key": [
+9999,
+0
+],
+"tav": {
+"arg": "Spiegazione del Simbolo",
+"luogo": "Ippona",
+"data": "-"
+},
+"cuando": false
+},
+{
+"file": "discorso_279_testo.htm",
+"label": "219",
+"id": "219",
+"coll": "main",
+"src": "non datato",
+"data": "",
+"det": "",
+"key": [
+9999,
+0
+],
+"tav": {
+"arg": "Pasqua",
+"luogo": "Ippona",
+"data": "vigilia di P."
+},
+"cuando": true
+},
+{
+"file": "discorso_280_testo.htm",
+"label": "220",
+"id": "220",
+"coll": "main",
+"src": "non datato",
+"data": "",
+"det": "",
+"key": [
+9999,
+0
+],
+"tav": {
+"arg": "Pasqua",
+"luogo": "Ippona",
+"data": "vigilia di P."
+},
+"cuando": true
+},
+{
+"file": "discorso_282_testo.htm",
+"label": "222",
+"id": "222",
+"coll": "main",
+"src": "non datato",
+"data": "",
+"det": "",
+"key": [
+9999,
+0
+],
+"tav": {
+"arg": "Pasqua",
+"luogo": "Ippona",
+"data": "vigilia di P."
+},
+"cuando": true
+},
+{
+"file": "discorso_285_testo.htm",
+"label": "223/B",
+"id": "223B",
+"coll": "main",
+"src": "non datato",
+"data": "",
+"det": "",
+"key": [
+9999,
+0
+],
+"tav": {
+"arg": "Pasqua",
+"luogo": "Ippona",
+"data": "vigilia di P."
+},
+"cuando": true
+},
+{
+"file": "discorso_286_testo.htm",
+"label": "223/C",
+"id": "223C",
+"coll": "main",
+"src": "non datato",
+"data": "",
+"det": "",
+"key": [
+9999,
+0
+],
+"tav": {
+"arg": "Pasqua",
+"luogo": "Ippona",
+"data": "vigilia di P."
+},
+"cuando": true
+},
+{
+"file": "discorso_287_testo.htm",
+"label": "223/D",
+"id": "223D",
+"coll": "main",
+"src": "non datato",
+"data": "",
+"det": "",
+"key": [
+9999,
+0
+],
+"tav": {
+"arg": "Pasqua",
+"luogo": "Ippona",
+"data": "veglia pasquale"
+},
+"cuando": true
+},
+{
+"file": "discorso_290_testo.htm",
+"label": "223/G",
+"id": "223G",
+"coll": "main",
+"src": "non datato",
+"data": "",
+"det": "",
+"key": [
+9999,
+0
+],
+"tav": {
+"arg": "Pasqua",
+"luogo": "Ippona",
+"data": "veglia pasquale"
+},
+"cuando": true
+},
+{
+"file": "discorso_291_testo.htm",
+"label": "223/H",
+"id": "223H",
+"coll": "main",
+"src": "non datato",
+"data": "",
+"det": "",
+"key": [
+9999,
+0
+],
+"tav": {
+"arg": "Pasqua",
+"luogo": "Ippona",
+"data": "veglia pasquale"
+},
+"cuando": true
+},
+{
+"file": "discorso_292_testo.htm",
+"label": "223/I",
+"id": "223I",
+"coll": "main",
+"src": "non datato",
+"data": "",
+"det": "",
+"key": [
+9999,
+0
+],
+"tav": {
+"arg": "Pasqua",
+"luogo": "Ippona",
+"data": "veglia pasquale"
+},
+"cuando": true
+},
+{
+"file": "discorso_293_testo.htm",
+"label": "223/J",
+"id": "223J",
+"coll": "main",
+"src": "non datato",
+"data": "",
+"det": "",
+"key": [
+9999,
+0
+],
+"tav": {
+"arg": "Pasqua",
+"luogo": "Ippona",
+"data": "veglia pasquale"
+},
+"cuando": true
+},
+{
+"file": "discorso_294_testo.htm",
+"label": "223/K",
+"id": "223K",
+"coll": "main",
+"src": "non datato",
+"data": "",
+"det": "",
+"key": [
+9999,
+0
+],
+"tav": {
+"arg": "Pasqua",
+"luogo": "Ippona",
+"data": "veglia pasquale"
+},
+"cuando": true
+},
+{
+"file": "discorso_299_testo.htm",
+"label": "228",
+"id": "228",
+"coll": "main",
+"src": "non datato",
+"data": "",
+"det": "",
+"key": [
+9999,
+0
+],
+"tav": {
+"arg": "Pasqua",
+"luogo": "Ippona",
+"data": "Pasqua"
+},
+"cuando": true
+},
+{
+"file": "discorso_304_testo.htm",
+"label": "229/B",
+"id": "229B",
+"coll": "main",
+"src": "non datato",
+"data": "",
+"det": "",
+"key": [
+9999,
+0
+],
+"tav": {
+"arg": "Pasqua",
+"luogo": "Ippona",
+"data": "Pasqua"
+},
+"cuando": true
+},
+{
+"file": "discorso_305_testo.htm",
+"label": "229/C",
+"id": "229C",
+"coll": "main",
+"src": "non datato",
+"data": "",
+"det": "",
+"key": [
+9999,
+0
+],
+"tav": {
+"arg": "Pasqua",
+"luogo": "Ippona",
+"data": "Pasqua"
+},
+"cuando": true
+},
+{
+"file": "discorso_325_testo.htm",
+"label": "230",
+"id": "230",
+"coll": "main",
+"src": "non datato",
+"data": "",
+"det": "",
+"key": [
+9999,
+0
+],
+"tav": {
+"arg": "T. P.",
+"luogo": "Ippona",
+"data": "Tempo pasquale (L) Pasqua (K, B) veglia di P. (Po)"
+},
+"cuando": true
+},
+{
+"file": "discorso_332_testo.htm",
+"label": "236/A",
+"id": "236A",
+"coll": "main",
+"src": "non datato",
+"data": "",
+"det": "",
+"key": [
+9999,
+0
+],
+"tav": {
+"arg": "T. P. Lc 24, 13-35",
+"luogo": "-",
+"data": "lunedì di P. ?"
+},
+"cuando": true
+},
+{
+"file": "discorso_373_testo.htm",
+"label": "265/C",
+"id": "265C",
+"coll": "main",
+"src": "non datato",
+"data": "",
+"det": "",
+"key": [
+9999,
+0
+],
+"tav": {
+"arg": "Ascensione",
+"luogo": "Ippona",
+"data": "Ascensione"
+},
+"cuando": true
+},
+{
+"file": "discorso_375_testo.htm",
+"label": "265/E",
+"id": "265E",
+"coll": "main",
+"src": "non datato",
+"data": "",
+"det": "",
+"key": [
+9999,
+0
+],
+"tav": {
+"arg": "Ascensione",
+"luogo": "-",
+"data": "Ascensione? (L)"
+},
+"cuando": true
+},
+{
+"file": "discorso_384_testo.htm",
+"label": "272/A",
+"id": "272A",
+"coll": "main",
+"src": "non datato",
+"data": "",
+"det": "",
+"key": [
+9999,
+0
+],
+"tav": {
+"arg": "Pentecoste",
+"luogo": "-",
+"data": "Pentecoste"
+},
+"cuando": true
+},
+{
+"file": "discorso_394_testo.htm",
+"label": "280",
+"id": "280",
+"coll": "main",
+"src": "non datato",
+"data": "",
+"det": "",
+"key": [
+9999,
+0
+],
+"tav": {
+"arg": "SS. Perpetua e Felicita",
+"luogo": "-",
+"data": "7-3"
+},
+"cuando": true
+},
+{
+"file": "discorso_395_testo.htm",
+"label": "281",
+"id": "281",
+"coll": "main",
+"src": "non datato",
+"data": "",
+"det": "",
+"key": [
+9999,
+0
+],
+"tav": {
+"arg": "SS. Perpetua e Felicita",
+"luogo": "-",
+"data": "7-3"
+},
+"cuando": true
+},
+{
+"file": "discorso_396_testo.htm",
+"label": "282",
+"id": "282",
+"coll": "main",
+"src": "non datato",
+"data": "",
+"det": "",
+"key": [
+9999,
+0
+],
+"tav": {
+"arg": "SS. Perpetua e Felicita",
+"luogo": "-",
+"data": "7-3"
+},
+"cuando": true
+},
+{
+"file": "discorso_599_testo.htm",
+"label": "282 augm.",
+"id": "282AUG",
+"coll": "main",
+"src": "non datato",
+"data": "",
+"det": "",
+"key": [
+9999,
+0
+],
+"tav": {
+"arg": "SS. Perpetua e Felicita",
+"luogo": "-",
+"data": "7-3"
+},
+"cuando": false
+},
+{
+"file": "discorso_410_testo.htm",
+"label": "293/C",
+"id": "293C",
+"coll": "main",
+"src": "non datato",
+"data": "",
+"det": "",
+"key": [
+9999,
+0
+],
+"tav": {
+"arg": "S. Giovanni B.",
+"luogo": "-",
+"data": "24-6"
+},
+"cuando": true
+},
+{
+"file": "discorso_411_testo.htm",
+"label": "293/D",
+"id": "293D",
+"coll": "main",
+"src": "non datato",
+"data": "",
+"det": "",
+"key": [
+9999,
+0
+],
+"tav": {
+"arg": "S. Giovanni B.",
+"luogo": "-",
+"data": "24-6"
+},
+"cuando": true
+},
+{
+"file": "discorso_412_testo.htm",
+"label": "293/E",
+"id": "293E",
+"coll": "main",
+"src": "non datato",
+"data": "",
+"det": "",
+"key": [
+9999,
+0
+],
+"tav": {
+"arg": "S. Giovanni B.",
+"luogo": "-",
+"data": "24-6"
+},
+"cuando": true
+},
+{
+"file": "discorso_424_testo.htm",
+"label": "299/F",
+"id": "299F",
+"coll": "main",
+"src": "non datato",
+"data": "",
+"det": "",
+"key": [
+9999,
+0
+],
+"tav": {
+"arg": "SS. Martiri Scilit.",
+"luogo": "-",
+"data": "17-7"
+},
+"cuando": true
+},
+{
+"file": "discorso_437_testo.htm",
+"label": "306/D",
+"id": "306D",
+"coll": "main",
+"src": "non datato",
+"data": "",
+"det": "",
+"key": [
+9999,
+0
+],
+"tav": {
+"arg": "S. Quadrato Ps 25, 7-8",
+"luogo": "-",
+"data": "21-8"
+},
+"cuando": true
+},
+{
+"file": "discorso_439_testo.htm",
+"label": "308",
+"id": "308",
+"coll": "main",
+"src": "non datato",
+"data": "",
+"det": "",
+"key": [
+9999,
+0
+],
+"tav": {
+"arg": "Decollazione S. Giovanni B.",
+"luogo": "Ippona",
+"data": "29-8 o 27-12"
+},
+"cuando": true
+},
+{
+"file": "discorso_459_testo.htm",
+"label": "319/A",
+"id": "319A",
+"coll": "main",
+"src": "non datato",
+"data": "",
+"det": "",
+"key": [
+9999,
+0
+],
+"tav": {
+"arg": "S. Stefano",
+"luogo": "-",
+"data": "-"
+},
+"cuando": true
+},
+{
+"file": "discorso_466_testo.htm",
+"label": "326",
+"id": "326",
+"coll": "main",
+"src": "non datato",
+"data": "",
+"det": "",
+"key": [
+9999,
+0
+],
+"tav": {
+"arg": "Festa Martiri",
+"luogo": "Ippona Mem. Martyrum",
+"data": "15-11"
+},
+"cuando": true
+},
+{
+"file": "discorso_471_testo.htm",
+"label": "331",
+"id": "331",
+"coll": "main",
+"src": "non datato",
+"data": "",
+"det": "",
+"key": [
+9999,
+0
+],
+"tav": {
+"arg": "Festa Martiri",
+"luogo": "-",
+"data": "-"
+},
+"cuando": true
+},
+{
+"file": "discorso_473_testo.htm",
+"label": "333",
+"id": "333",
+"coll": "main",
+"src": "non datato",
+"data": "",
+"det": "",
+"key": [
+9999,
+0
+],
+"tav": {
+"arg": "Festa Martiri",
+"luogo": "-",
+"data": "autenticità dubbia"
+},
+"cuando": false
+},
+{
+"file": "discorso_474_testo.htm",
+"label": "334",
+"id": "334",
+"coll": "main",
+"src": "non datato",
+"data": "",
+"det": "",
+"key": [
+9999,
+0
+],
+"tav": {
+"arg": "Festa Martiri",
+"luogo": "-",
+"data": "6-8? (L)"
+},
+"cuando": true
+},
+{
+"file": "discorso_479_testo.htm",
+"label": "335/D",
+"id": "335D",
+"coll": "main",
+"src": "non datato",
+"data": "",
+"det": "",
+"key": [
+9999,
+0
+],
+"tav": {
+"arg": "Festa Martiri",
+"luogo": "-",
+"data": "-"
+},
+"cuando": true
+},
+{
+"file": "discorso_481_testo.htm",
+"label": "335/F",
+"id": "335F",
+"coll": "main",
+"src": "non datato",
+"data": "",
+"det": "",
+"key": [
+9999,
+0
+],
+"tav": {
+"arg": "Festa Martiri Ps 123, 1-3",
+"luogo": "-",
+"data": "-"
+},
+"cuando": false
+},
+{
+"file": "discorso_482_testo.htm",
+"label": "335/G",
+"id": "335G",
+"coll": "main",
+"src": "non datato",
+"data": "",
+"det": "",
+"key": [
+9999,
+0
+],
+"tav": {
+"arg": "Festa Martiri",
+"luogo": "-",
+"data": "-"
+},
+"cuando": true
+},
+{
+"file": "discorso_484_testo.htm",
+"label": "335/I",
+"id": "335I",
+"coll": "main",
+"src": "non datato",
+"data": "",
+"det": "",
+"key": [
+9999,
+0
+],
+"tav": {
+"arg": "Festa Martiri",
+"luogo": "-",
+"data": "-"
+},
+"cuando": true
+},
+{
+"file": "discorso_486_testo.htm",
+"label": "335/K",
+"id": "335K",
+"coll": "main",
+"src": "non datato",
+"data": "",
+"det": "",
+"key": [
+9999,
+0
+],
+"tav": {
+"arg": "Festa Confessore pontefice",
+"luogo": "-",
+"data": "-"
+},
+"cuando": true
+},
+{
+"file": "discorso_487_testo.htm",
+"label": "335/L",
+"id": "335L",
+"coll": "main",
+"src": "non datato",
+"data": "",
+"det": "",
+"key": [
+9999,
+0
+],
+"tav": {
+"arg": "Festa Confessore",
+"luogo": "-",
+"data": "-"
+},
+"cuando": true
+},
+{
+"file": "discorso_488_testo.htm",
+"label": "335/M",
+"id": "335M",
+"coll": "main",
+"src": "non datato",
+"data": "",
+"det": "",
+"key": [
+9999,
+0
+],
+"tav": {
+"arg": "Festa Confessore",
+"luogo": "-",
+"data": "festa S. Domiziano"
+},
+"cuando": true
+},
+{
+"file": "discorso_489_testo.htm",
+"label": "336",
+"id": "336",
+"coll": "main",
+"src": "non datato",
+"data": "",
+"det": "",
+"key": [
+9999,
+0
+],
+"tav": {
+"arg": "Dedicazione di una chiesa",
+"luogo": "-",
+"data": "-"
+},
+"cuando": true
+},
+{
+"file": "discorso_493_testo.htm",
+"label": "340",
+"id": "340",
+"coll": "main",
+"src": "non datato",
+"data": "",
+"det": "",
+"key": [
+9999,
+0
+],
+"tav": {
+"arg": "Ministero episcopale",
+"luogo": "Anniv. ordin. Ag. autenticità dubbia",
+"data": "PL 38, 1482-1484 CC 104, 919-921"
+},
+"cuando": false
+},
+{
+"file": "discorso_496_testo.htm",
+"label": "341/A",
+"id": "341A",
+"coll": "main",
+"src": "non datato",
+"data": "",
+"det": "",
+"key": [
+9999,
+0
+],
+"tav": {
+"arg": "Umiltà di G. C.",
+"luogo": "-",
+"data": "-"
+},
+"cuando": true
+},
+{
+"file": "discorso_497_testo.htm",
+"label": "342",
+"id": "342",
+"coll": "main",
+"src": "non datato",
+"data": "",
+"det": "",
+"key": [
+9999,
+0
+],
+"tav": {
+"arg": "Il sacrificio vespertino Ps 140, 2; Io 1, 1-18",
+"luogo": "-",
+"data": "-"
+},
+"cuando": true
+},
+{
+"file": "discorso_501_testo.htm",
+"label": "346",
+"id": "346",
+"coll": "main",
+"src": "non datato",
+"data": "",
+"det": "",
+"key": [
+9999,
+0
+],
+"tav": {
+"arg": "Pellegrinaggio terreno sotto il segno della fede",
+"luogo": "-",
+"data": "-"
+},
+"cuando": true
+},
+{
+"file": "discorso_511_testo.htm",
+"label": "350/B",
+"id": "350B",
+"coll": "main",
+"src": "non datato",
+"data": "",
+"det": "",
+"key": [
+9999,
+0
+],
+"tav": {
+"arg": "L'elemosina",
+"luogo": "-",
+"data": "-"
+},
+"cuando": true
+},
+{
+"file": "discorso_512_testo.htm",
+"label": "350/C",
+"id": "350C",
+"coll": "main",
+"src": "non datato",
+"data": "",
+"det": "",
+"key": [
+9999,
+0
+],
+"tav": {
+"arg": "L'elemosina",
+"luogo": "-",
+"data": "-"
+},
+"cuando": false
+},
+{
+"file": "discorso_600_testo.htm",
+"label": "350/D",
+"id": "350D",
+"coll": "main",
+"src": "non datato",
+"data": "",
+"det": "",
+"key": [
+9999,
+0
+],
+"tav": {
+"arg": "Sulle elemosine delle cose spirituali",
+"luogo": "-",
+"data": "-"
+},
+"cuando": false
+},
+{
+"file": "discorso_601_testo.htm",
+"label": "350/E",
+"id": "350E",
+"coll": "main",
+"src": "non datato",
+"data": "",
+"det": "",
+"key": [
+9999,
+0
+],
+"tav": {
+"arg": "Sul servizio di cose materili",
+"luogo": "-",
+"data": "-"
+},
+"cuando": false
+},
+{
+"file": "discorso_602_testo.htm",
+"label": "350/F",
+"id": "350F",
+"coll": "main",
+"src": "non datato",
+"data": "",
+"det": "",
+"key": [
+9999,
+0
+],
+"tav": {
+"arg": "Sulle elemosine che si fanno verso tutti",
+"luogo": "-",
+"data": "-"
+},
+"cuando": false
+},
+{
+"file": "discorso_522_testo.htm",
+"label": "358/A",
+"id": "358A",
+"coll": "main",
+"src": "non datato",
+"data": "",
+"det": "",
+"key": [
+9999,
+0
+],
+"tav": {
+"arg": "La misericordia",
+"luogo": "-",
+"data": "-"
+},
+"cuando": false
+},
+{
+"file": "discorso_603_testo.htm",
+"label": "362/A",
+"id": "362A",
+"coll": "main",
+"src": "non datato",
+"data": "",
+"det": "",
+"key": [
+9999,
+0
+],
+"tav": {
+"arg": "La resurrezione dei morti",
+"luogo": "-",
+"data": "-"
+},
+"cuando": false
+},
+{
+"file": "discorso_529_testo.htm",
+"label": "364",
+"id": "364",
+"coll": "main",
+"src": "non datato",
+"data": "",
+"det": "",
+"key": [
+9999,
+0
+],
+"tav": {
+"arg": "Sansone Ps 57",
+"luogo": "autenticità dubbia",
+"data": "PL 39, 1639-1643 CC 103, 491-496"
+},
+"cuando": false
+},
+{
+"file": "discorso_530_testo.htm",
+"label": "365",
+"id": "365",
+"coll": "main",
+"src": "non datato",
+"data": "",
+"det": "",
+"key": [
+9999,
+0
+],
+"tav": {
+"arg": "Ps 15",
+"luogo": "-",
+"data": "autenticità dubbia"
+},
+"cuando": false
+},
+{
+"file": "discorso_531_testo.htm",
+"label": "366",
+"id": "366",
+"coll": "main",
+"src": "non datato",
+"data": "",
+"det": "",
+"key": [
+9999,
+0
+],
+"tav": {
+"arg": "Ps 22",
+"luogo": "-",
+"data": "autenticità dubbia"
+},
+"cuando": false
+},
+{
+"file": "discorso_532_testo.htm",
+"label": "367",
+"id": "367",
+"coll": "main",
+"src": "non datato",
+"data": "",
+"det": "",
+"key": [
+9999,
+0
+],
+"tav": {
+"arg": "Il ricco epulone Lc 16, 19-31",
+"luogo": "-",
+"data": "-"
+},
+"cuando": true
+},
+{
+"file": "discorso_533_testo.htm",
+"label": "368",
+"id": "368",
+"coll": "main",
+"src": "non datato",
+"data": "",
+"det": "",
+"key": [
+9999,
+0
+],
+"tav": {
+"arg": "Io 12; Eph 5",
+"luogo": "-",
+"data": "autenticità dubbia"
+},
+"cuando": false
+},
+{
+"file": "discorso_535_testo.htm",
+"label": "370",
+"id": "370",
+"coll": "main",
+"src": "non datato",
+"data": "",
+"det": "",
+"key": [
+9999,
+0
+],
+"tav": {
+"arg": "Natività G. C.",
+"luogo": "-",
+"data": "Natale"
+},
+"cuando": true
+},
+{
+"file": "discorso_536_testo.htm",
+"label": "371",
+"id": "371",
+"coll": "main",
+"src": "non datato",
+"data": "",
+"det": "",
+"key": [
+9999,
+0
+],
+"tav": {
+"arg": "Natività G. Cartagine",
+"luogo": "-",
+"data": "autenticità dubbia"
+},
+"cuando": false
+},
+{
+"file": "discorso_537_testo.htm",
+"label": "372",
+"id": "372",
+"coll": "main",
+"src": "non datato",
+"data": "",
+"det": "",
+"key": [
+9999,
+0
+],
+"tav": {
+"arg": "Natività G. C.",
+"luogo": "-",
+"data": "autenticità dubbia"
+},
+"cuando": false
+},
+{
+"file": "discorso_540_testo.htm",
+"label": "375",
+"id": "375",
+"coll": "main",
+"src": "non datato",
+"data": "",
+"det": "",
+"key": [
+9999,
+0
+],
+"tav": {
+"arg": "Epifania",
+"luogo": "-",
+"data": "Epifania"
+},
+"cuando": true
+},
+{
+"file": "discorso_542_testo.htm",
+"label": "375/B",
+"id": "375B",
+"coll": "main",
+"src": "non datato",
+"data": "",
+"det": "",
+"key": [
+9999,
+0
+],
+"tav": {
+"arg": "Cristo morto per noi",
+"luogo": "Ippona",
+"data": "Pasqua"
+},
+"cuando": false
+},
+{
+"file": "discorso_546_testo.htm",
+"label": "377",
+"id": "377",
+"coll": "main",
+"src": "non datato",
+"data": "",
+"det": "",
+"key": [
+9999,
+0
+],
+"tav": {
+"arg": "Ascensione",
+"luogo": "-",
+"data": "Ascensione"
+},
+"cuando": true
+},
+{
+"file": "discorso_547_testo.htm",
+"label": "378",
+"id": "378",
+"coll": "main",
+"src": "non datato",
+"data": "",
+"det": "",
+"key": [
+9999,
+0
+],
+"tav": {
+"arg": "Lo Spirito Santo dona la carità",
+"luogo": "-",
+"data": "Pentecoste"
+},
+"cuando": true
+},
+{
+"file": "discorso_548_testo.htm",
+"label": "379",
+"id": "379",
+"coll": "main",
+"src": "non datato",
+"data": "",
+"det": "",
+"key": [
+9999,
+0
+],
+"tav": {
+"arg": "S. Giovanni B.",
+"luogo": "-",
+"data": "24-6"
+},
+"cuando": true
+},
+{
+"file": "discorso_551_testo.htm",
+"label": "382",
+"id": "382",
+"coll": "main",
+"src": "non datato",
+"data": "",
+"det": "",
+"key": [
+9999,
+0
+],
+"tav": {
+"arg": "S. Stefano",
+"luogo": "-",
+"data": "autenticità dubbia"
+},
+"cuando": false
+},
+{
+"file": "discorso_552_testo.htm",
+"label": "383",
+"id": "383",
+"coll": "main",
+"src": "non datato",
+"data": "",
+"det": "",
+"key": [
+9999,
+0
+],
+"tav": {
+"arg": "Ordinazione episcopale",
+"luogo": "-",
+"data": "autenticità dubbia"
+},
+"cuando": false
+},
+{
+"file": "discorso_553_testo.htm",
+"label": "384",
+"id": "384",
+"coll": "main",
+"src": "non datato",
+"data": "",
+"det": "",
+"key": [
+9999,
+0
+],
+"tav": {
+"arg": "La Trinità",
+"luogo": "-.",
+"data": "autenticità dubbia"
+},
+"cuando": false
+},
+{
+"file": "discorso_554_testo.htm",
+"label": "385",
+"id": "385",
+"coll": "main",
+"src": "non datato",
+"data": "",
+"det": "",
+"key": [
+9999,
+0
+],
+"tav": {
+"arg": "Amore per il prossimo",
+"luogo": "-",
+"data": "autenticità dubbia"
+},
+"cuando": false
+},
+{
+"file": "discorso_555_testo.htm",
+"label": "386",
+"id": "386",
+"coll": "main",
+"src": "non datato",
+"data": "",
+"det": "",
+"key": [
+9999,
+0
+],
+"tav": {
+"arg": "Amore per i nemici",
+"luogo": "-",
+"data": "autenticità dubbia"
+},
+"cuando": false
+},
+{
+"file": "discorso_556_testo.htm",
+"label": "387",
+"id": "387",
+"coll": "main",
+"src": "non datato",
+"data": "",
+"det": "",
+"key": [
+9999,
+0
+],
+"tav": {
+"arg": "Correzione fraterna",
+"luogo": "-",
+"data": "autenticità dubbia"
+},
+"cuando": false
+},
+{
+"file": "discorso_557_testo.htm",
+"label": "388",
+"id": "388",
+"coll": "main",
+"src": "non datato",
+"data": "",
+"det": "",
+"key": [
+9999,
+0
+],
+"tav": {
+"arg": "L'elemosina",
+"luogo": "-",
+"data": "autenticità dubbia"
+},
+"cuando": false
+},
+{
+"file": "discorso_558_testo.htm",
+"label": "389",
+"id": "389",
+"coll": "main",
+"src": "non datato",
+"data": "",
+"det": "",
+"key": [
+9999,
+0
+],
+"tav": {
+"arg": "L'elemosina",
+"luogo": "-",
+"data": "-"
+},
+"cuando": true
+},
+{
+"file": "discorso_559_testo.htm",
+"label": "390",
+"id": "390",
+"coll": "main",
+"src": "non datato",
+"data": "",
+"det": "",
+"key": [
+9999,
+0
+],
+"tav": {
+"arg": "L'elemosina",
+"luogo": "-",
+"data": "-"
+},
+"cuando": false
+},
+{
+"file": "discorso_560_testo.htm",
+"label": "391",
+"id": "391",
+"coll": "main",
+"src": "non datato",
+"data": "",
+"det": "",
+"key": [
+9999,
+0
+],
+"tav": {
+"arg": "Ai giovani",
+"luogo": "-",
+"data": "autenticità dubbia"
+},
+"cuando": false
+},
+{
+"file": "discorso_562_testo.htm",
+"label": "393",
+"id": "393",
+"coll": "main",
+"src": "non datato",
+"data": "",
+"det": "",
+"key": [
+9999,
+0
+],
+"tav": {
+"arg": "Ai penitenti",
+"luogo": "-",
+"data": "-"
+},
+"cuando": false
+},
+{
+"file": "discorso_563_testo.htm",
+"label": "394",
+"id": "394",
+"coll": "main",
+"src": "non datato",
+"data": "",
+"det": "",
+"key": [
+9999,
+0
+],
+"tav": {
+"arg": "SS. Perpetua e Felicita",
+"luogo": "-",
+"data": "autenticità dubbia"
+},
+"cuando": false
+},
+{
+"file": "discorso_564_testo.htm",
+"label": "395",
+"id": "395",
+"coll": "main",
+"src": "non datato",
+"data": "",
+"det": "",
+"key": [
+9999,
+0
+],
+"tav": {
+"arg": "Ascensione",
+"luogo": "-",
+"data": "-"
+},
+"cuando": true
+},
+{
+"file": "discorso_566_testo.htm",
+"label": "Dolbeau 1",
+"code": "214/A",
+"coll": "nuovi",
+"src": "non datato",
+"data": "",
+"det": "",
+"key": [
+9999,
+0
+],
+"tav": {
+"arg": "Spiegazione del Simbolo",
+"luogo": "Ippona",
+"data": "-"
+},
+"cuando": false
+},
+{
+"file": "discorso_597_testo.htm",
+"label": "Étaix 4",
+"code": "204/A",
+"coll": "nuovi",
+"src": "non datato",
+"data": "",
+"det": "",
+"key": [
+9999,
+0
+],
+"tav": {
+"arg": "Epifania",
+"luogo": "-",
+"data": "incompleto rimaneggiato"
+},
+"cuando": true
+},
+{
+"file": "discorso_599_testo.htm",
+"label": "Erfurt 1",
+"coll": "erfurt",
+"src": "non datato",
+"data": "",
+"det": "",
+"key": [
+9999,
+0
+],
+"tav": null,
+"cuando": false
+},
+{
+"file": "discorso_600_testo.htm",
+"label": "Erfurt 2",
+"coll": "erfurt",
+"src": "non datato",
+"data": "",
+"det": "",
+"key": [
+9999,
+0
+],
+"tav": null,
+"cuando": false
+},
+{
+"file": "discorso_601_testo.htm",
+"label": "Erfurt 3",
+"coll": "erfurt",
+"src": "non datato",
+"data": "",
+"det": "",
+"key": [
+9999,
+0
+],
+"tav": null,
+"cuando": false
+},
+{
+"file": "discorso_602_testo.htm",
+"label": "Erfurt 4",
+"coll": "erfurt",
+"src": "non datato",
+"data": "",
+"det": "",
+"key": [
+9999,
+0
+],
+"tav": null,
+"cuando": false
+},
+{
+"file": "discorso_603_testo.htm",
+"label": "Erfurt 5",
+"coll": "erfurt",
+"src": "non datato",
+"data": "",
+"det": "",
+"key": [
+9999,
+0
+],
+"tav": null,
+"cuando": false
+},
+{
+"file": "discorso_604_testo.htm",
+"label": "Erfurt 6",
+"coll": "erfurt",
+"src": "non datato",
+"data": "",
+"det": "",
+"key": [
+9999,
+0
+],
+"tav": null,
+"cuando": false
+}
+]

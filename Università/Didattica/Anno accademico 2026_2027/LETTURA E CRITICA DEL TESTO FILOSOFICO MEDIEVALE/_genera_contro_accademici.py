@@ -377,6 +377,6 @@ for p in all_paragraphs(doc):
     for r in p.runs:
         force_font(r)
 
-out = "/Users/macbook/Library/CloudStorage/Dropbox/ClaudeWS/Didattica/Anno accademico 2026_2027/LETTURA E CRITICA DEL TESTO FILOSOFICO MEDIEVALE/Contro_Accademici_latino_italiano.docx"
+out = "/Users/macbook/Library/CloudStorage/Dropbox/ClaudeWS/Università/Didattica/Anno accademico 2026_2027/LETTURA E CRITICA DEL TESTO FILOSOFICO MEDIEVALE/Contro_Accademici_latino_italiano.docx"
 doc.save(out)
 print("SAVED", out)

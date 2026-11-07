@@ -1,0 +1,122 @@
+@title Athletes of God. Two Examples of Material Culture between Late Antique Rome and Lombard Bobbio
+@author by Francesca Dell’Acqua
+
+## 1. A crown for the defeated
+
+Among the images that early Christian Rome has handed down to us there is one that rarely fails to puzzle a modern viewer. On a small glass disk the apostles Peter and Paul appear as idealised portraits, and above them hangs a laurel wreath: the crown that the Roman world reserved for the winners of the games. Two men executed by the Roman state, celebrated with the prize of the stadium. The object tells us very little about the apostles; it tells us a great deal about those who held it in their hands and wished to see them in that way.
+
+The question I would like to ask is simple, and it is the one this small disk raises. How could a community that had been persecuted for centuries, and that had watched its members die in the arena, adopt the forms of the arena to honour its heroes? Texts give part of the answer. Another part, which I think is no less important, lies in buildings, stones and objects – in what people saw, walked around and touched. My hypothesis, which I state at the outset because it has guided the choice of examples, is that the “athlete of God” was not only a metaphor to be heard in a sermon, but a figure to be seen. The forms of the stadium were reused to make visible a victory that by definition could not be seen: the victory of those who win by dying, or by renouncing.
+
+A word on what I mean by “material culture”, since the expression is used in many ways. I do not mean simply the objects that survive, as if they were a supplement to the written sources, useful when texts are silent. I mean the ways in which beliefs took bodily form: in the shape of a building that guides the steps of those who enter it, in a stone that asks to be read aloud, in a surface that catches the light. In late antiquity and in the early Middle Ages seeing and touching were not marginal to faith; they were ways of knowing and of praying, and they could become, in certain moments, matters of open controversy{{I have discussed this for the Byzantine world in Dell’Acqua (2023).}}. If we want to understand what the image of the athlete meant to those who used it, we must therefore ask not only what they read, but also where they walked, what they looked at, and what they wished others to see.
+
+I shall look at two examples of material culture, four centuries apart: the “circus-shaped” basilicas built in the outskirts of Rome in the fourth century, and the tombstone that the Lombard king Liutprand commissioned for the Irish abbot Cumianus at Bobbio in the eighth. As in all my work, I shall read the objects together with the words that accompany them, because in the early Middle Ages images and words were rarely meant to be experienced apart{{It is the approach I have followed, for the Roman evidence of the eighth and ninth centuries, in Dell’Acqua (2020).}}.
+
+## 2. Year 313: space for a crowd
+
+Christians had been persecuted in the Roman Empire for a long time. Their possessions had been confiscated, and many had been killed because they refused to venerate the gods of the State. According to tradition, Peter and Paul themselves had been put to death in Rome under Nero, around the year 64. The turning point came with a political agreement. In February 313 the emperors Constantine and Licinius met in Milan and decided, according to the text transmitted by Eusebius of Caesarea, to grant to the Christians and to everyone else the freedom to follow the religion each preferred, so that whatever divinity dwells in heaven might be favourable to them and to all who lived under their rule{{Eusebius, *Historia ecclesiastica* X 5, 2-4; a Latin version of the same text is preserved by Lactantius, *De mortibus persecutorum* 48, 2-12. Unless otherwise indicated, translations are my own.}}.
+
+Freedom of worship had an immediate material consequence: space. Large congregations needed large buildings, and the Christian communities did not have a monumental architecture of their own. They turned to the halls of assembly they already knew: the synagogues, buildings for Jewish worship, and above all the Roman basilica, the long hall in which justice was administered and public business was transacted. The basilica had the advantage of being a neutral container, without the associations of the pagan temple, and it could be adapted to the liturgy with relatively few changes: an apse for the clergy, an altar, a nave for the people. The emperor himself became the patron of the new buildings, in Rome, in Bethlehem and later in Constantinople; in Rome, the basilica erected over the tomb of Peter on the Vatican hill would remain for over a thousand years the very image of this alliance between imperial munificence and the cult of a martyr{{On the Constantinian foundation and its long history, see the essays collected in McKitterick, Osborne, Richardson and Story, eds. (2013); for the wider picture of the Christianisation of the city, Krautheimer (1980).}}.
+
+## 3. Racetracks to salvation
+
+The basilica of the Vatican, however, is not the most surprising Christian building of fourth-century Rome. Along the consular roads leading out of the city, in the *suburbium*, there rose six large basilicas of a different kind: on the via Labicana, the via Nomentana, the via Tiburtina, the via Ardeatina, the via Praenestina and the via Appia{{Hellström (2015), who recalls that the basilicas of the via Labicana, the via Nomentana and the via Tiburtina are mentioned in the *Liber pontificalis*, and that of the via Ardeatina possibly so.}}. Their plan is unmistakable. The side aisles do not stop at the end of the nave, but turn around the apse, forming a continuous ambulatory. Seen from above, the building recalls the shape of a circus, with its long track and its curved end. This is why scholars call them “circus-shaped” or “circiform” basilicas.
+
+Their function was first of all funerary. Richard Krautheimer recognised in them covered cemeteries, halls in which the dead were buried and the living gathered for commemorative meals{{Krautheimer (1960).}}. The floors were filled with graves, as excavations have shown, for instance, in the basilica of Pope Mark on the via Ardeatina. People wished to be buried *ad sanctos*, close to the martyrs, in the hope of sharing in their protection; and the practice was so widespread that Paulinus of Nola asked Augustine whether it really benefited the dead to be buried near the memorial of a saint{{Augustine, *De cura pro mortuis gerenda* 1, 1. On the practice, Brown (1981) and Duval (1988), who sets Augustine’s answer against the archaeological evidence.}}.
+
+But why the shape of a circus? Lynda Coon and Kim Sexton have recently argued that the resemblance is not accidental, and that it should be explained not so much through the survival of classical hero cults as through the cult of the martyrs. In their words, «here, the martyr keeps company with the charioteer; […] the athletic spaces of the later Roman Empire transmute into a racetrack to salvation»{{Coon and Sexton (2020).}}. The circus basilicas would then be «spectacular monuments where Christians could remember, re-envision, and re-enact the physical agonies of the early martyrs»{{Ibid., p. 42.}}. The interpretation finds a textual anchor in Paul, who had written to the Corinthians that in the stadium all the runners run, but only one receives the prize: «and they indeed do it to receive a corruptible crown, but we an incorruptible one»{{1 Cor 9:25: «et illi quidem ut corruptibilem coronam accipiant, nos autem incorruptam». The whole passage runs from 9:24 to 9:27.}}. The faithful who walked along the ambulatory, around the place where the relics were venerated, moved within a space that had been conceived for a race. The martyr had already run; the visitor was invited to follow.
+
+Two cautions are in order. The first concerns chronology. Monica Hellström has observed that one, possibly two, of these buildings – those of the via Praenestina and the via Appia – were in all likelihood begun before Constantine conquered Rome in 312, so that the building type cannot be explained simply as an expression of the emperor’s support for Christianity{{Hellström (2015).}}. Forms, in other words, do not always obey the intentions we attribute to them: the circus shape may have come first, and its Christian meaning may have settled into it afterwards, through use. The second caution concerns the count itself. In October 2025 Vincenzo Fiocchi Nicolai and Lucrezia Spera announced the identification of a further funerary basilica with an ambulatory, 68 metres long and 29 wide, in the area of the catacomb of Saint Callixtus, between the via Appia and the via Ardeatina, which they connect with the church recorded by the sources at the tombs of Saints Mark and Marcellian{{The discovery, made within a research project of the University of Rome Tor Vergata, was announced in the press: «Roma, scoperta una grande basilica del IV secolo tra Appia e Ardeatina», *Finestre sull’Arte*, 22 October 2025.}}. The map of these racetracks for the dead is not closed. It is still being drawn.
+
+## 4. From the arena to the cloister: Bobbio
+
+Four centuries later the scene has changed completely. The persecutions belong to a distant past; Italy has been conquered by the Lombards, Germanic peoples who had come from Scandinavia and who, in 568, crossed into the peninsula from Pannonia{{Paul the Deacon, *Historia Langobardorum* I 1-2 and II 7.}}. The athlete of God is no longer the martyr who dies in the amphitheatre, but the monk who renounces the world. His arena is the monastery, and his contest lasts a lifetime.
+
+Bobbio, in the Apennines above Piacenza, is a privileged place to observe this transformation. Founded in 614 by the Irish abbot Columbanus with the support of the Lombard court, it was the earliest monastery to rise under Lombard patronage, and it was populated by monks who had left Ireland – as others did, towards Scotland, the Low Countries and the Continent – to live as pilgrims for Christ and to evangelise remote regions{{Richter (2008); on the archaeology of the monastery and its buildings, Destefanis (2002).}}. One of its abbots, Cumianus, came from Ireland as an old man and died during the reign of King Liutprand (712-744), who held him in such regard that he provided for his tomb.
+
+## 5. A stone for an athlete
+
+The tombstone of Cumianus, today in the Museo dell’Abbazia at Bobbio, is a marble slab measuring 180 by 90 centimetres. The inscription occupies the centre; around it runs a frame carved with a vine scroll bearing leaves and grapes, while on the short sides a *kantharos* and two doves flanking a wheel-shaped chrismon appear{{For the description of the slab, its decoration and its earlier bibliography, see the catalogue entry of the Istituto Centrale per il Catalogo e la Documentazione (ICCD), *Lapide tombale*, no. 0800260193, available at catalogo.beniculturali.it (accessed 15 October 2026); for the palaeography of the inscription, Gray (1948).}}. Two features of the object deserve attention before the text. The inscription is set upside down with respect to the decoration of the frame, an anomaly that scholars have explained as an oversight of the stone-cutter. And at least one of the ornaments, a star, is carved in recess, so as to receive an inlay that was in all probability made of glass or coloured pastes{{Both observations are recorded in the ICCD entry cited in the previous note, which also states that the slab was originally set into the wall of the crypt, behind the altar of Saint Columbanus.}}. Having worked for many years on early medieval glass, I find it hard not to look at this detail with particular interest: the slab was not meant to be a monochrome surface, but an object in which marble and colour, perhaps even reflections of light, combined. When the epitaph speaks of a «precious stone», we should not imagine something too sober.
+
+The text, in rhythmic hexameters, deserves to be read in full, because it is our main source on Cumianus’ life:
+
+> Here lie the sacred limbs of Cumianus; whose soul, entering heaven, rejoices with the angels. He was great in dignity, nobility, and beauty. Ireland sent him as an old man to the lands of Italy. There, in Bobbio, constrained by love of the Lord, by preserving the teaching of the venerable Columban, keeping watch, fasting, tireless, constantly praying, he lived for four olympiads and the course of one year, so felicitously that he is believed to be only fortunate, gentle, wise, pious, and peaceful. He lived for ninety and five years, and four months altogether. Most excellent Father, be a powerful intercessor for the most glorious King Liutprand, who has devotedly decorated your tomb with a precious stone, so that it may be manifest where your kind body is buried{{Translation adapted from Everett (2003), pp. 251-254. The Latin text closes with the date of the deposition: «depositus est hic dominus Cumianus episcopus XIIII Kalendas Septembris», that is, 19 August. The year is not given; the mention of Liutprand as living places the slab before 744.}}.
+
+Three details show how the language of the games survives within this monastic text, and how it is bent towards a new meaning.
+
+The first is in the opening line: «hic sacra beati membra Cumiani solvuntur». The words *membra solvuntur* echo the very last lines of the *Aeneid*, where Turnus, defeated by Aeneas, dies: «ast illi solvuntur frigore membra / vitaque cum gemitu fugit indignata sub umbras»{{Vergil, *Aeneid* XII 951-952. The *Aeneid*, written between 29 and 19 BC, tells the story of Aeneas, who fled Troy and reached Italy, becoming the ancestor of the Romans.}}. The epitaph takes up the verse of a defeat and turns it into the opening of a victory. Turnus’ soul flees resentfully to the shades; that of Cumianus, «caelum penetrans», rejoices with the angels. Whoever composed the text expected at least some readers to hear the echo, and to measure the distance between the two deaths.
+
+The second detail concerns time. Cumianus did not live at Bobbio for seventeen years: he lived there for «four olympiads and the course of one year». The four-year cycle of the games of Olympia, which had ceased centuries earlier, still served as a unit of measure for the life of a monk. It may be a poetic archaism, and certainly it is one; but archaisms are never neutral. They choose a frame. The life of the abbot is counted with the calendar of the athletes.
+
+The third detail is the list of his practices: «vigilans, ieiunans, indefessus, sidule orans». Watching, fasting, praying constantly: the triad describes ascetic discipline as a daily exercise, and the adjective *indefessus*, tireless, is the one that best suits a runner. The text never calls Cumianus an athlete. It does not need to: the vocabulary does it for him.
+
+## 6. A king, a saint and a craftsman
+
+The second half of the inscription changes voice. The abbot is asked to act as «potens intercessor» for the «most glorious King Liutprand», who has decorated the tomb «with a precious stone, so that it may be manifest where the kind body is buried». The king presents himself as the donor, and makes his gift visible. This is not an isolated gesture. Around 730 Liutprand founded at Corteolona, one of his residences near Pavia, a church dedicated to Saint Anastasius the Persian, and the lost inscription that recorded the foundation presented him as a champion of the Catholic Church, in implicit contrast with the Byzantine emperor Leo III, whose stance on sacred images was then perceived in Italy as heterodox{{Dell’Acqua and Gantner (2019).}}. In the same years, in a political landscape dominated by the papacy, the exarch of Ravenna and the Lombard king in Pavia, Pope Gregory III refurbished the area of the confessio of Saint Peter’s with a set of magnificently carved columns{{Dell’Acqua and Gantner (2025).}}. Sculpture had become a language of authority again, and tombs and altars were among the places where that language was spoken. The slab of Cumianus belongs to this season.
+
+At the end of the text, however, a third name appears, and it is perhaps the most surprising: «fecit + Iohannes magister». A certain John signed the slab, and he called himself a *magister*, a master in his craft. Whether he was the sculptor or only the author of the text has been discussed; following Cassanelli, the ICCD entry prefers the first hypothesis, and I agree with it: *fecit* is the verb of the maker. If this is so, Iohannes was confident enough to place his name on the same stone as a saint and a king. Signatures of this kind are rare in early medieval Italy, and each of them deserves attention. In the same decades, at San Pietro in Valle near Ferentillo, the sculptor Ursus signed the slab commissioned by Duke Hildericus of Spoleto, calling himself «magester» and probably portraying himself, tool in hand{{On Ursus, Dell’Acqua (2004); on the attestations of craftsmen in early medieval Italian sculpture, Dell’Acqua (2000) and the other essays collected in Donato, ed. (2000).}}. Iohannes and Ursus remind us that behind the patronage of kings and dukes there were workshops, skills and a professional self-awareness that did not wait for the age of the cathedrals to declare itself{{On the place of craft in the monastic economy of the early medieval West, see Dell’Acqua (2011).}}.
+
+The stone thus holds three names, and three ways of claiming something. The saint, who no longer speaks, is the one who has won. The king asks for his intercession and makes sure everyone knows who paid for the precious stone. The craftsman signs. Each of them, in his own way, takes part in the contest.
+
+## 7. Who awards the crown
+
+The two examples I have considered are very different: a group of buildings commissioned in the shadow of imperial power, and a single tombstone carved for a monk on the slopes of the Apennines. Yet they share something essential. In both cases the forms and words of the games are used to make visible a victory that cannot be seen. The martyr has died, the monk has spent his life in silence: neither of them stood on a podium. It is the building, with its track turning around the relics, and the stone, with its Vergilian verse and its olympiads, that stage their triumph for those who come after.
+
+The athlete of God, in other words, needs spectators. The faithful who walked along the ambulatories of the circus basilicas, the monks who passed in front of Cumianus’ tomb, the king who wished his gift to be manifest: it is they who awarded the crown, and it is through what they built and carved that we can still see it. There is something familiar in all this for those of us who watch sport today. The podium, the medal, the anthem are not part of the race: they come afterwards, and they exist for the spectators as much as for the athletes. They transform an effort that lasted a few seconds, or a whole life, into an image that can be remembered. Early Christian and early medieval communities did something similar with stone, marble and glass, and they did it for athletes who had never competed in a stadium. Today the slab of Cumianus no longer stands behind an altar, but in a museum, and we look at it as works of art are looked at. We are, in a sense, its last spectators; and the way we read it is still part of the contest.
+
+The glass disk from which I started tells the same story in a few square centimetres. The apostles did not need the wreath. Those who looked at them did.
+
+@references
+
+@bibhead Sources
+
+Augustine (1900), *De cura pro mortuis gerenda*, ed. J. Zycha, Corpus Scriptorum Ecclesiasticorum Latinorum 41, Tempsky, Wien.
+
+Biblia Sacra iuxta Vulgatam versionem (2007), ed. R. Weber and R. Gryson, 5th ed., Deutsche Bibelgesellschaft, Stuttgart.
+
+Creed J.L., ed. and trans. (1984), *Lactantius, De mortibus persecutorum*, Clarendon Press, Oxford.
+
+Mynors R.A.B., ed. (1969), *P. Vergili Maronis Opera*, Oxford Classical Texts, Clarendon Press, Oxford.
+
+Schwartz E. and Mommsen T., eds. (1903-1909), *Eusebius Werke. Zweiter Band: Die Kirchengeschichte*, Die griechischen christlichen Schriftsteller 9, 1-3, J.C. Hinrichs, Leipzig.
+
+Waitz G., ed. (1878), *Pauli Historia Langobardorum*, in Bethmann L. and Waitz G., eds., *Scriptores rerum Langobardicarum et Italicarum saec. VI-IX*, Monumenta Germaniae Historica, Hahn, Hannover.
+
+@bibhead Studies
+
+Brown P. (1981), *The Cult of the Saints. Its Rise and Function in Latin Christianity*, University of Chicago Press, Chicago.
+
+Coon L.L. and Sexton K. (2020), “Racetrack to Salvation: The Circus, the Basilica, and the Martyr”, *Gesta*, 59, 1: 1-42.
+
+Dell’Acqua F. (2000), “Sulle attestazioni di artefici nella scultura altomedievale in Italia”, in Donato M.M., a cura di, *Le opere e i nomi. Prospettive sulla “firma” medievale*, Scuola Normale Superiore, Pisa: 15-19.
+
+Dell’Acqua F. (2004), “Ursus «magester»: uno scultore di età longobarda”, in Castelnuovo E., a cura di, *Artifex bonus. Il mondo dell’artista medievale*, Laterza, Roma-Bari: 20-25.
+
+Dell’Acqua F. (2011), “Craft Production in Early Western Monasticism: The Economy of God, the Economy of the Monk”, in Dey H. and Fentress E., eds., *Western Monasticism ante litteram. The Spaces of Monastic Observance in Late Antiquity and the Early Middle Ages*, Disciplina Monastica, Brepols, Turnhout: 297-322.
+
+Dell’Acqua F. (2020), *Iconophilia. Politics, Religion, Preaching, and the Use of Images in Rome, c.680-880*, Birmingham Byzantine and Ottoman Studies 27, Routledge, London-New York.
+
+Dell’Acqua F. (2023), “Invoking, Seeing, and Touching God during Byzantine Iconoclasm”, *Word & Image*, 39, 1: 74-87.
+
+Dell’Acqua F. and Gantner C. (2019), “Resenting Byzantine Iconoclasm. Its Early Reception in Italy through an Inscription from Corteolona”, *Medieval Worlds*, 9: 160-186.
+
+Dell’Acqua F. and Gantner C. (2025), “The Pergula of Pope Gregory III (731-741) in the Basilica of Saint Peter’s: Rome and Ravenna at the Onset of the Image Controversy”, *Römisches Jahrbuch der Bibliotheca Hertziana*, 48: 4-40.
+
+Destefanis E. (2002), *Il monastero di Bobbio in età altomedievale*, Ricerche di archeologia altomedievale e medievale 27, All’Insegna del Giglio, Firenze.
+
+Donato M.M., a cura di (2000), *Le opere e i nomi. Prospettive sulla “firma” medievale. In margine ai lavori per il Corpus delle opere firmate del Medioevo italiano*, Scuola Normale Superiore, Pisa.
+
+Duval Y. (1988), *Auprès des saints corps et âme. L’inhumation «ad sanctos» dans la chrétienté d’Orient et d’Occident du IIIe au VIIe siècle*, Études Augustiniennes, Paris.
+
+Everett N. (2003), *Literacy in Lombard Italy, c. 568-774*, Cambridge Studies in Medieval Life and Thought, Fourth Series 53, Cambridge University Press, Cambridge.
+
+Gray N. (1948), “The Paleography of Latin Inscriptions in the Eighth, Ninth and Tenth Centuries in Italy”, *Papers of the British School at Rome*, 16: 38-162.
+
+Hellström M. (2015), “On the Form and Function of Constantine’s Circiform Funerary Basilicas in Rome”, in Salzman M.R., Sághy M. and Lizzi Testa R., eds., *Pagans and Christians in Late Antique Rome. Conflict, Competition, and Coexistence in the Fourth Century*, Cambridge University Press, Cambridge: 291-313.
+
+Krautheimer R. (1960), “Mensa – Coemeterium – Martyrium”, *Cahiers archéologiques*, 11: 15-40.
+
+Krautheimer R. (1980), *Rome. Profile of a City, 312-1308*, Princeton University Press, Princeton.
+
+McKitterick R., Osborne J., Richardson C.M. and Story J., eds. (2013), *Old Saint Peter’s, Rome*, British School at Rome Studies, Cambridge University Press, Cambridge.
+
+Richter M. (2008), *Bobbio in the Early Middle Ages. The Abiding Legacy of Columbanus*, Four Courts Press, Dublin.

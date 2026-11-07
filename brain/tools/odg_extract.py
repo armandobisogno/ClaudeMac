@@ -6,7 +6,7 @@ Uso:
     python3 brain/tools/odg_extract.py [PDF]
 
 Se PDF non e' indicato, prende il .pdf piu' recente in
-"Direzione/Consigli e Giunte/" (esclusi i file *-sintesi-giunta.*).
+"Università/Direzione/Consigli e Giunte/" (esclusi i file *-sintesi-giunta.*).
 
 Non interpreta nulla: estrae il testo pagina per pagina e segnala i marcatori
 utili (Oggetto:, decreti d'urgenza da portare a ratifica, verbi deliberativi).
@@ -33,7 +33,7 @@ Struttura del JSON:
 import sys, os, json, re, glob, argparse
 
 REPO = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-ODG_DIR = os.path.join(REPO, "Direzione", "Consigli e Giunte")
+ODG_DIR = os.path.join(REPO, "Università", "Direzione", "Consigli e Giunte")
 
 RE_OGGETTO = re.compile(r"^\s*Oggetto\s*:\s*(.+)$", re.I | re.M)
 RE_RATIFICA = re.compile(r"portare a ratifica il presente provvedimento", re.I)

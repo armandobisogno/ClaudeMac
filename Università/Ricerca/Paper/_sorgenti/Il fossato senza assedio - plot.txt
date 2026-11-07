@@ -1,0 +1,54 @@
+@author Armando Bisogno (proposta)
+@title Il fossato senza assedio. Plot del paper
+
+## 0. Da dove si parte
+
+Destinazione: numero monografico *Il soggetto nei luoghi del capitale-potere contemporaneo* (a cura di E. Bazzanella e M. Spagnuolo), asse 3 («La macchina tecnologica e algoritmica») con sconfinamento nell’asse 5 («Governamentalità e soggettivazioni»: i possibili attriti contro la macchina). Lunghezza richiesta: 25.000-30.000 battute, circa dodici pagine secondo le norme della rivista (A4, margini 4 cm, TNR 12, interlinea 1,15). Citazioni nel testo tra caporali con (autore anno, p.), note rarissime, nessuna immagine.
+
+Il punto di partenza è un’immagine quasi di passaggio in Shoshana Zuboff, *Il capitalismo della sorveglianza* (cap. 3): «L’insondabilità e la segretezza di tali tecniche e operazioni sono il fossato attorno al castello, che non fa avvicinare nessuno a quel che succede all’interno». Nella Zuboff il fossato è un dato tecnico (opacità, segretezza, competenza). Il paper lo prende alla lettera, nel metodo tipico di *Macchine Pensanti*: un’immagine concreta, la risalita a un concetto classico, l’applicazione al presente, la domanda ribaltata in chiusura.
+
+Avvertenza: nel cap. 7 la Zuboff sostiene che il capitalismo della sorveglianza non è un contratto ma un «non-contratto», un’«esecuzione unilaterale» che «desocializza il contratto» (con Radin e Kim sui termini di servizio). La tesi va formulata tenendone conto, e anzi se ne rafforza (vedi § 2.3).
+
+## 1. Tesi
+
+Potere politico e potere digitale erigono lo stesso fossato, ma lo fondano su atti diversi. Il fossato politico esiste per concessione: chi sta fuori è la fonte del potere che sta dentro, e può in linea di principio revocare la delega attraversando il fossato. Il fossato digitale esiste per contratto, o meglio per ciò che del contratto sopravvive al «non-contratto» zuboffiano: un’unica clausola, il recesso. L’uscita contrattuale sostituisce la rivolta come sola forma disponibile di dissenso, e questa sostituzione anestetizza il diritto alla rivoluzione che il rapporto politico, per quanto ineguale, aveva sempre lasciato aperto come orizzonte estremo. Il potere digitale non abolisce il fossato: abolisce la possibilità di attraversarlo.
+
+Titolo: *Il fossato senza assedio. Delega, contratto e anestesia del dissenso nel capitalismo della sorveglianza*.
+
+## 2. Struttura
+
+### 2.0 Epigrafe, sommario, abstract
+
+Epigrafe (corpo 10, corsivo, a destra): il passo del fossato dalla Zuboff. In alternativa, firma del medievista: Agostino, *civ.* IV, 4, *remota itaque iustitia quid sunt regna nisi magna latrocinia?* (da decidere). Sommario e abstract ricavati dall’abstract già inviato; parole chiave: *capitalismo della sorveglianza, contratto, diritto di resistenza, exit/voice, anestesia*.
+
+### 2.1 Un’immagine presa sul serio (circa 3.000 battute)
+
+Il fossato della Zuboff come immagine da interrogare: chi lo ha scavato, e con quale titolo? Ogni fossato presuppone un rapporto tra chi sta dentro e chi sta fuori, e la qualità del fossato dipende dalla qualità di quel rapporto. Aggancio alla Call: non il potere in astratto, ma il dispositivo (Foucault) e la macchina (Deleuze-Guattari) come forma del legame che produce il soggetto. Dichiarazione del percorso.
+
+### 2.2 Il castello politico: un fossato per concessione (circa 5.000 battute)
+
+Locke, *Secondo trattato*: il potere politico come *trust*, incarico fiduciario revocabile; quando la fiducia è tradita il potere torna al popolo e resta l’«appello al cielo» (§§ 222-243). La Boétie, *Discorso sulla servitù volontaria*: il tiranno esiste perché lo si serve, «siate risoluti a non servire più». Anche il potere più autoritario resta strutturalmente esposto, perché chi sta fuori è la fonte di ciò che sta dentro. Il diritto di resistenza va letto come orizzonte estremo, non come pratica corrente: conta che esista come possibilità. Contrappunto, eventualmente in nota: il *Requerimiento* spagnolo citato dalla Zuboff, che rinominava ogni resistenza «rivolta» per legittimare la repressione. Anche il potere più brutale deve nominare la rivolta, e dunque la riconosce come possibile.
+
+### 2.3 Il castello digitale: un fossato per contratto (circa 5.500 battute)
+
+Dalla delega al *click-wrap*. Torsione sulla Zuboff: il contratto è svuotato (Varian e il «non-contratto»; Radin, *Boilerplate*; Kim, *Wrap Contracts*), ma ne sopravvive il guscio, e quel guscio fa due cose: legittima («hai accettato») e assegna un solo diritto, il recesso. Chi sta fuori non è la fonte del potere ma la sua materia prima, il surplus comportamentale: per questo il fossato non è più concesso, è subito. Da *Macchine Pensanti*, «La cura e il veleno» (Stiegler): la tecnica che, da protesi della nostra mancanza, diventa «dispositivo di sorveglianza e orientamento dei comportamenti».
+
+### 2.4 Uscita al posto della voce (circa 5.000 battute). Cuore teorico
+
+Hirschman, *Exit, Voice and Loyalty*: nel mercato il dissenso è l’uscita, nella *polis* è la voce; la rivolta è la voce portata al suo limite. Il potere digitale lascia soltanto l’uscita, e l’uscita individuale è irrilevante (un fornitore di dati in meno), mentre quella collettiva è impedita da effetti di rete e *lock-in*: uscire dalla piattaforma significa uscire dalla vita sociale («Insieme ma soli», Turkle). Deleuze, *Poscritto sulle società di controllo*: il marketing come strumento del controllo sociale, l’individuo diventato «dividuale». Confronto con Byung-Chul Han, *Perché oggi non è possibile una rivoluzione*: Han spiega l’assenza di rivolta con l’autosfruttamento, cioè con una psicologia; qui la si spiega con la forma giuridica del legame, cioè con una struttura.
+
+### 2.5 L’anestesia (circa 4.500 battute)
+
+Perché non ce ne accorgiamo. È la sezione in cui la newsletter pesa di più. «System Zero» (Riva): il filtro opera prima della coscienza, e il dissenso viene neutralizzato prima ancora di formarsi. «Neuroweb»: gli inneschi dopaminergici. «Senza gli altri»: l’IA che «droga la relazione». La Zuboff stessa descrive «la mancanza di una via d’uscita, di una opposizione [...] sostituiti da scoramento, rassegnazione e intontimento». L’anestesia non elimina il dolore: elimina la percezione che ci sia qualcosa contro cui insorgere. Non è repressione, è assenza di un avversario.
+
+### 2.6 La tecnologia rivela, non produce (circa 4.000 battute). Chiusura
+
+Il ritornello di *Macchine Pensanti*: la tecnologia non produce problemi antropologici, al massimo li rivela. Il fossato senza assedio mostra che il cittadino era già diventato cliente (Crouch, *Postdemocrazia*; Brown, *Undoing the Demos*). La domanda si ribalta: non come assaltare il castello, ma come riportare il rapporto dal contratto alla delega, dal recesso alla voce. Tre direzioni: regolare le infrastrutture come servizi pubblici («System Zero»); l’alfabetizzazione critica come vera cittadinanza («Cittadinanza digitale»); forme collettive di voce (GDPR, *class action*, *data unions*). Possibile chiusa sull’*ermenetica*: rispondere di ciò che si usa è la prima forma di voce.
+
+## 3. Bibliografia di lavoro
+
+Zuboff, *Il capitalismo della sorveglianza* (Luiss University Press); Locke, *Secondo trattato sul governo*; La Boétie, *Discorso sulla servitù volontaria*; Hirschman, *Exit, Voice and Loyalty*; Deleuze, *Poscritto sulle società di controllo*; Foucault, *Sorvegliare e punire* e testi sul dispositivo; Deleuze-Guattari, *L’anti-Edipo*; Han, *Psicopolitica* e *Perché oggi non è possibile una rivoluzione*; Radin, *Boilerplate*; Kim, *Wrap Contracts*; Stiegler, *La technique et le temps*; Riva, *Invisible Architectures of Thought* (2025); Crouch, *Postdemocrazia*; Brown, *Undoing the Demos*; Turkle, *Insieme ma soli*. Sitografia: i pezzi di *Macchine Pensanti* citati, con link abbreviato e data di verifica, come chiedono le norme.
+
+## 4. Note tecniche
+
+Le pagine della Zuboff vanno prese dalla copia cartacea: l’epub in DdP non ha numerazione, e le norme chiedono (autore anno, p.). Nel testo metterò segnaposto «p. ___». Il .docx finale seguirà le norme della rivista, non le norme Nutrix.

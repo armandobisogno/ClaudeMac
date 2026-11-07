@@ -2,12 +2,12 @@
 """Aggiornamenti di armandobisogno.it tramite il plugin «Armando Deploy».
 
 Uso:
-    python3 Sito/deploy.py stato               # versione di WP/PHP, tema attivo, plugin
-    python3 Sito/deploy.py tema                # impacchetta Sito/tema/armando-bisogno e lo carica (non lo attiva)
-    python3 Sito/deploy.py anteprima           # crea il link di anteprima privata del tema (3 giorni)
-    python3 Sito/deploy.py attiva              # attiva il tema armando-bisogno
-    python3 Sito/deploy.py plugin FILE.zip     # installa/aggiorna un plugin da zip
-    python3 Sito/deploy.py svuota              # svuota la cache di Aruba
+    python3 Web/Sito/deploy.py stato               # versione di WP/PHP, tema attivo, plugin
+    python3 Web/Sito/deploy.py tema                # impacchetta Web/Sito/tema/armando-bisogno e lo carica (non lo attiva)
+    python3 Web/Sito/deploy.py anteprima           # crea il link di anteprima privata del tema (3 giorni)
+    python3 Web/Sito/deploy.py attiva              # attiva il tema armando-bisogno
+    python3 Web/Sito/deploy.py plugin FILE.zip     # installa/aggiorna un plugin da zip
+    python3 Web/Sito/deploy.py svuota              # svuota la cache di Aruba
 
 Credenziali (password applicazione di un utente amministratore), da variabili d'ambiente:
     AB_WP_USER / AB_WP_APP_PASSWORD, AB_WP_URL (predefinito https://www.armandobisogno.it)

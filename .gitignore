@@ -6,33 +6,65 @@ __pycache__/
 brain/tools/mp_state.local.json
 
 # epub dei romanzi: opere pubblicate, diritti ceduti — restano solo in locale
-Romanzi/
+/Scrittura/Romanzi/
 
-# produzione scientifica: PDF di articoli/monografie con diritti editoriali —
-# nel repo va solo il lavoro derivato (digest, note) in brain/ricerca/
-Ricerca/
+# Ricerca: su GitHub va solo il lavoro proprio di Armando (testi, sorgenti, script);
+# restano fuori, per diritti editoriali e peso: PDF (monografie, saggi editi, libri altrui),
+# Biblioteca/, Monografie/, Calonghi, immagini, slide, audio/video, testi del corpus di
+# Agostino (le traduzioni NBA hanno diritti). brain/ricerca/ (digest, cataloghi) va su GitHub.
+/Università/Ricerca/*
+!/Università/Ricerca/Ermenetica/
+!/Università/Ricerca/Norme editoriali.doc
+# Paper, Lavori in corso, Relazioni: solo testi e sorgenti
+!/Università/Ricerca/Paper/
+!/Università/Ricerca/Lavori in corso/
+!/Università/Ricerca/Relazioni/
+/Università/Ricerca/Paper/**
+/Università/Ricerca/Lavori in corso/**
+/Università/Ricerca/Relazioni/**
+!/Università/Ricerca/Paper/**/
+!/Università/Ricerca/Lavori in corso/**/
+!/Università/Ricerca/Relazioni/**/
+!/Università/Ricerca/Paper/**/*.docx
+!/Università/Ricerca/Paper/**/*.txt
+!/Università/Ricerca/Paper/**/*.py
+!/Università/Ricerca/Paper/**/*.md
+!/Università/Ricerca/Lavori in corso/**/*.docx
+!/Università/Ricerca/Lavori in corso/**/*.md
+!/Università/Ricerca/Lavori in corso/**/*.txt
+!/Università/Ricerca/Relazioni/**/*.docx
+!/Università/Ricerca/Relazioni/**/*.md
+!/Università/Ricerca/Relazioni/**/*.txt
+# corpus di Agostino: solo gli script e l'app Scrinium (senza i dati)
+!/Università/Ricerca/Agostino strumenti/
+/Università/Ricerca/Agostino strumenti/*
+!/Università/Ricerca/Agostino strumenti/Agostino testi/
+/Università/Ricerca/Agostino strumenti/Agostino testi/*
+!/Università/Ricerca/Agostino strumenti/Agostino testi/_script/
+!/Università/Ricerca/Agostino strumenti/Agostino testi/_web/
+/Università/Ricerca/Agostino strumenti/Agostino testi/_web/data/
 
 # lavori in corso: PDF/DOCX non versionati
 
 # plugin WordPress Phitness Core (codice): non nel second brain
-Phitness/
+/Web/Phitness/
 
 # direzione dipartimento: solo locale (persone, tensioni, questioni di personale)
 brain/direzione/
 
 # dossier di Consigli e Giunte + sintesi: nomi, personale, chiamate — solo locale
-Direzione/
+/Università/Direzione/
 
 # plugin WordPress Rassegna (codice + zip): non nel second brain
 /Rassegna/
 
 
 # Sito: pacchetti zip rigenerabili
-/Sito/tema/*.zip
-/Sito/ab-deploy.zip
+/Web/Sito/tema/*.zip
+/Web/Sito/ab-deploy.zip
 
 # Dati sanitari: restano solo in Dropbox, mai su GitHub
-Documenti personali e ufficiali/Salute/
+/Personale/Salute/
 
 # Tirocini (PFO): dati degli studenti — solo locale
 Documenti di passaggio/Tirocini/
@@ -51,8 +83,8 @@ Documenti di passaggio/Tirocini/
 Documenti di passaggio/
 
 # Tesi e lavori di studenti/dottorandi: inediti altrui — solo locale
-Didattica/Madaio/
-Didattica/Tesi settembre/
+/Università/Didattica/Madaio/
+/Università/Didattica/Tesi settembre/
 
 # Memoria di Claude: sincronizzata da Dropbox tra i Mac, fuori da GitHub (contiene note di direzione/salute)
 brain/memoria/

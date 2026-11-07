@@ -1,0 +1,1265 @@
+<title>Scrinium Augustini</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+:root{
+  --bg:#ECEFF3; --panel:#FFFFFF; --panel2:#F6F7FA; --ink:#1A1F2B; --muted:#5A6376; --line:#D4D9E2;
+  --accent:#2B4A9B; --accent-ink:#FFFFFF; --soft:#E2E8F6; --hl:#F3DC8F; --hl-ink:#1A1F2B;
+  --rubric:#9C2E28; --ok:#2E7D4F; --warn:#9A6A00; --bar:#2B4A9B; --bar2:#9FB2E3;
+  --serif:"EB Garamond", Garamond, "Times New Roman", serif;
+  --sans:"IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --mono:"IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace;
+  --caps:"Cinzel", "Trajan Pro", var(--serif);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#10131A; --panel:#171B24; --panel2:#1C212C; --ink:#E5E8EF; --muted:#9AA3B6; --line:#2B3141;
+    --accent:#93A9EE; --accent-ink:#0D1120; --soft:#1F2842; --hl:#6A5418; --hl-ink:#FFF4D6;
+    --rubric:#E88F84; --ok:#6FCB94; --warn:#E3B34F; --bar:#93A9EE; --bar2:#3E4E80; color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#10131A; --panel:#171B24; --panel2:#1C212C; --ink:#E5E8EF; --muted:#9AA3B6; --line:#2B3141;
+  --accent:#93A9EE; --accent-ink:#0D1120; --soft:#1F2842; --hl:#6A5418; --hl-ink:#FFF4D6;
+  --rubric:#E88F84; --ok:#6FCB94; --warn:#E3B34F; --bar:#93A9EE; --bar2:#3E4E80; color-scheme:dark;
+}
+*{box-sizing:border-box}
+html,body{max-width:100%;overflow-x:clip}
+.opts .hint{overflow-wrap:anywhere}
+body{background:var(--bg);color:var(--ink);font:14px/1.5 var(--sans);margin:0}
+button,input,select,textarea{font:inherit;color:inherit}
+button{cursor:pointer}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.wrap{max-width:1320px;margin:0 auto;padding-inline:16px}
+mark{background:var(--hl);color:var(--hl-ink);border-radius:2px;padding:0 1px}
+
+/* testata */
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--panel);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;gap:18px;flex-wrap:wrap;padding-block:10px}
+.brand{display:flex;flex-direction:column;line-height:1.1;margin-right:auto}
+.brand b{font:600 20px/1.1 var(--caps);letter-spacing:.08em}
+.brand small{color:var(--muted);font-size:12px;letter-spacing:.02em}
+nav.tabs{display:flex;gap:2px;flex-wrap:wrap}
+nav.tabs button{border:0;background:none;padding:7px 12px;border-radius:6px;color:var(--muted);font-weight:500}
+nav.tabs button[aria-selected="true"]{background:var(--soft);color:var(--accent)}
+.pill{font-size:12px;color:var(--muted);background:var(--panel2);border:1px solid var(--line);border-radius:999px;padding:3px 10px;white-space:nowrap;font-variant-numeric:tabular-nums}
+.pill.busy{color:var(--accent);border-color:var(--accent)}
+
+main{padding-block:18px 60px}
+.view[hidden]{display:none}
+
+/* barra di ricerca */
+.qbar{display:flex;gap:8px;align-items:stretch}
+.qbar input{flex:1;min-width:0;font:500 16px/1.4 var(--mono);padding:11px 14px;border:1px solid var(--line);border-radius:8px;background:var(--panel)}
+.btn{border:1px solid var(--line);background:var(--panel);border-radius:7px;padding:7px 12px;font-weight:500}
+.btn:hover{border-color:var(--accent)}
+.btn.primary{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+.btn.small{padding:4px 9px;font-size:13px}
+.btn:disabled{opacity:.5;cursor:default}
+.linkish{border:0;background:none;color:var(--accent);padding:0;font-weight:500}
+.opts{display:flex;gap:10px 18px;flex-wrap:wrap;align-items:center;margin-top:10px}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:7px;overflow:hidden;background:var(--panel)}
+.seg button{border:0;background:none;padding:6px 11px;color:var(--muted);font-weight:500}
+.seg button+button{border-left:1px solid var(--line)}
+.seg button[aria-pressed="true"]{background:var(--accent);color:var(--accent-ink)}
+label.chk{display:inline-flex;gap:6px;align-items:center;color:var(--muted);user-select:none}
+.hint{color:var(--muted);font-size:12.5px}
+.hist{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px}
+.hist button{font:12px var(--mono);border:1px dashed var(--line);background:none;border-radius:6px;padding:2px 8px;color:var(--muted);max-width:280px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+
+.layout{display:grid;grid-template-columns:270px minmax(0,1fr);gap:18px;margin-top:16px;align-items:start}
+@media (max-width:880px){.layout{grid-template-columns:1fr}}
+aside.filters{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:14px;display:grid;gap:16px;position:sticky;top:calc(env(safe-area-inset-top,0px) + 76px)}
+@media (max-width:880px){aside.filters{position:static}}
+aside h4{margin:0 0 6px;font:600 11px/1 var(--sans);letter-spacing:.09em;text-transform:uppercase;color:var(--muted)}
+.fgrp{display:grid;gap:5px}
+.years{display:flex;gap:6px;align-items:center}
+.years input{width:72px;padding:5px 7px;border:1px solid var(--line);border-radius:6px;background:var(--panel2);font-variant-numeric:tabular-nums}
+aside select,aside .docpick input{width:100%;padding:6px 8px;border:1px solid var(--line);border-radius:6px;background:var(--panel2)}
+.chips{display:flex;flex-wrap:wrap;gap:5px}
+.chip{display:inline-flex;gap:5px;align-items:center;background:var(--soft);color:var(--accent);border-radius:999px;padding:2px 4px 2px 9px;font-size:12.5px}
+.chip button{border:0;background:none;color:inherit;padding:0 4px;font-size:14px;line-height:1}
+.count{color:var(--muted);font-size:12px;font-variant-numeric:tabular-nums;margin-left:auto}
+
+/* suggerimenti (picker) */
+.docpick{position:relative}
+.sugg{position:absolute;left:0;right:0;top:100%;z-index:30;background:var(--panel);border:1px solid var(--line);border-radius:8px;box-shadow:0 8px 24px rgba(0,0,0,.18);max-height:320px;overflow:auto;margin-top:4px}
+.sugg button{display:flex;gap:8px;width:100%;text-align:left;border:0;background:none;padding:6px 10px;align-items:baseline}
+.sugg button:hover,.sugg button.on{background:var(--soft)}
+.sugg .sg{font:12px var(--mono);color:var(--rubric);min-width:74px}
+.sugg .tt{flex:1}
+.sugg .dt{font-size:11.5px;color:var(--muted);white-space:nowrap}
+
+/* risultati */
+.summary{display:flex;gap:10px 16px;align-items:center;flex-wrap:wrap;padding-bottom:10px;border-bottom:1px solid var(--line)}
+.summary .big{font:500 15px var(--sans)}
+.summary .big b{font-variant-numeric:tabular-nums}
+.summary .spacer{flex:1}
+.subtabs{display:flex;gap:4px;flex-wrap:wrap;margin:12px 0}
+.subtabs button{border:1px solid transparent;background:none;padding:5px 11px;border-radius:6px;color:var(--muted);font-weight:500}
+.subtabs button[aria-selected="true"]{border-color:var(--line);background:var(--panel);color:var(--ink)}
+.nl{display:flex;gap:12px;align-items:flex-start;background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:8px;padding:10px 12px;margin-bottom:12px}
+.nlk{font:600 10.5px var(--sans);letter-spacing:.1em;text-transform:uppercase;color:var(--accent);padding-top:3px;white-space:nowrap}
+.nl>div{flex:1;min-width:0}
+.nlbody{display:grid;gap:6px}
+.nlq{font:500 13.5px var(--mono);background:var(--soft);color:var(--ink);padding:2px 6px;border-radius:5px;overflow-wrap:anywhere}
+.nlacts{display:flex;gap:8px;flex-wrap:wrap}
+.err{background:color-mix(in srgb,var(--rubric) 12%,var(--panel));border:1px solid color-mix(in srgb,var(--rubric) 40%,var(--line));color:var(--ink);padding:10px 12px;border-radius:8px}
+.empty{color:var(--muted);padding:30px 0;text-align:center}
+
+.hit{background:var(--panel);border:1px solid var(--line);border-radius:10px;margin-bottom:10px}
+.hit header{display:flex;gap:10px;align-items:baseline;flex-wrap:wrap;padding:9px 14px;border-bottom:1px solid var(--line)}
+.cite{font:500 13.5px var(--mono);color:var(--rubric);border:0;background:none;padding:0}
+.cite:hover{text-decoration:underline}
+.work{color:var(--muted);font-size:12.5px}
+.work i{font-family:var(--serif);font-size:14px;color:var(--ink)}
+.hit header .acts{margin-left:auto;display:flex;gap:6px}
+.pair{display:grid;grid-template-columns:1fr 1fr}
+.pair.one{grid-template-columns:1fr}
+.pair>div{padding:10px 14px 12px;font:17px/1.55 var(--serif);min-width:0;overflow-wrap:anywhere}
+.pair>div+div{border-left:1px solid var(--line)}
+.pair.one>div+div{border-left:0;border-top:1px solid var(--line)}
+@media (max-width:700px){.pair{grid-template-columns:1fr}.pair>div+div{border-left:0;border-top:1px solid var(--line)}}
+.pair .lg{display:block;font:600 10.5px var(--sans);letter-spacing:.1em;color:var(--muted);margin-bottom:3px}
+.more{border:0;background:none;color:var(--accent);font:500 12.5px var(--sans);padding:0 0 0 4px}
+sup.nr{font:600 10px var(--sans);color:var(--accent);cursor:pointer;padding:0 1px}
+.notes{border-top:1px dashed var(--line);padding:8px 14px;font-size:13px;color:var(--muted);display:grid;gap:3px}
+.notes b{color:var(--accent);font-weight:600;margin-right:4px}
+
+.kwic{width:100%;border-collapse:collapse;font:15px/1.4 var(--serif)}
+.kwicbox{overflow-x:auto;background:var(--panel);border:1px solid var(--line);border-radius:10px}
+.kwic td{padding:4px 8px;border-bottom:1px solid var(--line);white-space:nowrap;vertical-align:baseline}
+.kwic td.l{text-align:right;max-width:38vw;overflow:hidden;text-overflow:ellipsis;direction:rtl}
+.kwic td.l span{direction:ltr;unicode-bidi:plaintext}
+.kwic td.m{font-weight:600;color:var(--hl-ink);background:var(--hl);text-align:center}
+.kwic td.r{max-width:38vw;overflow:hidden;text-overflow:ellipsis}
+.kwic td.c{font:12px var(--mono);color:var(--rubric)}
+.kwic tr:hover td{background:var(--panel2)}
+.kwic tr:hover td.m{background:var(--hl)}
+
+table.data{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}
+table.data th{text-align:left;font:600 11px var(--sans);letter-spacing:.07em;text-transform:uppercase;color:var(--muted);padding:6px 8px;border-bottom:1px solid var(--line)}
+table.data td{padding:5px 8px;border-bottom:1px solid var(--line)}
+table.data td.n{text-align:right}
+table.data th.n{text-align:right}
+.tbox{background:var(--panel);border:1px solid var(--line);border-radius:10px;overflow-x:auto}
+.mini{height:8px;background:var(--bar);border-radius:2px;min-width:1px}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:14px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:14px}
+.card h3{margin:0 0 8px;font:600 13px var(--sans)}
+.chart svg{width:100%;height:auto;display:block}
+.chart text{fill:var(--muted);font:11px var(--sans)}
+.chart .lbl{fill:var(--ink);font-weight:500}
+.toolbar{display:flex;gap:10px 14px;flex-wrap:wrap;align-items:center;margin-bottom:10px}
+.toolbar select{padding:5px 7px;border:1px solid var(--line);border-radius:6px;background:var(--panel)}
+
+/* lettore */
+.reader-head{display:grid;gap:10px;background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:14px}
+.reader-head h2{margin:0;font:500 26px/1.15 var(--serif);text-wrap:balance}
+.reader-head .meta{color:var(--muted);font-size:13px}
+.rtext{margin-top:14px;background:var(--panel);border:1px solid var(--line);border-radius:10px}
+.rpar{display:grid;grid-template-columns:78px 1fr 1fr;border-bottom:1px solid var(--line)}
+.rtext.la-only .rpar,.rtext.it-only .rpar{grid-template-columns:78px 1fr}
+.rtext.la-only .rpar .it,.rtext.it-only .rpar .la{display:none}
+.rpar .rf{font:12px var(--mono);color:var(--rubric);padding:12px 8px 0 12px;border:0;background:none;text-align:left;align-self:start}
+.rpar .la,.rpar .it{padding:10px 14px;font:17px/1.6 var(--serif);min-width:0;overflow-wrap:anywhere}
+.rpar .it{border-left:1px solid var(--line)}
+.rtext.it-only .rpar .it{border-left:0}
+.rpar.target{background:color-mix(in srgb,var(--hl) 22%,var(--panel))}
+.rpar .pnotes{grid-column:2/-1;padding:0 14px 10px;font-size:13px;color:var(--muted);display:grid;gap:2px}
+.rh2{padding:18px 14px 8px;font:600 15px var(--caps);letter-spacing:.06em;border-bottom:1px solid var(--line);color:var(--accent)}
+.rh4{padding:10px 14px 4px 90px;font:italic 15px var(--serif);color:var(--muted);border-bottom:1px dashed var(--line)}
+@media (max-width:700px){
+  .rpar,.rtext.la-only .rpar,.rtext.it-only .rpar{grid-template-columns:1fr}
+  .rpar .rf{padding:10px 14px 0}
+  .rpar .it{border-left:0;border-top:1px dashed var(--line)}
+  .rpar .pnotes{grid-column:1}
+  .rh4{padding-left:14px}
+}
+.loadmore{display:flex;justify-content:center;padding:10px}
+
+/* lessico */
+.lexgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:2px 14px}
+.lexgrid label{display:flex;gap:8px;align-items:baseline;padding:3px 4px;border-radius:5px;font:16px var(--serif)}
+.lexgrid label:hover{background:var(--panel2)}
+.lexgrid .n{margin-left:auto;font:12px var(--sans);color:var(--muted);font-variant-numeric:tabular-nums}
+
+/* assistente */
+.chat{display:grid;gap:14px;max-width:900px}
+.msg{border-radius:10px;padding:12px 16px;border:1px solid var(--line);background:var(--panel)}
+.msg.me{background:var(--soft);border-color:transparent;justify-self:end;max-width:85%;white-space:pre-wrap}
+.msg.ai{font:16.5px/1.6 var(--serif)}
+.msg.ai h1,.msg.ai h2,.msg.ai h3{font:600 15px var(--sans);margin:14px 0 6px}
+.msg.ai p{margin:0 0 10px}
+.msg.ai blockquote{margin:6px 0 10px;padding:4px 12px;border-left:3px solid var(--bar2);color:var(--ink)}
+.msg.ai ul,.msg.ai ol{margin:0 0 10px;padding-left:22px}
+.msg.ai code{font:13px var(--mono);background:var(--panel2);padding:1px 4px;border-radius:4px}
+.cchip{font:500 12.5px var(--mono);color:var(--rubric);background:color-mix(in srgb,var(--rubric) 9%,var(--panel));border:1px solid color-mix(in srgb,var(--rubric) 30%,var(--line));border-radius:5px;padding:0 5px;margin:0 1px;cursor:pointer}
+.activity{font:12px var(--mono);color:var(--muted);display:grid;gap:2px;margin-bottom:8px}
+.activity:empty{display:none}
+.composer{display:grid;gap:8px;max-width:900px;margin-top:14px;position:sticky;bottom:0;background:var(--bg);padding-block:10px calc(10px + env(safe-area-inset-bottom,0px))}
+.composer textarea{width:100%;min-height:84px;resize:vertical;padding:10px 12px;border:1px solid var(--line);border-radius:8px;background:var(--panel);font:15px/1.5 var(--sans)}
+.composer .row{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.sugglist{display:flex;flex-wrap:wrap;gap:8px}
+.sugglist button{border:1px solid var(--line);background:var(--panel);border-radius:8px;padding:7px 11px;text-align:left;font-size:13.5px;max-width:420px}
+
+/* guida */
+.guide{display:grid;gap:14px;max-width:980px}
+.guide table{width:100%;border-collapse:collapse}
+.guide td,.guide th{padding:7px 10px;border-bottom:1px solid var(--line);vertical-align:top;text-align:left}
+.guide th{font:600 11px var(--sans);letter-spacing:.07em;text-transform:uppercase;color:var(--muted)}
+.guide code,.ex{font:13.5px var(--mono)}
+.ex{border:0;background:var(--soft);color:var(--accent);border-radius:5px;padding:1px 6px;text-align:left}
+.guide h2{font:600 17px var(--sans);margin:6px 0}
+.guide p{margin:0 0 8px;max-width:75ch}
+.toast{position:fixed;left:50%;bottom:calc(20px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--ink);color:var(--bg);padding:8px 14px;border-radius:8px;font-size:13px;z-index:50}
+@media (prefers-reduced-motion:no-preference){.hit,.msg{animation:fade .18s ease-out}@keyframes fade{from{opacity:.4}to{opacity:1}}}
+</style>
+
+<header class="top">
+  <div class="wrap">
+    <div class="brand"><b>SCRINIUM AUGUSTINI</b><small>Opere, sermoni e lettere · latino e italiano (NBA)</small></div>
+    <nav class="tabs" role="tablist">
+      <button role="tab" data-view="search" aria-selected="true">Ricerca</button>
+      <button role="tab" data-view="read" aria-selected="false">Lettura</button>
+      <button role="tab" data-view="lex" aria-selected="false">Lessico</button>
+      <button role="tab" data-view="ai" aria-selected="false">Assistente</button>
+      <button role="tab" data-view="help" aria-selected="false">Guida</button>
+    </nav>
+    <span class="pill" id="status">Avvio…</span>
+  </div>
+</header>
+
+<main class="wrap">
+<!-- RICERCA -->
+<section class="view" id="v-search">
+  <form class="qbar" id="qform" autocomplete="off">
+    <input id="q" type="search" spellcheck="false" aria-label="Interrogazione" placeholder='Fai una domanda (In quali passi Agostino tratta della veritas di Dio?) o scrivi una query: memori* NEAR/6 tempor*'>
+    <button class="btn primary" id="go" type="submit">Cerca</button>
+  </form>
+  <div class="opts">
+    <div class="seg" id="qmode" role="group" aria-label="Tipo di richiesta" title="Auto: riconosce da sé se hai scritto una domanda o una query">
+      <button type="button" data-v="auto" aria-pressed="true">Auto</button>
+      <button type="button" data-v="nl" aria-pressed="false">Domanda</button>
+      <button type="button" data-v="q" aria-pressed="false">Query</button>
+    </div>
+    <div class="seg" id="scope" role="group" aria-label="Lingua">
+      <button type="button" data-v="la" aria-pressed="true">Latino</button>
+      <button type="button" data-v="it" aria-pressed="false">Italiano</button>
+      <button type="button" data-v="both" aria-pressed="false">Lat + Ita</button>
+      <button type="button" data-v="nt" aria-pressed="false">Note</button>
+    </div>
+    <label class="chk" title="Latino: ae/oe/e, i/j, u/v, accenti. Italiano: accenti e apostrofi."><input type="checkbox" id="flex" checked> Grafia flessibile</label>
+    <label class="chk"><input type="checkbox" id="cs"> Maiuscole esatte</label>
+    <span class="hint">Operatori: <code>|</code> OR · <code>-</code> escludi · <code>"…"</code> frase · <code>NEAR/n</code> · <code>*</code> · <code>/regex/</code> · <button class="linkish" type="button" data-goto="help">guida</button></span>
+  </div>
+  <div class="hist" id="hist"></div>
+
+  <div class="layout">
+    <aside class="filters" aria-label="Filtri">
+      <div class="fgrp">
+        <h4>Corpus</h4>
+        <label class="chk"><input type="checkbox" id="cO" checked> Opere <span class="count" id="nO"></span></label>
+        <label class="chk"><input type="checkbox" id="cS" checked> Sermoni <span class="count" id="nS"></span></label>
+        <label class="chk"><input type="checkbox" id="cE" checked> Lettere <span class="count" id="nE"></span></label>
+        <label class="chk" title="Esclude le lettere scritte ad Agostino o tra terzi"><input type="checkbox" id="aug" checked> Solo lettere di Agostino</label>
+      </div>
+      <div class="fgrp">
+        <h4>Periodo</h4>
+        <div class="years"><input id="y0" type="number" min="350" max="431" value="386" aria-label="Dal"> – <input id="y1" type="number" min="350" max="431" value="430" aria-label="Al"></div>
+        <label class="chk"><input type="checkbox" id="und" checked> Includi i testi non datati</label>
+        <div class="chips" id="eras"></div>
+      </div>
+      <div class="fgrp">
+        <h4>Controversia</h4>
+        <select id="tag" aria-label="Controversia">
+          <option value="">Tutte le opere</option>
+          <option value="antimanichea">Antimanichee</option>
+          <option value="antidonatista">Antidonatiste</option>
+          <option value="antipelagiana">Antipelagiane</option>
+          <option value="antiariana">Antiariane</option>
+        </select>
+        <span class="hint">Si applica alle sole opere.</span>
+      </div>
+      <div class="fgrp">
+        <h4>Solo questi testi</h4>
+        <div class="docpick"><input id="fdoc" placeholder="conf., De Trinitate, s. 52, ep. 147…" aria-label="Aggiungi un testo al filtro"><div class="sugg" id="fdocS" hidden></div></div>
+        <div class="chips" id="fdocs"></div>
+      </div>
+      <button class="btn small" type="button" id="reset">Azzera i filtri</button>
+    </aside>
+
+    <div id="results">
+      <div id="nlbar"></div>
+      <div class="summary" id="summary"></div>
+      <div class="subtabs" id="subtabs" role="tablist">
+        <button data-sub="passi" aria-selected="true">Passi</button>
+        <button data-sub="kwic" aria-selected="false">Concordanza</button>
+        <button data-sub="dist" aria-selected="false">Distribuzione</button>
+        <button data-sub="forms" aria-selected="false">Forme</button>
+        <button data-sub="coll" aria-selected="false">Collocazioni</button>
+      </div>
+      <div id="pane"></div>
+    </div>
+  </div>
+</section>
+
+<!-- LETTURA -->
+<section class="view" id="v-read" hidden>
+  <div class="reader-head">
+    <div class="docpick"><input id="rdoc" placeholder="Apri un testo: titolo, sigla, numero di sermone o lettera…" aria-label="Apri un testo"><div class="sugg" id="rdocS" hidden></div></div>
+    <div id="rinfo"></div>
+  </div>
+  <div class="rtext" id="rtext"></div>
+</section>
+
+<!-- LESSICO -->
+<section class="view" id="v-lex" hidden>
+  <div class="card" style="display:grid;gap:12px">
+    <div><h3 style="margin:0 0 4px;font:600 16px var(--sans)">Indice delle forme</h3>
+    <p class="hint" style="margin:0">Elenca le forme attestate che cominciano così (o che rispondono a un modello con <code>*</code>, <code>?</code>, <code>/regex/</code>). Seleziona quelle di un lemma e cercale tutte insieme.</p></div>
+    <form class="qbar" id="lexform" autocomplete="off">
+      <input id="lexq" spellcheck="false" placeholder="es. memor  ·  *amor*  ·  /fid(es|ei|em|e)/" aria-label="Modello">
+      <div class="seg" id="lexlang"><button type="button" data-v="la" aria-pressed="true">Latino</button><button type="button" data-v="it" aria-pressed="false">Italiano</button></div>
+      <button class="btn primary" type="submit">Elenca</button>
+    </form>
+    <div class="row" style="display:flex;gap:8px;flex-wrap:wrap;align-items:center" id="lexai">
+      <input id="lemma" placeholder="Lemma, es. fero, memoria, uolo" style="padding:7px 10px;border:1px solid var(--line);border-radius:7px;background:var(--panel2);min-width:220px">
+      <button class="btn" type="button" id="lemmaBtn">Chiedi a Claude le forme del lemma</button>
+      <span class="hint" id="lemmaHint">Claude sceglie dall’elenco le forme che appartengono al lemma.</span>
+    </div>
+  </div>
+  <div id="lexout" style="margin-top:14px"></div>
+</section>
+
+<!-- ASSISTENTE -->
+<section class="view" id="v-ai" hidden>
+  <div class="chat" id="chat"></div>
+  <div class="composer">
+    <textarea id="aiq" placeholder="Chiedi qualcosa sui testi: Claude cerca nel corpus, legge i passi e risponde citando."></textarea>
+    <div class="row">
+      <button class="btn primary" id="aiSend" type="button">Chiedi</button>
+      <button class="btn" id="aiStop" type="button" hidden>Ferma</button>
+      <label class="chk">Modello
+        <select id="aiTier" style="padding:4px 6px;border:1px solid var(--line);border-radius:6px;background:var(--panel)">
+          <option value="default">Standard</option>
+          <option value="complex">Approfondito (più lento)</option>
+        </select></label>
+      <button class="linkish" id="aiNew" type="button">Nuova conversazione</button>
+      <span class="hint" id="aiNote"></span>
+    </div>
+  </div>
+</section>
+
+<!-- GUIDA -->
+<section class="view" id="v-help" hidden>
+  <div class="guide" id="guide"></div>
+</section>
+</main>
+
+<script>
+'use strict';
+const $ = (s, r = document) => r.querySelector(s);
+const $$ = (s, r = document) => [...r.querySelectorAll(s)];
+const esc = (s) => String(s ?? '').replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+const fmt = (n) => Number(n).toLocaleString('it-IT');
+const cUse = (n) => (window.claude && typeof window.claude.use === 'function' ? window.claude.use(n).catch(() => null) : Promise.resolve(null));
+const store = {
+  get(k, d) { try { const v = localStorage.getItem('scr:' + k); return v == null ? d : JSON.parse(v); } catch (e) { return d; } },
+  set(k, v) { try { localStorage.setItem('scr:' + k, JSON.stringify(v)); } catch (e) {} },
+};
+function toast(t) { const d = document.createElement('div'); d.className = 'toast'; d.textContent = t; document.body.append(d); setTimeout(() => d.remove(), 2200); }
+async function copy(text) {
+  try { await navigator.clipboard.writeText(text); toast('Copiato negli appunti'); }
+  catch (e) {
+    const ta = document.createElement('textarea'); ta.value = text; document.body.append(ta); ta.select();
+    try { document.execCommand('copy'); toast('Copiato negli appunti'); } catch (e2) { toast('Copia non riuscita: seleziona il testo a mano'); }
+    ta.remove();
+  }
+}
+
+// ---------- worker ----------
+const W = new Worker('worker.js');
+let rid = 0; const waits = new Map(); const loading = new Map();
+W.onmessage = (e) => {
+  const m = e.data;
+  if (m.t === 'reply') { const w = waits.get(m.id); waits.delete(m.id); if (w) m.ok ? w.res(m.result) : w.rej(new Error(m.error)); }
+  else if (m.t === 'progress') { loading.set(m.label, m); showStatus(); }
+  else if (m.t === 'loaded') { for (const [k] of loading) if (k.startsWith(labelOf(m.key))) loading.delete(k); showStatus(); }
+};
+W.onerror = (e) => { $('#status').textContent = 'Errore del motore: ' + (e.message || ''); };
+function labelOf(key) { const [k, p] = key.split('-'); return { O: 'Opere', S: 'Sermoni', E: 'Lettere' }[k] + ' · ' + { la: 'latino', it: 'italiano', notes: 'note', refs: 'indici' }[p]; }
+function rpc(type, payload) { return new Promise((res, rej) => { const id = ++rid; waits.set(id, { res, rej }); W.postMessage({ id, type, payload }); }); }
+function showStatus(extra) {
+  const el = $('#status');
+  if (loading.size) {
+    const [lab, m] = [...loading].pop();
+    el.classList.add('busy');
+    el.textContent = 'Scarico ' + lab + (m.got ? ' · ' + (m.got / 1e6).toFixed(1) + (m.total ? ' / ' + (m.total / 1e6).toFixed(1) : '') + ' MB' : '…');
+  } else {
+    el.classList.remove('busy');
+    el.textContent = extra || (C ? fmt(C.docs.length) + ' testi · ' + fmt(C.paras) + ' paragrafi' : '');
+  }
+}
+
+// ---------- catalogo ----------
+let C = null; const byId = new Map();
+const CORP = { O: 'Opere', S: 'Sermoni', E: 'Lettere' };
+function citeOf(d, ref) { const r = String(ref || '').split('.').filter(Boolean).join(', '); return d.s + (r ? (d.c === 'O' ? ' ' : ', ') + r : ''); }
+function docLabel(d) { return d.c === 'O' ? d.t : d.t + (d.ti ? ' — ' + d.ti : ''); }
+function yrs(d) { return d.y0 == null ? 'n.d.' : d.y0 === d.y1 ? String(d.y0) : d.y0 + '–' + d.y1; }
+function norm(s) { return String(s).normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase(); }
+function findDocs(q, max = 40) {
+  const n = norm(q.trim()); if (!n) return [];
+  const toks = n.split(/\s+/);
+  const out = [];
+  for (const d of C.docs) {
+    const hay = norm([d.s, d.t, d.ti, d.id, d.d].join(' '));
+    if (toks.every((t) => hay.includes(t))) out.push(d);
+    if (out.length >= 400) break;
+  }
+  const exact = (d) => (norm(d.s) === n || norm(d.s).replace(/\.$/, '') === n.replace(/\.$/, '')) ? 0 : norm(d.s).startsWith(n) ? 1 : 2;
+  out.sort((a, b) => exact(a) - exact(b));
+  return out.slice(0, max);
+}
+function resolveDoc(x) {
+  x = String(x).trim();
+  if (byId.has(x)) return byId.get(x);
+  const n = norm(x);
+  return C.docs.find((d) => norm(d.s) === n) || C.docs.find((d) => norm(d.t) === n) || findDocs(x, 1)[0] || null;
+}
+function picker(input, box, onPick) {
+  let sel = 0, list = [];
+  const render = () => {
+    list = findDocs(input.value);
+    if (!list.length) { box.hidden = true; return; }
+    box.innerHTML = list.map((d, i) => `<button type="button" class="${i === sel ? 'on' : ''}" data-i="${i}"><span class="sg">${esc(d.s)}</span><span class="tt">${esc(docLabel(d))}</span><span class="dt">${esc(yrs(d))}</span></button>`).join('');
+    box.hidden = false;
+  };
+  input.addEventListener('input', () => { sel = 0; render(); });
+  input.addEventListener('focus', () => { if (input.value) render(); });
+  input.addEventListener('keydown', (e) => {
+    if (box.hidden) return;
+    if (e.key === 'ArrowDown') { sel = Math.min(sel + 1, list.length - 1); render(); e.preventDefault(); }
+    else if (e.key === 'ArrowUp') { sel = Math.max(sel - 1, 0); render(); e.preventDefault(); }
+    else if (e.key === 'Enter') { e.preventDefault(); if (list[sel]) { onPick(list[sel]); box.hidden = true; } }
+    else if (e.key === 'Escape') box.hidden = true;
+  });
+  box.addEventListener('mousedown', (e) => { const b = e.target.closest('button'); if (b) { e.preventDefault(); onPick(list[+b.dataset.i]); box.hidden = true; } });
+  input.addEventListener('blur', () => setTimeout(() => (box.hidden = true), 150));
+}
+
+// ---------- stato ----------
+const st = Object.assign({
+  scope: 'la', flex: true, cs: false, corp: { O: true, S: true, E: true }, aug: true, y0: 386, y1: 430, und: true, tag: '', fdocs: [],
+  view: 'lp', sort: 'chrono', sub: 'passi', hist: [], qmode: 'auto',
+}, store.get('opts', {}));
+let R = null; // risultato corrente
+function saveOpts() { const { scope, flex, cs, corp, aug, y0, y1, und, tag, fdocs, view, sort, hist, qmode } = st; store.set('opts', { scope, flex, cs, corp, aug, y0, y1, und, tag, fdocs, view, sort, hist, qmode }); }
+function filters() { return { y0: st.y0, y1: st.y1, undated: st.und, tag: st.tag, augOnly: st.aug, docs: st.fdocs }; }
+function corpora() { return Object.keys(st.corp).filter((k) => st.corp[k]); }
+function docPasses(d, f, corp) {
+  if (!corp.includes(d.c)) return false;
+  if (f.docs.length) return f.docs.includes(d.id);
+  if (d.y0 == null) { if (!f.undated) return false; } else if (d.y1 < f.y0 || d.y0 > f.y1) return false;
+  if (f.tag && (d.c !== 'O' || !(d.tag || '').includes(f.tag))) return false;
+  if (f.augOnly && d.c === 'E' && !d.aug) return false;
+  return true;
+}
+
+// ---------- viste ----------
+function setView(v) {
+  $$('nav.tabs button').forEach((b) => b.setAttribute('aria-selected', b.dataset.view === v));
+  $$('.view').forEach((s) => (s.hidden = s.id !== 'v-' + v));
+  window.scrollTo(0, 0);
+}
+$$('nav.tabs button').forEach((b) => (b.onclick = () => setView(b.dataset.view)));
+document.addEventListener('click', (e) => { const g = e.target.closest('[data-goto]'); if (g) setView(g.dataset.goto); });
+
+// ---------- controlli ricerca ----------
+function syncControls() {
+  $$('#scope button').forEach((b) => b.setAttribute('aria-pressed', b.dataset.v === st.scope));
+  $$('#qmode button').forEach((b) => b.setAttribute('aria-pressed', b.dataset.v === st.qmode));
+  $('#flex').checked = st.flex; $('#cs').checked = st.cs;
+  for (const k of 'OSE') $('#c' + k).checked = st.corp[k];
+  $('#aug').checked = st.aug; $('#y0').value = st.y0; $('#y1').value = st.y1; $('#und').checked = st.und; $('#tag').value = st.tag;
+  $('#fdocs').innerHTML = st.fdocs.map((id) => { const d = byId.get(id); return d ? `<span class="chip">${esc(d.s)}<button type="button" data-rm="${id}" aria-label="Togli ${esc(d.s)}">×</button></span>` : ''; }).join('');
+  $('#hist').innerHTML = st.hist.slice(0, 10).map((h) => `<button type="button" title="${esc(h)}">${esc(h)}</button>`).join('');
+}
+$('#qmode').onclick = (e) => { const b = e.target.closest('button'); if (!b) return; st.qmode = b.dataset.v; syncControls(); saveOpts(); };
+$('#scope').onclick = (e) => { const b = e.target.closest('button'); if (!b) return; st.scope = b.dataset.v; syncControls(); saveOpts(); };
+$('#flex').onchange = (e) => { st.flex = e.target.checked; saveOpts(); };
+$('#cs').onchange = (e) => { st.cs = e.target.checked; saveOpts(); };
+for (const k of 'OSE') $('#c' + k).onchange = (e) => { st.corp[k] = e.target.checked; saveOpts(); };
+$('#aug').onchange = (e) => { st.aug = e.target.checked; saveOpts(); };
+$('#y0').onchange = (e) => { st.y0 = +e.target.value || 386; saveOpts(); };
+$('#y1').onchange = (e) => { st.y1 = +e.target.value || 430; saveOpts(); };
+$('#und').onchange = (e) => { st.und = e.target.checked; saveOpts(); };
+$('#tag').onchange = (e) => { st.tag = e.target.value; saveOpts(); };
+$('#fdocs').onclick = (e) => { const b = e.target.closest('[data-rm]'); if (b) { st.fdocs = st.fdocs.filter((x) => x !== b.dataset.rm); syncControls(); saveOpts(); } };
+$('#hist').onclick = (e) => { const b = e.target.closest('button'); if (b) { $('#q').value = b.title; runSearch(); } };
+$('#reset').onclick = () => { Object.assign(st, { corp: { O: true, S: true, E: true }, aug: true, y0: 386, y1: 430, und: true, tag: '', fdocs: [] }); syncControls(); saveOpts(); };
+const ERAS = [['Cassiciaco–Tagaste', 386, 390], ['Presbitero', 391, 395], ['Vescovo (396–410)', 396, 410], ['Pelagiani (411–430)', 411, 430]];
+$('#eras').innerHTML = ERAS.map((e, i) => `<button type="button" class="btn small" data-era="${i}">${e[0]}</button>`).join('');
+$('#eras').onclick = (e) => { const b = e.target.closest('[data-era]'); if (!b) return; const x = ERAS[+b.dataset.era]; st.y0 = x[1]; st.y1 = x[2]; st.und = false; syncControls(); saveOpts(); if ($('#q').value.trim()) rerun(); };
+$('#qform').onsubmit = (e) => { e.preventDefault(); runSearch(); };
+$('#subtabs').onclick = (e) => { const b = e.target.closest('button'); if (!b) return; st.sub = b.dataset.sub; renderPane(); };
+
+// ---------- ricerca ----------
+const SCOPE_LABEL = { la: 'latino', it: 'italiano', both: 'latino e italiano', nt: 'note' };
+let searchSeq = 0;
+// una domanda in linguaggio naturale, non una query con la sintassi del motore
+function looksNatural(q) {
+  const words = q.trim().split(/\s+/);
+  if (/\?\s*$/.test(q) && words.length >= 3) return true;
+  const italian = /(^|\s)(di|del|della|dello|dei|degli|delle|nel|nella|nelle|nei|negli|sul|sulla|sui|il|gli|che|è|sono|tra|fra)(\s|$)/i.test(q);
+  if (/["\/()|~]|\b(NEAR|VICINO|PRIMA)\/\d|(^|\s)-\S|\b(la|it|nt|nota):/.test(q)) return false;
+  if (words.length >= 3 && italian) return true;
+  if (words.length >= 4 && /\b(in quali|quali|quale|dove|come|quando|che cosa|cosa|perch[eé]|trova|cerca|mostra|mostrami|elenca|raccogli|passi|luoghi|tema|temi|parla|parlano|tratta|trattano|concetto|nozione|idea|agostino|rapporto|differenza)\b/i.test(q)) return true;
+  return false;
+}
+function rerun() { if (R && R.question) runSearch(R.question, { exec: R.q, keepBar: true }); else runSearch(); }
+async function runSearch(qOverride, o = {}) {
+  const shown = (qOverride ?? $('#q').value).trim();
+  if (qOverride != null) $('#q').value = shown;
+  if (!shown) return;
+  setView('search');
+  if (!o.exec && !o.literal && (st.qmode === 'nl' || (st.qmode === 'auto' && looksNatural(shown)))) return nlSearch(shown);
+  const q = o.exec || shown;
+  if (!o.keepBar) $('#nlbar').innerHTML = '';
+  const my = ++searchSeq;
+  $('#summary').innerHTML = '<span class="hint">Cerco…</span>';
+  $('#pane').innerHTML = '';
+  try {
+    const res = await rpc('search', { slot: 'ui', q, scope: st.scope, flex: st.flex, cs: st.cs, corpora: corpora(), filters: filters(), sort: st.sort });
+    if (my !== searchSeq) return;
+    R = { ...res, q, question: o.exec ? shown : null, scope: st.scope, f: filters(), corp: corpora(), items: [], kw: null, forms: null, coll: null };
+    st.hist = [shown, ...st.hist.filter((h) => h !== shown)].slice(0, 30); saveOpts(); syncControls();
+    renderSummary(); renderPane();
+  } catch (e) {
+    if (my !== searchSeq) return;
+    R = null;
+    $('#summary').innerHTML = `<div class="err">${esc(e.message)}${o.exec ? ' — correggi la query con «Modifica la query».' : ''}</div>`;
+  }
+  showStatus();
+}
+
+// ---- domande in linguaggio naturale ----
+let nlCtl = null;
+function nlPrompt(question) {
+  return `Sei un filologo latinista specialista di Agostino. Traduci la domanda di uno studioso in UNA interrogazione per il motore di ricerca del corpus completo di Agostino (testo latino con traduzione italiana NBA, 106 opere, 638 sermoni, 310 lettere). Il motore valuta ogni condizione dentro lo stesso paragrafo.
+
+Domanda: «${question}»
+
+Sintassi del motore (operatori in MAIUSCOLO):
+- parola · prefisso* · ? = una lettera
+- "frase esatta" · "frase"~3 (fino a 3 parole in mezzo, ordine fisso)
+- a NEAR/5 b (entro 5 parole, qualunque ordine) · a PRIMA/5 b (in ordine). NEAR collega solo termini, frasi o gruppi di sole alternative tra parentesi: (verit*) NEAR/4 (deus | dei | deo | deum). Mai NEAR dentro una frase, mai gruppi con AND come operandi di NEAR.
+- a | b (oppure) · a b (entrambi nel paragrafo) · -a (escludi) · parentesi
+- La grafia latina è già normalizzata (ae/oe/e, i/j, u/v, maiuscole): non servono varianti grafiche.
+
+Criteri:
+1. Cerca in latino (lingua "la"), salvo che la domanda riguardi la traduzione o un concetto moderno senza un equivalente latino chiaro: allora "both" o "it".
+2. Usa il lessico che Agostino usa davvero per quel tema: il termine centrale e le formule tipiche, unite con |. Esempio per «la veritas di Dio»: (verit*) NEAR/4 (deus | dei | deo | deum | domin*) | "ipsa veritas" | "veritas incommutabilis" | "incommutabilis veritas" | "veritas immutabilis" | "ego sum veritas".
+3. Copri le flessioni con prefissi sicuri (verit*, memori*) o alternative esplicite (deus | dei | deo | deum). Evita prefissi brevi che catturano parole estranee (de*, am*).
+4. Per legare due concetti usa NEAR/n (n tra 3 e 8), non un semplice AND fra parole frequenti, che nel paragrafo sarebbe troppo largo.
+5. Punta a una ricerca precisa ma non povera: qualche decina o poche centinaia di paragrafi.
+6. Se la domanda nomina opere, sermoni, lettere, periodi o controversie, usa i filtri. Per le opere usa le sigle del catalogo qui sotto; per sermoni e lettere scrivi "s. 52", "ep. 147".
+Puoi verificare le forme attestate con lo strumento «forme» (al massimo due chiamate) e trovare testi con «testi».
+
+Rispondi SOLO con un oggetto JSON:
+{"query": "...", "lingua": "la", "corpus": ["O","S","E"], "da": null, "a": null, "testi": [], "ordine": "dense", "spiegazione": "una o due frasi in italiano: quali termini latini cerchi e perché"}
+- "ordine": "dense" (i paragrafi in cui il tema è più presente) se la domanda chiede dove un tema è trattato; "chrono" se chiede un'evoluzione nel tempo.
+- "da"/"a": anni, solo se la domanda indica un periodo.
+
+Catalogo delle opere (id, sigla, titolo, data):
+${catalogBrief()}`;
+}
+async function nlSearch(question) {
+  const my = ++searchSeq;
+  if (nlCtl) nlCtl.abort();
+  const ctl = (nlCtl = new AbortController());
+  $('#summary').innerHTML = ''; $('#pane').innerHTML = '';
+  $('#nlbar').innerHTML = `<div class="nl"><span class="nlk">Domanda</span><div><span class="hint">Claude sta traducendo la domanda in una ricerca sul lessico di Agostino…</span></div><button class="btn small" type="button" id="nlstop">Annulla</button></div>`;
+  $('#nlstop').onclick = () => ctl.abort();
+  const literal = (why) => {
+    $('#nlbar').innerHTML = `<div class="nl"><span class="nlk">Domanda</span><div class="hint">${esc(why)} Cerco le parole così come sono scritte.</div></div>`;
+    return runSearch(question, { literal: true, keepBar: true });
+  };
+  const sample = await cUse('sample');
+  if (my !== searchSeq) return;
+  if (!sample) return literal('Le domande in linguaggio naturale richiedono Claude (apri la pagina su claude.ai).');
+  const tools = TOOLS.filter((t) => t.name === 'forme' || t.name === 'testi');
+  let plan;
+  try {
+    try { plan = await sample.json(nlPrompt(question), { tools, modelTier: 'quick', signal: ctl.signal }); }
+    catch (e) {
+      if (e && e.code === 'tools_unavailable') plan = await sample.json(nlPrompt(question), { modelTier: 'quick', signal: ctl.signal });
+      else throw e;
+    }
+  } catch (e) {
+    if (my !== searchSeq) return;
+    if (e && e.code === 'cancelled') { $('#nlbar').innerHTML = ''; return; }
+    return literal(AI_ERR[e && e.code] || 'Non sono riuscito a interpretare la domanda (' + (e && (e.code || e.message) || 'errore') + ').');
+  }
+  if (my !== searchSeq) return;
+  if (!plan || typeof plan.query !== 'string' || !plan.query.trim()) return literal('Claude non ha prodotto una ricerca valida.');
+  // i filtri vengono dalla domanda: si parte da quelli predefiniti
+  Object.assign(st, { corp: { O: true, S: true, E: true }, y0: 386, y1: 430, und: true, tag: '', fdocs: [] });
+  if (['la', 'it', 'both', 'nt'].includes(plan.lingua)) st.scope = plan.lingua;
+  if (Array.isArray(plan.corpus) && plan.corpus.length) st.corp = { O: plan.corpus.includes('O'), S: plan.corpus.includes('S'), E: plan.corpus.includes('E') };
+  if (plan.da || plan.a) { st.y0 = +plan.da || 386; st.y1 = +plan.a || 430; st.und = false; }
+  if (Array.isArray(plan.testi) && plan.testi.length) st.fdocs = plan.testi.map(resolveDoc).filter(Boolean).map((d) => d.id);
+  st.sort = plan.ordine === 'chrono' ? 'chrono' : 'dense';
+  syncControls(); saveOpts();
+  const filt = [];
+  if (st.fdocs.length) filt.push('in ' + st.fdocs.map((id) => byId.get(id).s).join(', '));
+  if (!st.und) filt.push(st.y0 + '–' + st.y1);
+  if (!(st.corp.O && st.corp.S && st.corp.E)) filt.push(corpora().map((k) => CORP[k]).join(' e '));
+  filt.push(st.sort === 'dense' ? 'prima i paragrafi più densi' : 'in ordine cronologico');
+  $('#nlbar').innerHTML = `<div class="nl"><span class="nlk">Domanda</span>
+    <div class="nlbody"><div>Cerco <code class="nlq">${esc(plan.query)}</code> <span class="hint">in ${esc(SCOPE_LABEL[st.scope])} · ${esc(filt.join(' · '))}</span></div>
+    ${plan.spiegazione ? `<div class="hint">${esc(plan.spiegazione)}</div>` : ''}
+    <div class="nlacts"><button class="btn small" type="button" id="nledit">Modifica la query</button><button class="btn small" type="button" id="nlai">Risposta ragionata dall’assistente</button></div></div></div>`;
+  $('#nledit').onclick = () => { $('#q').value = plan.query; $('#q').focus(); };
+  $('#nlai').onclick = () => { setView('ai'); $('#aiq').value = question; aiSend(); };
+  await runSearch(question, { exec: plan.query, keepBar: true });
+}
+function renderSummary() {
+  if (!R) return;
+  $('#summary').innerHTML = `
+    <span class="big"><b>${fmt(R.paras)}</b> paragrafi · <b>${fmt(R.occ)}</b> occorrenze</span>
+    <span class="hint">in ${esc(SCOPE_LABEL[R.scope])} · ${R.ms} ms${R.capped ? ' · <b style="color:var(--warn)">troppe corrispondenze: risultati troncati</b>' : ''}</span>
+    <span class="spacer"></span>
+    <label class="chk">Ordine <select id="sort" style="padding:4px 6px;border:1px solid var(--line);border-radius:6px;background:var(--panel)">
+      <option value="chrono">cronologico</option><option value="opera">per corpus e opera</option><option value="dense">più occorrenze</option></select></label>
+    <div class="seg" id="vmode"><button type="button" data-v="lp">Lat | Ita</button><button type="button" data-v="l">Lat</button><button type="button" data-v="p">Ita</button></div>
+    <button class="btn small" type="button" id="exp">Esporta</button>
+    <button class="btn small" type="button" id="askai">Analizza con Claude</button>`;
+  $('#sort').value = st.sort;
+  $('#sort').onchange = async (e) => { st.sort = e.target.value; saveOpts(); await rpc('sort', { slot: 'ui', mode: st.sort }); R.items = []; R.kw = null; renderPane(); };
+  $$('#vmode button').forEach((b) => b.setAttribute('aria-pressed', b.dataset.v === st.view));
+  $('#vmode').onclick = (e) => { const b = e.target.closest('button'); if (!b) return; st.view = b.dataset.v; saveOpts(); renderSummary(); if (st.sub === 'passi') { $('#pane').innerHTML = ''; paintHits(R.items, true); } };
+  $('#exp').onclick = exportMenu;
+  $('#askai').onclick = () => {
+    setView('ai');
+    $('#aiq').value = `Ho cercato «${R.q}» (${SCOPE_LABEL[R.scope]}): ${R.paras} paragrafi, ${R.occ} occorrenze. Analizza questi risultati: come si distribuiscono nel tempo e tra le opere, quali accezioni o usi emergono, quali sono i 5-8 passi più significativi e perché.`;
+    $('#aiq').focus();
+  };
+}
+function renderPane() {
+  $$('#subtabs button').forEach((b) => b.setAttribute('aria-selected', b.dataset.sub === st.sub));
+  const p = $('#pane');
+  if (!R) { p.innerHTML = ''; return; }
+  if (!R.paras) { p.innerHTML = '<div class="empty">Nessun passo trovato. Prova la grafia flessibile, un asterisco (<code>amor*</code>) o allarga i filtri.</div>'; return; }
+  p.innerHTML = '';
+  ({ passi: paneHits, kwic: paneKwic, dist: paneDist, forms: paneForms, coll: paneColl })[st.sub]();
+}
+
+// ---- passi ----
+function hlHTML(text, ranges) {
+  if (text == null) return '';
+  const rs = (ranges || []).slice().sort((a, b) => a[0] - b[0]);
+  let out = '', i = 0;
+  for (const [s, e] of rs) { if (s < i) continue; out += esc(text.slice(i, s)) + '<mark>' + esc(text.slice(s, e)) + '</mark>'; i = e; }
+  out += esc(text.slice(i));
+  return out.replace(/\[n(\d+)\]/g, '<sup class="nr" data-n="$1">$1</sup>');
+}
+function excerpt(text, ranges, center, len = 1300) {
+  if (!text || text.length <= len + 300) return { t: text, r: ranges, cut: false };
+  let c = ranges && ranges.length ? ranges[0][0] : Math.round(center * text.length);
+  let s = Math.max(0, c - Math.round(len / 2)); s = text.lastIndexOf(' ', s) + 1 || s;
+  let e = Math.min(text.length, s + len); const sp = text.indexOf(' ', e); if (sp > 0) e = sp;
+  const pre = s > 0 ? '… ' : '', post = e < text.length ? ' …' : '';
+  return { t: pre + text.slice(s, e) + post, r: (ranges || []).filter((x) => x[0] >= s && x[1] <= e).map((x) => [x[0] - s + pre.length, x[1] - s + pre.length]), cut: true };
+}
+function hitHTML(it, i) {
+  const d = byId.get(it.id);
+  const showLa = st.view !== 'p', showIt = st.view !== 'l';
+  const c = it.hl.la.length ? it.hl.la[0][0] / Math.max(1, (it.la || '').length) : it.hl.it.length ? it.hl.it[0][0] / Math.max(1, (it.it || '').length) : 0;
+  const la = excerpt(it.la, it.hl.la, c), itx = excerpt(it.it, it.hl.it, c);
+  const cols = [];
+  if (showLa) cols.push(`<div lang="la"><span class="lg">LATINO</span>${hlHTML(la.t, la.r) || '<span class="hint">—</span>'}</div>`);
+  if (showIt) cols.push(`<div lang="it"><span class="lg">ITALIANO</span>${hlHTML(itx.t, itx.r) || '<span class="hint">—</span>'}</div>`);
+  const cut = (showLa && la.cut) || (showIt && itx.cut);
+  let notes = '';
+  if (it.notes && it.notes.length) notes = `<div class="notes">${it.notes.map((n) => `<div><b>${n.n}</b>${hlHTML(n.text, n.hl)}</div>`).join('')}</div>`;
+  return `<article class="hit" data-i="${i}">
+    <header><button class="cite" data-open="${it.id}" data-ref="${esc(it.ref)}">${esc(it.cite)}</button>
+      <span class="work"><i>${esc(d.c === 'O' ? d.t : d.ti || d.t)}</i> · ${esc(d.d || 'n.d.')}</span>
+      <span class="acts">${cut ? '<button class="btn small" data-full>Paragrafo intero</button>' : ''}<button class="btn small" data-cp>Copia</button></span></header>
+    <div class="pair${cols.length === 1 ? ' one' : ''}">${cols.join('')}</div>${notes}<div class="notes pn" hidden></div></article>`;
+}
+function paintHits(items, fresh) {
+  const p = $('#pane');
+  if (fresh) p.innerHTML = '<div id="hits"></div><div class="loadmore" id="lm"></div>';
+  const box = $('#hits');
+  const start = box.children.length;
+  box.insertAdjacentHTML('beforeend', items.slice(start).map((it, j) => hitHTML(it, start + j)).join(''));
+  $('#lm').innerHTML = R.items.length < R.paras ? `<button class="btn" id="more">Mostra altri (${fmt(R.paras - R.items.length)} restanti)</button>` : '';
+  const mb = $('#more'); if (mb) mb.onclick = () => loadHits(50);
+}
+async function loadHits(n) {
+  const got = await rpc('page', { slot: 'ui', start: R.items.length, count: n });
+  R.items.push(...got.items); paintHits(R.items, false);
+}
+async function paneHits() {
+  if (!R.items.length) { $('#pane').innerHTML = '<div class="hint">Carico i passi…</div>'; const got = await rpc('page', { slot: 'ui', start: 0, count: 30 }); R.items = got.items; }
+  paintHits(R.items, true);
+}
+$('#pane').addEventListener('click', (e) => {
+  const o = e.target.closest('[data-open]'); if (o) { openDoc(o.dataset.open, o.dataset.ref); return; }
+  const art = e.target.closest('.hit'); if (!art) return;
+  const it = R.items[+art.dataset.i];
+  if (e.target.closest('[data-cp]')) { copy(fmtPassage(it)); return; }
+  if (e.target.closest('[data-full]')) {
+    const cols = [];
+    if (st.view !== 'p') cols.push(`<div lang="la"><span class="lg">LATINO</span>${hlHTML(it.la, it.hl.la)}</div>`);
+    if (st.view !== 'l') cols.push(`<div lang="it"><span class="lg">ITALIANO</span>${hlHTML(it.it, it.hl.it)}</div>`);
+    $('.pair', art).innerHTML = cols.join(''); e.target.closest('[data-full]').remove(); return;
+  }
+  const sup = e.target.closest('sup.nr');
+  if (sup) {
+    const n = +sup.dataset.n; const pn = $('.pn', art);
+    const note = (it.pn || []).find((x) => x[0] === n);
+    pn.hidden = false;
+    pn.insertAdjacentHTML('beforeend', `<div><b>${n}</b>${esc(note ? note[1] : 'nota non trovata in questo paragrafo')}</div>`);
+  }
+});
+function fmtPassage(it, withIt = true) {
+  const d = byId.get(it.id);
+  const clean = (s) => String(s || '').replace(/\[n\d+\]/g, '');
+  return `${it.cite} (${d.c === 'O' ? d.t : d.t}, ${d.d || 'n.d.'})\nLA: ${clean(it.la)}` + (withIt ? `\nIT: ${clean(it.it)}` : '');
+}
+
+// ---- concordanza ----
+async function paneKwic() {
+  const p = $('#pane');
+  if (!R.kw) { p.innerHTML = '<div class="hint">Preparo la concordanza…</div>'; R.kw = await rpc('kwic', { slot: 'ui', max: 6000, width: 80 }); R.kwSort = 'order'; R.kwN = 400; }
+  const k = R.kw;
+  const lastWord = (s) => norm((s.match(/[\p{L}]+(?=[^\p{L}]*$)/u) || [''])[0]);
+  const firstWord = (s) => norm((s.match(/[\p{L}]+/u) || [''])[0]);
+  const rows = k.rows.slice();
+  if (R.kwSort === 'kw') rows.sort((a, b) => norm(a.m).localeCompare(norm(b.m)));
+  if (R.kwSort === 'l') rows.sort((a, b) => lastWord(a.l).localeCompare(lastWord(b.l)));
+  if (R.kwSort === 'r') rows.sort((a, b) => firstWord(a.r).localeCompare(firstWord(b.r)));
+  p.innerHTML = `<div class="toolbar"><span class="hint">${fmt(k.total)} occorrenze in ${esc(SCOPE_LABEL[k.lang])}${k.total > k.rows.length ? ' (mostrate le prime ' + fmt(k.rows.length) + ')' : ''}</span>
+    <label class="chk">Ordina per <select id="kws"><option value="order">ordine dei risultati</option><option value="kw">forma trovata</option><option value="l">parola a sinistra</option><option value="r">parola a destra</option></select></label>
+    <button class="btn small" id="kwcp">Copia (TSV)</button></div>
+    <div class="kwicbox"><table class="kwic"><tbody>${rows.slice(0, R.kwN).map((r) => `<tr data-open="${r.id}" data-ref="${esc(r.ref)}"><td class="c">${esc(r.cite)}</td><td class="l"><span>${esc(r.l.replace(/\[n\d+\]/g, ''))}</span></td><td class="m">${esc(r.m.replace(/\[n\d+\]/g, ''))}</td><td class="r">${esc(r.r.replace(/\[n\d+\]/g, ''))}</td></tr>`).join('')}</tbody></table></div>
+    ${rows.length > R.kwN ? '<div class="loadmore"><button class="btn" id="kwm">Mostra altre righe</button></div>' : ''}`;
+  $('#kws').value = R.kwSort;
+  $('#kws').onchange = (e) => { R.kwSort = e.target.value; paneKwic(); };
+  const m = $('#kwm'); if (m) m.onclick = () => { R.kwN += 600; paneKwic(); };
+  $('#kwcp').onclick = () => copy(rows.map((r) => [r.cite, r.l, r.m, r.r].map((x) => x.replace(/\[n\d+\]/g, '').replace(/\t/g, ' ')).join('\t')).join('\n'));
+}
+
+// ---- distribuzione ----
+function distData(res, f, scope, corp) {
+  const wkey = scope === 'it' ? ['wit'] : scope === 'both' ? ['wla', 'wit'] : ['wla'];
+  const words = (d) => wkey.reduce((s, k) => s + d[k], 0);
+  const docs = C.docs.filter((d) => docPasses(d, f, corp));
+  const bins = [];
+  for (let y = 386; y <= 430; y += 5) bins.push({ a: y, b: Math.min(y + 4, 430), occ: 0, w: 0, docs: 0 });
+  const und = { occ: 0, w: 0 };
+  for (const d of docs) {
+    const e = res.perDoc[d.id]; const occ = e ? e[1] : 0;
+    if (d.y0 == null) { und.occ += occ; und.w += words(d); continue; }
+    const m = (d.y0 + d.y1) / 2;
+    const b = bins.find((x) => m >= x.a && m <= x.b + 0.99) || (m < 386 ? bins[0] : bins[bins.length - 1]);
+    b.occ += occ; b.w += words(d); if (occ) b.docs++;
+  }
+  const works = Object.entries(res.perDoc).map(([id, e]) => { const d = byId.get(id); return { d, par: e[0], occ: e[1], rel: words(d) ? (e[1] / words(d)) * 10000 : 0 }; }).sort((a, b) => b.occ - a.occ);
+  return { bins, und, works, norm: scope !== 'nt' };
+}
+function paneDist() {
+  const D = distData(R, R.f, R.scope, R.corp);
+  const maxRel = Math.max(...D.bins.map((b) => (b.w ? (b.occ / b.w) * 1e4 : 0)), 0.0001);
+  const Wd = 720, Hd = 240, pl = 44, pb = 38, pt = 18, bw = (Wd - pl - 10) / D.bins.length;
+  const yv = (v) => pt + (Hd - pt - pb) * (1 - v / maxRel);
+  const ticks = [0, maxRel / 2, maxRel];
+  let svg = `<svg viewBox="0 0 ${Wd} ${Hd}" role="img" aria-label="Frequenza relativa per quinquennio">`;
+  for (const t of ticks) svg += `<line x1="${pl}" x2="${Wd - 6}" y1="${yv(t)}" y2="${yv(t)}" stroke="var(--line)"/><text x="${pl - 6}" y="${yv(t) + 4}" text-anchor="end">${t.toFixed(t < 1 ? 2 : 1)}</text>`;
+  D.bins.forEach((b, i) => {
+    const rel = b.w ? (b.occ / b.w) * 1e4 : 0;
+    const x = pl + i * bw + 4, h = Hd - pb - yv(rel);
+    svg += `<rect x="${x}" y="${yv(rel)}" width="${bw - 8}" height="${Math.max(0, h)}" fill="var(--bar)" rx="2"><title>${b.a}–${b.b}: ${b.occ} occorrenze su ${fmt(b.w)} parole (${rel.toFixed(2)} ogni 10.000)</title></rect>`;
+    if (b.occ) svg += `<text class="lbl" x="${x + (bw - 8) / 2}" y="${yv(rel) - 5}" text-anchor="middle">${b.occ}</text>`;
+    svg += `<text x="${x + (bw - 8) / 2}" y="${Hd - pb + 16}" text-anchor="middle">${b.a}</text>`;
+  });
+  svg += `<text x="${pl}" y="${Hd - 4}">anno (quinquenni, data media dell’opera) · asse verticale: occorrenze ogni 10.000 parole</text></svg>`;
+  const top = D.works.slice(0, 60); const mx = Math.max(...top.map((w) => w.occ), 1);
+  $('#pane').innerHTML = `<div class="grid2">
+    <div class="card chart" style="grid-column:1/-1"><h3>Andamento cronologico${D.norm ? ' (frequenza relativa)' : ''}</h3>${svg}
+      <p class="hint" style="margin:6px 0 0">Testi non datati: ${D.und.occ} occorrenze${D.und.w ? ' (' + ((D.und.occ / D.und.w) * 1e4).toFixed(2) + ' ogni 10.000 parole)' : ''}. Datazioni: Anoz 2002 / Catapano 2010 / Tavole NBA; le opere scritte in più anni cadono sulla data media.</p></div>
+    <div class="card" style="grid-column:1/-1"><h3>Per testo (primi ${top.length} su ${D.works.length})</h3>
+      <div class="tbox" style="border:0"><table class="data"><thead><tr><th>Testo</th><th>Data</th><th class="n">Paragrafi</th><th class="n">Occorrenze</th><th class="n">/10.000</th><th style="width:22%"></th><th></th></tr></thead><tbody>
+      ${top.map((w) => `<tr><td><button class="cite" data-open="${w.d.id}">${esc(w.d.s)}</button> <span class="work">${esc(w.d.c === 'O' ? w.d.t : w.d.ti)}</span></td><td class="work">${esc(yrs(w.d))}</td><td class="n">${w.par}</td><td class="n">${w.occ}</td><td class="n">${w.rel.toFixed(2)}</td><td><div class="mini" style="width:${(w.occ / mx) * 100}%"></div></td><td><button class="linkish" data-only="${w.d.id}">solo qui</button></td></tr>`).join('')}
+      </tbody></table></div></div></div>`;
+  $('#pane').onclick = null;
+}
+$('#pane').addEventListener('click', (e) => { const b = e.target.closest('[data-only]'); if (b) { st.fdocs = [b.dataset.only]; syncControls(); saveOpts(); st.sub = 'passi'; rerun(); } });
+
+// ---- forme ----
+async function paneForms() {
+  if (!R.forms) R.forms = await rpc('forms', { slot: 'ui' });
+  const L = { la: 'Latino', it: 'Italiano', nt: 'Note' };
+  $('#pane').innerHTML = `<div class="grid2">${Object.entries(R.forms).map(([l, arr]) => {
+    const mx = arr.length ? arr[0][1] : 1;
+    return `<div class="card"><h3>${L[l]} · ${arr.length} forme</h3><div class="tbox" style="border:0;max-height:560px;overflow:auto"><table class="data"><tbody>${arr.map(([w, n]) => `<tr><td style="font:16px var(--serif)"><button class="linkish" style="font:inherit" data-form="${esc(w)}" data-l="${l}">${esc(w)}</button></td><td class="n">${n}</td><td style="width:40%"><div class="mini" style="width:${(n / mx) * 100}%"></div></td></tr>`).join('')}</tbody></table></div></div>`;
+  }).join('')}</div><p class="hint">Clic su una forma per cercarla da sola.</p>`;
+}
+$('#pane').addEventListener('click', (e) => {
+  const b = e.target.closest('[data-form]'); if (!b) return;
+  const w = b.dataset.form; st.scope = b.dataset.l === 'nt' ? 'nt' : b.dataset.l; syncControls();
+  runSearch(/\s/.test(w) ? `"${w}"` : w, { literal: true });
+});
+
+// ---- collocazioni ----
+async function paneColl() {
+  R.collOpt = R.collOpt || { win: 5, stop: true, by: 'dice', lang: R.scope === 'it' ? 'it' : 'la' };
+  const o = R.collOpt;
+  $('#pane').innerHTML = '<div class="hint">Calcolo le collocazioni…</div>';
+  const res = await rpc('collocates', { slot: 'ui', lang: o.lang, win: o.win, stop: o.stop, by: o.by, min: 2 });
+  const mx = Math.max(...res.rows.map((r) => r.c), 1);
+  $('#pane').innerHTML = `<div class="toolbar">
+      ${R.scope === 'both' ? `<div class="seg" id="colang"><button data-v="la" aria-pressed="${o.lang === 'la'}">Latino</button><button data-v="it" aria-pressed="${o.lang === 'it'}">Italiano</button></div>` : ''}
+      <label class="chk">Finestra <select id="cwin">${[2, 3, 5, 8, 10, 15].map((n) => `<option value="${n}" ${n === o.win ? 'selected' : ''}>±${n} parole</option>`).join('')}</select></label>
+      <label class="chk"><input type="checkbox" id="cstop" ${o.stop ? 'checked' : ''}> Escludi parole grammaticali</label>
+      <label class="chk">Ordina per <select id="cby"><option value="dice" ${o.by === 'dice' ? 'selected' : ''}>forza (logDice)</option><option value="count" ${o.by === 'count' ? 'selected' : ''}>frequenza</option></select></label>
+      <span class="hint">${fmt(res.nodes || 0)} occorrenze analizzate</span></div>
+    ${res.missing ? '<div class="err">Per le collocazioni in questa lingua serve cercare anche in quella lingua.</div>' : `
+    <div class="tbox"><table class="data"><thead><tr><th>Parola</th><th class="n">Insieme</th><th class="n">Nel corpus</th><th class="n">logDice</th><th style="width:30%"></th><th></th></tr></thead><tbody>
+    ${res.rows.map((r) => `<tr><td style="font:16px var(--serif)">${esc(r.w)}</td><td class="n">${r.c}</td><td class="n">${fmt(r.f)}</td><td class="n">${r.dice.toFixed(2)}</td><td><div class="mini" style="width:${(r.c / mx) * 100}%"></div></td><td><button class="linkish" data-near="${esc(r.w)}">cerca insieme</button></td></tr>`).join('')}
+    </tbody></table></div>`}
+    <p class="hint">logDice misura quanto una parola è tipicamente vicina al termine cercato (max 14), indipendentemente dalla grandezza del corpus. Parole che compaiono una sola volta insieme sono escluse.</p>`;
+  $('#cwin').onchange = (e) => { o.win = +e.target.value; paneColl(); };
+  $('#cstop').onchange = (e) => { o.stop = e.target.checked; paneColl(); };
+  $('#cby').onchange = (e) => { o.by = e.target.value; paneColl(); };
+  const cl = $('#colang'); if (cl) cl.onclick = (e) => { const b = e.target.closest('button'); if (b) { o.lang = b.dataset.v; paneColl(); } };
+}
+$('#pane').addEventListener('click', (e) => {
+  const b = e.target.closest('[data-near]'); if (!b) return;
+  const q = R.q; const w = b.dataset.near; const n = R.collOpt.win;
+  const simple = /^[^\s()|]+$/.test(q) || /^"[^"]+"(~\d+)?$/.test(q);
+  if (R.scope === 'both') { st.scope = R.collOpt.lang; syncControls(); }
+  st.sub = 'passi';
+  runSearch(simple ? `${q} NEAR/${n} ${w}` : `(${q}) ${w}`, { literal: true });
+});
+
+// ---- esportazione ----
+async function exportMenu() {
+  const p = $('#pane');
+  const box = document.createElement('div'); box.className = 'card'; box.style.marginBottom = '12px';
+  box.innerHTML = `<h3>Esporta i risultati (${fmt(Math.min(R.paras, 3000))} passi${R.paras > 3000 ? ', i primi 3000' : ''})</h3>
+    <div class="toolbar" style="margin:0"><button class="btn small" data-x="md-copy">Copia in Markdown</button><button class="btn small" data-x="md">Scarica .md</button><button class="btn small" data-x="csv">Scarica .csv</button><span class="hint" id="xh"></span></div>`;
+  p.prepend(box);
+  box.onclick = async (e) => {
+    const b = e.target.closest('[data-x]'); if (!b) return;
+    $('#xh', box).textContent = 'Preparo…';
+    const all = (await rpc('page', { slot: 'ui', start: 0, count: 3000 })).items;
+    const clean = (s) => String(s || '').replace(/\[n\d+\]/g, '');
+    const head = `# Scrinium Augustini — «${R.q}»\n\nLingua: ${SCOPE_LABEL[R.scope]} · ${R.paras} paragrafi, ${R.occ} occorrenze · ${new Date().toLocaleDateString('it-IT')}\n\n`;
+    const md = head + all.map((it) => { const d = byId.get(it.id); return `## ${it.cite} — ${d.c === 'O' ? d.t : d.t + ' (' + d.ti + ')'}, ${d.d || 'n.d.'}\n\n> ${clean(it.la)}\n\n${clean(it.it)}\n`; }).join('\n');
+    const q = (s) => '"' + clean(s).replace(/"/g, '""') + '"';
+    const csv = '﻿citazione;testo;data;riferimento;latino;italiano\n' + all.map((it) => { const d = byId.get(it.id); return [it.cite, d.t, d.d, it.ref, it.la, it.it].map(q).join(';'); }).join('\n');
+    const x = b.dataset.x;
+    if (x === 'md-copy') { copy(md); $('#xh', box).textContent = ''; return; }
+    const dl = await cUse('downloads');
+    const slug = R.q.replace(/[^\p{L}\d]+/gu, '_').slice(0, 40);
+    if (!dl) { $('#xh', box).textContent = 'Lo scaricamento non è disponibile qui: uso la copia negli appunti.'; copy(x === 'csv' ? csv : md); return; }
+    try { await dl.save({ filename: `agostino_${slug}.${x}`, data: x === 'csv' ? csv : md }); $('#xh', box).textContent = ''; }
+    catch (err) { $('#xh', box).textContent = err && err.code === 'cancelled' ? '' : 'Scaricamento non riuscito: ' + (err && err.message || ''); }
+  };
+}
+
+// ---------- lettura ----------
+const RD = { id: null, doc: null, from: 0, to: 0, target: -1, mode: store.get('rmode', 'lp'), hl: null };
+picker($('#rdoc'), $('#rdocS'), (d) => { $('#rdoc').value = ''; openDoc(d.id); });
+async function openDoc(id, ref, keepView) {
+  const d = byId.get(id); if (!d) return;
+  if (!keepView) setView('read');
+  $('#rinfo').innerHTML = `<span class="hint">Carico ${esc(d.s)}…</span>`; $('#rtext').innerHTML = '';
+  let doc;
+  try { doc = await rpc('getDoc', id); } catch (e) { $('#rinfo').innerHTML = `<div class="err">${esc(e.message)}</div>`; return; }
+  RD.id = id; RD.doc = doc; RD.d = d;
+  let t = ref ? doc.refs.indexOf(ref) : -1;
+  if (ref && t < 0) t = doc.refs.findIndex((r) => r.startsWith(ref + '.'));
+  RD.target = t;
+  RD.from = Math.max(0, t - 20); RD.to = Math.min(doc.refs.length, (t < 0 ? 0 : RD.from) + 80);
+  // evidenzia con l'interrogazione corrente, se esiste
+  RD.hlq = R && R.q ? R : null;
+  const books = doc.heads.filter((h) => h[1] === 2);
+  $('#rinfo').innerHTML = `<h2>${esc(d.c === 'O' ? d.t : d.t)}</h2>
+    <div class="meta">${esc(d.c === 'O' ? d.ti : d.ti || '')} · sigla <b style="font-family:var(--mono);color:var(--rubric)">${esc(d.s)}</b> · ${esc(d.d || 'non datato')}${d.pl ? ' · ' + esc(d.pl) : ''}${d.tag ? ' · ' + esc(d.tag) : ''} · ${fmt(d.np)} paragrafi · ${fmt(d.wla)} parole latine</div>
+    <div class="toolbar" style="margin:0">
+      <div class="seg" id="rmode"><button data-v="lp" aria-pressed="${RD.mode === 'lp'}">Lat | Ita</button><button data-v="l" aria-pressed="${RD.mode === 'l'}">Latino</button><button data-v="p" aria-pressed="${RD.mode === 'p'}">Italiano</button></div>
+      ${books.length > 1 ? `<select id="rbook" aria-label="Vai al libro"><option value="">Vai a…</option>${books.map((h) => `<option value="${h[0]}">${esc(h[2])}</option>`).join('')}</select>` : ''}
+      <form id="rref" style="display:flex;gap:6px"><input placeholder="rif. es. ${esc(doc.refs[Math.min(3, doc.refs.length - 1)] || '1')}" style="width:120px;padding:5px 8px;border:1px solid var(--line);border-radius:6px;background:var(--panel2);font-family:var(--mono)" aria-label="Vai al riferimento"><button class="btn small">Vai</button></form>
+      <button class="btn small" id="rfilter">Cerca solo in questo testo</button>
+    </div>`;
+  $('#rmode').onclick = (e) => { const b = e.target.closest('button'); if (!b) return; RD.mode = b.dataset.v; store.set('rmode', RD.mode); $$('#rmode button').forEach((x) => x.setAttribute('aria-pressed', x === b)); applyRMode(); };
+  const rb = $('#rbook'); if (rb) rb.onchange = (e) => { if (e.target.value !== '') jumpTo(+e.target.value, false); };
+  $('#rref').onsubmit = (e) => { e.preventDefault(); const v = $('input', e.target).value.trim().replace(/[,\s]+/g, '.'); let i = doc.refs.indexOf(v); if (i < 0) i = doc.refs.findIndex((r) => r.startsWith(v + '.')); if (i < 0) toast('Riferimento non trovato'); else jumpTo(i, true); };
+  $('#rfilter').onclick = () => { st.fdocs = [id]; syncControls(); saveOpts(); setView('search'); $('#q').focus(); };
+  paintReader();
+  if (t >= 0) setTimeout(() => { const el = $(`#rp${t}`); if (el) el.scrollIntoView({ block: 'center' }); }, 30);
+}
+function applyRMode() { const r = $('#rtext'); r.classList.toggle('la-only', RD.mode === 'l'); r.classList.toggle('it-only', RD.mode === 'p'); }
+function jumpTo(i, mark) {
+  RD.target = mark ? i : RD.target; RD.from = Math.max(0, i - 5); RD.to = Math.min(RD.doc.refs.length, RD.from + 80);
+  paintReader(); setTimeout(() => { const el = $(`#rp${i}`); if (el) el.scrollIntoView({ block: 'start' }); }, 30);
+}
+let hlCache = null;
+function readerHL(text, lang) {
+  if (!RD.hlq || !text) return [];
+  const q = RD.hlq;
+  if (q.scope !== 'both' && q.scope !== lang) return [];
+  try {
+    // evidenziazione approssimata: termini semplici dell'interrogazione
+    if (!hlCache || hlCache.q !== q.q || hlCache.lang !== lang) {
+      const terms = (q.q.match(/"[^"]+"|[^\s()|"]+/g) || []).filter((t) => !/^(AND|OR|NOT|E|O|NON|-.*|NEAR\/\d+|VICINO\/\d+|PRIMA\/\d+)$/.test(t) && !t.startsWith('/'));
+      const src = terms.map((t) => t.replace(/^(la|it|nt|nota):/i, '').replace(/^"|"(~\d+)?$/g, '').replace(/[.+^${}()|[\]\\]/g, '\\$&').replace(/\*/g, '\\p{L}*').replace(/\?/g, '\\p{L}').replace(/\s+/g, '[^\\p{L}]+')).filter(Boolean);
+      hlCache = { q: q.q, lang, re: src.length ? new RegExp('(?<!\\p{L})(?:' + src.join('|') + ')(?!\\p{L})', 'giu') : null };
+    }
+    if (!hlCache.re) return [];
+    return [...text.matchAll(hlCache.re)].map((m) => [m.index, m.index + m[0].length]);
+  } catch (e) { return []; }
+}
+function paintReader() {
+  const { doc, from, to } = RD;
+  const hs = new Map(); for (const h of doc.heads) { if (!hs.has(h[0])) hs.set(h[0], []); hs.get(h[0]).push(h); }
+  let html = from > 0 ? `<div class="loadmore"><button class="btn" id="rprev">Paragrafi precedenti</button></div>` : '';
+  for (let i = from; i < to; i++) {
+    for (const h of hs.get(i) || []) {
+      if (h[1] === 2) html += `<div class="rh2">${esc(h[2])}</div>`;
+      else { const [a, b] = h[2].split(' | '); html += `<div class="rh4" title="${esc(b || '')}">${esc(RD.mode === 'p' && b ? b : a || b)}</div>`; }
+    }
+    html += `<div class="rpar${i === RD.target ? ' target' : ''}" id="rp${i}" data-p="${i}">
+      <button class="rf" title="Copia la citazione">${esc(doc.refs[i])}</button>
+      <div class="la" lang="la">${hlHTML(doc.la[i], readerHL(doc.la[i], 'la'))}</div>
+      <div class="it" lang="it">${hlHTML(doc.it[i], readerHL(doc.it[i], 'it'))}</div>
+      <div class="pnotes" hidden></div></div>`;
+  }
+  if (to < doc.refs.length) html += `<div class="loadmore"><button class="btn" id="rnext">Paragrafi successivi (${fmt(doc.refs.length - to)} restanti)</button></div>`;
+  $('#rtext').innerHTML = html; applyRMode();
+  const pv = $('#rprev'); if (pv) pv.onclick = () => { const old = RD.from; RD.from = Math.max(0, RD.from - 80); paintReader(); const el = $(`#rp${old}`); if (el) el.scrollIntoView({ block: 'start' }); };
+  const nx = $('#rnext'); if (nx) nx.onclick = () => { RD.to = Math.min(doc.refs.length, RD.to + 80); paintReader(); const el = $(`#rp${RD.to - 80}`); if (el) el.scrollIntoView({ block: 'start' }); };
+}
+$('#rtext').addEventListener('click', (e) => {
+  const par = e.target.closest('.rpar'); if (!par) return;
+  const i = +par.dataset.p;
+  if (e.target.closest('.rf')) {
+    const clean = (s) => String(s || '').replace(/\[n\d+\]/g, '');
+    copy(`${citeOf(RD.d, RD.doc.refs[i])} (${RD.d.t}, ${RD.d.d || 'n.d.'})\nLA: ${clean(RD.doc.la[i])}\nIT: ${clean(RD.doc.it[i])}`); return;
+  }
+  const sup = e.target.closest('sup.nr');
+  if (sup) {
+    const n = +sup.dataset.n;
+    let note = RD.doc.notes.find((x) => x[0] === i && x[1] === n);
+    if (!note) note = RD.doc.notes.filter((x) => x[1] === n).sort((a, b) => Math.abs(a[0] - i) - Math.abs(b[0] - i))[0];
+    const pn = $('.pnotes', par); pn.hidden = false;
+    pn.insertAdjacentHTML('beforeend', `<div><b style="color:var(--accent)">${n}</b> ${esc(note ? note[2] : 'nota non trovata')}</div>`);
+  }
+});
+
+// ---------- lessico ----------
+const LX = { lang: 'la', res: null };
+$('#lexlang').onclick = (e) => { const b = e.target.closest('button'); if (!b) return; LX.lang = b.dataset.v; $$('#lexlang button').forEach((x) => x.setAttribute('aria-pressed', x === b)); };
+$('#lexform').onsubmit = async (e) => { e.preventDefault(); runLex(); };
+async function runLex(select) {
+  const pattern = $('#lexq').value.trim(); if (!pattern) return;
+  $('#lexout').innerHTML = '<div class="hint">Conto le forme nel corpus (la prima volta richiede qualche secondo)…</div>';
+  try {
+    LX.res = await rpc('lexicon', { lang: LX.lang, corpora: corpora(), pattern, flex: st.flex });
+    paintLex(select);
+  } catch (err) { $('#lexout').innerHTML = `<div class="err">${esc(err.message)}</div>`; }
+  showStatus();
+}
+function paintLex(select) {
+  const r = LX.res; const sel = new Set(select || []);
+  $('#lexout').innerHTML = `<div class="card">
+    <div class="toolbar"><b>${fmt(r.total)} forme</b><span class="hint">${fmt(r.tokens)} occorrenze in ${corpora().map((k) => CORP[k]).join(', ')}${r.total > r.forms.length ? ' · mostrate le ' + fmt(r.forms.length) + ' più frequenti' : ''}</span>
+      <span class="spacer" style="flex:1"></span>
+      <button class="btn small" id="lxall">Seleziona tutte</button><button class="btn small" id="lxnone">Nessuna</button>
+      <button class="btn small primary" id="lxgo">Cerca le forme selezionate</button></div>
+    <div class="lexgrid">${r.forms.map((f) => `<label title="Opere ${f.by.O || 0} · Sermoni ${f.by.S || 0} · Lettere ${f.by.E || 0}"><input type="checkbox" value="${esc(f.w)}" ${sel.has(f.w) ? 'checked' : ''}> ${esc(f.w)} <span class="n">${fmt(f.n)}</span></label>`).join('')}</div></div>`;
+  $('#lxall').onclick = () => $$('#lexout input[type=checkbox]').forEach((c) => (c.checked = true));
+  $('#lxnone').onclick = () => $$('#lexout input[type=checkbox]').forEach((c) => (c.checked = false));
+  $('#lxgo').onclick = () => {
+    const ws = $$('#lexout input:checked').map((c) => c.value);
+    if (!ws.length) { toast('Seleziona almeno una forma'); return; }
+    st.scope = LX.lang; syncControls(); st.sub = 'passi';
+    runSearch(ws.length === 1 ? ws[0] : '(' + ws.join(' | ') + ')', { literal: true });
+  };
+}
+$('#lemmaBtn').onclick = async () => {
+  const lemma = $('#lemma').value.trim();
+  if (!lemma) { toast('Scrivi il lemma'); return; }
+  const sample = await cUse('sample');
+  if (!sample) { $('#lemmaHint').textContent = 'Claude non è disponibile in questa vista.'; return; }
+  if (!$('#lexq').value.trim()) $('#lexq').value = lemma.replace(/[aeiou]*$/i, '').slice(0, Math.max(3, Math.min(5, lemma.length - 2)));
+  $('#lemmaHint').textContent = 'Claude esamina le forme…';
+  try {
+    if (!LX.res) { LX.res = await rpc('lexicon', { lang: LX.lang, corpora: corpora(), pattern: $('#lexq').value.trim(), flex: st.flex }); }
+    const cand = LX.res.forms.slice(0, 900).map((f) => f.w);
+    const lang = LX.lang === 'la' ? 'latino' : 'italiano';
+    const out = await sample.json(`Sei un filologo classico. Ecco forme ${lang === 'latino' ? 'latine' : 'italiane'} attestate nel corpus di Agostino (grafia dell'edizione, con u/v e i/j come nel testo).
+Lemma richiesto: «${lemma}».
+Compito: indica quali forme dell'elenco appartengono al paradigma di quel lemma (tutte le flessioni; per i verbi anche participi e gerundi/gerundivi, non i derivati con prefisso a meno che il lemma stesso li includa). Indica poi, se il paradigma ha temi diversi che l'elenco non copre (es. fero → tul-, lat-), i prefissi di ricerca da aggiungere.
+Rispondi solo con JSON: {"forme": ["..."], "altri_temi": ["..."], "nota": "una frase"}
+Elenco: ${cand.join(', ')}`, { modelTier: 'default' });
+    const forms = Array.isArray(out.forme) ? out.forme.map(String) : [];
+    paintLex(forms);
+    const extra = Array.isArray(out.altri_temi) && out.altri_temi.length ? ' Altri temi da elencare: ' + out.altri_temi.map((t) => `<button class="linkish" data-stem="${esc(t)}">${esc(t)}</button>`).join(', ') + '.' : '';
+    $('#lemmaHint').innerHTML = `Selezionate ${forms.length} forme. ${esc(out.nota || '')}${extra}`;
+  } catch (e) {
+    $('#lemmaHint').textContent = e && e.code === 'not_granted' ? 'Uso di Claude non autorizzato per questa pagina.' : 'Non è riuscito: ' + (e && (e.message || e.code) || '');
+  }
+};
+$('#lexai').addEventListener('click', (e) => { const b = e.target.closest('[data-stem]'); if (b) { $('#lexq').value = b.dataset.stem; runLex(); } });
+
+// ---------- assistente ----------
+const AI = { turns: store.get('chat', []), ctl: null, busy: false };
+const SUGG = [
+  'Come cambia nel tempo il modo in cui Agostino parla della memoria? Mostrami i passi chiave in ordine cronologico.',
+  'Dove Agostino definisce il tempo come «distentio animi» e con quali altri passi dialoga questa idea?',
+  'In quali testi compare l’espressione «ordo amoris» o idee affini sull’amore ordinato?',
+  'Raccogli i passi in cui Agostino parla della propria conversione fuori dalle Confessioni.',
+];
+function catalogBrief() {
+  return C.docs.filter((d) => d.c === 'O').map((d) => `${d.id} ${d.s} ${d.t} (${d.d})${d.tag ? ' [' + d.tag + ']' : ''}`).join('\n');
+}
+function aiRules() {
+  return `Sei l'assistente di ricerca dello «Scrinium Augustini», l'applicazione con cui Armando Bisogno (storico della filosofia medievale, studioso di Agostino) interroga il corpus completo di Agostino d'Ippona in latino con la traduzione italiana della Nuova Biblioteca Agostiniana (NBA): 106 opere, 638 sermoni, 310 lettere, ordinati cronologicamente (Anoz 2002, Catapano 2010, Tavole NBA).
+
+Hai strumenti che interrogano il corpus. Regole:
+- Fondati SOLO sui testi che recuperi con gli strumenti; se non trovi qualcosa, dillo. Distingui con chiarezza ciò che il testo dice dalla tua interpretazione.
+- Sii efficiente: al massimo 4-5 chiamate di strumenti. Combina varianti in una sola query con OR (|) e asterischi (es. memori* | recordat*), cerca in latino per la precisione, usa l'italiano per concetti.
+- Sintassi delle query: parola, prefisso* , "frase esatta", "frase"~3 (fino a 3 parole in mezzo), a NEAR/5 b, a PRIMA/5 b, a | b (o), -parola (escludi), parentesi, la:... it:... per forzare la lingua di un termine, /regex/. Gli operatori vanno in MAIUSCOLO. La grafia latina è flessibile (ae/oe/e, i/j, u/v).
+- Cita ogni passo che usi con il suo identificativo tra doppie parentesi angolari quadre, esattamente come lo restituiscono gli strumenti: ⟦O34:10.27.38⟧ (l'interfaccia lo trasforma in un collegamento al testo). Riporta brevi citazioni latine seguite dalla traduzione NBA.
+- Rispondi in italiano, con tono da collega studioso, in Markdown sobrio (titoletti brevi, elenchi solo se utili). Chiudi con una riga «Ricerche eseguite:» che elenca le query usate, così che Armando possa rifarle.
+- Tieni conto della cronologia quando è rilevante (evoluzione del pensiero).
+
+Identificativi: O = opere, S = sermoni, E = lettere, seguiti dal numero d'ordine cronologico del corpus (NON dal numero tradizionale: per trovare il Sermo 52 o l'Epistula 147 usa lo strumento «testi»).
+Catalogo delle opere (id, sigla, titolo, data):
+${catalogBrief()}`;
+}
+function snippetAround(text, ranges, len = 420) {
+  if (!text) return '';
+  const t = text.replace(/\[n\d+\]/g, '');
+  if (t.length <= len) return t;
+  const c = ranges && ranges.length ? Math.min(ranges[0][0], t.length) : 0;
+  const s = Math.max(0, c - Math.round(len / 3));
+  return (s > 0 ? '… ' : '') + t.slice(s, s + len) + ' …';
+}
+const TOOLS = [
+  {
+    name: 'cerca',
+    description: 'Cerca nel corpus di Agostino con la sintassi dell\'applicazione. Restituisce il numero di paragrafi e occorrenze, la distribuzione per testo e i primi passi (id, citazione, data, estratto latino e italiano). Usa gli id restituiti per citare o per «leggi».',
+    inputSchema: { type: 'object', properties: {
+      query: { type: 'string', description: 'Interrogazione, es. memori* NEAR/5 tempor*' },
+      lingua: { type: 'string', enum: ['la', 'it', 'both', 'nt'], description: 'Dove cercare: latino (default), italiano, entrambi, note NBA' },
+      corpus: { type: 'array', items: { type: 'string', enum: ['O', 'S', 'E'] }, description: 'Default tutti' },
+      da: { type: 'integer', description: 'Anno iniziale (default 386)' }, a: { type: 'integer', description: 'Anno finale (default 430)' },
+      testi: { type: 'array', items: { type: 'string' }, description: 'Limita a questi testi: id (O34) o sigle (conf., trin., s. 52, ep. 147)' },
+      max: { type: 'integer', description: 'Quanti passi restituire (default 12, max 25)' },
+      ordine: { type: 'string', enum: ['chrono', 'dense'], description: 'cronologico (default) o per densità di occorrenze' },
+    }, required: ['query'] },
+    async execute(inp) {
+      const f = { y0: +inp.da || 350, y1: +inp.a || 431, undated: !(inp.da || inp.a), tag: '', augOnly: false, docs: [] };
+      if (Array.isArray(inp.testi) && inp.testi.length) {
+        f.docs = inp.testi.map(resolveDoc).filter(Boolean).map((d) => d.id);
+        if (!f.docs.length) throw new Error('Nessuno dei testi indicati è stato riconosciuto: usa «testi» per trovare gli id.');
+      }
+      const corp = Array.isArray(inp.corpus) && inp.corpus.length ? inp.corpus : ['O', 'S', 'E'];
+      const scope = ['la', 'it', 'both', 'nt'].includes(inp.lingua) ? inp.lingua : 'la';
+      aiLog('cerca: ' + inp.query + ' [' + scope + ']');
+      const res = await rpc('search', { slot: 'ai', q: String(inp.query), scope, flex: true, cs: false, corpora: corp, filters: f, sort: inp.ordine === 'dense' ? 'dense' : 'chrono' });
+      const n = Math.min(25, Math.max(1, +inp.max || 12));
+      const items = (await rpc('page', { slot: 'ai', start: 0, count: n })).items;
+      const perTesto = Object.entries(res.perDoc).sort((a, b) => b[1][1] - a[1][1]).slice(0, 15).map(([id, e]) => `${byId.get(id).s} (${id}, ${byId.get(id).d}): ${e[1]}`);
+      return {
+        paragrafi: res.paras, occorrenze: res.occ, troncato: res.capped || undefined, per_testo: perTesto,
+        passi: items.map((it) => ({ id: it.id + ':' + it.ref, cit: it.cite, data: byId.get(it.id).d, la: snippetAround(it.la, it.hl.la), it: snippetAround(it.it, it.hl.it) })),
+      };
+    },
+  },
+  {
+    name: 'leggi',
+    description: 'Legge per intero un passo (latino e italiano NBA) dato il suo id, es. O34:10.27.38, con eventuali paragrafi di contesto prima e dopo.',
+    inputSchema: { type: 'object', properties: { id: { type: 'string' }, contesto: { type: 'integer', description: 'Paragrafi prima e dopo (0-3, default 0)' } }, required: ['id'] },
+    async execute(inp) {
+      const s = String(inp.id); const k = s.indexOf(':');
+      if (k < 0) throw new Error('Formato atteso: O34:10.27.38');
+      aiLog('leggi: ' + s);
+      return rpc('passage', { id: s.slice(0, k), ref: s.slice(k + 1), ctx: Math.min(3, Math.max(0, +inp.contesto || 0)) });
+    },
+  },
+  {
+    name: 'distribuzione',
+    description: 'Per una query restituisce la distribuzione cronologica (per quinquennio, occorrenze e frequenza ogni 10.000 parole) e i testi con più occorrenze. Utile per l\'evoluzione di un tema.',
+    inputSchema: { type: 'object', properties: { query: { type: 'string' }, lingua: { type: 'string', enum: ['la', 'it', 'both'] } }, required: ['query'] },
+    async execute(inp) {
+      const scope = ['la', 'it', 'both'].includes(inp.lingua) ? inp.lingua : 'la';
+      const f = { y0: 350, y1: 431, undated: true, tag: '', augOnly: false, docs: [] };
+      aiLog('distribuzione: ' + inp.query);
+      const res = await rpc('search', { slot: 'ai', q: String(inp.query), scope, flex: true, cs: false, corpora: ['O', 'S', 'E'], filters: f });
+      const D = distData(res, f, scope, ['O', 'S', 'E']);
+      return {
+        paragrafi: res.paras, occorrenze: res.occ,
+        quinquenni: D.bins.map((b) => ({ anni: b.a + '-' + b.b, occ: b.occ, per10000: b.w ? +((b.occ / b.w) * 1e4).toFixed(2) : 0 })),
+        non_datati: D.und.occ,
+        testi: D.works.slice(0, 20).map((w) => ({ id: w.d.id, sigla: w.d.s, titolo: w.d.t, data: w.d.d, occ: w.occ, per10000: +w.rel.toFixed(2) })),
+      };
+    },
+  },
+  {
+    name: 'forme',
+    description: 'Elenca le forme attestate nel corpus che rispondono a un modello (prefisso, * e ?), con le frequenze. Serve a scoprire le flessioni reali prima di cercare.',
+    inputSchema: { type: 'object', properties: { modello: { type: 'string', description: 'es. memor*, *amor*' }, lingua: { type: 'string', enum: ['la', 'it'] } }, required: ['modello'] },
+    async execute(inp) {
+      aiLog('forme: ' + inp.modello);
+      const r = await rpc('lexicon', { lang: inp.lingua === 'it' ? 'it' : 'la', corpora: ['O', 'S', 'E'], pattern: String(inp.modello), flex: true });
+      return { totale_forme: r.total, occorrenze: r.tokens, forme: r.forms.slice(0, 150).map((f) => f.w + ' ' + f.n) };
+    },
+  },
+  {
+    name: 'testi',
+    description: 'Trova testi del corpus per titolo, sigla o numero tradizionale (es. "Sermo 52", "ep. 147", "De Trinitate", "Genesi"). Restituisce id, sigla, titolo, data.',
+    inputSchema: { type: 'object', properties: { cerca: { type: 'string' } }, required: ['cerca'] },
+    async execute(inp) {
+      aiLog('testi: ' + inp.cerca);
+      return findDocs(String(inp.cerca), 30).map((d) => ({ id: d.id, sigla: d.s, titolo: d.t, descrizione: d.ti, data: d.d, paragrafi: d.np }));
+    },
+  },
+];
+let aiActEl = null;
+function aiLog(t) { if (aiActEl) aiActEl.insertAdjacentHTML('beforeend', `<div>› ${esc(t)}</div>`); }
+function mdToHtml(src) {
+  const inline = (s) => esc(s)
+    .replace(/⟦([OSE]\d+):([^⟧\s]+)⟧/g, (m, id, ref) => { const d = byId.get(id); return `<button class="cchip" data-open="${id}" data-ref="${esc(ref)}">${esc(d ? citeOf(d, ref) : id + ':' + ref)}</button>`; })
+    .replace(/⟦([OSE]\d+)⟧/g, (m, id) => { const d = byId.get(id); return `<button class="cchip" data-open="${id}">${esc(d ? d.s : id)}</button>`; })
+    .replace(/\*\*([^*]+)\*\*/g, '<b>$1</b>').replace(/(^|[^*])\*([^*\n]+)\*/g, '$1<i>$2</i>').replace(/`([^`]+)`/g, '<code>$1</code>');
+  const lines = src.split('\n'); let html = '', list = null, para = [];
+  const flush = () => { if (para.length) { html += '<p>' + inline(para.join(' ')) + '</p>'; para = []; } };
+  const closeList = () => { if (list) { html += `</${list}>`; list = null; } };
+  for (const ln of lines) {
+    let m;
+    if (!ln.trim()) { flush(); closeList(); continue; }
+    if ((m = /^(#{1,4})\s+(.*)/.exec(ln))) { flush(); closeList(); html += `<h3>${inline(m[2])}</h3>`; continue; }
+    if ((m = /^>\s?(.*)/.exec(ln))) { flush(); closeList(); html += `<blockquote>${inline(m[1])}</blockquote>`; continue; }
+    if ((m = /^\s*[-*]\s+(.*)/.exec(ln))) { flush(); if (list !== 'ul') { closeList(); html += '<ul>'; list = 'ul'; } html += `<li>${inline(m[1])}</li>`; continue; }
+    if ((m = /^\s*\d+[.)]\s+(.*)/.exec(ln))) { flush(); if (list !== 'ol') { closeList(); html += '<ol>'; list = 'ol'; } html += `<li>${inline(m[1])}</li>`; continue; }
+    closeList(); para.push(ln);
+  }
+  flush(); closeList();
+  return html;
+}
+function paintChat() {
+  const c = $('#chat');
+  if (!AI.turns.length) {
+    c.innerHTML = `<div class="card"><h3>Chiedi ai testi</h3><p class="hint" style="margin:0 0 10px">Claude usa gli stessi strumenti della ricerca (query, lettura dei passi, distribuzione cronologica, indice delle forme) e cita ogni passo con un collegamento al testo. Consuma l’utilizzo del tuo account Claude.</p>
+      <div class="sugglist">${SUGG.map((s) => `<button type="button" data-sg>${esc(s)}</button>`).join('')}</div></div>`;
+    return;
+  }
+  c.innerHTML = AI.turns.map((t) => t.role === 'user' ? `<div class="msg me">${esc(t.content)}</div>` : `<div class="msg ai">${t.log ? `<div class="activity">${t.log}</div>` : ''}${mdToHtml(t.content)}</div>`).join('');
+}
+$('#chat').addEventListener('click', (e) => {
+  const s = e.target.closest('[data-sg]'); if (s) { $('#aiq').value = s.textContent; $('#aiq').focus(); return; }
+  const o = e.target.closest('[data-open]'); if (o) openDoc(o.dataset.open, o.dataset.ref);
+});
+$('#aiNew').onclick = () => { if (AI.busy) return; AI.turns = []; store.set('chat', []); paintChat(); };
+$('#aiStop').onclick = () => AI.ctl && AI.ctl.abort();
+$('#aiq').addEventListener('keydown', (e) => { if (e.key === 'Enter' && (e.metaKey || e.ctrlKey)) { e.preventDefault(); aiSend(); } });
+$('#aiSend').onclick = aiSend;
+const AI_ERR = {
+  not_granted: 'Uso di Claude non autorizzato per questa pagina.', sampling_disabled: 'Claude non è disponibile per questo account.',
+  rate_limited: 'Troppe richieste o limite d’uso raggiunto: riprova più tardi.', session_expired: 'Sessione scaduta: accedi di nuovo a claude.ai.',
+  prompt_too_large: 'La conversazione è troppo lunga: avviane una nuova.', tools_unavailable: 'In questa vista Claude non può usare gli strumenti di ricerca.',
+  refused: 'Claude ha rifiutato questa richiesta: riformulala.', empty_completion: 'Nessuna risposta: prova a chiedere meno cose alla volta.',
+};
+async function aiSend() {
+  const text = $('#aiq').value.trim(); if (!text || AI.busy) return;
+  const sample = await cUse('sample');
+  if (!sample) { $('#aiNote').textContent = 'Claude non è disponibile in questa vista (apri la pagina su claude.ai).'; return; }
+  AI.busy = true; $('#aiSend').disabled = true; $('#aiStop').hidden = false; $('#aiNote').textContent = '';
+  AI.turns.push({ role: 'user', content: text }); $('#aiq').value = '';
+  paintChat();
+  const bubble = document.createElement('div'); bubble.className = 'msg ai';
+  bubble.innerHTML = '<div class="activity"></div><div class="body"><span class="hint">Sto pensando…</span></div>';
+  $('#chat').append(bubble); aiActEl = $('.activity', bubble);
+  bubble.scrollIntoView({ block: 'end' });
+  AI.ctl = new AbortController();
+  const hist = AI.turns.slice(-10).map(({ role, content }) => ({ role, content }));
+  while (hist.length && hist[0].role !== 'user') hist.shift();
+  let answer = '';
+  try {
+    const r = await sample([{ role: 'user', content: aiRules() }, ...hist], {
+      tools: TOOLS, modelTier: $('#aiTier').value, signal: AI.ctl.signal,
+      onText: ({ text }) => { answer = text; $('.body', bubble).innerHTML = mdToHtml(text); },
+    });
+    answer = r.text;
+    if (r.truncated) $('#aiNote').textContent = 'Risposta interrotta per lunghezza: chiedi meno cose alla volta.';
+  } catch (e) {
+    answer = e.text || '';
+    if (e.code !== 'cancelled') $('#aiNote').textContent = AI_ERR[e.code] || 'Errore: ' + (e.message || e.code || '') + ' — puoi riprovare.';
+  }
+  const log = aiActEl.innerHTML; aiActEl = null;
+  if (answer) AI.turns.push({ role: 'assistant', content: answer, log });
+  else AI.turns.pop();
+  store.set('chat', AI.turns.slice(-20));
+  AI.busy = false; $('#aiSend').disabled = false; $('#aiStop').hidden = true;
+  paintChat();
+  const last = $('#chat').lastElementChild; if (last) last.scrollIntoView({ block: 'start' });
+}
+
+// ---------- guida ----------
+const EX = [
+  ['In quali passi Agostino tratta della veritas di Dio?', 'Una domanda in linguaggio naturale: Claude la traduce in una ricerca sul lessico latino (termini, forme, prossimità, filtri) e ti mostra la query, che puoi modificare. Serve claude.ai.'],
+  ['memoria', 'Una parola (con la grafia flessibile trova anche forme con j/v, ae/oe).'],
+  ['memori*', 'Prefisso: memoria, memoriae, memoriam… · <code>*</code> = qualsiasi lettera, <code>?</code> = una lettera'],
+  ['"tolle lege"', 'Frase esatta (ignora punteggiatura e note tra le parole).'],
+  ['"deus meus"~2', 'Frase con fino a 2 parole in mezzo, nell’ordine dato.'],
+  ['memoria NEAR/5 tempus', 'Le due parole a non più di 5 parole di distanza, in qualunque ordine. <code>PRIMA/5</code> impone l’ordine.'],
+  ['gratia natura', 'Entrambe nello stesso paragrafo (E implicito; si può scrivere <code>E</code> o <code>AND</code>).'],
+  ['caritas | dilectio', 'L’una o l’altra (anche <code>O</code>, <code>OR</code>).'],
+  ['gratia -pelagi*', 'Esclude i paragrafi che contengono la seconda parola (anche <code>NON</code>, <code>NOT</code>).'],
+  ['(uti | frui) NEAR/3 deo', 'Parentesi per raggruppare; NEAR collega un termine o una frase.'],
+  ['la:caritas it:amore', 'Lingue diverse nello stesso paragrafo: dove il latino dice caritas e la traduzione rende con amore.'],
+  ['/in(tro)?spic\\w+/', 'Espressione regolare JavaScript (flag i, u).'],
+];
+$('#guide').innerHTML = `
+  <div class="card"><h2>Come interrogare il corpus</h2>
+    <p>Ogni ricerca lavora per <b>paragrafo</b>: tutte le condizioni devono realizzarsi nello stesso paragrafo dell’edizione (latino e italiano sono allineati paragrafo per paragrafo). Gli operatori si scrivono in <b>MAIUSCOLO</b>, così <i>non</i>, <i>e</i>, <i>o</i> restano parole cercabili.</p>
+    <table><thead><tr><th>Esempio (clic per provarlo)</th><th>Che cosa fa</th></tr></thead><tbody>
+    ${EX.map(([q, d]) => `<tr><td><button class="ex" data-ex="${esc(q)}">${esc(q)}</button></td><td>${d}</td></tr>`).join('')}</tbody></table></div>
+  <div class="grid2">
+    <div class="card"><h3>Viste dei risultati</h3><p><b>Passi</b>: paragrafi con testo a fronte, evidenziazioni, note NBA (clic sul numero). <b>Concordanza</b>: righe KWIC ordinabili per forma o contesto. <b>Distribuzione</b>: frequenza per quinquennio, normalizzata ogni 10.000 parole, e classifica dei testi. <b>Forme</b>: le forme effettivamente trovate. <b>Collocazioni</b>: le parole che ricorrono vicino al termine (logDice).</p></div>
+    <div class="card"><h3>Lessico e lemmi</h3><p>Il corpus non è lemmatizzato. In <b>Lessico</b> elenchi le forme che cominciano in un certo modo, le selezioni (anche con l’aiuto di Claude, che riconosce il paradigma) e le cerchi tutte insieme.</p></div>
+    <div class="card"><h3>Assistente</h3><p>Claude cerca e legge nel corpus con gli stessi strumenti, poi risponde citando: ogni citazione è un collegamento al testo. In fondo elenca le ricerche fatte, per rifarle e verificarle.</p></div>
+    <div class="card"><h3>Fonti e limiti</h3><p>Testi latini e traduzioni della Nuova Biblioteca Agostiniana (augustinus.it), consultati il 30.09.2026. Cronologia: Anoz 2002, Catapano 2010, Tavole NBA. I <i>Gesta collationis</i> hanno l’italiano solo per gli interventi di Agostino, Alipio e Possidio. Numeri di paragrafo dell’edizione; le sigle seguono l’elenco del corpus. Uso di studio personale: non condividere pubblicamente.</p></div>
+  </div>`;
+$('#guide').onclick = (e) => { const b = e.target.closest('[data-ex]'); if (!b) return; const q = b.dataset.ex; if (/^la:|it:/.test(q)) st.scope = 'la'; syncControls(); runSearch(q, looksNatural(q) ? {} : { literal: true }); };
+
+// ---------- avvio ----------
+(async function boot() {
+  syncControls(); paintChat();
+  try {
+    C = await rpc('init');
+    C.paras = C.docs.reduce((s, d) => s + d.np, 0);
+    C.docs.forEach((d) => byId.set(d.id, d));
+    for (const k of 'OSE') $('#n' + k).textContent = fmt(C.docs.filter((d) => d.c === k).length);
+    picker($('#fdoc'), $('#fdocS'), (d) => { $('#fdoc').value = ''; if (!st.fdocs.includes(d.id)) st.fdocs.push(d.id); syncControls(); saveOpts(); });
+    syncControls(); showStatus();
+    const q0 = st.hist[0] || '"tolle lege"';
+    $('#q').value = q0;
+    runSearch();
+  } catch (e) {
+    $('#status').textContent = 'Errore di avvio';
+    $('#summary').innerHTML = `<div class="err">Non riesco a caricare il catalogo: ${esc(e.message)}</div>`;
+  }
+  cUse('sample').then((s) => { if (!s) { $('#aiNote').textContent = 'Claude non è disponibile in questa vista.'; $('#lemmaBtn').disabled = true; } });
+})();
+</script>

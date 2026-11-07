@@ -3,7 +3,7 @@
 Progetto pubblico ideato e condotto da Armando Bisogno. «Un *fitness filosofico*».
 - Sito live: **phitness.it** (WordPress + plugin custom **Phitness Core**, GPL).
 - Pagina di presentazione: **armandobisogno.it/phitness**.
-- Codice del plugin in `Phitness/` (non versionato nel repo).
+- Codice del plugin in `Web/Phitness/` (non versionato nel repo).
 
 ## L'idea
 
@@ -55,7 +55,7 @@ aggregate per il docente (mai i contenuti privati); modalità «open» senza acc
   **dalla home** (resta nella «stanza»). File toccati:
   `includes/class-phitness-frontend.php` (`render_landing()`), `phitness-core.php`
   (Version 1.2.0 → **1.3.0**), `readme.txt` (Stable tag + changelog). Pacchetto:
-  `Phitness/phitness-core-1.3.0.zip` (da ricaricare su WordPress).
+  `Web/Phitness/phitness-core-1.3.0.zip` (da ricaricare su WordPress).
 - **2026-09-21:** ritocchi al testo della landing (`render_landing()`): a capo dopo
   «...esercizio di scrittura.» prima di «Per riprendere il tempo del pensiero.»;
   la nota «Niente account, niente password...» ora in un riquadro più grande e
@@ -66,7 +66,7 @@ aggregate per il docente (mai i contenuti privati); modalità «open» senza acc
   armandobisogno.it; claim finale «Un'ora per te. Si comincia quando vuoi.» →
   «Prenditi un momento per pensare.». File toccati: `includes/class-phitness-frontend.php`,
   `assets/css/phitness.css`, `phitness-core.php` (Version 1.3.0 → **1.4.0**),
-  `readme.txt` (Stable tag + changelog). Pacchetto: `Phitness/phitness-core-1.4.0.zip`
+  `readme.txt` (Stable tag + changelog). Pacchetto: `Web/Phitness/phitness-core-1.4.0.zip`
   (da ricaricare su WordPress).
 - **2026-09-21:** rivisti i testi #2 (`Sapere`, Apologia di Socrate) e #3
   (`Pensare Dio`, argomento ontologico di Anselmo): tolto l'header
@@ -79,7 +79,7 @@ aggregate per il docente (mai i contenuti privati); modalità «open» senza acc
   diretto→teatrale è stato riportato al "noi" inclusivo del #1 (es. "Notiamo"
   non "Notate", "Immaginiamo" non "Immaginate"), comprimendo i due paragrafi
   finali di istruzioni d'esercizio in un'unica chiusura aperta. File:
-  `Phitness/2. Sapere_Socrate.docx`, `Phitness/3. Pensare Dio.docx`.
+  `Web/Phitness/2. Sapere_Socrate.docx`, `Web/Phitness/3. Pensare Dio.docx`.
   Create anche le slide Canva corrispondenti clonando lo stile del mazzo
   "Verità" (banda turchese, logo PHITNESS bicolore, frecce e X rossa per lo
   schema "candidati eliminati"): **ESERCIZIO #2 - Sapere**
@@ -97,14 +97,14 @@ aggregate per il docente (mai i contenuti privati); modalità «open» senza acc
   "noi"/impersonale in tutto il testo, e i due "movimenti" finali
   dell'esercizio (smascherare l'argomento pigro + le due colonne di Epitteto)
   compressi in un'unica chiusura riflessiva. File:
-  `Phitness/4. Destino e libertà.docx`. Creato anche il mazzo
+  `Web/Phitness/4. Destino e libertà.docx`. Creato anche il mazzo
   **ESERCIZIO #4 - Destino e libertà** (13 slide, stesso stile clonato):
   fan-out su "l'argomento pigro / il cilindro / il cane e il carro", build per
   ciascuno dei tre, poi la chiusura "Siamo davvero liberi?" che le ripropone
   tutte e tre scartando (X rossa) l'argomento pigro mentre cilindro e cane
   restano validi.
 - **2026-10-06 — versione 2.0.0** (online su phitness.it). Sorgente di lavoro in
-  `Phitness/src/phitness-core/`, pacchetto `Phitness/phitness-core-2.0.0.zip`.
+  `Web/Phitness/src/phitness-core/`, pacchetto `Web/Phitness/phitness-core-2.0.0.zip`.
   - **Consegna anonima**: pagine `/consegna` e `/ritira`. Testo scritto/incollato,
     `.txt` letto nel browser (al server arriva solo il testo), foto del foglio
     ricodificata (via EXIF: posizione, telefono, ora; lato max 2400 px) in
@@ -129,13 +129,13 @@ aggregate per il docente (mai i contenuti privati); modalità «open» senza acc
     poi cancellata.
   - Deploy: plugin «Armando Deploy» anche su phitness.it; credenziali
     `PH_WP_USER`/`PH_WP_APP_PASSWORD` in ~/.zshrc; comando:
-    `AB_WP_URL=https://www.phitness.it AB_WP_USER=$PH_WP_USER AB_WP_APP_PASSWORD=$PH_WP_APP_PASSWORD python3 Sito/deploy.py plugin Phitness/phitness-core-X.zip`.
+    `AB_WP_URL=https://www.phitness.it AB_WP_USER=$PH_WP_USER AB_WP_APP_PASSWORD=$PH_WP_APP_PASSWORD python3 Web/Sito/deploy.py plugin Web/Phitness/phitness-core-X.zip`.
   - La vecchia copia del plugin (1.0.0) su armandobisogno.it è stata disattivata.
 - **2026-10-06 — versione 2.1.0**: Fase 1 anche in **audio** (meta `_phit_audio` = allegato
   della Libreria media, oppure `_phit_audio_url` link diretto; `phit_audio_url()` in helpers;
   lettore «Ascolta la lezione» nella stanza; video e audio possono convivere). Metabox
   rinominata «Fase 1 — Lezione filosofica (video o audio)». Pacchetto
-  `Phitness/phitness-core-2.1.0.zip`, online su phitness.it.
+  `Web/Phitness/phitness-core-2.1.0.zip`, online su phitness.it.
 - **2026-10-06 — versione 2.2.0**: svolta di Armando: **niente allenamento da soli**, almeno per ora.
   phitness.it diventa la vetrina degli incontri per aziende e comunità, allineata ai testi di
   armandobisogno.it/phitness (che restano il riferimento). In primo piano «Organizza un incontro»

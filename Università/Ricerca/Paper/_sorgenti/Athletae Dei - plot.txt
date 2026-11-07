@@ -1,0 +1,100 @@
+@author Francesca Dell’Acqua – Armando Bisogno (proposta)
+@title Athletae Dei. Plot del paper
+
+## 0. Da dove si parte
+
+Base: la presentazione di F. Dell’Acqua, *Athletes of God: Two Examples of Material Culture* (DiSPaC, per SportUnisa), che mette in sequenza due oggetti: le basiliche ‘circiformi’ del suburbio romano (IV sec.) e la lapide dell’abate irlandese Cumiano a Bobbio (VIII sec., committente Liutprando, firmata *Iohannes magister*). Le slide fissano il dato materiale e la tesi di Coon-Sexton (2020): l’architettura del circo passa nella basilica perché l’atletismo classico passa nel culto dei martiri.
+
+Il paper aggiunge ciò che le slide lasciano implicito: il *lessico* e il *pensiero* che rendono possibile questo passaggio. Tra i due oggetti c’è uno snodo testuale, la predicazione di Agostino sui martiri, dove la metafora atletica viene presa sul serio fino in fondo e, proprio per questo, rovesciata. L’impianto è dunque a due voci: cultura materiale (Dell’Acqua) e storia del pensiero tardoantico (Bisogno).
+
+## 1. Tesi
+
+La figura dell’*athleta Dei* non è un ornamento retorico ereditato da Paolo, ma il luogo in cui il cristianesimo tardoantico ridefinisce tre elementi dell’agone classico: lo *spazio* (dallo stadio alla basilica), lo *sguardo* (dallo spettatore all’imitatore) e il *premio* (dalla corona assegnata dall’agonoteta alla grazia di un Dio che guarda e insieme aiuta). La lapide di Cumiano mostra l’esito altomedievale del processo: l’atleta non è più il martire ma il monaco, l’agone non è più nell’arena ma nella durata di una vita ascetica, e il linguaggio dell’epica e dei giochi (Virgilio, le olimpiadi) sopravvive come cornice di una vittoria che si compie solo dopo la morte.
+
+Titolo di lavoro: *Athletae Dei. Spazio, sguardo e premio dall’arena dei martiri alla lapide di Cumiano (IV-VIII secolo)*. In alternativa, più asciutto: *Dall’arena alla pietra. Gli atleti di Dio tra Roma tardoantica e Bobbio longobarda*.
+
+## 2. Struttura
+
+### 2.1 Introduzione. Una cultura che condanna gli spettacoli e ne eredita il linguaggio
+
+Il paradosso da cui partire: i cristiani sono stati spettacolo nell’arena (le persecuzioni, la slide sul 313) e i loro pastori condannano circo, teatro e anfiteatro; eppure la Chiesa del IV secolo costruisce edifici a forma di circo e predica i martiri come atleti. Domanda: che cosa del modello agonistico viene conservato, e che cosa viene capovolto? Esplicitare il metodo: leggere insieme oggetti e testi, senza ridurre gli uni a illustrazione degli altri.
+
+### 2.2 Il lessico paolino e la sua prima ricezione
+
+1 *Cor* 9, 24-27 (la corsa, la corona *incorruptibilis*, l’autodisciplina dell’atleta), 1 *Cor* 4, 9 (*spectaculum facti sumus mundo et angelis et hominibus*), *Phil* 3, 14 (*bravium supernae vocationis*), 2 *Tim* 4, 7-8 (*bonum certamen certavi… corona iustitiae*). Prima rielaborazione in contesto martiriale: Tertulliano, *Ad martyras* 3 (Dio come *agonothetes*, lo Spirito come *xystarches*) e *De spectaculis*; la *Passio Perpetuae* (la visione in cui Perpetua lotta come atleta contro l’egiziano). Il disco vitreo con Pietro e Paolo sotto la corona d’alloro (slide 3) come primo documento figurativo dello stesso lessico.
+
+### 2.3 Lo spazio. Le basiliche circiformi e la sepoltura *ad sanctos*
+
+Sezione di Dell’Acqua. Le sei basiliche del suburbio (Basilica Apostolorum/S. Sebastiano sull’Appia, S. Marco sull’Ardeatina, SS. Marcellino e Pietro, S. Agnese, S. Lorenzo, basilica di Villa dei Gordiani), pianta, deambulatorio absidato, funzione cimiteriale. Il modello di Coon-Sexton: la basilica come *racetrack to salvation*, spazio dove ricordare e rimettere in scena l’agonia dei martiri. Il nodo da sviluppare: la forma del circo non è soltanto una citazione, ma organizza il *movimento* dei fedeli e il loro *guardare*, e così prepara la sezione successiva. Patronato imperiale (Costantino) come primo termine di una cornice che si chiuderà con Liutprando.
+
+### 2.4 Lo sguardo. Agostino e la conversione dello spettatore
+
+Sezione di Bisogno, cuore teorico del paper. Il punto di partenza autobiografico: Agostino conosce dall’interno la *insania circensium* e la passione dell’anfiteatro. Alipio a Cartagine (*conf.* VI, 7, 11-12) e soprattutto Alipio a Roma, trascinato all’anfiteatro, che chiude gli occhi e poi li riapre al grido della folla (*conf.* VI, 8, 13: «Adero itaque absens ac sic et vos et illa superabo»): lo sguardo come luogo della sconfitta. Il teatro come specchio delle proprie miserie (*conf.* III, 2, 2).
+
+Nei sermoni sui martiri la lettura della *passio* diventa a sua volta uno spettacolo, ma interiore:
+
+> Magnum et multum mirandum spectaculum noster animus cepit: nec inanissimam et perniciosissimam, sicut solet in theatris quarumque nugarum, sed plane utilissimam et fructuosissimam voluptatem oculis interioribus (*s.* 275, 1).
+
+Formule-chiave: *spectacula cordis* (*s.* 315, 3, 5, su Stefano), *lectio illa theatrum nostri cordis erat* (*s.* 343, 5, su Susanna), *ecce spectacula Christianorum* (*Io. ev. tr.* 7, 6), l’anfiteatro di Perpetua e Felicita (*s.* 280, 2; 281, 2). La differenza decisiva è nel rapporto tra chi guarda e chi è guardato:
+
+> Comparate huic sancto spectaculo voluptates et delicias theatrorum. Ibi oculi inquinantur, hic corda mundantur; hic laudabilis est spectator, si fuerit imitator (*s.* 301A, 7).
+
+Cfr. anche *s.* 313A, 3 (*nos… martyres, quos spectamus, cupimus imitari*) e *en. Ps.* 39, 9 (il cristiano *aversus a circo, a theatro, ab amphitheatro* cerca un altro spettacolo). Tesi della sezione: la basilica circiforme e il sermone sul martire fanno la stessa cosa con mezzi diversi; trasformano il pubblico dell’arena in una comunità che, guardando, si allena.
+
+### 2.5 Il premio. L’agonoteta che aiuta
+
+Il punto filosofico che il paper può aggiungere alla bibliografia storico-artistica. Nel modello agonistico classico l’atleta vince con le proprie forze e l’agonoteta si limita a osservare e premiare. Agostino accoglie la metafora (*symb.* 3, 9: *tamquam agonotheta summus, dixit: Fac, et tolle… certa in agone, et coronaberis*; *s.* 163A, 2: *nemo athleta sine sudore coronatur*) e poi la spezza:
+
+> Non sic te Deus spectat certantem, ut agonetheta spectat athletam; coronam feneam parat, vires subministrare laboranti non novit, nec enim potest; homo enim est, non Deus (*s.* 343, 10).
+
+Cfr. *en. Ps.* 30, 2, 1, 6 (*athletam Domini ab agonotheta petentem adiutorium pugnae suae*), *s.* 277A, 2 (*ita spectat certantem, ut laborantem adiuvet*), *s.* 198 augm. = Dolbeau 26, 3 (Cristo agonoteta *non solum spectat luctantes, sed et adiuvat perdurantes*); il rovescio diabolico in *en. Ps.* 143, 5 (*malus agonotheta*). Qui la metafora sportiva tocca il centro della teologia agostiniana della grazia: la vittoria del martire non è merito dell’atleta ma dono di chi lo guarda. Da collegare a *La grazia sul pulpito* e a *L’eterno assente* (la volontà che non basta a se stessa): l’agone cristiano è un agone in cui il premio precede e rende possibile la gara.
+
+### 2.6 L’interiorizzazione. Dal martire all’asceta
+
+Finite le persecuzioni, dove combatte l’atleta? Agostino sposta lo stadio dentro la vita: *in hoc stadio vitae humanae* (*vera rel.* 12, 24; 38, 70), *ista vita sic est quomodo stadium* (*s.* 113B, 3), *si pugnamus, in stadio sumus* (*ep. Io. tr.* 4, 3). L’agone diventa lotta con la concupiscenza (*s.* 163A, 2; *s.* 154A, 2 su Paolo *magnus et fortis athleta Dei*), con la malattia (*s.* 306E, 7: *in lecto es, et athleta es*; *s.* 318, 3; *s.* 335D, 3.5), con la prova (Giobbe *magnus athleta Dei*: *s.* 359A, 6; *s.* 72 augm. 17). È il ponte verso il monachesimo: l’asceta come nuovo martire (Atanasio, *Vita Antonii*; Cassiano, *Collationes*, con il lessico dell’*athleta Christi*; la regola e gli scritti di Colombano). Questa sezione rende comprensibile perché, nell’VIII secolo, l’epiteto passi a un abate.
+
+### 2.7 La pietra. La lapide di Cumiano
+
+Sezione di Dell’Acqua, con un commento al testo a due mani. Bobbio (614, primo monastero sotto patronato longobardo, fondazione colombaniana), Cumiano, Liutprando, il manufatto (marmo, 180 × 90 cm, Museo dell’Abbazia). Quattro punti di lettura:
+
+a) *Sacra membra… solvuntur*: l’eco di *Aen.* XII, 951 (*ast illi solvuntur frigore membra*) è la morte di Turno, il guerriero vinto. Il verso epico della sconfitta viene riscritto come apertura di una vittoria: l’anima di Turno *fugit indignata sub umbras*, quella di Cumiano *caelum penetrans… cum angelis gaudet*. Il rovesciamento è lo stesso che Agostino opera sull’agonoteta: il vinto agli occhi del mondo è il vincitore.
+
+b) *Olimpiadis quattuor uniusque circolo anni*: i diciassette anni a Bobbio misurati in olimpiadi. Arcaismo da poeta, certo, ma anche ultima traccia del calendario dei giochi applicato alla durata di una vita ascetica. Da verificare l’uso di *olympias* in epigrafia funeraria altomedievale.
+
+c) *Vigilans ieiunans indefessus sidule orans*: la triade ascetica come allenamento; l’*indefessus* è l’atleta che non cede alla fatica. Cumiano è *athleta Dei* senza che l’epigrafe lo dica: lo dice il lessico.
+
+d) *Potens intercessor exsiste pro… Liutprando*: il patronato regio chiede in cambio l’intercessione dell’atleta vincitore. Simmetria con Costantino (2.3): dall’imperatore che costruisce le basiliche dei martiri al re che decora la tomba dell’asceta.
+
+Coda: *Fecit + Iohannes magister*. Una delle prime firme d’artista dell’Occidente medievale, sulla tomba di chi ha rinunciato alla gloria. Breve nota sulla coscienza del *magister* come ultima forma, laica e artigiana, di agonismo.
+
+### 2.8 Conclusione
+
+Ricapitolare i tre spostamenti (spazio, sguardo, premio) e il loro esito altomedievale. Chiudere sul senso della vittoria: l’*athleta Dei* conserva la forma dell’agone (gara, fatica, corona) ma ne cambia la logica, perché vince chi è aiutato e vince dopo la fine della gara. Possibile apertura, adatta al contesto SportUnisa: che cosa resta di questa trasformazione nel modo in cui ancora oggi pensiamo il campione, il sacrificio e il pubblico.
+
+## 3. Ripartizione e misure
+
+Ipotesi: 8.000-10.000 parole, note comprese. Dell’Acqua: 2.3, 2.7 (manufatto, contesto, apparato iconografico). Bisogno: 2.2, 2.4, 2.5, 2.6. A due mani: introduzione, commento al testo della lapide, conclusione. Immagini dalle slide (disco vitreo, piante di S. Sebastiano e S. Marco, lapide intera e particolare della firma), da verificare per i diritti.
+
+## 4. Punti aperti
+
+Lingua e sede: inglese (coerente con le slide e con Coon-Sexton) o italiano? Rivista di area (es. *Gesta*, *Early Medieval Europe*, *Studi Medievali*) o volume legato a SportUnisa?
+
+Da verificare: il testo critico della lapide (edizione di riferimento oltre a Everett 2003; lettura di *sidule* e *lustrun*); la datazione della morte di Cumiano; l’ipotesi che le basiliche circiformi siano sei (alcuni studi ne contano cinque); i luoghi di Tertulliano e della *Passio Perpetuae*; se Agostino usi mai *athleta* per un monaco (nel corpus il termine va a martiri, a Paolo, a Giobbe e al malato: dato da sfruttare in 2.6).
+
+Bibliografia da costruire: Coon-Sexton 2020; Everett 2003; studi su Bobbio e sull’epigrafia longobarda; sulle basiliche circiformi (Krautheimer; La Rocca; Fiocchi Nicolai); sul lessico agonistico cristiano (Brändle; studi su *athleta Christi*); su Agostino e gli spettacoli (Lugaresi, *Il teatro di Dio*, 2008; Weismann).
+
+@bibliography
+
+@bibhead Fonti agostiniane citate (dal corpus, Ricerca/Agostino strumenti)
+
+*Confessiones* III, 2, 2; VI, 7, 11-12; VI, 8, 13 · *De vera religione* 12, 24; 38, 70 · *De symbolo ad catechumenos* 3, 9 · *Enarrationes in Psalmos* 30, 2, 1, 6; 39, 9; 143, 5 · *In Iohannis evangelium tractatus* 7, 6 · *In epistulam Iohannis tractatus* 4, 3 · *De civitate Dei* XIV, 9, 2 (Paolo *athleta Christi* *in theatro huius mundi*).
+
+*Sermones* 72 augm. 17; 113B, 3; 154A, 2; 163A, 2; 198 augm. (= Dolbeau 26), 3; 274, 1; 275, 1; 277A, 1-2; 280, 2; 281, 2; 301A, 7; 306E (= Dolbeau 18), 7; 313A, 3; 315, 3, 5; 318, 3; 335D, 3.5; 343, 5.10; 359A, 6; 359B (= Dolbeau 2), 20.
+
+@bibhead Altre fonti e studi di partenza
+
+L. ^^Coon^^ – K. ^^Sexton^^, *Racetrack to Salvation: The Circus, the Basilica, and the Martyr*, «Gesta» 59/1 (2020), pp. 1-42.
+
+N. ^^Everett^^, *Literacy in Lombard Italy, c. 568-774*, Cambridge 2003, pp. 251-254.
+
+F. ^^Dell’Acqua^^, *Athletes of God: Two Examples of Material Culture*, presentazione, DiSPaC – Università di Salerno, 2026.

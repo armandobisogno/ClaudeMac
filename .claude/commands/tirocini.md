@@ -13,7 +13,7 @@ Argomento di questo giro (se vuoto, ignora): **$ARGUMENTS**
 
 ## La regola (non cambia mai)
 
-- La firma è l'immagine `Direzione/Firma.png` (resa trasparente dallo script).
+- La firma è l'immagine `Università/Direzione/Firma.png` (resa trasparente dallo script).
 - Va **una sola volta per PFO**, sul rigo
   **«Firma e timbro del soggetto promotore ………… in data ……»**: di solito è la
   penultima pagina del modulo, nel blocco firme sotto «Autorizzazione al

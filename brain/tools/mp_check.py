@@ -70,9 +70,17 @@ def write_if_changed(path, content):
 # ---------- fetch ----------
 
 def fetch_posts():
-    out, off, seen = [], 0, set()
+    # Dal nov 2026 l'archivio pagina con un cursore ({"posts": [...], "nextCursor": ...})
+    # e rifiuta "offset" con HTTP 400; resta il supporto alla vecchia risposta a lista.
+    out, off, seen, cursor = [], 0, set(), None
+    base = f"https://{SUBDOMAIN}.substack.com/api/v1/archive?sort=new&limit=12"
     while off < 400:
-        d = get_json(f"https://{SUBDOMAIN}.substack.com/api/v1/archive?sort=new&offset={off}&limit=12")
+        d = get_json(base + (f"&cursor={urllib.parse.quote(str(cursor))}" if cursor else ""))
+        if isinstance(d, dict):
+            cursor = d.get("nextCursor")
+            d = d.get("posts") or []
+        else:
+            cursor = None
         if not isinstance(d, list) or not d:
             break
         for p in d:
@@ -87,7 +95,7 @@ def fetch_posts():
                     "url": p.get("canonical_url"),
                     "audience": p.get("audience"),
                 })
-        if len(d) < 12:
+        if len(d) < 12 or not cursor:
             break
         off += 12
         time.sleep(0.25)

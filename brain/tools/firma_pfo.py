@@ -2,7 +2,7 @@
 """
 firma_pfo.py — firma dei PFO (progetti formativi di tirocinio) con la firma di Armando.
 
-La firma (Direzione/Firma.png) va SEMPRE sul rigo
+La firma (Università/Direzione/Firma.png) va SEMPRE sul rigo
 «Firma e timbro del soggetto promotore ………… in data ……»: centrata sulla linea
 punteggiata che segue la dicitura, appoggiata sulla linea. Una sola firma per PFO.
 
@@ -31,7 +31,7 @@ import fitz  # PyMuPDF
 ROOT = pathlib.Path(__file__).resolve().parents[2]
 TIROCINI = ROOT / "Documenti di passaggio" / "Tirocini"
 FIRMATI = TIROCINI / "Firmati"
-FIRMA_PNG = ROOT / "Direzione" / "Firma.png"
+FIRMA_PNG = ROOT / "Università" / "Direzione" / "Firma.png"
 
 LARGHEZZA = 110      # punti PDF (~3,9 cm)
 ALZO = 0.85          # quota dell'altezza della firma che sta sopra la linea
