@@ -44,6 +44,7 @@ In radice solo sei voci: `brain/`, `Documenti di passaggio/` e quattro macrocart
 - `/giunta`: dal PDF del dossier del Consiglio, sintesi schematica per la Giunta.
 - `/rassegna`: edizione della rassegna stampa su armandobisogno.it/rassegna.
 - `/tirocini`: firma i PFO in `Documenti di passaggio/Tirocini/`.
+- `/newsletter`: da un contenuto dato, nuovo numero di MP nel ToV (tarato sugli ultimi 10 numeri), .docx in `Scrittura/Macchine Pensanti/Bozze/` + post social.
 - `/MacchinePensanti-spunti`, `/substack-5articoli`: spunti e letture nei DB Notion.
 - Hook di inizio sessione (`.claude/settings.json`): `session_brief.py` (novità MP, scadenze, PFO), `changes_check.py`, `git_autosync.sh`.
 
