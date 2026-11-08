@@ -1,0 +1,43 @@
+@author Armando Bisogno
+@title Aula ingens memoriae: Artificial Memory in the Light of Augustine’s Confessions X
+
+## Abstract
+
+Article type: Research Article (6,000–8,000 words).
+
+Topic and research questions. AI systems increasingly “remember” on our behalf: they store, retrieve, recombine and narrate past interactions, producing what this collection calls a conversational past. This article asks what kind of memory such systems perform, and what is lost when remembering is delegated to agents that retain without ever being able to forget in the human sense. Three questions guide the argument: (1) Is machine retention memory in any strong sense, or storage that imitates the gestures of recollection? (2) What role do forgetting, and the awareness of having forgotten, play in making memory an act for which someone is answerable? (3) What normative criteria follow for AI systems that mediate personal and collective pasts?
+
+Theory and method. The starting point is Book X of Augustine’s *Confessions* (X.8.12–X.19.28), the most sustained ancient phenomenology of memory: memory as a vast hall (*aula ingens*) that is not an archive but an activity of the mind, where one can remember forgetfulness itself and seek what is lost through the trace of its absence. This model is set against Bernard Stiegler’s account of tertiary retention, Venkatesh Rao’s reading of AI as “artificial time”, and recent AI memory studies, notably Andrew Hoskins’s account of generative AI as a “third way of memory”. Mary Carruthers’s reconstruction of medieval memory as a compositional craft and Paul Ricoeur’s work on memory and forgetting bridge the ancient source and the present. The method is philosophical-historical: it reads AI memory practices (chat histories, personalised assistants, synthetic voices of the dead, deepfakes) through categories drawn from the history of philosophy, and tests whether those categories still discriminate.
+
+Argument and originality. The thesis is that the decisive difference between human and artificial memory is not capacity or accuracy but is twofold: responsibility and coextension. Augustinian memory is the act of a self that recollects, forgets, and remembers having forgotten; it is therefore an act one can answer for. It is also an act ordered in time: what is remembered recedes and fades, and must be sought, and this distance gives the past its depth. Generative systems remember otherwise. Rao describes them as living “in superhistory”, compressing centuries of human-equivalent experience into a digested form usable all at once. The article calls coextension the resulting condition: an entire world of memories co-present, equidistant from the present, never fading. Such systems produce a past without answerability and without depth: they retain without oblivion and recombine without confession. Building on “hermenethics” (hermeneutics plus ethics), the author’s framework for the responsibility of interpretation in an age of text-producing machines, the article derives three criteria for AI memory design and governance: legible provenance, deliberate forgetting, and attributable recollection.
+
+Interdisciplinary contribution. The article brings late antique and medieval philosophy into dialogue with media and memory studies. It offers memory scholars a historically grounded vocabulary for distinguishing retention from remembering, and offers philosophers a field in which classical theories of memory are tested against present technologies.
+
+## Keywords
+
+AI memory; Augustine; forgetting; responsibility; coextension; superhistory; tertiary retention; hermenethics
+
+@bibliography Key references
+Augustinus, *Confessionum libri XIII*, ed. L. Verheijen, Corpus Christianorum Series Latina 27, Turnhout, Brepols, 1981.
+Bisogno, A., *Ermenetica. Il sapere umanistico come esercizio di responsabilità*, Zenodo, 2025, doi:10.5281/zenodo.17997307.
+Carruthers, M., *The Book of Memory: A Study of Memory in Medieval Culture*, 2nd ed., Cambridge, Cambridge University Press, 2008.
+Hoskins, A., “AI and memory”, *Memory, Mind & Media* 3 (2024), e18, doi:10.1017/mem.2024.16.
+Rao, V., “Superhistory, Not Superintelligence: Artificial Intelligence is really Artificial Time”, *Contraptions* (newsletter), 11 May 2021, https://contraptions.venkateshrao.com/p/superhistory-not-superintelligence.
+Ricoeur, P., *Memory, History, Forgetting*, trans. K. Blamey and D. Pellauer, Chicago, University of Chicago Press, 2004.
+Stiegler, B., *Technics and Time, 3: Cinematic Time and the Question of Malaise*, trans. S. Barker, Stanford, Stanford University Press, 2011.
+
+## Versione italiana
+
+### Aula ingens memoriae: la memoria artificiale alla luce del libro X delle Confessioni di Agostino
+
+Tipo di articolo: articolo di ricerca (6.000–8.000 parole).
+
+Tema e domande di ricerca. I sistemi di IA «ricordano» sempre più spesso al posto nostro: conservano, recuperano, ricombinano e raccontano le interazioni passate, producendo ciò che questa collezione chiama un passato conversazionale. L’articolo si chiede quale genere di memoria tali sistemi esercitino e che cosa vada perduto quando il ricordare è delegato ad agenti che trattengono senza poter mai dimenticare nel senso umano del termine. Tre domande guidano l’argomentazione: (1) la ritenzione della macchina è memoria in senso forte, o un’archiviazione che imita i gesti del ricordo? (2) Che ruolo hanno l’oblio, e la consapevolezza di aver dimenticato, nel fare della memoria un atto di cui qualcuno risponde? (3) Quali criteri normativi ne derivano per i sistemi di IA che mediano i passati personali e collettivi?
+
+Teoria e metodo. Il punto di partenza è il libro X delle *Confessioni* di Agostino (X, 8, 12 – X, 19, 28), la più ampia fenomenologia antica della memoria: la memoria come un vasto palazzo (*aula ingens*) che non è un archivio ma un’attività della mente, dove si può ricordare persino l’oblio e cercare ciò che è perduto attraverso la traccia della sua assenza. Questo modello è messo a confronto con la teoria della ritenzione terziaria di Bernard Stiegler, con la lettura dell’IA come «tempo artificiale» proposta da Venkatesh Rao e con i recenti studi sulla memoria dell’IA, in particolare con l’analisi di Andrew Hoskins dell’IA generativa come «terza via della memoria». La ricostruzione della memoria medievale come arte compositiva proposta da Mary Carruthers e il lavoro di Paul Ricoeur su memoria e oblio fanno da ponte tra la fonte antica e il presente. Il metodo è storico-filosofico: legge le pratiche della memoria artificiale (cronologie delle chat, assistenti personalizzati, voci sintetiche dei defunti, deepfake) attraverso categorie tratte dalla storia della filosofia, e verifica se tali categorie conservino ancora una capacità di discernimento.
+
+Tesi e originalità. La tesi è che la differenza decisiva tra memoria umana e memoria artificiale non sia la capacità o l’esattezza, ma sia duplice: la responsabilità e la coestensione. La memoria agostiniana è l’atto di un sé che ricorda, dimentica e ricorda di aver dimenticato: è dunque un atto di cui si può rispondere. È anche un atto ordinato nel tempo: ciò che si ricorda si allontana e sbiadisce, va cercato, e questa distanza dà al passato la sua profondità. I sistemi generativi ricordano altrimenti. Rao li descrive come viventi «nella superstoria», capaci di comprimere secoli di esperienza umana equivalente in una forma digerita, utilizzabile tutta in una volta. L’articolo chiama coestensione la condizione che ne risulta: un intero mondo di ricordi compresenti, equidistanti dal presente, che non sbiadiscono mai. Tali sistemi producono un passato privo di responsabilità e privo di profondità: trattengono senza oblio e ricombinano senza confessione. Muovendo dall’«ermenetica» (ermeneutica più etica), la cornice elaborata dall’autore per pensare la responsabilità dell’interpretazione nell’età delle macchine che producono testi, l’articolo ricava tre criteri per la progettazione e il governo della memoria dell’IA: provenienza leggibile, oblio deliberato, ricordo attribuibile.
+
+Contributo interdisciplinare. L’articolo mette in dialogo la filosofia tardoantica e medievale con i media e memory studies. Offre agli studiosi della memoria un lessico storicamente fondato per distinguere la ritenzione dal ricordo, e offre ai filosofi un terreno su cui mettere alla prova le teorie classiche della memoria a confronto con le tecnologie del presente.
+
+Parole chiave: memoria dell’IA; Agostino; oblio; responsabilità; coestensione; superstoria; ritenzione terziaria; ermenetica

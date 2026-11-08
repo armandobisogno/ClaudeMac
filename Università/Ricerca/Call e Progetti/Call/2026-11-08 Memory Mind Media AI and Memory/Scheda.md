@@ -5,7 +5,7 @@
 - **Scadenza:** nessuna scadenza fissa (call aperta); cartella datata al giorno di elaborazione
 - **Lingua:** inglese
 - **Scheda Notion di origine:** https://app.notion.com/p/412434a8b5508153ac73dd0a34528c20
-- **Elaborato il:** 2026-11-08 (versione 1)
+- **Elaborato il:** 2026-11-08 (versione 1); versione 2 lo stesso giorno, con Armando
 
 ## Requisiti ricavati (dalla pagina della call)
 - Abstract **fino a 500 parole** a memorycambridge@gmail.com, con: temi coperti, domande di ricerca e idee chiave; teoria e metodo con riferimenti essenziali; originalità e contributo interdisciplinare; **tipo di articolo**; **6–8 parole chiave**.
@@ -18,6 +18,9 @@
 
 ## Cosa è stato prodotto
 `Abstract Memory Mind Media AI and Memory` (.txt + .docx), in inglese con versione italiana in coda: titolo, tipo di articolo (Research Article), abstract di circa 485 parole strutturato secondo i punti richiesti, 8 parole chiave, 6 riferimenti verificati.
+
+## Versione 2 (08.11.2026, con Armando)
+`Abstract Memory Mind Media AI and Memory v2` (.txt + .docx): nella parte «Tesi e originalità» la differenza decisiva diventa **duplice: responsabilità e coestensione** (compresenza di un intero mondo di ricordi che non sbiadiscono mai), costruita su V. Rao, «Superhistory, Not Superintelligence» (*Contraptions*, 11.05.2021). Rao non parla di memoria né di coestensione: parla di IA come «artificial time» e di sistemi che vivono «in superhistory», comprimendo secoli di esperienza in forma «digested» usabile tutta insieme; la coestensione è sviluppo di Armando. Aggiunti Rao nel metodo e in bibliografia; parole chiave aggiornate (coextension, superhistory); abstract 495 parole. Mail di presentazione aggiornata di conseguenza. La v1 resta nella cartella.
 
 ## Punti aperti
 - La scheda suggeriva una coautoria con uno studioso di media studies: decidere se proporla prima dell'invio.
