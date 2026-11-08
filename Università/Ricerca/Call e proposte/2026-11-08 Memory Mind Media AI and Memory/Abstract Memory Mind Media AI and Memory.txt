@@ -1,0 +1,26 @@
+@author Armando Bisogno
+@title Aula ingens memoriae: Artificial Memory in the Light of Augustine’s Confessions X
+
+## Abstract
+
+Article type: Research Article (6,000–8,000 words).
+
+Topic and research questions. Generative and agentic AI systems increasingly “remember” on our behalf: they store, retrieve, recombine and narrate past interactions, producing what this collection calls a conversational past. This article asks what kind of memory such systems perform, and what is lost when remembering is delegated to agents that retain without ever being able to forget in the human sense. Three questions guide the argument: (1) Is machine retention memory in any strong sense, or a form of storage that imitates the gestures of recollection? (2) What role does forgetting, and the awareness of having forgotten, play in making memory an act for which someone is answerable? (3) What normative criteria follow for designing and governing AI systems that mediate personal and collective pasts?
+
+Theory and method. The article combines close reading of a classical source with conceptual analysis of contemporary AI memory. Its starting point is Book X of Augustine’s *Confessions* (X.8.12–X.19.28), the most sustained ancient phenomenology of memory: memory as a vast hall (*aula ingens*) that is not an archive but an activity of the mind, in which one can remember forgetfulness itself and search for what has been lost because a trace of its absence remains. This model is set against Bernard Stiegler’s account of tertiary retention, the technical exteriorisation of memory that conditions individual and collective experience, and against recent work in AI memory studies, notably Andrew Hoskins’s analysis of generative AI as a “third way of memory”. Mary Carruthers’s reconstruction of medieval memory as a trained, compositional craft and Paul Ricoeur’s work on memory, history and forgetting provide the bridge between the ancient source and the present. The method is philosophical-historical: it reads AI memory practices (chat histories, personalised assistants, synthetic voices of the dead, provenance and deepfakes) through categories drawn from the history of philosophy, and tests whether those categories still discriminate.
+
+Argument and originality. The thesis is that the decisive difference between human and artificial memory is not capacity or accuracy but responsibility. Augustinian memory is an act of a self that recollects, forgets, and remembers having forgotten; it is therefore an act one can answer for. Generative systems produce a past without such answerability: they retain without oblivion and recombine without confession. Building on “hermenethics” (hermeneutics plus ethics), a framework developed by the author for the responsibility of interpretation in an age of text-producing machines, the article proposes a hermeneutic-ethical critique of artificial memory and derives three criteria for AI memory design and governance: legible provenance, deliberate forgetting, and attributable recollection.
+
+Interdisciplinary contribution. The article brings late antique and medieval philosophy into dialogue with media and memory studies, a conversation still rare in the emergent field of AI memory studies. It offers memory scholars a historically grounded vocabulary for distinguishing retention from remembering, and offers philosophers a concrete field in which classical theories of memory are tested against present technologies.
+
+## Keywords
+
+AI memory; Augustine; Confessions X; forgetting; tertiary retention; conversational past; hermenethics; responsibility
+
+@bibliography Key references
+Augustinus, *Confessionum libri XIII*, ed. L. Verheijen, Corpus Christianorum Series Latina 27, Turnhout, Brepols, 1981.
+Bisogno, A., *Ermenetica. Il sapere umanistico come esercizio di responsabilità*, Zenodo, 2025, doi:10.5281/zenodo.17997307.
+Carruthers, M., *The Book of Memory: A Study of Memory in Medieval Culture*, 2nd ed., Cambridge, Cambridge University Press, 2008.
+Hoskins, A., “AI and memory”, *Memory, Mind & Media* 3 (2024), e18, doi:10.1017/mem.2024.16.
+Ricoeur, P., *Memory, History, Forgetting*, trans. K. Blamey and D. Pellauer, Chicago, University of Chicago Press, 2004.
+Stiegler, B., *Technics and Time, 3: Cinematic Time and the Question of Malaise*, trans. S. Barker, Stanford, Stanford University Press, 2011.

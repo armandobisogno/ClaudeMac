@@ -1,0 +1,132 @@
+@author Armando Bisogno
+@title Bozza di proposta progettuale – HORIZON-CL2-2027-01-TRANSFO-05. Percorso di lavoro con la rete delle scuole di Cava de’ Tirreni
+
+## Premessa
+
+Il documento risponde alla nota di lavoro: costruire una proposta per il topic HORIZON-CL2-2027-01-TRANSFO-05 («The effective use of artificial intelligence in learning environments in pre-primary and primary education») insieme a una rete di scuole di Cava de’ Tirreni, e individuare gli step su cui lavorare. La prima parte è dunque una tabella di marcia, dall’autunno 2026 alla scadenza del 23 settembre 2027; la seconda è un’ossatura della proposta, ordinata secondo le tre sezioni del formulario standard delle Research and Innovation Actions (Excellence, Impact, Quality and efficiency of the implementation), da riempire man mano che le decisioni vengono prese.{{Il testo ufficiale del topic sarà pubblicato sul Funding & Tenders Portal all’apertura della call (13 maggio 2027). I requisiti qui riportati provengono dalla scheda CORDIS del topic e dalla pagina del Punto di contatto nazionale francese; vanno riverificati sul work programme definitivo.}}
+
+## Requisiti ricavati dal topic
+
+- Tipo di azione: Research and Innovation Action (RIA), finanziamento al 100% dei costi ammissibili.
+- Budget del topic: 12 M€; indicativamente 3–4 M€ per progetto (circa tre progetti finanziati: dato da fonti secondarie, da verificare). Una scheda italiana segnala che il contributo sarebbe a somma forfettaria (lump sum): da verificare, perché cambia il modo di costruire il budget.
+- Apertura 13 maggio 2027; scadenza 23 settembre 2027 (orario esatto da verificare sul portale).
+- Ammissibilità: regole generali Horizon Europe (almeno tre enti indipendenti di tre diversi Stati membri o associati, di cui almeno uno di uno Stato membro).
+- Contenuti richiesti: evidenze sull’impatto degli strumenti di IA (IA generativa, sistemi di tutoraggio intelligente e altri) su apprendimento, pratiche didattiche, professione docente, equità, inclusione e benessere degli alunni nella scuola dell’infanzia e primaria; attenzione all’adeguatezza evolutiva (sviluppo cognitivo, emotivo, sociale) e ai dispositivi attraverso cui i bambini incontrano l’IA (tablet, robot); studi longitudinali e pluriennali; metodi sperimentali, quasi-sperimentali, survey e qualitativi; metodi qualitativi per le dimensioni etiche; identificazione e mitigazione dei bias; valutazione dei costi delle misure analizzate.
+- Collaborazione: approccio interdisciplinare e stretta cooperazione con istituzioni educative ed educatori «essenziali»; contributo effettivo delle scienze sociali e umane (SSH) richiesto; cooperazione con organizzazioni di media literacy incoraggiata; clustering con gli altri progetti finanziati sul topic fortemente raccomandato.
+- Formulario: non ancora pubblicato per il 2027. Nel modello standard RIA la Parte B ha un limite di pagine (nei bandi recenti 45 pagine): da confermare.
+
+## Parte I. Gli step di lavoro
+
+### Step 1 (novembre–dicembre 2026). Decisione strategica: coordinare o partecipare
+
+È la prima scelta, e condiziona tutte le altre. Coordinare una RIA da 3–4 M€ richiede un ufficio di supporto dedicato e una squadra disponibile per tutto il 2027; partecipare come partner con un pacchetto di lavoro riconoscibile (etica, alfabetizzazione critica, dimensione filosofica dell’IA per l’infanzia) è più sostenibile e coerente con l’idea già annotata nella scheda. La proposta qui delineata è scritta in modo da funzionare in entrambi i casi; la variante consigliata, salvo diversa valutazione, è entrare come partner forte con la rete di Cava come «sito pilota» italiano, cercando un coordinatore europeo con esperienza in ricerca educativa longitudinale.
+
+### Step 2 (dicembre 2026–gennaio 2027). Formalizzare la rete di Cava de’ Tirreni
+
+- Censire gli istituti della rete (istituti comprensivi, scuole dell’infanzia statali e paritarie), il numero di sezioni e classi coinvolgibili, i dirigenti di riferimento e l’eventuale accordo di rete già esistente.
+- Chiarire il ruolo giuridico: le scuole statali possono partecipare come beneficiari (con PIC proprio), come enti affiliati o come terze parti/sedi di sperimentazione. La scelta ha conseguenze amministrative rilevanti per scuole senza personale dedicato: valutare con l’Ufficio Ricerca UniSA la formula più leggera (es. un istituto capofila della rete come beneficiario, gli altri come sedi).
+- Raccogliere lettere di intenti dei dirigenti scolastici e, se possibile, una delibera del collegio dei docenti o del consiglio di istituto.
+- Coinvolgere l’Amministrazione comunale di Cava de’ Tirreni e l’Ufficio Scolastico Regionale per la Campania come soggetti di supporto (lettere di sostegno, non necessariamente partner).
+
+### Step 3 (gennaio–febbraio 2027). Costruire la squadra UniSA
+
+- DiSPaC: etica dell’IA, ermeneutica dei testi e delle immagini, alfabetizzazione critica (WP proposto sotto).
+- Dipartimento di Scienze Umane, Filosofiche e della Formazione (DISUFF) di UniSA: pedagogia e didattica, psicologia dello sviluppo, metodi sperimentali in ambito educativo (ipotesi da verificare con i colleghi).
+- Competenze informatiche per l’analisi degli strumenti e dei bias (es. Dipartimento di Informatica UniSA: ipotesi).
+- Ufficio Ricerca/Grant Office di Ateneo: supporto amministrativo, budget, verifiche di eleggibilità.
+
+### Step 4 (febbraio–aprile 2027). Trovare il consorzio europeo
+
+- Profili necessari: un coordinatore con esperienza di progetti Horizon in ambito educativo; almeno due altri Paesi con reti di scuole dell’infanzia e primaria disponibili (per la comparazione tra sistemi educativi e il multilinguismo); un partner forte nella valutazione d’impatto quantitativa e longitudinale; un’organizzazione di media literacy; eventualmente un partner tecnologico non commerciale o un’associazione di genitori.
+- Canali: Punto di contatto nazionale APRE per il Cluster 2; brokerage event e info day del Cluster 2 (di norma nei mesi precedenti l’apertura); reti europee di università di cui UniSA fa parte; contatti personali con colleghi di filosofia dell’educazione e di DH.
+- Candidati reali, segnalati come ipotesi da verificare: European Schoolnet (rete di ministeri dell’istruzione con sede a Bruxelles) per la disseminazione presso le scuole; INDIRE (Istituto nazionale di documentazione, innovazione e ricerca educativa) come interlocutore italiano sulla ricerca educativa. Nessun contatto è stato preso.
+
+### Step 5 (marzo–maggio 2027). Disegno della ricerca
+
+- Domande di ricerca, campione, disegno longitudinale (almeno due anni scolastici di osservazione), gruppi di controllo, strumenti di misura di apprendimento e benessere.
+- Aspetti etici e protezione dei dati di minori: consenso informato dei genitori, assenso dei bambini, DPIA, parere del Comitato etico di Ateneo. Nelle RIA che coinvolgono minori la valutazione etica è puntuale: va preparata con anticipo.
+- Selezione degli strumenti di IA da osservare (IA generativa usata dai docenti, tutor intelligenti, robot educativi), con criteri di adeguatezza evolutiva.
+
+### Step 6 (aprile–giugno 2027). Scrittura della Parte B
+
+Distribuire le sezioni tra i partner, con un unico redattore finale. Calendario indicativo: prima stesura completa entro fine giugno; revisione interna a luglio; eventuale revisione esterna (APRE o un valutatore esperto) entro fine agosto.
+
+### Step 7 (giugno–settembre 2027). Budget, Parte A e invio
+
+Budget per partner e per WP (anche in forma lump sum, se confermata); dati amministrativi e PIC di tutti i partner; dichiarazioni; caricamento sul portale almeno una settimana prima della scadenza del 23 settembre 2027.
+
+## Parte II. Ossatura della proposta
+
+### Titolo e acronimo (provvisori)
+
+Titolo: Thinking with Machines from the Start: Evidence, Ethics and Critical Literacy for AI in Early and Primary Education. Acronimo: SEEDS (provvisorio; verificare che non sia già in uso in progetti CORDIS).
+
+### Sintesi (bozza, meno di 2000 caratteri)
+
+L’intelligenza artificiale entra nelle classi della scuola dell’infanzia e primaria prima che esistano evidenze solide sui suoi effetti. Il progetto studia, con un disegno longitudinale e misto, come strumenti di IA generativa, tutor intelligenti e robot educativi incidono sull’apprendimento, sulle pratiche dei docenti e sul benessere di bambini dai 3 agli 11 anni in reti di scuole di almeno tre Paesi europei, tra cui una rete di scuole di Cava de’ Tirreni (Campania). Alla misurazione degli esiti affianca un’indagine qualitativa sulle dimensioni etiche: chi decide che cosa un bambino legge, ascolta e chiede a una macchina, e chi risponde di quelle risposte. Il progetto produrrà evidenze comparabili sugli effetti, una mappatura dei bias negli strumenti adottati, un’analisi dei costi, linee guida operative per educatori e decisori, e percorsi di alfabetizzazione critica all’IA adatti all’età, co-progettati con docenti e famiglie.
+
+### Excellence: stato dell’arte e obiettivi
+
+- Stato dell’arte (da costruire con bibliografia verificata): ricerca prevalentemente extraeuropea e trasferibilità limitata ai sistemi UE (rilievo del topic stesso); scarsità di studi longitudinali nella fascia 3–11 anni; debolezza delle cornici etiche specifiche per l’infanzia.
+- Obiettivo 1: produrre evidenze longitudinali e comparabili sugli effetti degli strumenti di IA su apprendimento e benessere.
+- Obiettivo 2: analizzare le dimensioni etiche con metodi qualitativi (osservazione in classe, interviste, focus group con docenti e genitori, attività dialogiche con i bambini).
+- Obiettivo 3: identificare e mitigare i bias degli strumenti in uso, con attenzione a disabilità, svantaggio socio-economico e multilinguismo.
+- Obiettivo 4: elaborare linee guida operative e percorsi di formazione per docenti.
+- Obiettivo 5: sviluppare percorsi di alfabetizzazione critica all’IA per bambini, fondati su una pedagogia del domandare (il contributo filosofico specifico del DiSPaC).
+- Contributo SSH: la cornice dell’ermenetica (interpretare è assumersi la responsabilità di ciò che si legge e si trasmette) può offrire il lessico per il WP etico, senza sovrapporsi alle misure di esito.{{Riferimento: A. Bisogno, Ermenetica. Il sapere umanistico come esercizio di responsabilità, Zenodo 2025, DOI 10.5281/zenodo.17997307.}}
+
+### Excellence: metodologia e pacchetti di lavoro
+
+- WP1 Coordinamento e gestione (coordinatore). Deliverable: piano di gestione dei dati; piano di qualità.
+- WP2 Quadro concettuale ed etico (proposta di leadership: UniSA-DiSPaC). Attività: revisione della letteratura; cornice etica per l’uso dell’IA con bambini; protocollo di ricerca qualitativa sulle dimensioni etiche. Deliverable: rapporto sul quadro concettuale; protocollo etico condiviso.
+- WP3 Studio longitudinale multi-paese (partner con competenze quantitative). Attività: campionamento; misure di base e follow-up su almeno due anni scolastici; disegni sperimentali e quasi-sperimentali; survey a docenti e famiglie. Deliverable: dataset FAIR (con le tutele per i dati di minori); rapporti intermedi e finale sugli effetti.
+- WP4 Ricerca qualitativa in classe e co-progettazione (siti pilota, inclusa la rete di Cava de’ Tirreni). Attività: osservazioni, interviste, focus group; laboratori con docenti; attività dialogiche con i bambini. Deliverable: casi di studio comparati.
+- WP5 Bias, inclusione e adeguatezza evolutiva degli strumenti (partner informatico + SSH). Deliverable: mappatura dei bias; criteri di adeguatezza evolutiva.
+- WP6 Costi, linee guida e formazione (partner di ricerca educativa). Deliverable: analisi costi-efficacia; linee guida per educatori e decisori; moduli di formazione docenti.
+- WP7 Alfabetizzazione critica, disseminazione e sfruttamento (organizzazione di media literacy + DiSPaC). Deliverable: kit didattico di alfabetizzazione critica all’IA per età 3–11; piano di comunicazione; attività di clustering con gli altri progetti del topic.
+
+### Impact
+
+- Risultati attesi: evidenze sugli effetti utilizzabili dai decisori; linee guida per i docenti; strumenti per le famiglie.
+- Destinatari: ministeri e uffici scolastici regionali, dirigenti scolastici, docenti, genitori, sviluppatori di strumenti educativi, organizzazioni di media literacy.
+- Disseminazione: pubblicazioni open access; dataset FAIR nei limiti della tutela dei minori; incontri territoriali; formazione docenti; materiali divulgativi (possibile raccordo con la newsletter Macchine Pensanti e con il saggio Una intelligenza fantastica, dove pertinente).
+- Indicatori: da definire in coerenza con i Key Impact Pathways di Horizon Europe.
+
+### Implementation: partenariato suggerito (tipologie)
+
+- Coordinatore: università o centro di ricerca educativa con esperienza di progetti Horizon (da individuare).
+- UniSA (DiSPaC + DISUFF): WP2, contributo a WP4 e WP7.
+- Rete delle scuole di Cava de’ Tirreni: sito pilota italiano (forma giuridica da definire).
+- Reti scolastiche di almeno altri due Paesi, possibilmente con lingue e sistemi diversi.
+- Partner per la valutazione quantitativa e longitudinale.
+- Organizzazione di media literacy.
+- Partner informatico per l’analisi dei bias (università o centro pubblico).
+
+### Budget di massima (ipotesi)
+
+Totale progetto: 3–4 M€ (coerente con il budget indicativo del topic). Quota UniSA ipotetica, in caso di partecipazione come partner con leadership del WP2: 400–600 k€ su 48 mesi, prevalentemente costi di personale (assegni di ricerca o RTD, tempo dei docenti strutturati), missioni per le attività sul campo e i meeting, costi per i siti pilota (formazione docenti, materiali), pubblicazioni open access, costi indiretti al 25%. Se il bando adotterà la forma lump sum, la ripartizione andrà costruita per pacchetti di lavoro. Le cifre sono stime, non derivano dal work programme.
+
+### Cronoprogramma (progetto, ipotesi 48 mesi)
+
+- Mesi 1–6: quadro concettuale ed etico, protocolli, approvazioni etiche, reclutamento delle scuole.
+- Mesi 7–36: studio longitudinale (due-tre anni scolastici) e ricerca qualitativa in parallelo.
+- Mesi 18–42: mappatura dei bias, analisi dei costi, co-progettazione dei materiali.
+- Mesi 36–48: linee guida, kit didattici, disseminazione finale, sintesi per i decisori.
+
+### Rischi principali
+
+- Adesione delle scuole e delle famiglie nel tempo (tasso di abbandono nello studio longitudinale): mitigazione con accordi di rete, restituzione periodica dei risultati alle scuole, formazione riconosciuta ai docenti.
+- Tutela dei dati di minori e valutazione etica: mitigazione con DPIA preventiva, minimizzazione dei dati, comitato etico.
+- Rapida evoluzione degli strumenti di IA durante il progetto: disegno di ricerca centrato sulle pratiche e sulle categorie di strumenti, non su singoli prodotti.
+- Carico amministrativo per le scuole: un istituto capofila con supporto del Grant Office UniSA.
+- Concorrenza elevata sul topic (circa tre progetti finanziati): puntare sulla qualità del consorzio e sull’integrazione reale delle SSH.
+
+## Cose che Armando deve decidere o procurare
+
+- Coordinare o partecipare come partner (Step 1).
+- Elenco degli istituti della rete di Cava de’ Tirreni, referenti, esistenza di un accordo di rete.
+- Disponibilità dei colleghi DISUFF e di Informatica; chi scrive materialmente le sezioni.
+- Contatto con l’Ufficio Ricerca UniSA e con APRE.
+- Contatti europei per il coordinamento e per le reti scolastiche estere.
+- Verifica, all’apertura della call, del testo definitivo del topic, della forma del contributo (lump sum o costi effettivi), del limite di pagine e della durata.
+- Conferma o sostituzione di titolo e acronimo provvisori.
