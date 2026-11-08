@@ -76,6 +76,7 @@ def build(src, dst):
         elif s.startswith('### '):
             d.para(s[4:], jc='left', first=709, italic=True, before=480, after=240, keep=True)
         elif s.startswith('## '):
+            bib = False  # un titolo di paragrafo dopo la bibliografia la chiude (es. «Versione italiana»)
             d.para(s[3:], size=26, jc='center', first=0, smallcaps=True, before=720, after=480, keep=True)
         elif s.startswith('> '):
             d.para(s[2:], size=22, first=0, left=2 * CM, line=240, before=240, after=240)

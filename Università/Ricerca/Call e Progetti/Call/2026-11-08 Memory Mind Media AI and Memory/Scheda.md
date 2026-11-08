@@ -17,10 +17,10 @@
 > Sviluppa l’abstract come da indicazioni della call
 
 ## Cosa è stato prodotto
-`Abstract Memory Mind Media AI and Memory` (.txt + .docx), in inglese: titolo, tipo di articolo (Research Article), abstract di circa 485 parole strutturato secondo i punti richiesti, 8 parole chiave, 6 riferimenti verificati.
+`Abstract Memory Mind Media AI and Memory` (.txt + .docx), in inglese con versione italiana in coda: titolo, tipo di articolo (Research Article), abstract di circa 485 parole strutturato secondo i punti richiesti, 8 parole chiave, 6 riferimenti verificati.
 
 ## Punti aperti
 - La scheda suggeriva una coautoria con uno studioso di media studies: decidere se proporla prima dell'invio.
 - Controllare i rinvii a *Confessiones* X.8.12–X.19.28 sull'edizione CCSL 27.
 - Clark & Chalmers, «The Extended Mind» (1998), sarebbe pertinente ma non è stato inserito perché non è stato possibile verificarne i dati bibliografici.
-- L'invio è per e-mail: preparare un breve messaggio di accompagnamento (non inviato).
+- L'invio è per e-mail: mail di presentazione pronta in `Mail di presentazione Memory Mind Media AI and Memory` (.txt + .docx, inglese con versione italiana), non inviata.

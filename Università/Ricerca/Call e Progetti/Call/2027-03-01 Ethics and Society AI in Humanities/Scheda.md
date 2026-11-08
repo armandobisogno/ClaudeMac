@@ -18,7 +18,7 @@
 > Sviluppa l’abstract come da indicazioni della call
 
 ## Cosa è stato prodotto
-`Abstract Ethics and Society AI in Humanities` (.txt + .docx), in inglese: titolo, abstract di 228 parole, 5 parole chiave, nota biografica breve, struttura prevista dell'articolo in 6 sezioni, 5 riferimenti verificati.
+`Abstract Ethics and Society AI in Humanities` (.txt + .docx), in inglese con versione italiana in coda: titolo, abstract di 228 parole, 5 parole chiave, nota biografica breve, struttura prevista dell'articolo in 6 sezioni, 5 riferimenti verificati.
 
 ## Punti aperti
 - La proposta originaria prevedeva un lavoro a più mani (giovani ricercatori DiSPaC, un collega di pedagogia per la didattica): decidere autori e ripartizione; l'abstract è ora firmato dal solo Armando.

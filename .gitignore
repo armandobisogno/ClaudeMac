@@ -35,13 +35,13 @@ brain/tools/mp_state.local.json
 !/Università/Ricerca/Relazioni/**/*.docx
 !/Università/Ricerca/Relazioni/**/*.md
 !/Università/Ricerca/Relazioni/**/*.txt
-# Call e proposte: abstract e bozze progettuali (anche quelli prodotti dalla routine serale «Da lavorare»)
-!/Università/Ricerca/Call e proposte/
-/Università/Ricerca/Call e proposte/**
-!/Università/Ricerca/Call e proposte/**/
-!/Università/Ricerca/Call e proposte/**/*.docx
-!/Università/Ricerca/Call e proposte/**/*.md
-!/Università/Ricerca/Call e proposte/**/*.txt
+# Call e Progetti (Call/ = call for papers, Progetti/ = bandi): prodotti anche dalla routine serale «Da lavorare»
+!/Università/Ricerca/Call e Progetti/
+/Università/Ricerca/Call e Progetti/**
+!/Università/Ricerca/Call e Progetti/**/
+!/Università/Ricerca/Call e Progetti/**/*.docx
+!/Università/Ricerca/Call e Progetti/**/*.md
+!/Università/Ricerca/Call e Progetti/**/*.txt
 # corpus di Agostino: solo gli script e l'app Scrinium (senza i dati)
 !/Università/Ricerca/Agostino strumenti/
 /Università/Ricerca/Agostino strumenti/*
