@@ -23,6 +23,9 @@
 ## Versione 2 (2026-11-08)
 `Abstract Ethics and Society AI in Humanities v2` (.txt + .docx). Su indicazione di Armando, la verifica dei principi diventa la distinzione tra **prodotti tecnici delegabili** (il caso *Redeo ad me*, paper scritto per intero da Claude Code e pubblicato in Finzioni) e **scrittura propria non delegabile**. La distinzione viene dalla scaletta «Scrivere senza pensieri — scaletta dopo Redeo» (Claude Doc del 25.10.2026, https://claude.ai/artifact/DfpPkdbgETRLUjfXLpYjJ5): *nec ista dictari debent* (*Solil.* 1,1,1), *scribendo proficiunt* (*Ep.* 143,2), le tre relazioni che mancano a *Redeo* (un prima digerito, un dopo/*Retractationes*, un destinatario). Ci sono anche la condizione di competenza (Macchine Parlanti, puntata 1: delego solo ciò che saprei fare da me) e il dittico di Phitness. Abstract di 247 parole, 6 parole chiave. I tre principi operativi e i corpora poco rappresentati passano alla sezione 6 dell'articolo. Bibliografia: aggiunti *Soliloquia* (CSEL 89), *Ep.* 143 (CSEL 44), *Retractationes* (CCSL 57). Citazioni latine verificate sul corpus.
 
+## Versione anonima (2026-11-08)
+La rivista usa la revisione doppio cieco. `Abstract Ethics and Society AI in Humanities v2 anonimo` (.txt + .docx) è la versione per l'invio: niente nome, affiliazione, nota biografica né versione italiana; metadati del .docx senza autore; terza persona («the article proposes», esperimento descritto in forma impersonale); *Redeo ad me* non è nominato; *Ermenetica* citata come «Bisogno 2025». Le dichiarazioni (funding, competing interests, ethics) vanno solo nel sistema Snapp. Se il .docx viene salvato in Word, prima togliere le informazioni personali dalle proprietà.
+
 ## Punti aperti
 - Decidere se rendere esplicito il dittico *Redeo ad me* / *Il racconto fragile*: stesso tema, uno delegato e l'altro proprio.
 - Come citare *Redeo ad me* nell'articolo (Claude Code, Finzioni, armandobisogno.it/finzioni/).
