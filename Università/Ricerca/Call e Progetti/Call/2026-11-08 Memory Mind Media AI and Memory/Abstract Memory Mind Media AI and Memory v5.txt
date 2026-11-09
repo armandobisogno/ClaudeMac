@@ -1,0 +1,48 @@
+@author Armando Bisogno
+@title Aula ingens memoriae: Artificial Memory in the Light of Augustine’s Confessions X
+
+## Abstract
+
+Article type: Research Article (6,000–8,000 words).
+
+In a 2021 essay, written before the mass diffusion of generative AI, Venkatesh Rao proposed to think of this technology not as superintelligence but as “superhistory”: the most capable systems, he argued, possess a “prosthetic experience, in digested, summary form” (Rao 2021). The image can be developed further. The library model preserves the knowledge of the past, but access to it is serial: no one can read everything at once, or remember everything one has read. AI accesses that heritage in parallel, drawing on all it has digested whenever it answers. The difference becomes especially significant for personal memory: wearable devices already record whole days of conversation and make them searchable, building a comprehensive memory of one’s experience.
+
+This configuration betrays an essential feature of memory. To remember is not to store but to select: to establish, not always consciously, what to keep and what to let go. This is especially true of autobiographical memory, where building a memory means building a self, and the aim is not an exact image of what was but a coherent account that sustains identity and well-being, and allows certain events to be worked through. As Smart et al. (2026) observe, autobiographical memory often privileges self-coherence over accuracy, and its omissions and reinterpretations are productive rather than defective: a kind of programmatic hallucination through which a subject inhabits its own history.
+
+Possidius, at the opening of his Life of Augustine, declares that he will not recount Augustine’s first thirty years, since an account of them can be read in the *Confessions*. Possidius seems to ignore what has just been said: no historical source is less reliable than an autobiography. Augustine does not write the *Confessions* as a faithful diary; in his forties, he looks back to take stock of his life, and therefore selects the events that best serve that purpose.
+
+AI, with its total and coextensive memory, loses precisely this moment of selection. When generative systems become co-narrators of a “shared autobiography” (Smart et al. 2026), selection no longer arises from forgetting or from a reckoning, but from retrieval by relevance, within an archive where all memories are co-present and none fades: what the article calls coextension. The resulting story may console, as human memory does, but its omissions and embellishments belong to no one. The risk is a new Possidius: a user who takes a machine-co-written story of the self for a faithful record.
+
+Reading AI memory practices through Book X of the *Confessions*, where memory is a vast hall (*aula ingens*) that is not an archive but an activity, and in dialogue with Ricoeur, Stiegler and AI memory studies (Hoskins; Smart et al.), the article asks who selects when a machine co-authors the story of one’s life. Drawing on “hermenethics” (hermeneutics plus ethics), it proposes three criteria for the design and governance of AI memory: legible provenance, deliberate forgetting, and attributable selection.
+
+## Keywords
+
+AI memory; Augustine; autobiography; selection; hallucination; forgetting; coextension; hermenethics
+
+@bibliography Key references
+Augustinus, *Confessionum libri XIII*, ed. L. Verheijen, Corpus Christianorum Series Latina 27, Turnhout, Brepols, 1981.
+Bisogno, A., *Ermenetica. Il sapere umanistico come esercizio di responsabilità*, Zenodo, 2025, doi:10.5281/zenodo.17997307.
+Hoskins, A., “AI and memory”, *Memory, Mind & Media* 3 (2024), e18, doi:10.1017/mem.2024.16.
+Possidius, *Vita Augustini*, ed. A. A. R. Bastiaensen, in *Vita di Cipriano, Vita di Ambrogio, Vita di Agostino*, Milano, Fondazione Lorenzo Valla – Mondadori, 1975.
+Rao, V., “Superhistory, Not Superintelligence: Artificial Intelligence is really Artificial Time”, *Contraptions* (newsletter), 11 May 2021, https://contraptions.venkateshrao.com/p/superhistory-not-superintelligence.
+Ricoeur, P., *Memory, History, Forgetting*, trans. K. Blamey and D. Pellauer, Chicago, University of Chicago Press, 2004.
+Smart, P., Clowes, R., Krueger, J., Boniface, M., “The Story of Your Life: Large Language Models and Personal Memory”, *Review of Philosophy and Psychology* (2026), doi:10.1007/s13164-026-00831-1.
+Stiegler, B., *Technics and Time, 3: Cinematic Time and the Question of Malaise*, trans. S. Barker, Stanford, Stanford University Press, 2011.
+
+## Versione italiana
+
+### Aula ingens memoriae: la memoria artificiale alla luce del libro X delle Confessioni di Agostino
+
+Tipo di articolo: articolo di ricerca (6.000–8.000 parole).
+
+In una riflessione pubblicata nel 2021, prima dunque della diffusione di massa dell’IA generativa, Venkatesh Rao suggeriva di pensare a questa tecnologia non come a una *superintelligence* ma come a una *superhistory*: i sistemi di calcolo più potenti, scriveva, «vivono e imparano nella superstoria», disponendo di un’esperienza «protesica», acquisita «in forma digerita e riassunta» (Rao 2021). L’immagine si può sviluppare così. Il modello enciclopedico-bibliotecario conserva tutto il sapere del passato, ma vi si accede ‘in serie’: nessuno può leggere tutto nello stesso momento, né ricordare tutto ciò che ha letto. L’IA vi accede invece ‘in parallelo’, perché quando risponde può contare su tutto ciò che di quel patrimonio ha digerito. La differenza diventa particolarmente interessante quando si passa alla memoria personale: esistono già dispositivi indossabili (*wearable*) che registrano le conversazioni di intere giornate e le rendono interrogabili, così da costruire una memoria complessiva della propria esperienza.
+
+Questa configurazione ‘tradisce’ però un aspetto essenziale della memoria. Ricordare non è immagazzinare ma selezionare: stabilire, non sempre consapevolmente, che cosa va preservato e che cosa può essere lasciato andare. Ciò vale in modo particolare per la memoria autobiografica. Per un individuo la costruzione del ricordo è costruzione di sé, e il suo fine non è un’immagine esatta di ciò che è stato, ma un racconto coerente che sostenga l’identità e il benessere di chi lo compone, e che permetta, tra l’altro, di elaborare e metabolizzare alcuni avvenimenti. Come osservano Smart, Clowes, Krueger e Boniface, nella memoria autobiografica la coerenza del sé prevale spesso sull’esattezza, e omissioni e reinterpretazioni ne sono una componente non difettosa ma produttiva (Smart et al. 2026). Una sorta di ‘allucinazione programmatica’, che serve al soggetto per abitare la propria storia personale.
+
+All’inizio della *Vita di Agostino*, Possidio afferma che non racconterà i primi trent’anni della vita del vescovo di Ippona, perché se ne può leggere il resoconto nelle *Confessioni*. Possidio sembra cioè non tenere conto di quanto abbiamo appena osservato: che non c’è fonte storica meno attendibile di un’autobiografia. Agostino, infatti, non scrive le *Confessioni* come un diario fedele: ormai più che quarantenne, si volta indietro per tracciare un bilancio della propria vita, e seleziona dunque gli avvenimenti che più di altri lo aiutano in questa operazione.
+
+L’IA, con la sua memoria totale e coestesa, perde proprio questo passaggio della selezione. Quando i sistemi generativi diventano co-narratori di un’«autobiografia condivisa» (Smart et al. 2026), la selezione non nasce più dall’oblio né da un bilancio, ma dal recupero per pertinenza, dentro un archivio in cui tutti i ricordi sono compresenti e nessuno sbiadisce: ciò che l’articolo chiama coestensione. Il racconto che ne risulta può anche consolare, come fa la memoria umana; ma le sue omissioni e i suoi abbellimenti non appartengono a nessuno. Il rischio è un nuovo Possidio: chi prende per resoconto fedele la storia di sé scritta insieme a una macchina.
+
+Leggendo le pratiche della memoria artificiale attraverso il libro X delle *Confessioni*, dove la memoria è un’*aula ingens* che non è un archivio ma un’attività, e in dialogo con Ricoeur, Stiegler e gli studi sulla memoria dell’IA (Hoskins; Smart et al.), l’articolo si chiede chi selezioni quando una macchina è coautrice della storia della nostra vita. Muovendo dall’«ermenetica» (ermeneutica più etica), propone tre criteri per la progettazione e il governo della memoria artificiale: provenienza leggibile, oblio deliberato, selezione attribuibile.
+
+Parole chiave: memoria dell’IA; Agostino; autobiografia; selezione; allucinazione; oblio; coestensione; ermenetica

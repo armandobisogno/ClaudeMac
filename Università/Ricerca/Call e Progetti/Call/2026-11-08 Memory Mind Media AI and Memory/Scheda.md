@@ -28,7 +28,11 @@
 ## Versione 4 (09.11.2026, con Armando)
 `Abstract Memory Mind Media AI and Memory v4` (.txt + .docx), costruita sulla sez. 5 («A ‘Good’ Memory?», pp. 17–19) e sulle Conclusioni di Smart et al. (PDF letto). Il paper osserva che la memoria autobiografica privilegia la coerenza del sé sull'esattezza (Conway et al. 2004; Bernstein & Loftus 2009: «all memory is false to some degree»), che alcune allucinazioni potrebbero svolgere un ruolo simile e che il criterio di una memoria «buona» dovrebbe essere il benessere cognitivo, affettivo e sociale di chi la usa; nelle Conclusioni l'LLM è «co-creator of a shared autobiography». Unito a Possidio: se la memoria di sé è già selettiva e «allucinatoria», né la fedeltà né il benessere distinguono memoria umana e artificiale; la differenza è responsabilità (le *Confessiones* sottopongono la ricostruzione di sé alla confessione, davanti a un testimone) e coestensione. Parola chiave *hallucination* al posto di *responsibility*. Abstract 485 parole (492 con il tipo di articolo). Mail aggiornata.
 
+## Versione 5 (09.11.2026, con Armando)
+`Abstract Memory Mind Media AI and Memory v5` (.txt + .docx): riscritta in prosa continua a partire dalla premessa di Armando (Rao e la superhistory; accesso «in serie» della biblioteca e «in parallelo» dell'IA, sviluppo di Armando e non tesi di Rao; i wearable che registrano la giornata; ricordare è selezionare; memoria autobiografica come costruzione di sé e «allucinazione programmatica»), poi Possidio e il libro X (*confessio* davanti a un testimone), la macchina co-narratrice e la coestensione, infine metodo e criteri. Senza le etichette per sezione delle versioni precedenti. Abstract 493 parole (500 con il tipo di articolo, che è il limite). Carruthers tolto dai riferimenti chiave.
+
 ## Punti aperti
+- Nella mail di presentazione nessuna modifica: resta coerente con la v5.
 - Verificare il luogo esatto del passo di Possidio (*Vita Augustini*, praef.) e i dati dell'edizione Bastiaensen (Fondazione Valla 1975), inseriti in bibliografia senza riscontro.
 - La scheda suggeriva una coautoria con uno studioso di media studies: decidere se proporla prima dell'invio.
 - Controllare i rinvii a *Confessiones* X.8.12–X.19.28 sull'edizione CCSL 27.
