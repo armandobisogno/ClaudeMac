@@ -31,8 +31,11 @@
 ## Versione 5 (09.11.2026, con Armando)
 `Abstract Memory Mind Media AI and Memory v5` (.txt + .docx): riscritta in prosa continua a partire dalla premessa di Armando (Rao e la superhistory; accesso «in serie» della biblioteca e «in parallelo» dell'IA, sviluppo di Armando e non tesi di Rao; i wearable che registrano la giornata; ricordare è selezionare; memoria autobiografica come costruzione di sé e «allucinazione programmatica»), poi Possidio e il libro X (*confessio* davanti a un testimone), la macchina co-narratrice e la coestensione, infine metodo e criteri. Senza le etichette per sezione delle versioni precedenti. Abstract 493 parole (500 con il tipo di articolo, che è il limite). Carruthers tolto dai riferimenti chiave.
 
+## Versione 6 (09.11.2026, con Armando)
+`Abstract Memory Mind Media AI and Memory v6` (.txt + .docx): Armando ha riscritto in Word la parte italiana della v5 (la v5.docx modificata resta nella cartella). Possidio e IA in un solo paragrafo; al posto del «nuovo Possidio» il paradosso: il merito di questi sistemi (essere addestrati su tutto il nostro passato) li costringe a un racconto «dis-umano», perché non contemplano l'operazione più umana della memoria, accettare l'oblio (per perdita o per scelta di benessere). La domanda finale diventa: quali conseguenze ha la relazione con una macchina coautrice quotidiana della nostra storia che ricorda tutto. Spariscono ermenetica e i tre criteri. Inglese ritradotto: 473 parole (480 con il tipo di articolo). Mail di presentazione aggiornata (senza i criteri).
+
 ## Punti aperti
-- Nella mail di presentazione nessuna modifica: resta coerente con la v5.
+- Ermenetica non è più nel testo: restano la parola chiave «hermenethics» e Bisogno 2025 in bibliografia. Decidere se toglierli.
 - Verificare il luogo esatto del passo di Possidio (*Vita Augustini*, praef.) e i dati dell'edizione Bastiaensen (Fondazione Valla 1975), inseriti in bibliografia senza riscontro.
 - La scheda suggeriva una coautoria con uno studioso di media studies: decidere se proporla prima dell'invio.
 - Controllare i rinvii a *Confessiones* X.8.12–X.19.28 sull'edizione CCSL 27.
