@@ -1,0 +1,233 @@
+(00:00:00):
+[music]
+
+(00:00:08.305):
+Macchine Parlanti è il micro podcast
+
+(00:00:10.507):
+di Armando Bisogno dedicato alle nuove tecnologie e alla cultura contemporanea.
+
+(00:00:21.237):
+La puntata di oggi si intitola Per usare l'intelligenza artificiale devo saperne quanto lei...
+
+(00:00:28.444):
+Per questa prima puntata di Macchine Parlanti parto da uno dei temi
+
+(00:00:32.109):
+che abbiamo affrontato con Raffaele Gaiton nella intervista
+
+(00:00:35.574):
+che è stata pubblicata sul suo podcast What's Next?
+
+(00:00:38.778):
+nella quale appunto abbiamo discusso di un tema che mi interessa particolarmente
+
+(00:00:43.204):
+e cioè io ho sempre sostenuto Che quando ho di fronte
+
+(00:00:47.188):
+un contenuto prodotto dalla intelligenza artificiale,
+
+(00:00:50.351):
+un testo,
+
+(00:00:51.091):
+un'immagine,
+
+(00:00:51.832):
+un video, quello che sia, la cosa più importante è capire chi ne è il responsabile.
+
+(00:00:56.416):
+E il responsabile non necessariamente chi l'ha prodotto,
+
+(00:00:59.339):
+è chi ci mette la firma e la faccia,
+
+(00:01:01.301):
+cioè chi è capace o vuole assumersene la responsabilità,
+
+(00:01:06.805):
+cioè chi è capace di rispondere di quel contenuto.
+
+(00:01:09.948):
+Nell'ultima settimana ho ampliato un po' questa idea e mi sono convinto,
+
+(00:01:14.836):
+o almeno sto riflettendo su questo tema,
+
+(00:01:16.879):
+che vada aggiunto un altro tipo di elemento.
+
+(00:01:20.203):
+Non soltanto è importante che ci sia qualcuno che si assuma la responsabilità,
+
+(00:01:25.772):
+E' importante anche che chi produce quel contenuto,
+
+(00:01:30.619):
+anche grazie alla intelligenza artificiale, ne abbia le competenze.
+
+(00:01:35.346):
+Che cosa intendo dire?
+
+(00:01:36.688):
+Facciamo un esempio concreto.
+
+(00:01:38.150):
+Io sono un programmatore e io Delego a Cloud,
+
+(00:01:41.193):
+a CertGPT, la scrittura di righe e righe di codice.
+
+(00:01:45.096):
+Molto probabilmente non le controllerò perché il vantaggio che ottengo è
+
+(00:01:49.339):
+che appunto non devo scriverle io,
+
+(00:01:51.001):
+guadagno tempo e se funziona il tutto mi metto a ricontrollare migliaia e migliaia
+
+(00:01:55.984):
+di righe di codice.
+
+(00:01:57.574):
+Però se volessi controllarle avrei la competenza per farlo.
+
+(00:02:01.179):
+O se domani spegnessero i server di Cloud o di ChatGPT io potrei mettere avanti
+
+(00:02:07.469):
+al computer e riscrivere da capo quel codice.
+
+(00:02:10.353):
+Parliamo invece che Cloud o ChatGPT Gpt mi faccia una proposta
+
+(00:02:13.675):
+e cioè mi dica io sono in grado di creare un nuovo linguaggio di programmazione
+
+(00:02:18.216):
+che mi permette di fare il lavoro che mi hai dato nella metà del tempo
+
+(00:02:22.157):
+e investendo meno risorse.
+
+(00:02:24.698):
+Se io accettassi questa proposta Cloud,
+
+(00:02:27.519):
+Gpt o quello che sia produrrebbero questo contenuto con un linguaggio
+
+(00:02:31.560):
+che io non conosco e non domino.
+
+(00:02:33.580):
+Il che significa che non posso controllare che cosa è stato fatto
+
+(00:02:37.141):
+ma soltanto l'efficacia di quello che è stato prodotto e
+
+(00:02:40.642):
+se domani Non avessi più accesso a cloud o a certi GPT avrei grandi difficoltà
+
+(00:02:45.848):
+a fare manutenzione per esempio di quel software
+
+(00:02:48.131):
+perché io non conosco quel linguaggio.
+
+(00:02:50.087):
+A quel punto non sono più io che domino lo strumento,
+
+(00:02:52.989):
+ma è lo strumento che domina me,
+
+(00:02:54.289):
+perché in assenza di quello strumento io non posso replicare quel contenuto.
+
+(00:02:58.132):
+Stesso discorso sulla scrittura.
+
+(00:03:00.033):
+Allora io posso delegare la scrittura di una relazione,
+
+(00:03:03.474):
+di una tesina,
+
+(00:03:04.255):
+di quello che sia,
+
+(00:03:05.536):
+se io sarei in grado di scrivere quel testo nel caso in cui non avessi
+
+(00:03:10.178):
+a disposizione l'intelligenza artificiale.
+
+(00:03:12.620):
+Io lo delego perché in questo momento non ho tempo, perché non ho voglia di farlo, perennè.
+
+(00:03:18.024):
+Ma se fossi costretto a farlo perché non funziona Claude,
+
+(00:03:21.566):
+perché non ho la disposizione o per altri motivi sarei in grado di farlo.
+
+(00:03:25.468):
+Ho una competenza pari o maggiore di quella dello strumento che utilizzo.
+
+(00:03:32.852):
+Questo mi mette in una condizione di dominio dello strumento,
+
+(00:03:37.394):
+cioè di utilizzo di quella risorsa come uno strumento,
+
+(00:03:40.996):
+cioè come qualcosa che io utilizzo e che non mi utilizza.
+
+(00:03:46.020):
+Come dicevo e questo è un tema sul quale sto riflettendo molto ultimamente,
+
+(00:03:50.444):
+cioè l'idea per la quale dobbiamo considerare quando abbiamo nei fronti un prodotto
+
+(00:03:55.689):
+che è realizzato con l'intelligenza artificiale un doppio livello,
+
+(00:03:59.552):
+livello di responsabilità e livello di competenza.
+
+(00:04:01.975):
+Chi risponde di questo contenuto e chi lo ha prodotto aveva competenze almeno pari
+
+(00:04:08.641):
+se non superiori allo strumento che ha dato vita a quel prodotto?
+
+(00:04:13.637):
+Questa ovviamente è una domanda che apre scenari interessantissimi per chi
+
+(00:04:18.160):
+come me fa formazione, per chi fa docente, per chi insegna.
+
+(00:04:22.803):
+Perché in questa stagione probabilmente più che
+
+(00:04:26.485):
+in passato è fondamentale accompagnare le nostre studentesse
+
+(00:04:30.467):
+i nostri studenti nell'acquisizione di competenze di lettura,
+
+(00:04:35.670):
+di analisi e di scrittura.
+
+(00:04:37.450):
+Non per resistere all'intelligenza artificiale o per non usarla,
+
+(00:04:42.051):
+esattamente al contrario, per usarla in maniera consapevole.
+
+(00:04:45.672):
+Soltanto se io ho quelle competenze le posso delegare in maniera piena,
+
+(00:04:52.314):
+cosciente e soprattutto in controllo.

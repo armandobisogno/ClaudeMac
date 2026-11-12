@@ -1,0 +1,22 @@
+## Bibliografia
+@bibliography
+Agostino, *Le Confessioni*, trad. it. di C. Carena, Città Nuova, Roma 1965 (Nuova Biblioteca Agostiniana, I).
+Agostino, *Le ritrattazioni*, trad. it. di U. Pizzani, Città Nuova, Roma 1994 (Nuova Biblioteca Agostiniana, II).
+Battezzato, L., *The End of Philology? Human and Artificial Intelligence*, in L. Battezzato, B. Graziosi, J. Haubold (ed. by), *Artificial Intelligence and Greek Philology: An Experiment*, Edizioni della Normale, Pisa 2025, pp. 37-57.
+Bisogno, A., *Ermenetica. Il sapere umanistico come esercizio di responsabilità*, Zenodo 2025 (v2, 20 dicembre 2025), DOI 10.5281/zenodo.17997307.
+Bisogno, A., *Fare (storia della) filosofia oggi: tre proposte di ‘traduzione’*, in R. de Filippis (a cura di), *Oltre le frontiere linguistiche. La sfida delle traduzioni di opere filosofiche fra il “Lungo Medioevo” e il Contemporaneo*, ETS, Pisa 2025, pp. 15-33.
+Bisogno, A., *Finzioni*, in “Macchine Pensanti”, 16 ottobre 2026, https://armandobisogno.substack.com/p/finzioni.
+Bisogno, A., *Lo specchio e la finestra*, in “Macchine Pensanti”, 2 ottobre 2026, https://armandobisogno.substack.com/p/lo-specchio-e-la-finestra.
+Bisogno, A., *Quali scrittori vogliamo formare?*, in “Macchine Pensanti”, 10 aprile 2026, https://armandobisogno.substack.com/p/quali-scrittori-vogliamo-formare.
+Bisogno, A., *Un tempo libero, pieno e responsabile*, in “Macchine Pensanti”, 19 dicembre 2025, https://armandobisogno.substack.com/p/un-tempo-libero-pieno-e-responsabile.
+Bisogno, A., *Una bellissima impresa infinita*, in “Macchine Pensanti”, 27 febbraio 2026, https://armandobisogno.substack.com/p/una-bellissima-impresa-infinita.
+Garin, E., *La filosofia come sapere storico*, Laterza, Bari 1959.
+Garin, E., *L’“unità” nella storiografia filosofica*, in “Rivista critica di storia della filosofia”, XI (1956), pp. 206-217; poi in Id., *La filosofia come sapere storico*, Laterza, Bari 1959.
+Garin, E., *Osservazioni preliminari a una storia della filosofia*, in “Giornale critico della filosofia italiana”, XXXVIII (1959), pp. 1-55; poi in Id., *La filosofia come sapere storico*, Laterza, Bari 1959, pp. 55-149.
+Haraway, D., *Situated Knowledges: The Science Question in Feminism and the Privilege of Partial Perspective*, in “Feminist Studies”, 14/3 (1988), pp. 575-599.
+Hegel, G.W.F., *Vorlesungen über die Geschichte der Philosophie*, I, Teil 1: *Einleitung in die Geschichte der Philosophie. Orientalische Philosophie*, hrsg. v. W. Jaeschke, Meiner, Hamburg 1993; trad. it. di R. Bordoli, *Lezioni sulla storia della filosofia*, Laterza, Roma-Bari 2009.
+Hyland, K., *Writing in the AI era: Rethinking writing, research and teaching*, in “Journal of Second Language Writing”, 72 (2026), art. 101302, DOI 10.1016/j.jslw.2026.101302.
+Kommers, C., Immel, S.G., Hemment, D., Lee, M., *The House with a Million Windows: Interactive Fiction for Narrative Restorying*, arXiv:2609.12537, 2026.
+«*Redeo ad me*». *Agostino e la scrittura autobiografica dal* Contra Academicos *alle* Confessiones, testo generato da Claude Code (Anthropic) su consegna di A. Bisogno, in *Finzioni*, https://www.armandobisogno.it/finzioni/ (ultima consultazione: 10 novembre 2026).
+Schiller, F., *Über naive und sentimentalische Dichtung* (1795-1796), in Id., *Sämtliche Werke*, hrsg. v. G. Fricke, H.G. Göpfert, Bd. V, Hanser, München 1962~~3~~.
+Small, H., *The Value of the Humanities*, Oxford University Press, Oxford 2013.

@@ -230,11 +230,32 @@ IMPALCATURE = {
                "un testo scritto con l’IA se non saprei scriverlo altrettanto bene? Posso pubblicare un brano musicale "
                "se non so suonare né cantare? E, più in generale, come posso verificare fino in fondo la bontà e la "
                "coerenza di un contenuto che, senza l’IA, non avrei saputo produrre?"),
-        ('p', "Non ho una risposta definitiva, ma una direzione sì. Un uso consapevole di questa tecnologia sembra "
-              "stare nell’intersezione tra due condizioni: il dovere di metterci la firma e il possesso di competenze "
-              "almeno pari a quelle del modello che stiamo usando. Se manca la seconda, la prima diventa fragile: "
-              "firmo qualcosa che non so valutare e quindi non posso davvero difendere. A quel punto non sono più io "
-              "a usare lo strumento. Ne dipendo."),
+        ('p', "Facciamo un esempio concreto. Immaginiamo un programmatore che affidi a Claude o a ChatGPT la "
+              "scrittura di migliaia di righe di codice. Molto probabilmente non le controllerà una per una: il "
+              "vantaggio di delegarle sta proprio nel tempo che risparmia, e se il programma funziona non avrà motivo "
+              "di rileggerle. Ma, se volesse, saprebbe farlo; e se domani i server di quei sistemi si spegnessero, "
+              "potrebbe sedersi al computer e riscrivere quel codice da capo. Ora immaginiamo che la macchina gli "
+              "proponga qualcosa di diverso: un linguaggio di programmazione nuovo, inventato da lei, che le "
+              "permetterebbe di fare lo stesso lavoro nella metà del tempo e con meno risorse. Se il programmatore "
+              "accettasse, si troverebbe davanti a un prodotto scritto in una lingua che non conosce e che non "
+              "domina. Potrebbe verificarne l’efficacia (il programma funziona o no), ma non che cosa sia stato "
+              "fatto né come. E se un giorno non avesse più accesso a quel sistema, non saprebbe nemmeno fare la "
+              "manutenzione del suo software. A quel punto non sarebbe più lui a governare lo strumento: sarebbe lo "
+              "strumento a governare lui.",
+         "Integrazione dalla prima puntata di Macchine Parlanti, «Per usare l’intelligenza artificiale devo "
+         "saperne quanto lei?» (trascrizione in Scrittura/Macchine Parlanti/Puntate/1_260926), che riprende l’intervista con Raffaele "
+         "Gaito a What’s Next."),
+        ('p', "Lo stesso vale per la scrittura. Posso delegare all’IA una relazione, un verbale, una tesina perché "
+              "in quel momento non ho tempo o non ho voglia di scriverli; ma se fossi costretto a farlo da solo, "
+              "perché il sistema non funziona o non è a mia disposizione, ne sarei capace. In questo caso la mia "
+              "competenza è pari o superiore a quella dello strumento che uso, e lo strumento resta tale: qualcosa "
+              "che uso, non qualcosa che usa me. Davanti a un contenuto prodotto con l’IA, dunque, le domande da "
+              "fare sono due, e vanno fatte insieme. La prima riguarda la responsabilità: chi risponde di questo "
+              "contenuto? La seconda riguarda la competenza: chi lo ha prodotto aveva competenze almeno pari a "
+              "quelle dello strumento che lo ha realizzato? Se manca la seconda, la prima diventa fragile: firmo "
+              "qualcosa che non so valutare e quindi non posso davvero difendere. Solo se possiedo le competenze che "
+              "affido alla macchina sono io a delegare. Quando invece la macchina fa ciò che io non saprei fare, non "
+              "sto più delegando: sto obbedendo. Non sono più io a usare lo strumento. Ne dipendo."),
         ('sub', "La catena"),
         ('p0', "Ma come si diventa dipendenti? Un gruppo di studiosi di sistemi complessi, epidemiologia e biologia, "
                "tra i quali Ricard Solé, David Krakauer, Michael Levin e l’italiano Manlio De Domenico, ha provato a "
@@ -543,6 +564,13 @@ EDITS = [
          after='come uno strumento avanzato che funziona in modo straordinario.',
          new=' (Sulle radici, anche religiose, di questo modo di relazionarci all’IA torneremo nella quarta riflessione.)',
          comment='Rinvio al nuovo capitolo 4.'),
+    # cap. 8 (Cyrano): rinvio al secondo livello, la competenza (cap. 9)
+    dict(anchor='si esaurirà la possibilità di una comunicazione genuina.', kind='ins',
+         after='si esaurirà la possibilità di una comunicazione genuina.',
+         new=(' Prendersi la responsabilità di ciò che si diffonde, però, non basta. Per rispondere davvero di un '
+              'contenuto bisogna anche essere in grado di valutarlo, cioè avere le competenze per produrlo: è il '
+              'secondo livello di questo esercizio, e ne parliamo nella prossima riflessione.'),
+         comment='Raccordo con il cap. 9 (responsabilità + competenza), dalla puntata 1 di Macchine Parlanti.'),
     # cap. 10 (ex 8): ordinali e Gadamer
     dict(anchor='Nella quinta ho detto che abbiamo smesso', old='Nella quinta', new='Nella sesta',
          comment='Rinumerazione dei capitoli.'),
