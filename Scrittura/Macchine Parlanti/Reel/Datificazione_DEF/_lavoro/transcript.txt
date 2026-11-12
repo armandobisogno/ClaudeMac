@@ -1,0 +1,81 @@
+[00:00.0-00:08.9] Nelle mie riflessioni parlo spesso del rapporto tra discipline umanistiche, saperi umanistici e nuove tecnologie.
+[00:09.1-00:22.0] Oggi voglio affrontare un aspetto molto specifico grazie ad un paper di Johanna Dracker che si occupa del rapporto tra rappresentazioni grafiche e discipline umanistiche.
+[00:22.0-00:33.4] Nel testo di Johanna Dracker c'è infatti una riflessione particolarmente attenta al tema dei dati.
+[00:34.2-00:42.3] Dracker parte da una constatazione che è abbastanza banale. Viviamo in un'epoca di datificazione.
+[00:42.7-00:50.5] I dati sono il nuovo petrolio, tutto viene gestito attraverso, tutto viene deciso grazie al supporto di dati.
+[00:50.5-00:55.6] Quindi produciamo dati in continuazione ogni volta che usiamo un telefono, ogni volta che facciamo un pagamento elettronico,
+[00:55.6-01:01.2] ogni volta che passiamo davanti ad una videocamera di sorveglianza, usiamo dati continuamente.
+[01:02.6-01:11.5] Dracker sottolinea che questo utilizzo costante dei dati ha dato vita ad una sorta di mito, di mitologia dei dati.
+[01:11.7-01:19.0] E cioè ci ha fatto credere che il dato sia una informazione, un contenuto neutrale.
+[01:19.0-01:24.2] Cioè che il dato si limiti a fotografare la realtà per quella che è.
+[01:25.0-01:28.5] Il suo tentativo è proprio quello di decostruire questo mito.
+[01:28.8-01:35.5] Cioè di ricordarci che i dati non sono mai neutrali, non sono mai oggettivi.
+[01:35.9-01:38.3] Facciamo un esempio per capirlo.
+[01:39.0-01:44.0] Diciamo che all'ingresso di un ufficio viene posta una videocamera di sorveglianza,
+[01:44.1-01:49.2] grazie alla quale è possibile verificare chi entra, chi esce, quando entra e quando esce.
+[01:49.9-01:58.2] Alla fine del mese io ho il numero di ingressi, posso dire sono entrate tutte persone in queste fasce orarie e così via.
+[01:59.4-02:05.7] Questo dato, come dice Dracker, viene spacciato per un dato oggettivo, un dato numerico, un dato quantitativo,
+[02:05.9-02:10.0] quante persone sono entrate, in che fasce orarie e così via.
+[02:10.8-02:12.1] Perché non è un dato neutro?
+[02:12.1-02:13.0] Per due motivi.
+[02:13.2-02:17.1] Punto primo, perché la videocamera lì ce l'ha messa qualcuno.
+[02:18.1-02:23.3] Qualcuno che ha deciso che quello doveva essere un posto che andava, come dire, presidiato,
+[02:23.5-02:27.0] nel quale era necessario raccogliere informazioni.
+[02:27.6-02:29.4] Lo ha fatto per n motivi.
+[02:29.5-02:35.3] Lo ha fatto per motivi di sicurezza, lo ha fatto per motivi di verifica del flusso del pubblico,
+[02:35.3-02:41.6] lo ha fatto perché deve verificare se degli impiegati entrano e escono in certi orari.
+[02:42.1-02:50.0] A prescindere da quali siano le sue motivazioni, buone o cattive che siano, tossiche o non tossiche che siano,
+[02:50.3-02:52.1] c'è una intenzione.
+[02:52.6-02:58.4] Quella videocamera non sta lì per caso, ma perché qualcuno l'ha messa per registrare delle informazioni.
+[02:58.8-03:02.7] Il che ci suggerisce già un primo elemento di riflessione.
+[03:02.9-03:07.6] E cioè che i dati non sono la realtà delle cose.
+[03:07.6-03:14.9] I dati sono la raccolta di informazioni sulla realtà delle cose.
+[03:15.0-03:22.5] Perché la realtà delle cose è che due, trecento persone nel corso del tempo sono passate davanti a quella videocamera.
+[03:22.6-03:29.4] Sono duecento, trecento e venti singoli, l'uno separato dall'altro, di persone diverse o della stessa persona in momenti diversi.
+[03:29.4-03:38.9] diventano un dato quando io li registro grazie a un sensore, grazie a una videocamera e ne tengo traccia su un foglio di carta, su un database, da qualche parte.
+[03:39.5-03:47.7] Quindi ho un sensore che raccoglie informazioni, ho un registro, ho un posto dove le conservo e questo produce il dato.
+[03:47.7-03:54.5] Il dato è un movimento di registrazione, non è una fotografia naturale della realtà.
+[03:55.4-04:02.6] Ma c'è poi un secondo elemento che suggerisce che il dato non è neutrale, non è oggettivo.
+[04:02.7-04:06.4] È il modo in cui io analizzo e uso il dato.
+[04:06.9-04:13.5] Perché dire che sono passate trecento persone, quattrocento persone, non significa niente.
+[04:13.5-04:16.1] Perché il termine persona non significa niente.
+[04:16.3-04:23.5] Perché io potrei decidere di valutare se sono passate persone vestite in un certo modo o in un altro modo.
+[04:23.8-04:31.3] Maschi, femmine, alti, bassi, con un certo tipo di colore di capelli, con un certo tipo di postura,
+[04:31.4-04:35.3] provenienti da un certo tipo di zona geografica e così via.
+[04:35.5-04:41.5] E tutte queste informazioni, sarebbero tutte quante informazioni legate ad un aspetto della realtà.
+[04:41.5-04:48.1] Perché le persone hanno vestiari diversi, colori di capelli diversi, provenienze geografiche diverse,
+[04:48.4-04:50.8] dati anagrafici diversi e così via.
+[04:51.5-04:57.5] Per l'ennesima volta, l'abbiamo detto anche prima, non ho una fotografia del reale.
+[04:58.3-05:03.4] Perché quella persona è tutte quelle cose, quelle persone sono tutte quelle cose insieme.
+[05:03.6-05:09.2] Allora, qual è la metrica che individua oggettivamente un dato?
+[05:10.2-05:15.7] Quel dato restituisce veramente come stanno le cose?
+[05:16.0-05:16.2] No.
+[05:16.6-05:18.8] Ne restituisce un racconto parziale.
+[05:18.9-05:23.8] A me interessa soltanto l'orario in cui sono entrati, oppure soltanto la provenienza geografica,
+[05:23.9-05:26.1] oppure soltanto il vestiario.
+[05:26.3-05:29.0] Ma non è una foto oggettiva della realtà.
+[05:29.0-05:37.6] È una valutazione metrica rispetto ad un criterio che io ho individuato che mi permette di creare il dato.
+[05:37.8-05:47.4] Dunque, il dato non esiste di per sé perché sono io che pongo uno strumento di rilevazione dei fenomeni
+[05:47.4-05:50.4] che mi permette di registrarli e di accorparli in un dato,
+[05:50.4-05:56.8] e poi sono io che valuto quel dato a seconda del motivo per il quale mi interessa e della metrica che voglio applicare.
+[05:57.8-06:00.9] Che c'entra questo con le discipline umanistiche?
+[06:01.2-06:04.5] C'entra tantissimo, Drucker lo dice con grande forza,
+[06:04.6-06:10.0] perché le discipline umanistiche sono proprio quelle il cui sapere si fonda sull'idea
+[06:10.0-06:17.1] che ogni interpretazione di un fenomeno, di un testo, di un avvenimento è una interpretazione collocata.
+[06:17.2-06:20.3] Cioè viene fatta da un soggetto che non è neutrale,
+[06:20.5-06:25.7] che ha una sua storia, delle sue inclinazioni, che ha dei suoi bias, dei suoi pregiudizi.
+[06:26.0-06:29.9] E quindi quando io parlo in aula di un testo di filosofia,
+[06:30.1-06:32.8] o quando scrivo un paper, o quando scrivo una monografia,
+[06:32.8-06:40.3] io sto raccontando la mia relazione con quel testo, la mia relazione con quell'opera.
+[06:40.5-06:44.3] Fatto salvo tutto il lavoro che va fatto dal punto di vista storico-critico
+[06:44.3-06:47.8] per restituire il contesto, le informazioni, ma al di là di quello,
+[06:47.9-06:52.6] quando io parlo del significato di un testo, di un'opera,
+[06:53.0-06:56.8] sto raccontando il mio incontro come interprete,
+[06:56.8-07:00.5] che ha una sua storia, una sua identità con quel testo.
+[07:00.5-07:05.7] Allora Dracker conclude dicendo che le discipline umanistiche in questo momento
+[07:05.7-07:10.1] devono necessariamente ricordare a se stesse e al mondo questo dato.
+[07:10.4-07:15.3] Che non esiste conoscenza oggettiva del dato.
+[07:15.9-07:22.6] Il dato io lo costruisco perché ho un certo tipo di sguardo sugli avvenimenti,
+[07:22.9-07:24.8] sugli eventi, sulle opere.
+[07:25.1-07:30.0] Decido in che modo registrare la loro presenza, la loro assenza,
+[07:30.0-07:36.2] alla loro struttura e decido come restituire il racconto dei dati che ho raccolto.
