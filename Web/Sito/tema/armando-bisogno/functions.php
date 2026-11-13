@@ -393,7 +393,32 @@ function ab_latest_feed() {
 
 define( 'AB_UIF_SHEET', '12f38iYsgQVB2XtuGujufpiqvnF_wdbu9ubbc1sro9RA' );
 
+/*
+ * Riserva: versioni pubblicate ma non ancora scritte nel Foglio. Compaiono solo se il
+ * Foglio non ha già una riga con lo stesso numero di versione (quindi niente doppioni).
+ */
+function ab_uif_local_versions() {
+	return array(
+		array(
+			'versione' => '2.0',
+			'data'     => '13/11/2026',
+			'note'     => 'Nuova edizione ampliata: da otto a tredici riflessioni, con cinque capitoli nuovi (Dio prompt; Impalcature e protesi; Pensare stanca. Per fortuna; L\'ora di pranzo; Do you remember?), revisione dei precedenti e Antologia aggiornata.',
+		),
+	);
+}
+
 function ab_uif_versions() {
+	$sheet = ab_uif_versions_sheet();
+	$have  = array_map( fn( $v ) => $v['versione'], $sheet );
+	foreach ( ab_uif_local_versions() as $v ) {
+		if ( ! in_array( $v['versione'], $have, true ) ) {
+			$sheet[] = $v;
+		}
+	}
+	return $sheet;
+}
+
+function ab_uif_versions_sheet() {
 	$cached = get_transient( 'ab_uif_versions' );
 	if ( is_array( $cached ) ) {
 		return $cached;
@@ -526,7 +551,7 @@ function ab_meta() {
 		'romanzi'                    => array( 'Romanzi · ' . $site, 'Terapie e Mosaici, i gialli del commissario Malversi, ambientati a Fossa Etrusca. Pubblicati da De Tomi.', 'og-romanzi.jpg' ),
 		'phitness'                   => array( 'Phitness · Tre passioni che non deleghiamo', 'Pensare, leggere, scrivere: un laboratorio di filosofia per esercitare tre passioni tutte umane e per scoprirle. Incontri singoli o percorsi, con restituzioni personali e anonime.', 'og-phitness.jpg' ),
 		'profilo'                    => array( 'Profilo e contatti · ' . $site, 'Studioso, docente, life addicted. Storia della filosofia medievale all\'Università di Salerno. Inviti, conferenze, collaborazioni.', 'og-home.jpg' ),
-		'una-intelligenza-fantastica' => array( 'Una intelligenza fantastica · ' . $site, 'Otto riflessioni aperte sull\'intelligenza artificiale, lette con gli occhi di uno studioso di filosofia. Gratuite in PDF ed ePub.', 'og-uif.jpg' ),
+		'una-intelligenza-fantastica' => array( 'Una intelligenza fantastica · ' . $site, 'Tredici riflessioni aperte sull\'intelligenza artificiale, lette con gli occhi di uno studioso di filosofia. Gratuite in PDF ed ePub.', 'og-uif.jpg' ),
 		'finzioni'                   => array( 'Finzioni · ' . $site, 'Una raccolta di esperimenti e divertissement letterari e di ricerca, scritti integralmente o in massima parte dall\'IA.', 'og-finzioni.jpg' ),
 		'post-scriptum'              => array( 'Post Scriptum · ' . $site, 'Appunti, riflessioni e materiali scritti nel tempo.', 'og-home.jpg' ),
 	);

@@ -18,7 +18,7 @@ $current  = $versions ? end( $versions ) : null;
         <div>
           <span class="eyebrow">IA e nuove tecnologie · Libro aperto</span>
           <h1>Una intelligenza <em>fantastica</em></h1>
-          <p class="lead">Otto riflessioni aperte sull'intelligenza artificiale, lette con gli occhi di uno studioso di filosofia. Gratuite, in PDF ed ePub.</p>
+          <p class="lead">Tredici riflessioni aperte sull'intelligenza artificiale, lette con gli occhi di uno studioso di filosofia. Gratuite, in PDF ed ePub.</p>
           <div class="actions">
             <a class="btn btn-primary" href="<?php echo esc_url( home_url( '/download/1909/' ) ); ?>">Scarica il PDF</a>
             <a class="btn btn-ghost" href="<?php echo esc_url( home_url( '/download/1917/' ) ); ?>">Scarica l'ePub</a>

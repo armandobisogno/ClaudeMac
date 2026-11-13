@@ -1,8 +1,8 @@
 <?php
 /**
  * Plugin Name: Armando Deploy
- * Description: Permette di installare/aggiornare temi e plugin e di attivare un tema via REST, autenticandosi con una password applicazione da amministratore. Nessuna interfaccia: serve solo agli aggiornamenti fatti da Claude.
- * Version: 1.2.0
+ * Description: Permette di installare/aggiornare temi e plugin e di attivare un tema via REST, e sostituire i file di Download Monitor, autenticandosi con una password applicazione da amministratore. Nessuna interfaccia: serve solo agli aggiornamenti fatti da Claude.
+ * Version: 1.3.0
  * Requires at least: 6.0
  * Requires PHP: 7.4
  * Author: Armando Bisogno
@@ -160,6 +160,80 @@ add_action(
 					$c->setPurger( AHSC_PURGER );
 					$c->purgeAll();
 					return array( 'ok' => true, 'aruba' => true );
+				},
+			)
+		);
+
+		// Download Monitor: elenca le versioni di un download con i loro metadati (sola lettura).
+		register_rest_route(
+			$ns,
+			'/dlm-info',
+			array(
+				'methods'             => 'GET',
+				'permission_callback' => fn() => current_user_can( 'manage_options' ),
+				'callback'            => function ( WP_REST_Request $r ) {
+					$id = (int) $r->get_param( 'id' );
+					if ( 'dlm_download' !== get_post_type( $id ) ) {
+						return new WP_Error( 'missing', 'Download non trovato: ' . $id, array( 'status' => 404 ) );
+					}
+					$out = array();
+					foreach ( get_posts( array( 'post_type' => 'dlm_download_version', 'post_parent' => $id, 'post_status' => 'any', 'numberposts' => -1, 'orderby' => 'menu_order date', 'order' => 'DESC' ) ) as $v ) {
+						$meta = array();
+						foreach ( get_post_meta( $v->ID ) as $k => $vals ) {
+							$meta[ $k ] = maybe_unserialize( $vals[0] );
+						}
+						$out[] = array( 'id' => $v->ID, 'title' => $v->post_title, 'status' => $v->post_status, 'date' => $v->post_date, 'menu_order' => $v->menu_order, 'meta' => $meta );
+					}
+					return array( 'download' => array( 'id' => $id, 'title' => get_the_title( $id ), 'slug' => get_post_field( 'post_name', $id ) ), 'versions' => $out );
+				},
+			)
+		);
+
+		// Download Monitor: sostituisce il file della versione più recente di un download.
+		// Parametri: id (download), file (campo multipart), version (etichetta, facoltativa), title (facoltativo).
+		register_rest_route(
+			$ns,
+			'/dlm-file',
+			array(
+				'methods'             => 'POST',
+				'permission_callback' => fn() => current_user_can( 'manage_options' ),
+				'callback'            => function ( WP_REST_Request $r ) {
+					$id = (int) $r->get_param( 'id' );
+					if ( 'dlm_download' !== get_post_type( $id ) ) {
+						return new WP_Error( 'missing', 'Download non trovato: ' . $id, array( 'status' => 404 ) );
+					}
+					$files = $r->get_file_params();
+					if ( empty( $files['file']['tmp_name'] ) ) {
+						return new WP_Error( 'no_file', 'Manca il file (campo "file").', array( 'status' => 400 ) );
+					}
+					$versions = get_posts( array( 'post_type' => 'dlm_download_version', 'post_parent' => $id, 'post_status' => 'any', 'numberposts' => 1, 'orderby' => 'menu_order date', 'order' => 'DESC' ) );
+					if ( empty( $versions ) ) {
+						return new WP_Error( 'no_version', 'Il download non ha versioni.', array( 'status' => 409 ) );
+					}
+					$vid = $versions[0]->ID;
+					require_once ABSPATH . 'wp-admin/includes/file.php';
+					$mimes = array( 'pdf' => 'application/pdf', 'epub' => 'application/epub+zip' );
+					$up    = wp_handle_upload( $files['file'], array( 'test_form' => false, 'mimes' => $mimes ) );
+					if ( isset( $up['error'] ) ) {
+						return new WP_Error( 'upload', $up['error'], array( 'status' => 500 ) );
+					}
+					$old = get_post_meta( $vid, '_files', true );
+					update_post_meta( $vid, '_files', wp_slash( wp_json_encode( array( $up['url'] ) ) ) );
+					update_post_meta( $vid, '_filesize', filesize( $up['file'] ) );
+					update_post_meta( $vid, '_md5', md5_file( $up['file'] ) );
+					update_post_meta( $vid, '_sha1', sha1_file( $up['file'] ) );
+					$label = sanitize_text_field( (string) $r->get_param( 'version' ) );
+					if ( '' !== $label ) {
+						update_post_meta( $vid, '_version', $label );
+					}
+					$title = sanitize_text_field( (string) $r->get_param( 'title' ) );
+					if ( '' !== $title ) {
+						wp_update_post( array( 'ID' => $id, 'post_title' => $title ) );
+					}
+					wp_update_post( array( 'ID' => $vid, 'post_modified' => current_time( 'mysql' ) ) );
+					delete_transient( 'dlm_file_version_ids_' . $id );
+					wp_cache_flush();
+					return array( 'ok' => true, 'download' => $id, 'version_id' => $vid, 'url' => $up['url'], 'size' => filesize( $up['file'] ), 'old_files' => $old );
 				},
 			)
 		);
