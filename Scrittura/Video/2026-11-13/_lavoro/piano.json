@@ -1,6 +1,6 @@
 {
  "video": "Documenti di passaggio/20261113_094514.mp4",
- "out": "Scrittura/Video/20261113_094514/brevi",
+ "out": "Scrittura/Video/2026-11-13",
  "x_centro": 0.49,
  "zoom": 1.0,
  "sottotitoli": true,
@@ -71,7 +71,8 @@
    "taglio": [
     70.49,
     102.06
-   ]
+   ],
+   "hook": "I dati sono davvero neutrali?"
   },
   {
    "titolo": "Che cosa nasconde un numero",
@@ -80,7 +81,8 @@
    "taglio": [
     301.09,
     328.03
-   ]
+   ],
+   "hook": "Che cosa nasconde un numero?"
   },
   {
    "titolo": "Una traccia, non una fotografia",
@@ -89,7 +91,8 @@
    "taglio": [
     406.83,
     425.39
-   ]
+   ],
+   "hook": "Un dato è una fotografia della realtà?"
   },
   {
    "titolo": "C'è sempre un io che legge",
@@ -98,7 +101,9 @@
    "taglio": [
     509.33,
     533.87
-   ]
+   ],
+   "hook": "Che cosa sanno gli umanisti dei dati?"
   }
- ]
+ ],
+ "lavoro": "Scrittura/Video/2026-11-13/_lavoro"
 }

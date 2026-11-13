@@ -116,6 +116,8 @@ def carica_piano(path):
     piano["_video"] = percorso(piano["video"])
     piano["_out"] = percorso(piano["out"])
     piano["_out"].mkdir(parents=True, exist_ok=True)
+    piano["_lav"] = percorso(piano.get("lavoro", piano["out"]))  # piano, trascrizione, .srt
+    piano["_lav"].mkdir(parents=True, exist_ok=True)
     for i, c in enumerate(piano["clip"], 1):
         c["_nome"] = f"{i:02}_{slug(c['titolo'])}"
     return piano
@@ -182,12 +184,12 @@ def aggancia(trascr, c):
 
 def cmd_sottotitoli(a):
     piano = carica_piano(a.piano)
-    tj = piano["_out"] / "trascrizione.json"
+    tj = piano["_lav"] / "trascrizione.json"
     if not tj.exists():  # p. es. sottocartella «brevi/» accanto alla trascrizione
-        tj = piano["_out"].parent / "trascrizione.json"
+        tj = piano["_lav"].parent / "trascrizione.json"
     trascr = json.loads(tj.read_text(encoding="utf-8"))
     corr = piano.get("correzioni", {})
-    maxc = piano.get("caratteri_per_riga", 32)
+    maxc = piano.get("caratteri_per_blocco", 22)
     for c in piano["clip"]:
         t0, t1, ws = aggancia(trascr, c)
         c["taglio"] = [round(t0, 2), round(t1, 2)]
@@ -203,19 +205,21 @@ def cmd_sottotitoli(a):
                 cur = []
         if cur:
             blocchi.append(cur)
-        out = []
+        out, tempi = [], []
         for i, b in enumerate(blocchi, 1):
+            tempi.append([[round(x[0] - t0, 2), round(x[1] - t0, 2)] for x in b])
             testo = "".join(x[2] for x in b).strip()
             testo = re.sub(r"(\w) '(\w)", r"\1'\2", testo)  # «nell 'uso» → «nell'uso»
             for k, v in corr.items():  # chiavi = espressioni regolari
                 testo = re.sub(k, v, testo)
             fine = b[-1][1] if i == len(blocchi) else min(blocchi[i][0][0], b[-1][1] + 0.4)
             out.append(f"{i}\n{ts_srt(max(b[0][0] - t0, 0))} --> {ts_srt(fine - t0)}\n{testo}\n")
-        srt = piano["_out"] / f"{c['_nome']}.srt"
+        srt = piano["_lav"] / f"{c['_nome']}.srt"
         if srt.exists() and not a.sovrascrivi:
             print(f"  {srt.name} esiste già (corretto a mano?): non lo tocco. Usa --sovrascrivi.")
         else:
             srt.write_text("\n".join(out), encoding="utf-8")
+            srt.with_suffix(".parole.json").write_text(json.dumps(tempi), encoding="utf-8")
         print(f"{c['_nome']}: {t0:.2f}–{t1:.2f} ({t1 - t0:.0f} s) → {srt.name}")
     piano_pulito = {k: v for k, v in piano.items() if not k.startswith("_")}
     for c in piano_pulito["clip"]:
@@ -232,7 +236,7 @@ def cmd_correggi(a):
     piano = carica_piano(a.piano)
     for i, c in enumerate(piano["clip"], 1):
         reps = piano.get("correzioni_srt", {}).get(f"{i:02}", [])
-        srt = piano["_out"] / f"{c['_nome']}.srt"
+        srt = piano["_lav"] / f"{c['_nome']}.srt"
         if not reps or not srt.exists():
             continue
         blocchi = [b.splitlines() for b in re.split(r"\n\s*\n", srt.read_text(encoding="utf-8").strip())]
@@ -265,13 +269,50 @@ WrapStyle: 0
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
-Style: Sub,{font},62,&H00FFFFFF,&H00FFFFFF,&H00000000,&H64000000,1,0,0,0,100,100,0,0,1,4,1,2,80,80,{mv_sub},1
-Style: Titolo,{font},66,&H00FFFFFF,&H00FFFFFF,&H00000000,&H8C000000,1,0,0,0,100,100,0,0,3,22,0,8,90,90,{mv_tit},1
-Style: Firma,{font},38,&H00FFFFFF,&H00FFFFFF,&H00000000,&H64000000,0,0,0,0,100,100,1,0,1,2,1,8,90,90,{mv_firma},1
+Style: Sub,{font},{fs_sub},&H00FFFFFF,&H00FFFFFF,&H00000000,&H78000000,1,0,0,0,100,100,1,0,1,6,2,2,70,70,{mv_sub},1
+Style: Hook,{font},{fs_hook},&H00FFFFFF,&H00FFFFFF,&H00000000,&H00000000,1,0,0,0,100,100,1,0,1,7,3,8,70,70,{mv_hook},1
+Style: Titolo,{font},66,&H00FFFFFF,&H00FFFFFF,&H00000000,&H8C000000,1,0,0,0,100,100,0,0,3,22,0,8,90,90,240,1
+Style: Firma,{font},38,&H00FFFFFF,&H00FFFFFF,&H00000000,&H64000000,0,0,0,0,100,100,1,0,1,2,1,8,90,90,128,1
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
 """
+
+
+def colore_ass(hexrgb):
+    """«#FF8A00» → «&H00008AFF&» (ASS vuole BGR)."""
+    h = hexrgb.lstrip("#")
+    return f"&H00{h[4:6]}{h[2:4]}{h[0:2]}&".upper()
+
+
+def eventi_karaoke(srt, maiuscolo, evidenzia):
+    """Un evento per parola: tutto il blocco in bianco, la parola detta in colore.
+    I tempi per parola vengono da .parole.json; se le correzioni hanno cambiato il
+    numero di parole di un blocco, i tempi si ridistribuiscono in proporzione."""
+    blocchi = leggi_srt(srt)
+    pj = srt.with_suffix(".parole.json")
+    tempi = json.loads(pj.read_text(encoding="utf-8")) if pj.exists() else []
+    ev = []
+    for n, (s0, s1, testo) in enumerate(blocchi):
+        parole = testo.upper().split() if maiuscolo else testo.split()
+        t = tempi[n] if n < len(tempi) and len(tempi[n]) == len(parole) else None
+        if t is None:  # proporzionale alla lunghezza delle parole
+            tot = sum(len(p) + 1 for p in parole)
+            acc, t = s0, []
+            for p in parole:
+                d = (s1 - s0) * (len(p) + 1) / tot
+                t.append([acc, acc + d])
+                acc += d
+        for k in range(len(parole)):
+            a = max(t[k][0], s0) if k else s0
+            z = t[k + 1][0] if k + 1 < len(parole) else s1
+            if z <= a:
+                continue
+            riga = " ".join(
+                (f"{{\\c{evidenzia}}}{p}{{\\c&H00FFFFFF&}}" if j == k else p)
+                for j, p in enumerate(parole))
+            ev.append(f"Dialogue: 1,{ts_ass(a)},{ts_ass(z)},Sub,,0,0,0,,{riga}")
+    return ev
 
 
 def cmd_render(a):
@@ -280,7 +321,9 @@ def cmd_render(a):
     info = info_video(video)
     cw, ch, x, y = ritaglio(info["larghezza"], info["altezza"],
                             piano.get("x_centro", 0.5), piano.get("zoom", 1.0))
-    font = piano.get("font", "Helvetica Neue")
+    font = piano.get("font", "Avenir Next Heavy")
+    evid = colore_ass(piano.get("evidenzia", "#FF8A00"))
+    maiusc = piano.get("maiuscolo", True)
     firma = piano.get("firma", "Armando Bisogno · Macchine Pensanti")
     for i, c in enumerate(piano["clip"], 1):
         if a.solo and i != a.solo:
@@ -289,17 +332,23 @@ def cmd_render(a):
             sys.exit("Manca il campo «taglio»: lancia prima la fase sottotitoli.")
         t0, t1 = c["taglio"]
         durata = t1 - t0
-        ass = piano["_out"] / f"_{c['_nome']}.ass"
-        ev = [STILE.format(font=font, mv_sub=430, mv_tit=240, mv_firma=128)]
+        if a.prova:
+            durata = min(durata, a.prova)
+        ass = piano["_lav"] / f"_{c['_nome']}.ass"
+        ev = [STILE.format(font=font, fs_sub=piano.get("corpo_sottotitoli", 80), mv_sub=520,
+                           fs_hook=piano.get("corpo_hook", 92), mv_hook=330)]
         fine = ts_ass(durata)
         if piano.get("intestazione", False):  # titolo + firma in alto: di norma no
             ev.append(f"Dialogue: 0,0:00:00.00,{fine},Titolo,,0,0,0,,{c['titolo']}")
             if firma:
                 ev.append(f"Dialogue: 0,0:00:00.00,{fine},Firma,,0,0,0,,{firma}")
-        srt = piano["_out"] / f"{c['_nome']}.srt"
+        srt = piano["_lav"] / f"{c['_nome']}.srt"
         if piano.get("sottotitoli", True) and srt.exists():
-            for s0, s1, testo in leggi_srt(srt):
-                ev.append(f"Dialogue: 1,{ts_ass(s0)},{ts_ass(s1)},Sub,,0,0,0,,{testo}")
+            ev += eventi_karaoke(srt, maiusc, evid)
+        if c.get("hook"):  # domanda grande in alto nei primi secondi, poi svanisce
+            h = c["hook"].upper() if maiusc else c["hook"]
+            ev.append(f"Dialogue: 2,0:00:00.00,{ts_ass(c.get('durata_hook', 3.0))},Hook,,0,0,0,,"
+                      f"{{\\fad(0,350)}}{h}")
         ass.write_text("\n".join(ev) + "\n", encoding="utf-8")
         ass_esc = str(ass).replace("\\", "/").replace(":", r"\:").replace("'", r"\'")
         vf = (f"crop={cw}:{ch}:{x}:{y},scale={W}:{H}:flags=lanczos,setsar=1,"
@@ -307,7 +356,7 @@ def cmd_render(a):
               f"subtitles=filename='{ass_esc}':fontsdir=/System/Library/Fonts")
         af = (f"loudnorm=I=-14:TP=-1.5:LRA=11,afade=t=in:st=0:d=0.2,"
               f"afade=t=out:st={durata - 0.4:.2f}:d=0.4")
-        mp4 = piano["_out"] / f"{c['_nome']}.mp4"
+        mp4 = piano["_out"] / f"{c['_nome']}{'_prova' if a.prova else ''}.mp4"
         print(f"render {mp4.name} ({durata:.0f} s)…", flush=True)
         run([ffmpeg_bin(), "-y", "-loglevel", "error", "-ss", f"{t0:.3f}", "-i", str(video),
              "-t", f"{durata:.3f}", "-vf", vf, "-af", af, "-r", "30",
@@ -332,6 +381,7 @@ def main():
     s.add_argument("--sovrascrivi", action="store_true"); s.set_defaults(f=cmd_sottotitoli)
     k = sp.add_parser("correggi"); k.add_argument("piano"); k.set_defaults(f=cmd_correggi)
     r = sp.add_parser("render"); r.add_argument("piano"); r.add_argument("--solo", type=int)
+    r.add_argument("--prova", type=float, help="rende solo i primi N secondi (file _prova.mp4)")
     r.set_defaults(f=cmd_render)
     a = p.parse_args()
     a.f(a)
