@@ -8,8 +8,8 @@ Calendario (video completo e Reel 01 il venerdì, poi sabato, lunedì, mercoled�
 |---|---|---|
 | 01 · Il nuovo petrolio | ven 13.11, con il video | I dati sono davvero neutrali? |
 | 02 · Che cosa nasconde un numero | sab 14.11 | Che cosa nasconde un numero? |
-| 03 · Una traccia, non una fotografia | lun 16.11 | Un dato è una fotografia? |
-| 04 · C'è sempre un io che legge | mer 18.11 | Che cosa sanno gli umanisti dei dati? |
+| 03 · Una traccia, non una fotografia | lun 16.11 | Il dato non è la realtà |
+| 04 · C'è sempre un io che legge | mer 18.11 | Il protagonista è sempre un io |
 
 ---
 
