@@ -1,0 +1,67 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Sub,Helvetica Neue,62,&H00FFFFFF,&H00FFFFFF,&H00000000,&H64000000,1,0,0,0,100,100,0,0,1,4,1,2,80,80,430,1
+Style: Titolo,Helvetica Neue,66,&H00FFFFFF,&H00FFFFFF,&H00000000,&H8C000000,1,0,0,0,100,100,0,0,3,22,0,8,90,90,240,1
+Style: Firma,Helvetica Neue,38,&H00FFFFFF,&H00FFFFFF,&H00000000,&H64000000,0,0,0,0,100,100,1,0,1,2,1,8,90,90,128,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+
+Dialogue: 0,0:00:00.00,0:01:28.11,Titolo,,0,0,0,,Gli umanisti lo sanno da sempre
+Dialogue: 0,0:00:00.00,0:01:28.11,Firma,,0,0,0,,Armando Bisogno · Macchine Pensanti
+Dialogue: 1,0:00:00.25,0:00:01.87,Sub,,0,0,0,,Che c'entra tutto questo con
+Dialogue: 1,0:00:01.87,0:00:02.87,Sub,,0,0,0,,il mondo umanistico?
+Dialogue: 1,0:00:02.87,0:00:04.69,Sub,,0,0,0,,Drucker lo spiega molto bene.
+Dialogue: 1,0:00:05.25,0:00:06.31,Sub,,0,0,0,,Il mondo umanistico e le
+Dialogue: 1,0:00:06.31,0:00:08.67,Sub,,0,0,0,,discipline umanistiche vivono da
+Dialogue: 1,0:00:08.67,0:00:10.51,Sub,,0,0,0,,sempre nella consapevolezza che
+Dialogue: 1,0:00:10.51,0:00:12.17,Sub,,0,0,0,,la produzione di conoscenza è
+Dialogue: 1,0:00:12.17,0:00:13.85,Sub,,0,0,0,,una produzione intenzionale,
+Dialogue: 1,0:00:13.85,0:00:16.79,Sub,,0,0,0,,collocata. Cioè quando io leggo
+Dialogue: 1,0:00:16.79,0:00:18.33,Sub,,0,0,0,,un testo in aula ai miei
+Dialogue: 1,0:00:18.33,0:00:19.83,Sub,,0,0,0,,studenti, le mie studentesse,
+Dialogue: 1,0:00:19.83,0:00:21.09,Sub,,0,0,0,,quando scrivo un paper, quando
+Dialogue: 1,0:00:21.09,0:00:22.77,Sub,,0,0,0,,scrivo una monografia, sono
+Dialogue: 1,0:00:22.77,0:00:25.37,Sub,,0,0,0,,sempre io come soggetto che mi
+Dialogue: 1,0:00:25.37,0:00:27.33,Sub,,0,0,0,,pongo in relazione all'oggetto
+Dialogue: 1,0:00:27.33,0:00:28.55,Sub,,0,0,0,,che sto studiando, che sto
+Dialogue: 1,0:00:28.55,0:00:30.53,Sub,,0,0,0,,leggendo all'opera, al testo e
+Dialogue: 1,0:00:30.53,0:00:32.17,Sub,,0,0,0,,lo faccio a partire dai miei
+Dialogue: 1,0:00:32.17,0:00:33.31,Sub,,0,0,0,,pregiudizi, dalle mie
+Dialogue: 1,0:00:33.31,0:00:34.95,Sub,,0,0,0,,inclinazioni, dalla mia
+Dialogue: 1,0:00:34.95,0:00:36.65,Sub,,0,0,0,,formazione, dai miei bias e
+Dialogue: 1,0:00:36.65,0:00:38.21,Sub,,0,0,0,,così via. Cioè il sapere
+Dialogue: 1,0:00:38.21,0:00:40.03,Sub,,0,0,0,,umanistico è un sapere che da
+Dialogue: 1,0:00:40.03,0:00:42.21,Sub,,0,0,0,,sempre ha consapevolezza del
+Dialogue: 1,0:00:42.21,0:00:44.21,Sub,,0,0,0,,fatto che quando io leggo una
+Dialogue: 1,0:00:44.21,0:00:45.81,Sub,,0,0,0,,informazione, quando leggo un
+Dialogue: 1,0:00:45.81,0:00:48.15,Sub,,0,0,0,,evento, quando leggo un testo,
+Dialogue: 1,0:00:48.15,0:00:49.93,Sub,,0,0,0,,sono io che lo sto leggendo, c'è
+Dialogue: 1,0:00:49.93,0:00:51.69,Sub,,0,0,0,,sempre un io che sta
+Dialogue: 1,0:00:51.69,0:00:53.81,Sub,,0,0,0,,interpretando. Così come nel
+Dialogue: 1,0:00:53.81,0:00:55.35,Sub,,0,0,0,,caso dei dati c'è sempre un io
+Dialogue: 1,0:00:55.35,0:00:56.85,Sub,,0,0,0,,che ha messo la videocamera e
+Dialogue: 1,0:00:56.85,0:00:58.43,Sub,,0,0,0,,c'è sempre un io che legge le
+Dialogue: 1,0:00:58.43,0:00:59.57,Sub,,0,0,0,,informazioni che vengono
+Dialogue: 1,0:00:59.57,0:01:01.29,Sub,,0,0,0,,registrate e che vengono
+Dialogue: 1,0:01:01.29,0:01:03.07,Sub,,0,0,0,,utilizzate. Allora, la
+Dialogue: 1,0:01:03.07,0:01:03.97,Sub,,0,0,0,,riflessione di Drucker è
+Dialogue: 1,0:01:03.97,0:01:06.83,Sub,,0,0,0,,interessante perché ci ricorda
+Dialogue: 1,0:01:06.83,0:01:08.89,Sub,,0,0,0,,un po' agli umanisti quello che
+Dialogue: 1,0:01:08.89,0:01:10.59,Sub,,0,0,0,,qualche volta dimenticano e cioè
+Dialogue: 1,0:01:10.59,0:01:11.77,Sub,,0,0,0,,che il loro studio non è uno studio
+Dialogue: 1,0:01:11.77,0:01:13.43,Sub,,0,0,0,,scientifico oggettivo nel senso
+Dialogue: 1,0:01:13.43,0:01:15.19,Sub,,0,0,0,,classico del termine, ma
+Dialogue: 1,0:01:15.19,0:01:16.91,Sub,,0,0,0,,soprattutto invita il mondo
+Dialogue: 1,0:01:16.91,0:01:18.63,Sub,,0,0,0,,umanistico a ricordare al mondo
+Dialogue: 1,0:01:18.63,0:01:21.41,Sub,,0,0,0,,esterno che questa mitologia del
+Dialogue: 1,0:01:21.41,0:01:23.43,Sub,,0,0,0,,dato oggettivo è infondata
+Dialogue: 1,0:01:23.43,0:01:25.21,Sub,,0,0,0,,perché ogni dato è il frutto di
+Dialogue: 1,0:01:25.21,0:01:26.73,Sub,,0,0,0,,una raccolta fatta da un
+Dialogue: 1,0:01:26.73,0:01:27.51,Sub,,0,0,0,,soggetto.

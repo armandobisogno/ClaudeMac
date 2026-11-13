@@ -1,0 +1,127 @@
+1
+00:00:00,250 --> 00:00:01,850
+Parte dal presupposto che noi
+
+2
+00:00:01,850 --> 00:00:02,910
+viviamo in un'epoca di
+
+3
+00:00:02,910 --> 00:00:04,510
+datificazione che è una cosa
+
+4
+00:00:04,510 --> 00:00:06,430
+della quale ci rendiamo conto
+
+5
+00:00:06,430 --> 00:00:08,050
+tutti in ogni momento perché
+
+6
+00:00:08,050 --> 00:00:10,150
+produciamo o siamo dati: quando
+
+7
+00:00:10,150 --> 00:00:11,230
+usiamo il telefono, quando
+
+8
+00:00:11,230 --> 00:00:11,970
+facciamo un pagamento
+
+9
+00:00:11,970 --> 00:00:13,270
+elettronico, quando passiamo
+
+10
+00:00:13,270 --> 00:00:14,610
+davanti una videocamera di
+
+11
+00:00:14,610 --> 00:00:16,250
+sorveglianza e così via.
+
+12
+00:00:16,930 --> 00:00:19,170
+Questa datificazione, cioè il
+
+13
+00:00:19,170 --> 00:00:20,910
+fatto che continuamente siamo
+
+14
+00:00:20,910 --> 00:00:22,450
+immersi nella produzione e
+
+15
+00:00:22,450 --> 00:00:24,510
+nell'uso di dati ha creato
+
+16
+00:00:24,510 --> 00:00:25,990
+secondo Drucker una sorta di
+
+17
+00:00:25,990 --> 00:00:28,190
+grande mitologia. I dati sono il
+
+18
+00:00:28,190 --> 00:00:30,130
+nuovo petrolio, le decisioni
+
+19
+00:00:30,130 --> 00:00:31,750
+vanno prese facendoci guidare
+
+20
+00:00:31,750 --> 00:00:34,830
+dai dati, e questa mitologia ha
+
+21
+00:00:34,830 --> 00:00:36,930
+suggerito in maniera più o meno
+
+22
+00:00:36,930 --> 00:00:39,070
+sotterranea che i dati fossero
+
+23
+00:00:39,070 --> 00:00:41,410
+affidabili perché sono oggettivi,
+
+24
+00:00:41,410 --> 00:00:42,910
+cioè perché sono una
+
+25
+00:00:42,910 --> 00:00:46,470
+registrazione neutrale della
+
+26
+00:00:46,470 --> 00:00:47,430
+realtà.
+
+27
+00:00:47,890 --> 00:00:49,150
+Se davanti una videocamera
+
+28
+00:00:49,150 --> 00:00:51,470
+passano 300 persone in un giorno,
+
+29
+00:00:51,470 --> 00:00:53,350
+quel numero 300 non è
+
+30
+00:00:53,350 --> 00:00:55,070
+nient'altro che la registrazione
+
+31
+00:00:55,070 --> 00:00:56,610
+oggettiva di quello che è
+
+32
+00:00:56,610 --> 00:00:58,110
+realmente successo.

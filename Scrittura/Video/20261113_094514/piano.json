@@ -1,0 +1,175 @@
+{
+ "video": "Documenti di passaggio/20261113_094514.mp4",
+ "out": "Scrittura/Video/20261113_094514",
+ "x_centro": 0.49,
+ "zoom": 1.0,
+ "sottotitoli": true,
+ "correzioni": {
+  "\\bmanistic": "umanistic",
+  "Drachre|Draccher|Drucker": "Drucker",
+  "\\bspica\\b": "spiega",
+  "studentessi": "studentesse",
+  "consapevolezzo": "consapevolezza",
+  "Che c'è dentro": "Che c'entra"
+ },
+ "clip": [
+  {
+   "titolo": "La mitologia del dato",
+   "inizio": 43.0,
+   "fine": 100.9,
+   "taglio": [
+    43.35,
+    102.06
+   ]
+  },
+  {
+   "titolo": "Il dato non esiste in natura",
+   "inizio": 184.4,
+   "fine": 246.6,
+   "taglio": [
+    184.15,
+    246.75
+   ]
+  },
+  {
+   "titolo": "Che cosa nasconde un numero",
+   "inizio": 301.3,
+   "fine": 386.9,
+   "taglio": [
+    301.09,
+    387.75
+   ]
+  },
+  {
+   "titolo": "Gli umanisti lo sanno da sempre",
+   "inizio": 471.7,
+   "fine": 558.9,
+   "taglio": [
+    471.47,
+    559.58
+   ]
+  }
+ ],
+ "correzioni_srt": {
+  "01": [
+   [
+    "sorvegliarsi",
+    "sorveglianza"
+   ],
+   [
+    "dati quando",
+    "dati: quando"
+   ],
+   [
+    "telefono quando",
+    "telefono, quando"
+   ],
+   [
+    "elettronico quando",
+    "elettronico, quando"
+   ],
+   [
+    "datificazione cioè",
+    "datificazione, cioè"
+   ],
+   [
+    "oggettivi cioè",
+    "oggettivi, cioè"
+   ],
+   [
+    "dai dati e questa",
+    "dai dati, e questa"
+   ],
+   [
+    "giorno quel",
+    "giorno, quel"
+   ]
+  ],
+  "02": [
+   [
+    "320 singoli",
+    "300 singoli"
+   ],
+   [
+    "subseguiti",
+    "susseguirsi"
+   ],
+   [
+    "videocamera, è un posto",
+    "videocamera, e un posto"
+   ],
+   [
+    "data base,",
+    "database,"
+   ],
+   [
+    "registrato quindi",
+    "registrato: quindi"
+   ]
+  ],
+  "03": [
+   [
+    "300 da questa",
+    "300 dà a questa"
+   ],
+   [
+    "E il nasconde",
+    "E nasconde"
+   ],
+   [
+    "passati 300",
+    "passate 300"
+   ],
+   [
+    "relativi a quelle",
+    "relative a quelle"
+   ],
+   [
+    "fine fanno.",
+    "fine fanno?"
+   ],
+   [
+    "Quanta è",
+    "Quanto è"
+   ],
+   [
+    "il resto? La loro profigenza",
+    "il resto, la loro provenienza"
+   ],
+   [
+    "rinclinazioni",
+    "inclinazioni"
+   ],
+   [
+    "interessano le persone al soggetto che stanno",
+    "interessano al soggetto che sta"
+   ]
+  ],
+  "04": [
+   [
+    "baia, se così",
+    "bias e così"
+   ],
+   [
+    "dei lattici è",
+    "dei dati c'è"
+   ],
+   [
+    "ai umanisti",
+    "agli umanisti"
+   ],
+   [
+    "che loro studio",
+    "che il loro studio"
+   ],
+   [
+    "consapevolezza nel fatto",
+    "consapevolezza del fatto"
+   ],
+   [
+    "termine ma",
+    "termine, ma"
+   ]
+  ]
+ }
+}

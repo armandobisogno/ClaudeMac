@@ -22,6 +22,7 @@ In radice solo sei voci: `brain/`, `Documenti di passaggio/` e quattro macrocart
 | ↳ `Macchine Pensanti/` | `Bozze/` (.docx dei post), `Esperimenti/` | sì |
 | ↳ `Macchine Parlanti/` | micropodcast: scalette, template, puntate | sì, audio esclusi |
 | ↳ `UIF/` | *Una intelligenza fantastica*, una sottocartella per versione (ultima `UIF 1_2/`) | sì |
+| ↳ `Video/` | Reel IG ricavati dai video di Armando (`/video-ig`): una sottocartella per video, con piano, trascrizione, .srt, didascalie | sì, video esclusi |
 | ↳ `Romanzi/` | epub dei romanzi Malversi | **no** |
 | ↳ `Finzioni/` | testi integralmente prodotti da Claude (Redeo ad me, Ermete Metello, Tre finestre, Epistula de contagio) | sì |
 | **`Web/`** | | |
@@ -45,6 +46,7 @@ In radice solo sei voci: `brain/`, `Documenti di passaggio/` e quattro macrocart
 - `/rassegna`: edizione della rassegna stampa su armandobisogno.it/rassegna.
 - `/tirocini`: firma i PFO in `Documenti di passaggio/Tirocini/`.
 - `/newsletter`: da un contenuto dato, nuovo numero di MP nel ToV (tarato sugli ultimi 10 numeri), .docx in `Scrittura/Macchine Pensanti/Bozze/` + post social.
+- `/video-ig`: da un video lungo in DdP, 4 Reel verticali con titolo e sottotitoli in `Scrittura/Video/<nome>/` + didascalie (`brain/tools/video_ig.py`).
 - `/MacchinePensanti-spunti`, `/substack-5articoli`: spunti e letture nei DB Notion.
 - Hook di inizio sessione (`.claude/settings.json`): `session_brief.py` (novità MP, scadenze, PFO), `changes_check.py`, `git_autosync.sh`.
 

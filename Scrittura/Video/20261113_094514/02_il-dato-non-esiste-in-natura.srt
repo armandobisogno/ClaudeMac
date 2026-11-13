@@ -1,0 +1,119 @@
+1
+00:00:00,250 --> 00:00:02,070
+Perché il fatto che qualcuno
+
+2
+00:00:02,070 --> 00:00:05,290
+abbia messo lì una videocamera
+
+3
+00:00:05,290 --> 00:00:08,210
+ci ricorda che il dato in quanto
+
+4
+00:00:08,210 --> 00:00:09,950
+tale non esiste.
+
+5
+00:00:10,050 --> 00:00:12,450
+Quando io dico 300 persone sono
+
+6
+00:00:12,450 --> 00:00:14,150
+passate attraverso la porta di
+
+7
+00:00:14,150 --> 00:00:17,010
+questo ufficio, tratto questa
+
+8
+00:00:17,010 --> 00:00:18,930
+informazione come se fosse un
+
+9
+00:00:18,930 --> 00:00:22,070
+dato, 300 persone sono passate.
+
+10
+00:00:22,070 --> 00:00:24,670
+Nella realtà non sono 300
+
+11
+00:00:24,670 --> 00:00:26,990
+persone che sono passate, sono
+
+12
+00:00:26,990 --> 00:00:29,930
+300 singoli relativi ad una
+
+13
+00:00:29,930 --> 00:00:32,110
+persona o a più persone che si
+
+14
+00:00:32,110 --> 00:00:33,890
+sono susseguiti nel corso di un
+
+15
+00:00:33,890 --> 00:00:36,150
+arco di tempo più o meno
+
+16
+00:00:36,150 --> 00:00:38,850
+predefinito, diventano un dato
+
+17
+00:00:38,850 --> 00:00:41,690
+quando qualcuno li registra.
+
+18
+00:00:41,710 --> 00:00:43,270
+Cioè quando c'è un sensore, in
+
+19
+00:00:43,270 --> 00:00:44,790
+questo caso una videocamera, e
+
+20
+00:00:44,790 --> 00:00:46,350
+un posto nel quale queste
+
+21
+00:00:46,350 --> 00:00:48,250
+informazioni, questi eventi, il
+
+22
+00:00:48,250 --> 00:00:49,790
+susseguirsi di questi eventi, è
+
+23
+00:00:49,790 --> 00:00:51,110
+stato registrato: quindi un database,
+
+24
+00:00:51,110 --> 00:00:52,970
+un foglio di carta, una
+
+25
+00:00:52,970 --> 00:00:54,470
+memoria e così via.
+
+26
+00:00:54,650 --> 00:00:56,810
+Quindi il dato non è oggettivo e
+
+27
+00:00:56,810 --> 00:00:58,990
+non è naturale, punto primo,
+
+28
+00:00:59,030 --> 00:01:00,250
+perché qualcuno ha messo lì una
+
+29
+00:01:00,250 --> 00:01:01,670
+videocamera per controllare
+
+30
+00:01:01,670 --> 00:01:02,310
+quell'ingresso.

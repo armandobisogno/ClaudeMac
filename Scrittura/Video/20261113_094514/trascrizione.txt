@@ -1,0 +1,106 @@
+[14.3-19.0] Nelle mie riflessioni mi occupo sempre il rapporto tra discipline umanistiche e
+[19.0-24.3] trasrapedi umanistici nuove tecnologie. Oggi lo faccio partendo da un paper di
+[24.3-29.1] Johanna Drucker che insegna l'Università della California di Los Angeles e che
+[29.1-32.4] si occupa del rapporto tra materiali umanistiche e tra discipline
+[32.4-38.0] umanistiche e rappresentazioni grafiche. Al di là del merito del paper c'è una
+[38.0-41.5] premessa generale che la Drucker fa e che secondo me è particolarmente
+[41.5-46.3] interessante. Parte dal presupposto che noi viviamo in un'epoca di
+[46.3-50.7] datificazione che è una cosa della quale ci rendiamo conto tutti in ogni
+[50.7-54.9] momento perché produciamo o siamo dati quando usiamo il telefono quando facciamo
+[54.9-58.0] un pagamento elettronico quando passiamo davanti una videocamera di
+[58.0-63.0] sorvegliarsi e così via. Questa datificazione cioè il fatto che
+[63.0-67.6] continuamente siamo immersi nella produzione e nell'uso di dati ha
+[67.6-71.3] creato secondo Drucker una sorta di grande mitologia. I dati sono
+[71.3-76.9] il nuovo petrolio, le decisioni vanno prese facendoci guidare dai dati e questa
+[76.9-82.4] mitologia ha suggerito in maniera più o meno sotterranea che i dati fossero
+[82.4-87.5] affidabili perché sono oggettivi cioè perché sono una registrazione
+[87.5-94.5] neutrale della realtà. Se davanti una videocamera passano 300 persone in un
+[94.5-98.4] giorno quel numero 300 non è nient'altro che la registrazione
+[98.4-101.5] oggettiva di quello che è realmente successo.
+[102.2-107.7] Drucker suggerisce specia che non è così, cioè che i dati non sono mai
+[107.7-116.0] ne neutrali o oggettivi e per spiegacelo utilizza due linee, due elementi,
+[116.7-120.4] cioè individua due motivi per i quali i dati sicuramente non sono ne neutrali
+[120.4-123.7] oggettivi, usiamo un esempio per spiegarlo meglio.
+[123.7-128.2] Posiamo che ci sia una videocamera e sorveglianza di fronte all'ingresso di un
+[128.2-133.2] ufficio, che registra gli ingressi e le uscite delle persone in questo
+[133.2-139.5] ufficio. Punto primo, quella videocamera non sta lì per caso né per motivi
+[139.5-144.8] naturali. Qualcuno ce l'ha ammessa perché riteneva importante,
+[145.2-149.5] utile, necessario registrare gli ingressi in quell'ufficio. Non ci
+[149.5-152.9] interessano le motivazioni se sono tossiche, non tossiche, se sono di
+[152.9-157.5] controllo, di verifica, quello che ci interessa è che c'è una
+[157.5-163.4] motivazione. C'è un soggetto che ha deciso che lì fosse necessario
+[163.4-166.4] installare una videocamera e registrare quello che succede.
+[168.2-174.7] Questo primo punto ci suggerisce investiga un approfondimento, un
+[174.7-178.8] elemento che vende le direzioni, quello dice Drachre, su il fatto che i dati
+[178.8-185.5] non sono oggettivi e non sono neutrali. Perché? Perché il fatto che
+[185.5-192.8] qualcuno abbia messo lì una videocamera ci ricorda che il dato in quanto tale
+[192.8-198.3] non esiste. Quando io dico 300 persone sono passate attraverso la porta di
+[198.3-204.3] questo ufficio, tratto questa informazione come se fosse un dato, 300
+[204.3-211.1] persone sono passate. Nella realtà non sono 300 persone che sono passate, sono
+[211.1-216.6] 320 singoli relativi ad una persona o a più persone che si sono
+[216.6-223.0] susseguiti nel corso di un arco di tempo più o meno predefinito, diventano un dato
+[223.0-228.0] quando qualcuno li registra. Cioè quando c'è un sensore, in questo caso una
+[228.0-232.4] videocamera, è un posto nel quale queste informazioni, questi eventi, il
+[232.4-236.2] subseguiti di questi eventi, è stato registrato quindi un data base, un foglio di
+[236.2-241.9] carta, una memoria e così via. Quindi il dato non è oggettivo e non è naturale,
+[242.2-246.5] punto primo, perché qualcuno ha messo lì una videocamera per controllare quell'ingresso.
+[246.8-251.4] Porto secondo, perché quello che registra non è un dato, quello che registra
+[251.4-256.2] è una serie di eventi che senza quella videocamera sarebbero 300 eventi che
+[256.2-260.7] si sono susseguiti nel tempo, diventano un dato quando io li raccolgo e li
+[260.7-266.0] memorizzo. Cioè poi il secondo motivo per il quale è un dato non è oggettivo e non
+[266.0-271.1] è naturale, è l'uso che io faccio di quelle informazioni, del fatto che ho
+[271.1-276.1] registrato che 300 persone sono entrate in quell'ufficio. Non soltanto l'uso che ne
+[276.1-279.8] faccio dal punto di vista dell'utilizzo vero e proprio, cioè per motivi di
+[279.8-285.9] marketing, per motivi di controllo e così via, che anche essi sono motivi
+[285.9-291.9] intenzionati, cioè ogni soggetto registra, registra per un motivo per utilizzare in
+[291.9-297.1] un certo modo e li utilizza in un certo modo. Ma c'è anche un'altra motivazione
+[297.1-304.2] che è anche particolarmente interessante. Quando io dico che 300 persone sono
+[304.2-310.2] passate attraverso la porta di quell'ufficio, il numero 300 da questa
+[310.2-317.1] informazione, il crisma della serietà, della oggettività, della quantità. E il
+[317.1-324.0] nasconde in qualche modo proprio dietro la apparente oggettività di quel numero,
+[324.2-327.5] la soggettività della parola che lo accompagna, che è persone.
+[328.1-340.1] Che cosa significa persone? Sono individui di genere diverso, di
+[340.1-346.2] ruolo diverso e quali di queste metriche individua veramente come stanno le
+[346.2-351.1] cose? Come faccio a dire che quel dato è oggettivo se io dico per esempio che sono
+[351.1-356.1] passati 300 persone vestite in un certo modo? Tutte le altre informazioni
+[356.1-361.6] relativi a quelle persone che fine fanno. Quanta è oggettiva quella
+[361.6-365.5] informazione se tutto il resto? La loro profigenza geografica, le loro
+[365.5-371.2] rinclinazioni personali e altre caratteristiche non vengono
+[371.2-375.5] registrate, non vengono misurate. Non è un'informazione oggettiva perché
+[375.5-382.0] seleziona di tutto il campo delle informazioni che potrebbe individuare alcune
+[382.0-386.5] che interessano le persone al soggetto che stanno registrando quelle
+[386.5-392.1] informazioni. Dunque, un dato non è oggettivo per una serie di motivi
+[392.1-395.9] che abbiamo adesso elencato. Punto primo, perché ci sia un dato?
+[396.2-400.7] C'è bisogno che qualcuno lo abbia registrato con un sensore e ne abbia
+[400.7-404.2] tenuto traccio e quindi c'è un soggetto a monte che sceglie con la
+[404.2-412.3] registrazione. Punto secondo, non è oggettivo perché non è una
+[412.3-418.5] fotografia della realtà ma è una traccia della realtà, cioè nasce
+[418.5-424.7] nella misura in cui qualcuno ne tiene memoria. È la registrazione che crea
+[424.7-428.1] il dato, non è il dato che fa fine nella registrazione.
+[429.0-437.7] Terzo, elemento che completa questa analisi della non oggettività del dato,
+[438.1-441.8] la registrazione viene utilizzata per alcuni scopi che sono anche
+[441.8-450.7] essi legati ad un soggetto, ma soprattutto il dato costruisce spegne una
+[450.7-456.6] certa visione delle cose sulla base del criterio che utilizza per analizzare
+[456.6-461.4] quelle informazioni, a seconda che le utilizzi in un senso o in un altro,
+[461.8-466.5] selezionando i soggetti o gli eventi con un criterio o con un altro, crea
+[467.4-470.8] un senso e quindi condiziona la mia lettura di quelle informazioni.
+[471.7-474.3] Che c'è dentro tutto questo con il mondo manistico?
+[474.3-478.9] Drucker lo spica molto bene. Il mondo manistico e le discipline manistiche
+[478.9-483.8] vivono da sempre nella consapevolezza che la produzione di conoscenza è una
+[483.8-489.5] produzione intenzionale, collocata. Cioè quando io leggo un testo in aula
+[489.5-492.9] ai miei studenti, le mie studentessi, quando scrivo un paper, quando scrivo
+[492.9-497.9] una monografia, sono sempre io come soggetto che mi pongo in relazione
+[497.9-502.5] all'oggetto che sto studiando, che sto leggendo all'opera, al testo e lo faccio a
+[502.5-507.1] partire dai miei pregiudizi, dalle mie inclinazioni, dalla mia formazione,
+[507.2-511.3] dai miei baia, se così via. Cioè il sapere manistico è un sapere che
+[511.3-515.7] da sempre ha consapevolezzo nel fatto che quando io leggo una
+[515.7-520.5] informazione, quando leggo un evento, quando leggo un testo, sono io che lo
+[520.5-525.6] sto leggendo, c'è sempre un io che sta interpretando. Così come nel caso dei
+[525.6-529.5] lattici è sempre un io che ha messo la videocamera e c'è sempre un io che
+[529.5-533.7] legge le informazioni che vengono registrate e che vengono utilizzate.
+[533.9-539.0] Allora, la riflessione di Draccher è interessante perché ci ricorda un
+[539.0-542.3] po' ai umanisti quello che qualche volta dimenticano e cioè che loro
+[542.3-545.6] studio non è uno studio scientifico oggettivo nel senso classico del
+[545.6-550.1] termine ma soprattutto invita il mondo manistico a ricordare al mondo
+[550.1-555.6] esterno che questa mitologia del dato oggettivo è infondata perché ogni
+[555.6-559.0] dato è il frutto di una raccolta fatta da un soggetto.
