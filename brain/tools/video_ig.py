@@ -15,7 +15,7 @@ Fasi (le guida la skill /video-ig):
         applica le correzioni «correzioni_srt» del piano ai .srt (parola per parola,
         anche a cavallo di due blocchi); per ritocchi puntuali si può editare il .srt
   4. render     PIANO.json [--solo N]
-        ritaglio 9:16 1080x1920, titolo in alto, sottotitoli incisi, audio a -14 LUFS
+        ritaglio 9:16 1080x1920, sottotitoli incisi (titolo e firma in alto solo con "intestazione": true), audio a -14 LUFS
         → DIR/NN_slug.mp4
 
 Dipendenze: ffmpeg (di sistema oppure `pip3 install --user imageio-ffmpeg`),
@@ -182,7 +182,10 @@ def aggancia(trascr, c):
 
 def cmd_sottotitoli(a):
     piano = carica_piano(a.piano)
-    trascr = json.loads((piano["_out"] / "trascrizione.json").read_text(encoding="utf-8"))
+    tj = piano["_out"] / "trascrizione.json"
+    if not tj.exists():  # p. es. sottocartella «brevi/» accanto alla trascrizione
+        tj = piano["_out"].parent / "trascrizione.json"
+    trascr = json.loads(tj.read_text(encoding="utf-8"))
     corr = piano.get("correzioni", {})
     maxc = piano.get("caratteri_per_riga", 32)
     for c in piano["clip"]:
@@ -207,7 +210,7 @@ def cmd_sottotitoli(a):
             for k, v in corr.items():  # chiavi = espressioni regolari
                 testo = re.sub(k, v, testo)
             fine = b[-1][1] if i == len(blocchi) else min(blocchi[i][0][0], b[-1][1] + 0.4)
-            out.append(f"{i}\n{ts_srt(b[0][0] - t0)} --> {ts_srt(fine - t0)}\n{testo}\n")
+            out.append(f"{i}\n{ts_srt(max(b[0][0] - t0, 0))} --> {ts_srt(fine - t0)}\n{testo}\n")
         srt = piano["_out"] / f"{c['_nome']}.srt"
         if srt.exists() and not a.sovrascrivi:
             print(f"  {srt.name} esiste già (corretto a mano?): non lo tocco. Usa --sovrascrivi.")
@@ -289,9 +292,10 @@ def cmd_render(a):
         ass = piano["_out"] / f"_{c['_nome']}.ass"
         ev = [STILE.format(font=font, mv_sub=430, mv_tit=240, mv_firma=128)]
         fine = ts_ass(durata)
-        ev.append(f"Dialogue: 0,0:00:00.00,{fine},Titolo,,0,0,0,,{c['titolo']}")
-        if firma:
-            ev.append(f"Dialogue: 0,0:00:00.00,{fine},Firma,,0,0,0,,{firma}")
+        if piano.get("intestazione", False):  # titolo + firma in alto: di norma no
+            ev.append(f"Dialogue: 0,0:00:00.00,{fine},Titolo,,0,0,0,,{c['titolo']}")
+            if firma:
+                ev.append(f"Dialogue: 0,0:00:00.00,{fine},Firma,,0,0,0,,{firma}")
         srt = piano["_out"] / f"{c['_nome']}.srt"
         if piano.get("sottotitoli", True) and srt.exists():
             for s0, s1, testo in leggi_srt(srt):

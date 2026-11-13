@@ -1,12 +1,12 @@
 ---
-description: Da un video lungo di Armando (in DdP) estrae 4 clip verticali per Instagram (Reel 9:16, titolo, sottotitoli incisi) in Scrittura/Video/<nome>/, con le didascalie dei post
+description: Da un video lungo di Armando (in DdP) estrae 4 Reel brevi verticali per Instagram (9:16, sottotitoli incisi, senza intestazione) in Scrittura/Video/<nome>/, con le didascalie dei post
 argument-hint: "[nome o percorso del video; se vuoto prende il video più recente in Documenti di passaggio/]"
 ---
 
 Sei "video-ig" di Armando Bisogno. Armando registra video orizzontali in cui parla
 (di solito seduto sul divano, al centro dell'inquadratura) e li lascia in
 `Documenti di passaggio/`. Tu ne ricavi **4 Reel per Instagram**: quattro passaggi
-autonomi, ritagliati in verticale, con titolo e sottotitoli incisi, più la
+autonomi, ritagliati in verticale, con i sottotitoli incisi, più la
 didascalia di ciascun post.
 
 Video di questo giro (se vuoto, il più recente .mp4/.mov in DdP): **$ARGUMENTS**
@@ -34,16 +34,26 @@ didascalie invece si versionano.
    devono restare dentro. Di norma `zoom 1.0` (altezza piena) e `x` sul centro del
    corpo (≈0.49 nel video del divano).
 
-3. **Scegli i 4 passaggi** leggendo tutta la trascrizione. Criteri:
-   - ciascuno **autonomo**: si capisce senza il resto del video; non comincia con
-     un rimando («come dicevo», «questo», «Punto secondo») né con un nome non
-     ancora introdotto, se si può evitare;
-   - **30–90 s** (meglio 45–75); comincia su una frase forte e finisce su una frase
-     conclusa, mai a metà ragionamento;
+3. **Scegli i 4 passaggi** leggendo tutta la trascrizione. La strategia (decisa con
+   Armando il 13.11.2026): il video intero sta su YouTube; su Instagram vanno
+   **Reel brevi, uno per idea**, che funzionano da soli e non riassumono il video.
+   Criteri:
+   - **20–40 s**. Più lunghi solo se Armando lo chiede o se un passaggio regge
+     davvero da solo (massimo 90 s);
+   - **la prima parola è già la tesi**: si parte da una delle frasi più nette del
+     discorso («I dati sono il nuovo petrolio…», «Quando io dico che 300
+     persone…»), non dalla premessa. Una frase forte di Armando, mai un'esca: il
+     registro resta quello del ToV;
+   - ciascuno **autonomo**: niente rimandi iniziali («come dicevo», «questo»,
+     «Punto secondo»). Se la frase comincia con un connettivo («Cioè il sapere…»),
+     taglia dopo il connettivo e metti la maiuscola nel .srt;
+   - finisce su una frase conclusa, mai a metà ragionamento; se il discorso
+     prosegue senza pausa, la dissolvenza finale ammorbidisce il taglio;
    - i quattro, insieme, coprono **l'arco del discorso** (tesi, esempio,
      svolgimento, ricaduta), senza ripetersi;
    - un **titolo** breve per ciascuno (≤ 32 caratteri), sobrio e non ammiccante
-     (ToV di `brain/identita/tono-di-voce.md`): un'idea, non un clickbait.
+     (ToV di `brain/identita/tono-di-voce.md`): dà il nome al file e alla voce
+     delle didascalie, non compare nel video.
 
 4. **Scrivi `DIR/piano.json`**:
    ```json
@@ -60,9 +70,12 @@ didascalie invece si versionano.
    confini di parola (campo `taglio`), quindi basta l'approssimazione al decimo;
    per non perdere la prima parola, metti `inizio` un poco **prima** del suo
    attacco. `correzioni` = espressioni regolari applicate a ogni blocco quando si
-   generano i sottotitoli (errori ricorrenti di Whisper). Opzionali: `"firma"`
-   (predefinita «Armando Bisogno · Macchine Pensanti»; `""` per toglierla),
-   `"font"`, `"caratteri_per_riga"` (32).
+   generano i sottotitoli (errori ricorrenti di Whisper). Opzionali:
+   `"font"`, `"caratteri_per_riga"` (32). **Niente intestazione nei video**
+   (deciso da Armando il 13.11.2026): il titolo serve solo per il nome del file e
+   per la didascalia. Solo su richiesta esplicita, `"intestazione": true` incide
+   in alto titolo e firma (`"firma"`, predefinita «Armando Bisogno · Macchine
+   Pensanti»).
 
 5. **Genera i sottotitoli**:
    `python3 brain/tools/video_ig.py sottotitoli "DIR/piano.json"` (aggiungi
@@ -82,17 +95,23 @@ didascalie invece si versionano.
 7. **Render**: `python3 brain/tools/video_ig.py render "DIR/piano.json"` (≈35 s a
    clip; `--solo N` per rifarne una). Uscita: `DIR/NN_titolo.mp4`, 1080×1920,
    H.264 + AAC, audio normalizzato a −14 LUFS, dissolvenza breve in entrata e in
-   uscita, titolo e firma in alto, sottotitoli nella fascia bassa ma sopra
+   uscita, sottotitoli nella fascia bassa ma sopra
    l'interfaccia di Instagram. Estrai un fotogramma da una clip e guardalo prima di
-   consegnare.
+   consegnare, e **verifica la sincronia**: ritrascrivi l'audio delle clip finite
+   (faster-whisper) e controlla che la prima, una centrale e l'ultima riga di ogni
+   .srt cadano entro pochi decimi dalla parola corrispondente.
 
-8. **Didascalie**: `DIR/didascalie.md`, una per Reel, con il formato fisso del post
-   social (sezione «Post social» di `brain/identita/tono-di-voce.md`): apertura che
-   accompagna, tesi in 2–3 righe ancorata a un'immagine del video, chiusa morbida,
-   CTA sobria, hashtag essenziali (#macchinepensanti #IA #AI + 1 termine chiave).
-   Se il video nasce da un'uscita di MP, la CTA è quella fissa («Ne parlo
-   nell'ultima uscita di Macchine Pensanti. / Link in bio alla newsletter.»).
-   Indica anche l'ordine di pubblicazione consigliato.
+8. **Didascalie e Storie**: `DIR/didascalie.md`, in cima il link al video YouTube
+   (chiedilo ad Armando se non lo hai: il video sta già su YT). Per ogni Reel:
+   - **didascalia** breve, con il formato del post social (sezione «Post social» di
+     `brain/identita/tono-di-voce.md`): apertura che accompagna, tesi in 1–2 righe
+     ancorata a un'immagine del video, chiusa morbida; CTA «Il video completo è sul
+     mio canale YouTube, link in bio.» (il link nelle didascalie IG non è
+     cliccabile); hashtag essenziali (#macchinepensanti #IA #AI + 1 termine chiave);
+   - **testo della Storia** (due righe, da mettere su un fotogramma del Reel con lo
+     sticker link al video YT): è il vero passaggio verso YouTube.
+   - **calendario**: un Reel ogni due giorni, Storia lo stesso giorno; gli stessi
+     file anche come Shorts su YouTube, collegati al video lungo.
 
 9. **Riferisci**: i 4 file con durata e titolo, i dubbi di trascrizione rimasti,
    il percorso delle didascalie. **Non** spostare né cancellare il video originale

@@ -1,0 +1,104 @@
+{
+ "video": "Documenti di passaggio/20261113_094514.mp4",
+ "out": "Scrittura/Video/20261113_094514/brevi",
+ "x_centro": 0.49,
+ "zoom": 1.0,
+ "sottotitoli": true,
+ "correzioni": {
+  "\\bmanistic": "umanistic",
+  "Drachre|Draccher": "Drucker",
+  "consapevolezzo": "consapevolezza"
+ },
+ "correzioni_srt": {
+  "01": [
+   [
+    "dai dati e questa",
+    "dai dati, e questa"
+   ],
+   [
+    "oggettivi cioè",
+    "oggettivi, cioè"
+   ],
+   [
+    "giorno quel",
+    "giorno, quel"
+   ]
+  ],
+  "02": [
+   [
+    "300 da questa",
+    "300 dà a questa"
+   ],
+   [
+    "E il nasconde",
+    "E nasconde"
+   ]
+  ],
+  "03": [
+   [
+    "non è oggettivo",
+    "Non è oggettivo"
+   ],
+   [
+    "perché non è una",
+    "perché non è una"
+   ],
+   [
+    "il dato,",
+    "il dato."
+   ]
+  ],
+  "04": [
+   [
+    "il sapere",
+    "Il sapere"
+   ],
+   [
+    "consapevolezza nel fatto",
+    "consapevolezza del fatto"
+   ],
+   [
+    "dei lattici è",
+    "dei dati c'è"
+   ]
+  ]
+ },
+ "clip": [
+  {
+   "titolo": "Il nuovo petrolio",
+   "inizio": 70.9,
+   "fine": 101.0,
+   "taglio": [
+    70.49,
+    102.06
+   ]
+  },
+  {
+   "titolo": "Che cosa nasconde un numero",
+   "inizio": 301.3,
+   "fine": 327.4,
+   "taglio": [
+    301.09,
+    328.03
+   ]
+  },
+  {
+   "titolo": "Una traccia, non una fotografia",
+   "inizio": 407.3,
+   "fine": 425.2,
+   "taglio": [
+    406.83,
+    425.39
+   ]
+  },
+  {
+   "titolo": "C'è sempre un io che legge",
+   "inizio": 509.5,
+   "fine": 533.2,
+   "taglio": [
+    509.33,
+    533.87
+   ]
+  }
+ ]
+}
