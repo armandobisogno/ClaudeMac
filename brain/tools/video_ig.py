@@ -336,7 +336,7 @@ def cmd_render(a):
             durata = min(durata, a.prova)
         ass = piano["_lav"] / f"_{c['_nome']}.ass"
         ev = [STILE.format(font=font, fs_sub=piano.get("corpo_sottotitoli", 80), mv_sub=520,
-                           fs_hook=piano.get("corpo_hook", 92), mv_hook=330)]
+                           fs_hook=piano.get("corpo_hook", 84), mv_hook=piano.get("altezza_hook", 870))]  # hook sotto il viso
         fine = ts_ass(durata)
         if piano.get("intestazione", False):  # titolo + firma in alto: di norma no
             ev.append(f"Dialogue: 0,0:00:00.00,{fine},Titolo,,0,0,0,,{c['titolo']}")
@@ -352,7 +352,7 @@ def cmd_render(a):
         ass.write_text("\n".join(ev) + "\n", encoding="utf-8")
         ass_esc = str(ass).replace("\\", "/").replace(":", r"\:").replace("'", r"\'")
         vf = (f"crop={cw}:{ch}:{x}:{y},scale={W}:{H}:flags=lanczos,setsar=1,"
-              f"fade=t=in:st=0:d=0.3,fade=t=out:st={durata - 0.4:.2f}:d=0.4,"
+              f"fade=t=out:st={durata - 0.4:.2f}:d=0.4,"  # niente dissolvenza in entrata: il 1° fotogramma fa da copertina
               f"subtitles=filename='{ass_esc}':fontsdir=/System/Library/Fonts")
         af = (f"loudnorm=I=-14:TP=-1.5:LRA=11,afade=t=in:st=0:d=0.2,"
               f"afade=t=out:st={durata - 0.4:.2f}:d=0.4")
@@ -365,6 +365,56 @@ def cmd_render(a):
              "-movflags", "+faststart", str(mp4)])
         ass.unlink()
         print(f"  → {mp4}")
+
+
+# ---------------------------------------------------------------- 5. copy
+def cmd_copy(a):
+    """LAV/copy.md → DIR/copy.docx. Sorgente: «# Titolo», «## Reel», paragrafi
+    separati da riga vuota, una tabella in markdown (calendario), «---» ignorato."""
+    from docx import Document
+    from docx.shared import Pt
+    piano = carica_piano(a.piano)
+    src = piano["_lav"] / "copy.md"
+    doc = Document()
+    st = doc.styles["Normal"]
+    st.font.name, st.font.size = "Georgia", Pt(12)
+    st.paragraph_format.space_after = Pt(10)
+    righe_tab = []
+
+    def chiudi_tabella():
+        if not righe_tab:
+            return
+        celle = [[x.strip() for x in r.strip().strip("|").split("|")] for r in righe_tab
+                 if not re.fullmatch(r"[|\s:-]+", r.strip())]
+        t = doc.add_table(rows=len(celle), cols=len(celle[0]))
+        t.style = "Table Grid"
+        for i, r in enumerate(celle):
+            for j, v in enumerate(r):
+                t.cell(i, j).text = v
+                if i == 0:
+                    for run in t.cell(i, j).paragraphs[0].runs:
+                        run.bold = True
+        doc.add_paragraph()
+        righe_tab.clear()
+
+    for blocco in re.split(r"\n\s*\n", src.read_text(encoding="utf-8").strip()):
+        b = blocco.strip()
+        if b.startswith("|"):
+            righe_tab.extend(b.splitlines())
+            continue
+        chiudi_tabella()
+        if b == "---":
+            continue
+        if b.startswith("# "):
+            doc.add_heading(b[2:], level=1)
+        elif b.startswith("## "):
+            doc.add_heading(b[3:], level=2)
+        else:
+            doc.add_paragraph(" ".join(l.strip() for l in b.splitlines()))
+    chiudi_tabella()
+    out = piano["_out"] / "copy.docx"
+    doc.save(out)
+    print(f"→ {out}")
 
 
 # ---------------------------------------------------------------- main
@@ -380,6 +430,7 @@ def main():
     s = sp.add_parser("sottotitoli"); s.add_argument("piano")
     s.add_argument("--sovrascrivi", action="store_true"); s.set_defaults(f=cmd_sottotitoli)
     k = sp.add_parser("correggi"); k.add_argument("piano"); k.set_defaults(f=cmd_correggi)
+    cp = sp.add_parser("copy"); cp.add_argument("piano"); cp.set_defaults(f=cmd_copy)
     r = sp.add_parser("render"); r.add_argument("piano"); r.add_argument("--solo", type=int)
     r.add_argument("--prova", type=float, help="rende solo i primi N secondi (file _prova.mp4)")
     r.set_defaults(f=cmd_render)

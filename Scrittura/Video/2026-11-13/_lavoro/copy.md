@@ -2,14 +2,14 @@
 
 Video completo su YouTube: [LINK YT]
 
-Calendario proposto (video completo venerdì, poi un Reel ogni due giorni):
+Calendario (video completo e Reel 01 il venerdì, poi sabato, lunedì, mercoledì):
 
 | Reel | Uscita | Hook |
 |---|---|---|
 | 01 · Il nuovo petrolio | ven 13.11, con il video | I dati sono davvero neutrali? |
-| 02 · Che cosa nasconde un numero | dom 15.11 | Che cosa nasconde un numero? |
-| 03 · Una traccia, non una fotografia | mar 17.11 | Un dato è una fotografia della realtà? |
-| 04 · C'è sempre un io che legge | gio 19.11 | Che cosa sanno gli umanisti dei dati? |
+| 02 · Che cosa nasconde un numero | sab 14.11 | Che cosa nasconde un numero? |
+| 03 · Una traccia, non una fotografia | lun 16.11 | Un dato è una fotografia? |
+| 04 · C'è sempre un io che legge | mer 18.11 | Che cosa sanno gli umanisti dei dati? |
 
 ---
 

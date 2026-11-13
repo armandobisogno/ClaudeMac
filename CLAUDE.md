@@ -22,7 +22,7 @@ In radice solo sei voci: `brain/`, `Documenti di passaggio/` e quattro macrocart
 | ↳ `Macchine Pensanti/` | `Bozze/` (.docx dei post), `Esperimenti/` | sì |
 | ↳ `Macchine Parlanti/` | micropodcast: scalette, template, puntate | sì, audio esclusi |
 | ↳ `UIF/` | *Una intelligenza fantastica*, una sottocartella per versione (ultima `UIF 1_2/`) | sì |
-| ↳ `Video/` | Reel IG dai video di Armando (`/reel`): una cartella per produzione con la data (`AAAA-MM-GG/`): i 4 video + `copy.md`; file di lavoro in `_lavoro/` | sì, video esclusi |
+| ↳ `Video/` | Reel IG dai video di Armando (`/reel`): una cartella per produzione con la data (`AAAA-MM-GG/`): i 4 video + `copy.docx`; file di lavoro in `_lavoro/` | sì, video esclusi |
 | ↳ `Romanzi/` | epub dei romanzi Malversi | **no** |
 | ↳ `Finzioni/` | testi integralmente prodotti da Claude (Redeo ad me, Ermete Metello, Tre finestre, Epistula de contagio) | sì |
 | **`Web/`** | | |

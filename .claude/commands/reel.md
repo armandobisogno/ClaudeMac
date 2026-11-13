@@ -15,9 +15,9 @@ non approva; solo dopo produci.
 ## Dove vanno i file
 
 - `Scrittura/Video/<AAAA-MM-GG>/` (data di oggi; se esiste già, aggiungi `-2`):
-  dentro **solo** i 4 video (`01_titolo.mp4` … `04_titolo.mp4`) e `copy.md`.
+  dentro **solo** i 4 video (`01_titolo.mp4` … `04_titolo.mp4`) e `copy.docx`.
 - `Scrittura/Video/<AAAA-MM-GG>/_lavoro/`: piano, trascrizione, .srt, tempi per
-  parola. Si versionano (gli .mp4 no, li esclude il `.gitignore`).
+  parola, sorgente del copy (`copy.md`). Si versionano (gli .mp4 no, li esclude il `.gitignore`).
 - Il video originale resta in DdP: non spostarlo né cancellarlo senza chiedere.
 
 ## Strumento
@@ -49,10 +49,11 @@ cartella con la data e `LAV` è `DIR/_lavoro`.
    - i quattro, insieme, coprono l'arco del discorso, senza ripetersi.
 
    Per ciascuno, un **titolo** breve (≤ 32 caratteri; dà il nome al file, non
-   compare nel video) e una **domanda-hook**: breve (≤ 40 caratteri), compare
-   grande in alto nei primi 3 secondi e fa anche da copertina. Deve essere una
+   compare nel video) e una **domanda-hook**: breve (**≤ 30 caratteri**, così sta in
+   due righe e resta dentro i ritagli 3:4 e 4:5 delle anteprime IG), compare
+   grande **sotto il viso** di Armando, sul petto, nei primi 3 secondi e fa anche da copertina. Deve essere una
    domanda vera, a cui il passaggio risponde («I dati sono davvero neutrali?»,
-   «Un dato è una fotografia della realtà?»), mai un'esca («Non crederai a…»).
+   «Un dato è una fotografia?»), mai un'esca («Non crederai a…»).
 
 4. **Sottoponi la proposta ad Armando e fermati.** Una tabella con, per ogni Reel:
    numero, titolo, domanda-hook, inizio–fine nel video (mm:ss) e durata, prima e
@@ -79,8 +80,9 @@ cartella con la data e `LAV` è `DIR/_lavoro`.
    prima parola. `correzioni` = espressioni regolari per gli errori ricorrenti di
    Whisper. Lo stile è già quello predefinito (deciso da Armando il 13.11.2026) e
    non va cambiato senza richiesta: MAIUSCOLO, Avenir Next Heavy corpo 80, blocchi
-   di ≤ 22 caratteri, parola pronunciata in arancione `#FF8A00`, hook corpo 92 per
-   3 s, **nessuna intestazione** (né titolo né firma nel video).
+   di ≤ 22 caratteri, parola pronunciata in arancione `#FF8A00`, hook corpo 84 per
+   3 s sotto il viso (`"altezza_hook"`, 870 px dall'alto; da regolare se
+   l'inquadratura è diversa); nessuna dissolvenza video in entrata (il primo fotogramma fa da copertina); **nessuna intestazione** (né titolo né firma nel video).
 
 6. **Sottotitoli**: `python3 brain/tools/video_ig.py sottotitoli "LAV/piano.json"`
    (`--sovrascrivi` per rifarli). Controlla la prima e l'ultima parola di ogni clip.
@@ -100,17 +102,20 @@ cartella con la data e `LAV` è `DIR/_lavoro`.
    da cancellare dopo). Uscita 1080×1920, H.264 + AAC, audio a −14 LUFS.
    Prima di consegnare:
    - estrai un fotogramma nei primi 2 s di un Reel (si vede l'hook) e uno a metà,
-     e guardali: l'hook non deve coprire il viso; se va su tre righe e lo tocca,
-     proponi una domanda più corta;
+     e guardali, anche ritagliati in 4:5 (`crop=1080:1350:0:285`): l'hook deve
+     stare tutto dentro, sotto il viso, senza toccare mento o barba; se va su tre righe, accorcialo;
    - **verifica la sincronia**: ritrascrivi l'audio dei Reel finiti con
      faster-whisper e controlla che la prima, una centrale e l'ultima riga di ogni
      .srt cadano entro pochi decimi dalla parola corrispondente.
 
-9. **Copy dei post**: `DIR/copy.md`, un testo per Reel, preceduto dal link al video
-   YouTube (chiedilo se non lo hai) e dal **calendario**: il video completo esce il
-   venerdì insieme al Reel 01, poi un Reel ogni due giorni (domenica, martedì,
-   giovedì), così la serie copre la settimana fino al video successivo; con le date
-   reali e l'hook di ciascuno. Il modello del testo è il post del
+9. **Copy dei post** in Word: scrivi il sorgente in `LAV/copy.md` (`# titolo`, il
+   calendario come tabella markdown, `## NN · titolo` per ogni Reel, paragrafi
+   separati da riga vuota) e genera `DIR/copy.docx` con
+   `python3 brain/tools/video_ig.py copy "LAV/piano.json"`. Un testo per Reel, preceduto dal link al video
+   YouTube (chiedilo se non lo hai) e dal **calendario** (deciso da Armando il 13.11.2026;
+   i video completi non hanno cadenza fissa): il video completo esce il **venerdì**
+   insieme al Reel 01, poi Reel 02 **sabato**, Reel 03 **lunedì**, Reel 04
+   **mercoledì** (la domenica è evitata). Con le date reali e l'hook di ciascuno. Il modello del testo è il post del
    primo Reel di Armando (13.11.2026, «Il nuovo petrolio»):
 
    > Produciamo dati continuamente: ogni volta che usiamo il telefono, paghiamo con
