@@ -3,6 +3,23 @@
 Registro cronologico delle scelte e dei risultati, base per il paper illustrativo finale.
 Vincolo di sessione (14.11.2026): l'analisi usa solo i testi di Agostino presenti nel workspace; niente memoria esterna del modello né letteratura secondaria.
 
+## Regola di scrittura del paper (Armando, 14.11.2026)
+
+Il diario registra la cronologia; il paper **no**. Ogni cambiamento di metodo si presenta nel paper come scelta motivata, non come correzione di una scelta precedente. Non «prima abbiamo scelto il paragrafo, poi siamo passati alla frase», ma «è stata scelta come unità la frase, chiusa dal punto, perché permette un discrimine più fine». Vale per tutti i passaggi analoghi. La tabella seguente tiene, per ogni scelta, la formulazione da usare nel paper.
+
+| Scelta (forma per il paper) | Motivazione | Rif. nel diario |
+|---|---|---|
+| Il corpus è limitato agli otto dialoghi (386-391 ca.; del *De libero arbitrio* il solo libro I) | corpus contenuto, omogeneo per genere e compatto nel tempo | Terzo spostamento; decisioni sui punti aperti |
+| Si lavora sull'*intentio operis*, non sull'*intentio auctoris* | l'intenzione dell'autore «in purezza» non è coglibile; l'opera dichiara da sé dove definisce | Terzo spostamento |
+| Il criterio per riconoscere le definizioni è un codebook di elementi-spia costruito dai ricercatori e dichiarato | la teoria agostiniana della definizione è un contenuto delle opere, non la regola con cui esse definiscono | Punto 5 |
+| *describo/descriptio* vale come spia nel senso di definire e di ritrarre un tipo umano | nel corpus il termine è usato anche in parallelo a *definitio* (Acad. 1.4.12); gli usi «tracciare/scrivere» sono esclusi | Verifica di A3 |
+| La spia *is/quisquis … est qui* vale solo per i tipi umani per cui il corpus stesso pone la domanda *quis sit X?* (di fatto: *sapiens*) | la lista dei tipi non è scelta dai ricercatori ma ricavata dal testo | Verifica di B5; decisioni bozza 3 |
+| Le definizioni si classificano su due livelli: nominale/reale, poi il modo delle reali | evita di mescolare due criteri di classificazione indipendenti | Decisioni sui punti aperti |
+| L'unità di codifica delle spie è la frase, chiusa da punto, punto interrogativo o esclamativo; le frasi si raccolgono in episodi | permette un discrimine più fine: ogni spia è attribuita al locutore e al momento del dialogo in cui compare, e la sequenza domanda-risposta (B1 → B2) diventa verificabile | Codifica per frase (bozza 4) |
+| L'appartenenza di una frase a un episodio si indica con il definiendum della frase; frasi con lo stesso definiendum formano un episodio, e una ripresa separata dello stesso termine si segna esplicitamente | il raggruppamento resta un giudizio del lettore (la parte interpretativa della codifica), ma ridotto alla domanda più semplice e verificabile: «di quale termine si sta cercando la definizione in questa frase?» | Episodi dal definiendum (bozza 5) |
+| Il tempo di codifica si misura come tempo attivo (pagina in primo piano, attività negli ultimi 5 minuti) | dà una misura realistica del costo del metodo per un lettore umano, confrontabile con il lavoro della macchina | Artefatto, versione 3 |
+| L'affidabilità del codebook si misura con una codifica indipendente di un dialogo intero (*De magistro*), condotta alla cieca | due lettori che applicano lo stesso codebook rendono visibili le ambiguità delle regole | Decisioni sui punti aperti |
+
 ## 14.11.2026 — Percorso delle scelte
 
 1. Punto di partenza: Schwitzgebel, Schwitzgebel, Strasser, «Creating a large language model of a philosopher», *Mind & Language* 39 (2024), 237-259 (PDF in `Università/Ricerca/AI Augustinus/`). Logica: modello addestrato su un autore + test di discriminazione con esperti.
@@ -69,3 +86,21 @@ Esito: B5 come formulato è troppo largo (circa 1 su 9). Funziona solo quando il
 - **De beata vita** codificato per intero da Claude (`_dati/schede_beata_vita.md`): 11 episodi sopra soglia, 7 dubbi, note per una revisione del codebook. Le note NON vengono comunicate ad Armando prima che abbia finito il De magistro, per non influenzarne la codifica.
 - Su proposta di Armando, lo strumento di codifica è diventato un artefatto: https://claude.ai/artifact/FFNvwdREpWLrgjnxWMhBcG (privato). Testo latino a sinistra (battute separate, senza titoletti NBA), a destra episodi con spie scelte da menù (ogni spia con il suo significato), definiendum, proponente, esito, tipo/modo, segni (*, ?, NBA), nota; il grado si calcola dalle spie secondo la soglia. Le annotazioni stanno nell'archivio dell'artefatto (collezione `codifica`, un documento per paragrafo; scrive solo il proprietario, gli altri vedono in sola lettura): Claude le legge per il confronto. Generato da `build_codifica_artifact.py` + `codifica_template.html`.
 - L'artefatto è pensato anche per mostrare il metodo in una presentazione.
+
+## 14.11.2026 — Dalla scheda per paragrafo alla codifica per frase (codebook bozza 4)
+
+- Obiezione di Armando, nata codificando DM 1.1 (*Quid tibi videmur efficere velle cum loquimur?* / *Quantum quidem mihi nunc occurrit, aut docere, aut discere.*): se le spie si segnano per paragrafo, si sommano spie di battute diverse; la regola «B2 solo in risposta a B1» non si può verificare e si perde chi dice che cosa.
+- Prima proposta di Claude: spie per battuta. Decisione di Armando: **spie per frase** («una ogni punto»), pur sapendo che è lunghissimo: non si vedono alternative rigorose.
+- Definizione operativa di frase: segmento chiuso da . ? ! (punto e virgola e due punti non chiudono); segmenti di sola punteggiatura uniti alla frase precedente (caso di DM 1.2, citazione biblica chiusa da «?» seguita da punto). De magistro: 567 frasi in 47 paragrafi.
+- Due livelli: la frase porta le spie (e una nota); l'episodio raccoglie frasi anche di paragrafi diversi e porta definiendum, proponente, esito, tipo/modo, segni, nota. Soglia calcolata sull'episodio, con B2 valido solo se in una frase successiva al primo B1.
+- Le frasi con spie fuori da ogni episodio restano registrate: misurano quante volte una spia compare senza definizione.
+- Artefatto ricostruito (stesso indirizzo, versione 2); le due frasi già segnate da Armando in DM 1.1 riportate nella nuova struttura (le note conservano «definiendum: Loqui» e «Occurrere»).
+- Conseguenza per la codifica di Claude: anche il De beata vita va ricodificato frase per frase, per restare confrontabile.
+
+## 14.11.2026 — Episodi ricavati dal definiendum; tempo di lavoro
+
+- Domanda di Armando: perché deve indicare lui se una frase appartiene a un episodio? Risposta: le spie sono segnali locali e non dicono quali frasi stanno insieme; il raggruppamento è un giudizio del lettore (ed è un dato per la domanda del paper). Ma il gesto si può semplificare.
+- Decisione di Armando: **definiendum per frase**. Su ogni frase che partecipa a una definizione si scrive il termine latino; la pagina ricava gli episodi (stesso definiendum = stesso episodio, anche su più paragrafi; «nuovo episodio da qui» per una ripresa separata; più termini separati da «;»). Proponente, esito, tipo, segni e nota si compilano sull'episodio ricavato. Codebook bozza 5.
+- Su richiesta di Armando l'artefatto misura il **tempo di lavoro**: solo tempo attivo (pagina visibile e attività negli ultimi 5 minuti); ogni apertura è una sessione nella collezione `tempo` (inizio, fine, secondi attivi). In alto: tempo della sessione e totale.
+- Dati già inseriti da Armando (DM 1.1, frasi 1-2, episodio E1 con proponente Aug.) riportati nella nuova struttura: definiendum *Loqui* su entrambe le frasi, episodio `loqui~1`.
+- Artefatto: versione 3.
