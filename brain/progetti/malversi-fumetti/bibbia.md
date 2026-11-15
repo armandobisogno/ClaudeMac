@@ -40,8 +40,9 @@ dare coerenza visiva, da confermare o correggere.
 - [canone] figlia di Malversi, 16-17 anni; decisa, lo tratta come un figlio da sgridare
 - [proposta] capelli lunghi scuri, felpa oversize, cuffie al collo, sguardo esasperato
 
-### Chiara
-- [canone] anatomopatologa, interesse sentimentale (da *Mosaici*)
+### Chiara Russo
+- [canone] anatomopatologa del Tribunale (padiglione 18 dell'ospedale di Lirino), già in
+  *Terapie*; camice aperto e svolazzante, non appariscente, velocissima nella battuta
 - [proposta] ~45 anni, capelli raccolti, camice o cappotto lungo, ironia asciutta
 
 ### Giacomo Moltichetti
@@ -50,7 +51,9 @@ dare coerenza visiva, da confermare o correggere.
 
 ### La cena del giovedì
 - [canone] **Mario Terrano** (prof, *occhialini*, suona la **batteria**, ama Flaiano e Wallace),
-  **Antonio** (questore), **Luca** (avvocato ricco, tecno-entusiasta)
+  **Antonio** (questore, moglie Marzia; diverso da Antonio il barbiere e da Tonino),
+  **Luca Lenza** (avvocato ricco, tecno-entusiasta); si cena nel suo **attico** sul golfo di
+  Lirino; Mario è rasato a zero con occhialini dalle lenti spesse
 - [proposta] Mario magro e dinoccolato; Antonio massiccio e istituzionale; Luca elegante,
   smartwatch, sempre con qualche gadget
 
@@ -65,7 +68,7 @@ dare coerenza visiva, da confermare o correggere.
 - **Commissariato** [canone]: edificio anni '70 di due piani, poca manutenzione; Malversi fuma
   alla finestra appoggiato allo scudo coprisole
 - **Casa Malversi** [proposta]: giradischi, pile di vinili, chitarra appoggiata al divano
-- **Dal barbiere**, **la trattoria del giovedì**, **Radio Live** (trasmissione sul blues con
+- **Dal barbiere**, **l'attico di Luca** (cena del giovedì), **Radio Live** (trasmissione sul blues con
   Lello Aversano) [canone]
 
 ## Temi e tono
@@ -90,3 +93,21 @@ jacket.
 flared jeans, rainbow-patterned socks.
 
 **Laura:** a 16-year-old girl, long dark hair, oversized hoodie, headphones around her neck.
+
+## Stile v2 (15.11.2026, da approvare)
+
+La resa della n. 001 era troppo fotografica e i volti cambiavano. Nuovo prompt base:
+
+> Single panel from a black and white Italian adventure comic book, drawn by hand with pen and
+> brush in black India ink on white paper. Pure line art: clean confident contour lines of
+> varying weight, large areas of solid flat black for shadows, a little sparse hatching, pure
+> white paper elsewhere. No grey tones, no gradients, no soft shading, no photorealism, no 3D
+> rendering: it must look like a traditional printed newsstand comic. No text, no letters, no
+> speech balloons, no captions.
+
+Malversi: «mezzo sigaro» (toscano), 50 anni, Maalox nella tasca interna, portasigari d'argento,
+block notes. Scheda v2 e prova di stile in `riferimenti/` (id Canva in `canva-ids.txt`).
+
+## Storie lunghe
+
+- *Catastrofi* (da *Terapie*): piano in [catastrofi/piano.md](catastrofi/piano.md).

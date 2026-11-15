@@ -32,3 +32,8 @@ Bibbia di personaggi/luoghi/prompt: [bibbia.md](bibbia.md).
 | N. | Titolo | Stato |
 |---|---|---|
 | 001 | Il verbale intelligente | tavola pronta 30.09.2026 |
+
+## Storia lunga: Catastrofi (dal 15.11.2026)
+
+Adattamento della prima parte di *Terapie* in 10 episodi e 31 tavole: [catastrofi/piano.md](catastrofi/piano.md).
+Stile v2 a china netta (vedi bibbia). Stato: piano e prove di stile da approvare.

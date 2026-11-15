@@ -1,0 +1,113 @@
+{
+ "serie": "MALVERSI",
+ "titolo": "Catastrofi",
+ "episodio": "Il caffè puzza",
+ "pagina": 2,
+ "strisce": [
+  [
+   {
+    "img": "vignette/2-1.png",
+    "w": 1,
+    "testi": [
+     {
+      "tipo": "didascalia",
+      "testo": "Decise di dare al caffè un'altra possibilità.",
+      "x": 36,
+      "y": 3,
+      "w": 60,
+      "coda": null
+     }
+    ]
+   },
+   {
+    "img": "vignette/2-2.png",
+    "w": 1,
+    "testi": [
+     {
+      "tipo": "balloon",
+      "testo": "Madonna santissima della Misericordia di Fontanarosa!",
+      "x": 8,
+      "y": 1.5,
+      "w": 84,
+      "coda": "bc"
+     },
+     {
+      "tipo": "balloon",
+      "testo": "Questa roba fa passare la voglia di vivere!",
+      "x": 4,
+      "y": 77,
+      "w": 70,
+      "coda": "tc"
+     }
+    ]
+   },
+   {
+    "img": "vignette/2-3.png",
+    "w": 1,
+    "testi": []
+   }
+  ],
+  [
+   {
+    "img": "vignette/2-4.png",
+    "w": 1,
+    "testi": [
+     {
+      "tipo": "balloon",
+      "testo": "Scusami, cara. Non volevo essere fuori luogo.",
+      "x": 3,
+      "y": 3,
+      "w": 60,
+      "coda": "br"
+     }
+    ]
+   },
+   {
+    "img": "vignette/2-5.png",
+    "w": 2.05,
+    "testi": [
+     {
+      "tipo": "didascalia",
+      "testo": "La signora Spiri non rispose neanche stavolta. Non batteva ciglio. Letteralmente.",
+      "x": 2,
+      "y": 4,
+      "w": 36,
+      "coda": null
+     },
+     {
+      "tipo": "didascalia",
+      "testo": "Era morta da quasi un'ora. Questo non aiutava la comunicazione.",
+      "x": 2,
+      "y": 76,
+      "w": 33,
+      "coda": null
+     }
+    ]
+   }
+  ],
+  [
+   {
+    "img": "vignette/2-6.png",
+    "w": 1,
+    "testi": [
+     {
+      "tipo": "didascalia",
+      "testo": "«Purtroppo nemmeno da viva le cose sarebbero andate meglio», pensò il professore.",
+      "x": 1.5,
+      "y": 5,
+      "w": 27,
+      "coda": null
+     },
+     {
+      "tipo": "blues",
+      "testo": "You better come on in my kitchen. It's goin' to be rainin' outdoors.\n— Robert Johnson",
+      "x": 1.5,
+      "y": 73,
+      "w": 27,
+      "coda": null
+     }
+    ]
+   }
+  ]
+ ]
+}
