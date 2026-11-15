@@ -104,3 +104,9 @@ Esito: B5 come formulato è troppo largo (circa 1 su 9). Funziona solo quando il
 - Su richiesta di Armando l'artefatto misura il **tempo di lavoro**: solo tempo attivo (pagina visibile e attività negli ultimi 5 minuti); ogni apertura è una sessione nella collezione `tempo` (inizio, fine, secondi attivi). In alto: tempo della sessione e totale.
 - Dati già inseriti da Armando (DM 1.1, frasi 1-2, episodio E1 con proponente Aug.) riportati nella nuova struttura: definiendum *Loqui* su entrambe le frasi, episodio `loqui~1`.
 - Artefatto: versione 3.
+
+- Artefatto, versione 4: segnalibro di revisione (spunta a fine frase, uno solo; documento `stato/segnalibro`); alla riapertura la pagina torna al punto segnato.
+
+## 14.11.2026 — In attesa
+
+- Decisione di Armando: la codifica di Claude (otto dialoghi, frase per frase, bozza 5) parte solo dopo che Armando avrà finito il De magistro. Ordine stabilito: Claude codifica prima il De magistro **senza leggere** le annotazioni di Armando nell archivio; poi confronto; poi gli altri dialoghi con il codebook eventualmente rivisto.
