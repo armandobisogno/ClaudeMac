@@ -18,6 +18,7 @@ Il diario registra la cronologia; il paper **no**. Ogni cambiamento di metodo si
 | L'unità di codifica delle spie è la frase, chiusa da punto, punto interrogativo o esclamativo; le frasi si raccolgono in episodi | permette un discrimine più fine: ogni spia è attribuita al locutore e al momento del dialogo in cui compare, e la sequenza domanda-risposta (B1 → B2) diventa verificabile | Codifica per frase (bozza 4) |
 | L'appartenenza di una frase a un episodio si indica con il definiendum della frase; frasi con lo stesso definiendum formano un episodio, e una ripresa separata dello stesso termine si segna esplicitamente | il raggruppamento resta un giudizio del lettore (la parte interpretativa della codifica), ma ridotto alla domanda più semplice e verificabile: «di quale termine si sta cercando la definizione in questa frase?» | Episodi dal definiendum (bozza 5) |
 | Il tempo di codifica si misura come tempo attivo (pagina in primo piano, attività negli ultimi 5 minuti) | dà una misura realistica del costo del metodo per un lettore umano, confrontabile con il lavoro della macchina | Artefatto, versione 3 |
+| Ogni spia è formulata come una domanda da porsi sulla frase, accompagnata dalle parole latine che la segnalano; tre domande guida orientano tra le famiglie A, B, C | rende il codebook applicabile in modo uniforme durante la lettura, senza modificare il criterio di nessuna spia | Formulazione delle spie (bozza 6) |
 | L'affidabilità del codebook si misura con una codifica indipendente di un dialogo intero (*De magistro*), condotta alla cieca | due lettori che applicano lo stesso codebook rendono visibili le ambiguità delle regole | Decisioni sui punti aperti |
 
 ## 14.11.2026 — Percorso delle scelte
@@ -110,3 +111,10 @@ Esito: B5 come formulato è troppo largo (circa 1 su 9). Funziona solo quando il
 ## 14.11.2026 — In attesa
 
 - Decisione di Armando: la codifica di Claude (otto dialoghi, frase per frase, bozza 5) parte solo dopo che Armando avrà finito il De magistro. Ordine stabilito: Claude codifica prima il De magistro **senza leggere** le annotazioni di Armando nell archivio; poi confronto; poi gli altri dialoghi con il codebook eventualmente rivisto.
+
+## 15.11.2026 — Riformulazione delle spie (codebook bozza 6)
+
+- Osservazione di Armando durante la codifica: le spiegazioni delle spie sono confuse e difficili da applicare.
+- Le spie sono riformulate come **domande da porsi** sulla frase, con accanto le **parole latine** a cui fare attenzione; in testa tre domande guida (Il testo dice che sta definendo? → A; La frase ha la forma di una definizione? → B; Che cosa succede alla definizione? → C; parola-segnale che qui non definisce → D).
+- **Il criterio di ogni spia resta invariato**: cambia la formulazione, non ciò che la spia conta. La codifica già fatta resta valida.
+- Aggiornati il codebook (Claude Doc, bozza 6) e il menù delle spie dell'artefatto (versione 5, con le tre domande guida in cima al menù).
