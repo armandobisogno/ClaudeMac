@@ -123,3 +123,10 @@ Esito: B5 come formulato è troppo largo (circa 1 su 9). Funziona solo quando il
 
 - Decisione di Armando: A4 comprende anche il verbo *significare* in ogni forma (*significo, significat, quid significat?*), non solo nella formula *nomen … significat*. È un ampliamento del criterio: le frasi con *significat* già codificate vanno ricontrollate.
 - Proposta di Armando in discussione: distinguere A e B per la forma (A = affermazioni, B = domande).
+
+## 15.11.2026 — A4: *concedo*, *constituo* (bozza 8)
+
+- Proposta di Armando: aggiungere ad A4 *concedo* e *constituo*. Poiché *concedo* è anche segnale di assenso (C3), decisione di Armando: valgono come A4 **solo se riguardano nome o significato** (si concede o si stabilisce che cosa un termine significa o come si chiama); il *concedo* che approva soltanto resta C3.
+- Motivazione per il paper: senza la condizione, ogni assenso diventerebbe una spia lessicale e darebbe grado 1 a quasi ogni episodio, svuotando la distinzione tra definizione dichiarata e definizione riconoscibile dalla forma.
+- Sempre il 15.11: la forma della frase (domanda / affermazione) è rilevata automaticamente dalla punteggiatura e riportata per episodio (si apre con…, n. domande, n. affermazioni); A e B restano distinti per criterio (parola che dichiara vs struttura), perché la distinzione regge la soglia (grado 1 / grado 2).
+- Due termini in un episodio: per ora resta la regola «X; Y» = due episodi (Armando: «per il momento va bene così»). Ipotesi registrata, non adottata: «X–Y» per una coppia con un solo *definiens*.
