@@ -3,13 +3,15 @@
 Adattamento di *Catastrofi*, prima parte di *Terapie* (De Tomi, 2024): prologo, nove capitoli,
 Post Scriptum; circa 19.000 parole; sabato 3 – lunedì 12 settembre 2022.
 
-Stato: **piano e stile approvati** da Armando il 15.11.2026. Schede dei personaggi da approvare;
-sceneggiatura dell'episodio 0 scritta. Nessuna tavola prodotta.
+Stato (15.11.2026): piano, stile e schede dei personaggi approvati da Armando. **Episodio 0
+(prologo) montato**: `ep00/tavola1.png`, `ep00/tavola2.png`, in attesa del suo giudizio.
+Tutto in bianco e nero; unico colore dell'albo l'ombrello rosso del prologo.
 
 ## Criteri
 
-1. **Tagliare, non riscrivere.** Battute e didascalie sono parole del romanzo, accorciate.
-   Niente battute inventate; dove serve un raccordo, lo fa il disegno.
+1. **Dialoghi adattati al fumetto.** Battute e didascalie partono dal romanzo ma si accorciano e
+   si riscrivono quanto serve a stare in un balloon: quelle del libro sono troppo lunghe
+   (indicazione di Armando, 15.11.2026). Restano voce, lessico e battute memorabili.
 2. **Didascalie = voce del narratore.** Macchina da scrivere, terza persona, come nel romanzo.
    Solo l'ultima tavola rivela che il narratore è Malversi e che il fumetto è il suo diario
    terapeutico per Giacomo.
@@ -87,8 +89,8 @@ insieme: una tavola per il congedo da Spiri, una per la lettera.
 - Schede dei personaggi nel nuovo tratto, approvate una per una prima di disegnare.
 - Sceneggiatura per episodio in `catastrofi/epNN-titolo.md`: per ogni vignetta inquadratura,
   testi con il rimando alla riga del romanzo, prompt.
-- `build_tavola.py` va esteso: oggi monta solo la griglia fissa 2×3, servono strisce con
-  vignette di larghezza diversa.
+- Montaggio con `build_tavola_strisce.py` (tavola verticale a tre strisce, vignette di
+  larghezza diversa); spec in `epNN/tavolaN.json`.
 - Circa 170 vignette in tutto.
 
 ## Diritti

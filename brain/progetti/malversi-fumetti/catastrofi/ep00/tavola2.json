@@ -54,10 +54,10 @@
     "testi": [
      {
       "tipo": "balloon",
-      "testo": "Scusami, cara. Non volevo essere fuori luogo.",
-      "x": 3,
-      "y": 3,
-      "w": 60,
+      "testo": "Scusami, cara. Sono stato fuori luogo.",
+      "x": 2,
+      "y": 2,
+      "w": 41,
       "coda": "br"
      }
     ]

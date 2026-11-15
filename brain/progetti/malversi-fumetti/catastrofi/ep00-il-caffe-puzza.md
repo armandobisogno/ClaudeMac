@@ -3,7 +3,9 @@
 Dal **Prologo** di *Catastrofi* (*Terapie*). Sabato 3 settembre 2022. Due tavole, 11 vignette.
 Personaggi: il professor Spiri; la signora Franca. Luogo: casa Spiri, cucina e camera da letto.
 
-Tutti i testi sono del romanzo, tagliati. DID = didascalia (voce del narratore, macchina da
+**Montato il 15.11.2026** (`ep00/tavola1.png`, `ep00/tavola2.png`). I testi definitivi, accorciati
+e adattati, sono in `ep00/tavola1.json` e `ep00/tavola2.json`; quelli qui sotto sono la prima
+stesura fedele al romanzo. DID = didascalia (voce del narratore, macchina da
 scrivere). Nel prologo il professore parla tre volte sole; il resto è narratore, come nel testo.
 
 Regola dell'episodio: della signora Franca, fino alla vignetta 2.5, si vedono solo dettagli.

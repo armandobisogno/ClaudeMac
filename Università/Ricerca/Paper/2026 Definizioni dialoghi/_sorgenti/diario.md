@@ -118,3 +118,8 @@ Esito: B5 come formulato è troppo largo (circa 1 su 9). Funziona solo quando il
 - Le spie sono riformulate come **domande da porsi** sulla frase, con accanto le **parole latine** a cui fare attenzione; in testa tre domande guida (Il testo dice che sta definendo? → A; La frase ha la forma di una definizione? → B; Che cosa succede alla definizione? → C; parola-segnale che qui non definisce → D).
 - **Il criterio di ogni spia resta invariato**: cambia la formulazione, non ciò che la spia conta. La codifica già fatta resta valida.
 - Aggiornati il codebook (Claude Doc, bozza 6) e il menù delle spie dell'artefatto (versione 5, con le tre domande guida in cima al menù).
+
+## 15.11.2026 — A4 esteso a *significare* (bozza 7)
+
+- Decisione di Armando: A4 comprende anche il verbo *significare* in ogni forma (*significo, significat, quid significat?*), non solo nella formula *nomen … significat*. È un ampliamento del criterio: le frasi con *significat* già codificate vanno ricontrollate.
+- Proposta di Armando in discussione: distinguere A e B per la forma (A = affermazioni, B = domande).

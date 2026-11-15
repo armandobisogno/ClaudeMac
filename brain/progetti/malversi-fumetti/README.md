@@ -36,4 +36,21 @@ Bibbia di personaggi/luoghi/prompt: [bibbia.md](bibbia.md).
 ## Storia lunga: Catastrofi (dal 15.11.2026)
 
 Adattamento della prima parte di *Terapie* in 10 episodi e 31 tavole: [catastrofi/piano.md](catastrofi/piano.md).
-Stile v2 a china netta (vedi bibbia). Stato: piano e prove di stile da approvare.
+Bianco e nero a china; dialoghi accorciati e adattati al fumetto. Episodio 0 montato.
+
+Procedura per episodio (provata sull'episodio 0):
+
+1. Sceneggiatura in `catastrofi/epNN-titolo.md`.
+2. Vignette con Canva `generate-image`. Formati: `LANDSCAPE_2_1` (tutta la striscia),
+   `LANDSCAPE_5_4` (mezza), `PORTRAIT_4_5` (un terzo), `LANDSCAPE_16_9` (due terzi).
+   Riferimenti: la scheda del personaggio e **una vignetta già riuscita della stessa scena**.
+   Senza quest'ultima il tratto esce chiaro e piatto; con quella prende i neri pieni.
+3. Alta risoluzione dal design di appoggio **DAHWspKSzpI**: `read-design` con
+   `open_transaction` → `add_page` (2000×1000, 1500×1200, 1200×1500, 1920×1080) → gli id delle
+   pagine nuove si leggono con `design_content` e `page_indices` → `insert_fill` una pagina per
+   chiamata → `commit` → `export-design` png → `curl` in `epNN/vignette/`.
+4. `epNN/tavolaN.json` → `python3 build_tavola_strisce.py catastrofi/epNN/tavolaN.json`.
+   Guardare il PNG e spostare i testi che coprono i volti.
+
+Schede dei personaggi e id Canva: `riferimenti/canva-ids.txt`. Scheda di Spiri: MAHa-J1Yoao;
+vignetta di riferimento per casa Spiri: MAHa-J9Jfy8.
