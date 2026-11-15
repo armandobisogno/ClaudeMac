@@ -1,0 +1,1176 @@
+<title>Catastrofi</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;600&family=VT323&display=swap">
+<style>
+/* Layout: un solo palco 320×200 al centro; scena in alto (320×140), pannello verbi e inventario sotto. Un solo tema, scuro per scelta. */
+:root{
+  --bg:#0b0a10; --panel:#17131c; --edge:#2e2638; --ink:#f2ead0; --dim:#8d8499;
+  --verb:#e9b44c; --red:#e0281c; --cap:#f1e6c8; --capink:#1a1612;
+  --font-ui:'Pixelify Sans','VT323',ui-monospace,monospace;
+  --font-tx:'VT323',ui-monospace,'Courier New',monospace;
+  color-scheme:dark;
+}
+html,body{height:100%}
+body{background:var(--bg);color:var(--ink);font-family:var(--font-tx);box-sizing:border-box;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;overflow:hidden;
+  padding-block:8px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+#stage{width:min(100%,1120px,calc((100vh - 72px)*1.6));width:min(100%,1120px,calc((100dvh - 72px)*1.6));
+  aspect-ratio:320/200;container-type:inline-size;position:relative;background:#000;
+  user-select:none;-webkit-user-select:none;touch-action:manipulation;outline:1px solid var(--edge)}
+#scene{position:relative;width:100%;aspect-ratio:320/140;overflow:hidden;transition:opacity .16s;cursor:crosshair}
+#cv{width:100%;height:100%;display:block;image-rendering:pixelated;image-rendering:crisp-edges}
+#speech{position:absolute;left:0;bottom:0;width:max-content;max-width:56%;text-align:center;font-size:4.1cqw;line-height:.92;
+  pointer-events:none;text-shadow:.3cqw 0 #000,-.3cqw 0 #000,0 .3cqw #000,0 -.3cqw #000,.3cqw .3cqw #000,-.3cqw -.3cqw #000,.3cqw -.3cqw #000,-.3cqw .3cqw #000}
+#cap{position:absolute;top:3%;left:50%;transform:translateX(-50%);width:86%;box-sizing:border-box;background:var(--cap);color:var(--capink);
+  font-size:3.7cqw;line-height:.98;padding:.9cqw 1.6cqw 1.1cqw;border:.4cqw solid var(--capink);box-shadow:.6cqw .6cqw 0 rgba(0,0,0,.55);pointer-events:none}
+.lab{position:absolute;transform:translateX(-50%);font-size:3.3cqw;line-height:1;white-space:nowrap;pointer-events:none;color:var(--ink);
+  text-shadow:.3cqw 0 #000,-.3cqw 0 #000,0 .3cqw #000,0 -.3cqw #000}
+#panel{position:absolute;left:0;right:0;bottom:0;top:70%;background:var(--panel);border-top:.5cqw solid var(--edge);box-sizing:border-box;display:flex;flex-direction:column}
+#sent{height:5cqw;line-height:5cqw;font-size:4cqw;text-align:center;color:var(--verb);white-space:nowrap;overflow:hidden}
+#ui{flex:1;min-height:0;display:flex}
+#ui.busy{opacity:.4;pointer-events:none}
+#verbs{width:36%;display:grid;grid-template-columns:1fr 1fr;gap:.6cqw;padding:.2cqw .8cqw .8cqw}
+#verbs button{font-family:var(--font-ui);font-weight:600;font-size:3.5cqw;line-height:1;color:var(--verb);background:#211a29;border:.3cqw solid var(--edge);cursor:pointer;padding:0}
+#verbs button:hover{color:#fff}
+#verbs button.on{background:var(--verb);color:#1a1410;border-color:var(--verb)}
+#inv{flex:1;min-width:0;display:flex;flex-wrap:wrap;align-content:flex-start;gap:.6cqw;padding:.2cqw .8cqw .8cqw;overflow-y:auto}
+.it{width:8.6cqw;height:8.6cqw;padding:.5cqw;background:#211a29;border:.3cqw solid var(--edge);cursor:pointer;box-sizing:border-box}
+.it canvas{width:100%;height:100%;display:block;image-rendering:pixelated;image-rendering:crisp-edges}
+.it:hover{border-color:var(--verb)} .it.on{border-color:var(--red);background:#3a1c1c}
+#choices{position:absolute;inset:0;background:var(--panel);overflow-y:auto;display:flex;flex-direction:column;padding:.8cqw 2cqw;box-sizing:border-box}
+#choices button{font-family:var(--font-tx);font-size:3.8cqw;line-height:1;text-align:left;color:var(--verb);background:none;border:0;padding:.35cqw 0;cursor:pointer}
+#choices button:hover{color:#fff}
+button:focus-visible{outline:.4cqw solid #fff;outline-offset:-.4cqw}
+#over{position:absolute;inset:0;z-index:5;background:rgba(6,5,9,.95);display:flex;align-items:center;justify-content:center;text-align:center;overflow-y:auto}
+#over h1{font-family:var(--font-ui);font-weight:600;font-size:12cqw;letter-spacing:.06em;margin:0;line-height:1;color:var(--ink)}
+#over h1::after{content:"";display:block;width:14cqw;height:1cqw;background:var(--red);margin:2cqw auto 0}
+#over p{font-size:4.2cqw;line-height:1;margin:2.4cqw 0 0;color:var(--dim)}
+#over .btns{display:flex;gap:3cqw;justify-content:center;margin-top:5cqw}
+#over button{font-family:var(--font-ui);font-size:4cqw;color:var(--verb);background:#211a29;border:.4cqw solid var(--verb);padding:1cqw 3cqw;cursor:pointer}
+#over button:hover{background:var(--verb);color:#1a1410}
+#over .letter{max-width:74%;text-align:left;font-size:3.7cqw;line-height:1.02;color:var(--capink);background:var(--cap);padding:3cqw 4cqw;margin:3cqw 0;border:.4cqw solid var(--capink)}
+#over .letter p{color:inherit;font-size:inherit;margin:0 0 1.6cqw}
+#over .letter .blues{font-style:italic;color:#7a2a22}
+#over .letter small{display:block;font-size:3cqw;color:#5a5244;border-top:.3cqw dashed #8a8068;padding-top:1.2cqw;margin-top:1.2cqw}
+#bar{display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center;justify-content:center;font-size:17px;line-height:1;color:var(--dim);max-width:100%}
+#bar button{font-family:var(--font-tx);font-size:17px;color:var(--verb);background:none;border:1px solid var(--edge);padding:3px 10px;cursor:pointer}
+#bar button:hover{border-color:var(--verb)}
+@media (prefers-reduced-motion:reduce){#scene{transition:none}}
+</style>
+
+<div id="stage">
+  <div id="scene">
+    <canvas id="cv" width="320" height="140"></canvas>
+    <div id="labels"></div>
+    <div id="speech" hidden></div>
+    <div id="cap" hidden></div>
+  </div>
+  <div id="panel">
+    <div id="sent"></div>
+    <div id="ui">
+      <div id="verbs">
+        <button id="v-look" data-v="look">Guarda</button>
+        <button id="v-talk" data-v="talk">Parla</button>
+        <button id="v-take" data-v="take">Prendi</button>
+        <button id="v-use" data-v="use">Usa</button>
+      </div>
+      <div id="inv"></div>
+    </div>
+    <div id="choices" hidden></div>
+  </div>
+  <div id="over" hidden></div>
+</div>
+<div id="bar">
+  <button id="b-music">♪ blues: no</button>
+  <button id="b-reset">ricomincia</button>
+  <span>Prototipo · da «Catastrofi», in <i>Terapie</i> (De Tomi, 2024)</span>
+</div>
+
+<script>
+(()=>{
+'use strict';
+const $=s=>document.querySelector(s);
+const W=320,H=140,cv=$('#cv'),G=cv.getContext('2d');
+const scene=$('#scene'),spEl=$('#speech'),capEl=$('#cap'),sentEl=$('#sent'),uiEl=$('#ui'),invEl=$('#inv'),chEl=$('#choices'),over=$('#over'),labEl=$('#labels');
+let g=G,T=0;
+const KEY='catastrofi-save-1';
+const fresh=()=>({room:'cucina',f:{},inv:[],x:150,dir:1,pl:'spiri'});
+let S=fresh();
+let busy=false,verb=null,sel=null,hover=null,hoverIt=null,skip=null,talker=null,overlay=null,tx=null,walkRes=null,um=null,vasoPh=0,bgc={};
+
+/* ---------- utilità ---------- */
+const F=k=>!!S.f[k];
+const set=k=>{S.f[k]=1;bgc={};save()};
+const has=id=>S.inv.includes(id);
+const give=id=>{if(!has(id)){S.inv.push(id);renderInv();save()}};
+const drop=id=>{S.inv=S.inv.filter(i=>i!==id);renderInv();save()};
+const wait=ms=>new Promise(r=>setTimeout(r,ms));
+const clamp=(v,a,b)=>Math.max(a,Math.min(b,v));
+function save(){try{localStorage.setItem(KEY,JSON.stringify(S))}catch(e){}}
+function load(){try{const d=JSON.parse(localStorage.getItem(KEY));return d&&d.room?d:null}catch(e){return null}}
+
+/* ---------- primitive di disegno ---------- */
+const BAY=[0,8,2,10,12,4,14,6,3,11,1,9,15,7,13,5];
+const R=(x,y,w,h,c)=>{g.fillStyle=c;g.fillRect(x|0,y|0,w|0,h|0)};
+const rnd=n=>{const s=Math.sin(n*127.1+311.7)*43758.5453;return s-Math.floor(s)};
+function grad(x,y,w,h,c1,c2){R(x,y,w,h,c1);g.fillStyle=c2;for(let j=0;j<h;j++){const t=(j+.5)/h*16;for(let i=0;i<w;i++)if(BAY[((y+j)&3)*4+((x+i)&3)]<t)g.fillRect(x+i,y+j,1,1)}}
+function che(x,y,w,h,c){g.fillStyle=c;for(let j=0;j<h;j++)for(let i=(j+y+x)&1;i<w;i+=2)g.fillRect(x+i,y+j,1,1)}
+function ridge(pts,c,top){for(let i=0;i<pts.length-1;i++){const[a,b]=pts[i],[e,f]=pts[i+1];for(let x=a;x<e;x++){const y=Math.round(b+(f-b)*(x-a)/(e-a));top?R(x,0,1,y,c):R(x,y,1,H-y,c)}}}
+function ln(x0,y0,x1,y1,c){const n=Math.max(Math.abs(x1-x0),Math.abs(y1-y0))||1;for(let i=0;i<=n;i++)R(Math.round(x0+(x1-x0)*i/n),Math.round(y0+(y1-y0)*i/n),1,1,c)}
+const BOOKC=['#7a2a22','#2f4a6a','#6a5a2a','#3a5a3a','#8a6a3a','#4a2a4a','#b09a6a','#283040','#9a3a2a','#c8b888'];
+function books(x,y,w,h,seed){let i=0,k=seed;while(i<w){const bw=Math.min(1+(rnd(k++)*3|0),w-i),bh=h-(rnd(k++)*4|0);R(x+i,y+h-bh,bw,bh,BOOKC[(rnd(k++)*BOOKC.length)|0]);i+=bw}}
+function pile(x,y,n,seed){for(let i=0;i<n;i++)R(x+(rnd(seed+i)*3|0),y-3*i-3,11,3,BOOKC[(rnd(seed+i+40)*BOOKC.length)|0])}
+function rain(x,y,w,h,t,n){g.fillStyle='rgba(208,222,236,.55)';for(let i=0;i<n;i++){const sp=50+rnd(i)*50;g.fillRect((x+rnd(i+.5)*w)|0,(y+((rnd(i+9.3)*h+t*sp)%(h-3)))|0,1,3)}}
+function beam(pts,c,a){g.save();g.globalAlpha=a;g.fillStyle=c;g.beginPath();pts.forEach((p,i)=>i?g.lineTo(p[0],p[1]):g.moveTo(p[0],p[1]));g.fill();g.restore()}
+
+/* ---------- personaggi parametrici ---------- */
+const SAIO='#2e2824';
+const CH={
+  spiri:{n:'il professor Spiri',col:'#bfe6a4',skin:'#e6b89a',hair:'#dcd9cf',hs:'short',top:'#7a2638',long:11,belt:'#4e1524',bottom:'#3b3f55',shoes:'#6a4a2a',glasses:'#e8e8e8'},
+  spiri2:{col:'#bfe6a4',skin:'#e6b89a',hair:'#dcd9cf',hs:'short',top:'#8b8f96',zip:1,bottom:'#5a6a88',shoes:'#3a7a9a',glasses:'#e8e8e8'},
+  malversi:{col:'#f2ead0',skin:'#d9a680',hair:'#8d8a86',hs:'back',beard:'#9a9792',top:'#5a4630',shirt:'#d8d2c2',bottom:'#2c2f3a',shoes:'#1a1410',glasses:'#1c1c22',cigar:1,w:11},
+  tonino:{col:'#ff9a5c',skin:'#eeb898',hair:'#c0401c',hs:'short',beard:'#c0401c',top:'#2a3b66',shirt:'#9ab0d8',bottom:'#23304f',shoes:'#111',w:14,leg:14,torso:17},
+  graziella:{col:'#f29ac6',skin:'#e6b090',hair:'#6a3c22',hs:'bob',top:'#d8c44a',stripes:'#b0382c',bottom:'#3e5f96',flare:1,shoes:'#d04a8a',w:9},
+  questore:{col:'#9ac4f0'},
+  marco:{col:'#f0c060',skin:'#e0a884',hair:'#8a8378',hs:'short',robe:SAIO,glasses:'#c8502a'},
+  leone:{col:'#c9d6e6',skin:'#d8a888',hair:'#eeeeea',hs:'short',robe:SAIO,beard:'#f2f2ee',bs:'long',bl:19,brows:'#f2f2ee',broom:1},
+  dom:{col:'#a8d8c8',skin:'#e6b494',hair:'#3a2a1e',hs:'short',robe:SAIO,leg:12},
+  nic:{col:'#d8c8f0',skin:'#eec0a0',hair:'#c8a050',hs:'short',robe:SAIO,leg:11},
+  mario:{col:'#a8e0a0',skin:'#e0aa88',top:'#4a5a4a',shirt:'#d8d8c8',bottom:'#333',glasses:'#111'},
+  antonio:{col:'#9ac4f0',skin:'#dca684',hair:'#4a4038',hs:'short',top:'#30323c',shirt:'#f0f0f0',tie:'#8a2030',bottom:'#30323c',w:12},
+  luca:{col:'#f0a0a0',skin:'#e8b494',hair:'#1e1a18',hs:'back',top:'#e8e8ee',bottom:'#22242c'},
+  russo:{col:'#a0e8e8',skin:'#e6b090',hair:'#5a3a26',hs:'up',top:'#f0f0ec',long:10,inner:'#3a7a8a',bottom:'#33384a',shoes:'#222',w:9}
+};
+function person(x,y,o,t){
+  x=Math.round(x);
+  const d=o.dir||1,sil=o.sil;
+  const r=(a,b,w,h,c,raw)=>{if(d<0)a=-a-w;g.fillStyle=(sil&&!raw)?'#16100c':c;g.fillRect(x+a,y+b,w,h)};
+  const Wd=o.w||10,hw=Wd>>1,L=o.leg||13,Tt=o.torso||15,by=-(L+Tt)-2,sk=o.skin||'#e0a882';
+  const tk=o.talking&&((t*7|0)&1),wk=o.walking?((t*9|0)&3):1;
+  if(!sil){g.fillStyle='rgba(0,0,0,.22)';g.fillRect(x-hw-2,y,Wd+4,1)}
+  if(o.robe){
+    r(-hw-1,by,Wd+2,L+Tt+1,o.robe);r(-hw-2,-7,Wd+4,6,o.robe);
+    if(!sil){r(-hw-1,by+Tt,Wd+2,1,'#d8ccb0');r(hw-3,by+Tt,1,7,'#d8ccb0')}
+    r(-4,-1,3,1,'#3a2a1a');r(1,-1,3,1,'#3a2a1a');
+  }else{
+    const la=wk===0?-2:wk===2?2:0;
+    r(-4+la,-L-2,3,L,o.bottom);r(1-la,-L-2,3,L,o.bottom);
+    if(o.flare){r(-5+la,-6,5,4,o.bottom);r(0-la,-6,5,4,o.bottom)}
+    r(-4+la,-2,4,2,o.shoes||'#1a1410');r(1-la,-2,4,2,o.shoes||'#1a1410');
+    r(-hw,by,Wd,Tt+(o.long||0),o.top);
+    if(o.inner)r(-1,by,3,Tt+(o.long||0),o.inner);
+    if(o.shirt)r(-1,by,3,4,o.shirt);
+    if(o.tie)r(0,by+1,1,7,o.tie);
+    if(o.stripes)for(let i=2;i<Tt;i+=3)r(-hw,by+i,Wd,1,o.stripes);
+    if(o.zip)r(0,by,1,Tt,'#5a5e64');
+    if(o.belt)r(-hw,by+Tt-1,Wd,1,o.belt);
+  }
+  const sl=o.robe||o.top;
+  r(-hw-2,by+1,2,Tt-3,sl);r(hw,by+1,2,Tt-3,sl);
+  r(-hw-2,by+Tt-2,2,2,sk);r(hw,by+Tt-2,2,2,sk);
+  if(o.stripes)for(let i=2;i<Tt-3;i+=3){r(-hw-2,by+i,2,1,o.stripes);r(hw,by+i,2,1,o.stripes)}
+  const hy=by-10,hc=o.hair,hs=o.hs;
+  r(-2,by-1,4,1,sk);r(-4,hy,8,9,sk);
+  if(hc){
+    if(hs==='short'){r(-4,hy-1,8,3,hc);r(-4,hy+2,1,3,hc)}
+    else if(hs==='back'){r(-4,hy-2,8,3,hc);r(-5,hy,2,6,hc)}
+    else if(hs==='bob'){r(-5,hy-1,10,3,hc);r(-5,hy+2,2,8,hc);r(-3,hy+2,7,1,hc)}
+    else if(hs==='long'){r(-5,hy-1,10,3,hc);r(-5,hy+2,2,13,hc)}
+    else if(hs==='up'){r(-4,hy-1,8,3,hc);r(-6,hy+1,2,4,hc);r(-4,hy+2,1,4,hc)}
+  }
+  if(o.beard){if(o.bs==='long')r(-3,hy+5,7,o.bl||16,o.beard);else r(-4,hy+5,8,4,o.beard)}
+  const eye=sil?'#c9682c':'#1a1410';
+  r(0,hy+3,1,1,eye,1);r(3,hy+3,1,1,eye,1);
+  if(o.brows){r(-1,hy+2,2,1,o.brows);r(2,hy+2,3,1,o.brows)}
+  if(o.glasses){r(-1,hy+2,6,1,o.glasses);r(-4,hy+3,3,1,o.glasses);r(-1,hy+4,1,1,o.glasses);r(4,hy+4,1,1,o.glasses)}
+  r(4,hy+4,1,2,sk);
+  if(!sil){if(tk)r(1,hy+6,3,2,'#4a1616');else r(1,hy+7,3,1,o.beard?'#5a2a22':'#8a4a3a')}
+  if(o.cigar&&!tk){r(4,hy+7,4,1,'#5a3a20');r(8,hy+7,1,1,'#ff8a30')}
+  if(o.broom){r(hw+3,by-6,1,L+Tt+4,'#8a6a3a');r(hw+1,-5,5,5,'#c9a84a')}
+  if(o.crown){r(-4,hy-4,2,3,'#000');r(-1,hy-4,2,3,'#000');r(2,hy-4,2,3,'#000')}
+  if(o.blade){r(hw+2,by+Tt-2,7,1,'#000');}
+  if(o.axe){r(hw+3,by-8,1,Tt+8,'#000');r(hw+4,by-8,5,5,'#000')}
+}
+
+/* ---------- parlato, scelte, movimento ---------- */
+function posOf(who){
+  const rm=rooms[S.room];
+  if(overlay)return{x:160,y:134};
+  if(who==='me')return rm.noPlayer?{x:160,y:70}:{x:S.x,y:rm.base-46};
+  const h=rm.hs.find(h=>h.actor===who&&(!h.if||h.if()));
+  if(h)return{x:h.x,y:h.y-(h.sh||46)};
+  return{x:160,y:56};
+}
+function say(who,text){return new Promise(res=>{
+  const narr=who==='narr',el=narr?capEl:spEl;
+  talker=who;el.textContent=text;el.hidden=false;
+  if(!narr){
+    el.style.color=(who==='me'?CH[S.pl]:CH[who]||{}).col||'#fff';
+    const p=posOf(who),sw=scene.clientWidth,sh=scene.clientHeight,ew=el.offsetWidth,eh=el.offsetHeight;
+    el.style.left=clamp(p.x/W*sw-ew/2,4,Math.max(4,sw-ew-4))+'px';
+    el.style.bottom=clamp((H-p.y)/H*sh,2,Math.max(2,sh-eh-2))+'px';
+  }
+  const t0=performance.now();
+  const done=()=>{clearTimeout(tm);skip=null;el.hidden=true;talker=null;res()};
+  const tm=setTimeout(done,Math.min(11000,1500+text.length*62));
+  skip=()=>{if(performance.now()-t0>220)done()};
+})}
+async function L(...a){for(let i=0;i<a.length;i+=2)await say(a[i],a[i+1])}
+function choose(opts){return new Promise(res=>{
+  chEl.innerHTML='';
+  opts.forEach(o=>{const b=document.createElement('button');b.textContent='› '+o.t;b.onclick=()=>{chEl.hidden=true;res(o.k)};chEl.append(b)});
+  chEl.hidden=false;chEl.scrollTop=0;sentEl.textContent='';
+})}
+async function dlg(list){
+  for(;;){
+    const av=list.filter(o=>(!o.if||o.if())&&!(o.once&&F('d_'+o.k)));
+    const k=await choose(av),o=list.find(o=>o.k===k);
+    if(o.once)set('d_'+o.k);
+    if(o.run)await o.run();
+    if(o.end||o.stop&&o.stop())return;
+  }
+}
+function walk(x){
+  const rm=rooms[S.room];if(rm.noPlayer)return Promise.resolve();
+  x=clamp(x,rm.min,rm.max);if(Math.abs(x-S.x)<1)return Promise.resolve();
+  return new Promise(r=>{tx=x;walkRes=r});
+}
+async function go(id,x){
+  scene.style.opacity=0;await wait(170);
+  S.room=id;tx=null;S.x=x!=null?x:(rooms[id].start||160);hover=null;
+  buildLabels();save();scene.style.opacity=1;await wait(120);
+  if(rooms[id].enter)await rooms[id].enter();
+  buildLabels();
+}
+async function show(id,fn){scene.style.opacity=0;await wait(170);overlay=id;labEl.innerHTML='';scene.style.opacity=1;await fn();scene.style.opacity=0;await wait(170);overlay=null;buildLabels();scene.style.opacity=1}
+function card(a,b,ms){return new Promise(res=>{
+  over.innerHTML='<div><h1></h1><p></p></div>';over.querySelector('h1').textContent=a;over.querySelector('p').textContent=b;over.hidden=false;
+  const t0=performance.now(),done=()=>{clearTimeout(tm);skip=null;over.hidden=true;res()},tm=setTimeout(done,ms||3600);
+  skip=()=>{if(performance.now()-t0>500)done()};
+})}
+async function run(fn){
+  if(busy)return;busy=true;ui();
+  try{await fn()}catch(e){console.error(e)}
+  busy=false;verb=null;sel=null;ui();
+}
+
+/* ---------- oggetti ---------- */
+const NOPE=["Non funziona.","No. E non chiedetemi perché.","Idea suggestiva. Ma no.","Così non si va da nessuna parte."];
+const IT={
+  tazzina:{n:'tazzina di caffè',ic(){R(4,7,7,5,'#f0ece0');R(11,8,2,3,'#f0ece0');R(5,8,5,1,'#3a2414');R(3,12,9,1,'#c8c4b8')},
+    look:"La seconda moka della mattina. Solo per me. Come sempre.",
+    use:async()=>{
+      await L('narr',"Immerso nei suoi pensieri, provò a dare un'altra possibilità a quel caffè.",
+        'me',"Madonna santissima della Misericordia di Fontanarosa! Questa roba ti fa passare la voglia di vivere!",
+        'narr',"Dopo un istante, ripensando a quel che aveva appena detto, gli si affacciò sul viso una risata sottile, nascosta per pudore nel palmo della mano.");
+      drop('tazzina');set('p_bevuto');
+    }},
+  taccuino:{n:'block notes',ic(){R(3,2,10,12,'#e8dcb0');R(3,2,10,2,'#8a3a2a');R(5,6,6,1,'#777');R(5,8,6,1,'#777');R(5,10,4,1,'#777')},
+    look:async()=>{for(const s of hints())await say('me',s)},use:async()=>{for(const s of hints())await say('me',s)}},
+  telefono:{n:'telefono',ic(){R(5,1,7,14,'#22252c');R(6,3,5,9,'#5aa0d0');R(8,13,1,1,'#888')},
+    look:"Niente Facebook. Niente di niente. Ho cinquant'anni e va bene così.",
+    use:async()=>{
+      if(F('a_tallio')&&!F('msg')){
+        await say('narr',"Messaggio alla dottoressa Russo, anatomopatologa del Tribunale. Una sola parola: «tallio».");
+        if(S.room==='attico')await L('antonio',"Cioè stai flirtando con l'anatomopatologa sfruttando la morte della Spiri?",
+          'me',"Bravo. La folgoro: ho scoperto il veleno prima di ricevere il suo referto.",
+          'mario',"Tu non hai scoperto un cazzo, a voler essere precisi.",
+          'me',"Per questo ho due amici intelligenti e uno ricco.");
+        set('msg');
+        await say('narr',"Venerdì mattina la Russo rispose con un punto interrogativo. Malversi rilanciò: «Caffè tra venti minuti? 18?». Arrivò un pollice in su.");
+      }else await say('me',F('msg')?"L'ultimo messaggio alla Russo è meglio non rileggerlo.":"Nessun messaggio. Per fortuna.");
+    }},
+  sigaro:{n:'mezzo sigaro',ic(){R(2,8,11,2,'#6a4424');R(2,8,2,2,'#4a2e14');R(13,8,1,2,'#ff8a30')},
+    look:"Mezzo toscano, nel portasigari d'argento. Robaccia industriale, direbbe qualcuno.",
+    use:async()=>{
+      if(['chiesa','chiostro','cella'].includes(S.room))await say('me',"Qui dentro no. Già si sente abbastanza la puzza.");
+      else if(S.room==='carcere')await say('me',"In sala colloqui no.");
+      else await say('me',"Due tiri. La gastrite ringrazia. Il Maalox è nella tasca interna.");
+    }},
+  cornetto:{n:'caffè e cornetto',ic(){R(3,7,10,4,'#d89a40');R(5,5,6,2,'#d89a40');R(2,9,2,2,'#b87a28');R(12,9,2,2,'#b87a28')},
+    look:"La colazione. La Sambuca sarà per un'altra volta.",
+    use:async()=>{await say('me',"Caffè e cornetto. Ecco. Adesso ricominciamo da capo e con ordine, così intanto mi sveglio.");drop('cornetto');set('u_mangiato')}},
+  regola:{n:'Regola di San Benedetto',ic(){R(3,2,10,12,'#b08a5a');R(3,2,2,12,'#8a6a40');R(7,5,4,1,'#5a4020');R(7,7,4,1,'#5a4020')},
+    look:"Un'edizione anni Settanta, in latino e italiano, rivestita di carta da imballaggio. Niente note né commento.",
+    use:async()=>{
+      await L('narr',"Malversi si addentrò nella lettura con curiosità e diffidenza. La trovò addirittura gradevole.",
+        'me',"Il potere dell'abate è assoluto, l'obbedienza indiscutibile. Sembra un'azienda fordista anni Sessanta.",
+        'me',"Però è un posto onesto. Tutte le gerarchie fingono di non esserlo. Questi lo scrivono in ogni rigo: «Chi entra qui, entra per obbedire».",
+        'narr',"♪ I live the life I love and I love the life I live.");
+      set('regolaLetta');
+    }},
+  fototessera:{n:'vecchia fototessera',ic(){R(4,2,8,11,'#e8e4d8');R(5,3,6,8,'#8a8478');R(7,5,2,2,'#d8b090');R(6,7,4,4,'#2e2824')},
+    look:async()=>{await say('me',"Un ragazzo in saio, anni Ottanta. Sbiadita. Mi ricorda qualcuno.");if(F('certLetti'))await say('me',"Gli occhialini non c'erano ancora. Il sorriso sì.")}},
+  certificati:{n:"certificati dell'anagrafe",ic(){R(3,2,9,12,'#e0dcd0');R(5,3,9,12,'#f0ece0');R(7,5,5,1,'#555');R(7,7,5,1,'#555');R(7,9,3,1,'#555');R(10,12,3,2,'#c0392b')},
+    look:async()=>{
+      await L('me',"Quattro certificati. Leone, Domenico, Nicola. E l'abate.",'me',"«BARNABA Marco». Quattro monaci. Di un quinto, nessuna traccia.");
+      if(!F('certLetti')){set('certLetti');await say('me',"Marco Barnaba. Ma tu guarda.")}
+    }}
+};
+function hints(){
+  if(S.pl==='spiri')return["Una seconda moka. E poi, magari, due parole con Franca."];
+  if(!F('u_mangiato'))return["Non si ragiona a stomaco vuoto. Il cornetto."];
+  if(!F('u_brief'))return["Farmi aggiornare da Graziella."];
+  if(!F('u_questore'))return["Telefonare al questore. Purtroppo."];
+  const a=[];
+  if(!F('m_marco1'))a.push("Santa Cecilia: parlare con l'abate.");
+  else if(!F('m_regola'))a.push("Santa Cecilia: la cella di Barnaba. Che tipo era?");
+  else if(!F('regolaLetta'))a.push("Leggere la Regola di San Benedetto. Tutta.");
+  else if(!F('m_leone'))a.push("Santa Cecilia: padre Leone, quello che al mattino trova le chiavi. Sta in chiesa.");
+  else if(!F('m_ragazzi'))a.push("Santa Cecilia: i due monaci giovani, nel chiostro.");
+  else if(!F('m_foto'))a.push("Chiedere conto all'abate della fama social di Barnaba.");
+  else if(!F('anagrafe'))a.push("Chiedere a Graziella i dati anagrafici dei monaci.");
+  else if(!F('cert'))a.push("Passare in ufficio: i certificati dell'anagrafe.");
+  else if(!F('barnaba'))a.push("Quattro certificati, cinque monaci. Tornare dall'abate.");
+  if(!F('c_spiri1'))a.push("Carcere: interrogare il professor Spiri.");
+  else if(!F('a_tallio'))a.push("«Il cavallo pallido». Giovedì sera da Luca: chiedere a Mario. E poi ad Antonio.");
+  else if(!F('msg'))a.push("Mandare un messaggio alla Russo. Una parola sola.");
+  else if(!F('b_infarto'))a.push("Caffè con la Russo, padiglione 18.");
+  else if(!F('c_conf'))a.push("Tornare in carcere dal professore.");
+  else if(!F('verbale'))a.push("Leggere la deposizione di Spiri. È in ufficio, tra i fascicoli.");
+  else if(!F('c_libero'))a.push("Tornare da Spiri. E decidere.");
+  if(!a.length)a.push("Resta una visita da fare. A casa del professore.");
+  return a;
+}
+async function finale(){
+  if(F('c_libero')&&F('barnaba')&&!F('fin_n')){set('fin_n');await say('narr',"Due casi chiusi. Anzi, mai aperti. Restava una visita da fare: a casa del professore.")}
+}
+
+/* ---------- stanze ---------- */
+const rooms={};
+const exitTo=(id,x)=>()=>go(id,x);
+
+/* PROLOGO — cucina di casa Spiri */
+rooms.cucina={name:'Casa Spiri, la cucina',base:130,min:24,max:300,start:150,
+  bg(){
+    R(0,0,W,112,'#8a8062');grad(0,0,W,26,'#665e48','#8a8062');
+    R(0,64,W,48,'#a39a7c');for(let x=0;x<W;x+=12)R(x,64,1,48,'#8f876c');for(let y=64;y<112;y+=12)R(0,y,W,1,'#8f876c');
+    R(0,112,W,28,'#5a4636');for(let i=0;i<20;i++)for(let j=0;j<2;j++)if((i+j)&1)R(i*16,112+j*14,16,14,'#6c5644');R(0,112,W,1,'#3a2c22');
+    R(4,26,44,86,'#5a4a36');R(6,28,40,84,'#17151c');R(20,52,14,60,'#201e29');R(33,56,1,54,'#3a3a4c');
+    R(58,22,94,26,'#6a4a30');for(let k=1;k<4;k++)R(58+k*24,22,1,26,'#4a3220');for(let k=0;k<4;k++)R(76+k*24,40,2,3,'#c8b060');
+    R(56,84,98,28,'#6a4a30');for(let k=1;k<4;k++)R(56+k*25,84,1,28,'#4a3220');R(54,80,102,4,'#cfc7b0');R(54,84,102,1,'#8a8270');
+    R(92,78,22,3,'#9aa3a8');R(102,68,2,10,'#b8c0c4');R(102,68,6,2,'#b8c0c4');R(95,79,3,1,'#3a2414');R(105,80,4,1,'#3a2414');R(99,81,2,1,'#3a2414');
+    R(66,68,9,12,'#a8482c');R(65,66,11,3,'#d8c890');R(68,72,5,3,'#e8dcb0');
+    R(120,78,28,2,'#2c2c30');R(128,68,8,10,'#aab0b4');R(129,62,6,6,'#c4cacc');R(129,67,6,1,'#777');R(136,66,2,6,'#222');R(131,60,2,2,'#222');
+    R(164,16,138,78,'#d6d0bc');grad(168,20,130,40,'#8794a0','#66737f');
+    R(168,44,40,34,'#56616d');R(214,38,50,40,'#4d5864');R(268,48,30,30,'#5a6672');
+    [[176,50],[190,60],[224,46],[240,58],[252,46],[276,56]].forEach(p=>R(p[0],p[1],3,4,'#c9b270'));
+    R(168,78,130,12,'#3f4852');che(168,81,130,5,'#56616d');
+    R(210,20,2,70,'#d6d0bc');R(254,20,2,70,'#d6d0bc');R(162,92,142,3,'#e2dcc8');R(162,95,142,1,'#8a8270');
+    for(let k=0;k<10;k++){R(184+k*5,98,4,13,'#d8d4c8');R(187+k*5,98,1,13,'#a8a498')}
+    R(248,100,60,4,'#7a5a3a');R(250,104,3,20,'#5a4028');R(303,104,3,20,'#5a4028');
+    R(266,97,16,3,'#e8e4d8');R(269,95,3,2,'#c89a50');R(273,95,3,2,'#c89a50');R(277,96,3,1,'#c89a50');
+  },
+  fx(t){
+    g.save();g.beginPath();g.rect(168,20,130,70);g.clip();
+    if(um!=null){
+      const u=(t-um)*20,ux=158+u,uy=66+Math.round(Math.sin(t*5)*3),wx=ux-30+Math.round(Math.sin(t*9)),st=(t*8|0)&1;
+      R(wx,79,3,6,'#3c3a4a');R(wx,77,3,2,'#e0b090');R(wx-1,75,5,2,'#5a3a2a');R(wx+3,79,3,1,'#3c3a4a');R(wx+(st?-1:0),85,1,3,'#2a2a34');R(wx+(st?3:2),85,1,3,'#2a2a34');
+      R(ux,uy,9,2,'#e0281c');R(ux+1,uy-1,7,1,'#e0281c');R(ux+2,uy-2,5,1,'#f04a3a');R(ux+4,uy+2,1,4,'#222');
+    }
+    rain(168,20,130,70,t,60);g.restore();
+    if(F('p_moka')&&!F('p_bevuto')){const k=(t*3|0)%3;R(132,56-k,1,2,'rgba(255,255,255,.4)')}
+  },
+  async enter(){
+    if(!F('p_intro')){set('p_intro');
+      await L('narr',"Sabato 3 settembre 2022. Sulle vetrate della cucina la pioggia batteva senza sosta.",
+        'narr',"Il professor Spiri, classe '52, grecista pensionato del blasonato Liceo «G. Leopardi» di Fossa Etrusca, ripeteva a gran voce che il caffè puzzava.")}
+  },
+  hs:[
+    {id:'corridoio',n:'corridoio verso la camera',r:[6,28,40,84],wx:60,
+      look:['narr',"In fondo al corridoio, la camera da letto. La signora Franca era ancora a letto, gli occhi rivolti a un ricamo di ragnatele sul soffitto."],
+      use:"Non è il caso di disturbarla. Le ho già portato il suo caffè, un'oretta fa.",
+      talk:async()=>{
+        if(!F('p_bevuto')){await L('me',"Franca! Questo caffè puzza! Non lo si può usare!",'narr',"Dalla stanza da letto la signora Franca non replicava, né annuiva, alle giaculatorie del marito.");return}
+        await L('me',"Scusami, cara. Non volevo essere fuori luogo.",
+          'narr',"La signora Spiri non rispose neanche stavolta. Si ostinava a non batter ciglio. Letteralmente.",
+          'narr',"Il fatto che fosse morta da ormai quasi un'ora non aiutava la comunicazione.");
+        await walk(232);S.dir=1;um=T;
+        await L('narr',"«Purtroppo, nemmeno da viva le cose sarebbero andate meglio», pensò il professore, seguendo con occhio pietoso una signora che inseguiva un ombrello rosso.",
+          'narr',"♪ You better come on in my kitchen. It's goin' to be rainin' outdoors.");
+        um=null;S.pl='malversi';S.inv=['taccuino','telefono','sigaro'];S.dir=1;renderInv();
+        await card('CATASTROFI','Capitolo 1 · Lunedì 5 settembre 2022');
+        await go('ufficio',70);
+      }},
+    {id:'barattolo',n:'barattolo del caffè',r:[63,64,14,16],look:"Trenta pacchetti a un prezzo vantaggiosissimo. Un affare.",
+      take:['narr',"Rigirava con rabbia il cucchiaino nel barattolo. Ne prendeva un po', lo annusava e lo rigettava dentro.",'me',"Puzza."],
+      use:['narr',"Rigirava con rabbia il cucchiaino nel barattolo. Ne prendeva un po', lo annusava e lo rigettava dentro.",'me',"Puzza."]},
+    {id:'lavello',n:'lavello',r:[90,66,26,16],look:"Polvere di caffè impiastricciata nei solchi del lavabo, tra rivoli di sapone."},
+    {id:'moka',n:'moka',r:[124,58,16,22],look:"La moka da una tazza. La prima, come ogni mattina, l'ho portata in camera a Franca.",
+      use:async()=>{if(F('p_moka'))return say('me',"Una al giorno, per me, basta. E avanza.");
+        await say('narr',"Ne caricò una seconda, solo per lui. Come sempre.");give('tazzina');set('p_moka');await say('me',"Diamogli un'altra possibilità.")},
+      take:"La moka resta sul fuoco. Mi serve semmai quello che c'è dentro."},
+    {id:'finestra',n:'vetrate',r:[166,18,134,74],wx:230,
+      look:async()=>{if(has('tazzina'))await say('me',"In fondo, si è felici solo godendo di scampati pericoli.");
+        else await L('narr',"Fuori la bufera insultava e inzuppava i passanti.",'narr',"«Potente accanirsi della bufera»: il professor Spiri pensava la realtà per immagini epiche. Come in una perenne epopea omerica.")},
+      use:"Aprirle? Con quest'acqua?"},
+    {id:'termo',n:'termosifone',r:[182,96,54,16],look:"Tiepido. Parte dell'inattaccabile bastione a difesa della mia serena tranquillità."},
+    {id:'biscotti',n:"biscottini all'anice",r:[262,92,24,10],look:"Li mangio ogni mattina, per evitare che il caffè mi faccia un buco nello stomaco.",take:"Ho già fatto colazione. Con metodo.",use:"Ho già fatto colazione. Con metodo."}
+  ]};
+
+/* COMMISSARIATO */
+rooms.ufficio={name:'Commissariato di Fossa Etrusca',base:131,min:22,max:300,start:70,
+  bg(){
+    R(0,0,W,116,'#7a8273');grad(0,0,W,14,'#565c50','#7a8273');R(0,84,W,32,'#626a5c');R(0,84,W,1,'#525a4c');
+    R(108,5,64,1,'#9aa090');R(110,6,60,3,'#eef2e0');
+    R(0,116,W,24,'#4e4b44');che(0,116,W,24,'#47443e');R(0,116,W,1,'#33312c');
+    R(10,34,32,82,'#6b5236');R(12,36,28,78,'#7a5e3e');R(36,76,3,2,'#c8b060');R(18,44,16,8,'#d8d4c4');
+    R(50,50,32,66,'#8a9096');for(let k=0;k<4;k++){R(50,50+k*16,32,1,'#666c72');R(62,57+k*16,8,2,'#c4c8cc')}
+    R(96,26,56,34,'#8a6a42');R(98,28,52,30,'#b08a5a');R(101,31,12,14,'#e8e4d4');R(116,30,14,10,'#e0d8a8');R(133,33,13,18,'#e8e4d4');R(116,43,12,12,'#d8e0e4');
+    [[106,32],[122,31],[139,34],[121,44]].forEach(p=>R(p[0],p[1],1,1,'#c0392b'));
+    R(92,96,74,4,'#8a6e48');R(94,100,70,16,'#6e5638');R(100,90,12,6,'#2a2a2e');R(99,88,14,3,'#3a3a40');
+    R(128,92,18,4,'#c8b878');R(129,89,17,3,'#b8c4a8');R(130,87,16,2,'#d8c8a0');R(152,90,5,6,'#f0ece0');
+    R(186,96,70,4,'#8a6e48');R(188,100,66,16,'#6e5638');R(206,80,20,14,'#b8b4a4');R(208,82,16,10,'#2a3a3a');R(214,94,4,2,'#8a8676');R(232,93,14,3,'#e8e4d4');
+    R(266,22,44,60,'#c8c4b4');grad(270,26,36,52,'#8a97a2','#6a7782');R(287,26,2,52,'#c8c4b4');for(let k=0;k<9;k++)R(270,27+k*6,36,1,'#5a6670');
+  },
+  fx(t){g.save();g.beginPath();g.rect(270,26,36,52);g.clip();rain(270,26,36,52,t,18);g.restore()},
+  async enter(){
+    if(!F('u_intro')){set('u_intro');
+      await L('me',"Tonino, apri le finestre, che c'è puzza di cesso qui dentro. Graziella non c'è?",
+        'tonino',"Dottore, Graziella è giù…",'me',"Giù dove?",'tonino',"Giù giù. Qui giù.",'me',"Giù giù al bar?",'tonino',"Eh.",
+        'me',"E che cosa ci voleva a dirlo, Tonì? Mica sono vostro padre. Chiamala, dille di salire e di portarmi una Sambuca.",
+        'tonino',"Dottore, ma sono le nove e mezzo del mattino…",'me',"Hai ragione. Fammi salire pure un caffè e un cornetto.");
+      set('u_col');give('cornetto');
+      await say('narr',"Quando furono tutti seduti, il vicecommissario Gazzaroti allontanò dagli occhi la frangetta, che il parrucchiere le lasciava sempre di due centimetri più lunga del dovuto.");
+    }
+    if(F('anagrafe')&&F('m_foto')&&!F('cert'))await arrivoCert();
+  },
+  hs:[
+    {id:'porta',n:'uscita',exit:1,r:[10,34,32,82],look:"La porta. Di solito la sbatto.",
+      use:async()=>{if(!F('u_questore'))return say('me',F('u_brief')?"Prima sistemo la cosa col questore. Al telefono.":"Prima la riunione del lunedì. Poi si vedrà.");await go('mappa')}},
+    {id:'schedario',n:'schedario',r:[50,50,32,66],look:"L'ordine è di Tonino. Io vivo nelle bolge dell'entropia."},
+    {id:'bacheca',n:'bacheca',r:[96,26,56,34],look:"Circolari della Questura di Lirino. Nessuna che parli di monaci."},
+    {id:'telefono',n:'telefono fisso',r:[98,86,16,12],look:"La linea con la Questura di Lirino. Musichetta da sala d'attesa di una clinica per malattie mentali.",
+      use:async()=>{
+        if(!F('u_brief'))return say('me',"E chi chiamo? Prima fatemi capire che è successo in questa settimana.");
+        if(F('u_questore'))return say('me',"Il questore per oggi ha già dato.");
+        await L('narr',"«Siete in collegamento con gli uffici della Questura di Lirino. Attendete in linea per non perdere la priorità acquisita.»",
+          'questore',"Commissario! Bentornato. Spero che le sue vacanze siano andate bene.",
+          'me',"Fosse stato per me sarei rimasto a mollo a bere cocktail, invece di tornare a Fossa a fare da babysitter a un monaco.",
+          'questore',"Andrea, questa storia è delicata. Si è mosso l'arcivescovo: vuole chiudere presto e senza clamore. Niente foto in giro, niente roba tipo «Chi l'ha visto?».",
+          'questore',"Prova a vedere che dicono a Santa Cecilia e ne parliamo giovedì da Luca, ok?",
+          'me',"Ok. E invece del professore avvelenatore non ne vogliamo parlare?",
+          'questore',"Spiri a Fossa è un'istituzione. Pagherà quel che deve, ma niente prima pagina. Casomai, se puoi, vai a interrogarlo tu. Penso sia più giusto.");
+        set('u_questore');await say('me',"Un monastero e un carcere. Un lunedì coi fiocchi.");
+      }},
+    {id:'fascicoli',n:'fascicoli',r:[126,85,22,12],
+      look:async()=>{
+        if(!F('u_brief'))return say('me',"Carte. Le guardo dopo colazione. Forse.");
+        await L('me',"Il verbale Spiri. La deposizione sta tutta in due frasi.",'me',"«Ho sempre voluto ucciderla.» E: «Non bevete quel caffè, che è veleno.»");
+        if(!F('verbale'))set('verbale');
+        if(F('b_infarto')&&!F('u_squadra')){set('u_squadra');
+          await L('me',"Sedetevi tutti e due. Questa storia di Spiri è un casino, meglio che ce lo diciamo subito.",
+            'me',"Sulla base del vostro verbale il magistrato ha tenuto in carcere un cristiano di quasi settant'anni. Innocente.",
+            'tonino',"Dottore, ci dispiace. Ma davvero tutto sembrava andare in quella direzione.",
+            'me',"E lo so, Tonì, lo so. Avrei fatto lo stesso. Tranquilli, che col magistrato me la vedo io.")}
+      },
+      use:async()=>rooms.ufficio.hs.find(h=>h.id==='fascicoli').look(),take:"Restano qui. Mi basta leggerli."},
+    {id:'pc',n:'computer',r:[204,78,24,18],look:"La mail di Graziella sul monastero. Non l'ho letta: ero in vacanza, figuratevi se volevo altre rotture di coglioni.",use:"Poi mi spiegano loro. In sintesi."},
+    {id:'finestra',n:'finestra',r:[266,22,44,60],look:"Piove che la manda Dio con la pompa. Da un mese.",use:"Aperta. Odore di aiuole bagnate e di mezzo sigaro. Meglio."},
+    {id:'graziella',actor:'graziella',n:'Graziella',x:206,y:131,dir:-1,if:()=>F('u_col'),
+      look:"Il vicecommissario Gazzaroti. Graziella «nonancora». Jeans a zampa, calzini arcobaleno in pendant con la maglia a righe.",
+      talk:async()=>{
+        if(!F('u_mangiato'))return L('graziella',"Dottore, resta aperta solo la questione del monastero, visto che l'ultimo omicidio si è risolto da solo.",
+          'me',"Grazziè, per pietà. Sono le nove e mezza di lunedì mattina, piove, e come vedi non ho ancora fatto colazione.");
+        if(!F('u_brief')){
+          await L('graziella',"Una segnalazione dal monastero di Santa Cecilia. Da sabato è scomparso un loro confratello, di nome Barnaba.",
+            'me',"Chi ha fatto la denuncia di scomparsa?",'tonino',"Nessuno, dottore.",
+            'graziella',"È il questore che ci tiene molto. Pare che si sia mosso l'arcivescovo.",
+            'me',"Facciamo che ci capiamo. Cerchiamo un monaco del quale non frega nulla a nessuno, perché l'arcivescovo ha rotto i coglioni al questore?",
+            'graziella',"In sintesi, sì.",'me',"Perfetto. La prossima volta cominciamo dalla sintesi, che facciamo prima. E l'omicidio che si è risolto da solo?",
+            'graziella',"Un signore ha telefonato in centrale: ha detto di aver ucciso la moglie e che ci aspettava. Ci ha aperto un anziano molto distinto, in giacca da notte.",
+            'graziella',"Ci ha mostrato il corpo. Poi ci ha raccomandato di non bere il caffè, perché era avvelenato. Si chiama Spiri.",
+            'me',"Ma come, Spiri? Il professore di greco? A Fossa è una specie di santone!",
+            'tonino',"Dottore… per il monastero, secondo il questore dovrebbe andarci lei. Ha detto che voi siete… amici?");
+          set('u_brief');return;
+        }
+        if(F('anagrafe')&&F('m_foto')&&!F('cert'))return arrivoCert();
+        await dlg([
+          {k:'g_lucido',t:"Spiri: lo avete trovato lucido?",once:1,run:()=>L('graziella',"Lucidissimo, commissario. E molto sereno.",
+            'me',"E non ti è sembrato strano? Avveleni tua moglie a settant'anni e poi chiami la Polizia, confessi e te ne vai in galera?",
+            'graziella',"Sì, in effetti è un po' strano. Dice di aver avvelenato il caffè. I risultati dell'autopsia li abbiamo venerdì.")},
+          {k:'g_anag',t:"Mi servono i dati dei monaci.",if:()=>F('m_marco1')&&!F('anagrafe'),run:async()=>{
+            await L('me',"Grazziè, riusciamo ad avere i dati di Barnaba e, già che ci siamo, degli altri quattro monaci di Santa Cecilia?",'graziella',"Penso di sì. Provo con l'ufficio anagrafe.");
+            set('anagrafe');if(F('m_foto')){await say('narr',"Due giorni dopo.");await arrivoCert()}}},
+          {k:'g_arci',t:"Che vuole l'arcivescovo?",once:1,if:()=>F('m_marco1'),run:()=>L('graziella',"È quello che non capisco. Perché è così in pena, e perché vuole il massimo riserbo? È sospetto, no?",
+            'me',"Giusto. Se uno decide di tornare nel mondo a farsi tentare dal diavolo saranno pure fatti suoi, o no?")},
+          {k:'x',t:"Niente, Grazziè. Continua.",end:1}
+        ]);
+      }},
+    {id:'tonino',actor:'tonino',n:'Tonino',x:252,y:131,dir:-1,
+      look:"L'agente Modun Antonio detto Tonino, da Motta di Livenza. Tonino «persempre»: la devozione fatta ragione di vita.",
+      talk:async()=>{
+        if(!F('u_brief'))return L('tonino',"Dottore, dovrebbe dirci come procedere.",'me',"Fammi prima sentire Graziella, Tonì.");
+        await dlg([
+          {k:'t_ipo',t:"Barnaba: ci capisco ancora meno.",if:()=>F('m_foto')&&!F('t_ipo'),run:async()=>{
+            await L('me',"Ho parlato con tutti. Se c'era uno contrario a Barnaba era padre Leone, non l'abate. E allora perché scappare di nascosto dall'abate?",
+              'tonino',"Provi a pensarci, dottore. Barnaba scrive i post, la mensa si riempie. Ma con i poveri a tavola può sedere solo l'abate. La cosa comincia ad andargli stretta.",
+              'tonino',"Si confida con padre Leone, che lo convince che l'unica è scappare. Di notte lo fa uscire, richiude il portone, rimette le chiavi a posto. Ed è bingo: il circo è finito.",
+              'me',"Mi hai convinto, Tonì. Cioè, non so se sia andata proprio così, ma come versione mi basta. E se la faranno bastare anche il questore e l'arcivescovo.");
+            set('t_ipo')}},
+          {k:'t_social',t:"Voi due e i social.",once:1,if:()=>F('m_ragazzi'),run:()=>L('me',"Io ho cinquant'anni e va bene. Ma che nessuno di voi due usi i social non può continuare. Ci siamo persi una star locale di Internet.",
+            'me',"Dalla settimana prossima ci mettiamo qui con mia figlia Laura e ci facciamo spiegare come funziona. D'accordo?",'tonino',"Sì, dottore.")},
+          {k:'t_cena',t:"Mercoledì fatti bello.",once:1,if:()=>F('m_marco1'),run:()=>L('me',"Mercoledì fatti bello, Tonì, che ti porto a cena fuori.",'tonino',"Dove, dottore?",'me',"In monastero.")},
+          {k:'x',t:"Niente, Tonì.",end:1}
+        ]);
+      }}
+  ]};
+async function arrivoCert(){
+  await L('graziella',"Dottore, sono arrivati dall'anagrafe i certificati che mi aveva chiesto. Penso siano interessanti.");
+  give('certificati');set('cert');
+}
+
+/* MAPPA */
+rooms.mappa={name:'Fossa Etrusca e dintorni',noPlayer:1,
+  bg(){
+    grad(0,0,W,74,'#0e1230','#34315f');for(let i=0;i<50;i++)R(rnd(i)*W,rnd(i+60)*44,1,1,i%5?'#8a90b8':'#e8e8f8');
+    R(250,12,7,7,'#f0ecd0');R(249,13,9,5,'#f0ecd0');
+    ridge([[0,66],[30,40],[58,24],[96,30],[120,50],[160,38],[204,60],[248,52],[320,74]],'#1b1c38');
+    ridge([[40,34],[58,14],[84,16],[100,32]],'#2c2d4e');che(44,18,54,16,'#232442');
+    ridge([[0,96],[60,78],[130,86],[200,74],[262,84],[320,96]],'#222a4c');
+    R(56,36,30,2,'#a8553a');R(58,38,26,9,'#c9bd9c');R(78,29,6,9,'#c9bd9c');R(77,28,8,1,'#a8553a');[[62,41],[68,41],[74,41],[80,33]].forEach(p=>R(p[0],p[1],2,2,'#f0c860'));
+    ln(72,48,90,60,'#4a4a6c');ln(90,60,70,72,'#4a4a6c');ln(70,72,110,88,'#4a4a6c');ln(110,88,140,100,'#4a4a6c');ln(162,100,206,84,'#4a4a6c');ln(162,104,250,100,'#4a4a6c');ln(274,100,294,104,'#4a4a6c');
+    for(let i=0;i<30;i++){const x=104+rnd(i)*100|0,y=90+rnd(i+31)*36|0,w=6+rnd(i+5)*6|0,h=5+rnd(i+8)*6|0;R(x,y,w,h,i&1?'#3a3e5e':'#454a6c');R(x-1,y-1,w+2,1,'#5a3a40');if(rnd(i+2)>.3)R(x+1+(rnd(i+3)*(w-3)|0),y+2,1,2,'#f0c860')}
+    R(138,94,26,14,'#7a8090');R(136,93,30,2,'#565c6c');for(let k=0;k<4;k++){R(141+k*6,97,3,3,'#f0e0a0');R(141+k*6,103,3,3,k%2?'#f0e0a0':'#3a4050')}R(150,90,2,3,'#4a8af0');
+    R(204,70,28,12,'#5c5c68');R(200,82,36,3,'#484854');R(200,62,6,20,'#5c5c68');R(199,61,8,2,'#484854');R(202,64,2,2,'#f8f0c0');for(let k=0;k<5;k++)R(210+k*4,74,2,3,'#22222a');
+    R(94,110,14,9,'#7a6a5a');R(93,108,16,2,'#5a3a40');R(98,113,3,3,'#f0c860');
+    R(248,90,28,14,'#c8c0b0');R(246,89,32,2,'#9a9486');R(260,93,4,1,'#c0392b');R(261,92,2,3,'#c0392b');for(let k=0;k<4;k++)R(251+k*6,98,3,3,'#8ab0c8');
+    ridge([[262,140],[280,124],[300,112],[320,104]],'#16265a');che(284,120,36,20,'#1e3272');
+    R(292,78,12,30,'#3a3a52');R(291,77,14,2,'#2a2a3e');R(294,80,8,3,'#f0c860');for(let k=0;k<4;k++)R(294,87+k*5,8,2,k%2?'#2a2a3e':'#55557a');
+  },
+  fx(t){
+    const b=((t*3|0)&1);
+    rooms.mappa.hs.forEach(h=>{if(h.if&&!h.if())return;const cx=h.r[0]+h.r[2]/2|0,y=h.r[1]-5+b;R(cx-2,y,5,2,'#e9b44c');R(cx-1,y+2,3,1,'#e9b44c');R(cx,y+3,1,1,'#e9b44c')});
+  },
+  hs:[
+    {id:'m_mon',n:'monastero di Santa Cecilia',lab:'Santa Cecilia',exit:1,wx:null,r:[50,26,42,24],look:"Il monastero, sotto una parete di roccia che prima o poi lo seppellirà.",use:exitTo('chiesa',52)},
+    {id:'m_com',n:'commissariato',lab:'Commissariato',exit:1,wx:null,r:[134,90,34,20],look:"Edificio anni Settanta, due piani, poca manutenzione.",use:exitTo('ufficio',70)},
+    {id:'m_car',n:'casa circondariale',lab:'Carcere',exit:1,wx:null,r:[196,60,42,26],look:"Il carcere. Le visite non sono mai a sorpresa.",use:exitTo('carcere',60)},
+    {id:'m_spi',n:'casa Spiri',lab:'Casa Spiri',exit:1,wx:null,r:[88,106,24,14],if:()=>F('c_libero')&&F('barnaba'),look:"Casa del professore.",use:exitTo('salotto',60)},
+    {id:'m_bar',n:'bar del padiglione 18',lab:'Padiglione 18',exit:1,wx:null,r:[244,88,36,18],if:()=>F('msg'),look:"L'ospedale di Lirino. Al padiglione 18 c'è la sala autoptica. E un bar.",use:exitTo('bar',40)},
+    {id:'m_att',n:'attico di Luca',lab:'Da Luca',exit:1,wx:null,r:[286,74,24,34],if:()=>F('c_spiri1'),look:"L'attico di Luca sul golfo di Lirino. La cena del giovedì.",use:exitTo('attico',60)}
+  ]};
+
+/* CHIESA */
+rooms.chiesa={name:'Santa Cecilia, la chiesa',base:127,min:22,max:296,start:52,
+  bg(){
+    grad(0,0,W,110,'#ece2c6','#cdbf9c');R(0,108,W,32,'#b3a384');for(let x=0;x<W;x+=32)R(x,108,1,32,'#9c8d70');R(0,119,W,1,'#9c8d70');R(0,108,W,1,'#8f8166');
+    for(let k=0;k<4;k++){const cx=76+k*64;R(cx-9,12,18,38,'#b8ab8c');R(cx-7,14,14,34,'#fff8dc');R(cx-5,12,10,2,'#fff8dc');R(cx,12,1,36,'#d8ccae');R(cx-7,30,14,1,'#d8ccae')}
+    R(139,62,2,16,'#6a5030');R(135,66,10,2,'#6a5030');
+    for(let k=0;k<4;k++){const cx=76+k*64;beam([[cx-7,48],[cx+7,48],[cx+50,112],[cx+18,112]],'#fff2b0',.2)}
+    for(let k=0;k<4;k++){const x=40+k*64;R(x,8,10,100,'#dcd0b2');R(x+7,8,3,100,'#b8ab8c');R(x-2,8,14,4,'#c4b796');R(x-2,104,14,4,'#c4b796')}
+    R(4,36,30,72,'#4a3420');R(6,42,26,66,'#5e4228');R(18,42,1,66,'#2a1c10');[[10,52],[26,52],[10,80],[26,80]].forEach(p=>R(p[0],p[1],2,2,'#2a1c10'));
+    R(284,56,28,52,'#4a3420');R(286,58,24,50,'#5e4228');R(305,82,2,2,'#c8b060');
+    R(276,73,3,1,'#333');R(276,75,3,3,'#c8a840');R(277,76,1,1,'#b3a384');R(277,78,1,6,'#c8a840');R(278,82,2,1,'#c8a840');
+    R(252,92,2,16,'#6a5a3a');R(245,90,16,2,'#6a5a3a');R(248,106,10,2,'#6a5a3a');for(let k=0;k<3;k++)R(247+k*5,84,2,6,'#f4ecd8');
+  },
+  fx(t){for(let k=0;k<3;k++){const f=((t*8+k*3)|0)%3;R(247+k*5,82-(f===0?1:0),2,2+(f===0?1:0),'#ffb840');R(247+k*5+(f===1?1:0),81,1,1,'#fff0a0')}},
+  fg(){R(0,131,W,9,'#4e3620');for(let x=-8;x<W;x+=82){R(x+6,126,72,6,'#6e4c2c');R(x+6,126,72,1,'#8a6238')}},
+  async enter(){
+    if(!F('m_sigaro')){set('m_sigaro');
+      await L('narr',"Il monastero era in cima alla collina, nascosto dietro una parete di roccia che un giorno o l'altro si sarebbe stancata e lo avrebbe seppellito.",
+        'me',"Ho ancora in mano il sigaro acceso.",
+        'narr',"Spense la brace sotto la scarpa e infilò il mozzicone nel portasigari d'argento, sperando che l'incenso assorbisse l'odore aspro di tabacco.")}
+  },
+  hs:[
+    {id:'portone',n:'portone',exit:1,r:[4,36,30,72],look:"L'unica porta da cui si entra e si esce. La sera viene chiusa.",use:exitTo('mappa')},
+    {id:'luce',n:'finestroni',r:[60,10,220,42],wx:null,look:"Una luce soffice taglia porzioni di navata. Il posto ideale dove venire a pregare. Anche se a pregare qui dentro non c'è nessuno."},
+    {id:'ceri',n:'ceri',r:[244,80,18,28],look:"Comincio ad avvertirlo come familiare, l'odore dei ceri.",take:"Rubare in chiesa. Da commissario. No.",use:"Accenderne uno? E per chi?"},
+    {id:'chiave',n:'chiave del portone',r:[273,71,9,15],look:"La chiave. Sempre in sagrestia, disponibile per tutti, in ogni momento. Chi ha desiderio di affacciarsi al mondo, anche di notte, è libero di farlo.",
+      take:"Resta dov'è. Sabato mattina era al suo posto, e il portone era chiuso. È questo che non torna.",use:"Resta dov'è. Sabato mattina era al suo posto, e il portone era chiuso. È questo che non torna."},
+    {id:'sagrestia',n:'sagrestia, verso il chiostro',exit:1,r:[284,56,28,52],look:"Di qui si passa in sagrestia, e dalla sagrestia nel chiostro.",use:exitTo('chiostro',280)},
+    {id:'leone',actor:'leone',n:'padre Leone',x:176,y:127,dir:-1,if:()=>F('m_regola'),
+      look:"Barba bianca oltre il cordone del saio, sopracciglia lunghe e folte. Giudica di metro in metro se le spazzate della sua ramazza siano state adeguate.",
+      talk:async()=>{
+        if(!F('l_intro')){set('l_intro');
+          await L('leone',"So che è qui per me, commissario.",'me',"Mi ha scoperto. Non ce l'ho la faccia del credente, vero?",
+            'leone',"Per sua fortuna no. È troppo giovane per aver già paura della morte.",
+            'me',"Che idea si è fatto della scomparsa di Barnaba?",'leone',"Che sia stata una benedizione.")}
+        if(!F('m_leone')){
+          await say('leone',"Conosce la nostra Regola?");
+          if(!F('regolaLetta'))return L('me',"Ehm… a grandi linee.",'leone',"Allora torni quando l'avrà studiata. E capita. Io intanto ho da spazzare.");
+          await L('me',"Certo.",'leone',"Perfetto. Allora mi segua con il pensiero.");set('m_leone');
+        }
+        await dlg([
+          {k:'l_altrove',t:"Perché una benedizione?",run:()=>L(
+            'leone',"Noi siamo la storia dell'Occidente. Sa perché siamo ancora qui? Perché noi benedettini abbiamo sempre saputo chi siamo. E soprattutto dove siamo.",
+            'leone',"Poniamo che lei ami una donna che vive a due ore di macchina. Vi vedete il sabato. Poi, un giorno, lei può trasferirsi a Fossa. Cosa ne penserebbe? E sia sincero.",
+            'me',"Beh… potrei avere paura che il fascino di quella relazione a distanza venisse meno.",
+            'leone',"Esatto. Così funziona un monastero. Noi siamo un altrove. Visibili da ogni punto della città ma non integrati. Disponibili per tutti, ma non per chiunque.")},
+          {k:'l_barnaba',t:"E Barnaba che c'entra?",run:()=>L(
+            'leone',"Vede quante sedie ci sono in refettorio? Da sei mesi i poveri della zona, gli immigrati, i ragazzi con i genitori in carcere mangiano da noi. Non spesso, commissario. Sempre.",
+            'me',"Ma accogliere poveri e diseredati non fa parte dei vostri doveri, diciamo, contrattuali?",
+            'leone',"Canone cinquantatré. Gli ospiti si accolgono per prima cosa in chiesa, con una pagina della Bibbia. Aprire le porte come in una comune universale? No.",
+            'leone',"Quelli non siamo noi, commissario. Quelli sono i francescani. Un'altra razza.")},
+          {k:'l_abate',t:"E l'abate era d'accordo?",run:()=>L(
+            'leone',"Lei avrebbe resistito, se si fosse trovato la chiesa piena ogni domenica?",'me',"Lei invece ha resistito.",
+            'leone',"Non si sopravvive fino a ottantatré anni in un monastero se ci si lascia incantare dalle sirene delle parole. Men che mai da queste diavolerie tecnologiche.")},
+          {k:'l_chiave',t:"Sabato mattina, la chiave.",run:()=>L('leone',"Sono il primo ad alzarmi. Il portone era chiuso. La chiave era in sagrestia, al solito posto.")},
+          {k:'x',t:"La lascio alla sua ramazza.",end:1}
+        ]);
+        if(!F('m_ragazzi'))await say('me',"«Diavolerie tecnologiche»? Mi mancano i due giovani. Saranno nel chiostro.");
+      }}
+  ]};
+
+/* CHIOSTRO */
+rooms.chiostro={name:'Santa Cecilia, il chiostro',base:132,min:22,max:298,start:280,
+  bg(){
+    R(0,0,W,46,'#a9bfd0');R(8,8,34,4,'#c8d8e2');R(20,5,18,3,'#c8d8e2');R(48,20,24,3,'#bccede');
+    ridge([[76,0],[96,26],[130,40],[170,34],[214,44],[262,38],[320,46]],'#6f665a',1);
+    for(let i=0;i<110;i++){const x=120+rnd(i)*200|0,y=rnd(i+50)*32|0;R(x,y,3+(rnd(i+9)*4|0),1,i%3?'#5c544a':'#857b6c')}
+    R(0,40,W,6,'#a8553a');che(0,40,W,6,'#8f4530');R(0,46,W,60,'#d9cdb0');R(0,46,W,2,'#b8ab8c');
+    const xs=[14,64,108,162,208,262],ws=[40,34,44,36,42,44];
+    xs.forEach((x,k)=>{const w=ws[k];R(x,58,w,48,'#4b4138');R(x+2,54,w-4,4,'#4b4138');R(x+5,51,w-10,3,'#4b4138');R(x,58,w,8,'#3c342d');
+      R(x-5,58+(k%2)*2,5,3,'#c4b796');R(x+w,58+((k+1)%2)*2,5,3,'#c4b796');R(x+w+1,61,2,45,'#c8bc9e')});
+    R(22,64,24,42,'#6a4c2e');R(24,66,20,40,'#7a5a38');R(22,100,24,6,'#a89c80');R(22,103,24,3,'#988c70');
+    R(272,64,24,42,'#4a3420');R(274,66,20,40,'#5e4228');R(277,84,2,2,'#c8b060');
+    R(58,98,202,8,'#c4b796');R(58,98,202,1,'#e4dac0');
+    R(0,106,W,34,'#b8ab8c');for(let x=6;x<W;x+=26)R(x,106,1,34,'#a59878');R(0,122,W,1,'#a59878');R(0,106,W,1,'#8f8166');
+    R(94,110,132,14,'#6a8450');che(94,110,132,14,'#5c7646');
+    R(146,78,30,3,'#6a5030');R(148,80,2,18,'#6a5030');R(172,80,2,18,'#6a5030');R(160,81,1,10,'#888');R(158,90,5,5,'#7a6a52');
+    R(148,98,26,16,'#a89c80');R(146,96,30,3,'#c8bca0');R(152,97,18,1,'#2a2a2a');R(148,106,26,1,'#988c70');
+  },
+  hs:[
+    {id:'colonne',n:'colonnato',r:[60,50,200,48],wx:null,look:"Colonne, capitelli e basamenti rubano lo spazio alla pietra, come se combattessero con la montagna. Un monastero è fatto per resistere al premere del mondo."},
+    {id:'roccia',n:'parete di roccia',r:[90,0,230,38],wx:null,look:"Un giorno o l'altro la montagna si stancherà. Qui lo sanno perfettamente: nel mondo si va e si viene senza grandi preavvisi."},
+    {id:'pozzo',n:'pozzo',r:[146,78,30,36],look:"Non si sente nessun rumore, né voci. Il tempo sembra sospeso fino a data da destinarsi.",use:"Un commissario che cala il secchio nel pozzo. No."},
+    {id:'scala',n:'scala delle celle',exit:1,r:[22,64,24,42],look:"Una scala stretta e ripida. Sopra, un corridoio di celle come la camerata di un ospedale d'altri tempi.",
+      use:async()=>{if(!F('m_cella'))return say('me',"Le celle sono al piano di sopra. Meglio farsi accompagnare dall'abate.");await go('cella',34)}},
+    {id:'chiesa',n:'verso la chiesa',exit:1,r:[272,64,24,42],look:"La sagrestia, e di lì la chiesa. Queste porte non le chiudono mai.",use:exitTo('chiesa',270)},
+    {id:'marco',actor:'marco',n:'padre Marco',x:112,y:132,dir:1,
+      look:"Sessant'anni o giù di lì. Sandali d'ordinanza, saio con il cordone, occhialini tondi con una montatura d'osso colorata. Un sorriso non di circostanza.",
+      item:{certificati:()=>svelaBarnaba(),fototessera:async()=>{if(F('barnaba'))return say('marco',"Avevo più capelli, vero?");await L('marco',"Era molto giovane, allora.",'me',"Già.")},
+        regola:['marco',"Per noi quella regola è una specie di seconda pelle. La tenga. Non può che farle bene."],sigaro:['marco',"Robaccia industriale. Abbia rispetto dei suoi polmoni, commissario."]},
+      talk:async()=>{
+        if(F('barnaba'))return L('marco',"Il mistero, commissario. Il mistero.");
+        if(!F('m_marco1')){set('m_marco1');
+          await L('marco',"Buongiorno.",'me',"Buongiorno. Sono il commissario Malversi.",
+            'marco',"Grazie mille per essere venuto appena rientrato dalle vacanze. Sono padre Marco, l'abate. Ma può chiamarmi semplicemente Marco.",
+            'narr',"Malversi rimase infastidito dal fatto che il questore rivelasse in giro il suo piano ferie.")}
+        await dlg([
+          {k:'accusa',t:"No, grazie… signor Barnaba.",if:()=>has('certificati'),run:()=>svelaBarnaba(),stop:()=>true},
+          {k:'social',t:"Perché non mi ha detto di Facebook?",if:()=>F('m_ragazzi')&&!F('m_foto'),run:async()=>{
+            await L('me',"Perché non mi ha detto della fama social di Barnaba?",'marco',"Pensavo che lo sapesse.",'narr',"Era palesemente infastidito.",
+              'marco',"Tenga. È l'unica immagine che ho di lui: una vecchia fototessera.");give('fototessera');set('m_foto')}},
+          {k:'k_scomp',t:"Mi dica della scomparsa.",run:()=>L(
+            'me',"Mi dicono che il vostro confratello è scomparso venerdì sera, da… compiuta?",
+            'marco',"Compieta. Sveglia alle cinque e trenta, preghiera, lavoro, messa delle diciassette, vespri, cena. Compieta alle ventuno, e poi tutti in cella.",
+            'me',"Il che significa che alle cinque e trenta di sabato mattina…",'marco',"Eravamo in quattro, alla preghiera.")},
+          {k:'k_porte',t:"Da dove si esce?",run:()=>L(
+            'marco',"Soltanto dal portale della chiesa. La sera lo chiudo io. Venerdì era chiuso: ho controllato personalmente.",
+            'me',"Però l'unica porta la apre e la chiude lei. Il che forse è almeno un po' diabolico, no?",
+            'marco',"No, commissario. La chiave è sempre in sagrestia, per tutti. Le altre porte non le chiudiamo mai: noi crediamo che il diavolo si nasconda dietro le porte chiuse.",
+            'marco',"Il bene non ha regole. È il male che chiede patti. Silenzio, connivenza, menzogna.")},
+          {k:'k_tipo',t:"Che tipo era Barnaba?",run:async()=>{
+            await L('marco',"Forse è il caso di proseguire con la nostra gita nel monastero. Salga pure: l'ultima cella sulla destra.");
+            if(!F('m_cella')){set('m_cella');await L('me',"Senza Behike?",'marco',"Senza Behike.")}}},
+          {k:'k_fumo',t:"Si sente tanto la puzza di sigaro?",once:1,run:()=>L(
+            'marco',"Abbastanza. Soprattutto se fuma quella robaccia industriale.",
+            'narr',"Sul terrazzino della sua cella l'abate aprì una scatola di legno: Montecristo, Davidoff, Cohiba. Prese un Behike. Non poteva costare meno di quattrocento dollari.",
+            'marco',"Commissario, siamo monaci, non fanatici. Se Dio ha inventato il tabacco e il fuoco, non vedo cosa ci sia di male a unire due cose così belle.",
+            'narr',"Malversi diede un'ampia boccata e, per un momento, pensò che fare l'abate in fondo non era la peggiore delle vite. Poi si ricordò del celibato.")},
+          {k:'k_rapp',t:"Lei che rapporto aveva con lui?",once:1,if:()=>F('m_regola'),run:()=>L(
+            'me',"Quindi la risposta a «che tipo era Barnaba» sono quei libri.",
+            'marco',"C'è bisogno di qualcuno che dedichi la vita alle domande forti, e guidi quelli come lei e me, che dicono di non avere tempo.",
+            'me',"Anche lei, che è un monaco?",'marco',"Io non sono più un monaco, ma un abate. Sono due mestieri diversi, mi creda. A volte quasi non si ha il tempo di pregare.",
+            'marco',"Con Barnaba il rapporto era molto stretto. Ha risvegliato dentro di me la voce della vocazione. Il suo arrivo, sei mesi fa, è stato un regalo per tutti.")},
+          {k:'k_osp',t:"Potrei fermarmi qualche giorno.",once:1,if:()=>F('m_cella'),run:()=>L(
+            'marco',"Se vuole, una sera può fermarsi. Usiamo le celle vuote per ospitare pellegrini.",
+            'me',"Se per ogni giorno di permanenza mi offre un sigaro della sua riserva, potrei anche restare.",
+            'marco',"Sarebbe una vocazione molto costosa. Ma se piacesse a Dio, perché no.")},
+          {k:'x',t:"A più tardi, Marco.",end:1}
+        ]);
+      }},
+    {id:'dom',actor:'dom',n:'Domenico',x:216,y:132,dir:-1,if:()=>F('m_leone'),look:"Un monaco molto giovane. Non sa dove tenere le mani, sudatissime. È lui quello che risponde.",talk:()=>ragazzi()},
+    {id:'nic',actor:'nic',n:'Nicola',x:238,y:132,dir:-1,if:()=>F('m_leone'),look:"Il più giovane. Prima di parlare guarda il confratello. Dei due sembra il più modernista.",talk:()=>ragazzi()}
+  ]};
+async function ragazzi(){
+  if(F('m_ragazzi'))return L('nic',"Tutta Fossa segue quel profilo, commissario. E tutti sono in attesa che ricominci a scrivere.");
+  await L('me',"Premetto che questo non è un interrogatorio. Non ci sono reati né imputati. Chiacchieriamo.",
+    'me',"Negli ultimi mesi mensa piena, messa piena. L'abate era contento?",
+    'dom',"Padre Marco ha accolto gli ospiti con grande fervore. Anche se ci invitava sempre alla moderazione.",
+    'me',"E Barnaba mangiava con loro? Li incontrava alle omelie?",
+    'dom',"No. Con gli ospiti, come previsto dalla Regola, mangia l'abate. E non tutti i monaci sono sacerdoti: qui dicono messa solo padre Marco e padre Leone.",
+    'me',"E allora come faceva ad avere sempre più pubblico?",
+    'dom',"Era un processo inevitabile. Ormai la cosa era diventata, come si dice… virale. Le visite al profilo crescevano di giorno in giorno.",
+    'me',"Scusatemi, ma continuo a non capire.",
+    'nic',"Commissario, ma lei li ha mai visti i post del monastero? Lei non ha Facebook?",
+    'me',"No. E penso nemmeno l'agente Modun.",'nic',"Allora dobbiamo andare in sala lettura. Lì c'è un computer comune.");
+  await show('schermo',async()=>{
+    await L('narr',"Nicola avviò il lentissimo computer in dotazione ai monaci. Dopo qualche secondo, sullo schermo apparve il profilo di Barnaba.",
+      'me',"Giustizia sociale, uguaglianza, accoglienza, mense aperte. Centinaia di commenti a ogni post.",
+      'me',"Ecco servite le diavolerie tecnologiche di padre Leone. Quindi è così che Barnaba ha fatto pubblicità al monastero.",
+      'nic',"Proprio così. Ma pensavamo lo sapeste. Tutta Fossa segue questo profilo.")});
+  set('m_ragazzi');
+  await say('me',"Una star locale di Internet. E l'abate non me ne ha fatto parola.");
+}
+async function svelaBarnaba(){
+  if(F('barnaba'))return;
+  await L('marco',"Commissario, che bella sorpresa. Se è qui per la messa è presto, ma intanto posso offrirle un caffè.",
+    'me',"No, grazie mille…",'me',"…signor Barnaba.",
+    'marco',"Devo dirle che mi aspettavo ci mettesse di meno. Ora però quel caffè non è più un invito. È d'obbligo.",
+    'marco',"Sei mesi fa ho aperto un profilo Facebook. Il monastero era diventato un museo, le messe deserte. Mi sono registrato con il mio nome e cognome.",
+    'me',"Marco Barnaba.",
+    'marco',"Era come scrivere un diario e lasciarlo aperto su una panchina. Poi il direttore de «La pagina» ha invitato tutti a leggere «i post del monaco Barnaba». Apriti cielo.",
+    'me',"E qui scatta la truffa.",
+    'marco',"Quale truffa? Non ho mai ingannato nessuno. Ma era troppo forte la tentazione di tornare a fare il monaco, scrollandomi di dosso il vestito da abate.",
+    'marco',"Senza che nessuno di noi dicesse niente, cominciò a diffondersi la voce che Barnaba facesse vita da eremita nella sua cella.",
+    'marco',"Chi veniva qui non cercava una persona. Cercava un luogo dove essere comunità.",
+    'me',"Quella che mi ha fatto vedere non era la cella di Barnaba. Era la sua biblioteca.",
+    'marco',"Esatto. I libri di quando ero Barnaba: di quando da giovane studiavo per prendere i voti, e sembrava che la Chiesa dovesse cambiare pelle.",
+    'me',"E allora perché farlo scomparire?",
+    'marco',"Per uno solo: l'arcivescovo. Voleva incontrarlo. Brevettarlo, farne la mascotte della diocesi. Ho dovuto, a malincuore, farlo scappare.",
+    'me',"Non poteva dire a tutti che Barnaba non reggeva la pressione e se n'era andato?",
+    'marco',"Certo. Però avrei deluso tutti i miei followers, non trova? Il mistero, commissario. Il mistero.");
+  set('barnaba');drop('certificati');drop('fototessera');
+  await finale();
+}
+
+/* CELLA */
+rooms.cella={name:'La cella di Barnaba',base:131,min:24,max:300,start:34,
+  bg(){
+    grad(0,0,W,112,'#c9c0a8','#b3a98f');R(0,112,W,28,'#8f5e40');for(let x=0;x<W;x+=16)R(x,112,1,28,'#7a4e34');R(0,125,W,1,'#7a4e34');R(0,112,W,1,'#5e3c28');
+    R(148,12,26,30,'#8a7e66');R(152,16,18,22,'#e4eef2');R(160,16,2,22,'#8a7e66');R(152,26,18,1,'#8a7e66');R(151,34,4,6,'#7a2a22');R(155,35,3,5,'#2f4a6a');R(164,36,5,4,'#6a5a2a');
+    beam([[152,38],[170,38],[210,112],[150,112]],'#fff2c0',.14);
+    R(28,12,106,60,'#6a5236');for(let r=0;r<4;r++){R(30,14+r*14,102,12,'#3a2c1c');books(31,14+r*14,100,12,r*37+5);R(28,26+r*14,106,2,'#4a3824')}
+    R(186,20,44,54,'#6a5236');for(let r=0;r<3;r++){R(188,22+r*17,40,15,'#3a2c1c');books(189,23+r*17,38,14,r*53+11);R(186,37+r*17,44,2,'#4a3824')}
+    R(14,78,4,36,'#5a4028');R(114,88,3,26,'#5a4028');R(18,98,96,14,'#7a6a52');R(18,92,96,6,'#e8e2d0');R(20,88,20,5,'#f4f0e4');
+    R(64,89,16,4,'#e8e2d0');R(66,87,12,2,'#dcd6c4');R(80,90,5,3,'#7a2a22');R(18,112,2,4,'#5a4028');R(112,112,2,4,'#5a4028');
+    R(122,94,18,20,'#6a5030');R(124,100,14,1,'#4a3418');R(130,103,2,1,'#c8a840');R(127,84,8,4,'#d8c070');R(130,88,2,6,'#555');
+    pile(150,114,5,3);pile(166,114,3,9);pile(176,114,6,14);pile(214,114,4,21);
+    R(238,30,40,84,'#5e4630');
+    if(F('m_armadio')){R(240,32,36,80,'#1c1612');R(240,52,36,1,'#3a2c1c');R(276,30,7,84,'#6e5438')}
+    else{R(240,32,17,80,'#6e5438');R(259,32,17,80,'#6e5438');R(255,70,1,4,'#c8a840');R(260,70,1,4,'#c8a840')}
+    R(288,84,22,6,'#e4e4e0');R(296,90,5,22,'#c8c8c4');R(298,78,2,6,'#aaa');R(290,80,8,4,'#3a5a3a');R(291,77,7,3,'#8a6a3a');R(301,81,7,3,'#4a2a4a');
+    R(0,36,10,78,'#5e4228');R(10,36,2,78,'#4a3420');
+  },
+  hs:[
+    {id:'porta',n:'porta, verso il chiostro',exit:1,r:[0,36,14,78],look:"La porta. Aperta, come tutte.",use:exitTo('chiostro',50)},
+    {id:'libri',n:'libri',r:[28,12,106,60],look:"La stanza è stracolma di libri, più dello studio dell'abate. Teologia, anni Ottanta: il Concilio, la Chiesa dei poveri.",take:"Me ne basta uno. Quello giusto."},
+    {id:'libri2',n:'altri libri',r:[150,96,76,18],look:"Sono ovunque. Dal davanzale della finestrella al lavabo.",take:"Me ne basta uno. Quello giusto."},
+    {id:'letto',n:'letto',r:[14,84,104,30],look:"Rifatto. Da sotto le lenzuola spunta una piccola pila di libri.",use:"Il riposino lo faccio a casa. Sul divano."},
+    {id:'comodino',n:'comodino',r:[120,82,22,32],
+      look:async()=>{await say('me',"Nel cassetto: un rosario, un quaderno a quadretti e un libricino rivestito di carta da imballaggio.");if(!F('m_regola'))await say('me',"È la Regola benedettina. Un'edizione degli anni Settanta, in latino e italiano.")},
+      use:async()=>rooms.cella.hs.find(h=>h.id==='comodino').take(),
+      take:async()=>{if(F('m_regola'))return say('me',"Il rosario e il quaderno restano qui.");
+        await L('me',"La Regola di San Benedetto. La prendo per un paio di giorni. Giuro che la riporto.",'narr',"«Faccia pure», aveva detto l'abate. «Non può che farle bene.»");
+        give('regola');set('m_regola');await say('me',"Barnaba pensava di conoscerla abbastanza bene da non averne più bisogno.")}},
+    {id:'armadio',n:'armadio',r:[238,30,44,84],
+      look:async()=>{if(F('m_armadio'))return say('me',"Vuoto. Non ci sono scarpe in giro, e il letto è rifatto.");await say('me',"Un piccolo armadio. Tecnicamente non ho un mandato. Ma penso che l'autorizzazione dell'abate basti.")},
+      use:async()=>{if(!F('m_armadio'))set('m_armadio');await L('me',"Vuoto.",'me',"O Barnaba è scappato, o qualcuno voleva che ai miei occhi sembrasse una fuga.")}},
+    {id:'lavabo',n:'lavabo',r:[286,74,26,38],look:"Asciutto. Ci tengono sopra dei libri."},
+    {id:'finestra',n:'finestrella',r:[148,12,26,30],wx:null,look:"Da qui nessuno è uscito. A meno di non essere molto, molto ascetici."}
+  ]};
+
+/* CARCERE */
+rooms.carcere={name:'Casa circondariale, sala colloqui',base:132,min:22,max:292,start:60,
+  bg(){
+    R(0,0,W,116,'#8b949c');grad(0,0,W,12,'#687078','#8b949c');R(0,70,W,46,'#687179');R(0,70,W,2,'#565e66');
+    R(0,116,W,24,'#55595c');che(0,116,W,24,'#4d5154');R(0,116,W,1,'#3a3e42');
+    R(56,14,44,26,'#3c444c');R(58,16,40,22,'#b9c8d2');for(let k=0;k<5;k++)R(62+k*8,16,2,22,'#3c444c');
+    beam([[58,38],[98,38],[150,116],[90,116]],'#dfeaf2',.12);
+    R(128,3,64,1,'#aab0b4');R(130,4,60,3,'#f0f4f0');
+    R(200,34,22,28,'#dcd8c8');for(let k=0;k<5;k++)R(203,38+k*4,16,1,'#8a8678');
+    R(268,34,36,82,'#4a525a');R(270,36,32,80,'#5c666e');R(278,44,16,10,'#22262a');for(let k=0;k<3;k++)R(281+k*5,44,1,10,'#5c666e');R(272,78,4,6,'#22262a');
+    [[272,38],[299,38],[272,112],[299,112]].forEach(p=>R(p[0],p[1],1,1,'#3a4046'));
+  },
+  mid(){R(116,98,100,3,'#9aa0a6');R(118,101,96,3,'#7a7f84');R(122,104,3,22,'#5c6064');R(209,104,3,22,'#5c6064');R(196,95,5,3,'#f0ece0')},
+  async enter(){if(!F('c_intro')){set('c_intro');await say('narr',"Il professore entrò nella sala colloqui accompagnato da una guardia, che subito chiuse la porta dietro di sé. Strinse con entrambe le mani quella del suo ospite.")}},
+  hs:[
+    {id:'porta',n:'uscita',exit:1,r:[268,34,36,82],look:"Di qui si esce. Io, almeno.",use:exitTo('mappa')},
+    {id:'finestra',n:'finestra con le sbarre',r:[56,14,44,26],wx:null,look:"Un rettangolo di cielo. A sbarre."},
+    {id:'avviso',n:'regolamento',r:[200,34,22,28],look:"Regolamento dei colloqui. Anche qui: chi entra, entra per obbedire."},
+    {id:'tavolo',n:'tavolo',r:[116,96,100,12],look:"Un tavolo, due sedie. Mi fa uno strano effetto vederlo qui: me lo ricordo nei corridoi del Liceo, seguito da un codazzo di studenti."},
+    {id:'spiri',actor:'spiri2',n:'il professor Spiri',x:188,y:120,dir:-1,behind:1,sh:42,if:()=>!F('c_libero'),
+      look:"Occhialini da lettura sulla punta del naso, maglioncino grigio con la zip, ciabatte di plastica. Si sfrega le mani lentamente. Non abbassa mai gli occhi.",
+      item:{sigaro:['spiri2',"La ringrazio, commissario. Ma ho la gastrite."],regola:['spiri2',"Benedetto. Un grande organizzatore. Ma io resto con i tragici."]},
+      talk:async()=>{
+        const sp='spiri2';
+        if(F('c_conf')){
+          if(!F('verbale'))return L(sp,"Ha letto la mia deposizione, commissario? Se si prende la briga di farlo, ne riparliamo volentieri.");
+          await L('me',"L'ho letta. Due frasi: «Ho sempre voluto ucciderla» e «Non bevete quel caffè, che è veleno».",
+            sp,"Le sottoscrivo ancora oggi. La seconda, se vuole, possiamo verificarla insieme a casa mia. Ma sarebbe un sacrificio enorme farle bere quell'intruglio.",
+            sp,"Sono colpevole, ma di un crimine diverso e sottile. Io e mia moglie ci siamo avvelenati la vita tutti i giorni. Una lunga tragedia che alla fine ha avuto la sua catastrofe.",
+            sp,"Il poliziotto è lei. Deve decidere se desiderare la morte di qualcuno per quasi cinquant'anni sia o non sia un reato. Io mi rimetto alla sua valutazione.");
+          const k=await choose([{k:1,t:"Non è un reato. Lei torna a casa, professore."},{k:2,t:"Lo è. Ma non sta nel mio codice."}]);
+          await say('me',k===1?"Non è un reato. Lei torna a casa, professore.":"Lo è, professore. Ma non sta nel mio codice. Lei torna a casa.");
+          await say('narr',"Al magistrato Malversi disse che la deposizione era stata confusionaria. Il professore non denunciò nessuno, e tornò a casa.");
+          set('c_libero');await finale();return;
+        }
+        if(F('b_infarto')){
+          await L('me',"Professore. Sua moglie non è morta avvelenata. Ha avuto un infarto.",
+            sp,"Commissario, sono figlio di un piccolo imprenditore di queste parti. Mio padre vendeva tessile. Io però amavo il greco. Eschilo. Platone. Tucidide.",
+            sp,"Mi concesse di iscrivermi a Lettere a una sola condizione: che sposassi la figlia del suo migliore amico.",
+            sp,"Odiavo mia moglie. L'ho sempre odiata. Non l'ho lasciata perché sono nato nel 1952: avevo stretto un patto. Però ho sperato che morisse. Ogni giorno. Ogni mattina.",
+            sp,"Sa come dice Pascoli? Il dolore è più dolore se tace. Per questo ho confessato. Per fare un po' di teatro.",
+            sp,"Il palco è il posto in cui gli uomini mettono in scena il peggio di loro, così da poterlo guardare. E liberarsene. Volevo sentirmi, per qualche giorno, il carnefice di mia moglie.",
+            'me',"Professore, sa che potrei accusarla di falsa testimonianza? Ha affermato di aver avvelenato sua moglie.",
+            sp,"Spero che quello che sto per chiederle non la offenda. Lei ha letto la mia deposizione?");
+          set('c_conf');
+          if(!F('verbale'))return L('me',"In verità no.",sp,"Lo immaginavo. E la capisco. Se però si prende la briga di andarla a leggere, ne riparliamo.");
+          return rooms.carcere.hs.find(h=>h.id==='spiri').talk();
+        }
+        if(F('c_spiri1'))return L(sp,"So che io e lei ci rivedremo. Non mi faccia aspettare troppo, però.");
+        if(!F('c_ciao')){set('c_ciao');await L(sp,"Commissario, buongiorno. Vedo con piacere che anche lei è mattiniero.",'me',"Buongiorno, professore.")}
+        await dlg([
+          {k:'s_come',t:"Come sta? Com'è il trattamento?",once:1,run:()=>L(sp,"Ottimo. Sono il più anziano qui dentro, e nessuno avrebbe il cuore di maltrattare «il nonno». Tra di loro mi chiamano così.",
+            sp,"Li ho sentiti all'alba, durante il giro dei corridoi. Non sono abituati a ospiti affetti da insonnia senile.")},
+          {k:'s_perche',t:"Tutto un po' troppo lineare.",once:1,run:()=>L(
+            sp,"Sono reo confesso. Ho chiamato io la polizia, ho aperto la porta ai suoi agenti. Permette che faccia io il poliziotto e formuli un'ipotesi investigativa?",
+            sp,"Lei vede efferatezze di ogni genere. Vi paghiamo per essere i primi ad aprire quella porta, quando qualcuno della nostra specie dà di matto, in qualche periferia dell'umano.",
+            sp,"Poi una mattina le dicono di un vecchio professore che ha avvelenato la moglie. E lei pensa: non mi convince del tutto. Anche io, al posto suo, sarei venuto.",
+            'narr',"Malversi non sentiva la parola «efferatezza» dagli anni dell'università. E anche «periferia dell'umano» aveva colpito duro. Ma fece finta di niente.")},
+          {k:'s_racc',t:"Mi racconta com'è andata?",run:async()=>{await L(
+            sp,"Partiamo dal caffè. Sei mesi fa mi sono lasciato convincere da un'offerta: trenta pacchetti. Imbevibile. Ma mi sentivo un idiota al pensiero di buttarlo.",
+            sp,"Ogni mattina portavo una tazzina a mia moglie. Io non posso berlo subito, a stomaco vuoto, per via della gastrite.",
+            'narr',"«Non lo dica a me», pensò Malversi, verificando che nella tasca interna della giacca il blister di Maalox fosse al suo posto.",
+            sp,"Anche sabato l'ha bevuto senza battere ciglio. Dopo un'ora, quando sono tornato in camera per vestirmi, era già successo tutto.");set('s_racc')}},
+          {k:'s_sente',t:"E adesso come si sente a raccontarlo?",if:()=>F('s_racc'),stop:()=>true,run:async()=>{
+            await L(sp,"Commissario, lei ha mai letto Le Coefore di Eschilo?",'me',"Non recentemente.");
+            await show('vaso',async()=>{
+              vasoPh=0;await say(sp,"Agamennone, per vincere a Troia, uccide la figlia Ifigenia. Tornato ad Argo trionfatore, viene ucciso dalla moglie Clitemnestra.");
+              vasoPh=1;await say(sp,"Dieci anni dopo il figlio Oreste torna e, sulla tomba del padre, giura di uccidere la madre per vendicarlo.");
+              vasoPh=2;await L(sp,"Un istante prima del colpo si blocca: diventare matricida, o lasciare invendicato il padre? Alla fine la uccide.",
+                sp,"Ma non si concentri sul pugnale. Quello è solo il finale. La vera tragedia avviene prima: nei giorni, in una lunga serie di scelte tra alternative terribili.",
+                sp,"Sa i greci come chiamavano il finale delle tragedie? Katastrophé.");
+            });
+            await L(sp,"La catastrofe è il momento in cui i conflitti finalmente esplodono. Il punto zero da cui ripartire.",
+              sp,"Mi chiede cosa provo. La tragedia non è mai la morte, commissario, mi creda. È la vita.",
+              'me',"Credo che per ora vada bene così.",
+              sp,"Mi scusi se ho fatto un po' il professore. Non mi faccia aspettare troppo, però. Ho comunque settant'anni.",
+              sp,"Di cose avvelenate è piena la vita, e non si sa mai quando può passare il cavallo pallido a portarci via, no?");
+            set('c_spiri1');
+            await say('me',"Il cavallo pallido. Giovedì, da Luca, lo chiedo a Mario: è lui quello che ha letto tutto.");
+          }},
+          {k:'x',t:"Per ora basta così.",end:1}
+        ]);
+      }}
+  ]};
+
+/* ATTICO */
+rooms.attico={name:"L'attico di Luca, sul golfo di Lirino",base:133,min:22,max:300,start:60,
+  bg(){
+    R(0,0,W,116,'#231d24');R(48,8,254,82,'#0c0e1a');grad(50,10,250,42,'#10142e','#272c58');R(50,52,250,36,'#141c3c');
+    for(let i=0;i<34;i++)R(52+rnd(i)*246,11+rnd(i+70)*30,1,1,'#aab0d0');
+    R(86,18,6,6,'#f0ecd0');R(85,19,8,4,'#f0ecd0');che(82,54,14,26,'#3a4270');
+    R(50,48,250,5,'#0b0d18');for(let i=0;i<46;i++){const x=52+rnd(i+3)*246|0;R(x,49+rnd(i+7)*3,1,1,'#f0c860');R(x,54+rnd(i+9)*12,1,1,'#6a5a40')}
+    for(let k=1;k<4;k++)R(50+k*62,10,2,78,'#1a1620');R(48,88,254,3,'#3a3038');
+    R(0,116,W,24,'#3a2a24');for(let x=0;x<W;x+=22)R(x,116,1,24,'#30221c');R(0,116,W,1,'#1e1612');
+    R(8,36,32,80,'#8a8e94');R(10,38,28,78,'#9ea2a8');R(24,38,1,78,'#5a5e64');R(42,70,3,6,'#d8b040');R(20,30,8,4,'#d04030');
+    R(258,98,52,18,'#2a2228');R(264,86,40,12,'#18181c');R(268,89,10,6,'#0c0c10');R(290,89,10,6,'#0c0c10');R(281,90,6,1,'#555');
+    R(160,0,1,52,'#111');R(150,52,21,6,'#d8a040');R(152,58,17,1,'#fff0b0');
+  },
+  mid(){
+    beam([[150,59],[171,59],[226,100],[94,100]],'#f0b050',.13);
+    R(84,98,152,5,'#2f6b45');che(84,98,152,2,'#3a7a52');R(86,103,148,15,'#255538');R(86,117,148,1,'#1a3d28');
+    [106,148,176,216].forEach(x=>{R(x,90,3,4,'#7a1a2a');R(x+1,94,1,4,'#c8c8d0');R(x,97,3,1,'#c8c8d0')});
+    R(124,95,18,3,'#8a6238');R(127,94,4,1,'#e8d890');R(133,94,3,1,'#b0503a');R(190,85,3,13,'#1a3a1a');R(191,82,1,3,'#1a3a1a');R(160,96,3,2,'#a08050');R(166,96,2,2,'#a08050');
+  },
+  fx(t){const k=(t*4|0);for(let i=0;i<5;i++)R(282+i,93-((k+i*2)%4),1,1+((k+i*2)%4),'#40d070')},
+  async enter(){
+    if(!F('a_intro')){set('a_intro');
+      await L('narr',"Giovedì sera. L'ascensore con codice arrivava dritto nel salone dell'attico. L'appuntamento del giovedì, tra compagni di classe, era da sempre sacro.",
+        'me',"Cari, buonasera. Come sempre un po' di easy listening del cazzo a farci compagnia?",
+        'luca',"Certo. Vuoi togliermi una delle gioie della settimana, e cioè sentirti rompere i coglioni il giovedì sera per i miei gusti musicali?")}
+  },
+  hs:[
+    {id:'asc',n:'ascensore',exit:1,r:[8,36,32,80],look:"Ascensore con codice. Privilegi delle case dei single.",use:exitTo('mappa')},
+    {id:'golfo',n:'golfo di Lirino',r:[50,10,250,60],wx:null,look:"Il golfo di Lirino, di notte. Se accendessi un sigaro nel mio salone, Laura chiamerebbe il Ministro degli Interni e il Telefono Azzurro."},
+    {id:'stereo',n:'stereo',r:[258,84,52,32],look:"Una versione chillout e dance di «Ain't No Sunshine».",
+      use:['luca',"Giù le mani. Quando ci inviterai a cena a casa tua metterai tutto il repertorio di neri depressi del Mississippi che ti senti tu."]},
+    {id:'tavola',n:'tavola',r:[84,90,152,28],look:"Tovaglia verde di feltro stile casinò. Gusci di noci, tre tappi di sughero, bucce di formaggio. La musica è di merda, ma il vino è eccellente."},
+    {id:'mario',actor:'mario',n:'Mario',x:118,y:119,dir:1,behind:1,sh:42,look:"Mario Terrano, professore. Rasato a zero, occhialini dalle lenti spesse. Si mette ancora a piangere quando legge Wallace.",
+      talk:()=>dlg([
+        {k:'ma_cav',t:"Che cos'è «il cavallo pallido»?",if:()=>F('c_spiri1')&&!F('a_christie'),run:async()=>{await L(
+          'me',"Spiri mi ha tenuto dieci minuti a parlare di Eschilo. Poi ha chiuso dicendo che dovevamo vederci presto, prima che passasse il cavallo pallido.",
+          'mario',"Agatha Christie.",'me',"Cioè?",
+          'mario',"«Un cavallo per la strega». In inglese The Pale Horse, cioè appunto il cavallo pallido. Quello del tallio.",'me',"Del che?");set('a_christie')}},
+        {k:'ma_ins',t:"Insegnare non vi fa impazzire?",once:1,run:()=>L(
+          'me',"Mariù, ma spiegare ogni anno le stesse menate a ragazzini che vi odiano, alla fine non vi fa impazzire? Dico: la prima ora del lunedì, a novembre, quando piove.",
+          'mario',"A parte che Flaiano è fuori da ogni discussione il più grande intellettuale italiano del Novecento.",
+          'mario',"Da uno che legge solo Stephen King e polizieschi scandinavi non accetto giudizi. E non butto tempo a spiegarti che cosa significhi insegnare, deficiente.")},
+        {k:'x',t:"Bevi, Mariù.",end:1}])},
+    {id:'antonio',actor:'antonio',n:'Antonio',x:162,y:119,dir:-1,behind:1,sh:42,look:"Antonio, il questore. Lo era dentro già a sedici anni, quando faceva il guidatore sobrio.",
+      talk:()=>dlg([
+        {k:'an_tal',t:"Il tallio?",if:()=>F('a_christie')&&!F('a_tallio'),run:async()=>{await L(
+          'antonio',"Poi dici perché io faccio il questore e tu il commissario. È un veleno. Perfetto per gli omicidi da libro giallo: incolore, inodore, insapore.",
+          'antonio',"E a piccole dosi intossica e uccide lentamente. Per esempio…",'me',"Per esempio la mattina, nel caffè.",'antonio',"Bravo.");set('a_tallio');
+          await say('me',"Quasi quasi mando un messaggio alla Russo.")}},
+        {k:'an_mon',t:"Quanto al monaco…",run:async()=>{
+          if(F('m_foto'))await L('me',"Il monaco è scappato, Antonio. Ha messo su per sei mesi un circo con Facebook, poi ha mollato tutto senza salutare. Per me il caso non si è mai aperto.",
+            'antonio',"E intanto secondo te io all'arcivescovo che gli dico?",
+            'me',"Questo è il motivo per cui tu fai il questore e io il commissario. Io faccio le indagini e tu parli con gli arcivescovi, tesoro.");
+          else await L('me',"Ci sto lavorando.",'antonio',"Non puoi capire quanto può rompere i coglioni la curia. Mi chiedono se sei una persona affidabile e mossa da valori cristiani.")}},
+        {k:'an_spi',t:"Tu ci credi, a Spiri assassino?",once:1,run:()=>L(
+          'antonio',"Io ancora non riesco a crederci. Posso capire l'odio domestico, figurarsi. Ma di solito sfocia in raptus.",
+          'me',"Invece in carcere aveva la stessa faccia di quando camminava per i corridoi del Liceo. Tranquillo, affabile, quasi ipnotico.")},
+        {k:'x',t:"Niente, Antò.",end:1}])},
+    {id:'luca',actor:'luca',n:'Luca',x:206,y:119,dir:-1,behind:1,sh:42,look:"Luca Lenza, avvocato. Quello ricco del gruppo. Idiosincrasia per ogni rapporto sentimentale che pretenda di durare più di due giorni.",
+      talk:()=>dlg([
+        {k:'lu_mus',t:"Ti ho mandato Eric Sardinas.",once:1,run:()=>L('luca',"Esatto. Quello era carino.",'me',"Quello è una cafonata. Ero sicuro ti sarebbe piaciuto, per questo te l'ho mandato.",
+          'luca',"Lo vedi che sei strano? Senti una cafonata, mi pensi subito e hai pure il coraggio di dire che non mi vuoi bene!")},
+        {k:'lu_sv',t:"La curia mi vuole di valori cristiani.",once:1,run:()=>L(
+          'luca',"A naso, la storia della cappella sconsacrata di San Vincenzo, dove ci portavi a fumare al Liceo, non piacerebbe molto alla curia.",
+          'me',"Madonna mia, Luca. Tossicodipendente per due canne in croce il sabato.",
+          'luca',"Però io faccio l'avvocato. Io i tossici li difendo, e anzi li finanzio pure. Mica li arresto.")},
+        {k:'x',t:"Versa, avvocato.",end:1}])}
+  ]};
+
+/* BAR DEL PADIGLIONE 18 */
+rooms.bar={name:'Ospedale di Lirino, bar del padiglione 18',base:132,min:22,max:300,start:40,
+  bg(){
+    grad(0,0,W,52,'#8fb4cf','#c9dde8');R(200,8,44,5,'#eef4f8');R(212,4,24,4,'#eef4f8');R(60,14,30,4,'#e2ecf2');
+    R(0,28,184,3,'#a89880');R(0,31,180,81,'#d8ccb4');R(0,31,180,2,'#c0b49c');
+    for(let r=0;r<3;r++)for(let c=0;c<6;c++){if(r===2&&c===4)continue;if(r===1&&c===4)continue;R(8+c*28,38+r*24,16,16,'#f0ece0');R(10+c*28,40+r*24,12,12,'#5a7084');R(15+c*28,40+r*24,1,12,'#f0ece0')}
+    R(116,74,32,38,'#c0b49c');R(118,76,28,36,'#3a4650');R(132,76,1,36,'#c0b49c');
+    R(118,56,28,14,'#f0ece0');R(118,56,28,1,'#8a8070');R(126,59,2,8,'#223');R(133,59,6,8,'#223');R(135,61,2,1,'#f0ece0');R(135,64,2,1,'#f0ece0');
+    R(184,48,136,64,'#e4d8b8');for(let k=0;k<14;k++)R(184+k*10,42,10,12,k&1?'#f0ece0':'#c0392b');for(let k=0;k<14;k++)R(186+k*10,54,6,2,k&1?'#f0ece0':'#c0392b');
+    R(204,64,52,28,'#8a7a5a');R(206,66,48,24,'#6a8494');for(let k=0;k<7;k++)R(210+k*6,76,2,8,k%2?'#3a5a3a':'#7a4a2a');R(206,84,48,1,'#4a5a64');
+    R(268,62,28,50,'#4a3a2a');R(270,64,24,48,'#2a2018');R(272,70,20,10,'#f0c860');
+    R(0,112,W,28,'#a09a90');for(let x=10;x<W;x+=30)R(x,112,1,28,'#8e887e');R(0,125,W,1,'#8e887e');R(0,112,W,1,'#7a746a');
+    R(40,128,34,3,'#9cc0d8');che(40,128,34,3,'#b8d4e4');R(230,133,26,3,'#9cc0d8');
+  },
+  mid(){R(84,96,2,14,'#c0392b');R(84,108,10,2,'#c0392b');R(92,110,2,12,'#888');R(96,104,30,3,'#e8e4dc');R(110,107,2,16,'#888');R(104,123,14,2,'#777');R(136,96,2,14,'#c0392b');R(128,108,10,2,'#c0392b');R(128,110,2,12,'#888');
+    if(F('b_infarto')){R(104,100,4,4,'#f0ece0');R(116,100,4,4,'#f0ece0')}},
+  async enter(){if(!F('b_intro')){set('b_intro');await say('narr',"La sala autoptica si trovava nel padiglione 18. Dopo qualche minuto arrivò, con il camice aperto e svolazzante, la dottoressa Russo.")}},
+  hs:[
+    {id:'via',n:'parcheggio',exit:1,r:[0,112,22,28],look:"La macchina è lì.",use:exitTo('mappa')},
+    {id:'pad',n:'padiglione 18',r:[116,56,32,56],look:"Padiglione 18. La sala autoptica. Lì dentro, almeno, nessuno mente."},
+    {id:'barr',n:'bar',r:[204,62,92,50],look:"Il dehors è proprio davanti al padiglione. Lei urla la comanda al suo barista di fiducia senza alzarsi.",use:"Ha già ordinato lei. Urlando."},
+    {id:'tav',n:'tavolino',r:[84,96,54,28],look:"Un tavolino. Ho cinque minuti cinque."},
+    {id:'russo',actor:'russo',n:'la dottoressa Russo',x:156,y:132,dir:-1,
+      look:"Non è bella o avvenente, né le interessa farsi notare. Però è veloce. Velocissima.",
+      talk:async()=>{
+        if(F('b_infarto'))return L('russo',"Ho un'autopsia che mi aspetta. Loro almeno non mandano messaggi alle undici di sera.");
+        await L('russo',"Caffè? Ho cinque minuti cinque.",'me',"Caffè. Allora? Il tuo messaggio?",
+          'russo',"Il tuo, vorrai dire. Va bene che il giovedì sera sei ubriaco insieme a quegli altri tre sciamannati, questore compreso, ma evita di mandarmi messaggi senza senso.",
+          'russo',"Che facciamo, ci scambiamo i nomi dei veleni via chat? Che cosa dovevo risponderti, «aflatossina»?",
+          'me',"Chiara, lascia perdere il mio patetico tentativo di fare il simpatico. Ma la moglie di Spiri con che veleno è morta?",
+          'russo',"Trigliceridi.",'russo',"Scusami, sono inopportuna. Ma non ho resistito.",
+          'me',"Che significa trigliceridi, scusa?",'russo',"Che non è morta avvelenata. Ha avuto un infarto.");
+        set('b_infarto');await say('me',"Un infarto. E quello si è fatto arrestare. Devo tornare in carcere.");
+      }}
+  ]};
+
+/* SALOTTO DI CASA SPIRI */
+rooms.salotto={name:'Casa Spiri, il salottino',base:132,min:22,max:300,start:60,
+  bg(){
+    R(0,0,W,112,'#5a3020');R(44,6,234,96,'#3c1c12');
+    for(let r=0;r<5;r++){R(48,10+r*18,226,15,'#22100a');books(49,10+r*18,224,15,r*91+3);R(44,25+r*18,234,3,'#4e281a')}
+    R(120,6,3,96,'#4e281a');R(198,6,3,96,'#4e281a');
+    R(8,34,30,78,'#4a2a18');R(10,36,26,76,'#5e3a22');R(32,74,2,2,'#c8b060');
+    R(284,20,30,58,'#d6d0bc');grad(287,23,24,52,'#cfe0ea','#eef0dc');R(298,23,2,52,'#d6d0bc');R(280,16,7,66,'#7a2a2a');R(311,16,7,66,'#7a2a2a');
+    R(0,112,W,28,'#4a3226');R(0,112,W,1,'#2e1e16');R(70,121,184,15,'#7a2a2a');che(70,121,184,15,'#6a2424');R(72,123,180,1,'#c8a850');R(72,133,180,1,'#c8a850');
+    R(96,80,96,14,'#667844');R(96,92,96,22,'#5a6a3c');R(90,88,8,26,'#4e5c34');R(190,88,8,26,'#4e5c34');R(144,82,1,30,'#4e5c34');R(98,114,2,3,'#2e1e16');R(188,114,2,3,'#2e1e16');
+    R(214,60,2,54,'#8a8a8a');R(208,114,14,2,'#6a6a6a');R(206,50,18,10,'#e8c878');beam([[206,60],[224,60],[240,112],[190,112]],'#f0d890',.12);
+  },
+  mid(){R(118,116,52,3,'#3c1c12');R(122,119,2,8,'#2a120a');R(164,119,2,8,'#2a120a');R(132,112,5,4,'#f0ece0');R(150,112,5,4,'#f0ece0')},
+  async enter(){if(!F('f_intro')){set('f_intro');await say('narr',"Lunedì 12 settembre 2022. Il salottino di casa Spiri, tra librerie in mogano piene zeppe di volumi antichi.")}},
+  hs:[
+    {id:'porta',n:'porta di casa',exit:1,r:[8,34,30,78],look:"La porta di casa.",use:async()=>{await say('me',"Non ancora. Ho una curiosità da togliermi.")}},
+    {id:'libri',n:'librerie',r:[44,6,234,72],wx:null,look:"I classici latini e greci. E, in un angolo, i grandi gialli di quegli anni.",take:"Non si tocca la biblioteca di un grecista."},
+    {id:'divano',n:'divano',r:[90,80,108,30],look:"Comodo. Nella stanza di fronte è morta la signora Franca."},
+    {id:'tazzine',n:'tazzine',r:[128,108,32,10],look:"Due tazzine. Vuote. Per fortuna.",take:"Nemmeno per sogno.",use:"Nemmeno per sogno."},
+    {id:'spiri',actor:'spiri2',n:'il professor Spiri',x:236,y:132,dir:-1,look:"A casa sua. In vena di narrazioni.",
+      talk:async()=>{
+        const sp='spiri2';
+        await L('me',"Professore, me la toglie una curiosità? Mi spiega che c'entrano Agatha Christie e il tallio? Era un modo per depistarmi?",
+          sp,"Non mi sarei mai permesso. The Pale Horse è stato pubblicato nel 1962. Avevo dieci anni, e mio padre me lo comprò per il mio compleanno.",
+          sp,"L'assassino uccide contaminando con il tallio oggetti comuni. Quando è cominciato il mio matrimonio, mi sembrava di essere entrato in una storia come quella.",
+          sp,"Anche io e mia moglie abbiamo avvelenato giorno per giorno ogni cosa che toccavamo. La cena, le vacanze, la messa, la televisione.",
+          sp,"L'ho messa in difficoltà con quella battuta?",
+          'narr',"Malversi non rispose, per vergogna. Avrebbe dovuto ammettere che la signora morta nella stanza di fronte era stata l'esca per provarci con la Russo.",
+          'me',"No, no. Era solo curiosità professionale.",
+          'narr',"La conversazione durò altre due ore, senza che nessuno dei due facesse più riferimento a quanto accaduto.",
+          sp,"Commissario, grazie di cuore per la visita. Mi ha regalato due ore di leggerezza.",
+          'me',"Grazie a lei, professore. Appena posso torno a trovarla.",
+          sp,"Ci conto. Così mi racconta di qualche caso interessante. E casomai…",sp,"…le offro un caffè.");
+        set('fine');lettera();
+      }}
+  ]};
+
+/* schermate speciali */
+rooms.vaso={name:'',noPlayer:1,hs:[],
+  bg(){
+    R(0,0,W,H,'#c9682c');for(let i=0;i<260;i++)R(rnd(i)*W,16+rnd(i+90)*108,2,1,i&1?'#bf6026':'#d27236');
+    R(0,0,W,16,'#16100c');R(0,124,W,16,'#16100c');
+    for(let x=2;x<W;x+=12)for(const y of[3,127]){const o='#c9682c';R(x,y,10,1,o);R(x,y,1,9,o);R(x,y+8,7,1,o);R(x+6,y+3,1,6,o);R(x+3,y+3,4,1,o);R(x+3,y+3,1,3,o)}
+    R(0,112,W,2,'#16100c');
+  },
+  fx(t){
+    const s={sil:1,robe:'x',hair:'x'};
+    if(vasoPh===0){person(96,112,{...s,hs:'long',axe:1,dir:1},t);person(152,112,{sil:1,top:'x',bottom:'x',hair:'x',hs:'short',beard:'x',crown:1,dir:-1,w:12},t);person(206,112,{...s,hs:'long',leg:8,torso:12,dir:-1},t);R(226,98,22,14,'#16100c');R(224,96,26,3,'#16100c')}
+    else if(vasoPh===1){R(196,60,22,52,'#16100c');R(192,56,30,5,'#16100c');R(200,48,14,8,'#16100c');R(203,70,8,1,'#c9682c');R(203,74,8,1,'#c9682c');R(203,78,5,1,'#c9682c');
+      person(140,112,{sil:1,top:'x',bottom:'x',hair:'x',hs:'short',dir:1},t);R(60,100,3,12,'#16100c');R(56,92,11,9,'#16100c')}
+    else{person(128,112,{sil:1,top:'x',bottom:'x',hair:'x',hs:'short',blade:1,dir:1},t);person(186,112,{...s,hs:'long',dir:-1},t);R(246,30,12,82,'#16100c');R(242,26,20,5,'#16100c');R(242,108,20,4,'#16100c')}
+  }};
+rooms.schermo={name:'',noPlayer:1,hs:[],
+  bg(){
+    R(0,0,W,H,'#2a2622');R(40,4,240,126,'#cfc8b4');R(40,126,240,4,'#a8a08c');R(46,9,228,112,'#b8b09c');R(52,14,216,102,'#eef0f4');
+    R(52,14,216,10,'#3a5ba0');R(56,16,6,6,'#fff');R(58,18,2,4,'#3a5ba0');R(66,17,60,4,'#5a7ac0');
+    grad(52,24,216,24,'#9ab4cc','#c8d8e4');ridge([[52,48],[52,48]],'#000');R(150,34,40,14,'#8a7e6a');R(178,26,8,8,'#8a7e6a');R(146,32,48,2,'#a8553a');
+    R(60,36,24,24,'#fff');R(62,38,20,20,'#2e2824');R(66,42,12,12,'#0c0a08');R(62,54,20,4,'#2e2824');
+    R(90,52,54,5,'#222');R(90,60,36,2,'#888');R(230,52,30,7,'#3a5ba0');
+    for(let p=0;p<2;p++){const y=66+p*25;R(58,y,204,21,'#fff');R(58,y+21,204,1,'#c8ccd4');R(62,y+3,150,2,'#555');R(62,y+7,176,2,'#555');R(62,y+11,96,2,'#555');
+      R(62,y+16,4,3,'#3a5ba0');R(68,y+16,22,3,'#aab');R(100,y+16,4,3,'#d0405a');R(106,y+16,30,3,'#aab');R(150,y+16,40,3,'#ccd')}
+    R(258,123,3,2,'#40d070');
+  },
+  fx(t){if((t*2|0)&1)R(160,77,1,3,'#222');g.fillStyle='rgba(0,0,0,.05)';for(let y=14;y<116;y+=2)g.fillRect(52,y,216,1)}};
+
+/* ---------- ciclo di disegno ---------- */
+function getBg(id){
+  if(!bgc[id]){const c=document.createElement('canvas');c.width=W;c.height=H;g=c.getContext('2d');rooms[id].bg();g=G;bgc[id]=c}
+  return bgc[id];
+}
+let last=0;
+function frame(ms){
+  const t=ms/1000,dt=Math.min(.05,t-last);last=t;T=t;
+  if(tx!=null){const d=tx-S.x,s=78*dt;if(Math.abs(d)<=s){S.x=tx;tx=null;if(walkRes){const r=walkRes;walkRes=null;r()}}else{S.x+=Math.sign(d)*s;S.dir=Math.sign(d)}}
+  const id=overlay||S.room,rm=rooms[id];
+  if(rm){
+    g=G;G.drawImage(getBg(id),0,0);
+    const acts=overlay?[]:rm.hs.filter(h=>h.actor&&(!h.if||h.if()));
+    const dr=h=>person(h.x,h.y,{...CH[h.actor],dir:h.dir,talking:talker===h.actor},t);
+    acts.filter(h=>h.behind).forEach(dr);
+    if(rm.mid)rm.mid(t);
+    acts.filter(h=>!h.behind).forEach(dr);
+    if(!rm.noPlayer)person(S.x,rm.base,{...CH[S.pl],dir:S.dir,walking:tx!=null,talking:talker==='me'},t);
+    if(rm.fg)rm.fg(t);
+    if(rm.fx)rm.fx(t);
+  }
+  requestAnimationFrame(frame);
+}
+
+/* ---------- interfaccia ---------- */
+const VN={look:'Guarda',talk:'Parla con',take:'Prendi',use:'Usa'};
+const DEF={look:"Niente di speciale.",talk:"Non mi risponderebbe.",take:"Non mi serve.",use:"Non saprei che farci."};
+const vis=h=>!h.if||h.if();
+const rect=h=>h.actor?[h.x-9,h.y-46,18,46]:h.r;
+function hit(p){
+  const hs=rooms[S.room].hs;
+  for(let i=hs.length-1;i>=0;i--){const h=hs[i];if(!vis(h))continue;const r=rect(h);if(p.x>=r[0]&&p.x<r[0]+r[2]&&p.y>=r[1]&&p.y<r[1]+r[3])return h}
+  return null;
+}
+function pt(e){const b=cv.getBoundingClientRect();return{x:(e.clientX-b.left)/b.width*W,y:(e.clientY-b.top)/b.height*H}}
+function ui(){
+  uiEl.classList.toggle('busy',busy);
+  document.querySelectorAll('#verbs button').forEach(b=>b.classList.toggle('on',b.dataset.v===verb));
+  invEl.querySelectorAll('.it').forEach(b=>b.classList.toggle('on',b.dataset.id===sel));
+  let s='';
+  if(!busy){
+    const hn=hoverIt?IT[hoverIt].n:hover?hover.n:'';
+    if(sel)s='Usa '+IT[sel].n+' con '+hn;
+    else if(verb)s=VN[verb]+' '+hn;
+    else s=hn?((hover&&!hoverIt&&hover.exit?'Vai: ':'')+hn):rooms[S.room].name;
+  }
+  sentEl.textContent=s;
+}
+function renderInv(){
+  invEl.innerHTML='';
+  S.inv.forEach(id=>{
+    const b=document.createElement('button');b.className='it';b.dataset.id=id;b.title=IT[id].n;b.setAttribute('aria-label',IT[id].n);
+    const c=document.createElement('canvas');c.width=c.height=16;g=c.getContext('2d');IT[id].ic();g=G;b.append(c);
+    b.onmouseenter=()=>{hoverIt=id;ui()};b.onmouseleave=()=>{hoverIt=null;ui()};
+    b.onclick=()=>itemClick(id);
+    invEl.append(b);
+  });
+}
+async function exec(fn){if(typeof fn==='function')await fn();else if(Array.isArray(fn))await L(...fn);else await say('me',fn)}
+function itemClick(id){
+  if(busy)return;
+  const it=IT[id];
+  if(sel){if(sel===id){sel=null;ui();return}run(()=>say('me',NOPE[(Math.random()*NOPE.length)|0]));return}
+  if(verb==='use'){if(it.use)run(()=>exec(it.use));else{sel=id;verb=null;ui()}return}
+  if(verb==='take'){run(()=>say('me',"Ce l'ho già in tasca."));return}
+  if(verb==='talk'){run(()=>say('me',"Non parlo con gli oggetti. Non ancora."));return}
+  run(()=>exec(it.look));
+}
+function doHot(h){
+  const item=sel,v=item?'item':(verb||(h.exit?'use':h.actor?'talk':'look'));
+  run(async()=>{
+    const rm=rooms[S.room],r=rect(h),cx=h.actor?h.x:r[0]+r[2]/2;
+    if(!rm.noPlayer){
+      if(v!=='look'&&h.wx!==null){await walk(h.wx!=null?h.wx:h.actor?cx+(S.x<cx?-26:26):cx)}
+      if(Math.abs(cx-S.x)>3)S.dir=cx>S.x?1:-1;
+    }
+    let fn;
+    if(v==='item'){fn=h.item&&h.item[item];if(fn===undefined)fn=NOPE[(Math.random()*NOPE.length)|0]}
+    else{fn=h[v];if(fn===undefined&&h.exit&&v!=='look')fn=h.use;if(fn===undefined)fn=DEF[v]}
+    await exec(fn);
+  });
+}
+function buildLabels(){
+  labEl.innerHTML='';
+  if(overlay)return;
+  rooms[S.room].hs.forEach(h=>{if(!h.lab||!vis(h))return;const d=document.createElement('div');d.className='lab';d.textContent=h.lab;
+    d.style.left=((h.r[0]+h.r[2]/2)/W*100)+'%';d.style.top=((h.r[1]+h.r[3]+1)/H*100)+'%';labEl.append(d)});
+}
+$('#stage').addEventListener('click',e=>{if(skip){e.stopPropagation();e.preventDefault();skip()}},true);
+document.addEventListener('keydown',e=>{if(skip&&(e.key===' '||e.key==='Enter'||e.key==='Escape'||e.key==='.')){e.preventDefault();skip()}});
+scene.addEventListener('pointermove',e=>{if(busy||overlay)return;const h=hit(pt(e));if(h!==hover){hover=h;scene.style.cursor=h?'pointer':'crosshair';ui()}});
+scene.addEventListener('pointerleave',()=>{hover=null;ui()});
+scene.addEventListener('click',e=>{
+  if(busy||!over.hidden)return;
+  const p=pt(e),h=hit(p),rm=rooms[S.room];
+  if(h){hover=h;doHot(h)}
+  else{if(!rm.noPlayer)tx=clamp(p.x,rm.min,rm.max);verb=null;sel=null;ui()}
+});
+document.querySelectorAll('#verbs button').forEach(b=>b.onclick=()=>{if(busy)return;verb=verb===b.dataset.v?null:b.dataset.v;sel=null;ui()});
+
+/* ---------- titolo, lettera finale ---------- */
+function titolo(){
+  const sv=load();
+  over.innerHTML='<div><h1>CATASTROFI</h1><p>Un’avventura punta e clicca con il commissario Malversi</p><div class="btns"><button id="t-new">Nuova partita</button>'+(sv?'<button id="t-cont">Continua</button>':'')+'</div><p style="font-size:3.2cqw">Clicca sulla scena per muoverti e agire · un clic salta la battuta</p></div>';
+  over.hidden=false;
+  $('#t-new').onclick=()=>{S=fresh();bgc={};over.hidden=true;renderInv();run(()=>go('cucina',150))};
+  if(sv)$('#t-cont').onclick=()=>{S=sv;bgc={};over.hidden=true;renderInv();run(()=>go(S.room,S.x))};
+}
+function lettera(){
+  over.innerHTML='<div class="letter"><p>Caro Giacomo,</p>'+
+    '<p>ti mando il primo risultato delle mie fatiche. Evito di commentare il fatto che tu sia rimasto l’unico uomo al mondo a non usare le mail e che io debba inviarti le pagine per posta, come faceva mio nonno.</p>'+
+    '<p>So che mi avevi detto di scrivere in prima persona, ma il ruolo di narratore delle mie indagini mi piace molto di più e mi ha un po’ preso la mano. Alla fine ho dato a queste pagine anche un titolo, come se fosse davvero un piccolo romanzo giallo. Anche perché «Racconti di un depresso, prima puntata» mi faceva tristezza.</p>'+
+    '<p>In ogni caso, io continuo a prendere i miei 25 mg di Valdoxan tutte le sere. Sai che mi fido ciecamente di te e della tua idea del diario terapeutico. Ma la strategia farmacologica per me avrà sempre il suo appeal, mi dispiace.</p>'+
+    '<p>Ti abbraccio forte e con l’affetto di sempre.<br>Andrea</p>'+
+    '<p class="blues">♪ When you got a good friend, that will stay right by your side, give her all of your spare time, love and treat her right.</p>'+
+    '<small>Da «Catastrofi», prima parte di <i>Terapie</i> di Armando Bisogno (De Tomi Editore, 2024). Prototipo di avventura grafica: testi adattati dal romanzo.</small>'+
+    '<div class="btns" style="margin-top:2cqw"><button id="t-again">Ricomincia</button></div></div>';
+  over.hidden=false;over.scrollTop=0;
+  $('#t-again').onclick=()=>{try{localStorage.removeItem(KEY)}catch(e){}S=fresh();bgc={};renderInv();titolo()};
+}
+
+/* ---------- blues in dodici battute ---------- */
+let AC=null,mOn=false,mTimer=null,mNext=0,mBar=0;
+const PROG=[0,0,0,0,5,5,0,0,7,5,0,7];
+function mNote(f,t,d,type,v){const o=AC.createOscillator(),a=AC.createGain();o.type=type;o.frequency.value=f;a.gain.setValueAtTime(v,t);a.gain.exponentialRampToValueAtTime(.0008,t+d);o.connect(a);a.connect(AC.destination);o.start(t);o.stop(t+d+.02)}
+function mSched(){
+  while(mNext<AC.currentTime+.5){
+    const root=82.41*Math.pow(2,PROG[mBar%12]/12),b=.54;
+    for(let i=0;i<4;i++){const up=root*Math.pow(2,((i&1)?9:7)/12);
+      for(let k=0;k<2;k++){const t=mNext+i*b+k*b*.66,d=k?b*.3:b*.58;mNote(root,t,d,'triangle',.15);mNote(up,t,d,'square',.03)}}
+    mNext+=4*b;mBar++;
+  }
+}
+$('#b-music').onclick=()=>{
+  if(mOn){clearInterval(mTimer);mOn=false}
+  else{try{AC=AC||new(window.AudioContext||window.webkitAudioContext)();AC.resume();mNext=AC.currentTime+.1;mBar=0;mTimer=setInterval(mSched,120);mOn=true}catch(e){}}
+  $('#b-music').textContent='♪ blues: '+(mOn?'sì':'no');
+};
+let rz=0;
+$('#b-reset').onclick=()=>{
+  const b=$('#b-reset');
+  if(Date.now()-rz<3000){rz=0;b.textContent='ricomincia';location.hash='';try{localStorage.removeItem(KEY)}catch(e){}
+    if(skip)skip();setTimeout(()=>{busy=false;overlay=null;tx=null;um=null;chEl.hidden=true;S=fresh();bgc={};renderInv();ui();titolo()},300)}
+  else{rz=Date.now();b.textContent='sicuro? clicca ancora';setTimeout(()=>{b.textContent='ricomincia'},3000)}
+};
+
+/* ---------- avvio ---------- */
+function start(data){
+  renderInv();ui();requestAnimationFrame(frame);
+  if(data&&data.room&&rooms[data.room]){S=data;renderInv();run(()=>go(S.room,S.x))}
+  else titolo();
+}
+const hot=window.claude&&window.claude.hot;
+try{if(hot&&hot.snapshot)hot.snapshot(()=>S)}catch(e){}
+if(hot&&hot.ready)hot.ready(start);else start(hot&&hot.data||null);
+})();
+</script>
