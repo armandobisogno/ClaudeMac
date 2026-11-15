@@ -10,7 +10,7 @@
 
 defined( 'ABSPATH' ) || exit;
 
-define( 'AB_VERSION', '1.9.7' );
+define( 'AB_VERSION', '1.9.8' );
 define( 'AB_IMG', get_template_directory_uri() . '/assets/img/' );
 define( 'AB_FINZIONI', get_template_directory_uri() . '/assets/finzioni/' );
 define( 'AB_EMAIL', 'arbisogno@unisa.it' );
@@ -445,6 +445,27 @@ function ab_uif_versions_sheet() {
 	set_transient( 'ab_uif_versions', $out, HOUR_IN_SECONDS );
 	update_option( 'ab_uif_versions_last', $out, false );
 	return $out;
+}
+
+/*
+ * Download complessivi di UIF (PDF + ePub) registrati da Download Monitor.
+ * Restituisce null se il plugin non è attivo, così la pagina non mostra nulla.
+ */
+define( 'AB_UIF_DOWNLOADS', array( 1909, 1917 ) );
+
+function ab_uif_download_count() {
+	if ( ! function_exists( 'download_monitor' ) ) {
+		return null;
+	}
+	$total = 0;
+	foreach ( AB_UIF_DOWNLOADS as $id ) {
+		try {
+			$total += (int) download_monitor()->service( 'download_repository' )->retrieve_single( $id )->get_download_count();
+		} catch ( Throwable $e ) {
+			$total += (int) get_post_meta( $id, '_download_count', true );
+		}
+	}
+	return $total;
 }
 
 /* -------------------------------------------------------------------------

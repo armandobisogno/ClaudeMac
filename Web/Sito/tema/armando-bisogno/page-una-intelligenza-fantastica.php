@@ -8,8 +8,9 @@
  */
 
 get_header();
-$versions = ab_uif_versions();
-$current  = $versions ? end( $versions ) : null;
+$versions  = ab_uif_versions();
+$current   = $versions ? end( $versions ) : null;
+$downloads = ab_uif_download_count();
 ?>
 <main id="main">
   <div class="hero-band">
@@ -24,8 +25,17 @@ $current  = $versions ? end( $versions ) : null;
             <a class="btn btn-ghost" href="<?php echo esc_url( home_url( '/download/1917/' ) ); ?>">Scarica l'ePub</a>
             <a class="btn btn-ghost" href="https://amzn.eu/d/0cGFh5Lr">Copia cartacea su Amazon</a>
           </div>
-          <?php if ( $current ) : ?>
-            <p class="note" style="margin-top:16px">Versione <?php echo esc_html( $current['versione'] ); ?> · <?php echo esc_html( $current['data'] ); ?></p>
+          <?php
+          $meta = array();
+          if ( $current ) {
+            $meta[] = 'Versione ' . esc_html( $current['versione'] ) . ' · ' . esc_html( $current['data'] );
+          }
+          if ( $downloads ) {
+            $meta[] = '<strong>' . esc_html( number_format_i18n( $downloads ) ) . '</strong> download';
+          }
+          if ( $meta ) :
+          ?>
+            <p class="note" style="margin-top:16px"><?php echo implode( ' · ', $meta ); // phpcs:ignore -- parti già escapate ?></p>
           <?php endif; ?>
         </div>
         <div class="feature-book mock"><img src="<?php echo esc_url( AB_IMG ); ?>libro-uif.png" alt="Copertina di Una intelligenza fantastica"></div>

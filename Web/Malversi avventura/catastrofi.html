@@ -548,7 +548,7 @@ rooms.mappa={name:'Fossa Etrusca e dintorni',noPlayer:1,
     {id:'m_car',n:'casa circondariale',lab:'Carcere',exit:1,wx:null,r:[196,60,42,26],look:"Il carcere. Le visite non sono mai a sorpresa.",use:exitTo('carcere',60)},
     {id:'m_spi',n:'casa Spiri',lab:'Casa Spiri',exit:1,wx:null,r:[88,106,24,14],if:()=>F('c_libero')&&F('barnaba'),look:"Casa del professore.",use:exitTo('salotto',60)},
     {id:'m_bar',n:'bar del padiglione 18',lab:'Padiglione 18',exit:1,wx:null,r:[244,88,36,18],if:()=>F('msg'),look:"L'ospedale di Lirino. Al padiglione 18 c'è la sala autoptica. E un bar.",use:exitTo('bar',40)},
-    {id:'m_att',n:'attico di Luca',lab:'Da Luca',exit:1,wx:null,r:[286,74,24,34],if:()=>F('c_spiri1'),look:"L'attico di Luca sul golfo di Lirino. La cena del giovedì.",use:exitTo('attico',60)}
+    {id:'m_att',n:'attico di Luca',lab:'Da Luca',labUp:1,exit:1,wx:null,r:[286,74,24,34],if:()=>F('c_spiri1'),look:"L'attico di Luca sul golfo di Lirino. La cena del giovedì.",use:exitTo('attico',60)}
   ]};
 
 /* CHIESA */
@@ -879,7 +879,7 @@ rooms.attico={name:"L'attico di Luca, sul golfo di Lirino",base:133,min:22,max:3
     {id:'stereo',n:'stereo',r:[258,84,52,32],look:"Una versione chillout e dance di «Ain't No Sunshine».",
       use:['luca',"Giù le mani. Quando ci inviterai a cena a casa tua metterai tutto il repertorio di neri depressi del Mississippi che ti senti tu."]},
     {id:'tavola',n:'tavola',r:[84,90,152,28],look:"Tovaglia verde di feltro stile casinò. Gusci di noci, tre tappi di sughero, bucce di formaggio. La musica è di merda, ma il vino è eccellente."},
-    {id:'mario',actor:'mario',n:'Mario',x:118,y:119,dir:1,behind:1,sh:42,look:"Mario Terrano, professore. Rasato a zero, occhialini dalle lenti spesse. Si mette ancora a piangere quando legge Wallace.",
+    {id:'mario',actor:'mario',n:'Mario',x:118,y:117,dir:1,behind:1,sh:42,look:"Mario Terrano, professore. Rasato a zero, occhialini dalle lenti spesse. Si mette ancora a piangere quando legge Wallace.",
       talk:()=>dlg([
         {k:'ma_cav',t:"Che cos'è «il cavallo pallido»?",if:()=>F('c_spiri1')&&!F('a_christie'),run:async()=>{await L(
           'me',"Spiri mi ha tenuto dieci minuti a parlare di Eschilo. Poi ha chiuso dicendo che dovevamo vederci presto, prima che passasse il cavallo pallido.",
@@ -890,7 +890,7 @@ rooms.attico={name:"L'attico di Luca, sul golfo di Lirino",base:133,min:22,max:3
           'mario',"A parte che Flaiano è fuori da ogni discussione il più grande intellettuale italiano del Novecento.",
           'mario',"Da uno che legge solo Stephen King e polizieschi scandinavi non accetto giudizi. E non butto tempo a spiegarti che cosa significhi insegnare, deficiente.")},
         {k:'x',t:"Bevi, Mariù.",end:1}])},
-    {id:'antonio',actor:'antonio',n:'Antonio',x:162,y:119,dir:-1,behind:1,sh:42,look:"Antonio, il questore. Lo era dentro già a sedici anni, quando faceva il guidatore sobrio.",
+    {id:'antonio',actor:'antonio',n:'Antonio',x:162,y:117,dir:-1,behind:1,sh:42,look:"Antonio, il questore. Lo era dentro già a sedici anni, quando faceva il guidatore sobrio.",
       talk:()=>dlg([
         {k:'an_tal',t:"Il tallio?",if:()=>F('a_christie')&&!F('a_tallio'),run:async()=>{await L(
           'antonio',"Poi dici perché io faccio il questore e tu il commissario. È un veleno. Perfetto per gli omicidi da libro giallo: incolore, inodore, insapore.",
@@ -905,7 +905,7 @@ rooms.attico={name:"L'attico di Luca, sul golfo di Lirino",base:133,min:22,max:3
           'antonio',"Io ancora non riesco a crederci. Posso capire l'odio domestico, figurarsi. Ma di solito sfocia in raptus.",
           'me',"Invece in carcere aveva la stessa faccia di quando camminava per i corridoi del Liceo. Tranquillo, affabile, quasi ipnotico.")},
         {k:'x',t:"Niente, Antò.",end:1}])},
-    {id:'luca',actor:'luca',n:'Luca',x:206,y:119,dir:-1,behind:1,sh:42,look:"Luca Lenza, avvocato. Quello ricco del gruppo. Idiosincrasia per ogni rapporto sentimentale che pretenda di durare più di due giorni.",
+    {id:'luca',actor:'luca',n:'Luca',x:206,y:117,dir:-1,behind:1,sh:42,look:"Luca Lenza, avvocato. Quello ricco del gruppo. Idiosincrasia per ogni rapporto sentimentale che pretenda di durare più di due giorni.",
       talk:()=>dlg([
         {k:'lu_mus',t:"Ti ho mandato Eric Sardinas.",once:1,run:()=>L('luca',"Esatto. Quello era carino.",'me',"Quello è una cafonata. Ero sicuro ti sarebbe piaciuto, per questo te l'ho mandato.",
           'luca',"Lo vedi che sei strano? Senti una cafonata, mi pensi subito e hai pure il coraggio di dire che non mi vuoi bene!")},
@@ -1008,7 +1008,7 @@ rooms.schermo={name:'',noPlayer:1,hs:[],
   bg(){
     R(0,0,W,H,'#2a2622');R(40,4,240,126,'#cfc8b4');R(40,126,240,4,'#a8a08c');R(46,9,228,112,'#b8b09c');R(52,14,216,102,'#eef0f4');
     R(52,14,216,10,'#3a5ba0');R(56,16,6,6,'#fff');R(58,18,2,4,'#3a5ba0');R(66,17,60,4,'#5a7ac0');
-    grad(52,24,216,24,'#9ab4cc','#c8d8e4');ridge([[52,48],[52,48]],'#000');R(150,34,40,14,'#8a7e6a');R(178,26,8,8,'#8a7e6a');R(146,32,48,2,'#a8553a');
+    grad(52,24,216,24,'#9ab4cc','#c8d8e4');R(150,34,40,14,'#8a7e6a');R(178,26,8,8,'#8a7e6a');R(146,32,48,2,'#a8553a');
     R(60,36,24,24,'#fff');R(62,38,20,20,'#2e2824');R(66,42,12,12,'#0c0a08');R(62,54,20,4,'#2e2824');
     R(90,52,54,5,'#222');R(90,60,36,2,'#888');R(230,52,30,7,'#3a5ba0');
     for(let p=0;p<2;p++){const y=66+p*25;R(58,y,204,21,'#fff');R(58,y+21,204,1,'#c8ccd4');R(62,y+3,150,2,'#555');R(62,y+7,176,2,'#555');R(62,y+11,96,2,'#555');
@@ -1103,7 +1103,7 @@ function buildLabels(){
   labEl.innerHTML='';
   if(overlay)return;
   rooms[S.room].hs.forEach(h=>{if(!h.lab||!vis(h))return;const d=document.createElement('div');d.className='lab';d.textContent=h.lab;
-    d.style.left=((h.r[0]+h.r[2]/2)/W*100)+'%';d.style.top=((h.r[1]+h.r[3]+1)/H*100)+'%';labEl.append(d)});
+    d.style.left=((h.r[0]+h.r[2]/2)/W*100)+'%';d.style.top=((h.labUp?h.r[1]-17:h.r[1]+h.r[3]+1)/H*100)+'%';labEl.append(d)});
 }
 $('#stage').addEventListener('click',e=>{if(skip){e.stopPropagation();e.preventDefault();skip()}},true);
 document.addEventListener('keydown',e=>{if(skip&&(e.key===' '||e.key==='Enter'||e.key==='Escape'||e.key==='.')){e.preventDefault();skip()}});
