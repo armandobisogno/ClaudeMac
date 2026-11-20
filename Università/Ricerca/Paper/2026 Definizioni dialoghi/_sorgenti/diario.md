@@ -19,7 +19,7 @@ Il diario registra la cronologia; il paper **no**. Ogni cambiamento di metodo si
 | L'appartenenza di una frase a un episodio si indica con il definiendum della frase; frasi con lo stesso definiendum formano un episodio, e una ripresa separata dello stesso termine si segna esplicitamente | il raggruppamento resta un giudizio del lettore (la parte interpretativa della codifica), ma ridotto alla domanda più semplice e verificabile: «di quale termine si sta cercando la definizione in questa frase?» | Episodi dal definiendum (bozza 5) |
 | Il tempo di codifica si misura come tempo attivo (pagina in primo piano, attività negli ultimi 5 minuti) | dà una misura realistica del costo del metodo per un lettore umano, confrontabile con il lavoro della macchina | Artefatto, versione 3 |
 | Ogni spia è formulata come una domanda da porsi sulla frase, accompagnata dalle parole latine che la segnalano; tre domande guida orientano tra le famiglie A, B, C | rende il codebook applicabile in modo uniforme durante la lettura, senza modificare il criterio di nessuna spia | Formulazione delle spie (bozza 6) |
-| L'affidabilità del codebook si misura con una codifica indipendente di un dialogo intero (*De magistro*), condotta alla cieca | due lettori che applicano lo stesso codebook rendono visibili le ambiguità delle regole | Decisioni sui punti aperti |
+| L'affidabilità del codebook si misura con una codifica indipendente, condotta alla cieca, del libro I del *Contra Academicos* (264 frasi) | un'unità testuale compiuta, di lessico meno tecnico, compatibile con i tempi di una codifica manuale integrale frase per frase; i rimandi editoriali tra parentesi sono rimossi perché non appartengono al testo | due lettori che applicano lo stesso codebook rendono visibili le ambiguità delle regole | Decisioni sui punti aperti |
 
 ## 14.11.2026 — Percorso delle scelte
 
@@ -130,3 +130,13 @@ Esito: B5 come formulato è troppo largo (circa 1 su 9). Funziona solo quando il
 - Motivazione per il paper: senza la condizione, ogni assenso diventerebbe una spia lessicale e darebbe grado 1 a quasi ogni episodio, svuotando la distinzione tra definizione dichiarata e definizione riconoscibile dalla forma.
 - Sempre il 15.11: la forma della frase (domanda / affermazione) è rilevata automaticamente dalla punteggiatura e riportata per episodio (si apre con…, n. domande, n. affermazioni); A e B restano distinti per criterio (parola che dichiara vs struttura), perché la distinzione regge la soglia (grado 1 / grado 2).
 - Due termini in un episodio: per ora resta la regola «X; Y» = due episodi (Armando: «per il momento va bene così»). Ipotesi registrata, non adottata: «X–Y» per una coppia con un solo *definiens*.
+
+## 20.11.2026 — Cambio del testo di verifica: *Contra Academicos*, libro I
+
+- Decisione di Armando: il testo per la codifica alla cieca non è più il De magistro («troppo tecnico, mi ci vorrebbe troppo tempo») ma il *Contra Academicos*; la piattaforma resta la stessa.
+- Dati di lunghezza messi davanti alla scelta: De magistro 567 frasi / 12.090 parole; Contra Academicos intero ~1.340 frasi / 21.013 parole; libro I ~317 frasi / 5.296 parole. Scelta di Armando: **solo libro I**.
+- Testo preparato: 25 paragrafi, **264 frasi**. Rimossi i rimandi editoriali tra parentesi contenenti cifre (es. «(Cicerone, framm. 101 t. A.)», «(Qo 1, 15)»): spezzavano le frasi ed erano aggiunte dell'editore, come i titoletti. Restano le parentesi d'autore.
+- Il Contra Academicos è un dialogo narrato (*inquam*, *ait*, *inquit*): la pagina non può attribuire le battute in automatico; il proponente si sceglie nella scheda dell'episodio tra i nomi presenti nel testo (Augustinus, Licentius, Trygetius, Alypius, Navigius) o «autorità citata».
+- Archivio: ogni testo ha le sue collezioni. Contra Academicos I: `acad1_frasi`, `acad1_episodi`, `acad1_tempo`, `acad1_stato`. Le annotazioni già fatte sul De magistro restano conservate nelle collezioni originarie (`frasi`, `episodi`, `tempo`, `stato`).
+- Tempo già speso sul De magistro (tempo attivo): 2.374 s ≈ **40 minuti** in 8 sessioni (14-15.11.2026). Dato utile per il paper sul costo della codifica manuale e sulla scelta del campione.
+- Generatore: `build_codifica_artifact.py acad1` (oppure `mag` per rigenerare il De magistro). Artefatto: versione 9, titolo «Codifica del Contra Academicos».
