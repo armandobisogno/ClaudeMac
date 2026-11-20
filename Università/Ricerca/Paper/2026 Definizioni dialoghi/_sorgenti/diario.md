@@ -20,6 +20,12 @@ Il diario registra la cronologia; il paper **no**. Ogni cambiamento di metodo si
 | Il tempo di codifica si misura come tempo attivo (pagina in primo piano, attività negli ultimi 5 minuti) | dà una misura realistica del costo del metodo per un lettore umano, confrontabile con il lavoro della macchina | Artefatto, versione 3 |
 | Ogni spia è formulata come una domanda da porsi sulla frase, accompagnata dalle parole latine che la segnalano; tre domande guida orientano tra le famiglie A, B, C | rende il codebook applicabile in modo uniforme durante la lettura, senza modificare il criterio di nessuna spia | Formulazione delle spie (bozza 6) |
 | L'affidabilità del codebook si misura con una codifica indipendente, condotta alla cieca, del libro I del *Contra Academicos* (264 frasi) | un'unità testuale compiuta, di lessico meno tecnico, compatibile con i tempi di una codifica manuale integrale frase per frase; i rimandi editoriali tra parentesi sono rimossi perché non appartengono al testo | due lettori che applicano lo stesso codebook rendono visibili le ambiguità delle regole | Decisioni sui punti aperti |
+| L'indicatore di definizione è ridotto a due criteri: (1) il testo usa *definio/definitio*; (2) usa un altro verbo — dire, pensare, volere, stabilire — per dire che cos'è X, spiegandolo (anche per cause o effetti). Il verbo sostitutivo e le particolarità si annotano frase per frase | un codebook ampio rendeva incerta l'applicazione durante la lettura; due criteri lessicali e sintattici sono applicabili in modo uniforme. Il secondo esclude la semplice opinione su X: conta solo quando l'enunciato spiega che cosa X è | Indicatori 1 e 2 (bozza 9) |
+| L'indicatore 1 è proposto in automatico nel testo dato da codificare (frasi con una forma di *definio/definitio*); il codificatore accetta o rifiuta la proposta | l'indicatore lessicale è quello su cui i due codificatori concordano quasi pienamente (κ 0,90) e i disaccordi sono omissioni: la proposta automatica elimina le omissioni e lascia al lettore il solo giudizio sul senso | Revisione dopo il confronto (bozza 10) |
+| *Descriptio* non vale come indicatore 1 | il criterio lessicale resta circoscritto alla famiglia di *definio*; l'uso parallelo dei due termini si annota, ma non estende l'indicatore | Revisione dopo il confronto (bozza 10) |
+| Il definiendum si registra nella forma in cui compare nel testo | il lettore non riconduce il termine a un concetto: la riconduzione è un'operazione interpretativa che va tenuta distinta dalla registrazione | Revisione dopo il confronto (bozza 10) |
+| Quando la frase parla del definire in sé, il definiendum è *Definire* | il discorso sul definire è un oggetto del dialogo e va registrato come tale, non attribuito al termine discusso | Revisione dopo il confronto (bozza 10) |
+| Gli enunciati che non definiscono X ma ne negano o escludono una proprietà, la concludono, la concedono o la pongono come premessa si registrano con un segno proprio (T, «tesi») e non contano come definizioni | nel dialogo la definizione si costruisce anche attraverso tesi che la circoscrivono; il segno conserva il fenomeno senza classificarlo, e la scelta resta rivedibile sui dati dell'intero corpus | Segno T (bozza 10.1) |
 
 ## 14.11.2026 — Percorso delle scelte
 
@@ -140,3 +146,61 @@ Esito: B5 come formulato è troppo largo (circa 1 su 9). Funziona solo quando il
 - Archivio: ogni testo ha le sue collezioni. Contra Academicos I: `acad1_frasi`, `acad1_episodi`, `acad1_tempo`, `acad1_stato`. Le annotazioni già fatte sul De magistro restano conservate nelle collezioni originarie (`frasi`, `episodi`, `tempo`, `stato`).
 - Tempo già speso sul De magistro (tempo attivo): 2.374 s ≈ **40 minuti** in 8 sessioni (14-15.11.2026). Dato utile per il paper sul costo della codifica manuale e sulla scelta del campione.
 - Generatore: `build_codifica_artifact.py acad1` (oppure `mag` per rigenerare il De magistro). Artefatto: versione 9, titolo «Codifica del Contra Academicos».
+
+## 20.11.2026 — Due indicatori soli (codebook bozza 9)
+
+- Armando: «gli indicatori non si capiscono così come sono; devono essere molto più semplici. Ricominciamo da capo». Nuovo codebook:
+  - **1** — la frase usa il verbo «definire» o la parola «definizione» (*definio*, *definitio*; anche *finio/finitio* quando valgono «definire»);
+  - **2** — la frase usa un altro verbo al posto di «definire»: dire (*dico*), pensare (*puto, arbitror, existimo, censeo*), volere (*volo*), stabilire (*constat, placet, statuo, constituo*), «per noi X è» (*nobis X est*).
+- Filtro per il 2 (Armando): conta **solo se spiega** che cosa X è. «Penso che X sia stanco» non basta; «penso che sia stanco perché vuole andar via o perché dorme» definisce la stanchezza dagli effetti.
+- Messi da parte (Armando: «sì, mettili da parte»): domande *quid est X?*, esiti (C), falsi positivi (D), soglia a gradi. Si riprendono solo se il confronto ne mostra il bisogno.
+- Nota della frase: il verbo usato al posto di *definio* e altre particolarità; se nel brano ci sono due episodi, si scrive a quale si riferisce la nota.
+- Conversione: Armando aveva già riannotato Acad. I usando A1 e A2 come i nuovi 1 e 2. La pagina converte da sé, al caricamento, A1 → 1 e A2 → 2; eventuali altre sigle restano conservate nel campo `vecchie` della frase. Claude non ha letto le annotazioni.
+- Piattaforma (artefatto, versione 10): due caselle per frase; nella scheda dell'episodio restano proponente, tipo (nominale/reale), segni e nota; l'esito è tolto; al posto del grado l'episodio mostra «indicatore 1», «indicatore 2», «indicatore 1 e 2» o «nessun indicatore». Il template della bozza 8 resta nella cronologia git (`codifica_template.html`).
+- Precisazione di Armando: in una stessa frase 1 e 2 si escludono (o il testo usa *definio*, o un altro verbo al suo posto). Nella pagina (versione 11) la scelta di un indicatore sostituisce l'altro e chiude la finestra; la finestra mostra solo i due indicatori, la guida resta nel Codebook. Un episodio può comunque avere frasi con 1 e frasi con 2.
+
+## 20.11.2026 — Terzo indicatore
+
+- Armando: si aggiunge un indicatore **3** per la definizione data senza alcun verbo che la introduca, semplicemente «X è Y» (*X est Y*), non «penso che X sia», «crediamo che X sia».
+- Applicato con lo stesso filtro del 2 (conta solo se dice che cosa X è, non qualcosa che gli capita): da confermare con Armando.
+- I tre indicatori si escludono nella stessa frase. Artefatto versione 14; codebook aggiornato.
+- Sempre il 20.11 (artefatto v15-16): finestra degli indicatori sopra la frase, senza le parole latine (restano nel Codebook); menù «Episodi» e «Verbi» (elenco alfabetico dei definienda e delle note); su richiesta di Armando tolta la colonna degli episodi: non si compilano più proponente, tipo e segni per episodio (i dati già inseriti restano nell'archivio). Gli episodi restano ricavati dal definiendum e si ritrovano dal menù «Episodi». Da decidere: se togliere quei campi anche dalla scheda del codebook.
+- Ripensamento di Armando: la colonna degli episodi è stata rimessa (v17), senza il testo esplicativo in testa; proponente, tipo, segni e nota per episodio restano campi della scheda. I menù «Episodi» e «Verbi» restano nell'intestazione.
+- Armando: poiché le frasi sono spesso lunghe, una frase può avere **più indicatori** (torna a cadere l'esclusione reciproca). La finestra si chiude comunque a ogni scelta; per un secondo indicatore la si riapre (artefatto v19).
+
+## 20.11.2026 — Fine della codifica di Armando; codifica di Claude
+
+- Armando ha concluso la codifica di Acad. I: 84 frasi annotate, tempo attivo 6.370 s ≈ **106 minuti** (16 sessioni).
+- Prima di leggere le annotazioni di Armando, Claude ha codificato il libro I alla cieca con il codebook in vigore (indicatori 1/2/3, più indicatori per frase ammessi): 74 frasi annotate, 70 con indicatori. File: `_dati/codifica_claude_acad1.tsv` (frase, indicatori, definiendum, nuovo episodio, nota).
+- Solo dopo, lettura delle annotazioni di Armando per il controllo del formato (richiesto da lui). Problemi di formato rilevati, da sottoporre ad Armando prima del confronto: forme diverse dello stesso definiendum (beata vita / vita beata / beate vivere / beatum esse; error / errare / quid sit error), frasi con indicatore 1 senza definiendum (non entrano in nessun episodio), verbi nelle note in forme miste (italiano/latino, maiuscole), rimandi E+numero che cambiano quando si aggiungono episodi, «esse» segnato come indicatore 2 prima che esistesse il 3.
+- Uniformazione del formato (decisioni di Armando): (1) definienda in minuscolo e forme invertite unificate (vita beata → beata vita), le altre forme lasciate come sono (beate vivere, beatum esse…); (2) gli indicatori 1 li rivede Armando; (4) verbi delle note come infiniti latini (nominare, vocare, velle, concedere, fateri, videri, affirmare…); (5) rimandi E+numero sostituiti dal definiendum («fortuna: nominare; casus: vocare»); (6) «esse» senza verbo introduttivo → indicatore 3; dove un verbo introduce c'è, resta 2 con quel verbo (censere, placere, dare, audire, arbitrari; scelte di Claude da verificare: 1.8.22.1 concedere, 1.9.24.2 inferre). 47 frasi modificate; copia delle annotazioni prima della modifica in `_dati/acad1_frasi_armando_prima_uniformazione.json`.
+- Armando ha rivisto gli indicatori 1 senza definiendum; ne restano due senza (1.4.10.12, 1.4.11.9). Su sua richiesta definienda e verbi delle note con l'iniziale maiuscola (68 frasi). La pagina (v20) mostra iniziali maiuscole nei menù e nelle schede; il menù «Verbi» legge anche la forma «Termine: Verbo».
+- Armando ha completato le due frasi con indicatore 1 senza definiendum.
+
+## 20.11.2026 — Prima stesura della parte di metodo
+
+- Su richiesta di Armando, descrizione in forma di paper dell'impostazione e della parte operativa (sezioni 1-8), prima del confronto. Sorgente: `Paper/_sorgenti/Definizioni nei dialoghi - metodo.txt`; docx: `2026 Definizioni dialoghi/Definizioni nei dialoghi - metodo.docx` (build_paper.py). Scelte presentate come motivate, secondo la regola di scrittura. Bibliografia: solo Schwitzgebel et al. (dati verificati sul PDF: Mind & Language 39, 2024, 2, pp. 237-259, doi 10.1111/mila.12466) e le citazioni di Acad. I dal corpus (latino + NBA).
+
+## 20.11.2026 — Confronto delle codifiche di Acad. I (script `confronto.py`, esito in `_dati/confronto_acad1.txt`)
+
+- 264 frasi; con indicatori: Armando 83, Claude 70; entrambi 60, solo A 23, solo C 10. Accordo sulla presenza 87,5%, κ 0,70; stessi indicatori in 53/60.
+- Per indicatore: 1 → κ 0,90 (omissioni di A in 1.2.5.17, 1.3.9.1, 1.4.11.2, 1.8.22.4, 1.8.23.7; *descriptio* contata come 1 da A in 1.5.14.6, 1.8.23.11); 2 → κ 0,50; 3 → κ 0,53.
+- Disaccordi su 2/3 in tre gruppi: (a) confine definizione/tesi (proprietà negate, concessioni, conclusioni con igitur: soprattutto A); (b) definizioni incassate riconosciute da uno solo (C: 1.2.5.16, 1.7.20.1-2, 1.8.23.8, 1.5.14.9, 1.3.9.16; A: 1.3.7.18, 1.7.19.3…); (c) 2 vs 3 (constat in 1.7.19.2).
+- Definienda: A 36, C 14, comuni 8. Cause: forma testuale vs concetto; «definire» come definiendum (A) vs termine discusso (C); direzione della definizione (1.3.7.2: sapiens per A, beatus per C); attribuzione di «definitio tua» (1.4.11.13-14, 1.4.12.2: beata vita per A, error per C).
+- Tempo A: 7.947 s ≈ 132 min (con revisioni). Tempo di Claude non misurato con lo stesso strumento.
+- Sezione 9 del paper scritta. Punti per la revisione del codebook da sottoporre ad Armando: descriptio; criterio tesi/definizione; forma del definiendum; definiendum nei passi sul definire; automazione dell'indicatore 1.
+
+## 20.11.2026 — Revisione del codebook dopo il confronto (bozza 10)
+
+- Decisioni di Armando: indicatore 1 proposto in automatico nell'artefatto standard (accetta/rifiuta); *descriptio* non vale 1 (in 1.4.12.6 l'1 è dovuto a *definitio* più avanti nella frase); definiendum nella forma del testo; nei passi sul definire in sé il definiendum è *Definire*.
+- Domanda 2 (tesi vs definizione): Armando ha dubbi; ancora aperta.
+- Artefatto v21: il builder segna `a1` sulle frasi con `\bdefin\w*` (42 in Acad. I, coincidono con le 42 frasi con 1 di Claude); la pagina mostra «Proposta automatica: indicatore 1 (forma)» con Accetta/Rifiuta, contatore «proposte da verificare»; la decisione si salva nel campo `auto` (si/no). Dove la frase ha già 1, la proposta è considerata accettata.
+- Domanda 2: scelta di Armando = terza opzione, segno **T** (tesi su X) registrato con il definiendum, non contato come definizione. Artefatto v22: T nel pannello e nel Codebook; episodio con sole T = «solo tesi»; il contatore delle frasi con indicatori esclude T.
+
+## 20.11.2026 — Codifica di Claude di Acad. II e III (codebook bozza 10.1)
+
+- Armando: completare prima il *Contra Academicos*. Builder: configurazioni `acad2`, `acad3` e opzione `--tsv` (elenco frasi con proposta automatica dell'1, senza toccare la pagina).
+- Difetto del corpus: in 3.4.10 e 3.8.17 un segno di paragrafo («[5. 11.]», «[8. 17.]») è finito nel testo e una frase è duplicata nel paragrafo vicino. Il builder ora tiene la parte più lunga e scarta il duplicato (Acad. III: 547 frasi invece di 552; Acad. I e II invariati).
+- Codifica: Acad. II 302 frasi → 28 annotate (19 con 1-3, 4 T); Acad. III 547 frasi → 54 annotate (43 con 1-3, 9 T). File `_dati/codifica_claude_acad2.tsv`, `_dati/codifica_claude_acad3.tsv`. Definienda nella forma del testo, note con infiniti latini e iniziale maiuscola.
+- Le proposte automatiche dell'1 (1 in II, 12 in III) sono state tutte confermate.
+- Episodi principali: II — probabile/verisimile (2.5.12.3, 2.7.16.16, 2.11.26.2-5, 2.12.27.6), verum/percipi (Zenone, 2.5.11.5-6, 2.6.14.8), philosophia/philocalia (2.3.7), bona fides (2.5.12.7). III — sapiens/studiosus (3.3.5), definizione di Zenone (3.9.18-21, 3.10.22, 3.17.39), mundus (3.11.24-25), errare (3.11.24.5, 3.14.32.7, 3.15.34.3), amicitia (3.6.13.10), duo mundi (3.17.37), veri simile/probabile (3.18.40).
