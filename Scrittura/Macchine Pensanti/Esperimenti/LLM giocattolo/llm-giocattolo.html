@@ -1,0 +1,529 @@
+<title>Un LLM giocattolo</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&family=Space+Grotesk:wght@500;700&display=swap">
+<style>
+/* Layout: testata con i sette passi; sotto, spiegazione a sinistra e "banco di prova" interattivo a destra; navigazione in fondo. */
+:root{
+  --bg:#F3F5F9; --surface:#FFFFFF; --ink:#15203A; --muted:#5A6479; --line:#D8DEE8; --soft:#E9EDF4;
+  --gatto:#D9480F; --cane:#0B7A75; --macchina:#5F3DC4; --other:#8E98AC; --focus:#2F5BEA;
+  --f-display:"Space Grotesk",ui-sans-serif,system-ui,sans-serif;
+  --f-body:"Inter",ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;
+  --f-mono:"JetBrains Mono",ui-monospace,"SF Mono",Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0D1220; --surface:#151C2D; --ink:#E7EBF3; --muted:#9AA4BA; --line:#2A3349; --soft:#1C2539;
+  --gatto:#FF8A4C; --cane:#34C6B8; --macchina:#A493FF; --other:#66728C; --focus:#7FA2FF; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0D1220; --surface:#151C2D; --ink:#E7EBF3; --muted:#9AA4BA; --line:#2A3349; --soft:#1C2539;
+  --gatto:#FF8A4C; --cane:#34C6B8; --macchina:#A493FF; --other:#66728C; --focus:#7FA2FF; color-scheme:dark}
+
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font:16px/1.55 var(--f-body);
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:20px 40px}
+.wrap{max-width:1180px;margin:0 auto;display:flex;flex-direction:column;gap:20px}
+header{display:flex;flex-direction:column;gap:14px}
+.eyebrow{font:600 12px/1 var(--f-body);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+h1{font:700 clamp(28px,4vw,40px)/1.1 var(--f-display);margin:0;text-wrap:balance}
+h1 .tok{font-family:var(--f-mono);font-weight:600;color:var(--gatto)}
+.steps{display:flex;gap:6px;overflow-x:auto;padding-bottom:4px}
+.steps button{flex:0 0 auto;display:flex;align-items:center;gap:8px;border:1px solid var(--line);background:var(--surface);color:var(--muted);
+  border-radius:999px;padding:7px 14px 7px 8px;font:500 14px/1 var(--f-body);cursor:pointer}
+.steps button .n{display:inline-grid;place-items:center;width:22px;height:22px;border-radius:50%;background:var(--soft);font:600 12px/1 var(--f-mono);color:var(--ink)}
+.steps button[aria-current="step"]{border-color:var(--ink);color:var(--ink)}
+.steps button[aria-current="step"] .n{background:var(--ink);color:var(--surface)}
+button:focus-visible,input:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
+
+.panel{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.7fr);gap:28px;align-items:start}
+@media (max-width:900px){.panel{grid-template-columns:minmax(0,1fr)}}
+.text{display:flex;flex-direction:column;gap:12px;max-width:62ch}
+.text h2{font:700 26px/1.15 var(--f-display);margin:0;text-wrap:balance}
+.text p{margin:0}
+.text .note{font-size:14px;color:var(--muted);border-left:2px solid var(--line);padding-left:12px}
+.stage{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px;display:flex;flex-direction:column;gap:16px;min-width:0}
+.k{font-family:var(--f-mono);font-size:.92em}
+.w-gatto{color:var(--gatto);font-weight:600}.w-cane{color:var(--cane);font-weight:600}.w-macchina{color:var(--macchina);font-weight:600}
+
+.controls{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.btn{border:1px solid var(--ink);background:var(--ink);color:var(--surface);border-radius:8px;padding:9px 16px;font:600 14px/1 var(--f-body);cursor:pointer}
+.btn.ghost{background:transparent;color:var(--ink);border-color:var(--line)}
+.btn:disabled{opacity:.4;cursor:default}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:8px;overflow:hidden}
+.seg button{border:0;background:transparent;color:var(--muted);padding:8px 14px;font:500 14px/1 var(--f-body);cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--ink);color:var(--surface)}
+
+/* passo 0 */
+.corpus{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:10px;counter-reset:f}
+.corpus li{counter-increment:f;display:flex;gap:14px;align-items:baseline;font:500 clamp(18px,2.2vw,24px)/1.3 var(--f-display)}
+.corpus li::before{content:counter(f);font:600 13px/1 var(--f-mono);color:var(--muted);min-width:1.2em}
+.corpus .ids{font-family:var(--f-mono);font-weight:400;color:var(--muted)}
+/* passo 1 */
+.vocab{display:grid;grid-template-columns:repeat(auto-fill,minmax(120px,1fr));gap:8px}
+.vocab div{display:flex;gap:10px;align-items:center;border:1px solid var(--line);border-radius:8px;padding:8px 10px}
+.vocab .num{font:600 13px/1 var(--f-mono);color:var(--muted);min-width:2ch;text-align:right}
+/* grafico */
+.plotbox{position:relative;width:100%;aspect-ratio:16/10;max-width:100%}
+.plotbox canvas{position:absolute;inset:0;width:100%;height:100%;border-radius:10px;background:var(--bg)}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px}
+.stat{border:1px solid var(--line);border-radius:10px;padding:10px 12px}
+.stat .lab{font-size:12px;color:var(--muted);letter-spacing:.03em}
+.stat .val{font:600 20px/1.2 var(--f-mono);font-variant-numeric:tabular-nums}
+table{border-collapse:collapse;width:100%;font-variant-numeric:tabular-nums}
+th,td{text-align:left;padding:7px 10px;border-bottom:1px solid var(--line);font-size:15px}
+th{font-size:12px;color:var(--muted);font-weight:600;letter-spacing:.04em;text-transform:uppercase}
+.tablewrap{overflow-x:auto}
+/* barre */
+.bars{display:flex;flex-direction:column;gap:6px}
+.bar{display:grid;grid-template-columns:8ch minmax(0,1fr) 5ch;gap:10px;align-items:center;font-size:15px}
+.bar .lab{font-family:var(--f-mono);font-size:14px;text-align:right;white-space:nowrap}
+.bar .track{height:16px;background:var(--soft);border-radius:4px;overflow:hidden}
+.bar .fill{height:100%;background:var(--other);border-radius:4px;transition:width .25s}
+.bar.ok .fill{background:var(--ink)}
+.bar .pct{font:600 14px/1 var(--f-mono);text-align:right}
+.legend{font-size:13px;color:var(--muted)}
+.subhead{font:600 15px/1.3 var(--f-body);margin:0}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chips button{border:1px solid var(--line);background:transparent;color:var(--ink);border-radius:999px;padding:5px 12px;font:500 14px/1 var(--f-mono);cursor:pointer}
+.chips button[aria-pressed="true"]{background:var(--ink);color:var(--surface);border-color:var(--ink)}
+.two{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:18px}
+@media (max-width:700px){.two{grid-template-columns:minmax(0,1fr)}}
+/* attenzione */
+.attn svg{width:100%;height:auto;display:block}
+.badge{display:inline-block;font:600 11px/1 var(--f-body);letter-spacing:.06em;text-transform:uppercase;padding:4px 8px;border-radius:999px;border:1px solid var(--line);color:var(--muted)}
+/* scrittura */
+.sentence{font:500 clamp(22px,3vw,32px)/1.3 var(--f-display);min-height:1.4em;display:flex;flex-wrap:wrap;gap:.3em}
+.sentence .new{color:var(--gatto)}
+.sentence .cursor{color:var(--muted)}
+.dice{display:flex;flex-direction:column;gap:8px}
+.stack{position:relative;display:flex;height:44px;border-radius:8px;overflow:hidden;border:1px solid var(--line)}
+.stack div{display:flex;align-items:center;justify-content:center;font:600 13px/1 var(--f-mono);color:var(--surface);border-right:1px solid var(--surface);overflow:hidden;white-space:nowrap;transition:flex-basis .3s}
+.stack div:nth-child(6n+1){background:var(--ink)}
+.stack div:nth-child(6n+2){background:var(--cane)}
+.stack div:nth-child(6n+3){background:var(--macchina)}
+.stack div:nth-child(6n+4){background:var(--gatto)}
+.stack div:nth-child(6n+5){background:var(--muted)}
+.stack div:nth-child(6n){background:var(--other)}
+.marker{position:absolute;top:-6px;bottom:-6px;width:3px;background:var(--ink);box-shadow:0 0 0 2px var(--surface);transition:left .4s}
+.verdict{font-size:15px}
+.range{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.range input{width:200px;max-width:100%}
+.log{font-size:14px;color:var(--muted);display:flex;flex-direction:column;gap:2px;font-family:var(--f-mono)}
+/* riepilogo */
+.big{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
+.big .stat .val{font-size:30px}
+blockquote{margin:0;font:500 20px/1.4 var(--f-display);border-left:3px solid var(--gatto);padding-left:16px}
+blockquote cite{display:block;font:400 14px/1.4 var(--f-body);color:var(--muted);margin-top:6px;font-style:normal}
+
+nav.pager{display:flex;justify-content:space-between;gap:10px}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+
+<div class="wrap">
+  <header>
+    <div class="eyebrow">Simulazione · da Lee–Trott (2023) e Shanahan (2023)</div>
+    <h1>Un LLM giocattolo, a partire da <span class="tok">gatto</span></h1>
+    <div class="steps" id="steps" role="tablist" aria-label="Passi della simulazione"></div>
+  </header>
+
+  <!-- 0 -->
+  <section class="panel" data-step="0" data-name="I testi">
+    <div class="text">
+      <h2>Il modello legge cinque frasi</h2>
+      <p>Il nostro modello imparerà soltanto da queste cinque frasi. Un LLM vero ne legge centinaia di miliardi (GPT-3 circa 500 miliardi di parole), ma il meccanismo è lo stesso.</p>
+      <p>Notate una cosa: <span class="w-gatto">gatto</span> e <span class="w-cane">cane</span> non compaiono mai nella stessa frase.</p>
+      <p class="note">I passi 2 e 3 sono calcolati davvero nel browser. Nei passi 4 e 5 le probabilità che dipendono dal contesto sono illustrative.</p>
+    </div>
+    <div class="stage">
+      <ol class="corpus" id="corpus0"></ol>
+    </div>
+  </section>
+
+  <!-- 1 -->
+  <section class="panel" data-step="1" data-name="Il catalogo" hidden>
+    <div class="text">
+      <h2>Ogni parola riceve un numero d'inventario</h2>
+      <p>Il modello compila un vocabolario e assegna a ogni parola un numero. È una segnatura di biblioteca: serve a ritrovare la parola, ma non dice nulla del suo significato.</p>
+      <p>Si aggiunge un segno speciale, <span class="k">[fine]</span>, per sapere quando una frase è finita.</p>
+      <p>Da qui in poi la frase «il gatto dorme sul divano» per il modello è una fila di numeri.</p>
+    </div>
+    <div class="stage">
+      <div class="vocab" id="vocab"></div>
+      <div class="controls"><button class="btn" id="toIds" type="button">Mostra le frasi come numeri</button></div>
+      <ol class="corpus" id="corpus1"></ol>
+    </div>
+  </section>
+
+  <!-- 2 -->
+  <section class="panel" data-step="2" data-name="Posizioni a caso" hidden>
+    <div class="text">
+      <h2>Ogni parola riceve una posizione, a caso</h2>
+      <p>Ogni parola diventa un punto nello spazio, cioè una lista di numeri. Qui bastano due numeri, così si può disegnare; GPT-3 ne usa 12.288.</p>
+      <p>All'inizio i numeri sono casuali. Per puro caso <span class="w-gatto">gatto</span> sta vicinissimo a <span class="w-macchina">macchina</span> e lontano da <span class="w-cane">cane</span>. Il modello non sa ancora nulla.</p>
+      <p class="note">Il singolo numero non significa niente, come la longitudine 77 di Washington senza Greenwich. Contano le distanze.</p>
+    </div>
+    <div class="stage">
+      <div class="plotbox"><canvas id="plot2" aria-label="Posizioni iniziali delle parole"></canvas></div>
+      <div class="tablewrap"><table id="coords2"></table></div>
+    </div>
+  </section>
+
+  <!-- 3 -->
+  <section class="panel" data-step="3" data-name="Addestramento" hidden>
+    <div class="text">
+      <h2>Prevedere, sbagliare, correggere</h2>
+      <p>Il modello copre la parola successiva e prova a indovinarla. Se sbaglia, la <em>backpropagation</em> (gli «scoiattoli» di Lee–Trott) sposta un poco le parole e gira le manopole del predittore.</p>
+      <p>Un «giro» passa in rassegna tutte le 25 coppie di parole consecutive delle cinque frasi. Lo ripetiamo 600 volte.</p>
+      <p>Guardate <span class="w-gatto">gatto</span> e <span class="w-cane">cane</span>: sono seguiti dalle stesse parole, e per questo finiscono nello stesso punto. <span class="w-macchina">Macchina</span> va altrove.</p>
+      <p class="note">Questi numeri sono calcolati davvero, ora, nel vostro browser.</p>
+    </div>
+    <div class="stage">
+      <div class="controls">
+        <button class="btn" id="run" type="button">Avvia l'addestramento</button>
+        <button class="btn ghost" id="stepOne" type="button">Un giro</button>
+        <button class="btn ghost" id="reset" type="button">Ricomincia</button>
+      </div>
+      <div class="plotbox"><canvas id="plot3" aria-label="Le parole si spostano durante l'addestramento"></canvas></div>
+      <div class="stats">
+        <div class="stat"><div class="lab">Giri di addestramento</div><div class="val" id="ep">0 / 600</div></div>
+        <div class="stat"><div class="lab">Errore medio</div><div class="val" id="loss">–</div></div>
+        <div class="stat"><div class="lab">Distanza gatto–cane</div><div class="val" id="dgc">–</div></div>
+        <div class="stat"><div class="lab">Distanza gatto–macchina</div><div class="val" id="dgm">–</div></div>
+      </div>
+      <div class="two">
+        <div class="dice">
+          <p class="subhead">Che cosa prevede dopo «<span id="predWord" class="k">gatto</span>»</p>
+          <div class="bars" id="bars3"></div>
+          <div class="legend">In scuro le parole che nei testi seguono davvero.</div>
+        </div>
+        <div class="dice">
+          <p class="subhead">Scegli una parola</p>
+          <div class="chips" id="chips3"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4 -->
+  <section class="panel" data-step="4" data-name="Attenzione" hidden>
+    <div class="text">
+      <h2>Il contesto: «sul» si guarda indietro</h2>
+      <p>Domanda: <span class="k">il gatto dorme sul ___</span>. Guardando solo «sul» il modello non può scegliere, perché nei testi «sul» è seguito sia da «divano» sia da «tappeto».</p>
+      <p>Con l'attenzione, «sul» pone una domanda (<em>chi dorme?</em>) e la confronta con la chiave offerta da ogni parola precedente. Assorbe informazione soprattutto da quella che combacia meglio, e il suo significato si sposta.</p>
+      <p>Nessuno ha programmato la regola «cerca il soggetto»: anche domande e chiavi sono manopole regolate dall'errore.</p>
+    </div>
+    <div class="stage attn">
+      <div class="controls">
+        <span class="legend">Soggetto</span>
+        <div class="seg" id="subj"><button type="button" aria-pressed="true" data-v="gatto">gatto</button><button type="button" aria-pressed="false" data-v="cane">cane</button></div>
+        <span class="legend">Modo</span>
+        <div class="seg" id="mode"><button type="button" aria-pressed="false" data-v="no">solo «sul»</button><button type="button" aria-pressed="true" data-v="si">con attenzione</button></div>
+      </div>
+      <div id="attnSvg"></div>
+      <div class="dice">
+        <p class="subhead">Previsione per la parola dopo «sul» <span class="badge" id="attnBadge"></span></p>
+        <div class="bars" id="bars4"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5 -->
+  <section class="panel" data-step="5" data-name="Scrittura" hidden>
+    <div class="text">
+      <h2>Il modello scrive tirando i dadi</h2>
+      <p>Per scrivere, il modello ripete un ciclo: guarda il testo fin qui, calcola le probabilità della parola successiva, tira i dadi, aggiunge la parola e ricomincia. Si ferma quando esce <span class="k">[fine]</span>.</p>
+      <p>Per questo la stessa domanda posta due volte dà risposte diverse. E a volte esce una frase che nei testi non c'è.</p>
+      <p>La <strong>temperatura</strong> decide quanto i dadi favoriscono la parola più probabile. Bassa: sempre la stessa frase. Alta: frasi varie, a volte sgangherate.</p>
+      <p class="note">Generalizzazione e allucinazione sono lo stesso meccanismo: il modello conosce il probabile, non il vero (Shanahan).</p>
+    </div>
+    <div class="stage">
+      <div class="controls">
+        <button class="btn" id="g1" type="button">Tira i dadi</button>
+        <button class="btn ghost" id="gAll" type="button">Scrivi tutta la frase</button>
+        <button class="btn ghost" id="gReset" type="button">Ricomincia</button>
+      </div>
+      <div class="range"><label for="temp" class="legend">Temperatura</label><input id="temp" type="range" min="0.2" max="2" step="0.1" value="1"><span class="k" id="tempV">1,0 · normale</span></div>
+      <div class="sentence" id="sent"></div>
+      <div class="dice">
+        <p class="subhead" id="diceHead">Probabilità della prima parola</p>
+        <div class="stack" id="stack"></div>
+        <div class="bars" id="bars5"></div>
+      </div>
+      <div class="verdict" id="verdict"></div>
+      <div class="log" id="log"></div>
+    </div>
+  </section>
+
+  <!-- 6 -->
+  <section class="panel" data-step="6" data-name="Che cosa resta" hidden>
+    <div class="text">
+      <h2>Dentro il modello: pesi, non frasi</h2>
+      <p>Alla fine il nostro modello contiene le posizioni delle parole e le manopole del predittore. Le cinque frasi non ci sono: hanno lasciato un'impronta nei pesi.</p>
+      <p>Una cautela: con un corpus così piccolo i pesi ricalcano le frasi quasi alla lettera. Su miliardi di testi diversi il modello non può ricalcarli tutti e deve generalizzare. Il testo resta riproducibile soltanto se è ripetuto moltissime volte (memorizzazione).</p>
+    </div>
+    <div class="stage">
+      <div class="big">
+        <div class="stat"><div class="lab">Numeri nel nostro modello</div><div class="val">73</div><div class="legend">28 posizioni + 45 manopole</div></div>
+        <div class="stat"><div class="lab">Frasi conservate</div><div class="val">0</div><div class="legend">delle 5 lette</div></div>
+        <div class="stat"><div class="lab">Numeri in GPT-3</div><div class="val">175 mld</div><div class="legend">dopo ~500 mld di parole lette</div></div>
+      </div>
+      <div class="tablewrap"><table>
+        <thead><tr><th>Passo</th><th>Che cosa succede</th><th>Nei testi</th></tr></thead>
+        <tbody>
+          <tr><td>1</td><td>Le parole ricevono un numero d'inventario</td><td>token (Lee–Trott, nota 1)</td></tr>
+          <tr><td>2</td><td>Ogni parola riceve una posizione casuale</td><td>pesi «essentially random»</td></tr>
+          <tr><td>3</td><td>Prevedere, sbagliare, correggere: gatto raggiunge cane</td><td>backpropagation, gli scoiattoli</td></tr>
+          <tr><td>4</td><td>L'attenzione guarda indietro e sposta il significato</td><td>attention, il caso «bank»</td></tr>
+          <tr><td>5</td><td>Si tirano i dadi una parola alla volta</td><td>«statistically likely sequences» (Shanahan)</td></tr>
+        </tbody>
+      </table></div>
+      <blockquote>Sapere che «Burundi» è la parola probabile dopo «il paese a sud del Ruanda è» non equivale a sapere che il Burundi è a sud del Ruanda.<cite>M. Shanahan, Talking About Large Language Models, § 5</cite></blockquote>
+    </div>
+  </section>
+
+  <nav class="pager">
+    <button class="btn ghost" id="prev" type="button">← Indietro</button>
+    <button class="btn" id="next" type="button">Avanti →</button>
+  </nav>
+</div>
+
+<script>
+(function(){
+"use strict";
+const V=["il","gatto","cane","dorme","sul","divano","tappeto","mangia","la","pappa","macchina","corre","sulla","strada","[fine]"];
+const IX=Object.fromEntries(V.map((w,i)=>[w,i]));
+const S=["il gatto dorme sul divano","il cane dorme sul tappeto","il gatto mangia la pappa","il cane mangia la pappa","la macchina corre sulla strada"];
+const PAIRS=[]; const FOLLOW=V.map(()=>new Set());
+S.forEach(s=>{const t=s.split(" ").concat("[fine]");for(let i=0;i<t.length-1;i++){PAIRS.push([IX[t[i]],IX[t[i+1]]]);FOLLOW[IX[t[i]]].add(IX[t[i+1]]);}});
+const PLOTTED=V.slice(0,14).map((_,i)=>i);
+const HL={gatto:"--gatto",cane:"--cane",macchina:"--macchina"};
+const fmt=(x,d=2)=>x.toFixed(d).replace(".",",").replace("-","−");
+const $=id=>document.getElementById(id);
+const css=n=>getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+
+/* ---------- modello ---------- */
+function mulberry32(a){return function(){a|=0;a=a+0x6D2B79F5|0;let t=Math.imul(a^a>>>15,1|a);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296;};}
+function newModel(seed){
+  const r=mulberry32(seed);
+  const gauss=()=>{let u=0;while(!u)u=r();const v=r();return Math.sqrt(-2*Math.log(u))*Math.cos(2*Math.PI*v);};
+  const E=V.map(()=>[r()*2-1,r()*2-1]);
+  E[IX.gatto]=[0.8,-0.3];E[IX.cane]=[-0.6,0.9];E[IX.macchina]=[0.7,-0.2];
+  const W=[V.map(()=>gauss()*0.5),V.map(()=>gauss()*0.5)];
+  const m={E,W,b:V.map(()=>0),epoch:0,trail:{}};
+  for(const w in HL)m.trail[w]=[E[IX[w]].slice()];
+  m.loss=lossOf(m);return m;
+}
+function probs(m,i){
+  const e=m.E[i];const z=V.map((_,k)=>e[0]*m.W[0][k]+e[1]*m.W[1][k]+m.b[k]);
+  const mx=Math.max(...z);const ex=z.map(v=>Math.exp(v-mx));const s=ex.reduce((a,c)=>a+c,0);return ex.map(v=>v/s);
+}
+function lossOf(m){let L=0;for(const [a,t] of PAIRS)L-=Math.log(probs(m,a)[t]);return L/PAIRS.length;}
+function epoch(m){
+  const n=V.length,gE=V.map(()=>[0,0]),gW=[new Array(n).fill(0),new Array(n).fill(0)],gb=new Array(n).fill(0);let L=0;
+  for(const [a,t] of PAIRS){
+    const p=probs(m,a);L-=Math.log(p[t]);const d=p.slice();d[t]-=1;const e=m.E[a];
+    for(let k=0;k<n;k++){gW[0][k]+=e[0]*d[k];gW[1][k]+=e[1]*d[k];gb[k]+=d[k];gE[a][0]+=m.W[0][k]*d[k];gE[a][1]+=m.W[1][k]*d[k];}
+  }
+  const N=PAIRS.length;
+  for(let i=0;i<n;i++){m.E[i][0]-=0.75*gE[i][0]/N;m.E[i][1]-=0.75*gE[i][1]/N;}
+  for(let k=0;k<n;k++){m.W[0][k]-=0.15*gW[0][k]/N;m.W[1][k]-=0.15*gW[1][k]/N;m.b[k]-=0.15*gb[k]/N;}
+  m.epoch++;m.loss=L/N;
+  if(m.epoch%3===0)for(const w in HL)m.trail[w].push(m.E[IX[w]].slice());
+}
+const dist=(m,a,b)=>Math.hypot(m.E[IX[a]][0]-m.E[IX[b]][0],m.E[IX[a]][1]-m.E[IX[b]][1]);
+const SEED=11, EPOCHS=600;
+const initial=newModel(SEED);
+const trained=newModel(SEED);for(let i=0;i<EPOCHS;i++)epoch(trained);
+let live=newModel(SEED);
+
+/* ---------- grafico ---------- */
+function makePlot(canvas){
+  const st={canvas,view:null};
+  st.draw=function(m,opts){
+    const c=canvas,dpr=window.devicePixelRatio||1,w=c.clientWidth,h=c.clientHeight;if(!w||!h)return;
+    if(c.width!==Math.round(w*dpr)||c.height!==Math.round(h*dpr)){c.width=Math.round(w*dpr);c.height=Math.round(h*dpr);}
+    const g=c.getContext("2d");g.setTransform(dpr,0,0,dpr,0,0);g.clearRect(0,0,w,h);
+    const pts=PLOTTED.map(i=>m.E[i]);let xs=pts.map(p=>p[0]).concat([0]),ys=pts.map(p=>p[1]).concat([0]);
+    if(opts.trails)for(const k in m.trail)for(const p of m.trail[k]){xs.push(p[0]);ys.push(p[1]);}
+    let x0=Math.min(...xs),x1=Math.max(...xs),y0=Math.min(...ys),y1=Math.max(...ys);
+    const padX=(x1-x0)*0.12+0.3,padY=(y1-y0)*0.12+0.3;x0-=padX;x1+=padX+0.4;y0-=padY;y1+=padY;
+    const target={cx:(x0+x1)/2,cy:(y0+y1)/2,s:Math.min(w/(x1-x0),h/(y1-y0))};
+    if(!st.view||!opts.smooth)st.view=target;else{const v=st.view,a=0.08;v.cx+=(target.cx-v.cx)*a;v.cy+=(target.cy-v.cy)*a;v.s+=(target.s-v.s)*a;}
+    const v=st.view,X=x=>w/2+(x-v.cx)*v.s,Y=y=>h/2-(y-v.cy)*v.s;
+    const ink=css("--ink"),line=css("--line"),muted=css("--muted"),other=css("--other");
+    // griglia
+    let stepU=1;while(stepU*v.s<40)stepU*=2;
+    g.lineWidth=1;g.strokeStyle=line;g.globalAlpha=0.6;
+    const ux0=Math.floor((v.cx-w/2/v.s)/stepU)*stepU,ux1=v.cx+w/2/v.s,uy0=Math.floor((v.cy-h/2/v.s)/stepU)*stepU,uy1=v.cy+h/2/v.s;
+    for(let x=ux0;x<=ux1;x+=stepU){g.beginPath();g.moveTo(X(x),0);g.lineTo(X(x),h);g.stroke();}
+    for(let y=uy0;y<=uy1;y+=stepU){g.beginPath();g.moveTo(0,Y(y));g.lineTo(w,Y(y));g.stroke();}
+    g.globalAlpha=1;g.strokeStyle=muted;g.globalAlpha=0.5;
+    g.beginPath();g.moveTo(X(0),0);g.lineTo(X(0),h);g.moveTo(0,Y(0));g.lineTo(w,Y(0));g.stroke();g.globalAlpha=1;
+    // scie
+    if(opts.trails)for(const k in m.trail){const tr=m.trail[k].concat([m.E[IX[k]]]);g.strokeStyle=css(HL[k]);g.globalAlpha=0.35;g.lineWidth=2;g.beginPath();tr.forEach((p,i)=>i?g.lineTo(X(p[0]),Y(p[1])):g.moveTo(X(p[0]),Y(p[1])));g.stroke();g.globalAlpha=1;}
+    // connettori
+    const P=k=>m.E[IX[k]];
+    g.setLineDash([5,5]);g.lineWidth=1.5;g.strokeStyle=muted;
+    [["gatto","cane"],["gatto","macchina"]].forEach(([a,b])=>{g.beginPath();g.moveTo(X(P(a)[0]),Y(P(a)[1]));g.lineTo(X(P(b)[0]),Y(P(b)[1]));g.stroke();});
+    g.setLineDash([]);
+    // punti
+    const items=PLOTTED.map(i=>({i,w:V[i],x:X(m.E[i][0]),y:Y(m.E[i][1]),hl:V[i] in HL}));
+    for(const it of items){g.beginPath();g.arc(it.x,it.y,it.hl?7:4.5,0,Math.PI*2);g.fillStyle=it.hl?css(HL[it.w]):other;g.fill();}
+    // etichette raggruppate per vicinanza
+    const groups=[];
+    for(const it of items.slice().sort((a,b)=>b.hl-a.hl)){const gr=groups.find(G=>Math.hypot(G.x-it.x,G.y-it.y)<16);if(gr)gr.list.push(it);else groups.push({x:it.x,y:it.y,list:[it]});}
+    for(const G of groups){
+      let x=G.x+10,y=G.y-9;g.textBaseline="middle";
+      const parts=[];G.list.forEach((it,j)=>{if(j)parts.push({t:" · ",c:muted,f:"500 13px "+css("--f-body")});parts.push({t:it.w,c:it.hl?css(HL[it.w]):muted,f:(it.hl?"600 15px ":"500 13px ")+css("--f-body")});});
+      let tw=0;parts.forEach(p=>{g.font=p.f;tw+=g.measureText(p.t).width;});
+      if(x+tw>w-6)x=G.x-10-tw;
+      if(y<10)y=G.y+12;
+      for(const p of parts){g.font=p.f;g.fillStyle=p.c;g.fillText(p.t,x,y);x+=g.measureText(p.t).width;}
+    }
+  };
+  return st;
+}
+const plot2=makePlot($("plot2")),plot3=makePlot($("plot3"));
+
+/* ---------- barre ---------- */
+function bars(el,list,okSet){
+  el.innerHTML=list.map(([w,p])=>`<div class="bar${okSet&&okSet.has(w)?" ok":""}"><span class="lab">${w}</span><span class="track"><span class="fill" style="display:block;width:${(p*100).toFixed(1)}%"></span></span><span class="pct">${Math.round(p*100)}%</span></div>`).join("");
+}
+const top=(p,n)=>V.map((w,i)=>[w,p[i]]).sort((a,b)=>b[1]-a[1]).slice(0,n);
+
+/* ---------- passo 0 e 1 ---------- */
+function corpus(el,ids){el.innerHTML=S.map(s=>`<li>${ids?`<span class="ids">${s.split(" ").map(w=>IX[w]+1).join(" · ")}</span>`:s.split(" ").map(w=>HL[w]?`<span class="w-${w}">${w}</span>`:w).join(" ")}</li>`).join("");}
+corpus($("corpus0"),false);corpus($("corpus1"),false);
+$("vocab").innerHTML=V.map((w,i)=>`<div><span class="num">${i+1}</span><span class="k${HL[w]?" w-"+w:""}">${w}</span></div>`).join("");
+let showIds=false;
+$("toIds").onclick=()=>{showIds=!showIds;corpus($("corpus1"),showIds);$("toIds").textContent=showIds?"Mostra le frasi come parole":"Mostra le frasi come numeri";};
+
+/* ---------- passo 2 ---------- */
+function renderStep2(){
+  plot2.draw(initial,{});
+  const row=w=>`<tr><td class="k w-${w}">${w}</td><td class="k">(${fmt(initial.E[IX[w]][0],1)} ; ${fmt(initial.E[IX[w]][1],1)})</td></tr>`;
+  $("coords2").innerHTML=`<thead><tr><th>Parola</th><th>Coordinate iniziali</th></tr></thead><tbody>${row("gatto")+row("cane")+row("macchina")}
+  <tr><td>distanza gatto–macchina</td><td class="k">${fmt(dist(initial,"gatto","macchina"))}</td></tr>
+  <tr><td>distanza gatto–cane</td><td class="k">${fmt(dist(initial,"gatto","cane"))}</td></tr></tbody>`;
+}
+
+/* ---------- passo 3 ---------- */
+let running=false,raf=0,predSel="gatto";
+const CH=["gatto","cane","macchina","il","la","sul","dorme"];
+$("chips3").innerHTML=CH.map(w=>`<button type="button" data-w="${w}" aria-pressed="${w===predSel}">${w}</button>`).join("");
+$("chips3").onclick=e=>{const b=e.target.closest("button");if(!b)return;predSel=b.dataset.w;[...$("chips3").children].forEach(x=>x.setAttribute("aria-pressed",x===b));renderStats();};
+function renderStats(){
+  $("ep").textContent=live.epoch+" / "+EPOCHS;$("loss").textContent=fmt(live.loss);
+  $("dgc").textContent=fmt(dist(live,"gatto","cane"));$("dgm").textContent=fmt(dist(live,"gatto","macchina"));
+  $("predWord").textContent=predSel;
+  const ok=new Set([...FOLLOW[IX[predSel]]].map(i=>V[i]));
+  bars($("bars3"),top(probs(live,IX[predSel]),6),ok);
+}
+function frame(){
+  if(running){for(let i=0;i<2&&live.epoch<EPOCHS;i++)epoch(live);if(live.epoch>=EPOCHS){running=false;$("run").textContent="Addestramento completo";$("run").disabled=true;}}
+  plot3.draw(live,{trails:true,smooth:true});renderStats();
+  raf=(running||needsSettle())?requestAnimationFrame(frame):0;
+}
+let settle=0;function needsSettle(){return settle-->0;}
+function kick(n){settle=Math.max(settle,n||60);if(!raf)raf=requestAnimationFrame(frame);}
+$("run").onclick=()=>{if(live.epoch>=EPOCHS)return;running=!running;$("run").textContent=running?"Pausa":"Riprendi";kick();};
+$("stepOne").onclick=()=>{if(live.epoch<EPOCHS){epoch(live);}kick(60);};
+$("reset").onclick=()=>{running=false;live=newModel(SEED);plot3.view=null;$("run").disabled=false;$("run").textContent="Avvia l'addestramento";kick(2);};
+
+/* ---------- passo 4 ---------- */
+let subj="gatto",mode="si";
+function segInit(id,cb){$(id).onclick=e=>{const b=e.target.closest("button");if(!b)return;[...$(id).children].forEach(x=>x.setAttribute("aria-pressed",x===b));cb(b.dataset.v);};}
+segInit("subj",v=>{subj=v;renderStep4();});segInit("mode",v=>{mode=v;renderStep4();});
+function renderStep4(){
+  const words=["il",subj,"dorme","sul","___"],wts=[0.05,0.70,0.20,0.05];
+  const xs=[60,180,300,420,540],y=150,ink=css("--ink"),muted=css("--muted"),sc=css(HL[subj]);
+  let arcs="";
+  if(mode==="si"){for(let i=0;i<4;i++){if(i===3)continue;const x0=xs[3],x1=xs[i],hgt=30+(3-i)*28,sw=1+wts[i]*14;
+    arcs+=`<path d="M${x0} ${y-22} C ${x0} ${y-22-hgt}, ${x1} ${y-22-hgt}, ${x1} ${y-22}" fill="none" stroke="${i===1?sc:muted}" stroke-width="${sw}" stroke-linecap="round" opacity="${i===1?0.9:0.55}"/>
+    <text x="${(x0+x1)/2}" y="${y-28-hgt*0.75}" text-anchor="middle" font-family="${css("--f-mono")}" font-size="14" font-weight="600" fill="${i===1?sc:muted}">${Math.round(wts[i]*100)}%</text>`;}
+    arcs+=`<text x="${xs[3]+34}" y="${y-30}" font-family="${css("--f-mono")}" font-size="13" fill="${muted}">5% a sé</text>`;}
+  const toks=words.map((w,i)=>`<g><rect x="${xs[i]-50}" y="${y-20}" width="100" height="40" rx="8" fill="${i===3?ink:"none"}" stroke="${i===4?muted:ink}" stroke-dasharray="${i===4?"4 4":""}"/>
+    <text x="${xs[i]}" y="${y+6}" text-anchor="middle" font-family="${css("--f-mono")}" font-size="17" font-weight="600" fill="${i===3?css("--surface"):(i===1?sc:ink)}">${w}</text></g>`).join("");
+  const cap=mode==="si"?`«sul» confronta la sua domanda con le chiavi delle parole precedenti`:`il modello guarda soltanto «sul»`;
+  $("attnSvg").innerHTML=`<svg viewBox="0 0 600 200" role="img" aria-label="${cap}">${arcs}${toks}<text x="300" y="194" text-anchor="middle" font-family="${css("--f-body")}" font-size="13" fill="${muted}">${cap}</text></svg>`;
+  let list;
+  if(mode==="no"){const p=probs(trained,IX.sul);list=top(p,4);$("attnBadge").textContent="calcolato dal modello addestrato";}
+  else{const a=subj==="gatto"?"divano":"tappeto",b=subj==="gatto"?"tappeto":"divano";list=[[a,.85],[b,.10],["pappa",.03],["strada",.02]];$("attnBadge").textContent="numeri illustrativi";}
+  bars($("bars4"),list,new Set([subj==="gatto"?"divano":"tappeto"]));
+}
+
+/* ---------- passo 5 ---------- */
+const NOUN=new Set(["divano","tappeto","pappa","strada"]);
+function nextDist(t){
+  const last=t[t.length-1],sub=["gatto","cane","macchina"].find(w=>t.includes(w));
+  if(!last)return{il:.8,la:.2};
+  if(t.length>=12)return{"[fine]":1};
+  switch(last){
+    case"il":return{gatto:.45,cane:.45,macchina:.06,divano:.02,pappa:.02};
+    case"la":return t[t.length-2]==="mangia"?{pappa:.9,macchina:.05,strada:.05}:{macchina:.85,pappa:.1,strada:.05};
+    case"gatto":case"cane":return{dorme:.48,mangia:.47,corre:.05};
+    case"macchina":return{corre:.9,dorme:.04,mangia:.03,sul:.03};
+    case"dorme":return{sul:.95,sulla:.05};
+    case"mangia":return{la:.95,sul:.05};
+    case"corre":return{sulla:.92,sul:.08};
+    case"sulla":return{strada:.9,divano:.04,tappeto:.03,pappa:.03};
+    case"sul":return sub==="cane"?{tappeto:.85,divano:.1,pappa:.03,strada:.02}:sub==="gatto"?{divano:.85,tappeto:.1,pappa:.03,strada:.02}:{divano:.4,tappeto:.4,strada:.15,pappa:.05};
+    default:return NOUN.has(last)?{"[fine]":.96,il:.02,la:.02}:{"[fine]":1};
+  }
+}
+function withTemp(d,T){const e=Object.entries(d).map(([w,p])=>[w,Math.pow(p,1/T)]);const s=e.reduce((a,c)=>a+c[1],0);return e.map(([w,p])=>[w,p/s]).sort((a,b)=>b[1]-a[1]);}
+let gen=[],done=false,lastDice=null,busy=false;
+const T=()=>parseFloat($("temp").value);
+function renderGen(){
+  const d=withTemp(nextDist(gen),T());
+  $("sent").innerHTML=(gen.length?gen.map((w,i)=>`<span class="${i===gen.length-1?"new":""}">${w}</span>`).join(""):"")+(done?"":`<span class="cursor">___</span>`);
+  $("diceHead").textContent=done?"Frase finita":(gen.length?`Probabilità dopo «${gen[gen.length-1]}»`:"Probabilità della prima parola");
+  if(done){$("stack").innerHTML="";$("bars5").innerHTML="";}
+  else{
+    $("stack").innerHTML=d.map(([w,p])=>`<div style="flex:0 0 ${(p*100).toFixed(2)}%" title="${w} ${Math.round(p*100)}%">${p>.08?w:""}</div>`).join("")+(lastDice!=null?`<span class="marker" style="left:calc(${(lastDice*100).toFixed(1)}% - 1px)"></span>`:"");
+    bars($("bars5"),d.slice(0,5));
+  }
+  const tv=T();$("tempV").textContent=fmt(tv,1)+" · "+(tv<0.6?"bassa":tv<=1.3?"normale":"alta");
+  const s=gen.filter(w=>w!=="[fine]").join(" ");
+  $("verdict").innerHTML=done?(S.includes(s)?`<strong>${s}</strong>: è una delle cinque frasi lette.`:`<strong>${s}</strong>: <span class="w-gatto">frase nuova</span>, non compare nei testi.`):"";
+  $("g1").disabled=$("gAll").disabled=done||busy;
+}
+function stepGen(){
+  if(done)return;const d=withTemp(nextDist(gen),T());const r=Math.random();let acc=0,pick=d[d.length-1][0];
+  for(const [w,p] of d){acc+=p;if(r<acc){pick=w;break;}}
+  lastDice=r;
+  $("log").insertAdjacentHTML("beforeend",`<div>dado ${Math.round(r*100)} su 100 → ${pick} (${Math.round(d.find(x=>x[0]===pick)[1]*100)}%)</div>`);
+  // mostra prima il dado sulla distribuzione corrente, poi aggiunge la parola
+  $("stack").querySelector(".marker")?.remove();
+  $("stack").insertAdjacentHTML("beforeend",`<span class="marker" style="left:calc(${(r*100).toFixed(1)}% - 1px)"></span>`);
+  return new Promise(res=>setTimeout(()=>{gen.push(pick);if(pick==="[fine]")done=true;lastDice=null;renderGen();res();},matchMedia("(prefers-reduced-motion: reduce)").matches?50:650));
+}
+$("g1").onclick=async()=>{if(busy)return;busy=true;renderGen();await stepGen();busy=false;renderGen();};
+$("gAll").onclick=async()=>{if(busy)return;busy=true;renderGen();while(!done){await stepGen();}busy=false;renderGen();};
+$("gReset").onclick=()=>{if(busy)return;gen=[];done=false;lastDice=null;$("log").innerHTML="";renderGen();};
+$("temp").oninput=()=>{if(!busy)renderGen();};
+
+/* ---------- navigazione ---------- */
+const panels=[...document.querySelectorAll("section[data-step]")];
+$("steps").innerHTML=panels.map((p,i)=>`<button type="button" role="tab" data-i="${i}"><span class="n">${i}</span>${p.dataset.name}</button>`).join("");
+let cur=0;
+function go(i,push){
+  cur=Math.max(0,Math.min(panels.length-1,i));
+  panels.forEach((p,j)=>p.hidden=j!==cur);
+  [...$("steps").children].forEach((b,j)=>{if(j===cur)b.setAttribute("aria-current","step");else b.removeAttribute("aria-current");});
+  $("prev").disabled=cur===0;$("next").disabled=cur===panels.length-1;
+  if(push){try{history.replaceState(null,"","#passo-"+cur);}catch(e){}}
+  redraw();
+}
+function redraw(){if(cur===2)renderStep2();if(cur===3)kick(2);if(cur===4)renderStep4();if(cur===5)renderGen();}
+$("steps").onclick=e=>{const b=e.target.closest("button");if(b)go(+b.dataset.i,true);};
+$("prev").onclick=()=>go(cur-1,true);$("next").onclick=()=>go(cur+1,true);
+document.addEventListener("keydown",e=>{if(e.target.matches("input,textarea"))return;if(e.key==="ArrowRight")go(cur+1,true);if(e.key==="ArrowLeft")go(cur-1,true);});
+window.addEventListener("hashchange",()=>{const m=location.hash.match(/passo-(\d)/);if(m)go(+m[1],false);});
+new ResizeObserver(()=>redraw()).observe(document.querySelector(".wrap"));
+matchMedia("(prefers-color-scheme: dark)").addEventListener("change",redraw);
+new MutationObserver(redraw).observe(document.documentElement,{attributes:true,attributeFilter:["data-theme"]});
+if(document.fonts)document.fonts.ready.then(redraw);
+const m0=location.hash.match(/passo-(\d)/);go(m0?+m0[1]:0,false);
+})();
+</script>

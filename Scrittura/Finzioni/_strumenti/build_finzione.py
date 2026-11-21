@@ -12,6 +12,10 @@ Sintassi del sorgente:
   > testo                 citazione infratestuale (11, interlinea singola, rientro sx 2 cm)
   @disclaimer Testo       sostituisce, per questo testo, la nota con asterisco predefinita
   @formato libro          impaginazione da libro (16×24 cm, margini a specchio, corpo minore); default: paper A4
+  @capitolo Titolo        titolo di capitolo su pagina nuova (14, maiuscoletto, centrato)
+  @pagina                 interruzione di pagina
+  @centro Testo           riga centrata senza rientro (frontespizio, epigrafi)
+  @tavola Didascalia      segnaposto per un'immagine (riquadro centrato con didascalia)
   @bibliography           inizia la bibliografia finale
   @bibhead Fonti          sottotitolo della bibliografia
   *corsivo*  ^^maiuscoletto^^  {{testo della nota a piè di pagina}}
@@ -94,6 +98,18 @@ def build(src, dst):
         s = ln.strip()
         if not s: continue
         if s.startswith(('@disclaimer ', '@formato ')): continue
+        if s == '@pagina':
+            d.body.append('<w:p><w:r><w:br w:type="page"/></w:r></w:p>'); continue
+        if s.startswith('@capitolo '):
+            d.body.append('<w:p><w:r><w:br w:type="page"/></w:r></w:p>')
+            d.para(s[10:], size=28, jc='center', first=0, smallcaps=True, before=1440, after=720, keep=True); continue
+        if s == '@centro':
+            d.para('', first=0, after=120); continue
+        if s.startswith('@centro '):
+            d.para(s[8:], jc='center', first=0, after=120); continue
+        if s.startswith('@tavola '):
+            d.para('[ ' + s[8:].split('.')[0] + ' ]', size=22, jc='center', first=0, before=360, after=60, keep=True)
+            d.para(s[8:], size=20, jc='center', first=0, line=240, after=360, italic=True); continue
         if s.startswith('@author '):
             d.para(s[8:], jc='center', first=0, smallcaps=True, after=240)
         elif s.startswith('@title '):

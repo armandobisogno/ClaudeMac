@@ -1,0 +1,30 @@
+@disclaimer Da un’idea di Armando Bisogno, testo integralmente prodotto da Claude Code. Ogni riferimento a codici, studiosi, riviste e convegni che il lettore non riesca a trovare in biblioteca è da considerarsi, appunto, introvabile.
+@formato libro
+@title Ermete Metello
+@centro *Storia di un monaco*
+@centro
+@centro
+@centro con un regesto del codice cavense *Latinus* 56LA
+@centro e una trascrizione del diario lunare
+
+@pagina
+
+@centro
+@centro
+@centro
+@centro *Quae sit autem ista, Deus viderit.*
+@centro ^^Augustinus^^, *Contra Academicos*, III, 20, 43
+
+@capitolo Avvertenza
+
+Questo libro è nato per caso, come accade alla maggior parte dei libri che si dicono nati per caso. Cercavo nella biblioteca della Badia di Cava un documento sulla proprietà di un mulino, che non ho trovato, e mi è stato portato per errore un codice di piccolo formato con una segnatura che il bibliotecario stesso giudicò, a prima vista, «un po’ strana». Era il *Latinus* 56LA. Il mulino, nel frattempo, è passato in secondo piano.
+
+Il lettore troverà qui una presentazione complessiva della figura di Ermete Metello e delle sue tre opere, pensata non soltanto per gli specialisti. Sugli specialisti, del resto, sarà bene intendersi subito. Gli studi metelliani esistono da circa cinquant’anni, hanno prodotto due convegni, una polemica e un premio; ma il numero di persone che ha letto per intero il codice cavense resta inferiore a quello dei relatori del primo convegno. Ho cercato di dar conto di questa letteratura con equilibrio, anche quando l’equilibrio non era ricambiato.
+
+Le citazioni delle opere di Ermete sono date in traduzione nostra, poiché nessun’altra ne esiste; il testo latino è riportato in nota quando la questione lo richiede, e sempre quando la traduzione potrebbe sembrare troppo bella per essere vera. I passi di Agostino sono citati secondo il testo latino e, salvo diversa indicazione, nella traduzione della *Nuova Biblioteca Agostiniana*. Per Boezio, Anselmo e gli altri autori medievali ho tradotto io, con i limiti che i lettori più attenti non mancheranno di segnalare.
+
+I ringraziamenti sono, come sempre, molti e insufficienti. Il primo va al personale della biblioteca della Badia, sempre disponibile, tranne il martedì. Ringrazio poi i colleghi che hanno letto il manoscritto di questo libro, alcuni dei quali mi hanno chiesto di non essere nominati, per ragioni che i capitoli finali renderanno comprensibili. Un ringraziamento particolare va a chi, negli anni, mi ha domandato a che cosa servisse studiare un autore che nessuno cita: questo libro non risponde alla domanda, ma la prende sul serio.
+
+Le tavole che accompagnano il testo non sono riproduzioni fotografiche del codice, che la Badia non concede se non per fini di studio e previa richiesta scritta da presentare, appunto, di martedì. Sono ricostruzioni, e come tali vanno guardate.
+
+Cava de’ Tirreni, nella festa di sant’Alferio

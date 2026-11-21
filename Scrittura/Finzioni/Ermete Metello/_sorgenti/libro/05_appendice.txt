@@ -1,0 +1,147 @@
+@capitolo Appendice
+
+## I. Regesto del codice Cava, *Latinus* 56LA
+
+Badia della Santissima Trinità di Cava de’ Tirreni, Biblioteca, fondo *Latinus*, 56LA (antica segnatura: nessuna).
+
+Membranaceo, sec. XII (seconda metà, ante 1170); mm 205 × 140 (specchio di scrittura mm 150 × 95); ff. II + 112 + I’, con foliazione moderna a matita nell’angolo superiore esterno, che numera anche i fogli asportati (ff. 81-84, dei quali restano i talloni). Guardie cartacee settecentesche. Fascicoli: 1-10⁸, 11⁸ (mancano i primi quattro fogli, cioè i ff. 81-84), 12-14⁸; richiami orizzontali nel margine inferiore del verso, alcuni rifilati. Rigatura a secco, 24 linee per pagina, una sola colonna.
+
+Scrittura: minuscola beneventana di tipo cassinese, di modulo medio, di una sola mano, regolare ma non esperta, con un uso delle abbreviazioni più libero di quanto la tradizione dello *scriptorium* cavense lascerebbe attendere. Una seconda mano, più tarda e meno esperta, ha aggiunto la nota obituaria al f. 110v. Una terza mano, moderna, ha scritto a matita sul f. Iv: «Opere di un certo Ermete. Nulla di rilevante».
+
+Decorazione: iniziali semplici in rosso all’inizio di ciascuna opera e di ciascuna delle quattro «età» dell’*Epitome*; rubriche in rosso; nel margine dei ff. 35-68, undici segni di attenzione a forma di mano stilizzata (*maniculae*), dello stesso inchiostro del testo. Al f. 1, nel margine esterno, in verticale e in modulo minutissimo, il diario lunare (cfr. *infra*, II). Al f. 68v, pagina lasciata bianca.
+
+Legatura: settecentesca, in pergamena floscia su cartone, con titolo manoscritto sul dorso, ormai quasi illeggibile, nel quale si è voluto leggere «HERMES» oppure «HERBARIUM».
+
+Contenuto:
+
+1. ff. 1-18v: *Historia Hermetis Metelli a seipso descripta*. Inc.: «Ludos campsi pro cuccula…». Expl.: «… et ideo scripsi, et scribo».
+
+2. ff. 19-91v: *Epitome de veritate*. Rubr.: «Incipit epitome de veritate, quae in quattuor aetates dividitur…». Sezioni: *De gentilibus* (ff. 19-34); *Augustinus* (ff. 35-68); *Boethius* (ff. 69-77); *Aetas novissima* (ff. 78-91v, con la lacuna dei ff. 81-84). Expl.: «… et ideo damnatus creditus est».
+
+3. ff. 92-110v: *De erroribus et veritate*. Inc.: «De erroribus et veritate. Prius errores numerandi sunt…». Expl.: «… veritas et in cella habitat».
+
+4. f. 110v, margine inferiore, altra mano: nota obituaria. «III id. nov. obiit frater qui lunas numerabat. Hanc non vidit».
+
+5. ff. 111-112v: bianchi, salvo alcune prove di penna (al f. 112: «*probatio pennae*», ripetuto tre volte, e un abbozzo di falce lunare).
+
+Storia del codice: nessuna nota di possesso. Il codice non compare negli inventari della Badia anteriori al catalogo manoscritto della fine del secolo XIX, nel quale è descritto in tre righe. Prima segnalazione a stampa: nessuna fino al 1974.
+
+Bibliografia: ^^Tramontano^^, *Ermete Metello*, cit.; ^^Dawson^^, *Hermes Metellus*, cit.; ^^Calabria^^, *Viaggi e viaggiatori*, cit., pp. 123-125; ^^Panico^^, *In scriniis*, cit.
+
+@tavola Tavola 8. Ricostruzione del f. 1: l’incipit della *Historia* e, nel margine esterno, il diario lunare.
+
+## II. Il diario lunare
+
+Le annotazioni del diario lunare occupano il margine esterno del f. 1, dall’alto in basso, e proseguono nel margine inferiore e poi, capovolte, in quello superiore. Sono quarantadue, scritte in modulo minutissimo e con abbreviazioni molto forti. Ciascuna è composta, di norma, da quattro elementi: l’indicazione del mese, secondo il calendario romano; l’età della luna, espressa in numeri romani da I a XXX secondo il computo di Beda; l’abbreviazione dell’opera alla quale Ermete stava lavorando (*H.* per la *Historia*, *E.* per l’*Epitome*, *D.* per il *De erroribus*); il numero del foglio raggiunto. In alcuni casi si aggiunge una parola, o una breve frase.
+
+Diamo qui la trascrizione delle annotazioni più significative, seguita da una traduzione e da un breve commento. La numerazione è nostra. Le annotazioni non riportate si limitano ai quattro elementi consueti e non presentano problemi di lettura, salvo quelli, insolubili, dovuti al taglio del margine.
+
+1. *K. Mar. l. I. H. inc. sub domno Marino abbate.* Calende di marzo, luna prima: comincia la *Historia*, sotto il signore abate Marino. È l’annotazione che data il codice agli anni 1146-1170. L’inizio del lavoro coincide con l’inizio dell’anno secondo lo stile di molti computi meridionali, e con la luna nuova: un inizio, insomma, da ogni punto di vista.
+
+2. *Id. Apr. l. XIIII. H. f. II.* Idi di aprile, luna quattordicesima: *Historia*, foglio 2. Plenilunio. Ermete ha scritto il foglio sul concilio di Bari.
+
+5. *Non. Iul. l. VIII. H. f. IIII. nomen.* None di luglio, luna ottava: *Historia*, foglio 4, «il nome». È la pagina dello pseudonimo. Si tratta della prima delle annotazioni che aggiungono una parola al dato consueto.
+
+7. *K. Oct. l. XXII. H. f. IX. claves.* Calende di ottobre, luna ventiduesima: *Historia*, foglio 9, «le chiavi». È il passo sull’*armarius*. La luna è calante.
+
+9. *frigus.* Freddo. Annotazione isolata, senza altri elementi. La sua posizione nel margine la colloca nell’inverno successivo.
+
+12. *K. Feb. l. III. E. inc.* Calende di febbraio, luna terza: comincia l’*Epitome*. Il passaggio dalla *Historia* all’*Epitome* non è segnalato da alcuna pausa.
+
+16. *l. crescente scribo, decrescente dubito.* Con la luna crescente scrivo, con la calante dubito. È la più citata delle annotazioni, e la sola che abbia la forma di una sentenza. La sua posizione, tra la 15 e la 17, la colloca negli anni del lavoro sull’*Epitome*, ma non ha riferimento ad alcun foglio.{{Il valore dottrinale dell’annotazione è stato oggetto di un intero convegno, *Lune e libri nel monachesimo meridionale*, tenutosi a Cava nel 1996, i cui atti sono in corso di stampa.}}
+
+18. *Id. Sept. l. XV. E. f. XXIII. Plato Siculorum.* Idi di settembre, luna quindicesima: *Epitome*, foglio 23, «il Platone dei Siciliani». È il foglio con gli estratti del *Fedone*, che non può essere anteriore al 1156 e costituisce così, insieme all’annotazione 1, il secondo appiglio cronologico del diario.
+
+23. *E. f. LXVIII. luna deficiens. cessavi.* *Epitome*, foglio 68, «luna che viene meno. Ho interrotto». È l’annotazione che accompagna la pagina bianca dopo le *Confessiones*, e quella che più ha impegnato gli interpreti. La *luna deficiens* può indicare un’eclissi, come si è per lo più ritenuto, oppure, più semplicemente, la luna calante. Le annotazioni successive mostrano che il lavoro riprese dopo tre lunazioni.{{Per l’identificazione con un’eclissi lunare, cfr. ^^Salsano^^, *Ancora su Ermete*, cit., p. 303, che ne propone una del 1159; per la luna calante, ^^Brandolini^^, rec. cit., pp. 124-126, secondo il quale l’eclissi del 1159 «è più visibile nel saggio di Salsano che nel cielo di Cava».}}
+
+24. *E. f. LXIX. Boethius. captivus.* *Epitome*, foglio 69, «Boezio. Prigioniero». Ripresa del lavoro. Senza indicazione del mese né dell’età della luna, il che è stato interpretato da alcuni come un segno di fretta, da altri come un segno di pioggia.
+
+27. *E. f. LXXIX. Beda. quantum supersit.* *Epitome*, foglio 79, «Beda. Quanto resta». Ripete, abbreviandola, l’annotazione dell’*Epitome* su Beda e il computo del tempo.
+
+29. *E. expl. Gerbertus.* Finisce l’*Epitome*, con Gerberto. Non vi è menzione della lacuna dei ff. 81-84, il che fa pensare che i fogli siano stati asportati dopo il completamento del codice, e forse dopo la morte del suo autore.
+
+30. *K. Mai. l. II. D. inc.* Calende di maggio, luna seconda: comincia il *De erroribus et veritate*.
+
+31. *D. f. CI. Hermes.* *De erroribus*, foglio 101, «Ermete». Comincia la discussione sul Trismegisto.
+
+32. *l. XXX.* Luna trentesima. Annotazione isolata, che segna la fine di una lunazione senza progressi nel lavoro.
+
+33. *l. XXX. l. XXX. l. XXX. l. XXX. l. XXX.* Cinque volte la luna trentesima. Con la precedente, sei lunazioni senza che il lavoro avanzi: è la pausa più lunga di tutto il diario, e cade, come si è visto, in corrispondenza dei passi sul Trismegisto.
+
+35. *D. f. CIV. tandem.* *De erroribus*, foglio 104, «finalmente». Si chiude la discussione su Ermete Trismegisto.
+
+38. *D. f. CVI. veritas.* *De erroribus*, foglio 106, «la verità». È il foglio della sentenza sulla verità che non si possiede.
+
+41. *D. f. CX. expl. Deo gratias. et lunae.* *De erroribus*, foglio 110, finito. «Grazie a Dio. E alla luna». È l’ultima annotazione di argomento, e la sola che contenga un ringraziamento. L’aggiunta finale è stata giudicata da alcuni un’imprudenza di sapore ermetico, da altri un’espressione di gratitudine per l’illuminazione notturna.
+
+42. *l. I.* Luna prima. Annotazione isolata, con un inchiostro più chiaro, nell’angolo superiore del margine, dove il diario era cominciato. È l’ultima del codice. La luna nuova, nel computo di Beda, è quella che non si vede.
+
+@tavola Tavola 9. Schema delle annotazioni del diario lunare, con le fasi della luna e i fogli raggiunti.
+
+@bibliography
+
+@bibhead Fonti
+
+*Anselmus Cantuariensis*, *Opera omnia*, ed. F.S. Schmitt, I, Seckau 1938; II, Edinburgh 1946.
+
+*Asclepius*, in *Corpus Hermeticum*, II, ed. A.D. Nock, A.-J. Festugière, Paris 1945.
+
+*Aurelius Augustinus*, *Opera omnia*, Nuova Biblioteca Agostiniana, Roma 1965 ss. (testo latino e traduzione italiana), in partic. *Soliloquia*, *Contra Academicos*, *De magistro*, *De vera religione*, *Confessiones*, *De civitate Dei*.
+
+*Anicius Manlius Severinus Boethius*, *De consolatione philosophiae. Opuscula theologica*, ed. C. Moreschini, München-Leipzig 2000.
+
+*Beda Venerabilis*, *De temporum ratione*, ed. C.W. Jones, Turnhout 1977 (CCSL 123B).
+
+*Eadmerus*, *Historia novorum in Anglia*, ed. M. Rule, London 1884.
+
+*Hermes Metellus*, *Historia Hermetis Metelli a seipso descripta*; *Epitome de veritate*; *De erroribus et veritate*, Cava de’ Tirreni, Biblioteca della Badia, cod. *Lat.* 56LA (inediti).
+
+*Petrus Abaelardus*, *Sic et non. A Critical Edition*, ed. B.B. Boyer, R. McKeon, Chicago-London 1976-1977.
+
+*Phaedo interprete Henrico Aristippo*, ed. L. Minio-Paluello, London 1950 (*Plato Latinus*, II).
+
+*Giovanni Pico della Mirandola*, *De hominis dignitate, Heptaplus, De ente et uno*, ed. E. Garin, Firenze 1942.
+
+*Regula Benedicti*, in *La Regola di san Benedetto e le Regole dei Padri*, a cura di S. Pricoco, Milano 1995.
+
+*Vitae quatuor priorum abbatum Cavensium Alferii, Leonis, Petri et Constabilis*, ed. L. Mattei-Cerasoli, Bologna 1941 (*Rerum Italicarum Scriptores*², VI/5).
+
+*Willelmus Malmesbiriensis*, *Gesta regum Anglorum*, ed. R.A.B. Mynors, R.M. Thomson, M. Winterbottom, I, Oxford 1998.
+
+@bibhead Studi
+
+Brandolini A., rec. a V. Panico, *In scriniis monachorum, non in mentibus*, «Bollettino di studi metelliani», 4 (2011), pp. 88-131.
+
+Brandolini A., *Due modi di non capire Ermete*, «Bollettino di studi metelliani», 7 (2014), pp. 1-64.
+
+Calabria G., *Viaggi e viaggiatori nella Cava medievale*, in Id., *Leggere Cava: percorsi nella memoria e nella storia*, Salerno 2009, pp. 120-134.
+
+Dawson Ch., *Hermes Metellus: a Nineteenth-Century Invention?*, «Speculum minus», 9 (1984), pp. 33-58.
+
+de Jong M., *In Samuel’s Image. Child Oblation in the Early Medieval West*, Leiden 1996.
+
+Guillaume P., *Essai historique sur l’abbaye de Cava d’après des documents inédits*, Cava dei Tirreni 1877.
+
+Haskins C.H., *Studies in the History of Mediaeval Science*, Cambridge (Mass.) 1924.
+
+Loew E.A., *The Beneventan Script. A History of the South Italian Minuscule*, Oxford 1914; seconda ed. ampliata a cura di V. Brown, Roma 1980.
+
+Loud G.A., *The Age of Robert Guiscard. Southern Italy and the Norman Conquest*, Harlow 2000.
+
+Morcaldi M., Schiani M., De Stefano S. (edd.), *Codex diplomaticus Cavensis*, Napoli-Milano-Pisa 1873 ss.
+
+Panico V., *In scriniis monachorum, non in mentibus: contesto e fonti della biblioteca di Ermete Metello*, «Studia americana», 12 (2008), pp. 20-36.
+
+Panico V., *Per una biblioteca del Sud*, «Bollettino di studi metelliani», 5 (2012), pp. 7-9.
+
+Panico V., *Beyond the Cowl: Hermes Metellus and the Monastic Self*, in *Hidden Selves in the Medieval Cloister*, ed. by J. Whitmore, Kalamazoo 2017, pp. 211-229.
+
+Salsano G., *Reclusi medievali*, in *Storia della reclusione profetica*, Napoli 1980, pp. 97-118.
+
+Salsano G., *Ancora su Ermete*, in *Studi in onore di un collega*, Napoli 1986, pp. 301-305.
+
+Salsano G. (a cura di), *Ermete Metello e il suo tempo. Atti del convegno (Cava de’ Tirreni, ottobre 1983)*, in corso di stampa.
+
+*Sulla lunghezza delle recensioni*, «Bollettino di studi metelliani», 9 (2016), p. 3.
+
+Tramontano M., *Ermete Metello monaco cavense. Ricerche sul cod.* Lat. *56LA*, tesi di laurea, Università degli Studi di Salerno, a.a. 1973-74.
