@@ -11,6 +11,8 @@ TESTI = {
   "mag":   dict(sigla="mag.", libro=None, ns="", title="Codifica del De magistro",
                 h1="<i>De magistro</i> · codifica", prop=["", "Aug.", "Ad.", "autorità citata"]),
 }
+TESTI["bv"] = dict(sigla="beata v.", libro=None, ns="bv_", title="Codifica del De beata vita",
+                   h1="<i>De beata vita</i> · codifica", prop=["", "Augustinus", "autorità citata"], togli_rimandi=True)
 for _b in ("2", "3"):   # libri II e III del Contra Academicos
     TESTI["acad"+_b] = dict(TESTI["acad1"], libro=_b, ns="acad%s_" % _b, title="Codifica del Contra Academicos",
                             h1="<i>Contra Academicos</i> %s · codifica" % ("II" if _b == "2" else "III"))

@@ -26,6 +26,7 @@ Il diario registra la cronologia; il paper **no**. Ogni cambiamento di metodo si
 | Il definiendum si registra nella forma in cui compare nel testo | il lettore non riconduce il termine a un concetto: la riconduzione è un'operazione interpretativa che va tenuta distinta dalla registrazione | Revisione dopo il confronto (bozza 10) |
 | Quando la frase parla del definire in sé, il definiendum è *Definire* | il discorso sul definire è un oggetto del dialogo e va registrato come tale, non attribuito al termine discusso | Revisione dopo il confronto (bozza 10) |
 | Gli enunciati che non definiscono X ma ne negano o escludono una proprietà, la concludono, la concedono o la pongono come premessa si registrano con un segno proprio (T, «tesi») e non contano come definizioni | nel dialogo la definizione si costruisce anche attraverso tesi che la circoscrivono; il segno conserva il fenomeno senza classificarlo, e la scelta resta rivedibile sui dati dell'intero corpus | Segno T (bozza 10.1) |
+| L'indicatore 2 comprende anche i verbi del nominare (*voco, appello, nomino*) quando dicono che cos'è X | il nome assegnato con una spiegazione («id probabile … vocant, quod…») è un modo di definire che il dialogo usa di frequente; escluderlo lascerebbe fuori definizioni esplicite |  Verbi del nominare (bozza 10.1) |
 
 ## 14.11.2026 — Percorso delle scelte
 
@@ -204,3 +205,17 @@ Esito: B5 come formulato è troppo largo (circa 1 su 9). Funziona solo quando il
 - Codifica: Acad. II 302 frasi → 28 annotate (19 con 1-3, 4 T); Acad. III 547 frasi → 54 annotate (43 con 1-3, 9 T). File `_dati/codifica_claude_acad2.tsv`, `_dati/codifica_claude_acad3.tsv`. Definienda nella forma del testo, note con infiniti latini e iniziale maiuscola.
 - Le proposte automatiche dell'1 (1 in II, 12 in III) sono state tutte confermate.
 - Episodi principali: II — probabile/verisimile (2.5.12.3, 2.7.16.16, 2.11.26.2-5, 2.12.27.6), verum/percipi (Zenone, 2.5.11.5-6, 2.6.14.8), philosophia/philocalia (2.3.7), bona fides (2.5.12.7). III — sapiens/studiosus (3.3.5), definizione di Zenone (3.9.18-21, 3.10.22, 3.17.39), mundus (3.11.24-25), errare (3.11.24.5, 3.14.32.7, 3.15.34.3), amicitia (3.6.13.10), duo mundi (3.17.37), veri simile/probabile (3.18.40).
+
+## 20.11.2026 — Codifica affidata a un'istanza nuova del modello
+
+- Obiezione di Armando: la prova dell'esperimento è che cosa fa la macchina da sola; la sua codifica non va corretta né precaricata per il lettore umano (rischio di ancoraggio). Inoltre la codifica di Claude in questa sessione può risentire del contesto (lettura delle annotazioni di Armando, discussione del confronto).
+- Decisione: la codifica del corpus è affidata a un'istanza nuova del modello (agente separato, senza accesso alla conversazione, alle annotazioni di Armando, al diario né alla codifica di Claude), che riceve solo `_sorgenti/istruzioni_codifica.md` (codebook 10.1 in forma di istruzioni) e il testo frase per frase in `_dati/istanza_nuova/`. Prima prova: Acad. II, Acad. III, De beata vita (439 frasi).
+- Il confronto tra l'istanza nuova e la codifica di Claude di questa sessione su Acad. II-III misurerà l'effetto del contesto. La taratura dell'affidabilità resta quella del libro I (doppia codifica alla cieca).
+- Nota: nelle istruzioni l'indicatore 2 include esplicitamente i verbi di nominare (*voco, appello, nomino*), come già applicato nella codifica di Acad. II-III; confermato da Armando.
+
+## 20.11.2026 — Risultati dell'istanza nuova e confronto tra le due codifiche della macchina
+
+- Istanza nuova (solo istruzioni + testo): Acad. II 36 frasi segnate (1:1, 2:13, 3:5, T:17), Acad. III 95 (1:14, 2:30, 3:6, T:47), De beata vita 162 (1:0, 2:50, 3:47, T:63). Proposte automatiche dell'1 tutte confermate; in più segna 1 su *determinare* (3.3.5.5-6). File in `_dati/istanza_nuova/`.
+- Confronto con la codifica di Claude in sessione (`confronto_istanze.py`, esito in `_dati/confronto_istanze_acad23.txt`): indicatori 1-3 κ 0,91 (II) e 0,87 (III); T κ 0,27 in entrambi i libri (l'istanza nuova segna T 4 volte di più).
+- Lettura: sugli indicatori 1-3 le due istanze della macchina concordano molto più di quanto la macchina concordasse con il lettore umano sul libro I (κ 0,70 sulla presenza, 0,5 su 2/3): il contesto ha pesato poco, ma l'alto accordo tra macchine può riflettere un modo comune di leggere del modello, non la correttezza. T è sottodeterminato dal criterio.
+- Casi incerti segnalati dall'istanza nuova: *determinare* = definire (1?); identità ricavate come conclusione (3 o T?); identificazioni allegoriche (Proteo, il monte); glosse con *id est* e definizioni in relativa; estensione di T nelle catene argomentative; nomi senza spiegazione.
