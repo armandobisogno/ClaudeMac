@@ -1,4 +1,4 @@
-# Le tessere di Agostino — prompt per le illustrazioni (ChatGPT)
+# Come tessere in un mosaico — prompt per le illustrazioni (ChatGPT)
 
 Venti illustrazioni, due per capitolo. Nel .docx ogni illustrazione ha già il suo segnaposto `[ Illustrazione N ]` con la didascalia.
 
@@ -11,7 +11,7 @@ Venti illustrazioni, due per capitolo. Nel .docx ogni illustrazione ha già il s
 
 ## Stile (da incollare sempre)
 
-> Illustrazione per un libro per ragazzi di 9-12 anni, tecnica a gouache e matite colorate su carta ruvida, con texture visibile. Palette calda del Mediterraneo e del Nord Africa: ocra, terracotta, blu cobalto, verde oliva, bianco calce, con piccoli tocchi d'oro. Come filo conduttore, in ogni immagine c'è un dettaglio a tessere di mosaico (un bordo, un pavimento, un motivo sui vestiti, un cielo fatto a tessere). Figure semplici ed espressive, occhi grandi ma non stile manga, niente effetto 3D o digitale lucido. Ambientazione storica credibile, tardo impero romano (IV secolo): tuniche, mantelli, sandali, case con cortile, lucerne a olio, rotoli e codici. Tono poetico e delicato, mai spaventoso. Nessuna scritta nell'immagine.
+> Illustrazione per un libro per ragazzi di 15-18 anni (stile maturo, non infantile), tecnica a gouache e matite colorate su carta ruvida, con texture visibile. Palette calda del Mediterraneo e del Nord Africa: ocra, terracotta, blu cobalto, verde oliva, bianco calce, con piccoli tocchi d'oro. Come filo conduttore, in ogni immagine c'è un dettaglio a tessere di mosaico (un bordo, un pavimento, un motivo sui vestiti, un cielo fatto a tessere). Figure semplici ed espressive, occhi grandi ma non stile manga, niente effetto 3D o digitale lucido. Ambientazione storica credibile, tardo impero romano (IV secolo): tuniche, mantelli, sandali, case con cortile, lucerne a olio, rotoli e codici. Tono poetico e delicato, mai spaventoso. Nessuna scritta nell'immagine.
 
 ## Personaggi (da incollare sempre)
 
@@ -54,7 +54,7 @@ Venti illustrazioni, due per capitolo. Nel .docx ogni illustrazione ha già il s
 > Veduta dall'alto della grande città portuale di Cartagine: il porto circolare con le navi, il teatro, le strade affollate di gente, bancarelle e carri. La città è disegnata come dentro una gigantesca padella di rame, con piccole bolle e scintille che salgono dai tetti, come se tutta la città sfrigolasse. In primo piano, su una collina, Agostino (17 anni) con la sacca da viaggio sulla spalla guarda tutto a bocca aperta. Tono allegro e fantasioso.
 
 **Illustrazione 8. L'Ortensio**
-> Una stanza di studente piena di rotoli e tavolette. Agostino (19 anni) siede vicino alla finestra e legge un rotolo aperto; dalle righe del testo esce una luce dorata fatta di piccole tessere che gli illumina il viso stupito. Fuori dalla finestra, sfocati, il chiasso e i colori della città. Contrasto fra il rumore di fuori e la calma luminosa di dentro.
+> Una stanza di studente piena di rotoli e tavolette. Agostino (18 anni) siede vicino alla finestra e legge un rotolo aperto; dalle righe del testo esce una luce dorata fatta di piccole tessere che gli illumina il viso stupito. Fuori dalla finestra, sfocati, il chiasso e i colori della città. Contrasto fra il rumore di fuori e la calma luminosa di dentro.
 
 ## Capitolo 5. Una storia che spiegava tutto
 
@@ -102,7 +102,7 @@ Venti illustrazioni, due per capitolo. Nel .docx ogni illustrazione ha già il s
 > Un immenso palazzo fantastico visto in sezione, come una casa delle bambole gigante: decine di stanze, scale, corridoi, scaffali e magazzini. In ogni stanza c'è un ricordo dei capitoli precedenti: un albero di pere, una padella di rame con una città dentro, una nave con le vele gonfie, un fico in un giardino, una finestra aperta sul cielo, un rotolo luminoso. Al centro, piccolo, Agostino a 43 anni con una lanterna in mano esplora il palazzo. Alcuni ricordi escono da soli dalle loro stanze e gli corrono incontro.
 
 **Illustrazione 20. Il mosaico da finire**
-> Un grande mosaico incompiuto su un muro antico, visto di fronte. La parte alta è finita: le tessere formano un cammino tortuoso che parte da una piccola casa sulle colline, passa per una nave e un albero di fico e arriva a una finestra aperta sul cielo. La parte bassa è ancora vuota: per terra, molte tessere sparse di tutti i colori. In primo piano, la mano di un bambino o di una bambina di oggi (con il polsino di una felpa moderna) sta raccogliendo una tessera. È l'unico elemento contemporaneo del libro.
+> Un grande mosaico incompiuto su un muro antico, visto di fronte. La parte alta è finita: le tessere formano un cammino tortuoso che parte da una piccola casa sulle colline, passa per una nave e un albero di fico e arriva a una finestra aperta sul cielo. La parte bassa è ancora vuota: per terra, molte tessere sparse di tutti i colori. In primo piano, la mano di un ragazzo o di una ragazza di oggi (con il polsino di una felpa moderna) sta raccogliendo una tessera. È l'unico elemento contemporaneo del libro.
 
 ---
 

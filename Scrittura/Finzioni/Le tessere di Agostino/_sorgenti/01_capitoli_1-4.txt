@@ -1,7 +1,7 @@
-@disclaimer Dal libro di Armando Bisogno «Il racconto fragile. Le Confessioni di Agostino»: versione per ragazzi integralmente prodotta da Claude Code. Le parole di Agostino sono citate nella traduzione della Nuova Biblioteca Agostiniana.
+@disclaimer Dal libro di Armando Bisogno «Il racconto fragile. Le Confessioni di Agostino»: versione per ragazzi, «Come tessere in un mosaico», integralmente prodotta da Claude Code, a partire da un’introduzione e un primo capitolo rivisti dall’autore. Le parole di Agostino sono citate nella traduzione della Nuova Biblioteca Agostiniana.
 @formato libro
-@title Le tessere di Agostino
-@centro *Il racconto fragile delle* Confessioni*, per ragazzi*
+@title Come tessere in un mosaico
+@centro *Le* Confessioni *di Agostino raccontate ai ragazzi*
 @centro
 @centro
 @centro dieci capitoli, venti illustrazioni
@@ -9,37 +9,31 @@
 
 @capitolo Prima di cominciare
 
-Questa è la storia di un uomo che ha scritto la storia di se stesso.
+Questa è la storia di un uomo che ha scritto una autobiografia, cioè una storia della sua vita. Si chiamava Agostino, ed è vissuto più di milleseicento anni fa. Quando aveva quarantatré anni, decise di raccontare la sua vita dall’inizio, da quando era un bambino piccolissimo fino a quando ne aveva trentatré. Ne venne fuori un libro lungo, intitolato *Confessioni*, che le persone leggono ancora oggi in tutto il mondo.
 
-Si chiamava Agostino, ed è vissuto tanto tempo fa: più di milleseicento anni. Quando aveva quarantatré anni, decise di raccontare la sua vita dall’inizio, da quando era un bambino piccolissimo fino a quando ne aveva trentatré. Ne venne fuori un libro lungo, intitolato *Confessioni*, che le persone leggono ancora oggi in tutto il mondo.
+Fermiamoci già su questo punto. Abbiamo detto che, quando scrive le *Confessioni*, non è più il bambino, né il ragazzo, né il giovane di cui racconta la storia. È un uomo adulto, che guarda indietro e prova a ricordare. Ma ricordare, lo sappiamo tutti, è un lavoro difficile. Alcune cose si ricordano benissimo, altre sono confuse, altre ancora non si ricordano affatto e bisogna immaginarle. Altre ancora ce le ricordiamo perfettamente ma preferiremmo dimenticarle, e non raccontarle a nessuno. Così, nelle *Confessioni*, Agostino fa due parti contemporaneamente, come un attore che reciti da solo in una commedia: è la voce che racconta ed è il personaggio raccontato. Il signore adulto che scrive, il ragazzino che combina guai e il giovane che non riesce bene a capire quale è la sua strada nella vita sono la stessa persona.
 
-Ma c’è una cosa strana in questo libro, e conviene saperla subito. Quando Agostino scrive, non è più il bambino, né il ragazzo, né il giovane di cui racconta. È un uomo adulto, che guarda indietro e prova a ricordare. E ricordare, lo sapete anche voi, è un lavoro difficile. Alcune cose si ricordano benissimo, altre sono confuse, altre ancora non si ricordano affatto e bisogna immaginarle. Agostino lo sa, e lo dice.
+Ricordando la sua storia, Agostino non si racconta come un eroe. Si racconta come uno che sbaglia, che ha paura, che non sa che cosa fare, che cambia idea, che piange. Un essere umano fragile, insomma. E proprio per questo, forse, il suo libro è così bello.
 
-Così, nelle *Confessioni*, Agostino fa due parti contemporaneamente, come un attore che reciti da solo in una commedia: è la voce che racconta, ed è il personaggio raccontato. Il signore adulto che scrive e il ragazzino che combina guai sono la stessa persona; eppure non si somigliano quasi per niente.
-
-Leggendo, vedrete che Agostino non si racconta come un eroe. Si racconta come uno che sbaglia, che ha paura, che non sa che cosa fare, che cambia idea, che piange. Un essere umano fragile, insomma. E proprio per questo, forse, il suo libro è così bello.
-
-In ogni capitolo troverete una *tessera*. Le tessere sono quei piccoli pezzi di pietra colorata con cui si fanno i mosaici: da sola, una tessera non dice niente, ma messe insieme, una accanto all’altra, le tessere possono formare un’immagine. Alla fine del libro, ve lo prometto, proveremo a metterle insieme.
+In ogni capitolo troverete una *tessera*. Le tessere sono quei piccoli pezzi di pietra colorata con cui si fanno i mosaici: da sola, una tessera non dice niente; messe insieme, una accanto all’altra, le tessere possono formare un’immagine. Alla fine del libro proveremo a metterle insieme.
 
 @capitolo 1. Il bambino che voleva farsi capire
 
-Agostino nacque nel 354, in una piccola città dell’Africa del nord che si chiamava Tagaste. Oggi quella città esiste ancora, si chiama Souk Ahras e si trova in Algeria. Allora faceva parte dell’impero romano, che era grandissimo e circondava tutto il mare Mediterraneo come un abbraccio.
+Agostino nacque nel 354, in una piccola città dell’Africa del nord che si chiamava Tagaste. Oggi quella città esiste ancora, si chiama Souk Ahras e si trova in Algeria. Allora faceva parte dell’impero romano, che circondava tutto il mare Mediterraneo come un abbraccio.
 
 Il papà di Agostino si chiamava Patrizio. Non era ricco, ma non era nemmeno povero: aveva un pezzo di terra, una vigna, una casa, e molti sogni per il figlio. La mamma si chiamava Monica, ed era una donna con una fede fortissima nel Dio dei cristiani. Agostino aveva anche un fratello, Navigio, e una sorella, di cui purtroppo non conosciamo il nome.
 
 @tavola Illustrazione 1. Tagaste, una piccola città sulle colline dell’Africa romana: la casa di Patrizio e Monica, la vigna, e un bambino che guarda il mondo dalla soglia.
 
-Le *Confessioni* cominciano proprio dall’inizio, cioè da quando Agostino era un neonato. Ma un neonato, come sapete, non ricorda niente di sé. E allora Agostino fa una cosa intelligente: guarda gli altri bambini piccoli, quelli che vede intorno a sé da adulto, e si dice: «Anche io dovevo essere così».
+Le *Confessioni* cominciano proprio dall’inizio, cioè da quando Agostino era un neonato. Ma un neonato, come sapete, non ricorda niente di sé. E allora Agostino, per raccontare i suoi primi anni di vita, guarda gli altri bambini piccoli, quelli che vede intorno a sé da adulto, e pensa: «Anche io dovevo essere così».
 
-E com’era? Era un bambino che voleva un sacco di cose e non sapeva dirle. Voleva il latte, voleva essere preso in braccio, voleva che qualcuno gli portasse quella cosa che vedeva lontano. Ma non aveva le parole. Allora piangeva, strillava, agitava le braccia e le gambe. A volte i grandi capivano, e gli davano quello che voleva. A volte non capivano, e lui si arrabbiava ancora di più. Agostino racconta perfino di aver visto un bambino piccolissimo diventare tutto pallido di gelosia perché un altro bambino prendeva il latte al posto suo. E si domanda: ma allora anche i neonati, che sembrano così innocenti, hanno già dentro di sé un po’ di prepotenza?
+E com’era? Come tutti i bambini, voleva un sacco di cose e non sapeva dirle: voleva il latte, voleva essere preso in braccio, voleva che qualcuno gli portasse quella cosa che vedeva lontano. Ma non aveva le parole, nel senso che non era ancora capace di parlare. E allora, come fanno sempre tutti i neonati, piangeva, strillava, agitava le braccia e le gambe. A volte i grandi capivano e gli davano quello che voleva. A volte non capivano, e lui si arrabbiava ancora di più. Agostino racconta perfino di aver visto un bambino piccolissimo diventare tutto pallido di gelosia perché un altro bambino prendeva il latte al posto suo. E si domanda: ma allora anche i neonati, che sembrano così innocenti, hanno già dentro di sé un po’ di prepotenza?
 
-Poi, un po’ alla volta, il bambino cominciò a parlare. E qui Agostino racconta una scoperta che a molti sembra ovvia, ma che a pensarci bene è meravigliosa. Nessuno gli aveva insegnato a parlare con delle lezioni, come si fa a scuola. Aveva imparato da solo. Osservava i grandi: quando dicevano una parola e intanto indicavano una cosa, lui capiva che quella parola voleva dire quella cosa. «Mela», e la mamma mostrava una mela. «Acqua», e il papà gli passava la brocca. Così, parola dopo parola, il bambino che strillava diventò un bambino che parlava.
+Poi, un po’ alla volta, il bambino cominciò a parlare, in un modo che, quando lo racconta, ad Agostino sembra quasi magico. Nessuno gli aveva insegnato a parlare con delle lezioni, come si fa poi a scuola quando si è più grandi. Aveva imparato da solo osservando gli adulti attorno a lui: quando dicevano una parola e intanto indicavano una cosa, lui capiva che quella parola voleva dire quella cosa. «Mela», e la mamma mostrava una mela. «Acqua», e il papà gli passava la brocca. Così, parola dopo parola, il bambino che strillava diventò un bambino che parlava.
 
-Agostino non smise mai di pensare alle parole. Da grande scrisse un libro intero su questo, e si accorse di un problema. Con le cose che si possono indicare è facile: si dice «penna», e si mostra una penna. Ma come si fa con le parole che indicano cose che non si possono toccare? Come si fa a mostrare la «giustizia», o la «felicità», o l’«amicizia»? Non si può puntare il dito. Bisogna spiegarsi, raccontare, sperare che l’altro capisca. E non sempre succede.
+Agostino non smise mai di pensare alle parole. Da grande scrisse un libro intero su questo, e si accorse di un problema. Quando nomino una cosa che posso indicare con un dito, è facile farmi capire dagli altri: se parlo con qualcuno che non conosce l’italiano e dico «penna», posso mostrargli una penna così ci capiamo. Diventa tutto più difficile con le parole che indicano cose che non si possono indicare o toccare. Facciamo un esempio. A mare, in estate, incontrate un bambino che non conosce nemmeno una parola di italiano e volete chiedergli se gli va di diventare un vostro amico. Come fate a spiegargli cosa significa in italiano «amicizia»? Poi ci torniamo.
 
 @tavola Illustrazione 2. La mamma Monica indica una mela, e il piccolo Agostino la guarda con gli occhi spalancati: è così che si imparano le parole.
-
-Questo è il primo grande problema delle *Confessioni*, ed è anche il problema di tutti noi. Abbiamo dentro tante cose, pensieri, desideri, paure, e vorremmo farle capire agli altri. Ma le parole non bastano mai del tutto. Agostino lo scopre da piccolissimo, e lo scoprirà ancora molte volte nella sua vita.
 
 C’è un’altra cosa che Agostino scrive proprio nelle prime righe del suo libro, e che è importante ricordare. Dice che l’essere umano è uno che «si porta attorno» la propria fragilità. Pensate a uno zaino che non si può mai togliere: dentro ci sono le cose che non sappiamo, gli sbagli che possiamo fare, le paure, il fatto che siamo piccoli rispetto al mondo. Ognuno di noi se lo porta dietro, sempre. Agostino non dice che dobbiamo vergognarcene. Dice che dobbiamo saperlo. E dice anche che proprio per questo il nostro cuore è sempre un po’ inquieto, come se cercasse qualcosa che ancora non ha trovato.
 
@@ -51,23 +45,27 @@ C’è un’altra cosa che Agostino scrive proprio nelle prime righe del suo lib
 
 *Una domanda per te:* c’è una cosa che senti e che non riesci a spiegare bene con le parole?
 
-@capitolo 2. La scuola e la paura delle botte
+@capitolo 2. La scuola, le botte e una regina che non è mai esistita
 
-Quando fu abbastanza grande, Agostino venne mandato a scuola. I suoi genitori ci tenevano moltissimo: speravano che il figlio, studiando, diventasse un uomo importante, magari un avvocato o un funzionario dell’impero, con un bel lavoro e tanti soldi.
+Quando fu abbastanza grande, Agostino venne mandato a scuola. I suoi genitori ci tenevano moltissimo, e il motivo era molto concreto: a quei tempi chi sapeva parlare bene in pubblico poteva diventare avvocato, funzionario dell’impero, professore. Poteva, insomma, fare carriera. Agostino, da adulto, chiamerà quelle materie con un’espressione un po’ cattiva: «arti linguacciute», cioè arti che servono a usare la lingua per ottenere onori e soldi.
 
-Ma la scuola, ai tempi di Agostino, non era come quella di oggi. I maestri erano severi, e se un bambino non studiava, o si distraeva, o sbagliava, lo picchiavano. Era una cosa normale, che tutti accettavano, anche i genitori. Agostino ricorda che, quando era piccolo, pregava Dio con tutto il cuore per una cosa sola: non essere picchiato a scuola. E ricorda anche che i grandi, quando lui tornava a casa e raccontava delle botte, ridevano. Per loro era una cosa da niente. Per lui era una cosa terribile.
+Fermiamoci un momento su com’era la scuola. Non c’erano voti, registri elettronici o colloqui con i genitori. C’era un maestro e c’era una bacchetta. Se un bambino non studiava, o si distraeva, o sbagliava, veniva picchiato. Era una cosa normale, che nessuno metteva in discussione. Agostino racconta che da piccolo pregava Dio con tutto il cuore per una cosa sola: non essere picchiato a scuola. E racconta anche una cosa che fa più male delle botte: quando tornava a casa e raccontava quello che gli era successo, i grandi, perfino i suoi genitori, ridevano. Per loro era una cosa da niente. Per lui era terribile come una tortura.
 
-@tavola Illustrazione 3. Una scuola dell’Africa romana: il maestro con la bacchetta, i bambini seduti per terra con le tavolette di cera, e il piccolo Agostino che prega a occhi chiusi di non essere chiamato.
+@tavola Illustrazione 3. Una scuola dell’Africa romana: il maestro con la bacchetta, i bambini con le tavolette di cera, e il piccolo Agostino che prega a occhi chiusi di non essere chiamato.
 
-Agostino, a dire la verità, non era un alunno modello. Preferiva giocare a palla, e qualche volta imbrogliava pur di vincere. Era pigro nelle materie che non gli piacevano. E ce n’era una che proprio odiava: il greco. Il greco, a quei tempi, era la lingua della filosofia e della scienza, e chi voleva diventare una persona colta doveva impararlo. Ma Agostino non ci riusciva, o non voleva riuscirci. Più tardi, da adulto, si domanderà perché, e non saprà rispondere. Forse perché glielo insegnavano con le minacce. Forse perché era difficile. Forse perché sì.
+Agostino, a dire la verità, non era uno studente modello. Gli piaceva giocare a palla, e quando giocava voleva vincere a tutti i costi, al punto da imbrogliare. Rubava qualcosa dalla dispensa di casa, un po’ per golosità e un po’ per avere qualcosa da scambiare con gli altri bambini. Diceva bugie al pedagogo, cioè allo schiavo che lo accompagnava a scuola, ai maestri e ai genitori. E, osserva lui stesso con onestà, si arrabbiava moltissimo quando scopriva che erano gli altri a imbrogliare lui.
 
-Il latino, invece, gli piaceva molto. Soprattutto gli piacevano le storie dei poeti, che si leggevano a scuola per imparare a scrivere bene. Ce n’era una che lo faceva piangere: quella di Didone, la regina di Cartagine, che si era innamorata dell’eroe Enea e che, quando Enea era partito per mare abbandonandola, era morta di dolore. Il piccolo Agostino piangeva per Didone. E da grande si stupirà di questo: un bambino che piange per una regina inventata, e non si accorge di tutte le cose vere della sua vita per cui varrebbe la pena di piangere.
+Ma c’è un’osservazione di Agostino su quegli anni che vale la pena di leggere con attenzione, perché è ancora attuale. Gli adulti, dice, punivano i bambini perché giocavano invece di studiare. Però gli adulti passavano il tempo a fare cose non molto diverse: litigavano per soldi, si facevano la guerra per una carica, si rodevano d’invidia se un collega li batteva in una discussione, esattamente come lui si rodeva se un compagno lo batteva a palla. La differenza era solo nel nome. Scrive Agostino: «i balocchi degli adulti sono chiamati affari, mentre quelli dei fanciulli, per quanto simili, sono puniti dagli adulti».
+
+C’era una materia che Agostino odiava: il greco. Il greco, a quei tempi, era la lingua della filosofia, della scienza e di Omero, e chi voleva diventare una persona colta doveva impararlo. Agostino non ci riuscì mai bene, e da adulto si domanda perché. La risposta che si dà è molto interessante. Il latino, dice, l’aveva imparato da bambino giocando, tra le carezze delle nutrici e le risate; il greco glielo insegnavano con le minacce. E conclude: per imparare «vale più la libera curiosità che la pedante costrizione». È una frase che molti insegnanti, ancora oggi, dovrebbero appendere in classe; e che molti studenti, ancora oggi, citerebbero volentieri al momento sbagliato.
+
+Il latino invece gli piaceva moltissimo, soprattutto quello dei poeti. A scuola si leggeva l’*Eneide* di Virgilio, e c’era un episodio che lo faceva piangere: quello di Didone, la regina di Cartagine, che si era innamorata dell’eroe troiano Enea e che, quando Enea era ripartito per mare abbandonandola, si era uccisa per il dolore. Il ragazzino Agostino piangeva per Didone. Gli piaceva anche il cavallo di legno pieno di soldati, l’incendio di Troia. Invece «uno più uno due, due più due quattro», scrive, «era una cantilena odiosa».
 
 @tavola Illustrazione 4. Agostino ragazzino legge di nascosto, a lume di lucerna, la storia della regina Didone; sulla parete, come un’ombra, una nave che si allontana sul mare.
 
-C’è un pensiero di Agostino su questi anni di scuola che fa sorridere, ma che è anche molto serio. Gli adulti, dice, punivano i bambini perché giocavano invece di studiare. Ma gli adulti, a loro volta, passavano il tempo a fare cose non tanto diverse dai giochi: litigare per soldi, cercare di essere più importanti degli altri, farsi ammirare. Solo che i loro giochi li chiamavano «affari», e nessuno li puniva.
+Da adulto, Agostino guarda questo ragazzino con un misto di tenerezza e di severità. Gli sembra strano aver pianto tanto per una regina che non era mai esistita, mentre non si accorgeva delle cose vere della sua vita per cui varrebbe la pena di piangere. E pone una domanda che non è affatto banale: se chiedo a un maestro di grammatica se Enea sia venuto davvero a Cartagine, mi risponderà che non lo sa, o che è un’invenzione dei poeti; ma se gli chiedo come si scrive il nome di Enea, saprà rispondermi con precisione assoluta. Che cosa è più utile nella vita: sapere leggere e scrivere, o conoscere le avventure di Enea?
 
-Agostino non vuole dire che la scuola sia inutile. Anzi: ammette che grazie a quelle lezioni, anche alle più noiose, ha imparato a leggere e a scrivere, e che queste sono le cose più preziose che abbia ricevuto. Vuole dire un’altra cosa: che i grandi non sono sempre più saggi dei piccoli, e che a volte chiedono ai bambini di essere migliori di quanto loro stessi riescano a essere.
+E c’è un’ultima osservazione, quasi comica, che chiude questo racconto. Agostino nota che nel suo mondo un professore che pronunciava la parola latina *homo*, «uomo», senza l’acca aspirata davanti, faceva scandalo; mentre un uomo che odiava un altro uomo non scandalizzava nessuno. Le regole della grammatica, insomma, erano rispettate con più scrupolo delle regole della convivenza. Anche questo, a pensarci bene, non è cambiato del tutto.
 
 @centro · · ·
 
@@ -75,27 +73,31 @@ Agostino non vuole dire che la scuola sia inutile. Anzi: ammette che grazie a qu
 
 *Le parole di Agostino:* «Fui affidato alla scuola per impararvi le lettere, di cui, meschinello, ignoravo i vantaggi; eppure erano busse, se ero pigro a studiarle» (*Confessioni*, I, 9, 14).
 
-*Una domanda per te:* c’è qualcosa che hai imparato controvoglia e che poi ti è servito?
+*Una domanda per te:* c’è una cosa che hai imparato con piacere e una che hai imparato per forza? Quale delle due ricordi meglio?
 
 @capitolo 3. Le pere rubate
 
-Quando Agostino aveva sedici anni, dovette interrompere gli studi per un anno intero. I genitori non avevano abbastanza soldi per mandarlo a studiare in una città più grande, e così il ragazzo rimase a casa, a Tagaste, senza niente da fare. E un ragazzo di sedici anni senza niente da fare, dice Agostino, trova sempre il modo di combinare guai.
+A sedici anni Agostino dovette interrompere gli studi per un anno intero. Aveva già studiato a Madaura, una città vicina, e adesso il padre voleva mandarlo a Cartagine, la grande capitale dell’Africa romana. Ma Cartagine costava, e Patrizio, che era un cittadino modesto, doveva mettere da parte i soldi. Agostino racconta che in paese tutti lodavano quel padre che spendeva per il figlio più di quanto potesse permettersi; e aggiunge, con un po’ di amarezza, che quello stesso padre si preoccupava molto di quanto il figlio parlasse bene, e poco di che tipo di persona stesse diventando.
 
-Il guaio che racconta è piccolo, almeno all’apparenza. Vicino alla vigna della sua famiglia c’era un albero di pere. Non erano pere particolarmente belle, né particolarmente buone. Una notte, dopo aver giocato a lungo per le strade, Agostino e i suoi amici andarono a scuotere quell’albero. Fecero cadere le pere, le raccolsero, ne portarono via un mucchio enorme. E poi? Ne assaggiarono qualcuna, forse. Le altre le buttarono ai maiali.
+Così Agostino rimase un anno a Tagaste, senza scuola e senza niente da fare. E un ragazzo di sedici anni senza niente da fare, scrive, trova sempre il modo di combinare guai.
+
+C’è un dettaglio di questo capitolo delle *Confessioni* che i ragazzi di ogni epoca riconoscono subito. Agostino frequentava un gruppo di coetanei che si vantavano delle loro imprese, soprattutto con le ragazze. E lui, per non sembrare da meno, si inventava imprese che non aveva mai fatto. Lo scrive chiaramente: aveva paura di sembrare tanto più ridicolo quanto più era innocente. La mamma Monica lo prendeva da parte e gli faceva le sue raccomandazioni; ma lui, scrive, le considerava «ammonimenti di donnicciuola», e si vergognava a dare retta alla mamma davanti agli amici.
 
 @tavola Illustrazione 5. Notte di luna: una banda di ragazzi scuote un albero di pere, ridendo; le pere cadono come pioggia, e un maiale, in fondo, aspetta contento.
 
-Sembra una storia da niente. Tutti i ragazzi, prima o poi, hanno rubato una mela o una pera dall’albero di un vicino. Eppure Agostino, trent’anni dopo, dedica a quelle pere un capitolo intero del suo libro. Perché?
+Il guaio vero, quello che Agostino racconta con più cura, è piccolo, almeno all’apparenza. Vicino alla vigna della sua famiglia c’era un albero di pere. Non erano pere particolarmente belle, né particolarmente buone. Una notte, dopo aver passato la serata a giocare per le strade, Agostino e i suoi amici andarono a scuotere quell’albero. Fecero cadere le pere, ne caricarono un mucchio enorme e se le portarono via. Ne assaggiarono qualcuna, forse; il resto lo buttarono ai maiali.
 
-Perché, ripensandoci, si accorge di una cosa che lo spaventa. Non aveva rubato le pere per fame: a casa sua ce n’erano di migliori. Non le aveva rubate per mangiarle: le aveva buttate via. Non le aveva rubate perché erano belle: erano brutte. Le aveva rubate per il gusto di rubarle. Per il gusto di fare una cosa proibita. Per sentirsi, per una notte, uno che fa quello che non si deve fare.
+Sembra una storia da niente. Tutti i ragazzi, prima o poi, hanno fatto qualcosa del genere. Eppure Agostino, trent’anni dopo, dedica a quelle pere quasi un libro intero delle *Confessioni*. Perché?
 
-E poi si accorge di un’altra cosa, che è ancora più importante. Da solo, non l’avrebbe mai fatto. Lo scrive chiaramente: se fosse stato solo, non avrebbe rubato quelle pere. Gli era piaciuto farlo *insieme agli altri*. Ridere insieme, correre insieme, sentirsi parte della banda. Era stata la compagnia a trascinarlo.
+Perché, ripensandoci, si accorge di una cosa che lo spaventa. Quando si commette un’azione sbagliata, di solito c’è un motivo: si ruba perché si ha fame, o perché si vuole qualcosa che non si ha; si mente per paura, o per ottenere un vantaggio. Agostino porta perfino l’esempio di Catilina, il congiurato romano famoso per la sua crudeltà, e osserva che anche lui aveva i suoi motivi: voleva potere, ricchezze, onori. Ma il furto delle pere non aveva nessun motivo. Agostino non aveva fame; a casa sua c’erano pere migliori; quelle le aveva buttate via. Le aveva rubate per il gusto di rubarle, per il piacere di fare una cosa proibita.
+
+E poi si accorge di un’altra cosa, che è ancora più importante. Da solo, non l’avrebbe mai fatto. Lo ripete tre volte, come se volesse esserne sicuro: da solo non l’avrei fatto, assolutamente non l’avrei fatto. Gli era piaciuto farlo *insieme agli altri*: ridere insieme all’idea della faccia che avrebbe fatto il proprietario, correre insieme nel buio, sentirsi parte della banda. E descrive il meccanismo con una frase che potrebbe essere stata scritta oggi: «Uno dice: “Andiamo, facciamo”, e si ha pudore a non essere spudorati». Cioè: ci si vergogna di essere l’unico che non lo fa.
 
 @tavola Illustrazione 6. Agostino adulto, seduto al suo tavolo da scrittore, guarda una piccola pera appoggiata accanto al foglio; dietro di lui, come in un ricordo, i ragazzi che corrono nella notte.
 
-Pensateci: quante volte facciamo qualcosa solo perché la fanno gli altri? Per non sembrare diversi, per non essere presi in giro, per sentirci parte del gruppo. Agostino non dice che gli amici sono una cosa cattiva. Anzi, nel suo libro gli amici sono tra le cose più belle della vita. Dice soltanto che il desiderio di stare con gli altri è così forte che a volte ci fa diventare persone che, da soli, non saremmo.
+Agostino non dice che gli amici sono una cosa cattiva. Anzi, nelle *Confessioni* l’amicizia è una delle cose più belle che esistano, e ne parleremo presto. Dice soltanto che il desiderio di stare con gli altri, di essere accettati, di non sembrare diversi, è così forte che a volte ci fa diventare persone che da soli non saremmo. Inventa perfino un’espressione per questo tipo di compagnia: la chiama «amicizia inimicissima», un’amicizia che si comporta come un nemico.
 
-La storia delle pere è una tessera piccola, ma Agostino la mette al centro del suo racconto perché gli ha insegnato qualcosa su di sé: che dentro di noi c’è anche una parte che vuole sbagliare, solo per il gusto di farlo. Riconoscerla è il primo passo per non farsi comandare da lei.
+La storia delle pere è una tessera piccola, ma Agostino la mette al centro del suo racconto perché gli ha insegnato qualcosa su di sé: che dentro di noi c’è anche una parte che vuole sbagliare solo per il gusto di farlo, e che questa parte diventa molto più forte quando non siamo soli. Riconoscerla, dice, è il primo passo per non farsi comandare da lei.
 
 @centro · · ·
 
@@ -103,27 +105,31 @@ La storia delle pere è una tessera piccola, ma Agostino la mette al centro del 
 
 *Le parole di Agostino:* «Da solo non l’avrei assolutamente compiuto. In quell’azione mi attrasse anche la compagnia di coloro con cui la commisi» (*Confessioni*, II, 8, 16).
 
-*Una domanda per te:* ti è mai capitato di fare qualcosa solo perché la facevano gli altri?
+*Una domanda per te:* ti è mai capitato di fare qualcosa solo perché la facevano gli altri? E di non farla, anche se la facevano tutti?
 
 @capitolo 4. Cartagine, la città che friggeva
 
-A diciassette anni, finalmente, Agostino partì per studiare a Cartagine. Grazie all’aiuto di un ricco amico di famiglia, i genitori erano riusciti a mettere insieme i soldi necessari. Proprio in quei mesi, però, il papà Patrizio morì, poco dopo essersi fatto battezzare. Agostino parla pochissimo di lui nel suo libro, e non sappiamo esattamente perché. Forse perché non erano mai stati molto vicini. Forse perché certi dolori non si riescono a scrivere.
+A diciassette anni, finalmente, Agostino partì per Cartagine. Proprio in quei mesi, però, il padre Patrizio morì, poco dopo essersi fatto battezzare. Agostino ne parla pochissimo, e non sappiamo esattamente perché. Forse perché non erano mai stati molto vicini; forse perché certi dolori non si riescono a scrivere. A pagare gli studi, da quel momento, furono i soldi della madre.
 
-Cartagine era una città enorme, rumorosa, piena di gente, di teatri, di feste. Era la città della regina Didone, quella delle storie di scuola. Per un ragazzo arrivato da una piccola città di campagna doveva essere come arrivare oggi in una metropoli. Agostino la descrive con un gioco di parole che in italiano si perde, ma che vale la pena di spiegare. In latino, Cartagine si diceva *Carthago*, e una padella per friggere si diceva *sartago*. E Agostino scrive che, arrivato a *Carthago*, intorno a lui friggeva una *sartago* di amori: come se tutta la città fosse una grande padella, dove tutto sfrigolava, scoppiettava, bolliva.
+Cartagine era una città enorme, rumorosa, piena di gente, di teatri, di feste: per un ragazzo che arrivava da una piccola città di collina doveva essere come arrivare oggi in una grande metropoli. Agostino la descrive con un gioco di parole che in italiano si perde, ma che vale la pena di spiegare. In latino Cartagine si diceva *Carthago*, e una padella per friggere si diceva *sartago*. E Agostino scrive che, arrivato a *Carthago*, intorno a lui friggeva una *sartago* di amori: come se tutta la città fosse una grande padella sul fuoco, dove tutto sfrigolava e scoppiettava.
 
 @tavola Illustrazione 7. Cartagine vista dall’alto, come una grande padella che sfrigola: il porto, il teatro, le strade affollate, e un ragazzo con la sacca da viaggio che guarda tutto a bocca aperta.
 
-Agostino, a Cartagine, voleva soprattutto due cose: essere ammirato e innamorarsi. Scrive una frase bellissima e un po’ difficile: «Non amavo ancora, ma amavo di amare». Cioè: non era innamorato di nessuno, ma era innamorato dell’idea di innamorarsi. Cercava qualcuno da amare, e intanto andava a teatro, dove si piangeva per gli amori infelici dei personaggi, proprio come lui da bambino piangeva per Didone.
+Agostino, a Cartagine, voleva soprattutto due cose: essere ammirato e innamorarsi. Scrive una frase molto bella e un po’ difficile: «Non amavo ancora, ma amavo di amare». Cioè: non era innamorato di nessuno, ma era innamorato dell’idea di innamorarsi. Poi l’amore arrivò davvero, e con lui, racconta, arrivarono anche la gelosia, i sospetti, i litigi. Nessuno gli aveva detto che amare è bellissimo e complicato insieme.
 
-Poi, un giorno, successe una cosa che cambiò tutto. E non fu un incontro con una persona: fu un incontro con un libro.
+Fermiamoci su un’altra passione di quegli anni, perché Agostino ci fa sopra un ragionamento che vale anche per noi: il teatro. A Cartagine andava a vedere le tragedie, storie piene di amori infelici e di morti, e ci piangeva sopra. E da adulto si domanda: perché ci piace soffrire per finta? Nessuno vorrebbe vivere davvero le disgrazie dei personaggi; eppure, quando le guardiamo sulla scena, più soffriamo e più siamo contenti, e se lo spettacolo non ci fa soffrire usciamo delusi. È la stessa domanda che potremmo farci oggi davanti a un film che ci fa piangere, o a una serie che non riusciamo a smettere di guardare proprio perché ci fa stare male. Agostino non ha una risposta semplice. Osserva però una differenza importante: a teatro si piange e non si aiuta nessuno, mentre la compassione vera è quella che ci spinge a fare qualcosa per chi soffre davvero.
 
-A scuola, per imparare a parlare bene, gli studenti leggevano i grandi scrittori del passato. Tra questi c’era Cicerone, un famoso oratore romano. Agostino lo leggeva per imparare il suo stile, le sue belle frasi. Ma un giorno gli capitò tra le mani un libro di Cicerone intitolato *Ortensio*, che parlava della filosofia, cioè dell’amore per la sapienza. E quel libro gli entrò nel cuore.
+A Cartagine c’erano anche i bulli. Agostino li chiama con il nome che si davano loro stessi, *eversores*, cioè «quelli che mettono tutto sottosopra»: gruppi di studenti che entravano nelle aule e prendevano in giro i più timidi, i nuovi arrivati, solo per divertirsi. Agostino frequentava la loro compagnia, gli piaceva stare con loro, ma racconta che non partecipava mai ai loro scherzi crudeli. Era il primo della sua scuola di retorica, e ne era molto orgoglioso.
 
-@tavola Illustrazione 8. Agostino a diciannove anni, solo in una stanza piena di rotoli, legge l’*Ortensio*: dalle righe del libro sembra uscire una luce che gli illumina il viso.
+Poi, un giorno, successe una cosa che cambiò tutto. E non fu un incontro con una persona, ma con un libro.
 
-All’improvviso, tutte le cose che desiderava, la fama, i soldi, gli applausi, gli sembrarono piccole e inutili. Voleva un’altra cosa: voleva capire. Voleva la sapienza, quella vera, quella che non passa. Aveva diciannove anni, e da quel momento non smise mai più di cercarla.
+@tavola Illustrazione 8. Agostino a diciotto anni, solo in una stanza piena di rotoli, legge l’*Ortensio*: dalle righe del libro sembra uscire una luce che gli illumina il viso.
 
-C’è però un dettaglio curioso. L’*Ortensio* gli piaceva moltissimo, ma gli mancava qualcosa. Agostino era cresciuto ascoltando la mamma parlare di Gesù, e in quel libro il nome di Gesù non c’era. Così decise di leggere la Bibbia. E rimase deluso! Gli sembrò un libro scritto male, semplice, quasi rozzo, se paragonato alle frasi eleganti di Cicerone. Agostino, che era diventato bravissimo a giudicare lo stile, non riuscì ad andare oltre lo stile. Solo molti anni dopo capirà di aver giudicato un libro dalla copertina.
+A scuola, per imparare a parlare bene, gli studenti leggevano i grandi scrittori del passato. Il più importante era Cicerone, un famoso oratore romano. Agostino lo leggeva per imparare il suo stile, le sue belle frasi. Ma a diciotto anni gli capitò tra le mani un libro di Cicerone intitolato *Ortensio*, che oggi è andato perduto e che invitava i lettori alla filosofia, cioè all’amore per la sapienza. Agostino ci tiene a precisarlo: quel libro non lo conquistò per come era scritto, ma per quello che diceva.
+
+All’improvviso, tutte le cose che desiderava, la fama, i soldi, gli applausi, gli sembrarono piccole. Voleva un’altra cosa: voleva capire. Voleva la sapienza, quella vera, quella che non passa. E non una scuola filosofica o un’altra, scrive, ma la sapienza in sé, dovunque fosse.
+
+C’è però un dettaglio curioso. L’*Ortensio* gli piaceva moltissimo, ma gli mancava qualcosa. Agostino era cresciuto sentendo la mamma parlare di Gesù, e in quel libro il nome di Gesù non c’era. Così decise di leggere la Bibbia. E rimase deluso! Gli sembrò un libro scritto in modo semplice, quasi rozzo, «indegno del paragone» con l’eleganza di Cicerone. Agostino, che era diventato bravissimo a giudicare lo stile, non riuscì ad andare oltre lo stile. Solo molti anni dopo capirà di aver giudicato un libro dalla copertina; e scriverà che quel libro ha un ingresso basso, nel quale bisogna chinarsi per entrare, e lui allora era troppo pieno di sé per chinarsi.
 
 È la prima volta, nelle *Confessioni*, che Agostino cerca la verità. Non la trova, non ancora. Ma da questo momento la sua vita diventa una ricerca.
 
@@ -131,6 +137,6 @@ C’è però un dettaglio curioso. L’*Ortensio* gli piaceva moltissimo, ma gli
 
 *La tessera:* una padella che sfrigola, e accanto un libro aperto.
 
-*Le parole di Agostino:* «Quel libro, devo ammetterlo, mutò il mio modo di sentire [...] e mi fece bramare la sapienza immortale» (*Confessioni*, III, 4, 7).
+*Le parole di Agostino:* «Quel libro, devo ammetterlo, mutò il mio modo di sentire [...] e mi fece bramare la sapienza immortale con incredibile ardore di cuore» (*Confessioni*, III, 4, 7).
 
 *Una domanda per te:* c’è un libro, un film o una canzone che ti ha fatto vedere le cose in modo diverso?
