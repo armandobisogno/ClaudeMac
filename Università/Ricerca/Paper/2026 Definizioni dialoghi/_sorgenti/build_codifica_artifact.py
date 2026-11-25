@@ -13,12 +13,18 @@ TESTI = {
 }
 TESTI["bv"] = dict(sigla="beata v.", libro=None, ns="bv_", title="Codifica del De beata vita",
                    h1="<i>De beata vita</i> · codifica", prop=["", "Augustinus", "autorità citata"], togli_rimandi=True)
+for _k, _s, _l, _t in [("ord", "ord.", None, "De ordine"), ("sol", "sol.", None, "Soliloquia"),
+                       ("anquant", "an. quant.", None, "De quantitate animae"), ("libarb1", "lib. arb.", "1", "De libero arbitrio I"),
+                       ("mag2", "mag.", None, "De magistro"), ("mus", "mus.", None, "De musica")]:
+    TESTI[_k] = dict(sigla=_s, libro=_l, ns=_k + "_", title="Codifica del " + _t, h1="<i>%s</i> · codifica" % _t,
+                     prop=["", "Augustinus", "interlocutore", "autorità citata"], togli_rimandi=True, sp_generic=True)
 for _b in ("2", "3"):   # libri II e III del Contra Academicos
     TESTI["acad"+_b] = dict(TESTI["acad1"], libro=_b, ns="acad%s_" % _b, title="Codifica del Contra Academicos",
                             h1="<i>Contra Academicos</i> %s · codifica" % ("II" if _b == "2" else "III"))
 TESTI["acad1"]["ns"] = "acad1_"   # collezioni: acad1_frasi, acad1_episodi, acad1_tempo, acad1_stato
 TESTI["mag"]["ns"] = ""           # il De magistro resta nelle collezioni originarie (frasi, episodi, tempo, stato)
 SP = re.compile(r"^(AUGUSTINUS|ADEODATUS)\s*:\s*|^(Aug|Ad)\.\s*-\s*")
+SPG = re.compile(r"^\s*(?:(?:EVODIUS|AUGUSTINUS|ADEODATUS|MAGISTER|DISCIPULUS|RATIO)\.?\s*[:\-–]?\s+|(?:Ev|Aug|Ad|E|A|M|D|R)\.\s*[:\-–]?\s+|(?:A|M)\s+[\-–]\s+)")
 def frasi(b):
     out = []
     for f in re.split(r"(?<=[.?!])\s+", b):
@@ -37,10 +43,14 @@ for s, ref, t in paragrafi():
     if _m:
         _a, _b = t[:_m.start()].strip(), t[_m.end():].strip()
         t = _a if len(_a) >= len(_b) else _b
+    t = re.sub(r"\s*\[\d+\.\]\s*", " ", t)   # segno di capitolo isolato nel testo («[19.]»)
     if cfg.get("togli_rimandi"):   # rimandi editoriali tra parentesi (con cifre): non sono testo di Agostino
         t = re.sub(r"\s*\([^()]*\d[^()]*\)", "", t)
     sents, who = [], ""
     for b in [x.strip() for x in t.split(" / ") if x.strip()]:
+        if cfg.get("sp_generic"):
+            mg = SPG.match(b)
+            if mg: b = b[mg.end():]
         m = SP.match(b)
         if m:
             who = "Aug." if (m.group(1) or m.group(2)).upper().startswith("AU") else "Ad."
