@@ -249,3 +249,12 @@ Esito: B5 come formulato è troppo largo (circa 1 su 9). Funziona solo quando il
 - Punto 3 (identità ricavate come conclusione): approvata la proposta: decide la forma di ciò che si conclude (identità piena → 3; proprietà/condizione di X in quanto X → P; caso singolo → niente); la posizione argomentativa va in nota. Bozza 11.1.
 - Struttura del paper: per ora sezioni separate (metodo nella forma finale; storia del criterio in sezione dedicata).
 - Punto 4 (glosse e figure): approvata la proposta (bozza 11.2). Codebook completo per la ricodifica: avviata un'istanza nuova (diversa dalla prima) su Acad. I, II, III e De beata vita, output in `_dati/istanza_nuova/b11/`.
+
+## 25.11.2026 — Ricodifica con la bozza 11.2 (seconda istanza nuova, cartella `_dati/istanza_nuova/b11/`)
+
+- Seconda istanza, indipendente dalla prima (le uscite della prima spostate in `b10/`). Codificati Acad. I (90 frasi segnate: 1:42, 2:26, 3:8, P:21), II (37: 1:1, 2:13, 3:6, P:14), III (77: 1:12, 2:25, 3:5, P:33), De beata vita (165: 2:40, 3:39, P:85). Tutte le 55 proposte automatiche dell'1 confermate.
+- Confronti (`_dati/confronto_b11.txt`; codifica di Armando riletta dall'archivio in `_dati/archivio_armando/` e `codifica_armando_acad1.tsv`, versione rivista con gli 1 accettati):
+  - indicatori 1-3, macchina contro macchina: κ 0,96 (I, con Claude in sessione), 0,89-0,91 (II), 0,88-0,89 (III), 0,85 (De beata vita, con la prima istanza). Stabile tra istanze e tra versioni del codebook.
+  - indicatori 1-3, macchina b11 contro Armando (libro I): κ 0,70 (identico al confronto del 20.11); indicatore 1 κ 0,93; 2 e 3 ≈ 0,5.
+  - contando anche P: κ 0,76. Dei 25 casi in cui Armando segna una definizione (1-3) e la macchina no, 13 la macchina li registra come P. Il disaccordo umano-macchina si concentra nella zona della definizione parziale.
+- Casi incerti segnalati: confine P / anello di sillogismo (soprattutto De beata vita, 85 P); «is X qui…» 3 o P; verbi introduttivi fuori lista (audire, dubitare, monstrare, accipere, iudicare) trattati come 2; glosse «oggetto del passo»; immagini spiegate dentro cornici allegoriche.

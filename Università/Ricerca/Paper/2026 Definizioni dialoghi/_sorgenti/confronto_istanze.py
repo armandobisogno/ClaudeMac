@@ -10,7 +10,7 @@ refs=[l.split("\t")[0] for l in open(frasi, encoding="utf-8").read().splitlines(
 txt={l.split("\t")[0]: l.split("\t")[2] for l in open(frasi, encoding="utf-8").read().splitlines()}
 ind=lambda d,r: set((d.get(r) or {}).get("ind","").split())
 print(f"frasi {len(refs)}")
-for lab, S in [("1-3", {"1","2","3"}), ("1", {"1"}), ("2", {"2"}), ("3", {"3"}), ("T", {"T"}), ("qualunque (1-3 o T)", {"1","2","3","T"})]:
+for lab, S in [("1-3", {"1","2","3"}), ("1", {"1"}), ("2", {"2"}), ("3", {"3"}), ("T", {"T"}), ("P", {"P"}), ("qualunque (1-3, T o P)", {"1","2","3","T","P"})]:
     x=[bool(ind(a,r)&S) for r in refs]; y=[bool(ind(b,r)&S) for r in refs]
     po,k=kappa(x,y); both=sum(p and q for p,q in zip(x,y))
     print(f"{lab:22} A {sum(x):3}  B {sum(y):3}  entrambi {both:3}  accordo {po:.3f}  kappa {k:.3f}")
